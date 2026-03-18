@@ -19,3 +19,15 @@ dist/
 # editors
 .idea/
 *.swp
+
+# Internal agent configs — Paperclip/AI tooling (never push to public repo)
+agents/
+
+# Internal research and working documents
+docs/Taxonomy Research
+
+# Claude Code local config
+.claude/
+
+# TypeScript build cache
+tsconfig.tsbuildinfo

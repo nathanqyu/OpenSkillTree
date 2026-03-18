@@ -1,0 +1,458 @@
+# OpenSkillTree — Seed Skill Tree: LinkedIn Content Creation
+#
+# Domain:  Business / Marketing / LinkedIn Content Creation
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: LinkedIn creator growth data and content marketing
+# industry standards (engagement rates, follower milestones, CPM/CPE benchmarks)
+#   beginner     = 0–500 followers, posting occasionally, learning the format
+#   intermediate = 500–5,000 followers, posting consistently, growing an audience
+#   advanced     = 5,000–50,000 followers, recognized in a niche, generating inbound
+#   expert       = 50,000+ followers (or high-leverage smaller audience), brand-defining,
+#                  monetizable creator presence
+
+tree:
+  id: "business/linkedin-content-creation"
+  title: "LinkedIn Content Creation"
+  description: >
+    A skill tree for building a meaningful, growing presence on LinkedIn through
+    strategic content creation. Covers profile foundation, content strategy,
+    writing craft, visual communication, community engagement, analytics,
+    and the personal brand thinking that ties it together.
+    Relevant for entrepreneurs, executives, job seekers, consultants, and
+    anyone building professional visibility.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  - id: "business/linkedin-content-creation/profile-optimization"
+    title: "Profile Optimization"
+    description: >
+      Your LinkedIn profile is your homepage — the first thing visitors see
+      after engaging with your content. A well-optimized profile converts
+      content viewers into connections, followers, or leads.
+    benchmarks:
+      - level: beginner
+        criteria: >
+          All key sections completed: headline, summary (About), experience, education,
+          skills, and profile photo. No placeholder text.
+        metrics:
+          - "LinkedIn Profile Strength: 'All-Star' status achieved"
+          - "Profile photo: professional, clear face, good lighting"
+      - level: intermediate
+        criteria: >
+          Keyword-optimized headline (not just job title). About section tells a story
+          and includes a call to action. Featured section showcases best content or work.
+        metrics:
+          - "Profile shows in search results for target keywords (LinkedIn SSI ≥ 65)"
+          - "Profile views per week: ≥50"
+          - "About section: ≥3 paragraphs, 1 clear CTA"
+      - level: advanced
+        criteria: >
+          Profile generates consistent inbound (DMs, connection requests from
+          target audience, recruiter/client interest). Cover image aligned with
+          personal brand. Creator Mode enabled and optimized.
+        metrics:
+          - "Inbound connection requests from target audience: ≥10/week"
+          - "Profile to follow conversion rate: ≥15% of profile visitors follow"
+          - "LinkedIn SSI score ≥ 75"
+      - level: expert
+        criteria: >
+          Profile is a trust signal and authority statement. Visitors immediately
+          understand your POV and why you matter in your domain. Features and
+          recommendations reinforce position.
+        metrics:
+          - "Profile cited or shared by others as an example of a strong LinkedIn presence"
+          - "Inbound business/career inquiries traceable to LinkedIn profile: ≥5/month"
+    tags: ["foundation", "visibility", "SEO"]
+
+  - id: "business/linkedin-content-creation/content-ideation"
+    title: "Content Ideation"
+    description: >
+      The ability to generate a consistent supply of content ideas relevant to
+      your audience and aligned with your professional brand. Ideas are the raw
+      material of content creation.
+    benchmarks:
+      - level: beginner
+        criteria: "Generates at least 5 post ideas per week from personal experience and recent events."
+        metrics:
+          - "Idea backlog maintained: ≥10 post ideas in queue at all times"
+      - level: intermediate
+        criteria: >
+          Uses systematic frameworks for idea generation (jobs-to-be-done, trending
+          topics, contrarian takes, audience questions, personal stories).
+          Content ideas tied to audience interests and pain points.
+        metrics:
+          - "Idea generation method documented and repeatable"
+          - "≥50% of ideas sourced from audience signals (comments, DMs, questions)"
+      - level: advanced
+        criteria: >
+          Strategic content calendar with intentional themes per month/quarter.
+          Monitors trends and audience conversations to inject timely takes.
+          Repurposes high-performing ideas into new formats.
+        metrics:
+          - "Content calendar planned ≥4 weeks ahead"
+          - "Content themes tied to business/career objectives (not just vanity metrics)"
+          - "Top 20% of posts repurposed into ≥2 other formats"
+      - level: expert
+        criteria: >
+          Idea system generates viral concepts regularly. Pattern recognition:
+          predicts what will resonate before posting. Ideas come from a unique
+          POV others haven't staked out.
+        metrics:
+          - "Posts exceeding 10x average impressions: ≥2/month"
+          - "Original frameworks or concepts named and adopted by the community"
+    tags: ["creativity", "strategy", "content"]
+
+  - id: "business/linkedin-content-creation/hook-writing"
+    title: "Hook Writing"
+    description: >
+      The first 1–3 lines of a LinkedIn post determine whether it gets read.
+      The hook must stop the scroll, create curiosity or tension, and earn the
+      "see more" click. The single highest-leverage skill in LinkedIn writing.
+    benchmarks:
+      - level: beginner
+        criteria: "First line clearly states what the post is about. No buried lede."
+        metrics:
+          - "Post subject identifiable from first line on 90%+ of posts"
+      - level: intermediate
+        criteria: >
+          Uses proven hook patterns: bold statement, counterintuitive claim,
+          relatable story opener, provocative question, or number-lead.
+          Hook length ≤ 150 characters (fits before 'see more').
+        metrics:
+          - "Hook pattern used consistently on 80%+ of posts"
+          - "Posts with strong hooks (by your own assessment) receive ≥2x impressions vs. weak hooks"
+      - level: advanced
+        criteria: >
+          Pattern-interrupt hooks that break reader autopilot. Hooks create
+          emotional tension (curiosity, surprise, recognition) within 1 line.
+          A/B tested hook variants to learn what resonates with specific audience.
+        metrics:
+          - "Average 'see more' click-through rate (estimated via comment-to-impression ratio): ≥3%"
+          - "3+ distinct hook styles mastered and deployed deliberately"
+      - level: expert
+        criteria: >
+          Hooks reliably outperform industry averages. Consistently triggers the
+          LinkedIn algorithm's early engagement window. Other creators study and
+          cite your hooks.
+        metrics:
+          - "First-hour engagement (likes + comments) consistently in top quartile for niche"
+          - "Hook formulas you developed are shared or credited by other creators"
+    tags: ["writing", "craft", "algorithm"]
+
+  - id: "business/linkedin-content-creation/copywriting"
+    title: "Copywriting"
+    description: >
+      The craft of writing LinkedIn post bodies that are clear, engaging, and drive
+      the reader to a feeling or action. LinkedIn copywriting is conversational,
+      scannable, and built for a professional audience in a feed environment.
+    benchmarks:
+      - level: beginner
+        criteria: >
+          Posts are grammatically correct, clearly structured, and get the point across.
+          No walls of text. Paragraphs ≤ 3 lines.
+        metrics:
+          - "Average post length: 150–400 words"
+          - "0 grammar/spelling errors on 90%+ of posts"
+      - level: intermediate
+        criteria: >
+          Writes with a consistent, identifiable voice. Uses storytelling structure
+          (setup → conflict/insight → resolution/CTA). Ends posts with a clear
+          call to action or conversation starter.
+        metrics:
+          - "Comment-to-impression rate ≥ 0.3%"
+          - "Posts receive ≥5 substantive comments (not just emoji reactions)"
+      - level: advanced
+        criteria: >
+          Storytelling makes abstract ideas concrete. Uses specificity and detail
+          to build trust. Voice is distinctive enough to be recognized without
+          seeing the name.
+        metrics:
+          - "Average engagement rate ≥ 3% (reactions + comments / impressions)"
+          - "Posts saved by readers (inferred from DMs referencing old content): regular occurrence"
+      - level: expert
+        criteria: >
+          Writing moves people — changes how they think, gets shared unprompted,
+          produces inbound business or career opportunities. Voice is a category asset.
+        metrics:
+          - "Posts regularly shared off-platform (email newsletters, Slack, group chats)"
+          - "Writing cited as primary reason for follows or inbound in audience research"
+    tags: ["writing", "craft", "engagement"]
+
+  - id: "business/linkedin-content-creation/visual-content"
+    title: "Visual Content"
+    description: >
+      Images, carousels, infographics, and videos that enhance content reach and
+      comprehension. LinkedIn's algorithm consistently favors multi-page carousels
+      and native video. Visual content extends reach to audiences who skim.
+    benchmarks:
+      - level: beginner
+        criteria: "Adds relevant images to posts. Basic carousel creation in Canva or equivalent."
+        metrics:
+          - "≥30% of posts include visual content"
+      - level: intermediate
+        criteria: >
+          Carousels with clear visual hierarchy: strong cover slide, scannable
+          content slides, closing CTA slide. On-brand color palette and fonts.
+        metrics:
+          - "Carousel posts receive ≥2x average impressions vs. text-only posts"
+          - "Consistent visual template in use (recognizable before reading)"
+      - level: advanced
+        criteria: >
+          Visual identity system (colors, fonts, photo style) applied consistently.
+          Infographics that distill complex ideas. Native video with captions.
+        metrics:
+          - "Profile visual consistency score: audience recognizes content without seeing name on ≥70% of posts"
+          - "Video posts: ≥500 views average"
+      - level: expert
+        criteria: >
+          Visual content that drives saves, shares, and newsletter sign-ups.
+          Original visual frameworks (diagrams, matrices, visual models) become
+          referenced assets in the community.
+        metrics:
+          - "Original visual frameworks cited or reposted by others: ≥3 examples"
+          - "Carousel completion rate (read to last slide) estimated ≥40%"
+    tags: ["visual", "design", "reach"]
+
+  - id: "business/linkedin-content-creation/engagement-strategy"
+    title: "Engagement Strategy"
+    description: >
+      Building genuine relationships and growing reach through intentional
+      community participation — not just broadcasting but listening and
+      contributing to others' conversations.
+    benchmarks:
+      - level: beginner
+        criteria: "Replies to all comments on own posts within 24 hours."
+        metrics:
+          - "Comment reply rate: 100% within 24h"
+      - level: intermediate
+        criteria: >
+          Proactive engagement: meaningful comments on others' posts daily.
+          Builds presence in target community conversations. Likes and reshares
+          are complemented by substantive comments that add value.
+        metrics:
+          - "Outbound meaningful comments: ≥10/week"
+          - "Net new connections from engagement (not from posting): ≥5/week"
+      - level: advanced
+        criteria: >
+          Builds community reciprocity: consistent commenters on your content
+          are consistently supported in return. Engagement pod or organic
+          community of peers who engage authentically.
+        metrics:
+          - "≥20 consistent engagers on your content (comment on ≥50% of posts)"
+          - "Comments received per post: ≥15 average"
+      - level: expert
+        criteria: >
+          Engagement loops that amplify reach organically. Your comments on
+          others' content drive traffic back to your profile. Seen as a
+          connector and community builder in the niche.
+        metrics:
+          - "Inbound connections citing a specific comment you made: regular occurrence"
+          - "Your comments on others' posts receive ≥10 likes on average"
+    tags: ["community", "relationship", "reach"]
+
+  - id: "business/linkedin-content-creation/analytics-optimization"
+    title: "Analytics & Optimization"
+    description: >
+      Using LinkedIn's native analytics and external signals to understand what
+      content is working, why, and how to do more of it deliberately.
+    benchmarks:
+      - level: beginner
+        criteria: "Reviews impressions, reactions, and comments on each post. Notices patterns."
+        metrics:
+          - "Weekly analytics review completed: tracks impressions, engagements, follower growth"
+      - level: intermediate
+        criteria: >
+          A/B tests post formats, posting times, and content types. Maintains a
+          content performance log. Doubles down on top-performing formats.
+        metrics:
+          - "Performance log updated after every post (format, topic, hook type, metrics)"
+          - "Top 3 content formats identified and represent ≥60% of publishing schedule"
+      - level: advanced
+        criteria: >
+          Content mix optimization: audience segmentation analysis, content-to-
+          conversion tracking (profile views, DMs, site clicks). Identifies
+          content half-life and optimal posting frequency.
+        metrics:
+          - "Optimal posting frequency established through data (not just intuition)"
+          - "Conversion events tracked: DMs, profile views, link clicks per post type"
+      - level: expert
+        criteria: >
+          Data-driven content strategy: analytics inform not just format but
+          topic prioritization, audience targeting, and brand positioning.
+          Content decisions are hypotheses with expected outcomes.
+        metrics:
+          - "Quarterly content strategy review includes performance data, audience growth analysis, and next-quarter bets"
+          - "Follower-to-lead or follower-to-revenue correlation established"
+    tags: ["data", "optimization", "strategy"]
+
+  - id: "business/linkedin-content-creation/personal-brand-strategy"
+    title: "Personal Brand Strategy"
+    description: >
+      The intentional positioning of your professional identity — defining your
+      niche, your unique point of view, and the consistent themes that make you
+      recognizable and valuable to a specific audience.
+    benchmarks:
+      - level: beginner
+        criteria: "Defines target audience and primary content theme. Posts feel like they come from the same person."
+        metrics:
+          - "Niche written down: 1 sentence describing audience and value you provide"
+      - level: intermediate
+        criteria: >
+          Consistent brand voice and positioning. Content pillars defined (2–4
+          themes you always cover). Audience recognizes your perspective vs. generic content.
+        metrics:
+          - "2–4 content pillars defined and represent ≥80% of content"
+          - "Brand voice guide exists (tone, phrases you use, what you never say)"
+      - level: advanced
+        criteria: >
+          Recognized as a go-to voice in a specific niche. Content generates
+          inbound interest from ideal audience. Association between your name
+          and a specific topic is automatic.
+        metrics:
+          - "Target audience can name you as a top voice on your topic unprompted"
+          - "Inbound connection requests: ≥70% from defined target audience"
+      - level: expert
+        criteria: >
+          Brand creates tangible business or career value. Name opens doors.
+          Brand is independent of employer — portable authority. Recognized
+          externally (speaking invites, media, partnerships).
+        metrics:
+          - "Business/career opportunities traceable to LinkedIn brand: ≥3/quarter"
+          - "External recognition: speaking invites, media mentions, or partnership inquiries"
+    tags: ["strategy", "positioning", "brand"]
+
+  - id: "business/linkedin-content-creation/newsletter-long-form"
+    title: "Newsletter & Long-form Articles"
+    description: >
+      LinkedIn's native newsletter and article formats allow deep-dives that
+      posts can't support. Long-form content builds authority, attracts
+      subscribers, and ranks in LinkedIn search.
+    benchmarks:
+      - level: beginner
+        criteria: "Publishes a LinkedIn article or newsletter issue with clear structure and a useful POV."
+        metrics:
+          - "First newsletter/article published"
+          - "Minimum length: 500 words with clear intro, body, conclusion"
+      - level: intermediate
+        criteria: >
+          Consistent newsletter delivery (bi-weekly or monthly). Each issue has
+          a defined structure and delivers on a promised format. Open rate
+          is trackable.
+        metrics:
+          - "Newsletter delivered on consistent schedule: ≥12 issues/year"
+          - "Subscriber base growing: ≥10% MoM for first 6 months"
+      - level: advanced
+        criteria: >
+          Newsletter with growing, engaged subscriber base. Open rate above
+          LinkedIn averages. Each issue drives engagement back to post content
+          or off-platform conversion.
+        metrics:
+          - "Newsletter subscribers: ≥1,000"
+          - "Open rate: ≥40% (LinkedIn newsletter benchmark)"
+          - "Issue drives ≥50 profile views the day it publishes"
+      - level: expert
+        criteria: >
+          Newsletter as a category asset — subscribers cite it as their go-to
+          resource in the niche. Generates inbound independently of post reach.
+          Monetizable through sponsorship, course sales, or consulting intake.
+        metrics:
+          - "Newsletter subscribers: ≥10,000"
+          - "At least 1 revenue stream tied to newsletter audience (sponsorships, products, consulting)"
+    tags: ["long-form", "authority", "subscriptions"]
+
+  - id: "business/linkedin-content-creation/content-distribution"
+    title: "Content Distribution"
+    description: >
+      Getting content in front of the right people beyond your immediate
+      followers — through cross-platform repurposing, partnerships, hashtag
+      strategy, and systematic distribution workflows.
+    benchmarks:
+      - level: beginner
+        criteria: "Posts natively to LinkedIn. Uses 3–5 relevant hashtags on each post."
+        metrics:
+          - "3–5 hashtags on ≥80% of posts"
+          - "Hashtags relevant (not generic like #growth)"
+      - level: intermediate
+        criteria: >
+          Cross-platform repurposing: LinkedIn posts become Twitter threads,
+          email content, or blog posts. Repurposing workflow reduces production
+          time per additional channel.
+        metrics:
+          - "≥40% of LinkedIn posts repurposed to 1+ other platform"
+          - "Repurposing time: ≤30 min per additional channel"
+      - level: advanced
+        criteria: >
+          Distribution partnerships: co-author posts with complementary creators,
+          guest in others' newsletters, or cross-promote. Systematic tagging
+          strategy to reach adjacent audiences.
+        metrics:
+          - "≥2 collaboration posts per quarter reaching a new audience segment"
+          - "Hashtag strategy data-driven (tracking impressions per hashtag)"
+      - level: expert
+        criteria: >
+          Systematic distribution at scale: every piece of content has a planned
+          distribution strategy before publication. Owns a content flywheel where
+          each format feeds the others.
+        metrics:
+          - "Content distribution plan written before publishing for every major post"
+          - "Cross-platform presence: followers on ≥2 platforms benefit from LinkedIn content"
+    tags: ["distribution", "reach", "growth"]
+
+relationships:
+  - source: "business/linkedin-content-creation/profile-optimization"
+    target: "business/linkedin-content-creation/personal-brand-strategy"
+    type: "requires"
+    note: "Profile is the first expression of personal brand — optimize it before building on top"
+
+  - source: "business/linkedin-content-creation/content-ideation"
+    target: "business/linkedin-content-creation/hook-writing"
+    type: "requires"
+    note: "Hook writing is applied to ideas — you need a supply of ideas to practice hooks on"
+
+  - source: "business/linkedin-content-creation/hook-writing"
+    target: "business/linkedin-content-creation/copywriting"
+    type: "requires"
+    note: "The hook is part of the copy — master it before the full post body"
+
+  - source: "business/linkedin-content-creation/copywriting"
+    target: "business/linkedin-content-creation/personal-brand-strategy"
+    type: "enables"
+    note: "A distinctive voice, developed through copywriting, becomes the brand"
+
+  - source: "business/linkedin-content-creation/copywriting"
+    target: "business/linkedin-content-creation/newsletter-long-form"
+    type: "requires"
+    note: "Long-form requires strong copywriting fundamentals — same craft, longer format"
+
+  - source: "business/linkedin-content-creation/engagement-strategy"
+    target: "business/linkedin-content-creation/analytics-optimization"
+    type: "enables"
+    note: "Engagement data (comments, reactions) is required input to analytics optimization"
+
+  - source: "business/linkedin-content-creation/analytics-optimization"
+    target: "business/linkedin-content-creation/content-distribution"
+    type: "enables"
+    note: "Distribution strategy should be informed by what content performs and why"
+
+  - source: "business/linkedin-content-creation/personal-brand-strategy"
+    target: "business/linkedin-content-creation/content-distribution"
+    type: "enables"
+    note: "Knowing your brand positioning clarifies which distribution channels and partners are right"
+
+  - source: "business/linkedin-content-creation/content-ideation"
+    target: "business/linkedin-content-creation/visual-content"
+    type: "enables"
+    note: "Ideas drive format choice — some ideas are inherently visual (carousels, diagrams)"
+
+  - source: "business/linkedin-content-creation/copywriting"
+    target: "business/linkedin-content-creation/content-distribution"
+    type: "enables"
+    note: "Strong copy repurposes well across platforms — weak copy doesn't survive cross-posting"
+
+  - source: "business/linkedin-content-creation/newsletter-long-form"
+    target: "business/linkedin-content-creation/content-distribution"
+    type: "enables"
+    note: "Newsletter is itself a distribution channel — subscribers receive content directly"

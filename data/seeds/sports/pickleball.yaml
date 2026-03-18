@@ -1,0 +1,363 @@
+# OpenSkillTree — Seed Skill Tree: Pickleball
+#
+# Domain:  Sports / Racket Sports / Pickleball
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Rating reference: DUPR (Dynamic Universal Pickleball Rating) 2.0–8.0 scale
+# Benchmark levels loosely map to:
+#   beginner     ≈ DUPR 2.0–2.9  (new to the game)
+#   intermediate ≈ DUPR 3.0–3.9  (rec player, knows the game)
+#   advanced     ≈ DUPR 4.0–4.9  (competitive club / tournament player)
+#   expert       ≈ DUPR 5.0+     (open/pro level)
+
+tree:
+  id: "sports/pickleball"
+  title: "Pickleball"
+  description: >
+    A complete skill map for pickleball — a fast-growing paddle sport combining
+    elements of tennis, badminton, and table tennis. Covers the foundational
+    mechanics, soft game, power game, movement, and strategy needed to progress
+    from first-time player to competitive competitor.
+  domain: "Sports"
+  visibility: "public"
+
+nodes:
+  - id: "sports/pickleball/footwork"
+    title: "Footwork & Movement"
+    description: >
+      The foundation of all pickleball skills. Efficient movement enables you to
+      reach balls, set up for shots, and recover to position. Prerequisite for
+      every other skill on the court.
+    benchmarks:
+      - level: beginner
+        criteria: "Moves to ball and makes contact without falling or losing balance. Uses basic split step."
+        metrics:
+          - "Reaches 7/10 balls hit within 2 steps"
+      - level: intermediate
+        criteria: "Consistent split step on every return. Lateral shuffles to kitchen line without crossing feet."
+        metrics:
+          - "Split step timed within 0.3s of opponent contact on 8/10 shots"
+          - "Reaches kitchen line within 3 steps of return on 8/10 rallies"
+      - level: advanced
+        criteria: "Anticipatory movement — reads opponent cues to preload direction. Efficient recovery from out-of-position."
+        metrics:
+          - "Court coverage: reaches 90% of balls hit within 5 feet"
+          - "Recovers to optimal position within 1 shot 8/10 times"
+      - level: expert
+        criteria: "Proactive court positioning. Disguises movement to create deception. Explosive first step from static position."
+        metrics:
+          - "0–1 unforced movement errors per game set (11 pts)"
+    tags: ["foundation", "athletic", "measurable"]
+
+  - id: "sports/pickleball/serve"
+    title: "Serve"
+    description: >
+      The serve starts every rally. In pickleball, the serve must land in the
+      diagonal service box (cross-court) and clear the kitchen (NVZ). A
+      well-placed serve creates immediate offensive pressure.
+    benchmarks:
+      - level: beginner
+        criteria: "Gets serve in play consistently. Legal underhand motion."
+        metrics:
+          - "70%+ serve in rate (7/10 serves land in)"
+      - level: intermediate
+        criteria: "Directional serve placement — can target wide, middle, or at body. Consistent depth."
+        metrics:
+          - "85%+ serve in rate"
+          - "Hits intended target zone 6/10 serves"
+      - level: advanced
+        criteria: "Varied spin and pace serves (topspin, slice, power). Serve placement disrupts opponent positioning."
+        metrics:
+          - "90%+ serve in rate"
+          - "Spin/pace variation: can execute 3+ distinct serve types on command"
+          - "Forces weak return (short ball or pop-up) on 3/10 serves"
+      - level: expert
+        criteria: "Serve as a strategic weapon. Disguises spin direction. Uses body and grip pressure variation."
+        metrics:
+          - "93%+ serve in rate under match pressure"
+          - "Ace or unreturnable serve rate ≥ 5% at tournament level"
+    tags: ["technical", "offensive", "measurable"]
+
+  - id: "sports/pickleball/return-of-serve"
+    title: "Return of Serve"
+    description: >
+      The return of serve is the receiver's first opportunity to gain court
+      position. A deep return keeps the serving team back while the returning
+      team advances to the kitchen.
+    benchmarks:
+      - level: beginner
+        criteria: "Gets ball back in play cross-court. Does not pop up."
+        metrics:
+          - "65%+ return in rate"
+      - level: intermediate
+        criteria: "Deep returns (land within 3 feet of baseline) to neutralize serving team. Moves to kitchen after return."
+        metrics:
+          - "80%+ return in rate"
+          - "70%+ of returns land in back third of court"
+          - "Reaches kitchen line before serving team's 3rd shot on 7/10 rallies"
+      - level: advanced
+        criteria: "Directional deep returns — targets weak side or gaps. Can attack short serves."
+        metrics:
+          - "88%+ return in rate"
+          - "Returns to intended zone 7/10 times"
+          - "Attacks short serves (below net height) on 80%+ of opportunities"
+      - level: expert
+        criteria: "Return as an offensive weapon. Reads serve spin and adjusts contact point. Creates advantage on point 1."
+        metrics:
+          - "92%+ return in rate under match pressure"
+          - "Forces weak 3rd shot (out of position or pop-up) on 4/10 returns"
+    tags: ["technical", "defensive", "measurable"]
+
+  - id: "sports/pickleball/dinking"
+    title: "Dinking"
+    description: >
+      Dinking is the soft game — low arcing shots exchanged at the kitchen line.
+      The player who wins the dink battle wins most pickleball matches. Dinking
+      requires patience, touch, and strategic placement.
+    benchmarks:
+      - level: beginner
+        criteria: "Hits forehand and backhand dinks that clear the net and land in the kitchen. No hard swings."
+        metrics:
+          - "Sustains cross-court dink rally for 5+ shots without error"
+      - level: intermediate
+        criteria: "Cross-court and straight dinks. Controls depth. Attacks when opportunity arises."
+        metrics:
+          - "Sustains rally for 15+ shots at 75%+ success rate"
+          - "Places dink to intended zone (angle, body, feet) 6/10 times"
+      - level: advanced
+        criteria: "Varied pace and spin dinks. Forces pop-ups through deliberate placement. Resets out-of-position balls into dink."
+        metrics:
+          - "Sustains rally 20+ shots at 85%+ success rate"
+          - "Forces pop-up or error on opponent 3/10 dink sequences"
+          - "Resets speedups back into kitchen 7/10 times"
+      - level: expert
+        criteria: "Dink as a weapon: combines misdirection, tempo changes, and body shots to manufacture winners."
+        metrics:
+          - "Wins 55%+ of extended dink rallies (>20 shots) in tournament play"
+          - "0–1 unforced dink errors per game"
+    tags: ["soft-game", "technical", "patience"]
+
+  - id: "sports/pickleball/third-shot-drop"
+    title: "Third Shot Drop"
+    description: >
+      The third shot drop is the most important shot in pickleball. Hit by the
+      serving team after the return of serve, it is a soft arc shot that lands
+      in the kitchen, forcing the returning team to dink up and allowing the
+      serving team to advance to the kitchen.
+    benchmarks:
+      - level: beginner
+        criteria: "Gets ball into the kitchen at least 40% of the time from mid-court. No hard drives on every third shot."
+        metrics:
+          - "Lands in kitchen on 4/10 third-shot attempts"
+      - level: intermediate
+        criteria: "Consistent drops landing in kitchen from baseline. Moves forward after executing drop."
+        metrics:
+          - "Lands in kitchen on 65%+ of third-shot attempts"
+          - "Advances at least 2 steps toward kitchen after drop on 8/10 attempts"
+      - level: advanced
+        criteria: "Directional drops — attacks wide angles, feet, or seam. Drops under pressure and on the run."
+        metrics:
+          - "75%+ drop success rate (kitchen landing, not attackable) under match conditions"
+          - "Executes drop moving forward at 70%+ success rate"
+      - level: expert
+        criteria: "Drop-drive combination. Opponent cannot read third shot selection. Reaches kitchen in 1–2 shots consistently."
+        metrics:
+          - "80%+ drop quality rating in tournament stats"
+          - "Reaches kitchen within 2 shots on 85%+ of points"
+    tags: ["signature-shot", "offensive", "critical-path"]
+
+  - id: "sports/pickleball/drives"
+    title: "Drives & Power Shots"
+    description: >
+      Drives are hard, flat, low shots designed to create pressure, force errors,
+      or set up finishing opportunities. Used as a change of pace against the soft
+      game.
+    benchmarks:
+      - level: beginner
+        criteria: "Can hit flat drives that clear the net and land in bounds. Basic forehand and backhand."
+        metrics:
+          - "60%+ drive success (in play) from mid-court"
+      - level: intermediate
+        criteria: "Directional drives. Drive-dink combination. Targets opponent's weaker side."
+        metrics:
+          - "75%+ drive in rate from baseline"
+          - "Hits intended target half of court on 6/10 drives"
+      - level: advanced
+        criteria: "Topspin and slice drives. Drive at feet of kitchen players to force pop-ups."
+        metrics:
+          - "82%+ drive in rate under pressure"
+          - "Forces defensive response (pop-up, reset) on 4/10 well-placed drives"
+      - level: expert
+        criteria: "Drives as a calculated weapon — knows when to drive vs. drop. Generates pace that opponents cannot handle."
+        metrics:
+          - "Drive outright winner or forced error rate ≥ 15% at tournament level"
+    tags: ["power", "offensive"]
+
+  - id: "sports/pickleball/overhead-smash"
+    title: "Overhead Smash"
+    description: >
+      The overhead smash finishes high balls (lobs and pop-ups). A reliable
+      overhead ends rallies and discourages opponents from lobbing.
+    benchmarks:
+      - level: beginner
+        criteria: "Makes contact with overhead balls and returns them in bounds."
+        metrics:
+          - "Contacts 6/10 balls above shoulder height"
+      - level: intermediate
+        criteria: "Putaway smashes on comfortable balls. Tracks lobs and sets up."
+        metrics:
+          - "Puts away 65%+ of smashable balls (clear pop-ups, short lobs)"
+      - level: advanced
+        criteria: "Jump smashes on deep lobs. Angles smashes away from opponents."
+        metrics:
+          - "Puts away 80%+ of attackable overheads"
+          - "Executes jump smash within 2 steps on retreating lob"
+      - level: expert
+        criteria: "Overhead as a finishing tool in any position. Can angle, topspin, or slice to create unreturnable placement."
+        metrics:
+          - "0–1 overhead errors per game from baseline lob"
+    tags: ["finishing", "power"]
+
+  - id: "sports/pickleball/kitchen-play"
+    title: "Kitchen/NVZ Play"
+    description: >
+      Advanced play at the kitchen line (Non-Volley Zone) — the most contested
+      real estate in pickleball. Includes volleying, Erne shots, and around-the-
+      post (ATP) plays.
+    benchmarks:
+      - level: beginner
+        criteria: "Stays at kitchen line. Does not step into the kitchen on volleys. Exchanges basic volleys."
+        metrics:
+          - "0 foot faults per game (no NVZ violations)"
+          - "Returns 5+ consecutive kitchen volleys without error"
+      - level: intermediate
+        criteria: "Two-handed forehand and backhand volleys. Speeds up when opportunity appears. Controlled soft hands."
+        metrics:
+          - "Wins 50%+ of fast exchange sequences at kitchen"
+          - "Speedup results in winner or forced error 3/10 times"
+      - level: advanced
+        criteria: "Erne shot execution. Reads and resets attacks back into kitchen. Controls pace in transition."
+        metrics:
+          - "Executes Erne on 3+ opportunities per match"
+          - "Resets speedups from kitchen into kitchen 75%+ of the time"
+      - level: expert
+        criteria: "ATP shots. Creates angles opponents cannot defend. Reads opponent tendencies to preload positions."
+        metrics:
+          - "Executes ATP when presented 70%+ of the time"
+          - "Kitchen line winning percentage ≥ 60% in extended rallies"
+    tags: ["advanced", "NVZ", "soft-game"]
+
+  - id: "sports/pickleball/strategy"
+    title: "Strategy & Game Sense"
+    description: >
+      The cognitive layer of pickleball — understanding when to attack, when to
+      reset, how to exploit opponents, and how to manage a match score. Integrates
+      all physical skills into winning decisions.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows the rules, scoring, and basic pattern: serve → get to kitchen → dink."
+        metrics:
+          - "Correctly identifies when to play soft vs. hard 5/10 situations"
+      - level: intermediate
+        criteria: "Stacks and poaches in doubles. Targets weaker opponent. Recognizes when to attack vs. reset."
+        metrics:
+          - "Stacks correctly in 80%+ of formations"
+          - "Identifies and exploits weaker opponent in 70%+ of points"
+      - level: advanced
+        criteria: "Pattern play: sets up winners 3 shots ahead. Adjusts strategy mid-match based on opponent tendencies."
+        metrics:
+          - "Uses pattern sequences (e.g., dink to body → speedup to hip) on 5+ occasions per match"
+          - "Adapts strategy after losing 3+ consecutive points 90%+ of games"
+      - level: expert
+        criteria: "Complete game management: controls tempo, exploits physical and mental gaps, manages score pressure."
+        metrics:
+          - "Win rate from tied game at 9-9 ≥ 55% in tournament play"
+          - "Converts 4th-game situations (down 2-3 pts) at above baseline rate"
+    tags: ["cognitive", "strategy", "advanced"]
+
+  - id: "sports/pickleball/doubles-communication"
+    title: "Doubles Communication & Poaching"
+    description: >
+      Doubles-specific skills: calling mine/yours, poaching volleys, stacking
+      formations, and playing as a cohesive unit rather than two individuals.
+    benchmarks:
+      - level: beginner
+        criteria: "Calls 'mine' and 'yours' on balls hit to the middle. Stays on own side of court."
+        metrics:
+          - "0 ball collisions per game with partner"
+      - level: intermediate
+        criteria: "Stacks consistently. Poaches when partner is pulled wide. Communicates before each point."
+        metrics:
+          - "Successful poach (winner or forced error) on 2+ poach attempts per game"
+          - "Correct stack execution on 85%+ of service points"
+      - level: advanced
+        criteria: "Signals poach intentions with hand signals. Creates overload patterns with partner. Seamless side switching."
+        metrics:
+          - "Partner agreement on poach 90%+ of poach attempts (no confusion)"
+      - level: expert
+        criteria: "Orchestrates team movement: dictates who takes what ball based on matchup advantages. Creates geometric traps."
+        metrics:
+          - "Partnership win rate correlation: above-average performance vs. higher-rated pairs"
+    tags: ["doubles", "teamwork", "communication"]
+
+relationships:
+  - source: "sports/pickleball/footwork"
+    target: "sports/pickleball/serve"
+    type: "enables"
+    note: "Stable base and weight transfer are required for a reliable serve"
+
+  - source: "sports/pickleball/footwork"
+    target: "sports/pickleball/dinking"
+    type: "enables"
+    note: "Getting to the kitchen and balancing at the line is prerequisite to dinking"
+
+  - source: "sports/pickleball/footwork"
+    target: "sports/pickleball/drives"
+    type: "enables"
+    note: "Generating power from the ground requires proper footwork"
+
+  - source: "sports/pickleball/footwork"
+    target: "sports/pickleball/return-of-serve"
+    type: "enables"
+    note: "Split step and court positioning enable effective returns"
+
+  - source: "sports/pickleball/serve"
+    target: "sports/pickleball/third-shot-drop"
+    type: "requires"
+    note: "The third shot drop is only executed by the serving team — requires reliable serve first"
+
+  - source: "sports/pickleball/return-of-serve"
+    target: "sports/pickleball/third-shot-drop"
+    type: "complementary"
+    note: "Understanding returns helps the serving team anticipate where to drop"
+
+  - source: "sports/pickleball/dinking"
+    target: "sports/pickleball/kitchen-play"
+    type: "requires"
+    note: "Kitchen/NVZ play is advanced dinking — you must dink before you can Erne"
+
+  - source: "sports/pickleball/drives"
+    target: "sports/pickleball/overhead-smash"
+    type: "enables"
+    note: "Drive mechanics (contact point, swing path) transfer to overheads"
+
+  - source: "sports/pickleball/kitchen-play"
+    target: "sports/pickleball/strategy"
+    type: "requires"
+    note: "Strategic game sense is only unlocked once the full shot arsenal is available"
+
+  - source: "sports/pickleball/third-shot-drop"
+    target: "sports/pickleball/strategy"
+    type: "requires"
+    note: "Third shot drop is the foundational offensive pattern that strategy builds on"
+
+  - source: "sports/pickleball/dinking"
+    target: "sports/pickleball/doubles-communication"
+    type: "enables"
+    note: "Dink rallies are where doubles coordination is most tested"
+
+  - source: "sports/pickleball/strategy"
+    target: "sports/pickleball/doubles-communication"
+    type: "component-of"
+    note: "Doubles communication is a specialization of overall game strategy"

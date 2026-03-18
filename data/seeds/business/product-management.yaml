@@ -1,0 +1,485 @@
+# OpenSkillTree — Seed Skill Tree: Product Management
+#
+# Domain:  Business / Product / Product Management
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: Industry-standard PM leveling frameworks
+# (Reforge, Lenny's Newsletter, and common PM level definitions)
+#   beginner     = Associate PM / new PM (0–2 years)
+#   intermediate = PM (2–5 years), executes independently on a product area
+#   advanced     = Senior PM / PM Lead (5–8 years), owns full product strategy
+#   expert       = Principal PM / Director of Product / CPO (8+ years),
+#                  shapes org and business strategy through product
+
+tree:
+  id: "business/product-management"
+  title: "Product Management"
+  description: >
+    A comprehensive skill tree for product management — the discipline of defining
+    what to build, why to build it, and ensuring it delivers real value. Covers
+    user research, problem definition, prioritization, requirements writing,
+    metrics, stakeholder management, roadmapping, go-to-market, and the
+    cross-functional leadership that ties it all together.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  - id: "business/product-management/user-research"
+    title: "User Research"
+    description: >
+      The practice of systematically learning from users — their behaviors, needs,
+      goals, and pain points — to inform what to build and why. The foundation of
+      user-centered product thinking.
+    benchmarks:
+      - level: beginner
+        criteria: "Can conduct a basic user interview using a pre-written guide. Summarizes findings."
+        metrics:
+          - "Conducts 5+ user interviews per quarter"
+          - "Interview notes captured and shared within 24h"
+      - level: intermediate
+        criteria: >
+          Synthesizes multiple research sessions into actionable insights. Chooses
+          appropriate research method (interview, survey, usability test, diary study)
+          for the question at hand.
+        metrics:
+          - "Research synthesis docs with ≥3 actionable insights per study"
+          - "Uses ≥2 distinct research methods per quarter"
+          - "Research directly referenced in ≥50% of prioritization decisions"
+      - level: advanced
+        criteria: >
+          Designs mixed-methods research programs. Recruits participants from
+          scratch. Combines quant signals (analytics, surveys at scale) with
+          qual depth. Produces research that changes product direction.
+        metrics:
+          - "At least 1 research finding per quarter that changes a roadmap decision"
+          - "Maintains ongoing research calendar (continuous discovery, not just project-based)"
+      - level: expert
+        criteria: >
+          Builds and scales a research practice. Defines research standards and
+          methodology for an org. Research infrastructure enables PMs and designers
+          to run their own studies with quality guardrails.
+        metrics:
+          - "Research ops: ≥80% of PMs on the team run at least 1 self-serve study/quarter"
+          - "User panel maintained with ≥100 participants available for rapid recruitment"
+    tags: ["discovery", "qualitative", "foundation"]
+
+  - id: "business/product-management/problem-definition"
+    title: "Problem Definition"
+    description: >
+      The ability to clearly articulate the problem being solved — for users, for
+      the business, and in the context of the opportunity. Poorly defined problems
+      produce well-executed solutions to the wrong question.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes a clear problem statement that identifies who is affected and what they can't do today."
+        metrics:
+          - "Problem statement reviewed and approved by engineering lead on first pass 60%+ of the time"
+      - level: intermediate
+        criteria: >
+          Frames problems in terms of user outcomes and business impact. Separates
+          the problem from proposed solutions. Uses 5 Whys or root cause analysis.
+        metrics:
+          - "Problem brief includes: user persona, job-to-be-done, current workaround, business impact estimate"
+          - "Team agrees problem framing is correct before design begins on 85%+ of projects"
+      - level: advanced
+        criteria: >
+          Identifies non-obvious problems through data analysis and research synthesis.
+          Can reframe problems from implementation requests to outcome questions.
+          Kills solutions looking for problems.
+        metrics:
+          - "At least 2 instances per year where problem reframing saves significant eng time or improves outcome"
+      - level: expert
+        criteria: >
+          Recognizes systemic and strategic problems before they surface as user
+          pain. Shapes org thinking about what problems are worth solving. Defines
+          the problem portfolio for a whole product area or company.
+        metrics:
+          - "Problem space defined and ratified at exec level at least quarterly"
+    tags: ["discovery", "framing", "foundation"]
+
+  - id: "business/product-management/requirements-writing"
+    title: "Requirements Writing"
+    description: >
+      Translating user needs and business goals into clear, buildable specifications
+      — user stories, PRDs, technical briefs — that engineering and design can
+      act on without ambiguity.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes user stories in the 'As a / I want / So that' format with basic acceptance criteria."
+        metrics:
+          - "≥90% of stories have at least 3 acceptance criteria"
+          - "Engineering starts work without spec clarification questions on 60%+ of tickets"
+      - level: intermediate
+        criteria: >
+          Writes full PRDs covering context, success metrics, user stories, edge
+          cases, and non-goals. Anticipates implementation questions before they arise.
+        metrics:
+          - "Engineering starts sprint with ≤1 blocking PRD question per feature"
+          - "Spec covers ≥80% of edge cases discovered during build phase"
+      - level: advanced
+        criteria: >
+          Writes API-level specs and participates in system design reviews.
+          Requirements trace from user need to technical constraint. Documents
+          assumptions and open questions explicitly.
+        metrics:
+          - "Rework due to spec gaps: ≤5% of estimated eng effort per feature"
+          - "API specs reviewed and accepted by senior engineer on first pass 80%+ of time"
+      - level: expert
+        criteria: >
+          Specs drive zero ambiguity: engineering, design, data, and legal all
+          reference the same document as source of truth. Coaches other PMs on
+          spec quality. Requirements process is a team asset.
+        metrics:
+          - "Post-mortem root cause of spec gap: <2 per year"
+          - "Spec template adopted org-wide"
+    tags: ["execution", "communication", "technical"]
+
+  - id: "business/product-management/prioritization"
+    title: "Prioritization"
+    description: >
+      The discipline of deciding what to build and — critically — what NOT to
+      build. Effective prioritization aligns work to impact and makes tradeoffs
+      explicit.
+    benchmarks:
+      - level: beginner
+        criteria: "Applies a structured framework (RICE, ICE, MoSCoW) to rank backlog items."
+        metrics:
+          - "All backlog items have RICE or equivalent scores before sprint planning"
+      - level: intermediate
+        criteria: >
+          Adapts frameworks to context. Incorporates qualitative signals (user
+          interviews, support trends) alongside quant data. Makes tradeoffs
+          visible to stakeholders.
+        metrics:
+          - "Prioritization decisions have written rationale referencing user and business data"
+          - "Stakeholders disagree with priority < 20% of the time after explanation"
+      - level: advanced
+        criteria: >
+          Builds custom prioritization models for the team's specific context.
+          Maintains a decision log. Uses opportunity cost reasoning. Can defend
+          cuts under pressure with data.
+        metrics:
+          - "Priority changes after sprint planning: ≤10% of committed scope per sprint"
+          - "Opportunity cost documented for ≥50% of deprioritized items"
+      - level: expert
+        criteria: >
+          Prioritization as a strategic system: connects roadmap items to company
+          OKRs with explicit impact hypotheses. Teaches prioritization frameworks
+          to new PMs. Org trust in PM prioritization is measurable.
+        metrics:
+          - "CEO/exec override rate on PM prioritization decisions: ≤10%"
+          - "OKR coverage: ≥90% of quarterly roadmap items trace to a company OKR"
+    tags: ["execution", "strategy", "decision-making"]
+
+  - id: "business/product-management/metrics-analytics"
+    title: "Metrics & Analytics"
+    description: >
+      Defining, measuring, and analyzing the numbers that tell you whether your
+      product is working. Includes KPI definition, instrumentation, experiment
+      design, and using data to drive decisions.
+    benchmarks:
+      - level: beginner
+        criteria: "Defines KPIs for features. Reads dashboards and reports on core metrics."
+        metrics:
+          - "Every shipped feature has ≥1 success metric defined before launch"
+          - "Weekly metrics review completed within 2 days of week end"
+      - level: intermediate
+        criteria: >
+          Instruments features end-to-end. Writes SQL or uses analytics tools to
+          pull custom queries. Interprets A/B test results correctly (significance,
+          confidence intervals).
+        metrics:
+          - "Launches analytics spec with feature PR on 90%+ of new features"
+          - "Can explain and defend A/B test design to engineering lead"
+      - level: advanced
+        criteria: >
+          Designs multi-variate experiments. Identifies leading indicators and
+          lagging metrics. Catches instrumentation bugs before they corrupt data.
+          Uses funnel and cohort analysis to diagnose drop-offs.
+        metrics:
+          - "Experiment results reviewed and documented within 5 days of end date"
+          - "Identified ≥2 instrumentation bugs before data was used in a major decision"
+      - level: expert
+        criteria: >
+          Defines a metrics system (North Star, input metrics, guardrails) for the
+          product area. Builds self-serve analytics culture. Data quality is a
+          shared team standard.
+        metrics:
+          - "North Star metric + 3–5 input metrics defined and ratified with leadership"
+          - "≥70% of product decisions reference quantitative data in rationale"
+    tags: ["data", "experimentation", "measurement"]
+
+  - id: "business/product-management/stakeholder-management"
+    title: "Stakeholder Management"
+    description: >
+      The ability to align, communicate with, and influence the people whose
+      support (or opposition) determines what gets built. Includes executives,
+      engineering, sales, marketing, legal, and external partners.
+    benchmarks:
+      - level: beginner
+        criteria: "Sends regular status updates. Responds to stakeholder questions within 24 hours."
+        metrics:
+          - "Weekly product status update sent on time 90%+ of weeks"
+      - level: intermediate
+        criteria: >
+          Proactively manages competing priorities. Navigates pushback with data
+          and reasoning. Knows when to escalate vs. resolve in own lane.
+        metrics:
+          - "Escalated conflicts resolved at PM level (no exec escalation) ≥70% of the time"
+          - "Stakeholder satisfaction survey: ≥7/10 average among key stakeholders"
+      - level: advanced
+        criteria: >
+          Aligns C-suite on roadmap with minimal pushback. Builds trust through
+          predictable delivery and transparent communication. Manages disagreements
+          without damaging relationships.
+        metrics:
+          - "Exec roadmap approval on first review 75%+ of the time"
+          - "0 stakeholder surprises on major feature decisions per quarter"
+      - level: expert
+        criteria: >
+          Influences organizational direction through stakeholder alignment.
+          Creates a culture of shared ownership between product, engineering,
+          and business stakeholders. Coaches PMs on influence without authority.
+        metrics:
+          - "Cross-functional NPS (how other teams rate working with product): ≥8/10"
+    tags: ["leadership", "communication", "influence"]
+
+  - id: "business/product-management/roadmap-planning"
+    title: "Roadmap Planning"
+    description: >
+      The practice of defining and communicating a prioritized sequence of work
+      across time horizons — from the next sprint to the next year. Roadmaps
+      are plans, not contracts.
+    benchmarks:
+      - level: beginner
+        criteria: "Maintains a prioritized backlog. Can articulate the next 4 weeks of work."
+        metrics:
+          - "Backlog groomed with ≥2 sprints of ready stories at all times"
+      - level: intermediate
+        criteria: "Quarterly roadmap with themes and priorities. Communicates tradeoffs to team and stakeholders."
+        metrics:
+          - "Quarterly roadmap delivered to stakeholders ≥2 weeks before quarter start"
+          - "Roadmap vs. delivered: ≥70% of committed Q items shipped in quarter"
+      - level: advanced
+        criteria: >
+          Annual roadmap tied to company strategy. Separates 'now / next / later'
+          horizons clearly. Updates roadmap in response to learning without losing
+          stakeholder confidence.
+        metrics:
+          - "Annual roadmap includes confidence level per initiative (high/medium/speculative)"
+          - "Roadmap change log maintained: every change has written rationale"
+      - level: expert
+        criteria: >
+          Multi-year product vision translated into a rolling roadmap. Roadmap
+          is a tool for organizational alignment, not just a planning artifact.
+          Balances innovation bets, platform health, and customer requests.
+        metrics:
+          - "Strategic initiatives (3–12 month bets) represent ≥20% of roadmap capacity"
+          - "Roadmap reviewed and endorsed at board or exec level quarterly"
+    tags: ["strategy", "planning", "communication"]
+
+  - id: "business/product-management/go-to-market"
+    title: "Go-to-Market"
+    description: >
+      The ability to plan and execute feature and product launches — coordinating
+      with marketing, sales, customer success, and communications to drive
+      adoption and business impact.
+    benchmarks:
+      - level: beginner
+        criteria: "Supports launch coordination. Writes feature copy and internal release notes."
+        metrics:
+          - "Release notes completed 5 days before ship date on 90%+ of launches"
+      - level: intermediate
+        criteria: >
+          Owns GTM strategy for a feature: defines launch tier, success metrics,
+          coordinates marketing and enablement, and owns post-launch review.
+        metrics:
+          - "GTM plan delivered to cross-functional stakeholders ≥3 weeks before launch"
+          - "Post-launch review completed within 4 weeks of launch date"
+      - level: advanced
+        criteria: >
+          Drives cross-functional launches with multiple workstreams (sales, marketing,
+          CS, legal, support). Manages launch risk with rollout strategy and kill
+          switches. Launch retrospective produces actionable improvements.
+        metrics:
+          - "0 critical launch blockers discovered < 72 hours before launch"
+          - "Launch objectives achieved (vs. defined success metrics) on 70%+ of major launches"
+      - level: expert
+        criteria: >
+          GTM as a strategic lever: launch sequencing creates market moments and
+          category definition. Builds repeatable launch playbooks adopted org-wide.
+          Launch metrics feed into next quarter's roadmap.
+        metrics:
+          - "Major launches covered by external press or analyst commentary ≥50% of the time"
+          - "Launch playbook used by ≥3 other PMs in the org"
+    tags: ["execution", "cross-functional", "launch"]
+
+  - id: "business/product-management/product-discovery"
+    title: "Product Discovery"
+    description: >
+      The structured process of validating ideas before committing engineering
+      resources — using prototypes, experiments, and user feedback to de-risk
+      bets before they become builds.
+    benchmarks:
+      - level: beginner
+        criteria: "Tests assumptions with lo-fi prototypes (Figma mock, landing page, Wizard of Oz)."
+        metrics:
+          - "≥1 prototype test per feature before engineering starts"
+      - level: intermediate
+        criteria: >
+          Systematic discovery sprints: clearly defined assumptions, test methods,
+          and decision criteria before the test runs. Kills ideas that don't
+          validate without team frustration.
+        metrics:
+          - "Assumption log maintained: ≥5 assumptions documented and tested per quarter"
+          - "Discovery kill rate ≥20% (some ideas should fail validation)"
+      - level: advanced
+        criteria: >
+          Runs continuous discovery: ongoing touchpoints with users, fast
+          prototype-to-insight cycles, integrates discovery into team rhythm.
+        metrics:
+          - "User touchpoints: ≥4 sessions per week across team"
+          - "Time from idea to first user signal: ≤5 business days"
+      - level: expert
+        criteria: >
+          Builds a discovery culture: entire product team (eng, design) participates
+          in discovery. Discovery system is a competitive advantage. Mentors
+          other PMs on discovery methods.
+        metrics:
+          - "≥50% of discovery sessions include an engineer or designer"
+          - "Ideas killed in discovery vs. killed in production: ratio ≥3:1"
+    tags: ["discovery", "validation", "risk-reduction"]
+
+  - id: "business/product-management/cross-functional-leadership"
+    title: "Cross-functional Leadership"
+    description: >
+      The ability to lead without authority — aligning engineering, design, data,
+      marketing, and business stakeholders to move in the same direction. This is
+      the core leadership skill of a senior PM.
+    benchmarks:
+      - level: beginner
+        criteria: "Collaborates well with immediate pod (engineer, designer). Runs effective sprint ceremonies."
+        metrics:
+          - "Sprint retrospective action items completed ≥80% of the time"
+      - level: intermediate
+        criteria: >
+          Drives team-level delivery. Unblocks cross-functional dependencies.
+          Runs effective working groups. Is the tie-breaker when the team is
+          stuck on a product decision.
+        metrics:
+          - "Sprint velocity: ≥80% of committed points delivered per sprint"
+          - "Cross-team dependencies resolved at PM level ≥60% of the time"
+      - level: advanced
+        criteria: >
+          Leads multi-team programs across multiple product areas. Sets team
+          norms and culture. Mentors junior PMs. Earns engineering trust through
+          technical credibility and respect.
+        metrics:
+          - "Engineering team eNPS for PM partnership: ≥8/10"
+          - "≥1 junior PM mentored with documented career growth"
+      - level: expert
+        criteria: >
+          Shapes product culture and process at org scale. Hiring, team design,
+          and norms are PM-driven. The product team is a talent magnet.
+        metrics:
+          - "Team attrition rate below engineering org average"
+          - "At least 2 PMs promoted to next level under mentorship per year"
+    tags: ["leadership", "people", "delivery"]
+
+  - id: "business/product-management/product-strategy"
+    title: "Product Strategy"
+    description: >
+      Connecting the company's mission and market opportunity to a coherent,
+      differentiated product vision — and translating that vision into a plan
+      that the org can execute.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the company's product strategy. Can explain how their area contributes to it."
+        metrics:
+          - "Can articulate product strategy in 2 minutes without referring to notes"
+      - level: intermediate
+        criteria: >
+          Writes and defends a product area strategy document (vision, bets,
+          success metrics). Aligns team to strategy through OKRs and roadmap.
+        metrics:
+          - "Product area strategy doc reviewed and approved by VP/CPO"
+          - "Team OKRs trace to strategy themes on 100% of objectives"
+      - level: advanced
+        criteria: >
+          Defines differentiated positioning for the product. Makes strategic
+          bets with explicit hypotheses. Adjusts strategy based on market signals
+          faster than competitors.
+        metrics:
+          - "Competitive win rate improves ≥10pp in segments where strategy changes are applied"
+          - "Strategy reviews held quarterly with exec alignment maintained"
+      - level: expert
+        criteria: >
+          Product strategy is company strategy. Creates category-defining product
+          visions that attract investors, talent, and customers. Teaches strategy
+          frameworks that scale to the whole product org.
+        metrics:
+          - "Product vision referenced in external company communications (pitch deck, press)"
+          - "Strategy framework adopted by ≥3 other product leads"
+    tags: ["strategy", "vision", "leadership"]
+
+relationships:
+  - source: "business/product-management/user-research"
+    target: "business/product-management/problem-definition"
+    type: "requires"
+    note: "Problem definition requires real user evidence, not just assumption"
+
+  - source: "business/product-management/problem-definition"
+    target: "business/product-management/requirements-writing"
+    type: "requires"
+    note: "You cannot write good requirements without a well-defined problem"
+
+  - source: "business/product-management/requirements-writing"
+    target: "business/product-management/prioritization"
+    type: "enables"
+    note: "Sizing and scoping requirements is prerequisite to meaningful prioritization"
+
+  - source: "business/product-management/prioritization"
+    target: "business/product-management/roadmap-planning"
+    type: "requires"
+    note: "A roadmap is a sequenced, time-boxed prioritization"
+
+  - source: "business/product-management/metrics-analytics"
+    target: "business/product-management/prioritization"
+    type: "enables"
+    note: "Data-driven prioritization requires analytics competence"
+
+  - source: "business/product-management/metrics-analytics"
+    target: "business/product-management/product-discovery"
+    type: "enables"
+    note: "Quantitative signals (analytics) complement qualitative discovery"
+
+  - source: "business/product-management/user-research"
+    target: "business/product-management/product-discovery"
+    type: "requires"
+    note: "Discovery is applied user research — same muscle, different cadence"
+
+  - source: "business/product-management/requirements-writing"
+    target: "business/product-management/go-to-market"
+    type: "enables"
+    note: "Clear requirements enable effective GTM planning"
+
+  - source: "business/product-management/stakeholder-management"
+    target: "business/product-management/cross-functional-leadership"
+    type: "requires"
+    note: "Leadership across functions requires stakeholder alignment as a foundation"
+
+  - source: "business/product-management/roadmap-planning"
+    target: "business/product-management/product-strategy"
+    type: "requires"
+    note: "Roadmapping is the execution layer of strategy"
+
+  - source: "business/product-management/product-discovery"
+    target: "business/product-management/product-strategy"
+    type: "enables"
+    note: "Discovery creates the evidence base that de-risks strategic bets"
+
+  - source: "business/product-management/cross-functional-leadership"
+    target: "business/product-management/product-strategy"
+    type: "enables"
+    note: "Strategy requires organizational credibility and followership to execute"
