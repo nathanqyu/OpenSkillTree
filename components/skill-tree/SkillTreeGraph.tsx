@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect } from "react";
+import { useEffect, useCallback } from "react";
 import ReactFlow, {
   ReactFlowProvider,
   Background,
@@ -8,6 +8,7 @@ import ReactFlow, {
   MiniMap,
   useNodesState,
   useEdgesState,
+  useReactFlow,
   Handle,
   Position,
   type Node,
@@ -15,7 +16,13 @@ import ReactFlow, {
   type NodeProps,
 } from "reactflow";
 import "reactflow/dist/style.css";
-import type { SkillNode, SkillEdge, RelationshipType } from "@/types/skill-tree";
+import type {
+  SkillNode,
+  SkillEdge,
+  RelationshipType,
+  EphemeralProgressMap,
+  UserProgressStatus,
+} from "@/types/skill-tree";
 
 const NODE_WIDTH = 200;
 const NODE_HEIGHT = 76;
@@ -28,6 +35,14 @@ const EDGE_COLORS: Record<RelationshipType, string> = {
   "variant-of": "#f59e0b",
 };
 
+const EDGE_LEGEND: { type: RelationshipType; label: string; color: string }[] = [
+  { type: "requires", label: "Requires", color: "#ef4444" },
+  { type: "enables", label: "Enables", color: "#22c55e" },
+  { type: "component-of", label: "Component of", color: "#3b82f6" },
+  { type: "complementary", label: "Complementary", color: "#a855f7" },
+  { type: "variant-of", label: "Variant of", color: "#f59e0b" },
+];
+
 // ---------------------------------------------------------------------------
 // Custom node
 // ---------------------------------------------------------------------------
@@ -36,29 +51,65 @@ interface SkillNodeData {
   label: string;
   benchmarkCount: number;
   pathId: string;
+  nodeId: string;
+  isSelected: boolean;
+  progressStatus: UserProgressStatus;
+  onNodeClick: (nodeId: string) => void;
 }
 
+const PROGRESS_RING: Record<UserProgressStatus, string> = {
+  locked: "",
+  in_progress: "ring-2 ring-blue-400 ring-offset-1",
+  completed: "ring-2 ring-emerald-500 ring-offset-1",
+};
+
+const PROGRESS_BG: Record<UserProgressStatus, string> = {
+  locked: "bg-white dark:bg-zinc-900",
+  in_progress: "bg-blue-50 dark:bg-blue-950/30",
+  completed: "bg-emerald-50 dark:bg-emerald-950/30",
+};
+
 function SkillNodeCard({ data }: NodeProps<SkillNodeData>) {
+  const selectedCls = data.isSelected
+    ? "border-2 border-zinc-800 dark:border-zinc-200 shadow-md"
+    : "border border-zinc-200 dark:border-zinc-700 shadow-sm hover:border-zinc-400 dark:hover:border-zinc-500";
+
   return (
     <div
-      className="rounded-lg border border-zinc-200 bg-white px-3 py-2.5 shadow-sm cursor-pointer hover:border-zinc-400 dark:border-zinc-700 dark:bg-zinc-900 dark:hover:border-zinc-500 transition-colors"
+      className={[
+        "rounded-lg px-3 py-2.5 cursor-pointer transition-all",
+        selectedCls,
+        PROGRESS_RING[data.progressStatus],
+        PROGRESS_BG[data.progressStatus],
+      ].join(" ")}
       style={{ width: NODE_WIDTH }}
-      onClick={() => console.log("node clicked:", data.pathId, data)}
+      onClick={() => data.onNodeClick(data.nodeId)}
     >
       <Handle type="target" position={Position.Top} style={{ background: "#a1a1aa" }} />
       <p className="text-xs font-semibold text-zinc-900 dark:text-zinc-50 line-clamp-2 leading-tight">
         {data.label}
       </p>
       <div className="mt-2 flex items-center gap-1.5">
-        {data.benchmarkCount > 0 ? (
-          <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
-            {data.benchmarkCount} levels
-          </span>
-        ) : (
-          <span className="rounded bg-amber-50 px-1.5 py-0.5 text-[10px] text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
-            No benchmarks
+        {data.progressStatus === "completed" && (
+          <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
+            ✓ Mastered
           </span>
         )}
+        {data.progressStatus === "in_progress" && (
+          <span className="rounded bg-blue-100 px-1.5 py-0.5 text-[10px] text-blue-700 dark:bg-blue-900/40 dark:text-blue-400">
+            Learning
+          </span>
+        )}
+        {data.progressStatus === "locked" &&
+          (data.benchmarkCount > 0 ? (
+            <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
+              {data.benchmarkCount} levels
+            </span>
+          ) : (
+            <span className="rounded bg-amber-50 px-1.5 py-0.5 text-[10px] text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
+              No benchmarks
+            </span>
+          ))}
       </div>
       <Handle type="source" position={Position.Bottom} style={{ background: "#a1a1aa" }} />
     </div>
@@ -75,7 +126,6 @@ async function computeElkLayout(
   skillNodes: SkillNode[],
   skillEdges: SkillEdge[]
 ): Promise<{ nodes: Node[]; edges: Edge[] }> {
-  // Dynamic import to avoid SSR — elk.bundled.js runs on main thread (fine for <200 nodes)
   const ELK = (await import("elkjs/lib/elk.bundled.js")).default;
   const elk = new ELK();
 
@@ -111,6 +161,10 @@ async function computeElkLayout(
         label: skillNode.title,
         benchmarkCount: skillNode.benchmarks.length,
         pathId: skillNode.pathId,
+        nodeId: skillNode.id,
+        isSelected: false,
+        progressStatus: "locked" as UserProgressStatus,
+        onNodeClick: () => {},
       } satisfies SkillNodeData,
       type: "skillNode",
     };
@@ -131,18 +185,63 @@ async function computeElkLayout(
 }
 
 // ---------------------------------------------------------------------------
-// Inner graph (needs to be inside ReactFlowProvider for useNodesState to work)
+// Edge color legend overlay
+// ---------------------------------------------------------------------------
+
+function EdgeLegend({
+  activeTypes,
+}: {
+  activeTypes: Set<RelationshipType>;
+}) {
+  const visible = EDGE_LEGEND.filter((l) => activeTypes.has(l.type));
+  if (visible.length === 0) return null;
+
+  return (
+    <div className="absolute bottom-8 left-2 z-10 rounded-lg border border-zinc-200 bg-white/90 px-3 py-2 shadow-sm backdrop-blur-sm dark:border-zinc-700 dark:bg-zinc-900/90">
+      <p className="mb-1.5 text-[10px] font-semibold uppercase tracking-wider text-zinc-400">
+        Edge types
+      </p>
+      <div className="space-y-1">
+        {visible.map((l) => (
+          <div key={l.type} className="flex items-center gap-1.5">
+            <span
+              className="inline-block h-0.5 w-4 rounded"
+              style={{ backgroundColor: l.color }}
+            />
+            <span className="text-[10px] text-zinc-600 dark:text-zinc-400">
+              {l.label}
+            </span>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// ---------------------------------------------------------------------------
+// Inner graph
 // ---------------------------------------------------------------------------
 
 interface SkillTreeGraphInnerProps {
   skillNodes: SkillNode[];
   skillEdges: SkillEdge[];
+  selectedNodeId: string | null;
+  progressMap: EphemeralProgressMap;
+  onNodeClick: (nodeId: string) => void;
 }
 
-function SkillTreeGraphInner({ skillNodes, skillEdges }: SkillTreeGraphInnerProps) {
+function SkillTreeGraphInner({
+  skillNodes,
+  skillEdges,
+  selectedNodeId,
+  progressMap,
+  onNodeClick,
+}: SkillTreeGraphInnerProps) {
   const [nodes, setNodes, onNodesChange] = useNodesState([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
+  const { setCenter } = useReactFlow();
 
+  // Initial layout
   useEffect(() => {
     computeElkLayout(skillNodes, skillEdges).then(({ nodes: rfNodes, edges: rfEdges }) => {
       setNodes(rfNodes);
@@ -150,22 +249,54 @@ function SkillTreeGraphInner({ skillNodes, skillEdges }: SkillTreeGraphInnerProp
     });
   }, [skillNodes, skillEdges, setNodes, setEdges]);
 
+  // Sync selected + progress state into node data without re-running layout
+  useEffect(() => {
+    setNodes((prev) =>
+      prev.map((n) => ({
+        ...n,
+        data: {
+          ...n.data,
+          isSelected: n.id === selectedNodeId,
+          progressStatus: (progressMap[n.id] ?? "locked") as UserProgressStatus,
+          onNodeClick,
+        },
+      }))
+    );
+  }, [selectedNodeId, progressMap, onNodeClick, setNodes]);
+
+  // Re-center on selected node (300ms animation)
+  useEffect(() => {
+    if (!selectedNodeId) return;
+    const node = nodes.find((n) => n.id === selectedNodeId);
+    if (!node) return;
+    const cx = node.position.x + NODE_WIDTH / 2;
+    const cy = node.position.y + NODE_HEIGHT / 2;
+    setCenter(cx, cy, { duration: 300, zoom: 1 });
+  }, [selectedNodeId, nodes, setCenter]);
+
+  const activeEdgeTypes = new Set(
+    skillEdges.map((e) => e.relationshipType)
+  ) as Set<RelationshipType>;
+
   return (
-    <ReactFlow
-      nodes={nodes}
-      edges={edges}
-      onNodesChange={onNodesChange}
-      onEdgesChange={onEdgesChange}
-      nodeTypes={nodeTypes}
-      fitView
-      fitViewOptions={{ padding: 0.2 }}
-      minZoom={0.25}
-      maxZoom={2}
-    >
-      <Background color="#d4d4d8" gap={20} />
-      <Controls />
-      <MiniMap nodeColor="#71717a" maskColor="rgba(244,244,245,0.7)" />
-    </ReactFlow>
+    <div className="relative h-full w-full">
+      <ReactFlow
+        nodes={nodes}
+        edges={edges}
+        onNodesChange={onNodesChange}
+        onEdgesChange={onEdgesChange}
+        nodeTypes={nodeTypes}
+        fitView
+        fitViewOptions={{ padding: 0.2 }}
+        minZoom={0.25}
+        maxZoom={2}
+      >
+        <Background color="#d4d4d8" gap={20} />
+        <Controls />
+        <MiniMap nodeColor="#71717a" maskColor="rgba(244,244,245,0.7)" />
+      </ReactFlow>
+      <EdgeLegend activeTypes={activeEdgeTypes} />
+    </div>
   );
 }
 
@@ -176,16 +307,31 @@ function SkillTreeGraphInner({ skillNodes, skillEdges }: SkillTreeGraphInnerProp
 export interface SkillTreeGraphProps {
   nodes: SkillNode[];
   edges: SkillEdge[];
+  selectedNodeId: string | null;
+  progressMap: EphemeralProgressMap;
+  onNodeClick: (nodeId: string) => void;
 }
 
-export function SkillTreeGraph({ nodes, edges }: SkillTreeGraphProps) {
+export function SkillTreeGraph({
+  nodes,
+  edges,
+  selectedNodeId,
+  progressMap,
+  onNodeClick,
+}: SkillTreeGraphProps) {
   return (
     <div
       style={{ height: 520 }}
       className="rounded-xl border border-zinc-200 bg-zinc-50 overflow-hidden dark:border-zinc-700 dark:bg-zinc-900"
     >
       <ReactFlowProvider>
-        <SkillTreeGraphInner skillNodes={nodes} skillEdges={edges} />
+        <SkillTreeGraphInner
+          skillNodes={nodes}
+          skillEdges={edges}
+          selectedNodeId={selectedNodeId}
+          progressMap={progressMap}
+          onNodeClick={onNodeClick}
+        />
       </ReactFlowProvider>
     </div>
   );

@@ -1,0 +1,537 @@
+# OpenSkillTree — Seed Skill Tree: Python
+#
+# Domain:  Technology / Programming / Python
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: Python Institute Certification Ladder + industry standards
+#   beginner     ≈ PCEP level (entry: syntax, basic control flow)
+#   intermediate ≈ PCAP level (associate: OOP, modules, stdlib, basic testing)
+#   advanced     ≈ PCPP level (professional: algorithms, concurrency, APIs, packaging)
+#   expert       = Staff / Principal engineer or data scientist (architecture, performance, mentoring)
+
+tree:
+  id: "technology/python"
+  title: "Python"
+  description: >
+    A complete skill map for Python — one of the world's most widely used programming
+    languages, spanning web development, data science, automation, and AI. Covers the
+    foundational mechanics, object-oriented design, testing, data analysis, async
+    programming, and performance techniques needed to progress from first-time coder
+    to production-grade engineer.
+  domain: "Technology"
+  visibility: "public"
+
+nodes:
+  - id: "technology/python/syntax-data-types"
+    title: "Syntax & Data Types"
+    description: >
+      The entry point to Python. Variables, primitive types, collections, and the
+      rules for writing valid code. Mastery here enables writing clear, idiomatic
+      Python without fighting the language.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes simple scripts using variables, strings, numbers, booleans. Uses lists and dicts for basic storage."
+        metrics:
+          - "Completes PCEP module 1 exercises with ≥70% first-attempt pass rate"
+          - "Zero syntax errors in scripts reviewed by a peer"
+      - level: intermediate
+        criteria: >
+          Chooses the right collection type for the job (list vs. tuple vs. set vs. dict).
+          Uses string formatting (f-strings), slicing, and comprehension syntax.
+          Understands mutability and reference semantics.
+        metrics:
+          - "Correctly selects collection type in 9/10 design scenarios"
+          - "Code review: no type misuse comments on collections in ≥3 consecutive PRs"
+      - level: advanced
+        criteria: >
+          Uses type annotations throughout. Understands Python's data model (dunder
+          methods, descriptors). Writes code that is readable by junior devs without
+          explanation.
+        metrics:
+          - "100% of new functions include type hints (mypy/pyright passes)"
+          - "Peer review: 0 'what does this mean?' comments on syntax in last 5 PRs"
+      - level: expert
+        criteria: >
+          Deep understanding of CPython internals: object model, reference counting,
+          interning. Uses advanced features (slots, metaclasses, structural subtyping)
+          when they provide clear value.
+        metrics:
+          - "Can explain behavior of id(), is, == for any Python object without looking it up"
+          - "At least 1 codebase-level syntax/typing improvement shipped per quarter"
+    tags: ["foundation", "syntax", "beginner-friendly"]
+
+  - id: "technology/python/control-flow-functions"
+    title: "Control Flow & Functions"
+    description: >
+      Building blocks of program logic — conditionals, loops, and functions.
+      A Python developer who truly owns this node writes clean, composable,
+      well-scoped functions that others want to reuse.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes if/elif/else and for/while loops correctly. Defines and calls functions with arguments and return values."
+        metrics:
+          - "Passes PCEP control-flow exercises with ≥75% accuracy"
+          - "Functions have ≤3 levels of nesting in all scripts written"
+      - level: intermediate
+        criteria: >
+          Uses default and keyword arguments, *args/**kwargs. Understands scope (LEGB).
+          Writes small, single-responsibility functions. Uses list/dict/set comprehensions.
+        metrics:
+          - "Functions average ≤20 lines of code in new code written"
+          - "No global variable side-effects in any new function"
+      - level: advanced
+        criteria: >
+          Uses closures, decorators, and higher-order functions effectively. Applies
+          functools (partial, lru_cache, reduce) where they simplify logic. Writes
+          recursive functions with clear base cases.
+        metrics:
+          - "Implements at least 2 custom decorators for cross-cutting concerns (logging, retry)"
+          - "Recursion used correctly with 0 stack-overflow bugs in production"
+      - level: expert
+        criteria: >
+          Function design as an API surface: writes functions that are easy to use correctly
+          and hard to use incorrectly. Teaches others about scope pitfalls and functional
+          patterns. Reviews function signatures for ergonomics and safety.
+        metrics:
+          - "New public APIs require ≤1 follow-up question from consumers"
+          - "Code review: function design approved without change on 85%+ of first submissions"
+    tags: ["foundation", "logic", "functions"]
+
+  - id: "technology/python/error-handling-debugging"
+    title: "Error Handling & Debugging"
+    description: >
+      Writing code that fails gracefully and diagnosing problems when they occur.
+      Robust error handling is what separates scripts from production software.
+    benchmarks:
+      - level: beginner
+        criteria: "Uses try/except to catch exceptions. Can read a traceback and identify the error line."
+        metrics:
+          - "Zero unhandled exceptions in submitted scripts for ≥3 consecutive assignments"
+      - level: intermediate
+        criteria: >
+          Catches specific exception types (not bare except). Uses finally and context
+          managers. Adds meaningful error messages. Uses pdb or IDE debugger to step
+          through code.
+        metrics:
+          - "All exception handlers catch specific types in 100% of code written"
+          - "Mean time to diagnose a bug using debugger: ≤15 minutes for medium complexity bugs"
+      - level: advanced
+        criteria: >
+          Designs custom exception hierarchies for domain errors. Implements structured
+          logging (stdlib logging module, log levels, formatters). Uses traceback module
+          for programmatic error inspection.
+        metrics:
+          - "Custom exceptions cover ≥80% of domain error cases in owned modules"
+          - "Logging setup enables root-cause diagnosis from logs alone on 85%+ of prod incidents"
+      - level: expert
+        criteria: >
+          Error handling as a product feature: errors surface actionable information to
+          operators and users. Designs observability into systems from the start. Trains
+          team on debugging methodology.
+        metrics:
+          - "MTTR for P1 incidents in owned services: ≤30 minutes"
+          - "0 incidents where root cause was obscured by missing logs or swallowed exceptions"
+    tags: ["reliability", "debugging", "production"]
+
+  - id: "technology/python/object-oriented-programming"
+    title: "Object-Oriented Programming"
+    description: >
+      Modeling the world in classes, objects, inheritance, and encapsulation.
+      Python's OOP layer enables code reuse and large-scale organization,
+      though idiomatic Python uses it more selectively than Java or C++.
+    benchmarks:
+      - level: beginner
+        criteria: "Defines classes with __init__, instance attributes, and methods. Creates objects and calls methods."
+        metrics:
+          - "Writes a working class with ≥3 methods from scratch in under 20 minutes"
+      - level: intermediate
+        criteria: >
+          Uses inheritance and super() correctly. Implements __repr__, __str__, __eq__.
+          Understands class vs. instance attributes. Applies @property, @staticmethod,
+          @classmethod appropriately.
+        metrics:
+          - "Inheritance hierarchies used correctly with 0 MRO-related bugs in code reviewed"
+          - "All classes have meaningful __repr__ implementations"
+      - level: advanced
+        criteria: >
+          Designs inheritance vs. composition tradeoffs deliberately. Uses abstract
+          base classes (ABC). Understands __slots__ for memory optimization. Applies
+          dataclasses, NamedTuple, and attrs for value objects.
+        metrics:
+          - "Composition preferred over inheritance in ≥60% of class design decisions (justified)"
+          - "Uses dataclasses or similar for ≥80% of data-carrying classes"
+      - level: expert
+        criteria: >
+          Metaclasses, descriptors, and __init_subclass__ applied where they genuinely
+          simplify library design. Reviews OOP architectures for team. Coaches when
+          not to use OOP (scripts, functional pipelines).
+        metrics:
+          - "Library APIs using advanced OOP rated 4/5+ for ergonomics in team survey"
+          - "0 unnecessary class hierarchies introduced in code owned"
+    tags: ["OOP", "design", "architecture"]
+
+  - id: "technology/python/file-io-stdlib"
+    title: "File I/O & Standard Library"
+    description: >
+      Reading and writing files, working with paths, and leveraging Python's
+      extensive standard library to avoid reinventing the wheel.
+    benchmarks:
+      - level: beginner
+        criteria: "Opens, reads, writes, and closes files using open() with context managers. Reads CSV and JSON."
+        metrics:
+          - "Completes file I/O exercises without resource leaks (context managers used 100% of the time)"
+      - level: intermediate
+        criteria: >
+          Uses pathlib for path manipulation. Handles binary vs. text mode, encodings.
+          Leverages csv, json, datetime, os, sys, re, and collections from stdlib.
+        metrics:
+          - "Uses pathlib (not os.path string concat) in 100% of new file-path code"
+          - "Can solve 8/10 common scripting tasks using only stdlib (no third-party packages)"
+      - level: advanced
+        criteria: >
+          Uses shutil, tempfile, glob, itertools, functools, contextlib fluently.
+          Writes custom context managers. Parses structured data formats (TOML, YAML, XML).
+        metrics:
+          - "Third-party packages added only when stdlib equivalent does not exist"
+          - "Custom context manager in use in ≥1 production module"
+      - level: expert
+        criteria: >
+          Contributes improvements to shared internal stdlib wrappers. Evaluates
+          third-party library vs. stdlib tradeoffs with benchmark evidence.
+          Teaches stdlib fluency to junior engineers.
+        metrics:
+          - "Stdlib usage enables team to ship features 10%+ faster vs. equivalent third-party approach (documented cases)"
+    tags: ["stdlib", "file-io", "scripting"]
+
+  - id: "technology/python/data-structures-algorithms"
+    title: "Data Structures & Algorithms"
+    description: >
+      Understanding time and space complexity, selecting the right data structure,
+      and implementing common algorithms. The foundation for writing efficient Python
+      at any scale.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows list vs. set lookup time difference. Implements linear search and simple sorting."
+        metrics:
+          - "Correctly identifies O(1) vs. O(n) operations in 8/10 quiz scenarios"
+      - level: intermediate
+        criteria: >
+          Uses dict and set for O(1) lookups. Understands list.sort() (Timsort), bisect
+          for binary search. Can implement BFS and DFS. Analyzes function complexity.
+        metrics:
+          - "Solves LeetCode Easy problems in Python in ≤20 minutes average"
+          - "Uses appropriate data structure (dict/set/heap) in 85%+ of production scenarios"
+      - level: advanced
+        criteria: >
+          Implements heapq, deque, and OrderedDict usage for complex problems.
+          Solves Medium-difficulty algorithmic problems. Profiles code with cProfile to
+          identify hot paths.
+        metrics:
+          - "Solves LeetCode Medium problems in ≤40 minutes average"
+          - "At least 2 production performance improvements traced to better algorithm/data structure choice"
+      - level: expert
+        criteria: >
+          Designs efficient algorithms for novel business problems. Recognizes
+          algorithmic complexity patterns in code review. Evaluates library internals
+          for hidden complexity.
+        metrics:
+          - "Algorithm-level optimizations ship with measured latency improvement"
+          - "Code review catches O(n²) patterns before they reach production"
+    tags: ["algorithms", "performance", "cs-fundamentals"]
+
+  - id: "technology/python/testing-code-quality"
+    title: "Testing & Code Quality"
+    description: >
+      Writing tests that give you confidence to change code, and maintaining style
+      standards that keep a codebase readable as it grows. Professional Python
+      development is inseparable from testing.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes basic pytest test functions with assertions. Runs tests from the command line."
+        metrics:
+          - "Test file exists for every new module submitted"
+          - "All tests pass locally before submitting code"
+      - level: intermediate
+        criteria: >
+          Uses fixtures, parametrize, and marks in pytest. Mocks external dependencies
+          with unittest.mock. Maintains ≥70% line coverage on owned modules. Runs
+          flake8/ruff for linting.
+        metrics:
+          - "≥70% line coverage on all new modules"
+          - "CI passes (lint + tests) on first push 80%+ of the time"
+      - level: advanced
+        criteria: >
+          Writes property-based tests (hypothesis). Adds integration and contract tests.
+          Uses tox or pytest-xdist for multi-environment/parallel test runs.
+          Coverage 85%+ with meaningful tests (not just line padding).
+        metrics:
+          - "≥85% branch coverage on all new modules"
+          - "Test suite runs in ≤5 minutes in CI"
+      - level: expert
+        criteria: >
+          Designs the test strategy for a codebase (unit/integration/e2e pyramid).
+          Introduces mutation testing. Coaches team on testing patterns. Test suite
+          quality is a measurable team asset.
+        metrics:
+          - "Mutation test score ≥60% on critical business logic"
+          - "Team test coverage trend: +5pp per quarter over last 4 quarters"
+    tags: ["testing", "quality", "ci-cd"]
+
+  - id: "technology/python/packaging-environments"
+    title: "Package Management & Environments"
+    description: >
+      Managing Python versions, virtual environments, and dependencies — the
+      infrastructure layer that makes Python projects reproducible across
+      machines and deployable to production.
+    benchmarks:
+      - level: beginner
+        criteria: "Creates and activates a virtual environment. Installs packages with pip. Uses requirements.txt."
+        metrics:
+          - "Every project has its own venv (no global installs)"
+          - "requirements.txt generated with pinned versions before sharing code"
+      - level: intermediate
+        criteria: >
+          Uses pyproject.toml for project metadata. Understands transitive dependencies
+          and lock files (pip-tools or poetry.lock). Resolves dependency conflicts.
+        metrics:
+          - "All projects use pyproject.toml (not setup.py) for new work"
+          - "0 'works on my machine' failures due to environment differences per quarter"
+      - level: advanced
+        criteria: >
+          Publishes packages to PyPI or internal index. Uses multiple Python version
+          testing (tox/nox). Understands wheel vs. sdist. Manages optional dependency groups.
+        metrics:
+          - "Has published ≥1 reusable package (internal or public)"
+          - "Multi-version CI matrix (Python 3.11, 3.12) passes on all owned packages"
+      - level: expert
+        criteria: >
+          Designs packaging strategy for a monorepo or SDK. Evaluates build backends
+          (setuptools, flit, hatch). Maintains build reproducibility across environments.
+        metrics:
+          - "Package build is reproducible (byte-identical wheel) across 3+ environments"
+          - "Packaging standards adopted by ≥3 other projects in the org"
+    tags: ["packaging", "devops", "reproducibility"]
+
+  - id: "technology/python/apis-web-requests"
+    title: "APIs & Web Requests"
+    description: >
+      Consuming and building HTTP APIs — the primary integration pattern in modern
+      software. Python's requests library and web frameworks (FastAPI, Flask, Django)
+      make API work accessible at every skill level.
+    benchmarks:
+      - level: beginner
+        criteria: "Makes GET and POST requests with the requests library. Parses JSON responses."
+        metrics:
+          - "Writes a working API client that fetches data and prints results in ≤30 minutes"
+      - level: intermediate
+        criteria: >
+          Handles authentication (API keys, OAuth tokens, Bearer headers). Implements
+          error handling for HTTP errors (status codes, timeouts, retries). Understands
+          REST conventions (verbs, status codes, pagination).
+        metrics:
+          - "API integration code handles all HTTP errors gracefully (no unhandled 4xx/5xx)"
+          - "Retry logic implemented for transient failures (429, 503) in all API clients"
+      - level: advanced
+        criteria: >
+          Builds REST APIs with FastAPI or Django REST Framework. Uses async HTTP clients
+          (httpx). Writes OpenAPI/schema-first APIs. Implements rate limiting and auth
+          middleware.
+        metrics:
+          - "API endpoints have OpenAPI schemas with ≥90% field coverage"
+          - "P95 API latency under load meets SLO (defined per project)"
+      - level: expert
+        criteria: >
+          Designs API contracts for external consumers. Versions APIs with backward
+          compatibility guarantees. Implements API gateway patterns and service mesh
+          integrations.
+        metrics:
+          - "0 breaking API changes shipped without versioning and migration guide"
+          - "API design reviewed and approved by consuming teams before implementation"
+    tags: ["apis", "web", "integration"]
+
+  - id: "technology/python/data-analysis"
+    title: "Data Analysis with Pandas & NumPy"
+    description: >
+      Using Python's data science stack to manipulate, analyze, and visualize data.
+      Pandas and NumPy are the lingua franca of data work in Python, used by data
+      analysts, data scientists, and ML engineers alike.
+    benchmarks:
+      - level: beginner
+        criteria: "Creates DataFrames from CSV/JSON. Selects columns, filters rows, and prints basic statistics."
+        metrics:
+          - "Completes a basic EDA (exploratory data analysis) notebook on a new dataset in ≤2 hours"
+      - level: intermediate
+        criteria: >
+          Uses groupby, merge, pivot_table, and apply. Handles missing data and type
+          coercion. Creates line, bar, and scatter plots with matplotlib/seaborn.
+        metrics:
+          - "EDA notebooks include ≥3 visualizations per dataset"
+          - "Data cleaning scripts handle null values explicitly (no silent drops)"
+      - level: advanced
+        criteria: >
+          Vectorizes operations (avoids Python loops over DataFrames). Uses multi-index,
+          window functions, and custom aggregations. Processes datasets >1M rows within
+          memory constraints.
+        metrics:
+          - "Processing time for 1M-row dataset: ≤10 seconds on standard hardware"
+          - "No iterrows() in any production data pipeline"
+      - level: expert
+        criteria: >
+          Designs scalable data processing pipelines (Dask, Polars, or Spark via PySpark).
+          Optimizes memory usage for large-scale analysis. Mentors analysts on
+          vectorization and performance patterns.
+        metrics:
+          - "10B+ row datasets processed within resource constraints"
+          - "Team data pipeline performance improved ≥2x through vectorization coaching"
+    tags: ["data-science", "pandas", "numpy", "analysis"]
+
+  - id: "technology/python/async-concurrency"
+    title: "Async Programming & Concurrency"
+    description: >
+      Writing Python that does multiple things at once — async/await for I/O-bound
+      work, threads and processes for CPU-bound and parallel tasks. Critical for
+      high-performance servers and data pipelines.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the difference between synchronous and asynchronous code. Runs simple async functions with asyncio.run()."
+        metrics:
+          - "Can explain event loop, coroutine, and await in plain language"
+      - level: intermediate
+        criteria: >
+          Uses asyncio.gather() and asyncio.create_task() for concurrent I/O.
+          Understands threading vs. multiprocessing vs. async. Uses ThreadPoolExecutor
+          for blocking code in async context.
+        metrics:
+          - "Async I/O refactoring reduces latency by ≥50% on I/O-bound tasks vs. sync equivalent"
+          - "0 blocking calls inside async functions in owned code"
+      - level: advanced
+        criteria: >
+          Uses asyncio Queues, Semaphores, and Locks correctly. Handles cancellation
+          and timeouts. Writes async context managers and iterators. Uses uvloop for
+          performance.
+        metrics:
+          - "Async concurrency bugs (race conditions, deadlocks) in owned code: 0 in last 6 months"
+          - "Concurrent task throughput meets production SLO"
+      - level: expert
+        criteria: >
+          Designs async architectures: event-driven systems, async message queues,
+          backpressure. Diagnoses subtle async bugs (starvation, task leaks).
+          Writes async libraries used by the team.
+        metrics:
+          - "Async library used by ≥3 services with 0 critical async bugs"
+          - "Can diagnose any asyncio bug from logs and task dump alone"
+    tags: ["async", "concurrency", "performance"]
+
+  - id: "technology/python/performance-pythonic-code"
+    title: "Performance & Pythonic Code"
+    description: >
+      Writing Python that runs fast, uses memory efficiently, and reads as if it
+      was written by someone who loves the language. The expert Python developer
+      writes code that other experts enjoy reading.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes readable code. Avoids obvious inefficiencies (repeated list.append in tight loops, unnecessary copies)."
+        metrics:
+          - "Code passes basic pylint/ruff checks on first submission"
+      - level: intermediate
+        criteria: >
+          Uses list comprehensions, generators, and itertools to replace explicit loops.
+          Caches repeated computations with functools.lru_cache. Understands GIL
+          implications.
+        metrics:
+          - "Comprehensions preferred over equivalent map/filter/loop in 85%+ of cases"
+          - "Memory-intensive code uses generators rather than materializing full lists"
+      - level: advanced
+        criteria: >
+          Profiles with cProfile, line_profiler. Benchmarks with timeit. Uses
+          __slots__ for memory optimization. Evaluates Cython, cffi, or ctypes for
+          hot paths.
+        metrics:
+          - "Performance optimizations are benchmark-driven (before/after numbers documented)"
+          - "Hot path optimization achieves ≥30% improvement vs. baseline"
+      - level: expert
+        criteria: >
+          System-level performance: profiling at the OS level (perf, py-spy). Identifies
+          CPython bottlenecks. Contributes to or uses C extensions. Designs for
+          memory efficiency at scale.
+        metrics:
+          - "Production service meets P99 latency SLO after expert-level optimization pass"
+          - "Memory optimization reduces footprint by ≥40% on memory-constrained services"
+    tags: ["performance", "pythonic", "optimization"]
+
+relationships:
+  - source: "technology/python/syntax-data-types"
+    target: "technology/python/control-flow-functions"
+    type: "requires"
+    note: "Control flow requires understanding of Python's basic syntax and types"
+
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/error-handling-debugging"
+    type: "enables"
+    note: "Error handling is applied control flow — same mental model, defensive orientation"
+
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/object-oriented-programming"
+    type: "enables"
+    note: "OOP requires solid function and scope fundamentals"
+
+  - source: "technology/python/syntax-data-types"
+    target: "technology/python/file-io-stdlib"
+    type: "enables"
+    note: "File I/O is applied syntax — string handling and types are prerequisites"
+
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/data-structures-algorithms"
+    type: "requires"
+    note: "Algorithm implementation requires mastery of loops, recursion, and functions"
+
+  - source: "technology/python/syntax-data-types"
+    target: "technology/python/data-structures-algorithms"
+    type: "requires"
+    note: "Data structure selection depends on understanding Python collection semantics"
+
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/testing-code-quality"
+    type: "enables"
+    note: "You cannot write meaningful tests until you can write testable functions"
+
+  - source: "technology/python/file-io-stdlib"
+    target: "technology/python/packaging-environments"
+    type: "enables"
+    note: "Packaging requires understanding of module system and file structure"
+
+  - source: "technology/python/packaging-environments"
+    target: "technology/python/apis-web-requests"
+    type: "enables"
+    note: "API work depends on proper environment setup and dependency management"
+
+  - source: "technology/python/data-structures-algorithms"
+    target: "technology/python/data-analysis"
+    type: "enables"
+    note: "Pandas/NumPy operations build on algorithmic thinking about data transformations"
+
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/async-concurrency"
+    type: "requires"
+    note: "Async requires understanding of Python's execution model and function semantics"
+
+  - source: "technology/python/object-oriented-programming"
+    target: "technology/python/async-concurrency"
+    type: "enables"
+    note: "Async context managers and iterators require OOP knowledge"
+
+  - source: "technology/python/data-structures-algorithms"
+    target: "technology/python/performance-pythonic-code"
+    type: "requires"
+    note: "Performance optimization requires reasoning about algorithmic complexity"
+
+  - source: "technology/python/testing-code-quality"
+    target: "technology/python/performance-pythonic-code"
+    type: "enables"
+    note: "Performance work requires benchmarking, which is a form of testing"
+
+  - source: "technology/python/async-concurrency"
+    target: "technology/python/performance-pythonic-code"
+    type: "component-of"
+    note: "Concurrency is one of the major tools in the Python performance toolkit"
