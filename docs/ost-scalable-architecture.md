@@ -247,6 +247,8 @@ interface TreeListItem {
   domain: string;
   description: string;
   nodeCount: number;
+  hasBenchmarks: boolean;        // true if ALL nodes have ≥1 benchmark (gallery badge)
+  benchmarkCoverage: number;     // 0–1 fraction of nodes with benchmarks (gallery badge)
   createdAt: string;
 }
 
@@ -537,18 +539,110 @@ Phase 1 must complete before Phase 2. Phase 2 must complete before Phase 3. Phas
 
 ---
 
-## 11. Open Questions for PM Alignment
+## 11. Product Decisions (Resolved — PM + CEO, 2026-03-18)
 
-These require PM input before finalizing the frontend design:
+All questions resolved via [OPE-14](/OPE/issues/OPE-14). Phase 3 frontend is unblocked.
 
-1. **Self-assessment UX:** How should users indicate their level on a node? Click-to-cycle through levels? A slider? A "rate yourself" button that opens a modal with benchmark criteria visible? The design affects how benchmarks are surfaced.
+### Decision 1: Self-Assessment UX → "Rate Yourself" Drawer
 
-2. **Domain taxonomy top level:** Do we hardcode a top-level domain list (Sports / Technology / Creative / Business / Science) or let it emerge from contributor tags? Fixed taxonomy is cleaner for browse UX; open taxonomy scales better for a community-contributed standard.
+**"Rate yourself" button on each node → right-side drawer panel (non-blocking, graph remains visible)**
 
-3. **Empty state for trees without benchmarks:** Some skill trees will be contributed without quantitative benchmarks (especially early on). Do we block incomplete trees from the gallery, show them with a "needs benchmarks" label, or show all and let the community improve them over time?
+- Node shows progress bar / level badge (`—` unrated, or `Beginner` / `Intermediate` / `Advanced` / `Expert`)
+- "Rate yourself" button (hover-visible or always shown; TBD design)
+- Drawer: each level displayed as a card with criteria + metrics + "This is me" button
+- Single-select: choosing a level highlights it, closes drawer after 500ms; "Not sure yet" dismisses
+- Graph feedback: node fills color on rating (grey = unrated, blue gradient = partial, green = Expert)
+- Downstream lock/unlock states recalculate on selection
+- State: `sessionStorage` keyed by `nodeId → level`; never persisted to server in MVP
 
-4. **Cross-tree navigation:** When a node has a `complementary` relationship to a node in another tree, should the UI navigate to that other tree (breaking the current view) or open an inline preview? The answer affects cross-tree edge rendering.
+### Decision 2: Domain Taxonomy → Curated V1 List
+
+**Fixed top-level enum for V1: Sports, Technology, Creative Arts, Business, Science**
+
+- YAML `domain:` field validated against this enum in CI
+- Gallery: horizontal-scroll domain filter pills at top; "All" default; pill shows `Domain (N)` count
+- Tree cards: colored domain badge per domain
+- New domain proposals via GitHub Discussion `domain-proposal` tag; core team extends enum on approval
+
+### Decision 3: Empty State → Show All, Badge Incomplete
+
+**All trees shown in gallery regardless of benchmark completeness**
+
+- Trees with any unbenchmarked nodes: amber **"Needs benchmarks"** badge on gallery card
+- Badge links to CONTRIBUTING.md for that tree with CTA "Help improve this tree →"
+- Within a tree: incomplete nodes show dashed outline, `?` progress indicator, disabled "Rate yourself"
+- Replaced with "Benchmarks needed — contribute →" link on incomplete nodes
+- Optional gallery toggle: "Show complete trees only" (off by default)
+
+### Decision 4: Cross-Tree Navigation → Inline Preview Card
+
+**Click (not hover) opens inline preview card; no page navigation**
+
+- Triggered by: clicking a cross-tree chip in NodeDetailPanel, or clicking a cross-tree edge terminus
+- Preview card: domain badge, tree name, target skill title, brief description (≤2 lines), level count, "Go to tree →" deep link, × dismiss
+- Graph rendering: dashed lines vs solid for intra-tree edges; distinct color (purple/teal); only visible when source node selected; render as exit arrows (not drawn to literal target position)
+- NodeDetailPanel "Related Skills": chips showing `[domain icon] Tree Name › Skill Name`; click = preview card; → arrow on hover = direct navigation
+
+## 12. API Additions Required (from PM Spec)
+
+Two additions to the API design from Section 5 are required to support the above:
+
+### TreeListItem additions (gallery badge support)
+
+```typescript
+interface TreeListItem {
+  id: string;
+  pathId: string;
+  title: string;
+  domain: string;
+  description: string;
+  nodeCount: number;
+  hasBenchmarks: boolean;         // true if ALL nodes have ≥1 benchmark
+  benchmarkCoverage: number;      // 0–1 fraction of nodes with ≥1 benchmark
+  createdAt: string;
+}
+```
+
+SQL for `benchmarkCoverage` in the materialized view:
+
+```sql
+CREATE MATERIALIZED VIEW skill_tree_summaries AS
+SELECT
+    st.*,
+    COUNT(sn.id)                                              AS node_count,
+    CASE WHEN COUNT(sn.id) = 0 THEN true
+         ELSE COUNT(sn.id) FILTER (WHERE jsonb_array_length(sn.benchmarks) > 0) = COUNT(sn.id)
+    END                                                       AS has_benchmarks,
+    CASE WHEN COUNT(sn.id) = 0 THEN 1.0
+         ELSE COUNT(sn.id) FILTER (WHERE jsonb_array_length(sn.benchmarks) > 0)::float / COUNT(sn.id)
+    END                                                       AS benchmark_coverage
+FROM skill_trees st
+LEFT JOIN skill_nodes sn ON sn.tree_id = st.id
+GROUP BY st.id;
+```
+
+### GET /api/nodes/:id — crossTreeLinks
+
+```typescript
+interface CrossTreeLink {
+  relationshipType: 'complementary' | 'enables' | 'requires' | 'variant-of';
+  targetTreeId: string;
+  targetTreeTitle: string;
+  targetTreeDomain: string;
+  targetNodeId: string;
+  targetNodeTitle: string;
+  targetNodeDescription: string;  // truncated at 200 chars for preview card
+  targetNodeLevelCount: number;   // count of benchmark levels
+}
+
+// Full node response
+interface NodeDetailResponse extends SkillNode {
+  crossTreeLinks: CrossTreeLink[];
+}
+```
+
+These additions require the `skill_cross_edges` table defined in Section 4.4.
 
 ---
 
-*Coordinate on open questions with @Product Manager before building Phase 3 frontend. Architecture is stable for Phase 1 and 2 implementation to proceed.*
+*Architecture finalized. Phase 1 and Phase 2 implementation can proceed immediately. Phase 3 is unblocked.*
