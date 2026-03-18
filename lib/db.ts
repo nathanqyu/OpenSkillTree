@@ -17,11 +17,24 @@ let pool: Pool | null = null;
 
 export function getPool(): Pool {
   if (!pool) {
+    const connectionString = process.env.DATABASE_URL;
+    // Require SSL when connecting to hosted Postgres (Neon/Vercel Postgres).
+    // Local Docker Compose connections use plain TCP — skip SSL if ?sslmode=disable
+    // or if the URL does not contain a cloud host indicator.
+    const isHosted =
+      connectionString &&
+      !connectionString.includes("localhost") &&
+      !connectionString.includes("127.0.0.1");
+
     pool = new Pool({
-      connectionString: process.env.DATABASE_URL,
-      max: 10,
+      connectionString,
+      // Serverless functions are short-lived: keep max connections low to avoid
+      // exhausting Neon's PgBouncer slots. Each Next.js API route invocation
+      // shares this pool within one Node.js process lifetime.
+      max: isHosted ? 1 : 10,
       idleTimeoutMillis: 30_000,
       connectionTimeoutMillis: 5_000,
+      ssl: isHosted ? { rejectUnauthorized: false } : false,
     });
 
     pool.on("error", (err) => {
