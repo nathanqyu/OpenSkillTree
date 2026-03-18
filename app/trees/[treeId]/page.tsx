@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { query } from "@/lib/db";
 import type { SkillTree, SkillNode, SkillEdge } from "@/types/skill-tree";
+import { SkillTreeGraph } from "@/components/skill-tree/SkillTreeGraph";
 
 export const revalidate = 86400; // ISR: revalidate daily
 
@@ -78,17 +79,8 @@ export default async function TreePage({ params }: PageParams) {
         </a>
       </div>
 
-      {/* Graph visualization — placeholder until React Flow is wired up */}
-      <div className="flex min-h-[480px] items-center justify-center rounded-xl border border-dashed border-zinc-300 bg-zinc-50 dark:border-zinc-700 dark:bg-zinc-900">
-        <div className="text-center">
-          <p className="text-zinc-500 dark:text-zinc-400">
-            Graph visualization coming soon.
-          </p>
-          <p className="mt-1 text-xs text-zinc-400 dark:text-zinc-600">
-            {nodes.length} nodes · {edges.length} edges
-          </p>
-        </div>
-      </div>
+      {/* React Flow + ELK.js interactive graph */}
+      <SkillTreeGraph nodes={nodes} edges={edges} />
 
       {/* Node list — temporary until graph is interactive */}
       <div className="mt-8">
