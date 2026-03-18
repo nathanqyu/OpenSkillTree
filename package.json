@@ -11,7 +11,8 @@
     "format:check": "prettier --check .",
     "typecheck": "tsc --noEmit",
     "ingest": "tsx scripts/ingest.ts",
-    "ingest:force": "tsx scripts/ingest.ts --force"
+    "ingest:force": "tsx scripts/ingest.ts --force",
+    "validate": "tsx scripts/validate-yaml.ts"
   },
   "dependencies": {
     "ajv": "^8.17.1",

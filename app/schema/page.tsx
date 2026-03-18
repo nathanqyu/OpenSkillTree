@@ -410,7 +410,7 @@ nodes:
                     <td className="px-4 py-2.5 align-top font-mono text-sm text-zinc-900 dark:text-zinc-100">metrics</td>
                     <td className="px-4 py-2.5 align-top"><Badge color="blue">string[]</Badge></td>
                     <td className="px-4 py-2.5 align-top text-xs"><Badge color="zinc">optional</Badge></td>
-                    <td className="px-4 py-2.5 align-top text-sm text-zinc-600 dark:text-zinc-400">Quantitative targets with units, e.g. <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-800">"70%+ serve in rate"</code> or <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-800">"≤ 3 errors per session"</code>.</td>
+                    <td className="px-4 py-2.5 align-top text-sm text-zinc-600 dark:text-zinc-400">Quantitative targets with units, e.g. <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-800">&quot;70%+ serve in rate&quot;</code> or <code className="rounded bg-zinc-100 px-1 py-0.5 text-xs dark:bg-zinc-800">&quot;≤ 3 errors per session&quot;</code>.</td>
                   </tr>
                 </tbody>
               </table>
