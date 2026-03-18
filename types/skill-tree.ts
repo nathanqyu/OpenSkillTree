@@ -5,12 +5,14 @@
  * All API responses, database rows, and JSON exports conform to these shapes.
  *
  * Schema overview:
- *   SkillTree    — a named collection of skills in a domain
- *   SkillNode    — an individual skill within a tree
- *   SkillEdge    — a prerequisite relationship between two nodes
- *   UserProgress — a user's progress on a node (deferred from MVP V1)
+ *   SkillTree         — a named collection of skills in a domain
+ *   SkillNode         — an individual skill within a tree
+ *   SkillEdge         — a prerequisite relationship between two nodes (intra-tree)
+ *   CrossTreeLink     — a relationship linking skills across different trees (V2)
+ *   UserProgress      — a user's progress on a node (deferred from MVP V1)
  *
  * See: /db/schema.sql for the corresponding Postgres schema.
+ * See: /schema/skill-tree.schema.json for the YAML contribution schema.
  */
 
 // ---------------------------------------------------------------------------
@@ -19,6 +21,14 @@
 
 export type Uuid = string;
 export type IsoTimestamp = string;
+
+/** Top-level domains supported in V1. Extensible via GitHub Discussion. */
+export type SkillDomain =
+  | "Sports"
+  | "Technology"
+  | "Creative Arts"
+  | "Business"
+  | "Science";
 
 // ---------------------------------------------------------------------------
 // SkillTree
@@ -33,14 +43,10 @@ export type SkillTreeVisibility = "public" | "unlisted" | "private";
  */
 export interface SkillTree {
   id: Uuid;
+  /** Human-readable path ID, e.g. "sports/pickleball". Used in YAML and API URLs. */
+  pathId: string;
   title: string;
   description: string;
-  /** Display name or handle for the contributor. No auth in V1 — free text. */
-  author: string;
-  /**
-   * Top-level domain category. Examples: "Sports", "Technology", "Creative",
-   * "Business", "Science". Used for browse/filter UI.
-   */
   domain: string;
   visibility: SkillTreeVisibility;
   createdAt: IsoTimestamp;
@@ -80,13 +86,18 @@ export interface SkillBenchmark {
 /**
  * A SkillNode represents one skill within a SkillTree.
  *
- * Position (x, y) is the node's location on the visualization canvas.
+ * Note: no position data is stored — visual layout is computed client-side
+ * using ELK (layered hierarchical algorithm) from the semantic graph structure.
+ * See ADR-003 in docs/ost-scalable-architecture.md.
+ *
  * Benchmarks capture what mastery looks like at each level — this is the
  * core differentiator of OpenSkillTree vs. generic mind-map tools.
  */
 export interface SkillNode {
   id: Uuid;
   treeId: Uuid;
+  /** Human-readable path ID, e.g. "sports/pickleball/serve". */
+  pathId: string;
   title: string;
   description: string;
   /**
@@ -94,8 +105,6 @@ export interface SkillNode {
    * for a node to be considered "complete" in the schema.
    */
   benchmarks: SkillBenchmark[];
-  /** Canvas position for the graph visualization. */
-  position: { x: number; y: number };
   /** Optional icon identifier (e.g., a Lucide icon name or an image URL). */
   icon?: string;
   createdAt: IsoTimestamp;
@@ -106,21 +115,51 @@ export interface SkillNode {
 // SkillEdge
 // ---------------------------------------------------------------------------
 
+export type RelationshipType =
+  | "requires"      // target cannot be attempted without source
+  | "enables"       // source makes target accessible / recommended
+  | "component-of"  // source is a sub-skill composing target
+  | "complementary" // source and target mutually reinforce each other
+  | "variant-of";   // source and target are parallel approaches
+
 /**
- * A SkillEdge represents a directed prerequisite relationship.
+ * A SkillEdge represents a directed relationship between two nodes in the same tree.
  *
- * Direction: sourceNode must be completed before targetNode becomes available.
- * In other words: source → target means "source unlocks target".
- *
- * Cycles are not permitted (the graph must be a DAG).
+ * The most common type is "requires": source → target means source must be
+ * completed before target becomes available. The graph must be a DAG (no cycles).
  */
 export interface SkillEdge {
   id: Uuid;
   treeId: Uuid;
-  /** The prerequisite node — must be completed first. */
+  /** The source node — completed first. */
   sourceNodeId: Uuid;
-  /** The node that becomes available once sourceNode is completed. */
+  /** The target node — unlocked after source. */
   targetNodeId: Uuid;
+  relationshipType: RelationshipType;
+}
+
+// ---------------------------------------------------------------------------
+// CrossTreeLink  (V2 — cross-domain skill discovery)
+// ---------------------------------------------------------------------------
+
+/**
+ * A link from a node in one tree to a node in a different tree.
+ * Used for cross-domain discovery ("Tennis Serve → Pickleball Serve").
+ * Populated via the skill_cross_edges table.
+ */
+export interface CrossTreeLink {
+  relationshipType: RelationshipType;
+  targetTreeId: Uuid;
+  targetTreePathId: string;
+  targetTreeTitle: string;
+  targetTreeDomain: string;
+  targetNodeId: Uuid;
+  targetNodePathId: string;
+  targetNodeTitle: string;
+  /** Truncated at 200 chars for inline preview cards. */
+  targetNodeDescription: string;
+  /** Count of benchmark levels defined on the target node. */
+  targetNodeLevelCount: number;
 }
 
 // ---------------------------------------------------------------------------
@@ -144,27 +183,46 @@ export interface UserProgress {
 }
 
 // ---------------------------------------------------------------------------
-// API / client-side helpers
+// API response types
 // ---------------------------------------------------------------------------
 
 /**
- * Lightweight summary used in gallery/browse views.
- * Does not include the full node/edge graph.
+ * Lightweight summary used in the gallery/browse view.
+ * Served from the skill_tree_summaries materialized view.
  */
-export interface SkillTreeSummary {
+export interface TreeListItem {
   id: Uuid;
+  pathId: string;
   title: string;
   description: string;
-  author: string;
   domain: string;
-  visibility: SkillTreeVisibility;
   nodeCount: number;
+  /** true if ALL nodes have ≥1 benchmark defined */
+  hasBenchmarks: boolean;
+  /** fraction 0–1 of nodes with ≥1 benchmark */
+  benchmarkCoverage: number;
   createdAt: IsoTimestamp;
-  updatedAt: IsoTimestamp;
 }
+
+export interface TreeListResponse {
+  trees: TreeListItem[];
+  total: number;
+  page: number;
+  pageSize: number;
+}
+
+/** Full node detail response, including cross-tree links. */
+export interface NodeDetailResponse extends SkillNode {
+  crossTreeLinks: CrossTreeLink[];
+}
+
+// ---------------------------------------------------------------------------
+// Client-side helpers
+// ---------------------------------------------------------------------------
 
 /**
  * Ephemeral client-side progress map (MVP V1).
  * Keyed by nodeId; never persisted to the server.
+ * Stored in sessionStorage as JSON.
  */
 export type EphemeralProgressMap = Record<Uuid, UserProgressStatus>;

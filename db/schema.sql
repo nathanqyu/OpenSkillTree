@@ -4,10 +4,14 @@
 -- See: /types/skill-tree.ts for the corresponding TypeScript type definitions
 --
 -- Tables:
---   skill_trees    — named collections of skills in a domain
---   skill_nodes    — individual skills within a tree
---   skill_edges    — prerequisite relationships between nodes (DAG)
---   user_progress  — user progress on nodes (deferred from MVP V1)
+--   skill_trees         — named collections of skills in a domain
+--   skill_nodes         — individual skills within a tree
+--   skill_edges         — prerequisite relationships between nodes (intra-tree DAG)
+--   skill_cross_edges   — prerequisite relationships spanning multiple trees
+--   user_progress       — user progress on nodes (deferred from MVP V1)
+--
+-- Views:
+--   skill_tree_summaries — materialized view for fast gallery queries
 -- =============================================================================
 
 -- Enable pgcrypto for gen_random_uuid() if not already loaded
@@ -18,22 +22,26 @@
 -- -----------------------------------------------------------------------------
 
 CREATE TABLE skill_trees (
-    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    title       VARCHAR(255)    NOT NULL,
-    description TEXT            NOT NULL DEFAULT '',
-    -- Free-text author display name (no auth in V1; becomes a FK in V2+)
-    author      VARCHAR(255)    NOT NULL DEFAULT '',
-    -- Top-level domain for browse/filter (e.g. 'Sports', 'Technology', 'Creative')
-    domain      VARCHAR(100)    NOT NULL DEFAULT '',
-    visibility  VARCHAR(20)     NOT NULL DEFAULT 'public'
-                    CHECK (visibility IN ('public', 'unlisted', 'private')),
-    created_at  TIMESTAMPTZ     NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMPTZ     NOT NULL DEFAULT NOW()
+    id           UUID         PRIMARY KEY DEFAULT gen_random_uuid(),
+    -- Human-readable path ID, e.g. "sports/pickleball" — used in YAML and API
+    path_id      VARCHAR(255) UNIQUE NOT NULL,
+    title        VARCHAR(255) NOT NULL,
+    description  TEXT         NOT NULL DEFAULT '',
+    -- Top-level domain for browse/filter (Sports, Technology, Creative Arts, Business, Science)
+    domain       VARCHAR(100) NOT NULL DEFAULT '',
+    visibility   VARCHAR(20)  NOT NULL DEFAULT 'public'
+                     CHECK (visibility IN ('public', 'unlisted', 'private')),
+    -- Source YAML file path relative to repo root (for cache invalidation)
+    source_file  VARCHAR(500),
+    -- SHA-256 of YAML content — skip re-ingest if hash unchanged
+    content_hash VARCHAR(64),
+    created_at   TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
+    updated_at   TIMESTAMPTZ  NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX idx_skill_trees_domain      ON skill_trees (domain);
-CREATE INDEX idx_skill_trees_visibility  ON skill_trees (visibility);
-CREATE INDEX idx_skill_trees_created_at  ON skill_trees (created_at DESC);
+CREATE INDEX idx_skill_trees_domain     ON skill_trees (domain);
+CREATE INDEX idx_skill_trees_visibility ON skill_trees (visibility);
+CREATE INDEX idx_skill_trees_created_at ON skill_trees (created_at DESC);
 
 -- Full-text search across title + description
 CREATE INDEX idx_skill_trees_fts ON skill_trees
@@ -44,21 +52,20 @@ CREATE INDEX idx_skill_trees_fts ON skill_trees
 -- -----------------------------------------------------------------------------
 
 CREATE TABLE skill_nodes (
-    id          UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    tree_id     UUID            NOT NULL REFERENCES skill_trees (id) ON DELETE CASCADE,
-    title       VARCHAR(255)    NOT NULL,
-    description TEXT            NOT NULL DEFAULT '',
+    id          UUID         PRIMARY KEY DEFAULT gen_random_uuid(),
+    tree_id     UUID         NOT NULL REFERENCES skill_trees (id) ON DELETE CASCADE,
+    -- Human-readable path ID, e.g. "sports/pickleball/serve"
+    path_id     VARCHAR(255) UNIQUE NOT NULL,
+    title       VARCHAR(255) NOT NULL,
+    description TEXT         NOT NULL DEFAULT '',
     -- Array of SkillBenchmark objects:
     --   [{ "level": "beginner", "criteria": "...", "metrics": ["..."] }, ...]
     -- At least one benchmark is required for a node to be considered complete.
-    benchmarks  JSONB           NOT NULL DEFAULT '[]',
-    -- Canvas coordinates for the graph visualization
-    position_x  FLOAT           NOT NULL DEFAULT 0,
-    position_y  FLOAT           NOT NULL DEFAULT 0,
+    benchmarks  JSONB        NOT NULL DEFAULT '[]',
     -- Optional icon: Lucide icon name, emoji, or image URL
     icon        VARCHAR(255),
-    created_at  TIMESTAMPTZ     NOT NULL DEFAULT NOW(),
-    updated_at  TIMESTAMPTZ     NOT NULL DEFAULT NOW()
+    created_at  TIMESTAMPTZ  NOT NULL DEFAULT NOW(),
+    updated_at  TIMESTAMPTZ  NOT NULL DEFAULT NOW()
 );
 
 CREATE INDEX idx_skill_nodes_tree_id    ON skill_nodes (tree_id);
@@ -76,17 +83,25 @@ ALTER TABLE skill_nodes
 -- -----------------------------------------------------------------------------
 -- skill_edges
 -- -----------------------------------------------------------------------------
--- Represents directed prerequisite relationships (source → target).
+-- Directed intra-tree prerequisite relationships (source → target).
 -- source must be completed before target becomes available.
 -- The graph formed by these edges must be a DAG (no cycles).
 -- Cycle prevention is the responsibility of the application layer.
 
 CREATE TABLE skill_edges (
-    id              UUID PRIMARY KEY DEFAULT gen_random_uuid(),
-    tree_id         UUID NOT NULL REFERENCES skill_trees (id)  ON DELETE CASCADE,
-    source_node_id  UUID NOT NULL REFERENCES skill_nodes (id)  ON DELETE CASCADE,
-    target_node_id  UUID NOT NULL REFERENCES skill_nodes (id)  ON DELETE CASCADE,
-    -- A given prerequisite pair must be unique within a tree
+    id                UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
+    tree_id           UUID        NOT NULL REFERENCES skill_trees (id)  ON DELETE CASCADE,
+    source_node_id    UUID        NOT NULL REFERENCES skill_nodes (id)  ON DELETE CASCADE,
+    target_node_id    UUID        NOT NULL REFERENCES skill_nodes (id)  ON DELETE CASCADE,
+    relationship_type VARCHAR(50) NOT NULL DEFAULT 'requires'
+                          CHECK (relationship_type IN (
+                              'requires',      -- target cannot be attempted without source
+                              'enables',       -- source makes target accessible / recommended
+                              'component-of',  -- source is a sub-skill that composes target
+                              'complementary', -- source and target reinforce each other
+                              'variant-of'     -- source and target are parallel approaches
+                          )),
+    -- A given source→target pair must be unique within a tree
     CONSTRAINT uq_skill_edge UNIQUE (source_node_id, target_node_id),
     -- A node cannot be a prerequisite of itself
     CONSTRAINT chk_no_self_loop CHECK (source_node_id <> target_node_id)
@@ -97,6 +112,28 @@ CREATE INDEX idx_skill_edges_source_node_id ON skill_edges (source_node_id);
 CREATE INDEX idx_skill_edges_target_node_id ON skill_edges (target_node_id);
 
 -- -----------------------------------------------------------------------------
+-- skill_cross_edges
+-- -----------------------------------------------------------------------------
+-- Cross-tree edges linking skills across different skill trees.
+-- Used for cross-domain discovery (e.g., Tennis Serve → Pickleball Serve).
+-- V2 feature — table defined here so the schema is forward-compatible.
+
+CREATE TABLE skill_cross_edges (
+    id                UUID        PRIMARY KEY DEFAULT gen_random_uuid(),
+    source_node_id    UUID        NOT NULL REFERENCES skill_nodes (id) ON DELETE CASCADE,
+    target_node_id    UUID        NOT NULL REFERENCES skill_nodes (id) ON DELETE CASCADE,
+    relationship_type VARCHAR(50) NOT NULL DEFAULT 'complementary'
+                          CHECK (relationship_type IN (
+                              'requires', 'enables', 'component-of', 'complementary', 'variant-of'
+                          )),
+    CONSTRAINT uq_cross_edge    UNIQUE (source_node_id, target_node_id),
+    CONSTRAINT chk_cross_no_self_loop CHECK (source_node_id <> target_node_id)
+);
+
+CREATE INDEX idx_skill_cross_edges_source ON skill_cross_edges (source_node_id);
+CREATE INDEX idx_skill_cross_edges_target ON skill_cross_edges (target_node_id);
+
+-- -----------------------------------------------------------------------------
 -- user_progress
 -- -----------------------------------------------------------------------------
 -- NOTE: Excluded from MVP V1. Ephemeral self-assessment is stored in the
@@ -104,9 +141,9 @@ CREATE INDEX idx_skill_edges_target_node_id ON skill_edges (target_node_id);
 -- use when authentication is added.
 
 CREATE TABLE user_progress (
-    user_id      VARCHAR(255)  NOT NULL,
-    node_id      UUID          NOT NULL REFERENCES skill_nodes (id) ON DELETE CASCADE,
-    status       VARCHAR(20)   NOT NULL DEFAULT 'locked'
+    user_id      VARCHAR(255) NOT NULL,
+    node_id      UUID         NOT NULL REFERENCES skill_nodes (id) ON DELETE CASCADE,
+    status       VARCHAR(20)  NOT NULL DEFAULT 'locked'
                      CHECK (status IN ('locked', 'in_progress', 'completed')),
     completed_at TIMESTAMPTZ,
     PRIMARY KEY (user_id, node_id),
@@ -140,3 +177,38 @@ CREATE TRIGGER trg_skill_trees_updated_at
 CREATE TRIGGER trg_skill_nodes_updated_at
     BEFORE UPDATE ON skill_nodes
     FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+
+-- -----------------------------------------------------------------------------
+-- skill_tree_summaries — materialized view for fast gallery queries
+-- -----------------------------------------------------------------------------
+-- Pre-computes node counts and benchmark coverage so the gallery endpoint
+-- does not need an expensive aggregation on every request.
+-- Refresh after each ingest: REFRESH MATERIALIZED VIEW CONCURRENTLY skill_tree_summaries;
+
+CREATE MATERIALIZED VIEW skill_tree_summaries AS
+SELECT
+    st.id,
+    st.path_id,
+    st.title,
+    st.domain,
+    st.description,
+    st.visibility,
+    st.created_at,
+    st.updated_at,
+    COUNT(sn.id)                                                                AS node_count,
+    CASE
+        WHEN COUNT(sn.id) = 0 THEN true
+        ELSE COUNT(sn.id) FILTER (WHERE jsonb_array_length(sn.benchmarks) > 0) = COUNT(sn.id)
+    END                                                                         AS has_benchmarks,
+    CASE
+        WHEN COUNT(sn.id) = 0 THEN 1.0
+        ELSE COUNT(sn.id) FILTER (WHERE jsonb_array_length(sn.benchmarks) > 0)::float / COUNT(sn.id)
+    END                                                                         AS benchmark_coverage
+FROM skill_trees st
+LEFT JOIN skill_nodes sn ON sn.tree_id = st.id
+WHERE st.visibility = 'public'
+GROUP BY st.id;
+
+CREATE UNIQUE INDEX ON skill_tree_summaries (id);
+CREATE INDEX ON skill_tree_summaries (domain);
+CREATE INDEX ON skill_tree_summaries (created_at DESC);

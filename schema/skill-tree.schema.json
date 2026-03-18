@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://openskill-tree.org/schema/skill-tree/v1",
+  "title": "OpenSkillTree YAML Schema",
+  "description": "JSON Schema for validating OpenSkillTree YAML contribution files. All files under data/skills/**/*.yaml must conform to this schema.",
+  "type": "object",
+  "required": ["tree", "nodes"],
+  "additionalProperties": false,
+  "properties": {
+    "tree": {
+      "$ref": "#/$defs/TreeMeta"
+    },
+    "nodes": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "$ref": "#/$defs/NodeDef"
+      }
+    },
+    "relationships": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/RelationshipDef"
+      }
+    }
+  },
+  "$defs": {
+    "PathId": {
+      "type": "string",
+      "pattern": "^[a-z0-9]+(/[a-z0-9-]+)+$",
+      "description": "Hierarchical path ID using lowercase alphanumeric segments separated by slashes, e.g. 'sports/pickleball' or 'sports/pickleball/serve'."
+    },
+    "BenchmarkLevel": {
+      "type": "string",
+      "enum": ["beginner", "intermediate", "advanced", "expert"]
+    },
+    "RelationshipType": {
+      "type": "string",
+      "enum": ["requires", "enables", "component-of", "complementary", "variant-of"],
+      "description": "requires: target cannot be attempted without source. enables: source makes target accessible. component-of: source is a sub-skill composing target. complementary: mutual reinforcement. variant-of: parallel approaches."
+    },
+    "Domain": {
+      "type": "string",
+      "enum": ["Sports", "Technology", "Creative Arts", "Business", "Science"],
+      "description": "Top-level domain taxonomy (V1 fixed list). New domains require a GitHub Discussion tagged 'domain-proposal'."
+    },
+    "TreeMeta": {
+      "type": "object",
+      "required": ["id", "title", "domain", "description"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/PathId",
+          "description": "Tree-level path ID, e.g. 'sports/pickleball'. Must be globally unique across all trees."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 255
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "$ref": "#/$defs/Domain"
+        },
+        "visibility": {
+          "type": "string",
+          "enum": ["public", "unlisted", "private"],
+          "default": "public"
+        }
+      }
+    },
+    "Benchmark": {
+      "type": "object",
+      "required": ["level", "criteria"],
+      "additionalProperties": false,
+      "properties": {
+        "level": {
+          "$ref": "#/$defs/BenchmarkLevel"
+        },
+        "criteria": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Human-readable description of what mastery looks like at this level."
+        },
+        "metrics": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Optional quantitative targets that can be measured (e.g., '≥ 60% first-serve %')."
+        }
+      }
+    },
+    "NodeDef": {
+      "type": "object",
+      "required": ["id", "title", "description", "benchmarks"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/PathId",
+          "description": "Node-level path ID, e.g. 'sports/pickleball/serve'. Must be globally unique."
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 255
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1
+        },
+        "benchmarks": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/Benchmark"
+          },
+          "description": "At least one benchmark is required for a node to be considered complete."
+        },
+        "icon": {
+          "type": "string",
+          "description": "Optional Lucide icon name, emoji, or image URL."
+        },
+        "tags": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "Optional free-text tags for filtering and discovery."
+        }
+      }
+    },
+    "RelationshipDef": {
+      "type": "object",
+      "required": ["source", "target", "type"],
+      "additionalProperties": false,
+      "properties": {
+        "source": {
+          "$ref": "#/$defs/PathId",
+          "description": "Path ID of the source node. Must exist in the nodes array."
+        },
+        "target": {
+          "$ref": "#/$defs/PathId",
+          "description": "Path ID of the target node. Must exist in the nodes array."
+        },
+        "type": {
+          "$ref": "#/$defs/RelationshipType"
+        },
+        "note": {
+          "type": "string",
+          "description": "Optional human-readable note explaining the relationship."
+        }
+      }
+    }
+  }
+}
