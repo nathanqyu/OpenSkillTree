@@ -27,8 +27,8 @@
   "$defs": {
     "PathId": {
       "type": "string",
-      "pattern": "^[a-z0-9]+(/[a-z0-9-]+)+$",
-      "description": "Hierarchical path ID using lowercase alphanumeric segments separated by slashes, e.g. 'sports/pickleball' or 'sports/pickleball/serve'."
+      "pattern": "^[a-z0-9][a-z0-9-]*(/[a-z0-9-]+)+$",
+      "description": "Hierarchical path ID using lowercase alphanumeric + hyphen segments separated by slashes, e.g. 'sports/pickleball', 'creative-arts/photography', or 'sports/pickleball/serve'."
     },
     "BenchmarkLevel": {
       "type": "string",
