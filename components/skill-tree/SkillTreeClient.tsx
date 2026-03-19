@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import type { SkillNode, SkillEdge, EphemeralProgressMap, UserProgressStatus } from "@/types/skill-tree";
 import { SkillTreeGraph } from "./SkillTreeGraph";
 import { NodeDetailPanel } from "./NodeDetailPanel";
@@ -12,8 +13,17 @@ interface SkillTreeClientProps {
 }
 
 export function SkillTreeClient({ treeId, nodes, edges }: SkillTreeClientProps) {
-  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(null);
+  const searchParams = useSearchParams();
+  // ?node=<uuid> — auto-select a node when arriving from search results
+  const initialNodeId = searchParams.get("node") ?? null;
+
+  const [selectedNodeId, setSelectedNodeId] = useState<string | null>(initialNodeId);
   const [progressMap, setProgressMap] = useState<EphemeralProgressMap>({});
+
+  // If the URL ?node param changes (e.g. browser back/forward), sync selection
+  useEffect(() => {
+    setSelectedNodeId(searchParams.get("node") ?? null);
+  }, [searchParams]);
 
   const handleNodeClick = useCallback((nodeId: string) => {
     setSelectedNodeId((prev) => (prev === nodeId ? null : nodeId));

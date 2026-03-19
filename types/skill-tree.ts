@@ -217,6 +217,39 @@ export interface NodeDetailResponse extends SkillNode {
 }
 
 // ---------------------------------------------------------------------------
+// Search
+// ---------------------------------------------------------------------------
+
+export type SearchResultKind = "tree" | "node";
+
+/**
+ * A single search result — either a tree or a node within a tree.
+ * Node results include parent tree context for display.
+ */
+export interface SearchResultItem {
+  kind: SearchResultKind;
+  score: number;
+  treeId: Uuid;
+  treePathId: string;
+  treeTitle: string;
+  treeDomain: string;
+  treeDescription: string;
+  /** Only set when kind === "node" */
+  nodeId?: Uuid;
+  nodePathId?: string;
+  nodeTitle?: string;
+  nodeDescription?: string;
+}
+
+export interface SearchResponse {
+  results: SearchResultItem[];
+  total: number;
+  page: number;
+  pageSize: number;
+  query: string;
+}
+
+// ---------------------------------------------------------------------------
 // Client-side helpers
 // ---------------------------------------------------------------------------
 
