@@ -1,0 +1,818 @@
+# OpenSkillTree — Seed Skill Tree: Chess
+#
+# Domain:  Science / Logic / Chess
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Rating reference: FIDE Elo Rating System (international standard)
+# Benchmark levels loosely map to:
+#   beginner     ≈ Elo 600–1000   (knows the rules, learning basic patterns)
+#   intermediate ≈ Elo 1000–1400  (understands principles, plays deliberately)
+#   advanced     ≈ Elo 1400–1800  (tactical proficiency, opening repertoire)
+#   expert       ≈ Elo 1800+      (Candidate Master 2200+, FM 2300+, IM 2400+, GM 2500+)
+#
+# Secondary reference: USCF Rating System, Chess.com and Lichess rating scales
+#
+# Teaching order based on standard chess pedagogy (Silman, Dvoretsky, Chess.com
+# learning paths, Lichess practice modules):
+#   Rules & piece movement → tactics (the #1 rating driver) →
+#   opening principles → endgame technique → positional play →
+#   calculation → strategic planning → pattern recognition →
+#   time management → game analysis & preparation.
+# Tactics are the single most important skill for rating improvement below 2000.
+
+tree:
+  id: "science/chess"
+  title: "Chess"
+  description: >
+    A complete skill map for chess — one of the oldest and most widely played
+    strategy games, with over 200 million active players on Chess.com alone.
+    Covers piece movement, tactics, openings, endgames, positional play,
+    calculation, and the strategic thinking needed to progress from casual
+    player to tournament competitor.
+  domain: "Science"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
+  - id: "science/chess/piece-movement-rules"
+    title: "Piece Movement & Rules"
+    description: >
+      The absolute foundation: setting up the board correctly, how each piece
+      moves, captures, and interacts. Includes special moves (castling, en
+      passant, pawn promotion), check, checkmate, stalemate, algebraic notation
+      (recording moves), and basic game etiquette (touch-move rule, offering draws).
+
+      Sub-skills: (1) Board orientation — white square bottom-right, queen on
+      her color. (2) Piece movement — rook on ranks/files, bishop on diagonals,
+      queen combining both, knight's L-shape, king one square, pawn forward
+      with diagonal captures. (3) Special rules — kingside/queenside castling
+      conditions, en passant timing, pawn promotion choices. (4) Game-ending
+      conditions — checkmate, stalemate, threefold repetition, 50-move rule,
+      insufficient material, dead position. (5) Algebraic notation — piece
+      letters (K, Q, R, B, N), capture notation (x), check (+), checkmate (#),
+      castling (O-O, O-O-O), disambiguation (Nbd2 vs Nfd2).
+
+      Study methods: Start with Lichess Learn (free interactive lessons covering
+      every piece), then practice on Lichess puzzles set to "Mate in 1" theme.
+      Read Chapter 1 of any introductory text (Bobby Fischer Teaches Chess,
+      Chess Fundamentals by Capablanca). Play 10+ games against a computer at
+      low difficulty to internalize movement before playing humans.
+    benchmarks:
+      - level: beginner
+        criteria: "Sets up the board correctly from empty. Knows how all pieces move, capture, and the special rules (castling, en passant, promotion). Can identify check and checkmate. Reads and writes algebraic notation (e.g., Nf3, Bxc6, O-O). Corresponds to pre-rated or Elo under 800 — the player may still hang pieces but understands legality."
+        metrics:
+          - "Correctly identifies legal moves for all pieces in 10/10 board positions"
+          - "Can deliver checkmate with Queen + King vs. lone King in ≤20 moves from any legal starting arrangement"
+          - "Sets up the board correctly (white square bottom-right, queen on her color) in ≤30 seconds"
+          - "Records a 10-move game in algebraic notation with 0 errors"
+          - "Passes the Lichess 'Learn Chess' module with 100% completion"
+          - "Correctly states all 5 conditions that prevent castling (king moved, rook moved, in check, through check, into check)"
+      - level: intermediate
+        criteria: "Understands piece values (pawn=1, knight=3, bishop=3, rook=5, queen=9). Recognizes basic checkmate patterns (back-rank, smothered mate). Knows all draw rules (stalemate, threefold repetition, 50-move rule, insufficient material, agreement). Corresponds roughly to Elo 800–1200."
+        metrics:
+          - "Correctly assigns relative piece values and can identify when a trade is favorable in 9/10 positions"
+          - "Delivers Rook + King vs. lone King checkmate in ≤15 moves"
+          - "Correctly identifies stalemate vs. checkmate in 10/10 diagram positions"
+          - "Can list all draw conditions and identify which applies in 5 given game scenarios"
+          - "Identifies back-rank mate threats in 8/10 positions where they exist"
+      - level: advanced
+        criteria: "Piece movement is automatic — no thinking required for legal moves. Understands piece activity and coordination. Recognizes when bishop pair is advantageous, when knights outperform bishops (closed positions), and can evaluate exchanges using positional context beyond raw piece values. Corresponds to Elo 1200–1600."
+        metrics:
+          - "0 illegal moves in any game (standard, rapid, or blitz)"
+          - "Correctly evaluates 'is this trade good?' in 8/10 positions considering positional factors beyond material count"
+          - "Identifies when castling should be delayed or forgone for strategic reasons in annotated positions"
+      - level: expert
+        criteria: "Complete mastery of rules including obscure edge cases (dead position rule, triple repetition via different move orders, 75-move auto-draw). Can serve as an arbiter for FIDE-rated events. Corresponds to Elo 1800+."
+        metrics:
+          - "Can correctly rule on any FIDE rules dispute including obscure cases (e.g., illegal move penalties, phone ringing, piece displacement)"
+          - "Passes a FIDE Arbiter examination or equivalent rules quiz with ≥90% score"
+    tags: ["foundation", "rules", "beginner-friendly"]
+
+  # ── TACTICS (the #1 rating driver below 2000) ──────────────────────────────
+  - id: "science/chess/tactics"
+    title: "Tactics"
+    description: >
+      Short-range combinations that win material or force checkmate. Tactics
+      are the single most important skill for rating improvement — a player
+      who sees tactics will beat a player who knows strategy every time.
+
+      Core tactical patterns by level:
+      Beginner (~7 patterns): fork, pin, skewer, discovered attack, removing
+      the defender, trapped piece, basic checkmates (back-rank, smothered).
+      Intermediate (~10 additional): double attack, deflection, decoy,
+      overloaded defender, X-ray attack, interference, Greek gift sacrifice
+      (Bxh7+), attraction, undermining, battery (queen + bishop or rook + rook).
+      Advanced (~15 additional): windmill, Zugzwang-based tactics, zwischenzug
+      (in-between move), desperado (doomed piece captures before dying),
+      clearance sacrifice, triangulation, domination, square vacation,
+      magnet sacrifice, pawn breakthrough, piece sacrifice for mating net.
+
+      Study methods: (1) Solve puzzles daily — Chess.com Puzzles, Lichess
+      Puzzle Storm, or Chesstempo. Aim for 10–30 puzzles per day at your rating
+      level. (2) Study tactical motifs thematically — spend a week on forks,
+      then a week on pins, etc. Books: "Chess Tactics for Champions" by
+      Polgar, "1001 Chess Exercises for Beginners" by Masetti, "Woodpecker
+      Method" by Axel Smith. (3) Review your own missed tactics after every
+      game using engine analysis — flag positions where the engine found a
+      tactic you missed and add them to a personal puzzle set.
+
+      Key insight: Puzzle rating typically runs 400–800 points above game
+      rating because puzzles are "white to move and win" — in games you must
+      first recognize that a tactic exists.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes the 7 core tactical patterns (fork, pin, skewer, discovered attack, removing the defender, trapped piece, basic checkmates). Can spot 1-move tactics. Game rating under 1000 Elo; puzzle rating typically 800–1400."
+        metrics:
+          - "Solves 6/10 one-move tactical puzzles (Chess.com/Lichess puzzle rating ≤1200)"
+          - "Can name and identify all 7 core tactical patterns when shown diagram examples"
+          - "Completes Lichess 'Basic Tactics' practice module with ≥80% accuracy"
+          - "Puzzle Rush (Chess.com) or Puzzle Storm (Lichess) score: ≥15 correct in 5 minutes"
+          - "Hangs (leaves undefended) a piece in ≤3 instances per game"
+      - level: intermediate
+        criteria: "Consistently spots 2-move combinations. Recognizes the additional ~10 intermediate patterns (double attack, deflection, decoy, overloaded defender, X-ray, interference, Greek gift sacrifice, attraction, undermining, battery). Game rating 1000–1500 Elo; puzzle rating 1400–1900."
+        metrics:
+          - "Solves 7/10 two-move tactical puzzles (puzzle rating 1200–1600)"
+          - "Tactical blunder rate (missing opponent's 1-move threat): ≤2 per game over a 10-game sample"
+          - "Can identify the correct tactical motif name in 15/20 themed puzzle positions"
+          - "Puzzle Rush/Storm score: ≥25 correct in 5 minutes"
+          - "Completes a set of 100 themed tactical puzzles (e.g., all pins) with ≥75% accuracy"
+      - level: advanced
+        criteria: "Solves 3–4 move combinations reliably. Recognizes advanced tactical patterns (Greek gift sacrifice, Boden's mate, windmill, zwischenzug, desperado) from experience. Can calculate forcing sequences (checks, captures, threats) without moving pieces. Game rating 1500–2000 Elo; puzzle rating 1900–2400."
+        metrics:
+          - "Solves 7/10 three-move tactical puzzles (puzzle rating 1600–2200)"
+          - "Identifies tactical opportunities in own games on 80%+ of occasions (verified by post-game engine analysis)"
+          - "Puzzle Rush/Storm score: ≥35 correct in 5 minutes"
+          - "In game analysis, engine-flagged missed tactics ≤1 per game on average"
+          - "Can solve a set of 20 'find the combination' positions (3–4 moves deep) in under 30 minutes with ≥70% accuracy"
+      - level: expert
+        criteria: "Tactical vision is near-automatic for standard patterns. Creates complex combinations in game play. Can analyze sacrificial variations 5+ moves deep. Recognizes all ~32 standard tactical motifs instantly. Game rating 2000+ Elo; puzzle rating 2400+."
+        metrics:
+          - "Puzzle rating ≥2200 on Chess.com or ≥2400 on Lichess"
+          - "Tactical accuracy (engine-measured) ≥85% in tournament games"
+          - "Can solve GM-level combination puzzles (puzzle rating 2200+) at ≥50% accuracy"
+          - "Puzzle Rush/Storm score: ≥45 correct in 5 minutes"
+          - "Creates original tactical combinations (not known patterns) in ≥2 tournament games per event"
+    tags: ["tactics", "combinations", "critical-skill"]
+
+  # ── OPENING PRINCIPLES ─────────────────────────────────────────────────────
+  - id: "science/chess/opening-principles"
+    title: "Opening Principles"
+    description: >
+      The first 10–15 moves: controlling the center, developing pieces,
+      castling for king safety, and connecting rooks. Beginners learn principles;
+      intermediate players build a repertoire; advanced players study theory.
+
+      Sub-skills: (1) Opening principles — control the center with pawns
+      (e4/d4 or c4/Nf3), develop knights before bishops, castle early
+      (usually by move 8–10), connect rooks, avoid moving the same piece
+      twice, avoid early queen sorties. (2) Repertoire building — choose
+      openings that match your style (tactical: 1.e4 with Sicilian; positional:
+      1.d4 with QGD/Nimzo). As White, prepare 1–2 systems against common
+      Black defenses. As Black, prepare responses to both 1.e4 and 1.d4.
+      (3) Understanding pawn structures — each opening leads to characteristic
+      pawn structures (e.g., Isolani from QGD, Maroczy Bind from Sicilian
+      Accelerated Dragon) that determine the middlegame plan. (4) Move-order
+      subtleties and transpositions.
+
+      Study methods: Under 1200 — focus entirely on principles, not memorized
+      lines. Play 1.e4 or 1.d4 and follow development rules. Watch GothamChess
+      or Naroditsky 'Speedrun' series for opening principles in action. 1200–1500
+      — pick 1–2 openings per color and study the first 5–8 moves with ideas
+      (use Lichess Opening Explorer, "Fundamental Chess Openings" by van der
+      Sterren). 1500–2000 — build a full repertoire using Chessable courses
+      or "Grandmaster Repertoire" books. Study games in your openings. Know
+      theory 10–15 moves deep in main lines. 2000+ — use databases (ChessBase,
+      CAISSA) for opponent preparation and novelty research.
+
+      Opening knowledge by level:
+      Under 1200: principles only, no memorized theory needed.
+      1200–1500: 1–2 openings per color with main ideas (5–8 moves).
+      1500–2000: theory for chosen openings, some lines 10–15 moves deep.
+      2000+: multiple systems, deep preparation, novelties.
+    benchmarks:
+      - level: beginner
+        criteria: "Follows opening principles: controls center (e4/d4), develops knights before bishops, castles early. Avoids moving the same piece twice or making early queen attacks. Does not need memorized theory — principles are sufficient. Game rating under 1200 Elo."
+        metrics:
+          - "Castles before move 10 in 80%+ of games"
+          - "All minor pieces (both knights and both bishops) developed by move 12 in 70%+ of games"
+          - "No more than 1 pawn move beyond e4/d4 in the first 6 moves in 80%+ of games"
+          - "Avoids early queen moves (before move 5) in 90%+ of games"
+          - "Engine evaluation after move 10: no worse than −1.0 in 70%+ of games (i.e., not losing material from opening mistakes)"
+          - "Can state 5 opening principles from memory and explain why each matters"
+      - level: intermediate
+        criteria: "Plays 2–3 openings as White and 1–2 defenses as Black with understanding of the underlying ideas (not just memorized moves). Knows 5–8 moves of main-line theory for each. Understands which pawn structure results from each opening and the associated middlegame plans. Game rating 1200–1500 Elo."
+        metrics:
+          - "Opening repertoire documented: ≥2 systems as White (e.g., Italian + London), ≥1 defense vs 1.e4 and ≥1 vs 1.d4 as Black"
+          - "Engine evaluation after 10 moves: within ±0.5 in 70%+ of games"
+          - "Can explain the middlegame plan for each opening in repertoire (e.g., 'In the Italian, White aims to control the center and attack on the kingside')"
+          - "Recognizes when opponent deviates from main lines and can identify a reasonable response in ≤2 minutes"
+          - "Knows at least 3 common traps in chosen openings and can avoid them"
+      - level: advanced
+        criteria: "Complete opening repertoire with responses to all major opponent systems (e.g., vs 1.e4: Sicilian Najdorf with prep against Anti-Sicilians; vs 1.d4: Nimzo-Indian with QGD as fallback). Understands resulting middlegame structures and plans for each opening. Knows theory 10–15 moves deep in main lines. Game rating 1500–2000 Elo."
+        metrics:
+          - "Engine evaluation after 15 moves: within ±0.3 in 80%+ of tournament games"
+          - "Can explain the strategic plan for each opening in repertoire and name the typical pawn structure"
+          - "Has prepared responses to at least 3 sidelines per opening (e.g., in the Sicilian: Anti-Sicilians, Smith-Morra Gambit, Closed Sicilian)"
+          - "Repertoire covers both 1.e4 and 1.d4 responses as Black, with at least 10 moves of theory in each"
+          - "Wins ≥70% of games where opponent deviates from theory before move 8"
+      - level: expert
+        criteria: "Deep theoretical knowledge in primary openings (15–25+ moves in critical lines). Prepares novelties and improvements over existing theory. Studies opponent-specific preparation using databases. Understands opening trends at the master level and adapts repertoire accordingly. Game rating 2000+ Elo."
+        metrics:
+          - "Preparation covers ≥20 moves of theory in primary openings' critical lines"
+          - "Has introduced ≥1 novelty or theoretical improvement in a tournament game"
+          - "Prepares opponent-specific lines using database analysis before ≥80% of tournament games"
+          - "Can identify the current theoretical status (advantage White/Black/equal) of main lines in chosen openings"
+          - "Repertoire includes ≥2 options against each major opponent system for flexibility"
+    tags: ["openings", "theory", "preparation"]
+
+  # ── ENDGAME ─────────────────────────────────────────────────────────────────
+  - id: "science/chess/endgame-technique"
+    title: "Endgame Technique"
+    description: >
+      The final phase of the game. Endgame knowledge is permanent — unlike
+      openings, endgame principles don't change. King and pawn endgames are the
+      foundation; rook endgames occur in ~50% of all games that reach an endgame.
+
+      Endgame knowledge by level:
+      Under 1000 Elo: K+Q vs K and K+R vs K checkmates, pawn promotion,
+      basic opposition (direct opposition on a file or rank).
+      1000–1500 Elo: Opposition (direct, distant, diagonal), key squares
+      (critical squares for pawn promotion), Philidor position (rook endgame
+      defensive technique with R on 3rd rank), Lucena position (rook endgame
+      winning technique — "building a bridge"), rule of the square (can my
+      king catch that passed pawn?), active vs passive rook placement.
+      1500–2000 Elo: Complex rook endgames (R+2P vs R+P, rook activity
+      principles), bishop vs knight endings (when each piece is better),
+      queen vs rook endgames, Zugzwang exploitation, fortresses (defensive
+      drawing resources), corresponding squares, triangulation.
+      2000+ Elo: Deep tablebase knowledge, complex multi-piece endgames,
+      practical fortress construction, technical winning methods in R+B vs R,
+      queen endgame theory, conversion of minimal advantages.
+
+      Study methods: (1) Practice basic checkmates until automatic — use
+      Lichess Practice mode for K+Q vs K and K+R vs K. (2) Study "Silman's
+      Complete Endgame Course" — organized by rating level. (3) Work through
+      "100 Endgames You Must Know" by de la Villa for intermediate/advanced.
+      (4) Use endgame tablebases (Syzygy, Lomonosov) to verify your analysis
+      in study positions. (5) Practice endgames against a computer (set up
+      specific positions from books and play them out).
+    benchmarks:
+      - level: beginner
+        criteria: "Can deliver basic checkmates (K+Q vs K, K+R vs K). Understands pawn promotion and that the queen is the default promotion choice. Knows the direct opposition concept (kings face each other with one square between). Game rating under 1000 Elo."
+        metrics:
+          - "Delivers K+Q vs K checkmate in ≤15 moves from any legal position"
+          - "Delivers K+R vs K checkmate in ≤25 moves using the 'box method' (restricting king to shrinking rectangle)"
+          - "Correctly applies the rule of the square in 8/10 king-vs-passed-pawn scenarios"
+          - "Identifies whether a K+P vs K position is won or drawn (based on opposition) in 7/10 diagrams"
+          - "Completes Lichess 'Checkmate Patterns' practice module for basic endgame mates"
+      - level: intermediate
+        criteria: "Knows key pawn endgame concepts (direct and distant opposition, key squares, passed pawns, king activity). Can evaluate and execute basic rook endgames (Philidor defense and Lucena 'bridge-building' technique). Understands the principle 'rooks belong behind passed pawns.' Game rating 1000–1500 Elo."
+        metrics:
+          - "Correctly identifies winning/drawing positions in 8/10 K+P vs K scenarios using key squares"
+          - "Can execute Philidor defense (rook on 3rd rank, then checks from behind) from setup within 10 moves"
+          - "Can execute Lucena position (bridge-building technique) from setup within 12 moves"
+          - "Correctly applies distant opposition in 6/10 king-and-pawn endgame positions"
+          - "Identifies whether rook belongs in front of or behind a passed pawn in 8/10 rook endgame positions"
+          - "Solves 6/10 endgame study positions from 'Silman's Complete Endgame Course' (Class C–B level)"
+      - level: advanced
+        criteria: "Proficient in rook endgames (R+P vs R, R+2P vs R+P, rook activity principles), bishop vs. knight endings (open vs closed position evaluation), and queen endgames. Understands Zugzwang, fortresses, corresponding squares, and tablebase-verified drawing techniques. Can evaluate whether an endgame is theoretically won, drawn, or lost. Game rating 1500–2000 Elo."
+        metrics:
+          - "Endgame conversion rate (winning position → win): ≥80% in tournament play over 20+ endgames"
+          - "Correctly evaluates complex endgame positions (2 pieces + pawns) in 8/10 exercises"
+          - "Can identify fortress positions (drawing resources) in 7/10 examples"
+          - "Correctly determines whether bishop or knight is superior in 8/10 positions based on pawn structure"
+          - "Solves 7/10 endgame study positions from '100 Endgames You Must Know' by de la Villa"
+          - "Correctly uses triangulation in K+P endgames to gain the opposition in 6/10 positions"
+      - level: expert
+        criteria: "Endgame as a weapon: steers games toward favorable endgames from the middlegame. Studies tablebases for complex material balances (e.g., R+B vs R, Q+P vs Q). Deep knowledge of practical rook endgame technique, queen endgame perpetual check avoidance, and complex pawn structures. Game rating 2000+ Elo."
+        metrics:
+          - "Endgame accuracy (engine-measured, comparing moves to tablebase-optimal) ≥90% in tournament games"
+          - "Opponents' endgame conversion rate is measurably lower when facing this player (tracked over 30+ games)"
+          - "Can correctly evaluate R+B vs R positions (winning or drawing) and execute the winning technique in ≥70% of cases"
+          - "Successfully steers ≥3 tournament games per event from middlegame into a favorable endgame type"
+          - "Solves advanced endgame studies (Dvoretsky's Endgame Manual, chapters 3–5) at ≥60% accuracy"
+    tags: ["endgame", "technique", "permanent-knowledge"]
+
+  # ── POSITIONAL PLAY ─────────────────────────────────────────────────────────
+  - id: "science/chess/positional-play"
+    title: "Positional Play"
+    description: >
+      Long-term strategic thinking: pawn structure, outposts, good vs. bad
+      bishops, piece activity, space advantage, and weak squares. Positional
+      play creates the conditions for tactics to succeed.
+
+      Sub-skills: (1) Pawn structure evaluation — isolated pawns (weak but
+      provide outposts), doubled pawns (reduced mobility), backward pawns
+      (targets on open files), passed pawns (endgame advantage), pawn
+      chains (attack the base), pawn majorities (create passed pawns).
+      (2) Piece activity — centralized pieces, good vs bad bishops (pawns
+      on same vs opposite color), knight outposts (squares that cannot be
+      attacked by enemy pawns), rooks on open files, rook on the 7th rank.
+      (3) Space advantage — controlling more squares limits opponent's
+      piece mobility. (4) Weak squares — squares that can no longer be
+      defended by pawns become permanent weaknesses. (5) Piece coordination
+      — bishops work best in open positions, knights in closed; two bishops
+      advantage ("bishop pair"); rooks need open files and coordinate on
+      ranks. (6) Prophylaxis — preventing the opponent's plan before
+      executing your own (Nimzowitsch's concept).
+
+      Study methods: (1) Study annotated master games focusing on positional
+      themes — "My System" by Nimzowitsch (the foundational positional text),
+      "Positional Chess Handbook" by Gelber (600 positions). (2) Analyze
+      your own games for positional mistakes — were your pieces active? Did
+      you weaken squares unnecessarily? (3) Play through games of positional
+      masters: Karpov, Petrosian, Carlsen. (4) Use Lichess Studies or
+      Chessable courses on specific positional themes (e.g., "Outposts,"
+      "Good vs Bad Bishops"). (5) Practice position evaluation: cover the
+      moves in an annotated game and try to assess who stands better at
+      each point before reading the annotation.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands basic positional concepts: centralized pieces are stronger, doubled/isolated pawns are weak, open files are valuable for rooks. Knows that king safety matters and that creating weaknesses in own pawn structure should be avoided. Game rating under 1200 Elo."
+        metrics:
+          - "Can identify ≥3 positional features (e.g., open file, isolated pawn, centralized knight) in any given position"
+          - "Avoids creating doubled pawns unnecessarily in 70%+ of games"
+          - "Places rooks on open or semi-open files when available in 50%+ of games"
+          - "Can explain why a centralized knight is stronger than a knight on the rim in simple terms"
+      - level: intermediate
+        criteria: "Evaluates pawn structures and identifies their strengths/weaknesses. Uses outposts for knights (squares protected by own pawns that cannot be attacked by enemy pawns). Understands good vs. bad bishops (bishop blocked by own pawns on same color). Fights for open files with rooks. Game rating 1200–1500 Elo."
+        metrics:
+          - "Correctly identifies which side has the better pawn structure in 8/10 positions and can explain why"
+          - "Places knights on outposts when available in 70%+ of games (verified by post-game review)"
+          - "Correctly identifies good vs bad bishops in 8/10 positions"
+          - "Contests open files with rooks (doesn't leave them uncontested) in 70%+ of games"
+          - "Can name the pawn structure type (isolani, hanging pawns, pawn chain, etc.) in 7/10 middlegame positions"
+          - "Engine evaluation swing from positional errors (not tactical blunders): ≤0.5 per move on average"
+      - level: advanced
+        criteria: "Creates and exploits long-term positional advantages (permanent weak squares, pawn majorities on the queenside, piece imbalances favoring own position). Understands typical pawn structures from openings and the associated plans (e.g., IQP positions: piece activity and kingside attack; Carlsbad structure: minority attack). Game rating 1500–2000 Elo."
+        metrics:
+          - "Games with clear positional plans (identifiable by coach/engine analysis) in 80%+ of tournament games"
+          - "Positional advantage conversion rate (slight positional edge → win or better): ≥60% over 20+ games"
+          - "Can identify the correct pawn structure plan in 8/10 positions derived from common openings"
+          - "Creates or exploits weak squares in ≥50% of middlegame positions where the opportunity exists"
+          - "Correctly evaluates bishop vs knight in 9/10 positions based on pawn structure (open/closed)"
+      - level: expert
+        criteria: "Positional mastery: controls the character of the game (steers toward open or closed positions based on piece advantage). Creates positions where opponent has no counterplay. Understands and applies prophylaxis (preventing opponent's plans before executing own). Plays in the style of Karpov/Petrosian — opponents are gradually squeezed. Game rating 2000+ Elo."
+        metrics:
+          - "Engine evaluation trending in player's favor throughout the middlegame in 70%+ of games"
+          - "Prophylactic moves (preventing opponent's plans) identified and played in ≥3 key moments per game"
+          - "Opponent's piece activity (measured by engine mobility score) decreases over the course of the game in 60%+ of tournament games"
+          - "Can annotate any master game with correct positional assessments matching engine evaluation at ≥80% of critical moments"
+          - "Wins ≥40% of games without any tactical combination — purely on positional grounds"
+    tags: ["positional", "strategy", "pawn-structure"]
+
+  # ── CALCULATION ─────────────────────────────────────────────────────────────
+  - id: "science/chess/calculation-visualization"
+    title: "Calculation & Visualization"
+    description: >
+      The ability to see moves ahead without physically moving pieces — the
+      mental skill of calculating variations. Calculation is distinct from
+      tactics (which is pattern recognition) — it is the brute-force ability
+      to analyze concrete move sequences.
+
+      Sub-skills: (1) Candidate move generation — identifying 2–4 plausible
+      moves before calculating any of them (Kotov's method from "Think Like
+      a Grandmaster"). (2) Variation tree — calculating one line to
+      completion before starting the next (avoid "tree-hopping" between
+      variations). (3) Forcing move priority — always calculate checks first,
+      then captures, then threats (the "CCT" method). (4) Visualization —
+      maintaining a clear mental image of the board after several moves
+      without losing track of piece positions. (5) Evaluation at the end of
+      a variation — after calculating, being able to assess whether the
+      resulting position is better, equal, or worse. (6) Blunder checking —
+      before playing your chosen move, asking "if I play this, what is my
+      opponent's best response? Does it lose material or allow a tactic?"
+
+      Study methods: (1) Solve puzzles without moving pieces — cover the
+      solution and calculate entirely in your head. (2) Practice blindfold
+      exercises: start with simple positions (K+P vs K) and gradually
+      increase complexity. Lichess has a "Blindfold" mode in puzzle settings.
+      (3) Study "Calculation" by Jacob Aagaard or "Think Like a Grandmaster"
+      by Kotov. (4) Use the "Guess the Move" exercise: play through a master
+      game, covering the moves and predicting each one. (5) Analyze your own
+      games without an engine first — write down your analysis, then compare
+      to the engine. This builds calculation discipline.
+
+      Calculation depth by rating level:
+      Under 1000 Elo: 1–2 moves (own move + reply).
+      1000–1400 Elo: 2–3 moves on key positions.
+      1400–1800 Elo: 3–5 moves with 2 variations.
+      1800–2200 Elo: 5–7 moves with 3+ variations.
+      2200+ Elo: 7+ moves, multiple branching lines, fluid visualization.
+    benchmarks:
+      - level: beginner
+        criteria: "Can see 1–2 moves ahead (own move + opponent's best response). Uses candidate moves concept (considers ≥2 options before playing). Performs basic blunder check before each move ('if I move here, can my opponent capture anything?'). Game rating under 1000 Elo."
+        metrics:
+          - "Considers ≥2 candidate moves before playing in 60%+ of positions (self-reported or coach-observed)"
+          - "Performs blunder check (asks 'what can opponent do after my move?') before ≥70% of moves"
+          - "Blunder rate (moves hanging a piece or losing ≥1 pawn for nothing): ≤5 per game"
+          - "Can correctly predict opponent's best response to own move in 5/10 test positions"
+          - "Solves 'What's the best move?' 1-move exercises at ≥60% accuracy without moving pieces"
+      - level: intermediate
+        criteria: "Calculates 3–4 moves deep on critical positions. Can hold 2 variations in mind simultaneously without confusing piece positions. Uses the checks-captures-threats (CCT) priority when looking for forcing moves. Game rating 1000–1500 Elo."
+        metrics:
+          - "Calculation accuracy on 3-move variations: ≥70% (verified by comparing own analysis to engine before checking)"
+          - "Blunder rate (moves losing ≥1 pawn without compensation): ≤3 per game over a 10-game sample"
+          - "Can calculate 2 alternative variations for a given position and correctly evaluate which is better in 6/10 exercises"
+          - "Uses CCT (checks, captures, threats) priority and can demonstrate the method when solving a puzzle aloud"
+          - "Solves 'Guess the Move' exercises in master games at ≥40% match rate (matching the master's actual move)"
+      - level: advanced
+        criteria: "Calculates 5–6 moves deep on critical positions. Evaluates forcing sequences (checks, captures, threats) accurately. Uses elimination to narrow candidate moves. Does not 'tree-hop' (follows each variation to a clear evaluation before starting the next). Game rating 1500–2000 Elo."
+        metrics:
+          - "Calculation accuracy on 5-move variations: ≥60% (own analysis matches engine within 0.3 pawns)"
+          - "Time management: spends ≥60% of thinking time on the 5–10 critical positions per game"
+          - "Correctly evaluates the resulting position at the end of a calculated variation in 7/10 exercises"
+          - "Solves 'Guess the Move' exercises in master games at ≥55% match rate"
+          - "Can analyze a complex position for 5 minutes and write down 3 main variations with evaluations, matching engine in ≥2 of 3"
+      - level: expert
+        criteria: "Deep calculation (7+ moves) on complex positions with multiple branching variations. Visualization is fluid — can play and analyze positions without a board (blindfold). Calculates with candidate moves systematically following Kotov's method. Game rating 2000+ Elo."
+        metrics:
+          - "Blindfold chess: can play at ≥80% of rated strength (e.g., 2000 OTB → ≥1600 blindfold)"
+          - "Critical position identification and calculation accuracy: ≥85% match with engine's top-3 choices in post-game analysis"
+          - "Can calculate 7+ move forcing variations with ≥2 branches and arrive at the correct evaluation"
+          - "Solves 'Guess the Move' exercises in GM games at ≥65% match rate"
+          - "Pre-move analysis (written before checking engine) matches engine evaluation within 0.2 pawns in ≥70% of critical positions"
+    tags: ["calculation", "visualization", "analysis"]
+
+  # ── STRATEGIC PLANNING ──────────────────────────────────────────────────────
+  - id: "science/chess/strategic-planning"
+    title: "Strategic Planning"
+    description: >
+      Forming and executing long-term plans based on the position's demands.
+      Strategy answers "what should I be trying to achieve?" while tactics
+      answer "how do I execute it right now?" Strategic thinking integrates
+      positional understanding with concrete planning.
+
+      Sub-skills: (1) Plan formulation — assessing the position's key features
+      (pawn structure, king safety, piece activity) and deriving a concrete
+      plan (e.g., "minority attack on the queenside" or "kingside pawn
+      storm"). (2) Sector identification — deciding which part of the board
+      (kingside, center, queenside) to focus on based on pawn structure and
+      piece placement. (3) Pawn breaks — knowing when and where to push
+      pawns to open lines (e.g., f4-f5 in the King's Indian, c4-c5 in the
+      Queen's Gambit). (4) Plan adaptation — changing strategy when the
+      opponent disrupts your plan or when the position's character changes.
+      (5) Prophylaxis — considering the opponent's plan and stopping it
+      before executing your own (Petrosian's specialty). (6) Multi-front
+      play — creating threats on both sides of the board to stretch the
+      opponent's defenses ("two weaknesses principle").
+
+      Study methods: (1) Study annotated master games that emphasize strategic
+      themes — "Zurich 1953" by Bronstein, "My Great Predecessors" by Kasparov,
+      "The Life and Games of Mikhail Tal" for attacking strategy. (2) Practice
+      the "Soltis method": in any position, write down (a) what both sides
+      want to do, (b) which side of the board to play on, (c) your plan in
+      3 concrete moves. (3) Study pawn structure plans: learn the standard
+      plans for IQP positions, Carlsbad structure, Hedgehog, Maroczy Bind.
+      Books: "Pawn Structure Chess" by Soltis, "Chess Structures" by Flores
+      Rios. (4) Analyze your own games focusing on "did I have a plan?" — if
+      your moves don't connect to a plan, that is the weakness to address.
+    benchmarks:
+      - level: beginner
+        criteria: "Can formulate a simple plan (e.g., 'attack the king,' 'advance my passed pawn,' 'trade pieces when ahead in material'). Understands that moves should have purpose — not moving randomly. Can verbalize what they are trying to achieve. Game rating under 1200 Elo."
+        metrics:
+          - "Can state a plan (even simple) for the current position in 7/10 game situations when asked"
+          - "≥70% of moves in a game serve a discernible purpose (development, attack, defense) rather than being aimless"
+          - "Can identify whether they are ahead, equal, or behind in material in 9/10 positions and state an appropriate goal"
+          - "Knows 3 basic strategic principles: trade when ahead, attack where you have more pieces, improve your worst piece"
+      - level: intermediate
+        criteria: "Forms multi-step plans (3+ coordinated moves toward a goal). Identifies which part of the board to play on based on pawn structure and piece placement. Understands pawn breaks and their timing. Can explain 'why' for each move in a game when annotating. Game rating 1200–1500 Elo."
+        metrics:
+          - "Plans involve ≥3 coordinated steps in 60%+ of game situations (verified by post-game annotation)"
+          - "Correctly identifies the critical sector of the board (kingside/center/queenside) in 7/10 positions"
+          - "Can identify the correct pawn break for 6/10 standard pawn structures (e.g., f4-f5 in King's Indian, c4-c5 in QGD)"
+          - "Post-game annotations include a stated plan for ≥80% of moves (not just move descriptions)"
+          - "Plan quality: stated plans match engine's top-3 strategic assessment in ≥50% of positions"
+      - level: advanced
+        criteria: "Adapts plans based on opponent's responses. Balances attack and defense simultaneously. Creates multi-front pressure (two weaknesses principle). Understands when to change plans versus when to persist. Uses prophylaxis. Game rating 1500–2000 Elo."
+        metrics:
+          - "Plan adaptation: correctly changes strategy mid-game when position demands it in 70%+ of games (verified by engine agreement)"
+          - "Creates meaningful threats on ≥2 sectors of the board simultaneously in ≥50% of middlegame positions"
+          - "Correctly applies the 'two weaknesses' principle: creates a second weakness when opponent successfully defends the first in ≥40% of games where applicable"
+          - "Prophylactic thinking: identifies and prevents opponent's best plan in ≥60% of critical positions"
+          - "Engine agreement on strategic decisions (non-tactical, positional moves): ≥65%"
+      - level: expert
+        criteria: "Strategic mastery: sees the entire game as a connected narrative from opening through endgame. Plans from the opening reach into the endgame (e.g., choosing an opening specifically for the favorable endgame it produces). Opponent's plans are anticipated and neutralized before they begin. Can teach strategic concepts using own games as examples. Game rating 2000+ Elo."
+        metrics:
+          - "Post-game strategic plan matches engine's top-3 recommendation in 80%+ of positions"
+          - "Demonstrates opening-to-endgame strategic continuity in ≥50% of tournament games (plan is traceable from opening choice through to result)"
+          - "Opponents report feeling 'outplayed' or 'squeezed' (subjective but consistent pattern across opponents)"
+          - "Can annotate any master game with correct strategic assessments at ≥80% of critical moments"
+          - "Strategic preparation: chooses openings based on desired middlegame/endgame type against specific opponents in ≥70% of tournament games"
+    tags: ["strategy", "planning", "advanced"]
+
+  # ── PATTERN RECOGNITION ─────────────────────────────────────────────────────
+  - id: "science/chess/pattern-recognition"
+    title: "Pattern Recognition"
+    description: >
+      The accumulated library of positions, structures, and motifs that a player
+      recognizes on sight. Pattern recognition is what allows strong players to
+      find good moves quickly — they don't calculate from scratch every time.
+      Built through studying master games, solving puzzles, and playing experience.
+
+      Pattern categories: (1) Tactical patterns — mating patterns (back-rank,
+      smothered, Anastasia's mate, Arabian mate, Boden's mate, Damiano's mate,
+      Greco's mate, Lolli's mate, Opera mate), combinational patterns (Greek
+      gift sacrifice Bxh7+, Lasker's double bishop sacrifice, windmill,
+      deflection patterns). (2) Positional/structural patterns — IQP
+      positions, Carlsbad pawn structure, Maroczy Bind, hedgehog, hanging
+      pawns, stonewall, fianchetto structures. Each has standard plans that
+      strong players know on sight. (3) Endgame patterns — Lucena, Philidor,
+      Vancura defense, fortress patterns, wrong-colored bishop, key squares.
+      (4) Opening patterns — typical piece placements and plans for each
+      opening family (e.g., in the Sicilian Najdorf: Black's queenside
+      counterplay with ...b5, ...Bb7).
+
+      Study methods: (1) Study master games — aim for a lifetime total of
+      1000+ annotated games studied (GMs typically study 5000+). Use
+      "Logical Chess: Move by Move" by Chernev for beginners, "The Most
+      Instructive Games of Chess Ever Played" by Chernev, "My 60 Memorable
+      Games" by Fischer. (2) Solve puzzles — each puzzle adds a pattern to
+      your mental library. Studies show strong correlation between puzzle
+      volume and pattern recognition speed. (3) Spaced repetition — review
+      previously studied positions periodically (Chessable uses this
+      technique). (4) Themed study — spend focused time on one structure
+      or pattern type (e.g., study 20 IQP games in a row). (5) Play and
+      review — every game you play and analyze adds to your pattern library.
+      The cycle of play-analyze-study is how patterns are built over years.
+
+      Research (de Groot, Chase & Simon) shows that chess expertise is
+      largely pattern recognition — GMs store ~100,000 patterns; intermediates
+      ~1,000–10,000. The difference in playing strength correlates directly
+      with pattern library size.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes basic mating patterns (back-rank mate, scholar's mate, smothered mate, two-rook roller mate). Recognizes common tactical motifs (fork, pin, skewer) on sight without needing to calculate. Game rating under 1200 Elo; pattern library ~100–500 patterns."
+        metrics:
+          - "Identifies ≥8 basic mating patterns from diagram (back-rank, scholar's, fool's, smothered, two-rook, king-and-queen, support mate, hook mate)"
+          - "Recognizes the 7 core tactical motifs on sight in ≤10 seconds per diagram in 8/10 test positions"
+          - "Has studied ≥20 annotated master games (tracked in a study log)"
+          - "Solves ≥500 total tactical puzzles (lifetime count on Chess.com/Lichess/Chesstempo)"
+      - level: intermediate
+        criteria: "Recognizes common pawn structures and their associated plans. Identifies standard attacking setups (Greek gift sacrifice Bxh7+, battery on open file, rook lift). Begins to recognize familiar positions from own opening repertoire. Game rating 1200–1500 Elo; pattern library ~1,000–5,000 patterns."
+        metrics:
+          - "Identifies correct plan for 7/10 common pawn structures (IQP, Carlsbad, Maroczy Bind, stonewall, etc.)"
+          - "Studies ≥2 annotated master games per week (tracked in study log)"
+          - "Has studied ≥100 annotated master games total"
+          - "Solves ≥2,000 total tactical puzzles (lifetime count)"
+          - "Recognizes opening transpositions in own repertoire in ≥60% of cases"
+          - "Can identify the 'classic game' example for ≥3 tactical/positional themes (e.g., Morphy's Opera Game for development advantage)"
+      - level: advanced
+        criteria: "Extensive pattern library: recognizes positions from master games, standard sacrifices, and typical middlegame plans. Pattern recognition speeds up decision-making significantly — 'intuitive' moves are often correct. Recognizes endgame patterns (Lucena, Philidor, Vancura, fortresses) on sight. Game rating 1500–2000 Elo; pattern library ~5,000–20,000 patterns."
+        metrics:
+          - "Think time on standard positions (familiar structures/themes) ≤30 seconds with ≥70% engine agreement"
+          - "Can cite relevant master game examples for ≥10 common structures/themes"
+          - "Has studied ≥500 annotated master games total"
+          - "Solves ≥10,000 total tactical puzzles (lifetime count)"
+          - "Identifies the 'type of position' (attacking, defensive, maneuvering, endgame conversion) in ≤15 seconds in 8/10 test positions"
+          - "Correctly predicts the master's move in 'Guess the Move' exercises at ≥50% rate"
+      - level: expert
+        criteria: "Pattern recognition approaching intuition — first-instinct moves are usually correct. Finds candidate moves in unfamiliar positions by analogy to known patterns. Can teach pattern recognition through curated game collections. Pattern library estimated at 20,000–100,000+ positions. Game rating 2000+ Elo."
+        metrics:
+          - "Engine agreement rate on first-instinct moves (decided in ≤10 seconds): ≥75% in rapid games"
+          - "Maintains a personal database of ≥200 instructive games and positions organized by theme"
+          - "Has studied ≥1,000 annotated master games total"
+          - "Solves ≥25,000 total tactical puzzles (lifetime count)"
+          - "Can identify the critical feature of any given position in ≤10 seconds in 9/10 test positions"
+          - "Correctly predicts the master's move in 'Guess the Move' exercises at ≥65% rate in GM-level games"
+    tags: ["patterns", "experience", "intuition"]
+
+  # ── PRACTICAL SKILLS ────────────────────────────────────────────────────────
+  - id: "science/chess/time-management"
+    title: "Time Management"
+    description: >
+      Using the clock effectively in timed games. Time management is a practical
+      skill that differentiates online and tournament play — many technically
+      strong players lose games on time or make blunders under time pressure.
+
+      Sub-skills: (1) Time allocation — spending more time on critical
+      positions (tactical complications, key strategic decisions) and less
+      on routine moves (recaptures, forced responses, known opening theory).
+      A rule of thumb: in a 90+30 game, budget ~2–3 minutes per move on
+      average but allow up to 10–15 minutes for the 2–3 most critical
+      decisions. (2) Clock awareness — checking the clock every 3–5 moves
+      to avoid sudden time trouble. Setting personal "checkpoints" (e.g.,
+      "by move 20, I should have 60+ minutes"). (3) Time pressure play —
+      when under 5 minutes, prioritize safe moves over optimal ones, avoid
+      complications, play forcing moves. (4) Using opponent's time — think
+      during opponent's moves about likely responses and plans. Pre-move
+      if the response is forced. (5) Time control transitions — in
+      multi-period time controls (e.g., 40 moves in 90 min + 30 min),
+      managing the transition. (6) Increment management — in games with
+      increment (e.g., +30 seconds), playing within the increment on
+      routine moves to accumulate time for critical decisions.
+
+      Study methods: (1) Review your own games' time graphs (available on
+      Chess.com and Lichess) — identify where you spent too much or too
+      little time. (2) Practice with different time controls: play rapid
+      (15+10), then blitz (5+3), then classical (30+0). (3) Use the
+      "time allocation exercise": before a tournament game, plan how much
+      time to spend on each phase (opening: 10%, middlegame critical:
+      50%, endgame: 30%, reserve: 10%). (4) Train blitz/bullet to improve
+      instinctive play — but analyze blitz games to ensure quality doesn't
+      collapse. (5) Practice "premove" technique in online blitz — identify
+      forced responses and premove them to save time.
+
+      Common time control formats:
+      Bullet: 1+0 or 2+1 (pure speed, minimal calculation).
+      Blitz: 3+0, 3+2, or 5+0, 5+3 (fast but some calculation possible).
+      Rapid: 10+0, 15+10, or 30+0 (balanced speed and thought).
+      Classical: 90+30, 60+30, or 40/90+30+30 (deep thinking, tournament standard).
+    benchmarks:
+      - level: beginner
+        criteria: "Completes games without losing on time in standard time controls (30+ minutes). Uses increment time effectively. Does not spend excessive time on the opening or on clearly forced moves. Game rating under 1200 Elo."
+        metrics:
+          - "Games lost on time: ≤10% of rated games across all time controls"
+          - "Does not spend more than 5 minutes on any single move in games with ≥30 minutes per side"
+          - "Completes ≥90% of online rapid (15+10) games without flagging"
+          - "Can name the time control format (bullet/blitz/rapid/classical) for given clock settings"
+      - level: intermediate
+        criteria: "Allocates time proportionally — spends more time on critical positions (tactical complications, key decisions) and plays quickly on forced or routine moves. Checks the clock regularly. Reaches the middlegame with sufficient time for deep thought. Game rating 1200–1500 Elo."
+        metrics:
+          - "Time allocation: ≥50% of thinking time spent on the 5–10 critical moves of the game (measured by reviewing time-per-move graphs)"
+          - "Reaches move 30 with ≥30% of time remaining in standard (30+0 or longer) games"
+          - "Average time per move on forced/routine positions: ≤30 seconds (in standard games)"
+          - "Average time per move on critical positions: ≥3 minutes (in standard games)"
+          - "Checks clock every 3–5 moves (self-reported or observed)"
+      - level: advanced
+        criteria: "Performs well in rapid (15–30 min) and blitz (5–10 min) time controls without significant quality drop. Maintains move quality under time pressure. Uses opponent's thinking time effectively (pre-calculating responses). Game rating 1500–2000 Elo."
+        metrics:
+          - "Blitz rating (5+0 or 5+3) within 200 Elo points of standard/rapid rating"
+          - "Quality of moves in last 10 moves before time control: ≥70% accuracy (engine agreement)"
+          - "Uses opponent's time productively: has a candidate move ready ≥70% of the time when it becomes their turn"
+          - "Time trouble (under 5 minutes remaining before increment) occurs in ≤20% of standard games"
+          - "Accuracy in blitz games (engine ACPL ≤ 40) in ≥60% of games"
+      - level: expert
+        criteria: "Time management as a weapon: maintains composure and accuracy when opponent is in time trouble. Creates time pressure for opponent through complex positions. Plays objectively best moves under any time constraint. Nearly eliminates time-related losses. Game rating 2000+ Elo."
+        metrics:
+          - "Win rate in mutual time-pressure situations (both players under 5 minutes): ≥60% over 20+ games"
+          - "0 games lost on time in last 20 tournament games"
+          - "Engine accuracy (ACPL ≤ 20) maintained even in final 10 moves of time-pressure situations"
+          - "Blitz rating within 100 Elo points of standard rating"
+          - "Can play a full rapid game (15+10) with no move taking more than 3 minutes and maintain ≥80% accuracy"
+    tags: ["practical", "time", "tournament"]
+
+  - id: "science/chess/game-analysis-preparation"
+    title: "Game Analysis & Preparation"
+    description: >
+      Reviewing your own games, studying opponent tendencies, and using engines
+      and databases for improvement. This is the meta-skill that accelerates
+      all other chess skill development.
+
+      Sub-skills: (1) Post-game analysis — reviewing your own games to find
+      mistakes, missed tactics, and positional errors. The single most
+      effective study method at any level. Steps: (a) play the game, (b)
+      analyze without engine first (write down what you think went wrong),
+      (c) then check with engine to see what you missed. (2) Engine usage —
+      understanding engine evaluations (centipawns, mate-in-N), knowing
+      when to trust the engine and when the position is too complex for a
+      quick eval. Tools: Stockfish (free, strongest), Leela Chess Zero
+      (neural network style, different perspective). (3) Database work —
+      using opening databases (Lichess Opening Explorer, ChessBase, CAISSA)
+      to study opening statistics, find model games, and prepare against
+      opponents. (4) Opponent preparation — researching an opponent's
+      opening repertoire, preferred structures, and tendencies before a
+      tournament game. (5) Training plan design — identifying your weakest
+      areas (tactics, endgames, openings, time management) and creating a
+      balanced study schedule. (6) Rating tracking — monitoring your rating
+      over time, identifying plateaus, and adjusting training to break
+      through.
+
+      Study methods: (1) Analyze every serious game — even losses, especially
+      losses. Use the "3-step method": first analyze yourself, then with a
+      stronger player, then with an engine. (2) Keep a "mistake journal" —
+      log recurring errors (e.g., "missed back-rank mates," "poor endgame
+      technique in R+P") and design targeted training to fix them. (3) Use
+      structured training: Lichess Studies for openings, Chesstempo for
+      tactical training with spaced repetition, endgame practice positions
+      against Stockfish. (4) Set measurable goals: "reach 1500 Elo by
+      December," "solve 50 puzzles per week," "study 3 endgame positions
+      per session." (5) Join a chess club or find a training partner —
+      analyzing games together is more effective than alone. (6) Consider
+      coaching at plateau points (1000, 1400, 1800 are common plateaus).
+
+      Recommended training time allocation by level:
+      Under 1000 Elo: 70% puzzles, 20% playing, 10% game review.
+      1000–1500 Elo: 40% puzzles, 20% openings, 20% game review, 20% playing.
+      1500–2000 Elo: 30% puzzles, 20% endgames, 20% game review, 15% openings, 15% playing.
+      2000+ Elo: 25% game analysis, 25% opening prep, 20% endgames, 15% puzzles, 15% playing.
+    benchmarks:
+      - level: beginner
+        criteria: "Reviews games after playing to find blunders. Uses engine analysis (Chess.com Game Review, Lichess Analysis Board) to identify mistakes. Understands what the engine evaluation number means (positive = White advantage, negative = Black advantage, in centipawns). Game rating under 1200 Elo."
+        metrics:
+          - "Analyzes ≥50% of serious (rated, non-bullet) games after playing"
+          - "Can identify own biggest mistake (largest evaluation swing) in each analyzed game"
+          - "Uses engine analysis tool (any platform) and can explain what '+2.5' or '-1.0' means"
+          - "Spends ≥5 minutes reviewing each game before checking engine analysis"
+          - "Can identify ≥2 lessons learned from each analyzed game (e.g., 'I left my back rank weak,' 'I should have traded queens when ahead')"
+      - level: intermediate
+        criteria: "Annotates games with critical moments and lessons learned. Studies master games in chosen openings to understand typical plans and structures. Identifies recurring patterns in own mistakes and designs targeted practice to address them. Maintains a study schedule. Game rating 1200–1500 Elo."
+        metrics:
+          - "Maintains an annotated game collection with ≥30 analyzed games (with written notes, not just engine lines)"
+          - "Recurring mistake patterns identified (at least 3 categories, e.g., 'endgame technique,' 'opening traps,' 'time pressure blunders') and addressed with specific training exercises"
+          - "Studies ≥2 master games per week in chosen openings"
+          - "Has a written training schedule allocating ≥3 hours/week to chess improvement"
+          - "Tracks rating progress monthly and can identify trends (improving, plateauing, declining)"
+          - "Can use Lichess Opening Explorer or similar database to check opening statistics for chosen lines"
+      - level: advanced
+        criteria: "Systematic improvement plan: targeted training on identified weaknesses with measurable goals. Prepares for specific opponents using databases (reviews their recent games, opening choices, and tendencies). Uses engines critically — understands engine limitations and does not blindly accept the top move. Game rating 1500–2000 Elo."
+        metrics:
+          - "Training plan includes tactical puzzles, endgame study, opening preparation, and game analysis totaling ≥5 hours/week"
+          - "Opponent preparation (opening choices, tendencies, recent games reviewed) before ≥70% of tournament games"
+          - "Can explain why the engine's top move is best (or identify when the engine evaluation is misleading) in ≥7/10 analyzed positions"
+          - "Measurable rating improvement of ≥50 Elo points over any 6-month period while following the training plan"
+          - "Uses at least 2 different training tools (e.g., Chesstempo + Lichess Studies + endgame practice)"
+          - "Has broken through at least 1 rating plateau by identifying and fixing a specific weakness"
+      - level: expert
+        criteria: "Professional-level preparation: deep engine analysis with multiple engines (Stockfish + Leela), novelty preparation in openings, opponent-specific game preparation with database research. Coaches others on analysis methodology. Designs training programs. Game rating 2000+ Elo."
+        metrics:
+          - "Engine-assisted preparation finds improvements (novelties or more accurate moves) in published opening theory"
+          - "Training methodology produces measurable rating improvement (≥50 Elo/year maintained or rating stabilized at 2200+)"
+          - "Can design a training program for a lower-rated player targeting their specific weaknesses"
+          - "Uses multiple engines (Stockfish + Leela) to cross-reference analysis and identify positions where engines disagree"
+          - "Maintains a personal opening database with ≥100 prepared lines including novelties and improvements"
+          - "Post-game analysis identifies the 'turning point' of the game and the correct continuation in ≥90% of cases"
+    tags: ["analysis", "improvement", "preparation"]
+
+relationships:
+  # ── Foundation ──────────────────────────────────────────────────────────────
+  - source: "science/chess/piece-movement-rules"
+    target: "science/chess/tactics"
+    type: "requires"
+    note: "You must know how pieces move before you can exploit tactical patterns"
+
+  - source: "science/chess/piece-movement-rules"
+    target: "science/chess/opening-principles"
+    type: "requires"
+    note: "Opening principles require understanding piece movement and coordination"
+
+  - source: "science/chess/piece-movement-rules"
+    target: "science/chess/endgame-technique"
+    type: "requires"
+    note: "Endgame technique requires understanding piece interactions at a fundamental level"
+
+  # ── Tactics → everything (tactics is the critical enabler) ──────────────────
+  - source: "science/chess/tactics"
+    target: "science/chess/calculation-visualization"
+    type: "enables"
+    note: "Tactical pattern recognition is the foundation for deeper calculation — you see patterns first, then calculate variations"
+
+  - source: "science/chess/tactics"
+    target: "science/chess/positional-play"
+    type: "enables"
+    note: "Positional play creates conditions for tactics — but you need tactical vision to exploit positional advantages"
+
+  # ── Positional play → Strategic planning ────────────────────────────────────
+  - source: "science/chess/positional-play"
+    target: "science/chess/strategic-planning"
+    type: "requires"
+    note: "Strategic planning requires understanding positional factors (pawn structure, piece activity, weak squares)"
+
+  - source: "science/chess/opening-principles"
+    target: "science/chess/strategic-planning"
+    type: "enables"
+    note: "Opening choices determine middlegame pawn structures and strategic plans"
+
+  # ── Experience-based skills ─────────────────────────────────────────────────
+  - source: "science/chess/tactics"
+    target: "science/chess/pattern-recognition"
+    type: "enables"
+    note: "Tactical pattern library is the first component of broader pattern recognition"
+
+  - source: "science/chess/positional-play"
+    target: "science/chess/pattern-recognition"
+    type: "enables"
+    note: "Positional patterns (pawn structures, piece placements) are recognized through experience"
+
+  - source: "science/chess/endgame-technique"
+    target: "science/chess/pattern-recognition"
+    type: "enables"
+    note: "Endgame patterns (key squares, Zugzwang, fortresses) are recognized, not calculated"
+
+  # ── Practical skills ────────────────────────────────────────────────────────
+  - source: "science/chess/calculation-visualization"
+    target: "science/chess/time-management"
+    type: "enables"
+    note: "Efficient calculation enables good time management — faster calculation means more time for critical decisions"
+
+  - source: "science/chess/tactics"
+    target: "science/chess/game-analysis-preparation"
+    type: "enables"
+    note: "Tactical awareness is needed to analyze games — you can't identify what you missed if you can't see it now"
+
+  - source: "science/chess/opening-principles"
+    target: "science/chess/game-analysis-preparation"
+    type: "enables"
+    note: "Opening knowledge informs game analysis and opponent preparation"
+
+  - source: "science/chess/strategic-planning"
+    target: "science/chess/game-analysis-preparation"
+    type: "component-of"
+    note: "Game analysis is where strategic plans are evaluated, refined, and improved"
+
+  # ── Time management accessible from first timed game ────────────────────────
+  - source: "science/chess/piece-movement-rules"
+    target: "science/chess/time-management"
+    type: "enables"
+    note: "Clock awareness is needed from the first online game — basic time management develops alongside piece movement skills"

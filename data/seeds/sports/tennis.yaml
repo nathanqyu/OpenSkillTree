@@ -1,0 +1,453 @@
+# OpenSkillTree — Seed Skill Tree: Tennis
+#
+# Domain:  Sports / Racket Sports / Tennis
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.2.0
+#
+# Rating reference: USTA NTRP (National Tennis Rating Program) 1.0–7.0 scale
+# Benchmark levels loosely map to:
+#   beginner     ≈ NTRP 1.0–2.5  (new to the game, learning basic mechanics)
+#   intermediate ≈ NTRP 3.0–3.5  (recreational player, directional control)
+#   advanced     ≈ NTRP 4.0–4.5  (competitive club / tournament player)
+#   expert       ≈ NTRP 5.0+     (open/competitive tournament, college or higher)
+#
+# Secondary reference: ITF (International Tennis Federation) Player Development Framework
+#
+# Teaching order based on USTA GPS framework, PTR/USPTA certification curricula,
+# and ITF Player Development:
+#   Grip & ready position → forehand groundstroke (ALWAYS first) →
+#   backhand groundstroke → basic serve → return of serve →
+#   spin technique (NTRP 3.0-3.5) → volley & net play → overhead →
+#   strategy (NTRP 4.0+) → mental game (NTRP 4.5+).
+# Groundstrokes are universally taught before serve and net play.
+
+tree:
+  id: "sports/tennis"
+  title: "Tennis"
+  description: >
+    A complete skill map for tennis — one of the world's most widely played racket
+    sports. Covers the foundational movement mechanics, groundstrokes, serve, net play,
+    spin, and match strategy needed to progress from first-time player to competitive
+    tournament competitor. Useful for self-directed learners, coaches, and clubs
+    running structured programs.
+  domain: "Sports"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
+  - id: "sports/tennis/footwork"
+    title: "Footwork & Movement"
+    description: >
+      The foundation of all tennis skills. This is where every player starts —
+      covering how to hold the racquet (eastern forehand grip for first strokes),
+      athletic ready position, court layout (singles/doubles lines, service boxes,
+      baseline, net), basic scoring (love, 15, 30, 40, deuce, advantage, games, sets),
+      and the movement patterns that enable every stroke in the game.
+    benchmarks:
+      - level: beginner
+        criteria: "Holds racquet with eastern forehand grip. Assumes athletic ready position. Knows court layout (service boxes, baseline, net, singles lines) and scoring (points, games, sets, tiebreak concept). Moves toward the ball and makes contact without losing balance. Uses basic split step before opponent contact."
+        metrics:
+          - "Reaches 6/10 balls hit within 3 steps"
+          - "Split step attempted on 7/10 opponent shots"
+          - "Correctly explains scoring through a full game and identifies all court zones"
+      - level: intermediate
+        criteria: "Consistent split step on every return. Uses crossover steps and lateral shuffle for court coverage. Recovers to center after each shot."
+        metrics:
+          - "Split step timed within 0.3s of opponent contact on 8/10 shots"
+          - "Recovers to within 1 meter of baseline center after groundstroke on 7/10 rallies"
+          - "Reaches wide balls that require 2+ steps on 75%+ of attempts"
+      - level: advanced
+        criteria: "Anticipatory movement — reads opponent cues to preload direction. Explosive first step from split position. Open and closed stance used selectively based on ball position."
+        metrics:
+          - "Court coverage: reaches 85%+ of balls hit within the singles court"
+          - "0–2 unforced movement errors per set (balls not reached due to positioning)"
+          - "Correct stance selection (open vs. closed) on 80%+ of groundstrokes"
+      - level: expert
+        criteria: "Proactive positioning: shadows opponent and controls court geometry. Disguises movement to neutralize opponent reads. Explosive recovery from extreme out-of-position situations."
+        metrics:
+          - "NTRP 5.0+ evaluator rates movement as 'above average' or higher in match play"
+          - "0 points lost solely due to court position (not shot selection) in a set"
+    tags: ["foundation", "athletic", "measurable"]
+
+  # ── GROUNDSTROKES (taught first in all programs) ────────────────────────────
+  - id: "sports/tennis/forehand"
+    title: "Forehand Groundstroke"
+    description: >
+      The forehand is the most frequently struck shot in tennis and the primary
+      weapon for most players. Every coaching curriculum (USTA, PTR, USPTA, ITF)
+      teaches the forehand FIRST — it is the most natural stroke and accounts
+      for 60-75% of all shots in a match.
+    benchmarks:
+      - level: beginner
+        criteria: "Makes consistent contact with semi-western or eastern grip. Ball clears the net and lands in court."
+        metrics:
+          - "70%+ forehand in rate from mid-court feed"
+          - "Ball lands past the service line on 6/10 forehands"
+      - level: intermediate
+        criteria: "Directional control: can target cross-court or down the line reliably. Generates topspin using low-to-high swing path. Controls rally pace."
+        metrics:
+          - "80%+ forehand in rate in rallies"
+          - "Hits intended target (cross-court vs. down-the-line) on 65%+ of forehands"
+          - "Topspin rate above 1,200 RPM achievable on command"
+      - level: advanced
+        criteria: "Inside-out and inside-in forehand used to control rally and exploit court geometry. Generates heavy topspin under pressure. High ball and short ball forehands executed at full pace."
+        metrics:
+          - "85%+ forehand in rate under match pressure"
+          - "Inside-out forehand executed to correct target zone (deep cross-court) on 7/10 attempts"
+          - "Forces opponent behind baseline or wide on 4/10 well-struck forehands"
+      - level: expert
+        criteria: "Forehand as a primary match-winner. Creates angles opponents cannot cover. Adjusts swing path and contact point for any ball height and trajectory without loss of pace or direction."
+        metrics:
+          - "Forehand winner or forced error rate ≥ 25% in tournament play"
+          - "Opponent win percentage from forehand exchange ≤ 40%"
+    tags: ["technical", "offensive", "groundstroke"]
+
+  - id: "sports/tennis/backhand"
+    title: "Backhand Groundstroke"
+    description: >
+      The backhand — whether one-handed or two-handed — is the defensive anchor
+      and often a tactical weapon. Taught SECOND after the forehand is established.
+      A reliable backhand neutralizes the server's wide serve and sustains baseline
+      rallies on the opponent's preferred side.
+    benchmarks:
+      - level: beginner
+        criteria: "Makes consistent contact with a two-handed or one-handed backhand. Ball clears the net and lands in court."
+        metrics:
+          - "65%+ backhand in rate from mid-court feed"
+          - "Ball lands past the service line on 5/10 backhands"
+      - level: intermediate
+        criteria: "Directional control cross-court and down the line. Slice backhand used for defensive situations and change of pace. Generates consistent depth."
+        metrics:
+          - "75%+ backhand in rate in rallies"
+          - "Hits intended target (cross-court vs. down-the-line) on 60%+ of backhands"
+          - "Slice backhand lands deep (within 1 meter of baseline) on 70%+ of attempts"
+      - level: advanced
+        criteria: "Two-handed backhand generates topspin and pace comparable to forehand. One-handed players use running backhand down the line. High backhand and stretch backhand executed reliably."
+        metrics:
+          - "82%+ backhand in rate under match pressure"
+          - "Backhand landing depth (within 1 meter of baseline) on 70%+ of topspin shots"
+          - "Running backhand (2+ steps outside singles sideline) lands in play on 65%+ of attempts"
+      - level: expert
+        criteria: "Backhand as a weapon, not a liability. Can redirect pace and produce winners from defensive positions. One-handers use kick-ball with full swing; two-handers generate elite-level topspin."
+        metrics:
+          - "Backhand winner or forced error rate ≥ 20% in tournament play"
+          - "Loss of backhand rally (error + winner against) ≤ 45% of backhand exchanges"
+    tags: ["technical", "defensive", "groundstroke"]
+
+  # ── SERVE & RETURN (taught after groundstrokes) ─────────────────────────────
+  - id: "sports/tennis/serve"
+    title: "Serve"
+    description: >
+      The serve opens every point and is the only shot in tennis taken without
+      time pressure from an opponent. Coaches introduce the serve AFTER
+      groundstrokes are functional — beginners start with an abbreviated
+      "punch" motion and progress to a full service motion with a continental
+      grip as coordination develops.
+    benchmarks:
+      - level: beginner
+        criteria: "Gets serve in play consistently using a continental grip. Legal toss and swing path established."
+        metrics:
+          - "60%+ first serve in rate (6/10 serves land in)"
+          - "Second serve double-fault rate ≤ 20%"
+      - level: intermediate
+        criteria: "Directional placement — can target T, body, or wide on command. Consistent depth past the service line."
+        metrics:
+          - "75%+ first serve in rate"
+          - "Hits intended target zone (T, body, or wide) on 6/10 first serves"
+          - "Second serve double-fault rate ≤ 10%"
+      - level: advanced
+        criteria: "Varied spin serves: flat, slice, and kick serve executed reliably. Serve placement disrupts opponent positioning and forces weak returns."
+        metrics:
+          - "85%+ first serve in rate under match conditions"
+          - "Executes all 3 distinct serve types (flat, slice, kick) on command"
+          - "Forces weak return (short ball or floating pop-up) on 3/10 serves"
+      - level: expert
+        criteria: "Serve as a strategic weapon. Disguises spin direction. Uses opponent's positioning and tendencies to dictate serve patterns. Second serve is an offensive weapon in its own right."
+        metrics:
+          - "88%+ first serve in rate under tournament pressure"
+          - "Ace or unreturnable serve rate ≥ 8% in competitive match play"
+          - "Second serve direct winner or forced error rate ≥ 15%"
+    tags: ["technical", "offensive", "measurable", "signature-shot"]
+
+  - id: "sports/tennis/return-of-serve"
+    title: "Return of Serve"
+    description: >
+      The return is the second most important shot in tennis — a player who
+      cannot neutralize the serve is structurally disadvantaged on every point.
+      Return skills develop after both groundstrokes and serve mechanics are
+      established, as the return requires reading spin and pace under pressure.
+    benchmarks:
+      - level: beginner
+        criteria: "Gets ball back in play cross-court. Moves to return position before serve is struck."
+        metrics:
+          - "60%+ return in rate on second serves"
+          - "Reaches return position (2 steps behind baseline center) before opponent tosses ball on 8/10 points"
+      - level: intermediate
+        criteria: "Directional returns to target zones. Adjusts depth and pace based on serve type (flat vs. kick). Chip-and-charge on short second serves."
+        metrics:
+          - "75%+ return in rate on both first and second serves"
+          - "Returns to intended half of court on 65%+ of returns"
+          - "Attacks short second serves (above net height contact point) on 70%+ of opportunities"
+      - level: advanced
+        criteria: "Aggressive returns that put server on defensive. Reads spin off the racquet and adjusts contact point. Uses slice backhand return to stay in rally on wide serves."
+        metrics:
+          - "85%+ return in rate under match pressure"
+          - "Forces server into defensive position (behind baseline, wide) on 35%+ of returns"
+          - "Slice backhand return lands deep (within 1 meter of baseline) on 75%+ of wide-body serves"
+      - level: expert
+        criteria: "Return as a primary offensive weapon. Reads spin direction before ball leaves server's racquet. Creates break point opportunities consistently through return aggression."
+        metrics:
+          - "Break point conversion rate ≥ 40% at NTRP 5.0+ level"
+          - "Return winner or forced error rate ≥ 20% on second serves"
+    tags: ["technical", "defensive", "measurable"]
+
+  # ── SPIN & NET PLAY (NTRP 3.0-3.5+) ────────────────────────────────────────
+  - id: "sports/tennis/spin-technique"
+    title: "Spin Technique"
+    description: >
+      Topspin creates ball trajectory that clears the net with margin and lands
+      steeply into the court; slice creates low bounce and change of pace. Spin
+      development is the defining technical milestone at the NTRP 3.0-3.5 level.
+      Spin mastery expands a player's shot selection and adds tactical versatility
+      that flat hitters cannot match.
+    benchmarks:
+      - level: beginner
+        criteria: "Can produce noticeable topspin on forehand and slice on backhand. Understands that swing angle generates spin."
+        metrics:
+          - "Topspin ball visually dips compared to flat ball on 6/10 attempts"
+          - "Slice backhand lands shorter than topspin backhand (demonstrating different trajectory) on 7/10 attempts"
+      - level: intermediate
+        criteria: "Heavy topspin used to create high-bouncing shots to opponent's backhand. Backhand slice used consistently as defensive weapon and approach shot."
+        metrics:
+          - "Topspin groundstroke bounces above shoulder height of 5'10\" player on 60%+ of shots from baseline"
+          - "Slice backhand stays below knee height at bounce on 65%+ of attempts"
+          - "Topspin lob clears net and lands in baseline zone on 6/10 attempts"
+      - level: advanced
+        criteria: "Kick serve (topspin serve) used as reliable second serve weapon. Drives heavy topspin crosscourt from defensive positions to create rally reset. Slice approach shot hugs low and forces opponent to hit up."
+        metrics:
+          - "Kick serve bounce exceeds shoulder height on 65%+ of attempts"
+          - "Slice approach shot bounce height ≤ knee level on 70%+ of attempts"
+          - "Topspin passing shot winner or forced error rate ≥ 35% when opponent is at net"
+      - level: expert
+        criteria: "Complete spin vocabulary used strategically: heavy topspin to create angles, slice to neutralize pace, kick serve to attack specific weaknesses. Spin selection invisible to opponent until ball bounces."
+        metrics:
+          - "Spin type (topspin vs. slice) correctly disguised until contact: rated unreadable by NTRP 5.0+ opponents on 70%+ of spins"
+          - "Kick serve ace or forced short return rate ≥ 30% in match play"
+    tags: ["technical", "spin", "advanced"]
+
+  - id: "sports/tennis/volley-net-play"
+    title: "Volley & Net Play"
+    description: >
+      Net play puts pressure on the opponent and finishes points efficiently.
+      Volleys are introduced after groundstrokes and spin technique, as
+      effective net play requires the touch developed through spin work and
+      the approach shots (slice) that get you to the net. Aggressive net play
+      typically develops at NTRP 3.5+.
+    benchmarks:
+      - level: beginner
+        criteria: "Moves toward the net and makes contact with forehand and backhand volleys. Understands the continental grip for volleys."
+        metrics:
+          - "Returns 5/10 mid-court feeds into the service box from net position"
+          - "Uses continental grip on ≥70% of volleys"
+      - level: intermediate
+        criteria: "Punch volleys with direction. Approaches net off short balls. Low volleys handled with open face and lift. First volley lands deep to opponent's baseline."
+        metrics:
+          - "Directional volley lands in intended half of court on 70%+ of attempts from net position"
+          - "Approach → first volley → putaway completed successfully on 5/10 approach sequences"
+          - "Low volley (below net height) returned in play on 75%+ of attempts"
+      - level: advanced
+        criteria: "Drop volleys and angle volleys executed at appropriate moments. Touch volleys from half-volley position. Net position won within 2 shots of approach. Poaches in doubles."
+        metrics:
+          - "Net point winning percentage ≥ 60% across a match"
+          - "Drop volley lands in the service box on 70%+ of attempts"
+          - "Poach results in winner or forced error on 40%+ of poach attempts in doubles"
+      - level: expert
+        criteria: "Net game dominates opponents. Reaction volleys off hard drives turned into angles. Reads opponent lob early and handles with overhead or repositioning. Volleys are a category weapon in match tactics."
+        metrics:
+          - "Net point winning percentage ≥ 70% in tournament play"
+          - "0 half-volley errors per set at net position"
+    tags: ["net-play", "finishing", "technical"]
+
+  - id: "sports/tennis/overhead-smash"
+    title: "Overhead Smash"
+    description: >
+      The overhead finishes lobs and high balls hit by opponents trying to
+      neutralize a net approach. A reliable overhead discourages lobbing and
+      ends points decisively. Overhead technique builds directly on net play
+      skills, as it is only relevant when at or near the net.
+    benchmarks:
+      - level: beginner
+        criteria: "Makes contact with overhead balls and returns them in bounds. Tracks the ball and positions behind it."
+        metrics:
+          - "Contacts 6/10 balls above shoulder height and returns in play"
+      - level: intermediate
+        criteria: "Putaway smashes on comfortable mid-court lobs. Tracks lobs and sets up correctly. Overhead directed away from opponent."
+        metrics:
+          - "Puts away 65%+ of smashable overheads (lobs not passing the service line)"
+          - "Overhead directed to intended court half on 70%+ of attempts"
+      - level: advanced
+        criteria: "Jump smashes on deep lobs. Overhead executed on the run. Angle smashes to open court. Second overhead (after opponent retrieves) executed consistently."
+        metrics:
+          - "Overhead winner or forced error rate ≥ 80% on attackable balls (lobs landing in service box)"
+          - "Jump smash executed within 3 steps on deep retreating lob on 65%+ of opportunities"
+      - level: expert
+        criteria: "Overhead as a point-ending weapon from any position. Disguises direction. Handles high deep lobs with scissor kick and swinging overhead. 0 overhead liability under tournament pressure."
+        metrics:
+          - "0–1 overhead errors per set in match play"
+          - "Overhead winner rate ≥ 70% across a full match"
+    tags: ["finishing", "power", "net-play"]
+
+  # ── COGNITIVE LAYER (NTRP 4.0+) ────────────────────────────────────────────
+  - id: "sports/tennis/strategy-tactics"
+    title: "Strategy & Match Tactics"
+    description: >
+      The cognitive layer of tennis — reading opponents, selecting shot patterns,
+      managing score pressure, and adapting tactics mid-match. Pattern play becomes
+      the focus at NTRP 4.0, with full strategic mastery at 4.5-5.0.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands basic rally patterns: get the ball in play, aim cross-court for safety, avoid hitting to opponent's strength."
+        metrics:
+          - "Cross-court preference on neutral balls (vs. down-the-line): 70%+ of shots"
+          - "Can explain 3 basic tactical principles (safety margin, high percentage, center rally) without prompting"
+      - level: intermediate
+        criteria: "Identifies opponent weaknesses (backhand, high ball, net). Constructs rally patterns: pushes opponent wide → approaches open court. Manages pressure points differently than normal points."
+        metrics:
+          - "Identifies and targets opponent's weaker shot on 65%+ of points"
+          - "Converts break points at or above game average (not below) in a set"
+          - "Approach shot landing zone (within 1 meter of baseline) before net advance on 75%+ of approaches"
+      - level: advanced
+        criteria: "Pattern play: constructs 3-shot sequences (open court, wrong-foot, approach) deliberately. Adjusts strategy between sets when current plan isn't working. Uses score situational awareness (30-40 vs. 40-0 tactics differ)."
+        metrics:
+          - "Tactical pattern (defined 3-shot sequence) executed to correct conclusion on 6/10 attempts per pattern type"
+          - "Second set win rate after losing first set: ≥ 45% (adapts successfully)"
+          - "Break point opportunities created per service game: ≥ 1.5 average"
+      - level: expert
+        criteria: "Complete game management: controls tempo, dictates rally pattern from first shot of each point, exploits physical and mental fatigue. Adjusts tactics under time pressure and at critical score moments."
+        metrics:
+          - "Win rate from tied 5-5 game score ≥ 55% in tournament match play"
+          - "Tactical adjustment time: within 3 games of recognizing a new pattern that isn't working"
+          - "Double break (two breaks of serve in a set) conversion rate ≥ 70%"
+    tags: ["cognitive", "strategy", "advanced"]
+
+  - id: "sports/tennis/mental-game"
+    title: "Mental Game & Match Composure"
+    description: >
+      Tennis is played point-by-point over potentially hours, with no clock,
+      against a single opponent who is actively trying to disrupt your rhythm.
+      Mental fortitude — staying composed after errors, resetting after games
+      lost, managing anxiety on big points — is the difference between
+      technically equal opponents. Foundations develop at NTRP 3.5-4.0;
+      becomes a competitive weapon at 4.5+.
+    benchmarks:
+      - level: beginner
+        criteria: "Keeps trying after unforced errors. Does not visibly give up on games or sets. Plays each point as a fresh start."
+        metrics:
+          - "Rallies after losing 3 consecutive points without withdrawing effort (observer-rated) on 8/10 occurrences"
+      - level: intermediate
+        criteria: "Bounces back after losing a set. Uses a consistent pre-point routine to reset focus. Does not argue calls or display destructive behavior."
+        metrics:
+          - "Pre-point routine (bounce, breath, or physical reset) used before ≥80% of service points"
+          - "Win rate in second set after losing first set: ≥ 40%"
+          - "0 code-of-conduct violations per match"
+      - level: advanced
+        criteria: "Thrives on pressure points (break points, tiebreaks). Recognizes and combats own negative self-talk patterns. Momentum management: responds differently after errors vs. winners."
+        metrics:
+          - "Tiebreak win rate: ≥ 50% (performs at or above baseline under maximum pressure)"
+          - "Break point save rate: ≥ 55% when serving"
+          - "Points won after an unforced error: ≥ 55% (resets and recovers)"
+      - level: expert
+        criteria: "Mental game as a competitive weapon. Reads opponent's mental state and applies pressure at their weakest moments. Performs above baseline on the biggest points in a match."
+        metrics:
+          - "Win rate on set points (when opponent is serving for the set): ≥ 50%"
+          - "Super-tiebreak (10-point) win rate: ≥ 55% in tournament play"
+          - "Match comeback rate (winning from one set and 3-5 down): measurable above zero in competitive matches"
+    tags: ["mental", "composure", "competitive"]
+
+relationships:
+  # ── Foundation → Groundstrokes (the first skills taught) ────────────────────
+  - source: "sports/tennis/footwork"
+    target: "sports/tennis/forehand"
+    type: "enables"
+    note: "Setting up correctly behind the ball is prerequisite to hitting a controlled forehand"
+
+  - source: "sports/tennis/footwork"
+    target: "sports/tennis/backhand"
+    type: "enables"
+    note: "Footwork enables balance and setup position for backhand contact"
+
+  # ── Foundation → Serve & Return ─────────────────────────────────────────────
+  - source: "sports/tennis/footwork"
+    target: "sports/tennis/serve"
+    type: "enables"
+    note: "Stable base, weight transfer, and trophy-position loading require coordinated footwork"
+
+  - source: "sports/tennis/footwork"
+    target: "sports/tennis/return-of-serve"
+    type: "enables"
+    note: "Split step timing and court positioning are the foundation of effective returning"
+
+  # ── Groundstrokes → Return (you use groundstrokes to return) ────────────────
+  - source: "sports/tennis/forehand"
+    target: "sports/tennis/return-of-serve"
+    type: "enables"
+    note: "The forehand return is the most common return stroke — forehand consistency enables return quality"
+
+  - source: "sports/tennis/backhand"
+    target: "sports/tennis/return-of-serve"
+    type: "enables"
+    note: "Wide serves to the backhand side require a reliable backhand to neutralize"
+
+  - source: "sports/tennis/serve"
+    target: "sports/tennis/return-of-serve"
+    type: "complementary"
+    note: "Understanding serve mechanics and patterns improves a player's ability to anticipate and read returns"
+
+  # ── Groundstrokes → Spin (spin is a refinement of existing strokes) ─────────
+  - source: "sports/tennis/forehand"
+    target: "sports/tennis/spin-technique"
+    type: "enables"
+    note: "Topspin forehand builds on the same swing path as a flat forehand — spin is a refinement, not a separate skill"
+
+  - source: "sports/tennis/backhand"
+    target: "sports/tennis/spin-technique"
+    type: "enables"
+    note: "Slice backhand technique and kick serve build on backhand grip and swing mechanics"
+
+  # ── Spin → Net play (slice approach is the gateway to net) ──────────────────
+  - source: "sports/tennis/spin-technique"
+    target: "sports/tennis/volley-net-play"
+    type: "enables"
+    note: "Drop volleys and touch volleys require tactile feel developed through spin work; slice approach shot is a gateway to net play"
+
+  - source: "sports/tennis/volley-net-play"
+    target: "sports/tennis/overhead-smash"
+    type: "requires"
+    note: "Overhead smash is only relevant when at the net — net play must be established first"
+
+  # ── All strokes → Strategy & Mental game ────────────────────────────────────
+  - source: "sports/tennis/forehand"
+    target: "sports/tennis/strategy-tactics"
+    type: "requires"
+    note: "Tactical patterns require reliable forehand as the primary offensive weapon"
+
+  - source: "sports/tennis/backhand"
+    target: "sports/tennis/strategy-tactics"
+    type: "requires"
+    note: "Strategy requires a complete groundstroke arsenal — backhand weakness eliminates half the court from tactical use"
+
+  - source: "sports/tennis/serve"
+    target: "sports/tennis/strategy-tactics"
+    type: "enables"
+    note: "Serve construction is the first tactical decision of every point — strong server can dictate point patterns from the start"
+
+  - source: "sports/tennis/strategy-tactics"
+    target: "sports/tennis/mental-game"
+    type: "component-of"
+    note: "Mental game is the execution layer of strategy — knowing the right tactic and actually doing it under pressure are separate skills"
+
+  # ── Foundation → Mental game (basic composure is a day-1 skill) ─────────────
+  - source: "sports/tennis/footwork"
+    target: "sports/tennis/mental-game"
+    type: "enables"
+    note: "Basic composure (not giving up, resetting after errors) is needed from the first rally — mental foundations develop alongside physical ones"

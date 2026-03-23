@@ -1,0 +1,834 @@
+# OpenSkillTree — Seed Skill Tree: Drawing & Illustration
+#
+# Domain:  Creative Arts / Visual Arts / Drawing & Illustration
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: Love Life Drawing 5-stage model, Academic Atelier system,
+# concept art industry levels
+#   beginner     = Symbol stage — drawing what you think, not what you see
+#   intermediate = Proportional accuracy, constructive drawing from observation
+#   advanced     = Expressive, intentional, technically competent mark-making
+#   expert       = Personal style, professional output, publishable work
+#
+# Teaching order based on academic atelier method, Proko, Drawabox, and art school curricula:
+#   Line quality & mark making → proportion & measurement → form & volume →
+#   light/shadow/value → perspective → composition → figure drawing & anatomy →
+#   color theory → materials & techniques → style development.
+
+tree:
+  id: "creative-arts/drawing-illustration"
+  title: "Drawing & Illustration"
+  description: >
+    A complete skill map for drawing and illustration — the foundational visual art
+    of translating observation, imagination, and ideas into marks on a surface.
+    Covers line quality, proportion, form, value, perspective, composition, figure
+    drawing, color theory, materials, and style development needed to progress from
+    symbolic beginner sketches to professional-grade, publishable illustration work.
+  domain: "Creative Arts"
+  visibility: "public"
+
+nodes:
+  # ── LINE QUALITY & MARK MAKING (foundation — taught first) ─────────────────
+  - id: "creative-arts/drawing-illustration/line-quality-mark-making"
+    title: "Line Quality & Mark Making"
+    description: >
+      The starting point for all drawing: learning to control the tool and produce
+      intentional marks. Covers contour lines, gesture lines, hatching, cross-hatching,
+      and line weight variation. Every atelier and Drawabox-style program begins here
+      because confident, controlled marks are the substrate for all subsequent skills.
+      Drawabox Lesson 1 focuses entirely on lines, ellipses, and boxes — the three
+      fundamental mark-making exercises. The core principle is ghosting: practice the
+      motion in the air before committing ink to paper, draw from the shoulder (not
+      the wrist), and accept imperfect lines rather than scratching over them.
+      Confident, single-stroke lines are the goal even if they are slightly off-target.
+      Feathery, scratchy, or hairy lines (multiple short strokes to approximate a line)
+      are the primary beginner habit to break. This node also covers the foundational
+      Drawabox exercises: superimposed lines (draw over the same line repeatedly to
+      build muscle memory), ghosted lines (plan then execute single confident strokes),
+      and ghosted planes (connect points with straight lines to form quadrilaterals).
+    benchmarks:
+      - level: beginner
+        criteria: "Draws smooth, continuous contour lines without feathering or scratching — single confident strokes from the shoulder, not short wrist-driven sketches. Can produce consistent parallel hatching lines. Completes Drawabox Lesson 1 exercises: superimposed lines, ghosted lines, ghosted planes, tables of ellipses, and funnels."
+        metrics:
+          - "Draws a 30 cm straight line freehand with deviation under 3 mm — using the ghosting technique (hover, aim, commit) rather than slow careful drawing"
+          - "Hatching lines are parallel within 5 degrees across a 5 cm swatch — minimum 20 lines per swatch with consistent spacing"
+          - "Completes a full page of superimposed lines (Drawabox exercise): lines start from the same point and fraying occurs only at the end, not the beginning"
+          - "Draws ellipses that close cleanly (ends meet within 2mm) and are drawn through 2-3 times per ellipse as per Drawabox method"
+          - "Draws from the shoulder for lines longer than 5 cm — wrist is used only for fine detail work under 3 cm"
+      - level: intermediate
+        criteria: >
+          Controls line weight to convey depth and emphasis — thicker lines for
+          foreground objects and cast shadow edges, thinner lines for background and
+          internal detail. Uses cross-hatching to build tonal gradations in at least
+          4 distinct value steps. Produces confident gesture lines that capture
+          movement in timed exercises (15-second to 2-minute poses). Has completed
+          or is working through the Drawabox 250 Box Challenge (drawing 250 boxes in
+          3-point perspective freehand, which typically takes weeks to months and
+          builds spatial intuition through sheer volume of practice).
+        metrics:
+          - "Line weight varies intentionally across a single drawing to separate foreground and background — an instructor can identify the spatial hierarchy from line weight alone"
+          - "30-second gesture drawings capture primary action line and weight distribution — figure's balance point is correctly placed"
+          - "Cross-hatching builds 4+ distinct value steps in a controlled swatch (even spacing, consistent angle per layer)"
+          - "250 Box Challenge: completed 250 freehand boxes in 3-point perspective with convergence accuracy improving measurably from box 1 to box 250 (compare first 10 to last 10)"
+      - level: advanced
+        criteria: >
+          Line quality is expressive and intentional — thick-to-thin transitions
+          convey form and light (thicker on the shadow side, thinner on the light
+          side). Hatching follows the cross-contour of forms to reinforce volume
+          (lines curve with the surface, not flat). Economy of line: says more with
+          fewer marks — a 10-line gesture conveys the same information as a 50-line
+          sketch by a less experienced artist. Drawabox Lesson 2 concepts mastered:
+          contour lines that wrap around forms, texture as a tool for communicating
+          surface quality rather than filling space.
+        metrics:
+          - "Blind contour drawing of a complex object is recognizable and proportionally accurate within 10% — demonstrates sustained hand-eye coordination"
+          - "Instructor identifies intentional line weight hierarchy in 90%+ of submitted drawings — thick-to-thin transitions align with light source direction"
+          - "Economy of line test: a 2-minute sketch communicates the same subject information as a 10-minute sketch (rated by 3+ peers as equally readable)"
+          - "Cross-contour hatching follows surface curvature on organic forms — tested on a sphere, cylinder, and organic subject (fruit, shoe)"
+      - level: expert
+        criteria: >
+          Line work is a recognizable personal signature — peers can identify the
+          artist from line quality alone. Achieves published illustration quality with
+          line alone (no tone or color needed). Teaches mark-making technique to
+          students with clear progressions from rigid exercises to expressive work.
+          Line work functions at the level required for professional editorial
+          illustration or concept art line passes.
+        metrics:
+          - "Portfolio of 10 line-only drawings rated publishable by a working illustrator or art director"
+          - "Students reproduce taught line techniques (ghosting, shoulder drawing, line weight control) accurately after a single 90-minute demonstration session"
+          - "Work identified as the artist's by line quality alone (no subject matter cues) by 5+ peers familiar with the style"
+          - "Line drawings selected for professional publication, exhibition, or client work on at least 2 occasions"
+    tags: ["foundation", "technique", "mark-making"]
+
+  # ── PROPORTION & MEASUREMENT ───────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/proportion-measurement"
+    title: "Proportion & Measurement"
+    description: >
+      Seeing and recording accurate size relationships between parts of a subject.
+      Covers sighting (pencil-at-arm's-length with locked elbow to maintain consistent
+      scale), comparative measurement (using one object's size as a unit to measure
+      others), plumb lines (vertical reference lines dropped from key points to check
+      alignment), the Loomis head construction (ball + plane method for constructing
+      heads from any angle), and the classical figure canon (7.5-8 heads tall for a
+      standing adult, with landmarks: chin at 1 head, nipples at 2, navel at 3, crotch
+      at 4, fingertips at mid-thigh, knees at 6, feet at 7.5-8). Builds on line
+      quality because accurate measurement requires confident, correctable marks. The
+      Love Life Drawing "past beginner" test for proportion is a powerful self-assessment:
+      draw a pose from reference, hide both the reference and your drawing, then redraw
+      the pose from memory. If the proportions in your memory drawing are close to the
+      reference, your observational proportion skills are internalizing.
+    benchmarks:
+      - level: beginner
+        criteria: "Uses sighting technique (pencil at arm's length, elbow locked) to compare relative sizes. Draws a head with features placed in correct halves and thirds (eyes at the vertical center, nose at 3/4, mouth at 7/8). Can place major landmarks on a standing figure using the head-height unit."
+        metrics:
+          - "Proportional accuracy within 15% of reference on a simple still life (measured at 5 key landmarks: top, bottom, widest point, and 2 internal features)"
+          - "Head drawing: eyes placed at vertical center (within 5% of total head height), nose at 3/4 mark, ears span from eyebrow to nose bottom"
+          - "Standing figure proportions: head-to-body ratio within 1/2 head of the 7.5-8 head canon — crotch at midpoint, knees at 3/4 of leg length"
+          - "Love Life Drawing 'past beginner' test attempted: draw from reference, hide both, redraw from memory — memory version captures overall proportions even if details are lost"
+      - level: intermediate
+        criteria: >
+          Applies Loomis head construction (ball + plane) from multiple angles: front,
+          three-quarter, and profile. Uses comparative measurement and plumb lines
+          consistently in observational drawing (checking vertical alignment of nose to
+          ankle, horizontal alignment of shoulders to hips). Draws the standing figure
+          to the 8-head canon with landmarks at correct intervals. Can maintain proportion
+          across a full 30-minute observational study without major drift.
+        metrics:
+          - "Proportional accuracy within 5% of reference on a 30-minute observational study — measured by overlaying drawing on reference photo at 5+ comparison points"
+          - "Loomis head drawn from 3 angles (front, three-quarter, profile) with feature placement within 5% of model sheet — jaw, brow, and ear positions all correct"
+          - "Standing figure: all 8-head canon landmarks placed within 1/4 head of correct position (nipple line at head 2, navel at head 3, crotch at head 4, etc.)"
+          - "Comparative measurement demonstrated: uses one element (e.g., head height) as a measuring unit and correctly identifies 3+ proportional relationships in a still life"
+      - level: advanced
+        criteria: >
+          Measures proportions quickly and intuitively — sighting becomes a verification
+          tool rather than primary method. Maintains proportional accuracy across complex
+          multi-figure compositions and foreshortened poses. Can draw a recognizable
+          portrait likeness in a 20-minute session. Achieves the Love Life Drawing
+          "past beginner" threshold: memory redraws capture correct proportions.
+        metrics:
+          - "20-minute portrait study achieves likeness rated recognizable by 8/10 independent viewers who know the subject"
+          - "Foreshortened figure proportions accurate within 8% of photographic reference — tested on a reclining or reaching pose with strong foreshortening"
+          - "Multi-figure composition (3+ figures): proportional relationships between figures are consistent (near figures larger, far figures smaller in correct ratio)"
+          - "Love Life Drawing memory test: redraw from memory within 10% proportional accuracy of the original reference"
+      - level: expert
+        criteria: >
+          Proportional accuracy is instinctive — internalized through thousands of
+          observational drawings. Draws convincing figures and portraits from imagination
+          with correct proportions (no reference needed for standard poses). Identifies
+          and corrects proportional errors in students' work within seconds of viewing.
+          Proportional skill supports art school admission portfolio quality (12-20
+          pieces demonstrating observational accuracy from life).
+        metrics:
+          - "Figure drawn from imagination passes proportional check against anatomical reference within 5% at 10+ measurement points"
+          - "Identifies proportional errors in student drawings within 10 seconds of viewing and can articulate the specific fix (e.g., 'head is 10% too large relative to torso')"
+          - "Draws 5 different standard poses from imagination (standing, sitting, walking, reaching, reclining) with proportions that pass peer review for anatomical plausibility"
+          - "Portrait from imagination captures a recognizable likeness of a known person — rated recognizable by 5+ viewers"
+    tags: ["observation", "measurement", "foundation"]
+
+  # ── FORM & VOLUME ──────────────────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/form-volume"
+    title: "Form & Volume"
+    description: >
+      Constructing the illusion of three-dimensional form on a two-dimensional surface.
+      Covers building complex objects from basic geometric primitives (sphere, cube,
+      cylinder, cone), cross-contour lines that wrap around form, and turning edges
+      where light transitions across curved surfaces. Requires confident line work
+      to construct forms cleanly. This is the core skill taught in Drawabox Lessons 3
+      through 7: Lesson 3 applies constructive drawing to plants (organic forms built
+      from cylinders, spheres, and flowing contours), Lesson 4 to insects (segmented
+      bodies from primitives), Lesson 5 to animals (complex organic construction),
+      Lesson 6 to everyday objects (man-made forms with precise geometry), and Lesson 7
+      to vehicles (the hardest test of constructive drawing — complex compound curves in
+      perspective). The Drawabox 250 Box Challenge (completed between Lessons 1 and 2)
+      builds the spatial intuition needed here, and the 100 Texture Challenge (between
+      Lessons 2 and 3) develops the ability to describe surface quality through mark-making.
+      The fundamental principle: every complex object in the visible world can be broken
+      down into combinations of spheres, cubes, cylinders, and cones — master these four
+      primitives and you can construct anything.
+    benchmarks:
+      - level: beginner
+        criteria: "Draws basic geometric primitives (sphere, cube, cylinder, cone) that convincingly read as 3D with a consistent implied light source. Uses overlapping shapes to suggest depth. Begins constructive drawing: breaks a simple object (apple, mug, box) into its primitive components."
+        metrics:
+          - "Sphere, cube, cylinder, and cone drawings rated as '3D-looking' by 8/10 viewers — each shows a consistent shadow placement implying a single light source"
+          - "Still life uses overlapping to establish clear spatial layering of 3+ objects — viewer can identify which object is in front without ambiguity"
+          - "Draws through a box (showing all 12 edges including hidden ones) with correct convergence — the Drawabox foundational exercise"
+          - "Breaks down a simple object (e.g., a mug = cylinder + handle, an apple = sphere + cone stem) into labeled primitives in a construction sketch"
+      - level: intermediate
+        criteria: >
+          Breaks down complex organic and man-made objects into combinations of
+          primitives before rendering — Drawabox Lessons 3-6 approach. Uses cross-contour
+          lines to describe surface direction (lines that wrap around the form, showing
+          its curvature to the viewer). Draws through forms (showing hidden edges) to
+          maintain volumetric consistency. Completes the Drawabox 100 Texture Challenge
+          or equivalent surface-description exercises. Applies constructive drawing to
+          plants (Lesson 3) and insects (Lesson 4).
+        metrics:
+          - "Complex object (e.g., shoe, chair, teapot) decomposed into labeled primitives in a construction sketch before rendering — construction lines visible in the study"
+          - "Cross-contour lines follow surface curvature accurately on organic forms — tested on a fruit, a shoe, and a human limb"
+          - "Draws through forms: hidden edges of a box, cylinder, and compound object are correctly placed, showing the back side of the form"
+          - "Drawabox Lesson 3 (plants) or Lesson 4 (insects): completed with construction from primitives visible — organic forms built from geometric foundations"
+      - level: advanced
+        criteria: >
+          Constructs convincing forms from imagination without reference — the critical
+          leap from observational drawing to creative illustration. Turns edges smoothly
+          — transitions from light to shadow describe the form's curvature (the terminator
+          line follows the form's surface). Applies constructive drawing to figure subjects
+          (ribcage as egg, pelvis as box, limbs as tapered cylinders) and environmental
+          subjects (buildings, vehicles, landscapes). Drawabox Lessons 5-7 level: animals
+          (complex organic), everyday objects (precise geometric), vehicles (compound
+          curves in perspective).
+        metrics:
+          - "Invented object (vehicle, creature, architecture) reads as solid and volumetric from 3 drawn viewing angles — consistent form logic across all views"
+          - "Form turning visible in value transitions on 90%+ of rendered drawings — the terminator line (light-to-shadow boundary) accurately follows surface curvature"
+          - "Constructs a vehicle or complex machine from imagination using only primitive-based construction — result is spatially convincing from a single viewing angle"
+          - "Figure construction from imagination: ribcage, pelvis, and limbs built from primitives with correct 3D overlap and foreshortening"
+      - level: expert
+        criteria: >
+          Form construction is effortless and invisible to the viewer — objects simply
+          look real without visible construction scaffolding. Creates complex multi-object
+          scenes from imagination with consistent volumetric logic across all elements.
+          Teaches constructive drawing methods with clear progression from primitives to
+          complex subjects. Form skills support concept art portfolio quality: invented
+          objects, characters, and environments all read as volumetrically convincing.
+        metrics:
+          - "Imagined scene with 5+ objects maintains consistent form logic (light direction, perspective, overlap) rated correct by a concept art professional"
+          - "Students demonstrate measurable improvement in form accuracy after one workshop session — pre/post comparison of a drawn sphere, box, and compound object"
+          - "Concept art portfolio includes 5+ invented objects or characters that read as fully 3D — rated as spatially convincing by an industry professional"
+          - "Teaches the primitive-to-complex construction pipeline and students successfully construct a recognizable object from primitives by session end"
+    tags: ["construction", "3D-form", "spatial"]
+
+  # ── LIGHT, SHADOW & VALUE ──────────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/light-shadow-value"
+    title: "Light, Shadow & Value"
+    description: >
+      Understanding how light interacts with form to create predictable shadow patterns.
+      Covers value scales (minimum 5-step, ideally 9-step for full tonal control), the
+      shadow family (core shadow along the terminator line, cast shadow projected onto
+      adjacent surfaces, occlusion shadow where surfaces touch, terminator — the boundary
+      between light and shadow), the light family (highlight on the shiniest point, center
+      light on the broadest lit area, reflected light bouncing into the shadow side from
+      nearby surfaces), and using value to create depth and mood. Requires form and volume
+      knowledge because shadows describe form — a cast shadow reveals the shape of the
+      casting object, and core shadow reveals the curvature of the form it sits on.
+      Figure drawing time benchmarks incorporate value study: at 5 minutes you should
+      achieve correct proportions plus basic anatomy plus a light/shadow pattern
+      (two-value — light side and shadow side separated by the terminator). At 10 minutes,
+      full construction plus shading with a 3-5 value range. At 20+ minutes, full
+      rendering with smooth gradations and atmospheric depth.
+    benchmarks:
+      - level: beginner
+        criteria: "Renders a 5-step value scale with visually even gradations from white to black. Identifies and places core shadow, cast shadow, highlight, and reflected light on a lit sphere. Can separate a simple form into two values: light side and shadow side."
+        metrics:
+          - "5-step value scale shows visually even spacing confirmed by photographing and converting to grayscale histogram — each step is distinct and evenly spaced"
+          - "Lit sphere study includes core shadow, cast shadow, highlight, and reflected light in correct positions relative to a single light source — labeled by the student"
+          - "Two-value study of a simple object (e.g., apple, mug): light side and shadow side clearly separated at the terminator line — no gradual blending, just two flat values"
+          - "Can name and point to all 6 elements of light/shadow on a lit object: highlight, center light, halftone, core shadow, reflected light, cast shadow"
+      - level: intermediate
+        criteria: >
+          Maps shadow shapes accurately from observation — draws the shadow as a shape
+          first, then refines gradations. Distinguishes form shadow (soft edge, follows
+          the contour of the form) from cast shadow (sharp edge, projects the silhouette
+          of the casting object). Controls value range to create atmospheric depth (aerial
+          perspective: objects farther away have less contrast and lighter values). Renders
+          a multi-object still life with consistent single light source across all objects.
+          5-minute figure drawing includes basic light/shadow pattern (two-value separation).
+        metrics:
+          - "Still life value study matches photographic reference within 1 value step at 10 sampled points — tested by comparing drawing to grayscale photo side by side"
+          - "Light direction consistent across all objects in a 5-object still life — all cast shadows point the same direction and match light source position"
+          - "Form shadow vs. cast shadow correctly distinguished in a study: form shadows have soft/gradual edges, cast shadows have hard/defined edges"
+          - "5-minute figure drawing shows clear two-value light/shadow separation with correctly placed terminator line"
+      - level: advanced
+        criteria: >
+          Uses value as a primary compositional tool — directs the viewer's eye through
+          contrast placement (highest contrast at the focal point, lower contrast at
+          periphery). Renders complex lighting scenarios (rim light, multiple sources,
+          ambient occlusion, subsurface scattering) convincingly. Creates mood through
+          value key: high-key (mostly light values, airy and optimistic), low-key (mostly
+          dark values, dramatic and moody). 10-minute figure drawing includes full
+          construction plus shading with a 3-5 value range.
+        metrics:
+          - "Thumbnail value study (3-value, 5 cm size) predicts final drawing's focal point as confirmed by 8/10 viewer eye-tracking — the eye goes where the contrast is"
+          - "Complex lighting scenario (2+ sources) rendered with correct shadow logic on all forms — each light source produces its own set of shadows with appropriate relative intensity"
+          - "Value key exercise: same subject rendered as high-key and low-key — mood difference is immediately apparent to 8/10 viewers"
+          - "10-minute figure drawing: correct proportions, anatomical construction, and 3-5 value shading with smooth gradations — not flat or patchy"
+      - level: expert
+        criteria: >
+          Value rendering rivals photographic realism when desired, yet can also be
+          simplified to 2-3 values for stylized illustration — the mark of mastery is
+          control over the full spectrum of simplification to realism. Invents convincing
+          lighting from imagination for any subject (characters, environments, objects).
+          Teaches value and shadow mapping methodology from first principles. 20+ minute
+          figure drawing achieves full rendering with smooth gradations and atmospheric
+          depth. Portfolio value work meets professional editorial illustration or
+          concept art standards.
+        metrics:
+          - "Rendered drawing from imagination rated 'photographically convincing lighting' by 8/10 professional artists — light source, shadow logic, and atmospheric depth all correct"
+          - "Value structure remains readable when drawing is reduced to 50% size — the compositional value plan holds at thumbnail scale"
+          - "20-minute figure drawing: full rendering with smooth value gradations, correct anatomy, atmospheric depth, and clear focal point"
+          - "Teaches a 'light logic' workshop where students correctly place shadows on 3 different forms from an assigned light source by session end"
+    tags: ["value", "lighting", "rendering"]
+
+  # ── PERSPECTIVE DRAWING ────────────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/perspective-drawing"
+    title: "Perspective Drawing"
+    description: >
+      Creating the illusion of spatial depth through systematic geometric construction.
+      Covers 1-point perspective (one vanishing point on the horizon — hallways, roads,
+      railroad tracks), 2-point perspective (two vanishing points on the horizon —
+      buildings viewed at an angle, most common in illustration), and 3-point perspective
+      (two on the horizon plus one above or below — dramatic bird's-eye or worm's-eye
+      views), vanishing points, horizon line (always at the viewer's eye level),
+      foreshortening, and drawing through forms in perspective. Builds on line quality
+      (accurate construction lines) and form (placing 3D objects in space). The Drawabox
+      250 Box Challenge is the most intensive perspective exercise: drawing 250 boxes
+      freehand in 3-point perspective over weeks to months, building spatial intuition
+      through volume of practice. Drawabox Lesson 6 (everyday objects) and Lesson 7
+      (vehicles) are the most demanding perspective applications, requiring compound
+      curves, ellipses, and complex proportions all in accurate perspective. Key
+      principle: perspective is not about rulers and T-squares — it is about training
+      your eye to see convergence, foreshortening, and spatial relationships so that
+      freehand perspective drawings look correct without construction lines.
+    benchmarks:
+      - level: beginner
+        criteria: "Draws a room interior in 1-point perspective with converging lines meeting at a single vanishing point on the horizon line. Places simple furniture (table, chair, bookshelf) in correct perspective with consistent size diminishment. Understands that the horizon line is always at eye level."
+        metrics:
+          - "All parallel edges in a 1-point perspective drawing converge to the vanishing point within 2 degrees — checked by extending lines with a straightedge"
+          - "Objects diminish in size consistently with distance from the viewer — a far chair is proportionally smaller than a near chair based on its position in the perspective grid"
+          - "Horizon line placed at eye level and remains consistent across the entire drawing — all vanishing points sit on it"
+          - "Can draw a simple box in 1-point perspective with correct convergence, then place a second box beside it at the same depth with matching perspective"
+      - level: intermediate
+        criteria: >
+          Constructs accurate 2-point perspective scenes — the most common perspective
+          system in illustration and concept art. Draws ellipses in perspective (wheels,
+          cups, arches) with correct minor axis alignment (the minor axis of the ellipse
+          always points at the vanishing point). Uses perspective grids to place objects
+          at measured intervals in space (dividing a wall into equal sections, placing
+          fence posts at regular intervals receding into distance). Drawabox 250 Box
+          Challenge completed or equivalent volume of 3-point perspective practice.
+        metrics:
+          - "2-point perspective building has vertical edges truly vertical and receding edges converge correctly to their respective vanishing points — checked with a straightedge"
+          - "Ellipses in perspective have minor axis aligned to the vanishing point within 5 degrees — tested on 3 ellipses at different depths (near, mid, far)"
+          - "Perspective grid used to place 5 equally-spaced elements (e.g., street lamps, columns) receding into distance — spacing diminishes correctly"
+          - "250 Box Challenge completed: convergence accuracy measurably improved from first 10 boxes to last 10 boxes — checked by extending edges to test vanishing point consistency"
+      - level: advanced
+        criteria: >
+          Applies 3-point perspective for dramatic viewpoints (bird's-eye looking down,
+          worm's-eye looking up). Draws organic forms (figures, trees, animals) in
+          convincing perspective — not just geometric objects. Foreshortens the human
+          figure accurately (a fist extended toward the viewer appears proportionally
+          larger). Estimates perspective intuitively without constructing full grids —
+          freehand perspective drawings look correct. Drawabox Lesson 7 (vehicles)
+          completed or equivalent complex perspective work.
+        metrics:
+          - "Foreshortened figure drawing maintains proportional accuracy within 10% of photographic reference — tested on a reaching or reclining pose"
+          - "3-point perspective cityscape has all three vanishing points functioning correctly with consistent convergence across all buildings"
+          - "Freehand perspective sketch of a street scene (no ruler, no grid) rated as spatially convincing by 8/10 viewers"
+          - "Vehicle or complex machine drawn in perspective with correct proportions, ellipses, and surface curves — rated as spatially correct by an instructor"
+      - level: expert
+        criteria: >
+          Perspective is fully internalized — draws complex environments from imagination
+          with convincing spatial depth on the first attempt. Handles curvilinear
+          perspective (5-point — for fisheye or panoramic views) and panoramic distortion.
+          Teaches perspective systems to students from 1-point through 3-point with
+          practical exercises. Perspective skill supports concept art and environment
+          design at a professional portfolio level.
+        metrics:
+          - "Imagined environment with 10+ objects in perspective (buildings, vehicles, figures, props) rated spatially convincing by a concept art lead"
+          - "Students construct accurate 2-point perspective scenes independently after one 2-hour teaching session"
+          - "Curvilinear or 5-point perspective drawing demonstrates correct distortion (edges curve toward vanishing points at periphery of vision)"
+          - "Environment concept art portfolio includes 5+ imagined scenes in correct perspective — rated hire-ready by an industry professional"
+    tags: ["perspective", "spatial", "construction"]
+
+  # ── COMPOSITION & DESIGN ───────────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/composition-design"
+    title: "Composition & Design"
+    description: >
+      Arranging visual elements within the picture plane to create images that
+      communicate clearly, guide the viewer's eye, and produce aesthetic impact.
+      Covers rule of thirds (place focal elements at intersection points of a 3x3 grid),
+      golden ratio (1:1.618 proportional division for natural-feeling asymmetry),
+      leading lines (roads, fences, gazes that draw the eye toward the focal point),
+      focal point hierarchy (one clear primary focal point, supported by secondary
+      elements), thumbnail sketching (small 2-5 cm value studies to test compositions
+      before committing to a full drawing), and the principles of design (balance,
+      contrast, rhythm, unity, emphasis, movement, pattern). Perspective knowledge
+      enables spatial composition — depth through perspective is one of the most
+      powerful compositional tools. The thumbnail test is the single most important
+      composition habit: if a composition does not read clearly at 5 cm, it will not
+      read clearly at full size. Professional illustrators and concept artists produce
+      10-50 thumbnails before selecting a composition for a finished piece. Portfolio
+      standard: art school admission portfolios (12-20 pieces) are evaluated heavily on
+      compositional strength — technical skill without compositional intention is the
+      most common portfolio weakness.
+    benchmarks:
+      - level: beginner
+        criteria: "Applies rule of thirds to place focal points off-center. Creates thumbnail sketches (minimum 3) before committing to a final composition. Avoids tangencies (edges that barely touch, creating visual confusion) and awkward cropping (cutting off hands at wrists, heads at foreheads)."
+        metrics:
+          - "3 thumbnail sketches (2-5 cm each, 3-value maximum) produced before each finished drawing — thumbnails explore meaningfully different compositions, not minor variations"
+          - "Focal point placed at a rule-of-thirds intersection in 80%+ of compositions — confirmed by overlaying the grid"
+          - "Zero tangencies in finished drawings — no edges that barely touch or lines that create unintended visual merges"
+          - "Cropping is intentional: subjects are either fully included or cropped decisively (not awkwardly at joints or mid-feature)"
+      - level: intermediate
+        criteria: >
+          Uses leading lines, framing devices (doorways, arches, tree branches), and
+          value contrast to direct the viewer's eye to the focal point. Applies the
+          golden ratio and dynamic symmetry in composition planning. Balances positive
+          space (subjects) and negative space (background/empty areas) intentionally —
+          negative space has shape and purpose, not just leftover area. Produces 5+
+          thumbnails per finished piece with meaningful variation.
+        metrics:
+          - "Viewer eye-tracking (or poll of 10 viewers) confirms focal point matches artist's intent on 80%+ of drawings — ask 'where does your eye go first?'"
+          - "Composition uses at least 2 distinct design principles identified by instructor (e.g., leading lines + value contrast, rhythm + framing)"
+          - "Negative space has intentional shape — when the background is isolated as a silhouette, it reads as a designed shape rather than random leftover"
+          - "5+ thumbnails produced per finished piece with at least 3 substantially different compositional approaches explored"
+      - level: advanced
+        criteria: >
+          Composes for narrative — uses visual hierarchy to tell a story across the
+          picture plane without words. The viewer reads the image in a predictable
+          sequence: primary focal point first, then secondary elements, then background
+          context. Breaks compositional rules intentionally for expressive effect (centered
+          composition for confrontation, extreme asymmetry for tension, tangent used
+          deliberately for unease). Designs compositions that work across multiple aspect
+          ratios (square, portrait, landscape) and reproduction sizes (poster down to
+          thumbnail).
+        metrics:
+          - "Narrative illustration's story is correctly interpreted by 8/10 viewers without caption — the who, what, and emotional tone are all communicated visually"
+          - "Composition reads clearly when reduced to thumbnail size (5 cm) — the focal point, value structure, and basic shapes are all identifiable at small scale"
+          - "Same subject composed effectively in 3 different aspect ratios (square, 2:3 portrait, 16:9 landscape) — each composition works for its format"
+          - "Compositional rule broken intentionally with clear expressive purpose — identified and explained by the artist, confirmed as effective by an instructor"
+      - level: expert
+        criteria: >
+          Compositional design is a defining strength of the portfolio. Creates
+          compositions of the complexity and intentionality seen in published editorial
+          illustration, book covers, or gallery work. Teaches compositional analysis
+          through master study deconstruction (analyzing how Rockwell, Leyendecker,
+          Mucha, or contemporary illustrators designed their compositions). Portfolio
+          meets entry-level concept art standards: 10-20 polished pieces with consistent
+          compositional quality across the body of work.
+        metrics:
+          - "Portfolio of 10 compositions rated publication-ready by an art director — each demonstrates a different compositional strategy"
+          - "Master study analysis correctly identifies 5+ compositional strategies in a classic painting (e.g., leading lines, value grouping, figure placement, color temperature shifts, framing devices)"
+          - "Teaches a composition workshop where students produce effective thumbnail compositions by session end — 80%+ of student thumbnails have a clear focal point and readable value structure"
+          - "Portfolio consistency: compositional quality is maintained across 10+ pieces (no weak compositions in the set) — meets entry-level concept art or editorial illustration portfolio standards"
+    tags: ["composition", "design", "visual-language"]
+
+  # ── FIGURE DRAWING & ANATOMY ───────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/figure-drawing-anatomy"
+    title: "Figure Drawing & Anatomy"
+    description: >
+      Drawing the human figure from observation and imagination. Covers gesture drawing
+      (capturing the essential movement and energy of a pose in seconds to minutes),
+      skeletal landmarks (ribcage, pelvis, scapula, greater trochanter, clavicle,
+      iliac crest), major muscle groups (deltoid, pectoralis, latissimus dorsi, rectus
+      abdominis, external obliques, quadriceps, hamstrings, gastrocnemius, biceps,
+      triceps), and constructing convincing poses from primitives. Requires proportion
+      and measurement (figure canon — 7.5-8 heads tall) and form and volume (constructing
+      the body from egg-shaped ribcage, box-shaped pelvis, cylindrical limbs). Figure
+      drawing time benchmarks are the standard way to measure progress: 15-30 seconds
+      for action line only (the single sweeping line that captures the pose's thrust and
+      energy), 1 minute for proportions roughed in with major masses indicated, 2 minutes
+      for correct proportions with joint placement and basic volumes (ribcage, pelvis,
+      head), 5 minutes for proportions plus basic anatomy plus light/shadow pattern,
+      10 minutes for full construction plus shading, 20+ minutes for full rendering with
+      smooth gradations and detail. The Love Life Drawing "past beginner" test applies
+      here: draw a pose from reference, hide both, redraw from memory — if proportions
+      hold, your figure drawing skills are internalizing.
+    benchmarks:
+      - level: beginner
+        criteria: "Captures the action line and overall gesture of a pose in timed exercises (15-second to 2-minute poses). Identifies major skeletal landmarks on a figure (ribcage, pelvis, spine S-curve, shoulder line, hip line). Completes regular timed figure drawing sessions (at least weekly) with progressive improvement."
+        metrics:
+          - "15-30 second gesture: captures a single confident action line that shows the pose's primary thrust and direction of energy — line is continuous, not scratchy"
+          - "1-minute gesture: proportions roughed in with major masses (head, ribcage, pelvis) indicated as simple shapes — weight distribution (which leg bears weight) is clear"
+          - "2-minute gesture: correct proportions (8-head canon within 1/2 head tolerance), joint placement visible (shoulders, elbows, knees, ankles), basic volumes indicated"
+          - "Skeletal landmarks (ribcage, pelvis, knees, shoulder line tilt, hip line tilt) placed within 10% of correct position on a standing figure"
+      - level: intermediate
+        criteria: >
+          Constructs the figure using Loomis or Reilly method with correct proportions.
+          Identifies and draws the 10 major muscle groups from front and back views
+          (deltoid, pectoralis, rectus abdominis, external obliques, latissimus dorsi,
+          quadriceps, hamstrings, biceps, triceps, gastrocnemius). Draws hands and feet
+          at basic competency (hands with correct proportions and joint articulation, feet
+          with arch and ankle structure). Captures weight and balance in standing and
+          seated poses — the figure does not look like it is about to fall over.
+          5-minute figure drawing includes proportions plus basic anatomy plus light/shadow.
+        metrics:
+          - "5-minute figure drawing captures movement, weight, basic anatomical structure, and a two-value light/shadow pattern — proportions within 5% of reference"
+          - "Major muscle groups identifiable and correctly placed in a 20-minute figure study — deltoid, pectoralis, and quadriceps labeled correctly on a finished study"
+          - "Hands drawn with correct proportions: middle finger length equals palm length, fingers taper, thumb opposes correctly — 3 out of 5 hand studies rated 'structurally correct' by instructor"
+          - "10-minute figure drawing: full construction from primitives plus shading with 3-5 value range — figure reads as volumetric and anatomically plausible"
+      - level: advanced
+        criteria: >
+          Draws the figure from imagination in varied poses with anatomically plausible
+          musculature — not just standing or sitting, but dynamic action poses (running,
+          jumping, fighting, dancing). Renders hands, feet, and facial features with
+          structural accuracy and expressiveness. Captures emotion and character through
+          pose and expression (a character's personality readable from their posture alone).
+          20-minute figure drawing achieves full rendering with smooth gradations and detail.
+          Passes the Love Life Drawing memory test: redraws proportions from memory within
+          10% of the original.
+        metrics:
+          - "Figure drawn from imagination passes anatomical review with fewer than 3 structural errors per drawing — tested across 5 different poses (standing, sitting, action, reclining, twisting)"
+          - "Dynamic pose from imagination conveys intended emotion as rated by 8/10 viewers (e.g., 'confident,' 'fearful,' 'joyful' — without verbal cues)"
+          - "20-minute figure drawing: full rendering with smooth value gradations, correct anatomy, hands and feet included with structural accuracy"
+          - "Character turnaround sheet (front, three-quarter, side, back) maintains consistent proportions within 5% across all views"
+      - level: expert
+        criteria: >
+          Figure drawing is at professional illustration or concept art level — meets
+          entry-level concept art portfolio standards (10-20 polished pieces showing
+          consistent figure quality). Draws any pose from any angle from imagination
+          with convincing anatomy, including extreme foreshortening and unusual
+          viewpoints. Personal figure style is recognizable while remaining anatomically
+          grounded — style is built on top of structural knowledge, not as a substitute
+          for it. Full character turnaround maintains proportions within 3%.
+          Art school admission portfolio standard: 12-20 pieces including observational
+          figure drawing from life (not from photos alone).
+        metrics:
+          - "Figure illustration portfolio rated hire-ready by a concept art studio lead — minimum 10 pieces showing range of poses, expressions, and body types"
+          - "Full character turnaround (front, three-quarter, side, back) maintains consistent proportions within 3% — measured at 8+ comparison points across views"
+          - "Draws a complex multi-figure composition from imagination (3+ interacting figures) with consistent anatomy, proportions, and perspective across all figures"
+          - "Art school admission portfolio: 12-20 pieces including observational figure drawing from life, rated as competitive by an admissions-level reviewer"
+    tags: ["figure", "anatomy", "observation"]
+
+  # ── COLOR THEORY & APPLICATION ─────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/color-theory-application"
+    title: "Color Theory & Application"
+    description: >
+      Understanding and applying color in illustration. Covers the color wheel (12-step:
+      3 primaries, 3 secondaries, 6 tertiaries), hue (the color itself — red, blue,
+      green), saturation (intensity — vivid vs. muted/gray), value (lightness — how
+      light or dark independent of hue), color temperature (warm colors advance and
+      attract attention — reds, oranges, yellows; cool colors recede — blues, greens,
+      purples), complementary harmonies (colors opposite on the wheel — maximum contrast),
+      analogous harmonies (colors adjacent on the wheel — natural harmony), triadic
+      harmonies (three colors equally spaced — vibrant and balanced), limited palettes,
+      and color mixing in both traditional and digital media. An intermediate skill
+      that parallels materials and techniques — value understanding is prerequisite
+      because value does the heavy lifting that color refines (a painting with correct
+      values and wrong colors still reads; correct colors with wrong values looks flat
+      and confusing). The James Gurney principle: paint the light, not the object.
+      A white ball in warm light has warm highlights and cool shadows; the same white
+      ball in cool light has cool highlights and warm shadows. Understanding this
+      temperature shift is the key to convincing color.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies primary, secondary, and tertiary colors on the color wheel. Mixes target colors from primaries within 2 attempts (traditional media) or selects them accurately (digital). Understands warm vs. cool temperature and can sort a set of color swatches by temperature."
+        metrics:
+          - "Paints a 12-step color wheel from 3 primaries with hue transitions visually even — no muddy mixtures between steps"
+          - "Identifies warm and cool variants of each primary correctly in a color sorting exercise (e.g., warm red = cadmium, cool red = alizarin)"
+          - "Mixes a target color (e.g., a specific green, a muted orange) from primaries within 2 attempts — match confirmed by placing the mix next to the target swatch"
+          - "Converts a colored illustration to grayscale and confirms that the value structure is readable — colors chosen did not collapse to the same gray"
+      - level: intermediate
+        criteria: >
+          Applies complementary, analogous, and triadic color harmonies to illustrations
+          with intentional effect. Uses a limited palette (3-5 colors plus white) to
+          create a unified, harmonious image — the discipline of restriction forces
+          color mixing and teaches color relationships. Controls saturation to direct
+          attention: desaturates background and peripheral elements, saturates the focal
+          point. Uses color temperature shifts to create spatial depth (warm foreground,
+          cool background — aerial/atmospheric perspective in color).
+        metrics:
+          - "Illustration using a 4-color limited palette rated as 'harmonious' by 8/10 viewers — no jarring color clashes, all colors feel intentionally related"
+          - "Color temperature shift between foreground (warm) and background (cool) is visible and intentional — creates measurable sense of depth"
+          - "Saturation hierarchy: focal point has the highest saturation in the image, periphery has lower saturation — confirmed by desaturating the image and checking value contrast at the focal point"
+          - "Produces color studies of the same subject under 2 different lighting conditions (warm light/cool shadows, cool light/warm shadows) — temperature shift is correct in both"
+      - level: advanced
+        criteria: >
+          Uses color for narrative and emotional effect — understands color psychology
+          (red = danger/passion, blue = calm/melancholy, yellow = joy/warning) and
+          cultural associations. Manages complex color interactions: simultaneous contrast
+          (a gray square looks warm on a cool background and cool on a warm background),
+          chromatic adaptation, and color vibration at high saturation. Matches color
+          palettes from reference images or art direction briefs accurately on the first
+          attempt. Can design a color script (planned color progression across a series
+          of images or scenes).
+        metrics:
+          - "Color palette matches art direction brief on first pass 80%+ of the time — art director confirms match without revisions"
+          - "Illustration's mood (e.g., 'ominous,' 'joyful,' 'nostalgic,' 'tense') correctly identified by 8/10 viewers based on color alone (desaturated or silhouetted version shown for comparison)"
+          - "Demonstrates simultaneous contrast: same neutral color appears warm and cool depending on surrounding colors in a controlled exercise"
+          - "Color script for a 5-image narrative sequence shows intentional emotional progression through color — warm to cool, saturated to muted, or other planned arc"
+      - level: expert
+        criteria: >
+          Color sense is a defining element of personal style — portfolio color work is
+          immediately recognizable. Creates original color palettes that are distinctive
+          and memorable. Color choices are sophisticated, unexpected, and effective —
+          breaks conventional harmony rules with intentional and successful results.
+          Teaches color theory through practical mixing and application exercises.
+          Portfolio color work meets professional publication standards for editorial
+          illustration, children's books, or concept art.
+        metrics:
+          - "Professional colorist or art director rates portfolio color work as 'distinctive and publication-ready' — color is identified as a portfolio strength"
+          - "Students produce a cohesive limited-palette illustration (4 colors + white) after one 2-hour teaching session"
+          - "Original color palette used consistently across a series of 5+ illustrations — palette becomes associated with the artist's work"
+          - "Portfolio includes 10+ color illustrations rated as publication-quality — meets entry-level concept art or editorial illustration color standards"
+    tags: ["color", "painting", "design"]
+
+  # ── MATERIALS & TECHNIQUES ─────────────────────────────────────────────────
+  - id: "creative-arts/drawing-illustration/materials-techniques"
+    title: "Materials & Techniques"
+    description: >
+      Mastering the tools of the trade across traditional and digital media. Covers
+      graphite (pencil grades from 4H for fine light lines to 8B for rich darks;
+      blending with tortillons and chamois; erasing as a drawing tool with kneaded
+      erasers), charcoal (vine charcoal for light gestural work, compressed charcoal
+      for rich darks, white charcoal or conte for highlights on toned paper), ink
+      (dip pen for variable line weight, brush pen for expressive calligraphic marks,
+      technical pen for consistent line width, ink wash for tonal gradations), digital
+      tools (Procreate for iPad, Photoshop for industry-standard compositing and
+      painting, Clip Studio Paint for comics and illustration — each has distinct
+      strengths), and mixed media approaches (traditional line work scanned and colored
+      digitally, digital sketch printed and painted over). An intermediate skill that
+      parallels color theory — both expand the artist's expressive range. The choice of
+      medium is not just preference — it is a creative decision that affects the final
+      look, feel, and audience reception of the work. Portfolio standard: art school
+      admission portfolios should demonstrate ability in at least 2 media, with
+      observational drawing from life (not from photos) as a core requirement.
+    benchmarks:
+      - level: beginner
+        criteria: "Uses 3 pencil grades (HB for mid-tones, 2B for darks, 6B for deepest darks) to achieve distinct value ranges in a single drawing. Produces clean ink lines with a fine-tip pen (0.3-0.5mm). Opens a digital drawing app (Procreate, Clip Studio Paint, or Photoshop) and uses basic brush, eraser, and undo tools. Understands that different media produce fundamentally different marks and chooses pencil vs. pen vs. digital for a specific effect."
+        metrics:
+          - "Drawing uses 3+ pencil grades with visible value differentiation — 4+ distinct value steps achieved through pencil selection alone (without blending)"
+          - "Digital sketch completed using pressure-sensitive brush with line weight variation — thin lines for light areas, thick lines for shadow edges and foreground"
+          - "Ink drawing with a fine-tip pen: clean lines with no visible wobble or scratching — completed a simple still life in ink without pencil underdrawing"
+          - "Can name and demonstrate the difference between at least 3 drawing media (e.g., graphite is erasable and precise, charcoal is expressive and broad, ink is permanent and high-contrast)"
+      - level: intermediate
+        criteria: >
+          Works competently in at least 2 traditional media (graphite and one of: charcoal,
+          ink, or conte) and 1 digital tool. Uses charcoal for broad tonal work with
+          controlled edges (hard vs. soft edges created by selective blending and erasing).
+          Uses ink wash or brush pen for expressive line and value (wet-on-wet for soft
+          edges, wet-on-dry for crisp edges). Manages digital layers (separate layers for
+          line, color, shading), opacity, and blending modes (Multiply for shadows, Screen
+          for highlights, Overlay for color adjustments). Maintains a sketchbook with
+          regular practice in at least 2 media.
+        metrics:
+          - "Finished piece in 2 different traditional media rated technically competent by instructor — demonstrates understanding of each medium's strengths (e.g., charcoal for broad value, ink for crisp contrast)"
+          - "Digital illustration uses layers (minimum: line, flat color, shadow, highlight), masks, and blending modes to achieve a polished, non-flat result"
+          - "Charcoal drawing demonstrates controlled edges: both hard edges (crisp, unblended) and soft edges (blended gradation) used intentionally in the same drawing"
+          - "Ink wash study: 5+ distinct value steps achieved using dilution alone — even gradation without blotching"
+      - level: advanced
+        criteria: >
+          Selects media deliberately to match the expressive needs of each project —
+          charcoal for moody atmospheric pieces, ink for graphic high-contrast work,
+          digital for color illustration with revision flexibility. Combines traditional
+          and digital workflows (e.g., ink drawing scanned at 600 DPI and colored
+          digitally with the line work preserved). Masters at least one digital tool at
+          a professional level: custom brushes that emulate traditional media, actions
+          or shortcuts for efficient workflow, color management for print output.
+          Portfolio shows range across media while maintaining consistent quality.
+        metrics:
+          - "Mixed media piece (traditional + digital) rated as visually cohesive by a professional illustrator — the join between traditional and digital is invisible"
+          - "Custom digital brush set created and used consistently across a series of 5+ illustrations — brushes produce a distinctive, recognizable texture"
+          - "Selects appropriate medium for 4 out of 5 hypothetical project briefs and explains the choice (e.g., 'charcoal for this moody portrait because of its tonal range and atmospheric softness')"
+          - "Portfolio includes finished pieces in 3+ media that all meet the same quality standard — no medium is noticeably weaker than others"
+      - level: expert
+        criteria: >
+          Technical mastery across multiple media is a competitive advantage and a
+          recognized part of the artist's professional identity. Creates work that
+          exploits the unique qualities of each medium in ways that could not be
+          replicated in another medium. Develops custom tools, brushes, or workflows
+          adopted by other artists. Portfolio meets professional publication standards
+          across media — entry-level concept art standard of 10-20 polished pieces
+          with consistency across the body of work.
+        metrics:
+          - "Work in 3+ distinct media rated professional quality by respective medium specialists (e.g., a charcoal specialist rates the charcoal work, a digital painter rates the digital work)"
+          - "Custom brush set or workflow tutorial downloaded or used by 100+ other artists — demonstrates recognized expertise that others seek to learn"
+          - "Portfolio of 10-20 pieces across multiple media maintains consistent quality and style — meets entry-level concept art or editorial illustration portfolio standards"
+          - "Teaches a materials workshop covering 2+ media where students produce technically competent finished pieces by session end"
+    tags: ["materials", "digital", "traditional", "technique"]
+
+  # ── STYLE DEVELOPMENT & PORTFOLIO (capstone) ───────────────────────────────
+  - id: "creative-arts/drawing-illustration/style-development-portfolio"
+    title: "Style Development & Portfolio"
+    description: >
+      The capstone skill: developing a distinctive personal voice, iterating on
+      recurring themes, and curating a cohesive body of work suitable for professional
+      presentation. Integrates every preceding skill — line, proportion, form, value,
+      perspective, composition, figure, color, and materials — into a unified artistic
+      identity. Includes seeking and integrating critique, understanding markets, and
+      building a professional portfolio. Portfolio standards by career stage: art school
+      admission requires 12-20 pieces including observational drawing from life (not
+      traced, not from photos exclusively) demonstrating range and foundational skill.
+      Entry-level concept art positions require 10-20 polished pieces with consistency
+      across the body of work — consistency matters more than peak quality because it
+      proves reliability. Intermediate professional portfolios show original compositions
+      and character designs with a recognizable style. Professional-level portfolios
+      present a cohesive body of work showing specialization (editorial illustration,
+      children's books, concept art, sequential art, or gallery work) with enough depth
+      that a viewer can immediately identify the artist's strengths, aesthetic, and the
+      type of work they should be hired for.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies 3 artists whose work resonates and can articulate specifically why (not just 'I like it' but 'I admire how they use limited palette to create mood' or 'their line weight variation creates depth'). Completes a master study that replicates the style of a chosen artist. Accepts and applies critique — revises a drawing based on specific feedback rather than starting over."
+        metrics:
+          - "Master study achieves recognizable stylistic similarity to the original as rated by instructor — captures 3+ key stylistic traits (line quality, palette, composition approach)"
+          - "Incorporates 2+ specific critique notes into a revised drawing — the specific issues identified are measurably improved in the revision"
+          - "Can articulate why 3 admired artists' work is effective using specific visual vocabulary (line weight, color temperature, compositional strategy, value structure) — not vague praise"
+          - "Maintains a regular practice habit: minimum 3 drawing sessions per week documented in a sketchbook or digital folder"
+      - level: intermediate
+        criteria: >
+          Emerging personal preferences are visible across a body of work: recurring
+          subjects, consistent palette, preferred media, characteristic line quality, or
+          favorite compositional approaches. Creates a series of 5+ thematically related
+          pieces that feel like they belong together. Seeks critique proactively from
+          peers, instructors, or online communities and revises work based on feedback.
+          Begins curating a portfolio: selects best work, removes weak pieces, and
+          presents work in a clean format (website, PDF, or physical portfolio). Portfolio
+          shows 12-20 pieces suitable for art school admission level — includes
+          observational drawing from life.
+        metrics:
+          - "Series of 5 related pieces shows visual consistency in style as rated by 8/10 peer reviewers — they feel like they were made by the same artist with the same intention"
+          - "Portfolio review identifies at least 3 consistent stylistic traits across the body of work (e.g., 'always uses warm palettes,' 'favors dynamic diagonal compositions,' 'distinctive thick-to-thin line quality')"
+          - "Seeks and receives critique from 3+ different sources (instructor, peer group, online community) and documents specific changes made in response"
+          - "Portfolio of 12-20 pieces curated: weakest pieces removed, work presented in consistent format, includes observational drawing from life — meets art school admission baseline"
+      - level: advanced
+        criteria: >
+          Personal style is distinctive and intentional — work is recognizable without
+          a signature. Iterates on themes across multiple projects to deepen artistic
+          voice. Portfolio is curated and tailored for specific markets: editorial
+          illustration (narrative scenes, conceptual imagery, typography integration),
+          children's books (character consistency, sequential storytelling, age-appropriate
+          style), concept art (environment design, character turnarounds, prop design),
+          or gallery work (thematic depth, technical mastery, artistic statement).
+          Portfolio meets entry-level professional standards: 10-20 polished pieces
+          with consistency across the body of work. Original compositions and character
+          designs demonstrate creative capability, not just technical skill.
+        metrics:
+          - "Work identified as the artist's without signature by 8/10 peers familiar with the style — stylistic identity is strong enough to be recognizable"
+          - "Portfolio receives positive response (interview, callback, or commission) from 2+ professional opportunities — portfolio opens doors"
+          - "Portfolio tailored for a specific market: 10-20 polished pieces with work relevant to that market (e.g., concept art portfolio includes character turnarounds, environment paintings, and prop sheets)"
+          - "Original character designs: 3+ distinct characters with consistent design language, personality readable from silhouette, and clean turnaround sheets"
+      - level: expert
+        criteria: >
+          Style is a professional brand — recognized in the illustration community.
+          Body of work demonstrates artistic growth and thematic depth over time.
+          Publishes or exhibits regularly in professional venues. Mentors developing
+          artists on finding their voice through structured portfolio reviews and
+          stylistic exercises. Portfolio shows a cohesive body of work with clear
+          specialization that instantly communicates what the artist does, how they
+          do it, and why a client should hire them.
+        metrics:
+          - "Published or exhibited in 3+ professional venues (books, magazines, galleries, licensed products, film/game credits) — work is in the public sphere"
+          - "Mentored artists cite specific stylistic guidance that measurably shaped their development — at least 2 mentees can point to concrete improvements resulting from guidance"
+          - "Portfolio demonstrates artistic growth: work from 3+ years shows clear evolution while maintaining core identity — not stagnation and not random stylistic jumping"
+          - "Professional portfolio of 15-20 pieces: cohesive specialization, consistent quality (no weak pieces in the set), immediately communicates the artist's market and strengths to art directors — rated hire-ready by 2+ industry professionals"
+    tags: ["style", "portfolio", "professional", "capstone"]
+
+relationships:
+  # ── Line quality is foundational — enables proportion and form ─────────────
+  - source: "creative-arts/drawing-illustration/line-quality-mark-making"
+    target: "creative-arts/drawing-illustration/proportion-measurement"
+    type: "enables"
+    note: "Accurate measurement requires confident, correctable marks — line control enables proportional study"
+
+  - source: "creative-arts/drawing-illustration/line-quality-mark-making"
+    target: "creative-arts/drawing-illustration/form-volume"
+    type: "enables"
+    note: "Constructing 3D forms from primitives requires clean, controlled construction lines"
+
+  # ── Form & volume required for light/shadow ────────────────────────────────
+  - source: "creative-arts/drawing-illustration/form-volume"
+    target: "creative-arts/drawing-illustration/light-shadow-value"
+    type: "requires"
+    note: "Shadows describe form — understanding volume is prerequisite for mapping light and shadow correctly"
+
+  # ── Line quality and form enable perspective ───────────────────────────────
+  - source: "creative-arts/drawing-illustration/line-quality-mark-making"
+    target: "creative-arts/drawing-illustration/perspective-drawing"
+    type: "enables"
+    note: "Perspective construction demands precise, straight lines converging to vanishing points"
+
+  - source: "creative-arts/drawing-illustration/form-volume"
+    target: "creative-arts/drawing-illustration/perspective-drawing"
+    type: "enables"
+    note: "Placing 3D forms in perspective space requires constructive drawing of volumes"
+
+  # ── Perspective enables composition ────────────────────────────────────────
+  - source: "creative-arts/drawing-illustration/perspective-drawing"
+    target: "creative-arts/drawing-illustration/composition-design"
+    type: "enables"
+    note: "Spatial depth through perspective is a key compositional tool for creating dynamic scenes"
+
+  # ── Proportion → figure drawing ────────────────────────────────────────────
+  - source: "creative-arts/drawing-illustration/proportion-measurement"
+    target: "creative-arts/drawing-illustration/figure-drawing-anatomy"
+    type: "requires"
+    note: "Figure drawing depends on accurate proportional relationships — the figure canon is a measurement system"
+
+  - source: "creative-arts/drawing-illustration/form-volume"
+    target: "creative-arts/drawing-illustration/figure-drawing-anatomy"
+    type: "requires"
+    note: "The figure is constructed from volumetric primitives — ribcage as egg, pelvis as block, limbs as cylinders"
+
+  # ── Value enables color theory (value does the heavy lifting) ──────────────
+  - source: "creative-arts/drawing-illustration/light-shadow-value"
+    target: "creative-arts/drawing-illustration/color-theory-application"
+    type: "enables"
+    note: "Color without correct value structure fails — value is the foundation that color refines"
+
+  # ── Color theory and materials are parallel intermediate skills ─────────────
+  - source: "creative-arts/drawing-illustration/light-shadow-value"
+    target: "creative-arts/drawing-illustration/materials-techniques"
+    type: "enables"
+    note: "Media selection and technique depend on understanding how to render value and tonal range"
+
+  # ── Everything converges on style development ──────────────────────────────
+  - source: "creative-arts/drawing-illustration/composition-design"
+    target: "creative-arts/drawing-illustration/style-development-portfolio"
+    type: "requires"
+    note: "A professional portfolio requires strong compositional ability across all pieces"
+
+  - source: "creative-arts/drawing-illustration/figure-drawing-anatomy"
+    target: "creative-arts/drawing-illustration/style-development-portfolio"
+    type: "enables"
+    note: "Figure work is central to most illustration markets — editorial, concept art, children's books"
+
+  - source: "creative-arts/drawing-illustration/color-theory-application"
+    target: "creative-arts/drawing-illustration/style-development-portfolio"
+    type: "requires"
+    note: "Color is a primary component of personal style and professional illustration output"
+
+  - source: "creative-arts/drawing-illustration/materials-techniques"
+    target: "creative-arts/drawing-illustration/style-development-portfolio"
+    type: "requires"
+    note: "Medium mastery defines and constrains stylistic possibilities — tools shape the artist's voice"

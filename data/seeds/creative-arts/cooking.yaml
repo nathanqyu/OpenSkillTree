@@ -1,0 +1,884 @@
+# OpenSkillTree — Seed Skill Tree: Cooking
+#
+# Domain:  Creative Arts / Culinary Arts / Cooking
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: ACF (American Culinary Federation) certifications, CIA ProChef levels
+#   beginner     = Home cook following recipes; learning basic techniques
+#   intermediate = Confident cook adapting recipes; understands flavor and timing
+#   advanced     = Creates original dishes; manages complex multi-course meals
+#   expert       = Professional-level execution; menu design; teaches others
+#
+# Teaching order based on CIA/ACF/culinary school curricula:
+#   Mise en place & kitchen organization -> knife skills -> heat & cooking methods ->
+#   flavor building -> vegetable cookery -> protein cookery -> stock & soup making ->
+#   sauce making -> baking fundamentals -> menu planning -> world cuisines.
+# This sequence mirrors the CIA Boot Camp, ACF apprenticeship structure, and
+# Le Cordon Bleu Cuisine Diploma progression: master workspace and tools first,
+# then foundational techniques, then compound skills, then creative integration.
+
+tree:
+  id: "creative-arts/cooking"
+  title: "Cooking"
+  description: >
+    A complete skill map for cooking — the craft and art of transforming raw ingredients
+    into nourishing, flavorful food. Covers kitchen organization, knife work, heat control,
+    flavor development, stocks, sauces, baking, and the creative integration needed to
+    progress from a recipe-following home cook to a confident, inventive culinary practitioner
+    capable of designing menus and adapting techniques across world cuisines.
+  domain: "Creative Arts"
+  visibility: "public"
+
+nodes:
+  # -- MISE EN PLACE & KITCHEN ORGANIZATION (foundation of all cooking) ----------
+  - id: "creative-arts/cooking/mise-en-place"
+    title: "Mise en Place & Kitchen Organization"
+    description: >
+      The habit and discipline of preparation before cooking begins. Starts with
+      day-zero basics: identifying essential equipment (chef's knife, cutting board,
+      sheet pans, saute pan, saucepan, stockpot, mixing bowls, measuring cups/scale),
+      understanding stove operation (gas vs. electric, temperature settings), and
+      basic food safety (handwashing, cross-contamination, temperature danger zone
+      of 40-140 F where bacteria multiply rapidly). Then develops into the professional
+      practice of mise en place — the French culinary discipline meaning "everything in
+      its place" — covering ingredient prep, station setup, timing coordination, and
+      workflow efficiency. This is the single most important habit separating confident
+      cooks from chaotic ones: professional kitchens treat mise en place as non-negotiable
+      because it prevents mistakes, reduces stress, and makes complex multi-dish cooking
+      manageable. Milestone test: before attempting your first multi-component meal
+      (e.g., scrambled eggs with toast and a simple salad), every ingredient should be
+      prepped, measured, and within arm's reach before any burner is turned on.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies essential kitchen equipment by name and function. Operates the stove safely (adjusts heat, uses correct burner size for pan). Reads a recipe fully before starting. Gathers and pre-measures all ingredients. Maintains a clean workspace during cooking. Can prepare a simple dish (scrambled eggs, pasta with sauce) without pausing mid-cook to find or measure ingredients."
+        metrics:
+          - "All ingredients gathered and measured before heat is applied on 90%+ of cooking sessions"
+          - "Can explain the four temperature danger-zone rules: 40-140 F danger zone, 2-hour rule, cooling to 70 F within 2 hours then to 40 F within 4 hours, and reheating to 165 F"
+          - "Correctly names and selects the appropriate pan for 8/10 cooking tasks (saute pan vs. saucepan vs. sheet pan vs. stockpot)"
+          - "Completes a simple dish (e.g., scrambled eggs or a basic stir-fry) with zero mid-cook interruptions to find tools or ingredients"
+          - "Workspace is wiped down and cutting board cleared between prep tasks (no raw-chicken board reused for vegetables)"
+      - level: intermediate
+        criteria: >
+          Organizes prep in logical order to minimize idle time (e.g., starts rice before
+          chopping vegetables for a stir-fry). Uses sheet trays, prep bowls, and labels
+          systematically. Follows FIFO (first in, first out) storage. Coordinates timing
+          across multiple dishes so everything finishes together — the core challenge of
+          weeknight cooking. Writes a simple prep sequence before starting a three-dish
+          meal. Cleans as you go: sink is not full of dirty pans at plating time.
+        metrics:
+          - "Three-dish meal components finish within 5 minutes of each other on 3 consecutive attempts"
+          - "Zero cross-contamination incidents across 10 consecutive cooking sessions (separate boards for raw protein and produce, handwashing between)"
+          - "Written timing plan for a three-component dinner (protein, starch, vegetable) executed with all elements hot at plating"
+          - "Sink contains fewer than 3 dirty items at the moment the last dish is plated"
+      - level: advanced
+        criteria: >
+          Designs prep lists and cooking timelines for multi-course meals without a recipe.
+          Writes a reverse-timeline (start from plating time, work backward) for a five-course
+          dinner party. Delegates prep tasks efficiently when cooking with others, assigning
+          tasks by skill level. Maintains food-safe temperatures and hygiene under time pressure.
+          Can prep-ahead strategically: identifies what can be done the day before, the morning
+          of, and must be done a la minute.
+        metrics:
+          - "Five-course dinner prep list written as a reverse-timeline and executed with all courses served on time (within 3 minutes of target)"
+          - "Kitchen passes health-inspection-level cleanliness standards during and after service (no raw protein residue on surfaces, sanitizer solution at correct concentration)"
+          - "Prep-ahead plan correctly identifies make-ahead vs. last-minute tasks for a dinner party (verified by no quality loss in pre-made components)"
+          - "Delegates 3+ prep tasks to a helper with clear instructions, and all delegated tasks meet quality standards"
+      - level: expert
+        criteria: >
+          Mise en place is instinctive and invisible — the kitchen runs as a calm, organized
+          system regardless of meal complexity. Designs station layouts for efficiency (hot
+          station, cold station, prep station, plating station). Teaches prep workflow to
+          students or kitchen teams. Can run a multi-course dinner for 8+ guests solo while
+          maintaining conversation with guests. Manages the ACF practical exam's organizational
+          requirements: 2.5-hour time limit with multiple simultaneous preparations.
+        metrics:
+          - "Runs a multi-station kitchen service with zero missed tickets or timing errors over a 3-hour dinner service"
+          - "Students or team members replicate organized prep workflow independently after one training session"
+          - "Eight-person dinner party: all courses served at correct temperature with host spending less than 60% of party time in the kitchen"
+          - "Station layout diagram created for a specific menu that eliminates unnecessary movement (fewer than 10 steps between stations)"
+    tags: ["foundation", "workflow", "food-safety", "organization"]
+
+  # -- KNIFE SKILLS (tool mastery) -----------------------------------------------
+  - id: "creative-arts/cooking/knife-skills"
+    title: "Knife Skills"
+    description: >
+      Proper use, care, and technique with a chef's knife — the most fundamental
+      tool in the kitchen. Covers grip, cutting motions, and the classical cuts used
+      in professional kitchens: rough chop, small dice (1/4" cube), medium dice (1/2"
+      cube), large dice (3/4" cube), brunoise (1/8" cube), julienne (1/8" x 1/8" x
+      1-2" strips), chiffonade (thin ribbon-cut herbs or leaves), and mince. The CIA
+      standard for knife skills emphasizes consistency over speed: "if it looks the same,
+      it cooks the same" — uniform cuts ensure even cooking, even seasoning, and
+      professional presentation. Knife skills determine both the safety and the visual
+      precision of every dish. Milestone progression: rough chop and basic dice (beginner),
+      small dice and julienne (intermediate), brunoise and tournee (advanced), speed with
+      zero sacrifice of uniformity (expert).
+    benchmarks:
+      - level: beginner
+        criteria: "Holds the knife with a proper pinch grip (thumb and index finger gripping the blade heel, not the handle). Performs rough chop, basic dice, and mincing safely with a tucked guide hand (fingertips curled under, knuckles guiding the blade). Knows the difference between a chef's knife, paring knife, and serrated knife and when to use each."
+        metrics:
+          - "Proper pinch grip and tucked guide hand maintained in 100% of observed cutting — no grip reversion under fatigue"
+          - "Dices one onion into roughly uniform pieces (within 1/4 inch of each other) in under 3 minutes"
+          - "Zero cuts or near-misses across 10 practice sessions (safety is the beginner priority, not speed)"
+          - "Can demonstrate the rocking motion, push cut, and pull/draw cut and explain when each is appropriate"
+      - level: intermediate
+        criteria: >
+          Executes CIA standard classical cuts with reasonable uniformity: small dice
+          (1/4" cube), medium dice (1/2" cube), julienne (1/8" x 1/8" x 1-2" strips),
+          and chiffonade (thin ribbons of basil or leafy herbs). Maintains a sharp knife
+          using a honing steel before each session. Understands that uniformity matters
+          more than speed — pieces that look the same cook the same.
+        metrics:
+          - "Julienne carrots: 80%+ of pieces within 1mm of target 1/8-inch width (measure a random sample of 20 pieces with a ruler)"
+          - "Small dice (1/4 inch) onion: 80%+ uniformity across 50 pieces sampled"
+          - "Chiffonade basil into ribbons 2mm or thinner without bruising (leaves stay green, not black)"
+          - "Honing steel used correctly (15-20 degree angle, heel to tip, alternating sides) before every cutting session"
+      - level: advanced
+        criteria: >
+          Performs brunoise (1/8" cube), tournee (7-sided football shape), and precise
+          oblique cuts at speed. Breaks down a whole chicken into 8 pieces in under 5
+          minutes with clean joint separation. Sharpens knives on a whetstone to a working
+          edge. The CIA standard at this level: consistency and speed are no longer in
+          tension — cuts are both fast and uniform.
+        metrics:
+          - "Brunoise shallots: 90%+ uniformity on visual inspection (1/8-inch cubes, measured sample of 30 pieces)"
+          - "Whole chicken broken down into 8 pieces cleanly — no bone fragments, no meat left on carcass, completed in under 5 minutes"
+          - "Tournee: 7 even sides, smooth taper, consistent shape across 10 pieces of potato"
+          - "Sharpens a dull chef's knife on a 1000/6000 grit whetstone to an edge that cleanly slices a sheet of paper"
+      - level: expert
+        criteria: >
+          All knife work is fast, silent, and precisely uniform. Speed and accuracy are
+          simultaneous — no tradeoff. Meets CIA ProChef Level II knife skills practical
+          standards (timed classical cuts with professional uniformity). Can sharpen any
+          blade to a professional edge and teach knife skills to beginners safely. At this
+          level, knife work is invisible to diners — every piece in the dish is identical,
+          and the cook never looks down at their hands.
+        metrics:
+          - "CIA ProChef Level II knife skills practical passed: timed classical cuts (brunoise, julienne, small dice, chiffonade) all within time and uniformity standards"
+          - "Students demonstrate safe pinch grip, tucked guide hand, and basic dice correctly after a single 90-minute knife-skills class"
+          - "Completes full mise en place knife prep for a 5-course dinner (multiple vegetables, herbs, proteins) in under 30 minutes with 90%+ uniformity across all cuts"
+          - "ACF Certified Culinarian knife skills section: passes with 80%+ score on cut precision and safety"
+    tags: ["foundation", "technique", "safety", "precision"]
+
+  # -- HEAT & COOKING METHODS (the physics of cooking) ---------------------------
+  - id: "creative-arts/cooking/heat-cooking-methods"
+    title: "Heat & Cooking Methods"
+    description: >
+      Understanding how heat transforms food and mastering the primary cooking methods:
+      dry heat (saute, roast, grill, broil, fry), moist heat (poach, simmer, steam,
+      boil), and combination methods (braise, stew). Heat control is the technical
+      backbone of cooking — the difference between seared and steamed is the method,
+      but the difference between good and great is heat management. Key milestone
+      dishes by level: beginner cooks should be able to produce scrambled eggs with
+      soft curds (low-and-slow heat control), pasta cooked to al dente (timing to the
+      second), and a stir-fry where vegetables sear rather than steam (high heat, small
+      batches, dry ingredients). Intermediate cooks should nail a pan-seared steak with
+      fond development and a proper rest. Advanced cooks manage sous vide precision and
+      deep-fry temperature stability. The Maillard reaction (browning above 280 F) and
+      caramelization (sugar breakdown above 320 F) are the two most important chemical
+      transformations to understand — they are why high, dry heat creates flavor that
+      moist heat cannot.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies dry vs. moist heat methods. Sautes vegetables without burning. Roasts at correct temperatures. Boils pasta to al dente. Produces scrambled eggs with soft, creamy curds (not rubbery). Executes a stir-fry where vegetables sear and stay crisp (no steaming from overcrowding the pan)."
+        metrics:
+          - "Can name and define at least 8 cooking methods (saute, roast, grill, broil, fry, poach, simmer, steam, boil, braise) and classify each as dry heat, moist heat, or combination"
+          - "Sautes onions to translucent (not burned, not raw) in 3 out of 3 attempts"
+          - "Scrambled eggs: soft curds, no browning, creamy texture — achieved on 3 consecutive attempts"
+          - "Pasta cooked to al dente: firm bite with no chalky core, tested by cutting a piece in half (thin white line visible at center)"
+          - "Stir-fry: vegetables have visible sear marks and remain crisp-tender, not limp or waterlogged — pan not overcrowded (cook in batches of no more than 2 cups at a time)"
+      - level: intermediate
+        criteria: >
+          Controls pan temperature by sight and sound (oil shimmer at ~350 F, immediate
+          sizzle on contact means the pan is ready, smoking means it is too hot). Executes
+          a proper sear with fond development (brown bits stuck to the pan, not black).
+          Braises tough cuts to tenderness. Poaches eggs or fish without breaking.
+          Understands the Maillard reaction (protein + sugar browning above 280 F) and
+          can explain why wet surfaces do not brown. Makes a simple vinaigrette by
+          emulsifying oil and acid.
+        metrics:
+          - "Achieves a deep-brown sear on protein with intact fond (not burned) on 80%+ of attempts — verified by deglazing the pan and producing a flavorful liquid, not bitter char"
+          - "Braised short ribs reach fork-tender (a fork slides in and out with no resistance) in the correct time window (2.5-3.5 hours at 325 F)"
+          - "Poached eggs: whites fully set, yolk runny, no vinegar taste, shape is compact — achieved 3 out of 5 attempts"
+          - "Simple vinaigrette (3:1 oil to acid ratio) emulsifies and holds through dressing a salad without separating"
+      - level: advanced
+        criteria: >
+          Selects the optimal cooking method for any ingredient based on texture, fat content,
+          and desired result. Deep-fries at stable temperature (recovers to target within
+          30 seconds of adding food). Sous vide with precise temperature control (within
+          1 degree F of target). Adjusts technique for altitude, equipment variation, and
+          ingredient differences. Can roast a whole chicken to 165 F internal with crispy,
+          golden skin (the definitive intermediate-to-advanced test).
+        metrics:
+          - "Deep-fry oil temperature held within 10 F of target (e.g., 350 F for most frying) throughout cooking, verified by thermometer readings every 2 minutes"
+          - "Correctly identifies the best cooking method for 9/10 ingredient-and-goal scenarios (e.g., braise for tough cuts, saute for tender cuts, steam for delicate fish)"
+          - "Roast chicken: 165 F at thickest part of thigh, skin golden-brown and crispy, juices run clear — the Michel Roux chef test dish"
+          - "Sous vide protein (e.g., steak at 130 F for medium-rare) held at target temperature for correct duration with final sear achieving crust without overcooking interior"
+      - level: expert
+        criteria: >
+          Heat management is intuitive — adjusts burners, oven position, and timing by
+          instinct built from hundreds of hours of practice. Combines methods in a single
+          dish (sear then braise, poach then grill, confit then crisp). Teaches cooking
+          methods using first-principles explanations of heat transfer (conduction through
+          pan contact, convection through moving air or liquid, radiation through broiler
+          or grill). Can execute any cooking method on unfamiliar equipment (induction,
+          wood fire, commercial range) with minimal adjustment time.
+        metrics:
+          - "Multi-method dish (e.g., sear-to-braise, or confit-then-crisp duck leg) executed flawlessly with zero timing errors across 3 consecutive attempts"
+          - "Can explain conduction, convection, and radiation as they apply to 5 different cooking methods and predict how changing the method would change the result"
+          - "ACF Certified Culinarian practical: cooking skills section passed with 75%+ (timed execution of multiple cooking methods under exam conditions)"
+          - "Adapts a familiar recipe to unfamiliar equipment (e.g., gas to induction, home oven to wood-fired) and produces equivalent results on first attempt"
+    tags: ["foundation", "technique", "heat-control", "science"]
+
+  # -- FLAVOR BUILDING (the art of seasoning) ------------------------------------
+  - id: "creative-arts/cooking/flavor-building"
+    title: "Flavor Building"
+    description: >
+      The art and science of creating balanced, layered flavor. Covers seasoning with
+      salt at every stage, balancing the primary taste elements (salt, acid, fat, heat,
+      sweet, bitter, umami), building aromatic bases (mirepoix for French — 2:1:1
+      onion:carrot:celery; soffritto for Italian — onion, carrot, celery in olive oil;
+      trinity for Cajun — onion, celery, bell pepper), toasting and blooming spices in
+      fat, and developing depth through caramelization and deglazing. This is where
+      cooking shifts from following instructions to developing palate and intuition.
+      The single most impactful beginner skill is learning to season with salt at every
+      stage of cooking: salt the pasta water (it should taste like the sea), salt the
+      protein before searing, salt the vegetables as they sweat, and taste-adjust before
+      serving. Milestone test: make a simple vinaigrette (3:1 oil to acid, pinch of salt,
+      touch of mustard for emulsion) and adjust it until it tastes balanced — not too
+      sharp, not too oily, not flat.
+    benchmarks:
+      - level: beginner
+        criteria: "Seasons with salt at multiple stages rather than only at the end. Tastes food during cooking (minimum 3 times per dish). Identifies salt, acid, sweet, bitter, and umami in a dish. Can make a balanced vinaigrette from scratch by tasting and adjusting."
+        metrics:
+          - "Seasons at minimum 2 stages (during cooking and before serving) in every dish — verified by improved flavor in taste tests vs. end-only seasoning"
+          - "Correctly identifies which of the 5 basic tastes (salt, acid, sweet, bitter, umami) is dominant in 8/10 blind tasting samples"
+          - "Tastes and adjusts a simple vinaigrette to balance: acid is bright but not harsh, salt enhances without dominating, fat is present but not greasy"
+          - "Can name 3 common sources of umami (e.g., soy sauce, parmesan, tomato paste, mushrooms, fish sauce) and explain why they deepen flavor"
+      - level: intermediate
+        criteria: >
+          Balances salt, acid, fat, and heat in a finished dish — applies the Samin Nosrat
+          framework intuitively. Builds aromatic bases (mirepoix, soffritto, trinity) as
+          flavor foundations without burning the aromatics. Blooms dried spices in oil
+          (cumin, coriander, chili flakes) until fragrant (30-60 seconds over medium heat).
+          Uses deglazing to capture fond flavor. Understands umami sources and layers them
+          (e.g., soy + tomato paste + parmesan in the same dish for umami depth). Makes a
+          pan sauce by deglazing fond with wine or stock, reducing, and finishing with butter.
+        metrics:
+          - "Peer tasters rate dishes as well-balanced (no single dominant off-note) on 80%+ of attempts across 5 different dishes"
+          - "Correctly builds a mirepoix or soffritto base: onions sweated to translucent (not browned unless intended), aromatics soft but not burned, in under 10 minutes"
+          - "Pan sauce from deglazing: captures all fond, reduces to coat a spoon, flavor is concentrated and balanced — achieved on 3 out of 4 attempts"
+          - "Blooms whole spices in oil until fragrant without burning (no acrid smell, spices darken slightly but do not blacken)"
+      - level: advanced
+        criteria: >
+          Creates complex spice blends from whole spices (toasting in dry pan, grinding,
+          balancing heat-sweet-earthy-floral). Layers flavor across time: marinades (hours
+          before), slow cooking (during), and finishing elements (fresh herbs, acid, crunch
+          added at plating). Corrects a dish that is too salty, too acidic, or too flat
+          using targeted additions. Develops signature flavor combinations that others
+          recognize as distinctly theirs.
+        metrics:
+          - "Creates a custom spice blend (minimum 5 components) that a tasting panel of 3+ rates as balanced and complex — no single spice dominates"
+          - "Rescues an intentionally over-salted dish to acceptable balance using acid, fat, dilution, or starch addition — tasters rate the corrected dish as 6/10 or better"
+          - "Layers flavor across at least 3 time stages in a single dish (e.g., overnight marinade, slow braise, fresh herb finish) with each layer identifiable in the final taste"
+          - "Demonstrates the 'acid correction' technique: adds a squeeze of lemon or splash of vinegar to a flat-tasting dish and has tasters confirm improved brightness"
+      - level: expert
+        criteria: >
+          Flavor intuition is fully developed — can taste a dish and identify what is
+          missing or unbalanced instantly. Designs flavor profiles for entire menus with
+          intentional contrast and progression (e.g., a tasting menu that moves from
+          bright and acidic to rich and umami-heavy to sweet and cleansing). Teaches
+          seasoning and palate development exercises. Can develop original recipes by
+          flavor-profile design rather than modifying existing recipes.
+        metrics:
+          - "Identifies the missing or excess element in a blind-tasting correction exercise 9/10 times (e.g., 'needs acid,' 'too much salt,' 'lacks fat')"
+          - "Multi-course tasting menu demonstrates intentional flavor arc: light to rich, progression of spice intensity, palate-cleansing transitions between heavy courses"
+          - "Develops an original recipe starting from a target flavor profile description (e.g., 'smoky, bright, with umami depth') and produces a dish that 3+ tasters confirm matches the description"
+          - "ACF practical exam: taste-and-presentation section passed with 75%+ score"
+    tags: ["technique", "palate", "seasoning", "creativity"]
+
+  # -- VEGETABLE COOKERY & SALADS ------------------------------------------------
+  - id: "creative-arts/cooking/vegetable-cookery"
+    title: "Vegetable Cookery & Salads"
+    description: >
+      Cooking vegetables to maximize flavor, texture, and nutrition using techniques
+      appropriate to each type. Includes blanching and shocking (plunge into boiling
+      salted water, then immediately into ice water to halt cooking and lock in color),
+      roasting for caramelization (425 F+, single layer, space between pieces), grilling,
+      sauteing greens, and composing dressed salads with balanced vinaigrettes.
+      Vegetables are taught before proteins in most curricula because they are more
+      forgiving and illustrate heat methods clearly. Key principle: most home cooks
+      under-season and under-cook vegetables — properly roasted vegetables with deep
+      browning, proper salt, and a hit of acid are the fastest way to make home cooking
+      taste noticeably better. Milestone test at beginner level: roast a sheet pan of
+      mixed vegetables (broccoli, carrots, onions) at 425 F until deeply caramelized
+      (20-25 minutes), season with salt and a squeeze of lemon, and confirm that every
+      piece has visible browning on at least one side.
+    benchmarks:
+      - level: beginner
+        criteria: "Roasts vegetables with proper oil coating and seasoning to achieve deep browning (not pale or burned). Blanches and shocks green vegetables (green beans, broccoli, asparagus) to preserve vibrant color and crisp-tender texture. Makes a basic vinaigrette (3:1 oil to acid ratio with mustard emulsifier)."
+        metrics:
+          - "Roasted vegetables show visible caramelization on at least one side of each piece (not pale, not charred black) on 80%+ of attempts — single-layer spacing on sheet pan, no overcrowding"
+          - "Blanched green beans or broccoli: vibrant green color retained, crisp-tender texture (snaps when bent, not mushy), shocked in ice water within 10 seconds of leaving the pot"
+          - "Basic vinaigrette (3:1 ratio): emulsifies and holds for at least 5 minutes, tastes balanced — bright acid, smooth oil, salt enhances but does not dominate"
+          - "Steams or boils a starchy vegetable (potato, sweet potato) to fork-tender without falling apart — fork slides in smoothly, pieces hold their shape"
+      - level: intermediate
+        criteria: >
+          Matches cooking method to vegetable type: high-moisture vegetables (zucchini,
+          tomatoes) need high heat to drive off water before browning; starchy vegetables
+          (potatoes, root vegetables) benefit from parcooking before roasting; leafy greens
+          wilt quickly and need fast, hot cooking. Composes a salad with contrasting
+          textures (crunchy, creamy, chewy), a balanced dressing, and proper seasoning.
+          Grills vegetables with defined char marks and a tender interior.
+        metrics:
+          - "Correctly selects the optimal cooking method for 8/10 vegetable types presented and explains why (e.g., 'high-moisture zucchini needs high heat to sear before it steams')"
+          - "Composed salad rated as balanced in flavor, texture (minimum 3 distinct textures), and visual appeal by peer tasters"
+          - "Grilled vegetables (zucchini, peppers, onions): clear grill marks, tender interior, no char bitterness — on 3 out of 4 attempts"
+          - "Sautes leafy greens (spinach, kale, chard) until just wilted with garlic and oil — no sliminess, stems still have slight bite"
+      - level: advanced
+        criteria: >
+          Prepares vegetable-forward dishes as impressive main courses that satisfy
+          omnivore diners. Uses fermentation (quick pickles in 30 minutes, lacto-fermented
+          vegetables over 3-7 days, kimchi), confits (garlic confit, tomato confit), and
+          purees (silky smooth through a fine-mesh strainer or high-speed blender). Applies
+          precise vegetable cuts (brunoise, julienne, tournee) for both efficiency and
+          visual presentation in plated dishes.
+        metrics:
+          - "Vegetable main course (e.g., roasted cauliflower steak, vegetable tart, stuffed squash) rated as satisfying and complete by 3+ omnivore tasters"
+          - "Produces a smooth vegetable puree (e.g., carrot, cauliflower, or pea) with no graininess or lumps — passes through a fine-mesh strainer with no solid residue"
+          - "Quick pickles: vegetables retain crunch, brine is balanced (not too vinegary, not flat), ready in under 1 hour"
+          - "Garlic confit: cloves are creamy-soft, golden (not browned), oil is infused and usable — achieved without burning"
+      - level: expert
+        criteria: >
+          Elevates vegetables to the center of the plate with restaurant-quality technique
+          and plating. Understands seasonality deeply and sources produce at peak quality.
+          Creates complete vegetable tasting menus with intentional flavor progression
+          and texture contrast across courses. Treats vegetable cookery as a discipline
+          equal to protein cookery in complexity and creativity.
+        metrics:
+          - "Multi-course vegetable tasting menu (minimum 4 courses) receives positive reviews from 3+ experienced diners who rate it as complete and satisfying"
+          - "Can identify peak season (month range) for 20+ common vegetables and adjusts menus accordingly — tested by naming the season for a random list of 25 vegetables with 80%+ accuracy"
+          - "Plated vegetable dish uses 3+ techniques (e.g., roast, puree, pickle, raw) on the same plate for textural and flavor contrast"
+          - "Develops an original vegetable-forward recipe that is requested again by diners — the 'would you make that again' test"
+    tags: ["technique", "vegetables", "salads", "nutrition"]
+
+  # -- PROTEIN COOKERY -----------------------------------------------------------
+  - id: "creative-arts/cooking/protein-cookery"
+    title: "Protein Cookery"
+    description: >
+      Cooking meat, poultry, fish, and eggs to the correct doneness with proper
+      technique. Covers doneness testing (instant-read thermometer, touch test, visual
+      cues), carryover cooking (protein continues to rise 5-10 F after leaving heat),
+      resting (minimum 5 minutes for steaks, 15-20 minutes for roasts), marinating,
+      brining, and basic butchery. Protein cookery demands precise heat control and
+      timing — overcooking is the most common failure in home and professional kitchens
+      alike. Milestone dishes by level: beginner should master scrambled eggs with soft
+      curds (the simplest protein test — low heat, constant stirring, remove from heat
+      before fully set) and cook chicken breast to exactly 165 F without exceeding 170 F.
+      Intermediate should execute a French omelette (Michel Roux's chef test: 30 seconds,
+      no color, creamy interior) and roast chicken with crispy skin. Advanced should
+      produce hollandaise that holds and manage a prime rib to precise doneness.
+      Expert-level is multi-protein simultaneous service with zero re-fires.
+    benchmarks:
+      - level: beginner
+        criteria: "Uses an instant-read thermometer to cook chicken to safe temperature (165 F) and steak to requested doneness. Understands carryover cooking (remove protein 5-10 F before target). Scrambles eggs with soft, creamy curds (low heat, constant gentle stirring, pulled from heat while still slightly wet). Fries eggs without burning the whites or breaking the yolk."
+        metrics:
+          - "Chicken breast reaches 165 F internal (not exceeding 170 F) on 90%+ of attempts — pulled from heat at 160 F to account for carryover"
+          - "Steak cooked to requested doneness (verified by thermometer: rare 120-125 F, medium-rare 130-135 F, medium 140-145 F) on 3 out of 4 attempts"
+          - "Scrambled eggs: soft curds, no browning, creamy texture, served while still slightly glossy — achieved on 3 consecutive attempts"
+          - "Fried eggs: whites fully set, yolk runny (unless otherwise requested), no brown lace on whites — achieved on 3 out of 4 attempts"
+      - level: intermediate
+        criteria: >
+          Judges doneness by touch (the finger test: compare protein firmness to the feel
+          of the base of your thumb when touching different fingers). Pan-roasts a skin-on
+          chicken breast with crispy golden skin (start skin-side-down in cold pan, render
+          fat slowly). Executes a French omelette — Michel Roux's chef test: no color on
+          the outside, creamy and slightly underset on the inside, completed in under 60
+          seconds. Sears and rests proteins correctly. Marinates and brines for flavor and
+          moisture (wet brine: 1/4 cup salt per quart water for 1-4 hours). Fillets a
+          whole fish. Makes a roux-based sauce and a pan sauce to accompany proteins.
+        metrics:
+          - "Pan-roasted chicken breast: crispy golden skin (no soggy patches), juicy interior (165 F, not over 170 F), completed with pan sauce from the drippings"
+          - "French omelette: no color on exterior, creamy interior, classic oval shape — achieved on 3 out of 5 attempts"
+          - "Brined pork chop retains noticeably more moisture than unbrined control (side-by-side comparison: brined chop loses less than 15% weight during cooking)"
+          - "Roast chicken (3-4 lb): 165 F at thickest part of thigh, skin golden and crispy all over, rested 15 minutes before carving — juices run clear"
+      - level: advanced
+        criteria: >
+          Breaks down a whole chicken into 8 pieces (2 breasts, 2 thighs, 2 drumsticks,
+          2 wings) in under 5 minutes with clean joint separation. Cooks fish to multiple
+          doneness levels (seared rare tuna at 115 F center, medium salmon at 125 F with
+          translucent center, flaky white fish at 140 F fully opaque). Manages carryover
+          for large roasts (prime rib: pull at 120 F for medium-rare, rest 20 minutes to
+          reach 130 F). Produces hollandaise from scratch that holds at service temperature.
+          Makes fresh pasta dough and cooks it properly. Produces stock from scratch as a
+          foundation for sauces.
+        metrics:
+          - "Prime rib roast hits target doneness (medium-rare, 130 F post-rest) within 3 degrees — verified by slicing at thickest point"
+          - "Whole fish or large fillet portioned and cooked with zero over- or under-done pieces across the entire fillet"
+          - "Hollandaise: smooth emulsion, holds at service temperature (145-150 F) for 15+ minutes without breaking, flavor is rich and lemony"
+          - "Whole chicken broken down into 8 pieces: clean joint separation, no bone fragments, minimal meat left on carcass, completed in under 5 minutes"
+      - level: expert
+        criteria: >
+          Protein cookery is intuitive across all species and cuts. Selects cut, method,
+          and seasoning as an integrated decision based on the animal, the dish context, and
+          the diner's preference. Manages a multi-protein service (steak, fish, poultry)
+          simultaneously with all proteins at correct doneness — the definitive test of a
+          professional cook. Develops original protein preparations (dry rubs, compound
+          butters, novel cooking methods). ACF Certified Culinarian exam level: protein
+          section requires demonstrating multiple cooking methods under a 2.5-hour time
+          limit with 75% minimum passing score across safety, organization, cooking skills,
+          and taste/presentation.
+        metrics:
+          - "Multi-protein dinner service (3+ different proteins): all at correct doneness with zero re-fires across a full dinner for 4+ guests"
+          - "ACF Certified Culinarian practical exam protein section passed with score of 80%+ (safety/organization/cooking skills/taste-presentation)"
+          - "Develops an original protein preparation (e.g., custom dry rub, novel cooking technique) that receives positive feedback from 3+ experienced tasters"
+          - "Cooks an unfamiliar protein (e.g., duck breast, lamb rack, whole lobster) to correct doneness on first attempt using knowledge of heat transfer principles"
+    tags: ["technique", "protein", "doneness", "butchery"]
+
+  # -- STOCK & SOUP MAKING ------------------------------------------------------
+  - id: "creative-arts/cooking/stock-soup-making"
+    title: "Stock & Soup Making"
+    description: >
+      Building flavorful stocks — the liquid foundation of professional cooking — and
+      transforming them into soups. Covers white stock (unroasted bones, gentle simmer
+      for 4-6 hours for chicken, 6-8 hours for veal), brown stock (bones roasted at
+      400-425 F until deep golden, caramelized mirepoix, simmered 6-8 hours), mirepoix
+      ratios (2:1:1 onion:carrot:celery by weight), skimming impurities every 20-30
+      minutes during the first hour, straining through cheesecloth, reduction, and the
+      major soup families: clear soups, cream soups, purees, bisques, and consomme.
+      Stocks are the bridge between basic cooking and the refined sauces and soups of
+      professional cuisine. The gel test is the definitive quality check: properly
+      extracted stock sets like gelatin when chilled because collagen from bones has
+      converted to gelatin. If your chilled stock does not jiggle, you either boiled it
+      (which emulsifies fat and clouds it) or did not simmer long enough. Advanced
+      milestone: producing a crystal-clear consomme using a clarification raft (egg whites,
+      ground meat, mirepoix, acid) — one of the most technically demanding preparations
+      in classical cooking.
+    benchmarks:
+      - level: beginner
+        criteria: "Produces a clean chicken or vegetable stock by simmering (never boiling — bubbles should barely break the surface) bones and aromatics for the correct duration (4-6 hours for chicken, 45-60 minutes for vegetable). Skims impurities (scum and fat) regularly during the first hour."
+        metrics:
+          - "Stock is clear (not cloudy from boiling) and has noticeable body from gelatin extraction — tested by chilling a cup and checking for gel-like consistency"
+          - "Can explain the difference between stock (bones, no salt, used as ingredient), broth (meat, seasoned, served as-is), and bouillon (concentrated/dehydrated)"
+          - "Maintains a bare simmer (tiny bubbles, no rolling boil) throughout the cooking time — checked every 30 minutes"
+          - "Strains stock through a fine-mesh strainer or cheesecloth with no solids remaining in the final liquid"
+      - level: intermediate
+        criteria: >
+          Makes brown stock from scratch: roasts bones at 400-425 F until deeply browned,
+          caramelizes mirepoix, deglazes roasting pan with tomato paste, simmers 6-8 hours.
+          Produces cream soups and pureed soups with smooth texture. Uses stock as a base
+          for risotto, braises, and pan sauces — demonstrating stock as a versatile
+          ingredient rather than just a soup starter. Reduces stock to demi-glace and
+          glace de viande (meat glaze).
+        metrics:
+          - "Brown stock passes the gel test: sets firmly when chilled (a spoonful inverted holds its shape for 3+ seconds) indicating proper gelatin extraction from long simmering"
+          - "Cream soup is velvety smooth with no lumps or graininess after straining — tested by running a finger across the back of a coated spoon (clean line, no particles)"
+          - "Stock used as risotto base: finished risotto has rich body and flavor compared to water-based control (side-by-side tasting)"
+          - "Reduces 1 quart of stock to 1 cup of demi-glace with concentrated flavor and syrupy consistency that coats a spoon"
+      - level: advanced
+        criteria: >
+          Clarifies stock into consomme using a clarification raft (egg whites, ground
+          meat, mirepoix, acid). The consomme test: it should be crystal clear — you can
+          read newspaper print through a bowl of it. Produces bisque from crustacean shells
+          (shrimp, lobster, crab) with rich color and no grittiness. Manages large-batch
+          stock production for multi-day cooking. Adjusts stock recipes for specific end
+          uses (lighter body for risotto, concentrated for sauce, neutral for delicate fish
+          preparations).
+        metrics:
+          - "Consomme is crystal clear and deeply flavored — passes the newspaper-legibility test (place a bowl over printed text and read through the liquid)"
+          - "Bisque extracts maximum flavor from shells: rich orange-red color, smooth texture (no shell grit after straining through fine chinois), intense crustacean flavor"
+          - "Produces 3 different stocks in a single day (e.g., chicken white, beef brown, fish fumet) with appropriate timing and technique for each"
+          - "Adjusts stock concentration for specific uses: light stock for risotto vs. double-strength for sauce reduction — end dishes demonstrate appropriate body"
+      - level: expert
+        criteria: >
+          Stock-making is a habitual practice — bones are always saved, stock is always
+          on hand, and the freezer contains labeled, portioned stock for immediate use.
+          Designs stocks for specific menu applications (smoked stock for barbecue sauces,
+          dashi for Japanese preparations, court bouillon for poaching). Teaches stock
+          technique as the foundation of professional cooking. Stock quality is the
+          invisible foundation that separates restaurant food from home cooking.
+        metrics:
+          - "Maintains a rotating stock program producing 3+ varieties weekly with consistent quality (gel test passed on every batch)"
+          - "Students produce gel-setting stock independently after one instructional session — verified by chilling their stock overnight"
+          - "Designs a custom stock for a specific menu application (e.g., mushroom-kombu dashi for a vegetarian tasting menu) that enhances the target dishes"
+          - "ACF practical exam: stock and soup components pass with 80%+ on clarity, flavor, and proper technique"
+    tags: ["technique", "stocks", "soups", "foundation"]
+
+  # -- SAUCE MAKING --------------------------------------------------------------
+  - id: "creative-arts/cooking/sauce-making"
+    title: "Sauce Making"
+    description: >
+      Mastering the classical and modern sauce families. Covers the five French mother
+      sauces (bechamel — roux + milk; veloute — roux + white stock; espagnole — roux +
+      brown stock + tomato; hollandaise — egg yolks + clarified butter + acid, an
+      emulsion; tomato — tomatoes cooked with aromatics), their derivative small sauces
+      (mornay from bechamel, bearnaise from hollandaise, bordelaise from espagnole),
+      pan sauces from deglazing fond, vinaigrettes, and emulsions. Roux ratios by
+      weight: thin sauce 1:1:10 (butter:flour:liquid), medium sauce 1:1:8, thick sauce
+      1:1:6. Sauce-making is where stock knowledge, flavor building, and heat control
+      converge into one of the most demanding and rewarding areas of cooking. Hollandaise
+      is the critical intermediate-to-advanced milestone — it is the most temperamental
+      of the mother sauces (too much heat scrambles the eggs, too little fails to
+      emulsify, adding butter too fast breaks the sauce) and is often used as the
+      dividing line between competent home cooks and those with professional-level skill.
+    benchmarks:
+      - level: beginner
+        criteria: "Makes a smooth bechamel (white sauce) from a roux and milk. Makes a basic pan sauce by deglazing fond with wine or stock, reducing, and finishing with butter. Understands roux ratios for thin, medium, and thick sauces (1:1:10, 1:1:8, 1:1:6 by weight). Can make a roux-based sauce without lumps."
+        metrics:
+          - "Bechamel is lump-free and coats the back of a spoon (nappe consistency) — draw a line through the coating with a finger and it holds without running"
+          - "Pan sauce captures fond flavor and has correct consistency: coats a spoon lightly, pours but does not run like water — achieved on 3 out of 4 attempts"
+          - "Roux cooked to correct stage: white roux (2-3 minutes, no color) for bechamel, blond roux (4-5 minutes, light gold) for veloute — no raw flour taste remaining"
+          - "Can explain the difference between a roux-thickened sauce and a reduction sauce and when to use each"
+      - level: intermediate
+        criteria: >
+          Produces all five mother sauces correctly in a single practical session. Makes a
+          stable hollandaise without breaking (constant whisking over gentle heat, adding
+          clarified butter in a thin stream, maintaining temperature between 145-160 F).
+          Creates derivative sauces: mornay (bechamel + gruyere), bearnaise (hollandaise +
+          tarragon reduction), sauce suprême (veloute + cream). Builds emulsified
+          vinaigrettes that hold. Makes a pan sauce that captures fond, deglazes with wine,
+          reduces stock, and mounts with cold butter for glossy finish.
+        metrics:
+          - "Hollandaise holds emulsion for 15+ minutes at service temperature (145-150 F) without breaking — smooth, creamy, lemony, coats a spoon"
+          - "All five mother sauces produced correctly in a single practical session with proper consistency and flavor for each"
+          - "Mornay sauce: smooth cheese integration (no graininess from overheating cheese), coats pasta or vegetables evenly"
+          - "Pan sauce: deglazes all fond, reduces by half, mounts with cold butter for glossy emulsion — completed in under 5 minutes from removing the protein"
+      - level: advanced
+        criteria: >
+          Makes beurre blanc (white wine and shallot reduction mounted with cold butter
+          cubes while swirling constantly). Creates compound butters (herb butter, maitre
+          d'hotel butter). Produces demi-glace from brown stock (reduce espagnole + brown
+          stock by half, strain, reduce again). Troubleshoots broken sauces: rescues a
+          split hollandaise by starting a fresh yolk and whisking the broken sauce in
+          slowly, or fixes a broken cream sauce by adding a splash of cold cream while
+          whisking. Designs sauces to complement specific dishes based on flavor pairing
+          and textural contrast.
+        metrics:
+          - "Rescues a deliberately broken hollandaise back to smooth emulsion using the fresh-yolk method — sauce is stable and servable within 3 minutes of rescue"
+          - "Demi-glace coats a spoon with rich, glossy consistency and concentrated flavor — reduces cleanly without scorching"
+          - "Beurre blanc: stable butter emulsion (does not break into oily pool), bright wine-shallot flavor, served within 10 minutes of completion (it waits for no one)"
+          - "Designs a sauce for a specific protein that enhances without masking — tasters rate the pairing as complementary (e.g., beurre blanc for sole, red wine reduction for steak)"
+      - level: expert
+        criteria: >
+          Creates original sauces for menu development — designs a sauce starting from
+          flavor goals rather than modifying existing recipes. Pairs sauces with proteins,
+          vegetables, and starches as an integrated flavor system across a full menu.
+          Executes sauce service for a multi-course meal without any breaking, lumping,
+          or timing failures. Teaches sauce-making at the level of ACF practical exam
+          standards: safety, organization, cooking skills, and taste/presentation scored
+          together with a 75% minimum passing threshold.
+        metrics:
+          - "Multi-course dinner service (4+ courses): all sauces hold consistency and temperature through plating — zero broken sauces, zero lumps, zero timing failures"
+          - "Original sauce creation rated as balanced and complementary by 3+ professional tasters — sauce enhances the dish without dominating"
+          - "ACF Certified Culinarian sauce section: passes with 80%+ score on technique, consistency, flavor, and presentation"
+          - "Teaches all five mother sauces in a single instructional session with students producing at least 3 of 5 correctly by session end"
+    tags: ["technique", "sauces", "classical", "emulsions"]
+
+  # -- BAKING FUNDAMENTALS -------------------------------------------------------
+  - id: "creative-arts/cooking/baking-fundamentals"
+    title: "Baking Fundamentals"
+    description: >
+      The science and precision of baking — where cooking meets chemistry. Covers
+      measuring by weight (grams, not cups — a cup of flour can vary by 30% depending
+      on how it is scooped), understanding gluten development (more mixing = more gluten
+      = chewier texture), leavening agents (yeast for slow biological rise, baking
+      powder for quick chemical rise, baking soda for immediate reaction with acid,
+      steam for puff pastry and choux), basic yeast bread-making, pie and tart dough,
+      cookie and cake fundamentals, and why baking demands more precision than most
+      savory cooking. Milestone progression: beginner should produce a basic yeast bread
+      with proper rise and crumb structure. Intermediate should master pie dough with
+      visible flaky layers and properly proofed yeast doughs. Advanced is defined by
+      laminated dough — croissants with distinct honeycomb layering are the gold standard
+      test of temperature control, timing, and dough-handling skill. Baker's percentages
+      are the professional language of baking: all ingredients expressed as a percentage
+      of flour weight (e.g., 60% hydration means 600g water per 1000g flour), enabling
+      reliable recipe scaling.
+    benchmarks:
+      - level: beginner
+        criteria: "Measures ingredients by weight using a kitchen scale (grams, not cups). Bakes a basic yeast bread loaf with proper rise, crust color, and interior crumb. Bakes a batch of cookies with correct texture (edges set, centers still slightly soft for chewy cookies). Understands the difference between baking soda (needs acid, reacts immediately) and baking powder (contains acid, double-acting)."
+        metrics:
+          - "Uses a scale (not volume cups) for flour and sugar in 100% of baking sessions — can explain why weight is more accurate (a cup of flour varies 120-160g depending on scooping method)"
+          - "Basic yeast bread loaf: proper rise (doubled in volume during proofing), golden crust, interior crumb is even with small-to-medium holes (not dense, not cavernous)"
+          - "Cookies: edges set and lightly golden, centers slightly soft when removed from oven, texture matches target (chewy, crispy, or cakey) on 3 out of 4 batches"
+          - "Can explain the difference between baking soda and baking powder and predict what happens if you substitute one for the other incorrectly"
+      - level: intermediate
+        criteria: >
+          Understands gluten development and adjusts mixing time for different products:
+          mix muffin batter just until combined (minimal gluten = tender), knead bread
+          dough 8-10 minutes (strong gluten = chewy structure). Makes pie dough with
+          proper flakiness (cold butter, minimal handling, visible butter pieces before
+          rolling). Proofs yeast dough to correct volume (poke test: indent springs back
+          slowly). Bakes cakes with level layers and even browning. Understands basic
+          yeast bread process: mix, knead, bulk ferment, shape, proof, bake.
+        metrics:
+          - "Pie dough is flaky with visible butter layers when cut — not tough (overworked) or crumbly (too little gluten) — poke test: dough springs back slowly"
+          - "Cake layers bake level (within 3mm variance across the top) and release cleanly from greased-and-floured pans"
+          - "Yeast bread proofed to correct volume: poke test shows slow spring-back (not immediate = underproofed, not no spring-back = overproofed)"
+          - "Muffins: domed tops, tender crumb, no tunneling (a sign of overmixing) — achieved on 3 consecutive batches"
+      - level: advanced
+        criteria: >
+          Bakes enriched doughs (brioche: high butter and egg content, soft and rich;
+          challah: egg-enriched, braided). Makes laminated dough — croissants are the
+          definitive advanced baking test: 3 folds creating 27 layers of butter and dough,
+          requiring precise temperature control (butter must stay cold but pliable, dough
+          must rest between folds). Adjusts recipes for humidity (reduce liquid slightly)
+          and altitude (reduce leavening, increase liquid, increase oven temperature).
+          Understands baker's percentages and scales recipes accurately.
+        metrics:
+          - "Croissants show distinct honeycomb layering when cut open — visible alternating layers of dough and butter, open crumb structure, golden-brown exterior, buttery and flaky"
+          - "Recipe scaled from 1x to 3x using baker's percentages with identical results (texture, rise, flavor match the original)"
+          - "Brioche: rich, buttery, soft crumb with fine even texture — butter incorporated fully during mixing without greasing out"
+          - "Fresh pasta dough: smooth, elastic, rolls thin enough to see a hand through it (the 'sfoglia' test for Italian pasta), cooks to al dente in 2-3 minutes"
+      - level: expert
+        criteria: >
+          Develops original baking recipes using baker's percentages and ingredient
+          function knowledge (flour provides structure, fat tenderizes, sugar sweetens and
+          browns, eggs bind and leaven, liquid hydrates). Troubleshoots baking failures
+          by identifying the root cause from the finished product. Bakes at a professional
+          level across bread, pastry, and viennoiserie categories. Can design a bread
+          formula from scratch specifying hydration, preferment percentage, and fermentation
+          schedule. ACF exam level: baking components scored on technique, consistency,
+          flavor, and presentation.
+        metrics:
+          - "Original bread formula produces consistent results across 5 consecutive bakes — crumb structure, crust color, and flavor are reproducible"
+          - "Diagnoses the cause of 9/10 common baking failures from a finished product: dense cake (overmixed or too much flour), flat cookies (butter too warm, old leavening), gummy bread (underproofed or cut too soon), tough pie crust (overworked), tunneling muffins (overmixed)"
+          - "Designs and executes a complete baking menu for an event (bread, pastry, dessert) with all items at professional quality"
+          - "ACF practical exam baking section: passes with 80%+ score on technique, consistency, flavor, and presentation"
+    tags: ["technique", "baking", "precision", "science"]
+
+  # -- MENU PLANNING & NUTRITION -------------------------------------------------
+  - id: "creative-arts/cooking/menu-planning"
+    title: "Menu Planning & Nutrition"
+    description: >
+      Designing balanced, practical meals and menus that consider nutrition, dietary
+      restrictions, cost, seasonality, and the diner's experience. Menu planning is
+      an integrative skill — it requires competence across cooking methods, flavor,
+      and multiple ingredient categories to compose meals that are coherent, varied,
+      and achievable. This is also where cooking meets real life: a weekly meal plan
+      that reduces grocery waste, accommodates family preferences, and produces
+      weeknight dinners in 30-45 minutes is a more valuable skill than most elaborate
+      techniques. At the advanced level, menu planning becomes event management:
+      designing a five-course dinner party requires a reverse-timeline, prep-ahead
+      strategy, and the ability to cook, plate, and serve while maintaining composure.
+      The expert-level milestone is multi-course dinner party execution for 8+ guests
+      with original recipes — the ACF Certified Culinarian exam tests this integrative
+      capability across its 2.5-hour practical with a 75% passing score across safety,
+      organization, cooking skills, and taste/presentation.
+    benchmarks:
+      - level: beginner
+        criteria: "Plans a balanced weekly meal plan with variety in protein, vegetables, and grains. Considers basic nutrition (macronutrient balance, vegetable servings per day). Shops from a list with minimal waste. Plans meals that can be prepared within a realistic weeknight timeframe (30-45 minutes)."
+        metrics:
+          - "Weekly meal plan includes vegetables in every dinner and varies protein sources across the week (no more than 2 repetitions of the same protein per week)"
+          - "Grocery waste under 10% of purchased perishables over a 2-week tracking period"
+          - "Weeknight meals completed in under 45 minutes from start to plating on 80%+ of planned dinners"
+          - "Meal plan includes at least 5 servings of vegetables per day across all meals (USDA dietary guideline baseline)"
+      - level: intermediate
+        criteria: >
+          Designs menus around seasonal availability and market offerings (summer: tomatoes,
+          corn, stone fruit; winter: root vegetables, citrus, squash). Accommodates common
+          dietary restrictions (vegetarian, gluten-free, dairy-free, nut-free) without
+          sacrificing flavor or satisfaction. Plans prep-ahead strategies for weeknight
+          efficiency (batch-cook grains on Sunday, prep vegetables for 3 days, marinate
+          protein overnight). Manages a food budget and tracks cost per serving.
+        metrics:
+          - "Seasonal dinner menu uses 80%+ in-season produce — can name what is in season for the current month from memory"
+          - "Dietary-restricted meal (e.g., gluten-free dinner) rated as equally satisfying as unrestricted version by 3+ tasters in a blind comparison"
+          - "Prep-ahead strategy saves measurable time: weeknight dinners completed in under 30 minutes on 3+ nights per week"
+          - "Tracks food cost per serving for a full week and stays within a per-person budget target (e.g., under $5/serving)"
+      - level: advanced
+        criteria: >
+          Plans multi-course menus with intentional flavor progression (light to rich,
+          acidic palate-cleansers between heavy courses), texture contrast (creamy soup
+          followed by crunchy salad), and visual variety (color and plating vary across
+          courses). Calculates food cost percentages (target: 28-35% for restaurant-style
+          menus). Designs menus for events and dinner parties with a reverse-timeline,
+          prep-ahead plan, and service logistics. Executes a five-course dinner party
+          for 4-6 guests solo.
+        metrics:
+          - "Five-course dinner party menu executed solo with all courses served at correct temperature and within 5 minutes of target timing"
+          - "Food cost for a planned menu falls within 5% of target budget — calculated in advance and verified by receipt"
+          - "Reverse-timeline created for a dinner party: identifies make-ahead items (day before), morning-of prep, and a-la-minute items — all executed on schedule"
+          - "Multi-course menu demonstrates intentional progression: tasters identify the flavor arc (e.g., light-to-rich) without prompting"
+      - level: expert
+        criteria: >
+          Designs restaurant-style menus balancing creativity, cost, dietary inclusivity,
+          and kitchen workflow. Plans seasonal menu rotations (4 per year). Understands
+          nutritional science well enough to design for specific health goals. Develops
+          original recipes as part of menu creation rather than adapting existing recipes.
+          Executes a multi-course dinner for 8+ guests with original recipes — the
+          integrative capstone test that mirrors ACF exam conditions: 2.5-hour time limit,
+          75% passing score across safety, organization, cooking skills, and
+          taste/presentation.
+        metrics:
+          - "Seasonal menu rotation (4 menus/year) demonstrates variety, balance, and cost control — no dish repeated across seasons, food cost within 5% of target"
+          - "Menu designed for a specific dietary goal (e.g., anti-inflammatory, heart-healthy, athletic performance) reviewed favorably by a nutritionist or dietitian"
+          - "Multi-course dinner party for 8+ guests with original recipes: all courses at correct temperature, host spends less than 60% of event time in kitchen, all guests report satisfaction"
+          - "ACF Certified Culinarian exam: overall score of 75%+ across all four sections (safety, organization, cooking skills, taste/presentation) in a 2.5-hour practical"
+    tags: ["planning", "nutrition", "budgeting", "seasonal"]
+
+  # -- WORLD CUISINES & ADAPTATION -----------------------------------------------
+  - id: "creative-arts/cooking/world-cuisines"
+    title: "World Cuisines & Adaptation"
+    description: >
+      Exploring the major culinary traditions of the world — their signature ingredients,
+      techniques, flavor profiles, and cultural contexts — and developing the ability to
+      adapt and combine them. This is the capstone creative skill: it requires fluency
+      in cooking methods, flavor building, and ingredient handling to authentically
+      engage with cuisines beyond one's own tradition. Key flavor profiles to learn:
+      French (butter, wine, herbs, stock), Italian (olive oil, garlic, tomato, basil,
+      parmesan), Chinese (soy, ginger, garlic, rice wine, sesame), Japanese (dashi,
+      soy, mirin, rice vinegar — the art of subtlety), Indian (cumin, coriander,
+      turmeric, chili, garam masala, ghee), Mexican (chili peppers, lime, cilantro,
+      cumin, corn), Thai (fish sauce, lime, chili, lemongrass, coconut, palm sugar —
+      balance of salty, sour, sweet, spicy). Learning world cuisines is not about
+      collecting exotic recipes — it is about understanding why each tradition evolved
+      its particular flavor combinations, techniques, and ingredient pairings, and
+      using that understanding to cook with respect and accuracy.
+    benchmarks:
+      - level: beginner
+        criteria: "Cooks representative dishes from at least 3 distinct cuisines (e.g., Italian aglio e olio, Mexican salsa verde, Chinese egg-fried rice) following authentic recipes from trusted sources. Identifies key flavor profiles of major cuisines by tasting and naming the dominant seasonings."
+        metrics:
+          - "Identifies the signature aromatics and seasonings for 5 major world cuisines when presented with unlabeled spice blends or sauces (e.g., garam masala = Indian, five-spice = Chinese)"
+          - "Produces an authentic-tasting dish from 3 different cuisines using traditional recipes — each rated as recognizably authentic by a taster familiar with that cuisine"
+          - "Can name the foundational fat, acid, and aromatics for at least 5 cuisines (e.g., French: butter/wine/shallot, Thai: coconut oil/lime/lemongrass)"
+          - "Correctly identifies and purchases 3+ specialty ingredients (e.g., fish sauce, miso paste, dried chiles) from an Asian or Latin grocery and uses them in a dish"
+      - level: intermediate
+        criteria: >
+          Understands the foundational techniques specific to regional cuisines: wok hei
+          for Chinese (smoking-hot wok, constant motion, small batches), tandoor-style
+          high-heat cooking for Indian, dashi making for Japanese (kombu + katsuobushi,
+          steep not boil), proper tortilla making for Mexican, pasta making for Italian.
+          Sources specialty ingredients from international markets and understands
+          substitutions (e.g., tamarind paste for lime in certain Thai dishes, sherry
+          vinegar for rice wine in Chinese). Adapts recipes based on available ingredients
+          while maintaining the core flavor identity of the dish.
+        metrics:
+          - "Wok-fried dish achieves visible wok hei character (smoky, slightly charred edges on vegetables or protein) using a home stove at maximum heat with proper technique"
+          - "Substituted-ingredient version of a traditional dish rated as 7/10 or higher for authenticity by a taster who knows the original cuisine"
+          - "Produces dashi from kombu and katsuobushi: clear, golden, deeply savory — used as a base for miso soup that a Japanese-food enthusiast rates as authentic"
+          - "Makes fresh corn tortillas from masa harina that are pliable, not cracking, with visible char spots from a hot comal — 3 out of 4 are well-formed"
+      - level: advanced
+        criteria: >
+          Creates fusion dishes that respectfully combine techniques and flavors from
+          multiple traditions — fusion that demonstrates understanding of both source
+          cuisines rather than superficial mixing. Understands the cultural and historical
+          context behind regional cuisines (why Sichuan cuisine uses numbing peppercorns,
+          why French cuisine relies on stocks and butter, why Indian cuisine blooms spices
+          in fat). Adapts any unfamiliar recipe by recognizing its underlying technique
+          patterns (e.g., recognizing that a Thai curry follows the same base-building
+          logic as an Indian curry but with different aromatics).
+        metrics:
+          - "Fusion dish demonstrates clear influence from 2+ cuisines without muddled flavors — tasters can identify both source cuisines and rate the combination as intentional and harmonious"
+          - "Cooks a dish from an unfamiliar cuisine (one never attempted before) using only a traditional recipe and produces a result rated 7/10+ for authenticity on first attempt"
+          - "Can explain the cultural or historical reason behind a technique or ingredient pairing for 5+ cuisines (e.g., 'Indian cuisine blooms spices in fat because fat-soluble flavor compounds release more fully in oil than in water')"
+          - "Adapts a recipe from one cuisine using the technique framework of another (e.g., French-technique mole, Japanese-inflected Italian broth) with coherent results"
+      - level: expert
+        criteria: >
+          Deep fluency in multiple culinary traditions — can design a complete menu within
+          any major cuisine or create thoughtful cross-cultural dishes that demonstrate
+          mastery of both source traditions. Teaches regional techniques with accurate
+          cultural and historical context. Recognized by peers and cultural insiders for
+          breadth and authenticity of culinary knowledge. Can develop original recipes
+          within a specific cuisine's framework that feel like they belong in that tradition.
+        metrics:
+          - "Designs and executes a multi-course menu (minimum 4 courses) in a non-native cuisine that is rated authentic by a cultural insider who grew up eating that cuisine"
+          - "Teaches a cuisine-specific technique class (e.g., Thai curry paste from scratch, Japanese knife skills, French sauce-making) with accurate cultural and historical context — students produce an authentic dish by session end"
+          - "Develops an original recipe within a specific cuisine's framework that 3+ knowledgeable tasters rate as 'it belongs' within that tradition"
+          - "Maintains a working pantry of specialty ingredients from 5+ cuisines and uses them regularly — pantry audit shows active use of miso, fish sauce, dried chiles, whole spices, etc."
+    tags: ["cuisines", "cultural", "creativity", "adaptation", "capstone"]
+
+relationships:
+  # -- Mise en place enables everything ------------------------------------------
+  - source: "creative-arts/cooking/mise-en-place"
+    target: "creative-arts/cooking/knife-skills"
+    type: "enables"
+    note: "Organized workspace and food safety habits are prerequisites for safe, efficient knife work"
+
+  - source: "creative-arts/cooking/mise-en-place"
+    target: "creative-arts/cooking/heat-cooking-methods"
+    type: "enables"
+    note: "Prep workflow and timing coordination are essential before managing heat and multiple cooking methods"
+
+  # -- Knife skills required for vegetable and protein cookery -------------------
+  - source: "creative-arts/cooking/knife-skills"
+    target: "creative-arts/cooking/vegetable-cookery"
+    type: "requires"
+    note: "Vegetable cookery depends on consistent cuts for even cooking and presentation"
+
+  - source: "creative-arts/cooking/knife-skills"
+    target: "creative-arts/cooking/protein-cookery"
+    type: "requires"
+    note: "Butchery, portioning, and trimming proteins requires competent knife skills"
+
+  # -- Heat methods required for most cooking ------------------------------------
+  - source: "creative-arts/cooking/heat-cooking-methods"
+    target: "creative-arts/cooking/vegetable-cookery"
+    type: "requires"
+    note: "Roasting, blanching, sauteing, and grilling vegetables all require heat-method competence"
+
+  - source: "creative-arts/cooking/heat-cooking-methods"
+    target: "creative-arts/cooking/protein-cookery"
+    type: "requires"
+    note: "Searing, roasting, poaching, and braising proteins demand precise heat control"
+
+  - source: "creative-arts/cooking/heat-cooking-methods"
+    target: "creative-arts/cooking/stock-soup-making"
+    type: "requires"
+    note: "Stock extraction requires sustained gentle heat; soups use multiple heat methods"
+
+  # -- Flavor building (anchored to heat methods) --------------------------------
+  - source: "creative-arts/cooking/heat-cooking-methods"
+    target: "creative-arts/cooking/flavor-building"
+    type: "enables"
+    note: "You cannot build flavor without understanding heat — Maillard reaction, caramelization, and blooming spices all require heat control"
+
+  # -- Flavor building enables sauce making and world cuisines -------------------
+  - source: "creative-arts/cooking/flavor-building"
+    target: "creative-arts/cooking/sauce-making"
+    type: "enables"
+    note: "Sauce-making is applied flavor building — seasoning, balancing, and layering in liquid form"
+
+  # -- Stocks required for sauce making and soup making --------------------------
+  - source: "creative-arts/cooking/stock-soup-making"
+    target: "creative-arts/cooking/sauce-making"
+    type: "requires"
+    note: "Veloute, espagnole, and demi-glace are built on stocks — no stock, no sauce"
+
+  # -- Multiple skills converge on menu planning ---------------------------------
+  - source: "creative-arts/cooking/protein-cookery"
+    target: "creative-arts/cooking/menu-planning"
+    type: "enables"
+    note: "Planning balanced menus requires knowing how to cook proteins to proper doneness"
+
+  - source: "creative-arts/cooking/vegetable-cookery"
+    target: "creative-arts/cooking/menu-planning"
+    type: "enables"
+    note: "Menu balance and seasonal cooking depend on broad vegetable cookery competence"
+
+  # -- Multiple skills converge on world cuisines --------------------------------
+  - source: "creative-arts/cooking/flavor-building"
+    target: "creative-arts/cooking/world-cuisines"
+    type: "requires"
+    note: "Engaging authentically with global cuisines requires a developed palate and seasoning intuition"
+
+  - source: "creative-arts/cooking/heat-cooking-methods"
+    target: "creative-arts/cooking/world-cuisines"
+    type: "enables"
+    note: "World cuisines demand diverse heat techniques — wok hei, tandoor, tagine, plancha"
+
+  # -- Baking fundamentals (connected to main tree) -----------------------------
+  - source: "creative-arts/cooking/mise-en-place"
+    target: "creative-arts/cooking/baking-fundamentals"
+    type: "enables"
+    note: "Baking demands precise mise en place — all ingredients measured and ready before mixing begins"
+
+  - source: "creative-arts/cooking/heat-cooking-methods"
+    target: "creative-arts/cooking/baking-fundamentals"
+    type: "enables"
+    note: "Understanding oven heat, convection, and temperature control is prerequisite for baking success"
+
+  - source: "creative-arts/cooking/baking-fundamentals"
+    target: "creative-arts/cooking/menu-planning"
+    type: "enables"
+    note: "A complete menu planner can compose desserts and bread courses alongside savory dishes"

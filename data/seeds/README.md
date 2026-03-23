@@ -11,8 +11,11 @@ First-pass example skill trees for OpenSkillTree. These YAML files serve as:
 | File | Domain | Nodes | Description |
 |------|--------|-------|-------------|
 | `sports/pickleball.yaml` | Sports | 10 | Full skill map from footwork fundamentals to advanced strategy |
-| `business/product-management.yaml` | Business | 10 | PM skills from user research to product strategy |
+| `sports/tennis.yaml` | Sports | 10 | Tennis skills from footwork and groundstrokes to strategy and mental game |
+| `business/product-management.yaml` | Business | 11 | PM skills from user research to product strategy |
 | `business/linkedin-content-creation.yaml` | Business | 10 | Creator skills from profile optimization to distribution |
+| `creative-arts/photography.yaml` | Creative Arts | 11 | Photography from exposure triangle to off-camera lighting |
+| `technology/python.yaml` | Technology | 12 | Python from syntax fundamentals to async, performance, and data analysis |
 
 ## Schema
 
@@ -48,8 +51,11 @@ Benchmarks follow the OST principle: **every level has a number**. Where quantit
 
 Benchmark sources:
 - **Pickleball**: DUPR rating system (2.0–8.0), coaching community standards
+- **Tennis**: USTA NTRP (1.0–7.0), ITF Player Development Framework
 - **Product Management**: Reforge PM leveling framework, industry standard PM career ladders
 - **LinkedIn Content Creation**: LinkedIn Creator analytics benchmarks, content marketing industry data
+- **Photography**: NYIP curriculum levels, PSA merit system, 500px Pulse ratings
+- **Python**: Python Institute Certification Ladder (PCEP/PCAP/PCPP), industry engineering standards
 
 ## Relationship Types
 

@@ -2,13 +2,23 @@
 #
 # Domain:  Creative Arts / Visual Arts / Photography
 # Author:  OpenSkillTree Team (first pass)
-# Version: 0.1.0
+# Version: 0.2.0
 #
 # Benchmark levels reference: NYIP curriculum levels, PSA merit system, 500px Pulse ratings
 #   beginner     = Smartphone or entry-level camera user; relying on Auto mode
 #   intermediate = Consistently uses Manual or semi-manual modes; understands exposure
 #   advanced     = Produces technically competent, intentionally composed work
 #   expert       = Professional-grade output; masters technical AND artistic dimensions
+#
+# Teaching order based on NYIP curriculum, Karl Taylor Education, John Greengo
+# (CreativeLive Fundamentals), Parsons BFA Photography, and Icon Photography School:
+#   Camera operation (Auto mode, basic handling) → exposure triangle →
+#   focus & depth of field → composition → lens selection →
+#   natural light → histogram & metering → white balance & color →
+#   RAW processing → off-camera lighting → genre specialization.
+# The majority of formal programs use a technical-first approach: camera operation
+# before exposure theory, exposure before composition, natural light before
+# artificial, generalist fundamentals before genre specialization.
 
 tree:
   id: "creative-arts/photography"
@@ -22,12 +32,56 @@ tree:
   visibility: "public"
 
 nodes:
+  # ── CAMERA OPERATION (taught first — learn to use the tool) ─────────────────
+  - id: "creative-arts/photography/camera-modes-settings"
+    title: "Camera Modes & Settings"
+    description: >
+      The starting point: knowing how to operate your camera. Begins with
+      day-zero basics — inserting a memory card, charging the battery, holding
+      the camera correctly (right hand grip, left hand supporting lens), and
+      understanding the viewfinder/LCD. Then progresses through camera modes
+      from Auto to Manual as understanding deepens.
+    benchmarks:
+      - level: beginner
+        criteria: "Holds camera correctly with stable two-hand grip. Inserts card, formats card, charges battery. Uses Auto mode competently. Understands what P, Av, Tv, and M modes do in principle."
+        metrics:
+          - "Can switch between Auto, Av, and Tv modes and explain why each is chosen"
+          - "Takes 20 photos in Auto mode with correct framing and no camera shake"
+      - level: intermediate
+        criteria: >
+          Uses Av for portraits and landscapes, Tv for sports and motion. Operates
+          in Manual mode in controlled lighting. Configures AF mode (single vs. continuous)
+          and drive mode (single shot vs. burst) appropriately.
+        metrics:
+          - "Correct mode selection in 8/10 scenario-matching exercises"
+          - "Burst mode used on ≥80% of action shots submitted"
+      - level: advanced
+        criteria: >
+          Uses back-button focus, custom function buttons, and preset banks to
+          configure camera rapidly for different scenarios. Understands all AF area
+          modes (zone, tracking, spot). Uses Auto ISO with minimum shutter speed.
+        metrics:
+          - "Camera reconfigured for new shooting scenario in ≤30 seconds"
+          - "0 missed shots due to incorrect camera mode or AF setting per shoot"
+      - level: expert
+        criteria: >
+          Camera operation is fully automatic/muscle-memory. Custom settings banks
+          pre-configured for every shooting scenario. Teaches camera operation to
+          students without referring to documentation.
+        metrics:
+          - "Professional shoot completed with 0 technically ruined shots due to camera error"
+          - "Student camera setup: 100% configured correctly after 1 coaching session"
+    tags: ["technical", "foundation", "camera-operation"]
+
+  # ── EXPOSURE (the physics foundation) ───────────────────────────────────────
   - id: "creative-arts/photography/exposure-triangle"
     title: "Exposure Triangle"
     description: >
       The fundamental physics of photography: aperture controls light and depth of field,
       shutter speed controls light and motion, ISO controls sensor sensitivity and noise.
       Understanding their interplay is the prerequisite for all intentional image-making.
+      Camera operation (knowing how to change settings) enables learning the exposure
+      triangle (understanding WHY to change them).
     benchmarks:
       - level: beginner
         criteria: "Names all three elements and explains what each does. Adjusts one setting and compensates with another to maintain exposure."
@@ -60,85 +114,13 @@ nodes:
           - "0 recoverable exposure errors on a 100-shot professional shoot"
     tags: ["foundation", "technical", "measurable"]
 
-  - id: "creative-arts/photography/camera-modes-settings"
-    title: "Camera Modes & Settings"
-    description: >
-      Knowing when to use Manual, Aperture Priority (Av), Shutter Priority (Tv),
-      Program, and Auto modes — and how to configure focus, drive, and metering
-      settings to match the shooting situation.
-    benchmarks:
-      - level: beginner
-        criteria: "Uses Auto mode competently. Understands what P, Av, Tv, and M modes do in principle."
-        metrics:
-          - "Can switch between Auto, Av, and Tv modes and explain why each is chosen"
-      - level: intermediate
-        criteria: >
-          Uses Av for portraits and landscapes, Tv for sports and motion. Operates
-          in Manual mode in controlled lighting. Configures AF mode (single vs. continuous)
-          and drive mode (single shot vs. burst) appropriately.
-        metrics:
-          - "Correct mode selection in 8/10 scenario-matching exercises"
-          - "Burst mode used on ≥80% of action shots submitted"
-      - level: advanced
-        criteria: >
-          Uses back-button focus, custom function buttons, and preset banks to
-          configure camera rapidly for different scenarios. Understands all AF area
-          modes (zone, tracking, spot). Uses Auto ISO with minimum shutter speed.
-        metrics:
-          - "Camera reconfigured for new shooting scenario in ≤30 seconds"
-          - "0 missed shots due to incorrect camera mode or AF setting per shoot"
-      - level: expert
-        criteria: >
-          Camera operation is fully automatic/muscle-memory. Custom settings banks
-          pre-configured for every shooting scenario. Teaches camera operation to
-          students without referring to documentation.
-        metrics:
-          - "Professional shoot completed with 0 technically ruined shots due to camera error"
-          - "Student camera setup: 100% configured correctly after 1 coaching session"
-    tags: ["technical", "foundation", "camera-operation"]
-
-  - id: "creative-arts/photography/histogram-metering"
-    title: "Histogram & Metering"
-    description: >
-      Reading the histogram to evaluate exposure objectively, and using metering
-      modes to measure light in the scene. These tools prevent the exposure errors
-      that LCD screen brightness can mask.
-    benchmarks:
-      - level: beginner
-        criteria: "Reads a histogram and identifies whether an image is overexposed, underexposed, or correctly exposed."
-        metrics:
-          - "Correctly classifies 9/10 histogram examples as over/under/correct"
-      - level: intermediate
-        criteria: >
-          Switches metering modes (evaluative/matrix, center-weighted, spot) based on
-          subject and lighting. Uses spot metering on high-contrast subjects. Reads
-          the RGB histogram to detect channel clipping.
-        metrics:
-          - "Spot metering used correctly on 85%+ of backlit or high-contrast portraits"
-          - "RGB histogram checked on 100% of outdoor shoots"
-      - level: advanced
-        criteria: >
-          Uses exposure lock (AEL) to decouple metering from composition. Understands
-          how different tonal subjects (snow, black fur) require exposure compensation.
-          Uses histogram preview to achieve ETTR.
-        metrics:
-          - "ETTR application produces maximum shadow detail on 80%+ of RAW landscape shots"
-          - "0 shots with unexplained clipping in professional work"
-      - level: expert
-        criteria: >
-          Exposure metering system operates intuitively across all scene types. Can
-          predict histogram shape before firing shutter. Mentors students on histogram
-          reading as a feedback loop.
-        metrics:
-          - "Histogram prediction accuracy: within ±0.5 EV on 90%+ of shots in known conditions"
-    tags: ["technical", "exposure", "measurable"]
-
+  # ── FOCUS & SHARPNESS ───────────────────────────────────────────────────────
   - id: "creative-arts/photography/focus-depth-of-field"
     title: "Focus & Depth of Field"
     description: >
       Achieving sharp focus on the intended subject and controlling how much of
-      the scene is in focus. The difference between an image that looks sharp and
-      one that looks soft is often focus technique, not lens quality.
+      the scene is in focus. Builds directly on exposure triangle knowledge
+      (aperture controls depth of field) and camera settings (AF modes).
     benchmarks:
       - level: beginner
         criteria: "Achieves in-focus images on stationary subjects using single AF. Understands that aperture affects depth of field."
@@ -170,12 +152,13 @@ nodes:
           - "Focus stacking workflow produces tack-sharp macro images at any magnification"
     tags: ["technical", "focus", "optics"]
 
+  # ── VISUAL LANGUAGE ─────────────────────────────────────────────────────────
   - id: "creative-arts/photography/composition"
     title: "Composition Fundamentals"
     description: >
       Arranging visual elements within the frame to create images that are
       visually compelling, communicate intent, and draw the viewer's eye where
-      the photographer wants it. Composition is the language of photography.
+      the photographer wants it. Composition is where photography becomes art.
     benchmarks:
       - level: beginner
         criteria: "Applies rule of thirds intentionally. Avoids mergers and distracting backgrounds. Considers horizon level."
@@ -207,43 +190,6 @@ nodes:
           - "500px Pulse score ≥90 on composition-heavy images"
           - "PSA merit star achieved at least once in landscape or travel category"
     tags: ["artistic", "composition", "visual-language"]
-
-  - id: "creative-arts/photography/light-quality-direction"
-    title: "Light Quality & Direction"
-    description: >
-      Understanding how the quality (hard vs. soft), direction (front, side, back),
-      and color temperature of light shapes the mood and technical quality of an image.
-      Great photographers are students of light above everything else.
-    benchmarks:
-      - level: beginner
-        criteria: "Avoids harsh midday sun for portraits. Seeks open shade or golden hour. Identifies front, side, and backlight."
-        metrics:
-          - "Can name 3 lighting qualities (hard, soft, diffuse) and give real-world examples of each"
-      - level: intermediate
-        criteria: >
-          Uses golden hour and blue hour intentionally. Works in overcast light for
-          portraits. Identifies and replicates Rembrandt, butterfly, and split lighting
-          patterns. Positions reflectors to fill shadows.
-        metrics:
-          - "Shoots golden hour sessions with ≥80% technically keeper images (warm tone, correct exposure)"
-          - "Demonstrates 3 portrait lighting patterns correctly in a controlled test"
-      - level: advanced
-        criteria: >
-          Reads light in any environment and adapts technique: uses backlight for
-          rim-lit drama, creates silhouettes intentionally, uses window light as a
-          natural studio. Understands light directionality in landscape photography.
-        metrics:
-          - "Can recreate any lighting pattern using only available light in an unfamiliar location"
-          - "0 lighting technical failures on a portrait session (harsh shadows, unflattering direction)"
-      - level: expert
-        criteria: >
-          Shapes light as a primary creative medium. Recognizes iconic lighting
-          references (Caravaggio, Hopper) and applies painterly techniques. Teaches
-          light reading as a foundational skill.
-        metrics:
-          - "Editorial clients request photographer by name for lighting style"
-          - "Workshop students can identify and reproduce 5 lighting patterns after 1 day of instruction"
-    tags: ["lighting", "artistic", "technical"]
 
   - id: "creative-arts/photography/lens-selection"
     title: "Lens Selection & Focal Length"
@@ -283,12 +229,91 @@ nodes:
           - "Can identify focal length of an unlabeled image within ±15mm in 8/10 examples"
     tags: ["technical", "optics", "gear"]
 
+  # ── LIGHT ───────────────────────────────────────────────────────────────────
+  - id: "creative-arts/photography/light-quality-direction"
+    title: "Light Quality & Direction"
+    description: >
+      Understanding how the quality (hard vs. soft), direction (front, side, back),
+      and color temperature of light shapes the mood and technical quality of an image.
+      Natural light is taught FIRST in every program — students master reading and
+      using available light before introducing artificial sources.
+    benchmarks:
+      - level: beginner
+        criteria: "Avoids harsh midday sun for portraits. Seeks open shade or golden hour. Identifies front, side, and backlight."
+        metrics:
+          - "Can name 3 lighting qualities (hard, soft, diffuse) and give real-world examples of each"
+      - level: intermediate
+        criteria: >
+          Uses golden hour and blue hour intentionally. Works in overcast light for
+          portraits. Identifies and replicates Rembrandt, butterfly, and split lighting
+          patterns. Positions reflectors to fill shadows.
+        metrics:
+          - "Shoots golden hour sessions with ≥80% technically keeper images (warm tone, correct exposure)"
+          - "Demonstrates 3 portrait lighting patterns correctly in a controlled test"
+      - level: advanced
+        criteria: >
+          Reads light in any environment and adapts technique: uses backlight for
+          rim-lit drama, creates silhouettes intentionally, uses window light as a
+          natural studio. Understands light directionality in landscape photography.
+        metrics:
+          - "Can recreate any lighting pattern using only available light in an unfamiliar location"
+          - "0 lighting technical failures on a portrait session (harsh shadows, unflattering direction)"
+      - level: expert
+        criteria: >
+          Shapes light as a primary creative medium. Recognizes iconic lighting
+          references and applies painterly techniques. Teaches light reading as
+          a foundational skill.
+        metrics:
+          - "Editorial clients request photographer by name for lighting style"
+          - "Workshop students can identify and reproduce 5 lighting patterns after 1 day of instruction"
+    tags: ["lighting", "artistic", "technical"]
+
+  # ── EXPOSURE FEEDBACK ───────────────────────────────────────────────────────
+  - id: "creative-arts/photography/histogram-metering"
+    title: "Histogram & Metering"
+    description: >
+      Reading the histogram to evaluate exposure objectively, and using metering
+      modes to measure light in the scene. These are feedback tools that refine
+      exposure and lighting decisions — positioned after exposure triangle and
+      light quality because they require both to use effectively.
+    benchmarks:
+      - level: beginner
+        criteria: "Reads a histogram and identifies whether an image is overexposed, underexposed, or correctly exposed."
+        metrics:
+          - "Correctly classifies 9/10 histogram examples as over/under/correct"
+      - level: intermediate
+        criteria: >
+          Switches metering modes (evaluative/matrix, center-weighted, spot) based on
+          subject and lighting. Uses spot metering on high-contrast subjects. Reads
+          the RGB histogram to detect channel clipping.
+        metrics:
+          - "Spot metering used correctly on 85%+ of backlit or high-contrast portraits"
+          - "RGB histogram checked on 100% of outdoor shoots"
+      - level: advanced
+        criteria: >
+          Uses exposure lock (AEL) to decouple metering from composition. Understands
+          how different tonal subjects (snow, black fur) require exposure compensation.
+          Uses histogram preview to achieve ETTR.
+        metrics:
+          - "ETTR application produces maximum shadow detail on 80%+ of RAW landscape shots"
+          - "0 shots with unexplained clipping in professional work"
+      - level: expert
+        criteria: >
+          Exposure metering system operates intuitively across all scene types. Can
+          predict histogram shape before firing shutter. Mentors students on histogram
+          reading as a feedback loop.
+        metrics:
+          - "Histogram prediction accuracy: within ±0.5 EV on 90%+ of shots in known conditions"
+    tags: ["technical", "exposure", "measurable"]
+
+  # ── COLOR ───────────────────────────────────────────────────────────────────
   - id: "creative-arts/photography/white-balance-color"
     title: "White Balance & Color Theory"
     description: >
       Capturing and rendering accurate or intentionally stylized color. White balance
       controls the warmth or coolness of an image; color theory guides palette,
-      harmony, and emotional tone.
+      harmony, and emotional tone. Beginners use Auto WB; Kelvin and custom WB
+      develop at the intermediate level.
     benchmarks:
       - level: beginner
         criteria: "Uses preset white balance (Daylight, Cloudy, Shade, Tungsten) appropriately. Knows that AWB can be corrected in RAW."
@@ -320,12 +345,14 @@ nodes:
           - "Color consistency across a 20-image editorial set: all images pass art director review without color notes"
     tags: ["technical", "color", "post-processing"]
 
+  # ── POST-PRODUCTION ─────────────────────────────────────────────────────────
   - id: "creative-arts/photography/raw-post-processing"
     title: "RAW Processing & Post-Production"
     description: >
       The digital darkroom: using Lightroom, Capture One, or equivalent tools to
       realize the full potential of a RAW file and develop a consistent, intentional
-      editing workflow.
+      editing workflow. Basic editing is introduced early-to-mid beginner stage;
+      advanced retouching is intermediate-to-advanced.
     benchmarks:
       - level: beginner
         criteria: "Imports RAW files and applies basic exposure, highlights, shadows, and white balance adjustments."
@@ -358,50 +385,14 @@ nodes:
           - "Art director requires 0 re-edits on 80%+ of delivered image sets"
     tags: ["post-processing", "editing", "workflow"]
 
-  - id: "creative-arts/photography/genre-techniques"
-    title: "Specialized Genre Techniques"
-    description: >
-      Photography genres have distinct technical requirements. Portrait photography
-      demands skin tone accuracy and catchlights; landscape requires hyperfocal
-      distance and long exposures; street requires discretion and zone focus;
-      product photography demands controlled lighting.
-    benchmarks:
-      - level: beginner
-        criteria: "Shoots competently in one chosen genre using genre-appropriate settings."
-        metrics:
-          - "Produces 5 technically acceptable images in chosen genre in a single session"
-      - level: intermediate
-        criteria: >
-          Applies genre-specific technique in at least 2 genres:
-          portraits (catchlights, flattering focal length, fill light),
-          landscape (golden hour, tripod, ND filters, wide focal length),
-          street (zone focus, appropriate ISO, candid approach).
-        metrics:
-          - "Genre-specific checklist (e.g., catchlights visible, correct FL for portraits) met on 80%+ of shots"
-          - "Images from 2+ genres in portfolio rated technically correct by instructor"
-      - level: advanced
-        criteria: >
-          Specializes in 1 primary and 1 secondary genre with professional-quality output.
-          Uses genre-specific accessories (ND filters for landscape, macro tube for product).
-          Understands the unique business requirements of chosen genre.
-        metrics:
-          - "Primary genre images accepted into at least 1 PSA or photography competition"
-          - "Secondary genre images rated publishable by working professional in that genre"
-      - level: expert
-        criteria: >
-          Recognized by peers and clients as a master of chosen genre. Image style
-          is distinctive and consistent. Published or exhibiting work in primary genre.
-        metrics:
-          - "Images published in editorial, exhibition, or licensed for commercial use"
-          - "500px Pulse average ≥90 in primary genre across last 20 submitted images"
-    tags: ["genre", "specialization", "advanced"]
-
+  # ── ADVANCED SKILLS ─────────────────────────────────────────────────────────
   - id: "creative-arts/photography/off-camera-lighting"
     title: "Off-Camera Lighting"
     description: >
       Using flashes, strobes, and continuous lights independently from the camera
-      to create controlled, directional, and repeatable lighting. The bridge between
-      natural-light photography and professional studio work.
+      to create controlled, directional, and repeatable lighting. Natural light
+      must be mastered first — off-camera lighting builds on understanding of
+      light quality and direction with the addition of technical flash control.
     benchmarks:
       - level: beginner
         criteria: "Fires an external flash in TTL mode. Understands sync speed and why it matters."
@@ -434,52 +425,96 @@ nodes:
           - "Workshop students: 90%+ rate lighting instruction as 'significantly improved my work'"
     tags: ["lighting", "studio", "advanced", "technical"]
 
+  - id: "creative-arts/photography/genre-techniques"
+    title: "Specialized Genre Techniques"
+    description: >
+      Photography genres have distinct technical requirements. Genre specialization
+      is the capstone skill — it integrates all foundational and intermediate
+      skills into mastery of a specific domain. Generalist fundamentals through
+      beginner-intermediate, genre exploration at intermediate, genre
+      specialization at advanced.
+    benchmarks:
+      - level: beginner
+        criteria: "Shoots competently in one chosen genre using genre-appropriate settings."
+        metrics:
+          - "Produces 5 technically acceptable images in chosen genre in a single session"
+      - level: intermediate
+        criteria: >
+          Applies genre-specific technique in at least 2 genres:
+          portraits (catchlights, flattering focal length, fill light),
+          landscape (golden hour, tripod, ND filters, wide focal length),
+          street (zone focus, appropriate ISO, candid approach).
+        metrics:
+          - "Genre-specific checklist (e.g., catchlights visible, correct FL for portraits) met on 80%+ of shots"
+          - "Images from 2+ genres in portfolio rated technically correct by instructor"
+      - level: advanced
+        criteria: >
+          Specializes in 1 primary and 1 secondary genre with professional-quality output.
+          Uses genre-specific accessories (ND filters for landscape, macro tube for product).
+          Understands the unique business requirements of chosen genre.
+        metrics:
+          - "Primary genre images accepted into at least 1 PSA or photography competition"
+          - "Secondary genre images rated publishable by working professional in that genre"
+      - level: expert
+        criteria: >
+          Recognized by peers and clients as a master of chosen genre. Image style
+          is distinctive and consistent. Published or exhibiting work in primary genre.
+        metrics:
+          - "Images published in editorial, exhibition, or licensed for commercial use"
+          - "500px Pulse average ≥90 in primary genre across last 20 submitted images"
+    tags: ["genre", "specialization", "advanced"]
+
 relationships:
+  # ── Camera operation → Exposure (learn tool, then physics) ──────────────────
+  - source: "creative-arts/photography/camera-modes-settings"
+    target: "creative-arts/photography/exposure-triangle"
+    type: "enables"
+    note: "You must know HOW to change settings before learning WHY — camera operation enables exposure understanding"
+
+  # ── Exposure → Focus, Light, Metering (exposure knowledge branches out) ─────
   - source: "creative-arts/photography/exposure-triangle"
-    target: "creative-arts/photography/camera-modes-settings"
-    type: "requires"
-    note: "Understanding exposure is prerequisite to using camera modes intelligently"
+    target: "creative-arts/photography/focus-depth-of-field"
+    type: "enables"
+    note: "Aperture controls both exposure and depth of field simultaneously"
+
+  - source: "creative-arts/photography/camera-modes-settings"
+    target: "creative-arts/photography/focus-depth-of-field"
+    type: "enables"
+    note: "Focus modes and AF settings are camera configuration skills"
+
+  - source: "creative-arts/photography/exposure-triangle"
+    target: "creative-arts/photography/lens-selection"
+    type: "enables"
+    note: "Understanding aperture and its effects informs lens selection (max aperture, bokeh)"
 
   - source: "creative-arts/photography/exposure-triangle"
     target: "creative-arts/photography/histogram-metering"
     type: "enables"
     note: "The histogram is a visual representation of the exposure triangle result"
 
-  - source: "creative-arts/photography/histogram-metering"
-    target: "creative-arts/photography/camera-modes-settings"
+  # ── Exposure → Composition and White Balance (visual skills branch) ──────────
+  - source: "creative-arts/photography/exposure-triangle"
+    target: "creative-arts/photography/composition"
     type: "enables"
-    note: "Reading exposure feedback informs mode and setting choices"
+    note: "Understanding how exposure decisions affect the look enables intentional compositional thinking"
 
   - source: "creative-arts/photography/camera-modes-settings"
-    target: "creative-arts/photography/focus-depth-of-field"
+    target: "creative-arts/photography/white-balance-color"
     type: "enables"
-    note: "Focus modes and AF settings are camera configuration skills that build together"
+    note: "White balance is a camera setting — camera operation knowledge enables understanding WB presets and Kelvin"
 
-  - source: "creative-arts/photography/exposure-triangle"
-    target: "creative-arts/photography/focus-depth-of-field"
-    type: "enables"
-    note: "Aperture controls both exposure and depth of field simultaneously"
-
+  # ── Composition and Light (parallel visual skills) ──────────────────────────
   - source: "creative-arts/photography/composition"
-    target: "creative-arts/photography/genre-techniques"
-    type: "requires"
-    note: "Every genre builds on composition fundamentals"
+    target: "creative-arts/photography/light-quality-direction"
+    type: "enables"
+    note: "Light direction is a compositional element — they develop together"
 
   - source: "creative-arts/photography/light-quality-direction"
-    target: "creative-arts/photography/off-camera-lighting"
-    type: "requires"
-    note: "Off-camera lighting is controlled light — requires understanding of light quality first"
-
-  - source: "creative-arts/photography/exposure-triangle"
-    target: "creative-arts/photography/off-camera-lighting"
-    type: "requires"
-    note: "Flash exposure is an extension of the ambient exposure triangle"
-
-  - source: "creative-arts/photography/lens-selection"
-    target: "creative-arts/photography/focus-depth-of-field"
+    target: "creative-arts/photography/histogram-metering"
     type: "enables"
-    note: "Lens focal length and maximum aperture directly shape available depth of field"
+    note: "Understanding light quality helps interpret metering readings in complex scenes"
 
+  # ── Color and Post-processing ───────────────────────────────────────────────
   - source: "creative-arts/photography/white-balance-color"
     target: "creative-arts/photography/raw-post-processing"
     type: "requires"
@@ -490,15 +525,32 @@ relationships:
     type: "enables"
     note: "ETTR and correct exposure at capture inform RAW editing headroom"
 
+  # ── Advanced lighting ───────────────────────────────────────────────────────
+  - source: "creative-arts/photography/light-quality-direction"
+    target: "creative-arts/photography/off-camera-lighting"
+    type: "requires"
+    note: "Off-camera lighting is controlled light — requires understanding of light quality first"
+
+  - source: "creative-arts/photography/exposure-triangle"
+    target: "creative-arts/photography/off-camera-lighting"
+    type: "requires"
+    note: "Flash exposure is an extension of the ambient exposure triangle"
+
+  # ── Genre specialization (capstone — requires multiple foundational skills) ─
   - source: "creative-arts/photography/composition"
-    target: "creative-arts/photography/light-quality-direction"
-    type: "enables"
-    note: "Light direction is a compositional element — they are learned together at advanced level"
+    target: "creative-arts/photography/genre-techniques"
+    type: "requires"
+    note: "Every genre builds on composition fundamentals"
 
   - source: "creative-arts/photography/focus-depth-of-field"
     target: "creative-arts/photography/genre-techniques"
     type: "requires"
     note: "Genre mastery requires reliable focus in demanding conditions"
+
+  - source: "creative-arts/photography/lens-selection"
+    target: "creative-arts/photography/genre-techniques"
+    type: "enables"
+    note: "Genre-specific lens choices (85mm portraits, 14mm landscapes) require lens knowledge"
 
   - source: "creative-arts/photography/raw-post-processing"
     target: "creative-arts/photography/genre-techniques"

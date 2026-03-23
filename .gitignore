@@ -31,3 +31,5 @@ docs/Taxonomy Research
 
 # TypeScript build cache
 tsconfig.tsbuildinfo
+.vercel
+.env*.local

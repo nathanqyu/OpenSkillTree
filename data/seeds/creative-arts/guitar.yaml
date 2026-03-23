@@ -1,0 +1,695 @@
+# OpenSkillTree — Seed Skill Tree: Guitar
+#
+# Domain:  Creative Arts / Music / Guitar
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Rating reference: ABRSM Guitar Grades 1-8 (international), Trinity College London,
+# Rockschool Grades (Debut through Grade 8)
+# Benchmark levels loosely map to:
+#   beginner     ≈ Grades Debut–2  (open chords, basic strumming, simple songs)
+#   intermediate ≈ Grades 3–5      (barre chords, scales, fingerpicking)
+#   advanced     ≈ Grades 6–7      (lead playing, theory, improvisation)
+#   expert       ≈ Grade 8+        (performance, composition, teaching)
+#
+# Teaching order based on Fender Play curriculum, Justin Guitar, Berklee Online,
+# and ABRSM/Trinity syllabi:
+#   Basic chords & strumming → rhythm & timing → barre chords →
+#   fingerpicking → scales & fretboard knowledge → music theory →
+#   lead guitar & soloing → sight reading → tone & dynamics →
+#   performance & repertoire.
+
+tree:
+  id: "creative-arts/guitar"
+  title: "Guitar"
+  description: >
+    A complete skill map for guitar — one of the world's most widely played
+    instruments, with approximately 150 million players worldwide. Covers
+    chord vocabulary, strumming, fingerpicking, scales, theory, lead playing,
+    and performance needed to progress from first-time player to accomplished
+    guitarist.
+  domain: "Creative Arts"
+  visibility: "public"
+
+nodes:
+  - id: "creative-arts/guitar/chords-strumming"
+    title: "Basic Chords & Strumming"
+    description: >
+      The foundation of guitar playing — the skills every guitarist builds
+      everything else upon. Starts with day-zero essentials: how to hold the
+      guitar (classical position for sitting, strap-adjusted for standing),
+      string names using the mnemonic EADGBE ("Eddie Ate Dynamite, Good Bye
+      Eddie"), how to tune using a clip-on tuner or app (Fender Tune, GuitarTuna),
+      how to read a chord diagram (vertical lines = strings, horizontal = frets,
+      dots = finger placement), and how to hold a pick between thumb and index
+      finger with a relaxed grip. Then progresses through the 8 essential open
+      chords in teaching order: Em and Am (easiest, two-finger chords) → E and A
+      → D and Dm → C → G. Practice method: use the JustinGuitar "One Minute
+      Changes" drill — set a timer for 60 seconds and count how many times you
+      can switch cleanly between two chords. Beginner target is 30 changes per
+      minute; proficiency target is 60 per minute. Strumming begins with all
+      downstrokes on the beat, then adds upstrokes on the "and" counts (1-and-
+      2-and-3-and-4-and). Start with a metronome at 60 BPM and only increase
+      tempo after 10 consecutive clean repetitions. Sub-skills include: muting
+      unwanted strings with fretting hand, clean chord fretting (fingertips
+      pressing just behind the fret wire), and developing calluses through
+      regular 15-20 minute daily practice sessions.
+    benchmarks:
+      - level: beginner
+        criteria: "Holds guitar correctly in sitting position with neck at 45-degree angle. Tunes all 6 strings using a tuner. Reads chord diagrams and identifies finger placement. Holds pick between thumb and index with relaxed grip (pick does not fly out during strumming). Plays 5-8 open chords cleanly (all fretted strings ring, no fret buzz). Strums in time with a basic down-up pattern at 60 BPM. Corresponds to ABRSM Grades Debut-1."
+        metrics:
+          - "JustinGuitar One Minute Changes: ≥30 clean chord changes per minute between any two of the 8 essential open chords (Em, Am, E, A, D, Dm, C, G)"
+          - "Can play 3 complete songs start-to-finish using open chords without stopping (e.g., 'Knockin on Heaven's Door,' 'Horse With No Name,' 'Wish You Were Here')"
+          - "Tunes guitar to standard tuning (EADGBE) using a clip-on tuner in ≤2 minutes"
+          - "Strums a down-down-up-up-down-up pattern at 60 BPM for 2 minutes without losing the beat"
+          - "All 6 strings ring clearly when strumming each chord — test by picking each string individually"
+      - level: intermediate
+        criteria: "Plays all major and minor open chords (A, B7, C, D, Dm, E, Em, F, G, Am) plus common additions (A7, D7, E7, Cadd9, Dsus2, Dsus4). Chord changes are smooth and automatic — eyes no longer need to watch the fretting hand. Uses ≥4 distinct strumming patterns musically (e.g., folk strum, pop ballad, reggae upstroke, boom-chicka). Can apply a capo and transpose chord shapes. Corresponds to ABRSM Grade 2."
+        metrics:
+          - "JustinGuitar One Minute Changes: ≥60 clean chord changes per minute between any two open chords"
+          - "Clean chord transitions at 120 BPM in a four-chord song"
+          - "Repertoire of ≥10 songs playable from memory, spanning at least 2 genres"
+          - "Demonstrates ≥4 distinct strumming patterns on demand"
+          - "Applies capo to transpose a song to a new key and plays it correctly"
+      - level: advanced
+        criteria: "Extended chord vocabulary: 7ths (Cmaj7, Am7, Dm7, G7), sus2, sus4, add9, slash chords (e.g., G/B, D/F#). Creates chord arrangements for songs by ear — listens to a recording and figures out the chord progression without looking it up. Understands and applies chord embellishments (walking bass lines between chords, percussive muting, chord stabs). Corresponds to ABRSM Grades 3-5."
+        metrics:
+          - "Figures out the chord progression of an unfamiliar pop/folk song by ear in ≤10 minutes"
+          - "Uses ≥3 strumming/picking patterns per song for dynamic variety (e.g., fingerpicked verse, strummed chorus, muted bridge)"
+          - "Plays ≥20 distinct chord shapes from memory, including 7ths, sus, and add9 voicings"
+          - "Walking bass line between chords demonstrated in at least 2 songs"
+      - level: expert
+        criteria: "Complete chord vocabulary including jazz voicings (9ths, 11ths, 13ths, altered chords), drop-2 and drop-3 voicings, and chord melody technique. Creates solo guitar arrangements that sound full without accompaniment — bass, harmony, and melody simultaneously. Comps behind a vocalist or soloist with taste and variety. Corresponds to ABRSM Grades 6-8+."
+        metrics:
+          - "Solo acoustic performance sounds complete without bass or accompaniment — bass notes, chords, and melody all present"
+          - "Plays ≥5 jazz chord voicings (9ths, 13ths, altered) in at least 3 keys"
+          - "Creates a chord melody arrangement of a standard song within 30 minutes"
+          - "Comps behind a vocalist for a full set, using varied voicings and rhythmic variety"
+    tags: ["foundation", "chords", "strumming"]
+
+  - id: "creative-arts/guitar/rhythm-timing"
+    title: "Rhythm & Timing"
+    description: >
+      Playing in time — the most important musical skill, and the area where
+      most self-taught guitarists have the biggest gaps. Covers time signatures
+      (4/4, 3/4, 6/8, and odd meters), note values (whole, half, quarter, eighth,
+      sixteenth, triplets), syncopation, muting techniques (palm muting, fret-hand
+      muting, chuck strums), and playing with a metronome or drum machine.
+      Practice method: start every session with 5 minutes of metronome work —
+      set it to 60 BPM and strum quarter notes, then eighth notes, then
+      sixteenth notes. Record yourself playing along with a song and listen
+      back to identify where you rush or drag. Sub-skills include: counting
+      out loud while playing ("1-and-2-and-3-and-4-and"), tapping your foot on
+      the beat, subdividing mentally, playing with a laid-back or pushed feel
+      intentionally, and locking in with a bass player or drummer. Rhythm is
+      what separates a guitarist from someone who plays guitar — a player with
+      great rhythm and simple chords will always sound better than a player
+      with complex chords and poor timing.
+    benchmarks:
+      - level: beginner
+        criteria: "Plays in 4/4 time with a metronome without drifting for a full song. Understands and can demonstrate quarter notes, eighth notes, half notes, whole notes, and corresponding rests. Taps foot on beats 1-2-3-4 while strumming. Counts out loud while playing. Corresponds to ABRSM Grades Debut-1."
+        metrics:
+          - "Maintains tempo within ±5 BPM over a full 3-minute song with metronome"
+          - "Strums consistent quarter notes at 60, 80, and 100 BPM for 1 minute each without drifting"
+          - "Claps back a simple 4-bar rhythm pattern correctly after hearing it twice"
+          - "Records self playing a song and identifies ≥2 spots where timing drifts on playback"
+      - level: intermediate
+        criteria: "Plays syncopated rhythms (accenting the 'and' counts). Uses ghost notes and fret-hand muting for groove and feel. Plays in 3/4 (waltz) and 6/8 (compound) time confidently. Locks in with a drummer or backing track — tempo stays steady even when other musicians fluctuate. Understands the difference between straight and swing eighth notes. Corresponds to ABRSM Grades 2-4."
+        metrics:
+          - "Plays syncopated strumming patterns cleanly at 100 BPM (e.g., reggae upstroke pattern, funk 16th-note groove)"
+          - "Plays along with 5 different backing tracks in different time signatures without losing the beat"
+          - "Demonstrates palm-muted power chord rhythm at 120 BPM with consistent muting (no ringing open strings)"
+          - "Switches between straight and swing feel on the same chord progression"
+          - "Can play a 3/4 waltz pattern and a 6/8 fingerpicking pattern from memory"
+      - level: advanced
+        criteria: "Plays complex rhythmic patterns: 16th-note funk grooves, shuffle and swing feels, odd time signatures (5/4, 7/8, 9/8). Palm muting, percussive slaps, and body percussion used musically. Can play polyrhythmic patterns (e.g., 3-over-4). Understands and applies rhythmic displacement (shifting a pattern by an eighth or sixteenth note). Corresponds to ABRSM Grades 5-7."
+        metrics:
+          - "Plays a riff or groove in 5/4 or 7/8 time for 16 bars without losing the pulse"
+          - "Demonstrates a 16th-note funk groove with ghost notes at 90 BPM (clean, even subdivisions)"
+          - "Plays a 3-over-4 polyrhythmic pattern on guitar (e.g., accenting every 3rd 16th note over a 4/4 beat)"
+          - "Records a rhythm track for a song — tempo deviates ≤3 BPM from start to finish without click track"
+      - level: expert
+        criteria: "Rhythm is a musical signature — identifiable in the way time is felt, not just kept. Can lock into any groove instantly with unfamiliar musicians. Internal clock is reliable without metronome for a full set. Can play rubato (free time) and return to tempo precisely. Understands metric modulation and can shift between tempos smoothly. Corresponds to ABRSM Grade 8+."
+        metrics:
+          - "Maintains accurate tempo (±2 BPM) without metronome for a full 45-minute performance"
+          - "Joins an unfamiliar jam and locks into the groove within 4 bars"
+          - "Plays rubato (free time) passage and returns to click tempo within 1 beat"
+          - "Demonstrates metric modulation — transitions from one tempo to a mathematically related tempo mid-song"
+    tags: ["rhythm", "timing", "foundation"]
+
+  - id: "creative-arts/guitar/barre-chords"
+    title: "Barre Chords & Movable Shapes"
+    description: >
+      Barre chords unlock the entire fretboard — any chord in any key using
+      movable shapes rooted in open chord forms. This is one of the most
+      challenging milestones for beginners (typically month 6-8), and the point
+      where many players plateau or quit. The core concept: your index finger
+      acts as a movable "nut" (capo), and the remaining fingers form a chord
+      shape behind it. The two foundational barre chord forms are E-form (root
+      on the 6th string, derived from open E/Em) and A-form (root on the 5th
+      string, derived from open A/Am). Practice method: start by building finger
+      strength with partial barres — barre only strings 1-2 with your index,
+      then 1-3, then 1-4, before attempting the full 6-string barre. Place the
+      barre just behind the fret wire using the bony side of your index finger
+      (not the flat pad). Common first barre chords: F major (1st fret E-form),
+      Bm (2nd fret A-form). Power chords (root-fifth-octave, two or three
+      strings) are a simplified entry point used heavily in rock and punk.
+      The CAGED system connects five open chord shapes (C, A, G, E, D) into a
+      framework for finding any chord voicing anywhere on the neck. Sub-skills:
+      quick barre chord changes, partial barre voicings (e.g., jazz-style 4-string
+      chords), movable 7th shapes, and understanding root note locations on
+      strings 5 and 6 to name any barre chord instantly.
+    benchmarks:
+      - level: beginner
+        criteria: "Plays F major (1st fret, E-form) and Bm (2nd fret, A-form) barre chords cleanly — all intended strings ring without buzzing. Understands that barre shapes are movable: moving F major up two frets produces G major. Can play power chords (root-fifth) on strings 5-6 and 4-5. Typically reached at month 6-8 of consistent practice. Corresponds to ABRSM Grade 2."
+        metrics:
+          - "F major barre chord: all 6 strings ring clearly when picked individually — tested 5 times in a row"
+          - "Bm barre chord (A-form, 2nd fret): all 5 strings ring clearly"
+          - "Can play a song that uses F barre chord without stopping or pausing at the chord change"
+          - "Names the chord produced by E-form barre at any fret (frets 1-12) within 3 seconds"
+          - "Plays 3 power chord shapes (root-5th on strings 6-5, 5-4, and root-5th-octave) and moves them to 5 different fret positions"
+      - level: intermediate
+        criteria: "Plays all major and minor barre chord shapes in both E-form and A-form. Moves between barre chord positions smoothly — no audible gap or pause during transitions. Can play dominant 7th and minor 7th barre shapes. Knows root note locations on strings 5 and 6 to instantly name any barre chord. Uses barre chords to play songs in any key without a capo. Corresponds to ABRSM Grades 3-4."
+        metrics:
+          - "JustinGuitar One Minute Changes: ≥30 clean transitions per minute between any two barre chords"
+          - "Transitions between barre chords in different positions (e.g., F to Bm) at 80 BPM with no dead air"
+          - "Names the major and minor barre chord at any fret position for both E-form and A-form within 3 seconds"
+          - "Plays a song in a sharp key (e.g., F#, Eb) using only barre chords — no open chords or capo"
+          - "Demonstrates major, minor, dominant 7th, and minor 7th barre shapes in both E-form and A-form (8 shapes total)"
+      - level: advanced
+        criteria: "Uses the CAGED system to find ≥3 voicings for any chord across the fretboard. Plays partial barres and chord fragments for voice-leading and comping. Power chords, triads on inner strings, and inversions (root position, 1st inversion, 2nd inversion) used musically. Can derive scale patterns from CAGED chord shapes. Corresponds to ABRSM Grades 5-6."
+        metrics:
+          - "Plays any major or minor chord in ≥3 distinct positions on the fretboard using CAGED shapes"
+          - "Identifies all 5 CAGED shapes for a given chord and plays them ascending the fretboard"
+          - "Plays a chord progression using only triads on strings 2-3-4 (interior voicings) in 3 different positions"
+          - "Demonstrates root position, 1st inversion, and 2nd inversion for major and minor triads"
+          - "Derives the pentatonic scale pattern from each CAGED chord shape"
+      - level: expert
+        criteria: "Complete fretboard chord mastery. Creates voicings on the fly for any harmonic situation — jazz comping, chord melody, reharmonization. Voice-leads through chord progressions using minimal hand movement and smooth note connections. Drop-2, drop-3, and spread voicings accessible. Corresponds to ABRSM Grades 7-8+."
+        metrics:
+          - "Voice-leads through a ii-V-I progression in all 12 keys, moving ≤2 frets between each chord"
+          - "Creates a chord melody arrangement of a standard melody using CAGED-derived voicings"
+          - "Plays a jazz standard comping part using ≥3 different voicing types (drop-2, shell voicings, triads)"
+          - "Given any chord symbol (e.g., Db13#11), plays an appropriate voicing within 5 seconds"
+    tags: ["chords", "technique", "fretboard"]
+
+  - id: "creative-arts/guitar/fingerpicking"
+    title: "Fingerpicking & Arpeggios"
+    description: >
+      Playing individual strings with fingers rather than strumming — creates
+      a more intimate, melodic sound and is essential for classical, folk, and
+      singer-songwriter styles. Uses the classical right-hand convention: p
+      (pulgar/thumb) handles bass strings 4-5-6, i (indice/index) on string 3,
+      m (medio/middle) on string 2, a (anular/ring) on string 1. Practice
+      method: start with the simplest pattern — p-i-m-a ascending across
+      strings 4-3-2-1 over a single chord, at 60 BPM. Keep the right hand
+      anchored (thumb resting on string 6 or a pickup) for stability. Progress
+      to alternating bass patterns: thumb alternates between the root and fifth
+      of each chord (e.g., on C, thumb alternates between string 5 and string
+      4) while fingers pick melody on treble strings. This is the foundation of
+      Travis picking, named after Merle Travis. Sub-skills include: rest stroke
+      vs. free stroke (classical technique), growing and maintaining right-hand
+      fingernails for tone, pinch technique (thumb + finger simultaneously),
+      arpeggio patterns in different meters (3/4 waltz arpeggios, 6/8 compound
+      patterns), and eventually hybrid picking (holding a pick between thumb
+      and index while using m and a fingers for additional strings). Classical
+      tremolo (p-a-m-i repeated rapidly on one string) is an advanced technique
+      that creates the illusion of a sustained note.
+    benchmarks:
+      - level: beginner
+        criteria: "Plays basic p-i-m-a fingerpicking pattern over simple chord progressions (C, G, Am, Em). Thumb handles bass notes on strings 4-6 independently from fingers on strings 1-3. Right hand is stable — does not bounce or drift. Fingers pluck with fingertips (or nails if grown). Can play at least one complete song using fingerpicking. Corresponds to ABRSM Grade 1-2."
+        metrics:
+          - "Plays a p-i-m-a arpeggio pattern continuously for 2 minutes at 60 BPM over a 4-chord progression without stopping or mis-plucking"
+          - "Thumb accurately targets the correct bass string (root note) for each chord — tested over C (string 5), G (string 6), Am (string 5), Em (string 6)"
+          - "Plays 'Dust in the Wind' intro pattern or equivalent simple fingerpicking song recognizably"
+          - "Demonstrates 3 distinct fingerpicking patterns: ascending arpeggio (p-i-m-a), pinch + arpeggio, and a song-specific pattern"
+      - level: intermediate
+        criteria: "Travis picking (alternating bass with melody on top) maintained steadily — the bass is on autopilot while attention focuses on melody. Classical fingerpicking patterns applied to ≥5 songs. Arpeggiated chords used musically in songs where strumming would also work. Plays fingerpicking patterns in both 4/4 and 3/4 time. Can play with or without a thumbpick. Corresponds to ABRSM Grades 3-4."
+        metrics:
+          - "Travis picking: alternating bass pattern maintained at 80 BPM over a full song while adding melody notes on treble strings"
+          - "Fingerpicking repertoire: ≥5 complete songs performed from memory (e.g., 'Blackbird,' 'Landslide,' 'Tears in Heaven')"
+          - "Plays a 3/4 waltz arpeggio pattern (p-i-m-a-m-i) at 100 BPM for 2 minutes"
+          - "Demonstrates pinch technique (thumb + finger simultaneously) on beats 1 and 3 while arpeggios fill beats 2 and 4"
+          - "Switches between strumming and fingerpicking within the same song without pausing"
+      - level: advanced
+        criteria: "Complex fingerpicking arrangements: simultaneous independent melody and bass lines (like a pianist's left and right hands). Hybrid picking (holding a flat pick between thumb and index while using middle and ring fingers) for country, rock, and jazz applications. Classical tremolo technique (p-a-m-i rapid repetition on a single string). Banjo rolls and cross-picking patterns. Can arrange a simple melody as a solo fingerstyle piece. Corresponds to ABRSM Grades 5-7."
+        metrics:
+          - "Plays an arrangement with independent bass line and melody simultaneously at performance tempo — bass rhythm and melody rhythm are clearly distinct"
+          - "Hybrid picking: plays a country-style lick using pick on lower strings and m/a fingers on upper strings at 120 BPM"
+          - "Classical tremolo (p-a-m-i on string 1) sustained evenly for 30 seconds — notes are even in volume and spacing"
+          - "Arranges a well-known melody (e.g., a folk tune) as a solo fingerstyle piece with bass, chords, and melody within 1 hour"
+          - "Plays a banjo roll or cross-picking pattern at 100 BPM cleanly for 1 minute"
+      - level: expert
+        criteria: "Fingerpicking as a primary technique and artistic voice. Creates original fingerstyle arrangements that exploit the full range of the guitar (harmonics, percussive tapping on the body, altered tunings). Can transcribe and perform complex arrangements by ear. Performs solo fingerstyle concerts. Influenced by or capable of performing in the styles of players like Tommy Emmanuel, Andy McKee, or classical masters. Corresponds to ABRSM Grade 8+."
+        metrics:
+          - "Original fingerstyle arrangements (≥3 pieces) performed publicly to a positive reception"
+          - "Transcribes a fingerpicking arrangement from a recording (melody, bass, and harmony) in ≤1 hour"
+          - "Performs a 30-minute solo fingerstyle set with dynamic variety, audience engagement, and zero accompaniment"
+          - "Demonstrates ≥3 alternate tunings (DADGAD, Open G, Open D) and plays a piece in each"
+          - "Incorporates percussive techniques (body slaps, string snaps, harmonics) musically in an original arrangement"
+    tags: ["fingerpicking", "technique", "classical"]
+
+  - id: "creative-arts/guitar/scales-fretboard"
+    title: "Scales & Fretboard Knowledge"
+    description: >
+      Learning scale patterns and understanding the note layout across all
+      positions of the fretboard. The minor pentatonic scale is the gateway
+      to lead playing — it is the first scale every guitarist should learn
+      because it sounds good over both major and minor keys and is used in
+      blues, rock, country, and pop. The 5 essential scales for intermediate
+      players (per Guitareo): minor pentatonic, major pentatonic, natural
+      minor, major scale, and blues scale. Practice method: start with minor
+      pentatonic box 1 (the most common position, rooted on the 6th string).
+      Play ascending and descending with a metronome at 60 BPM using alternate
+      picking (down-up-down-up). Only increase tempo by 5 BPM after 10 clean
+      repetitions. Then learn the remaining 4 pentatonic boxes and practice
+      connecting them by sliding between positions. For fretboard knowledge,
+      learn the notes on strings 5 and 6 first (these are the root note
+      strings for barre chords), then strings 3 and 4, then strings 1 and 2.
+      Use the "note-per-day" method: pick one note (e.g., all the C notes)
+      and find it on every string. The fretboard follows a pattern: each fret
+      is a half step, the 12th fret is the same note as the open string one
+      octave higher. Sub-skills: alternate picking through scales, economy
+      picking, position shifts (sliding between boxes), sequencing patterns
+      (playing scales in 3rds, 4ths, or groups of 3/4 notes), and visualizing
+      scale shapes relative to CAGED chord shapes.
+    benchmarks:
+      - level: beginner
+        criteria: "Plays minor pentatonic scale in box 1 position ascending and descending with alternate picking. Knows note names on the low E (6th) and A (5th) strings — these are the root-note strings for barre chords. Can find any natural note (no sharps/flats) on strings 5 and 6. Uses the scale to improvise simple phrases over a backing track. Typically reached around month 8-12. Corresponds to ABRSM Grade 2."
+        metrics:
+          - "Minor pentatonic box 1 played ascending and descending with alternate picking at 80 BPM — no wrong notes, no hesitation"
+          - "Names all 12 notes on string 6 (low E) within 5 seconds per note when pointed to random frets"
+          - "Names all 12 notes on string 5 (A) within 5 seconds per note when pointed to random frets"
+          - "Improvises 4 bars over an Am backing track using minor pentatonic box 1 — stays in the scale, plays in time"
+          - "Plays the major pentatonic scale in one position ascending and descending"
+      - level: intermediate
+        criteria: "Plays all 5 pentatonic positions (boxes 1-5) and connects them smoothly across the fretboard. Plays the major scale in at least 2 positions. Knows all 5 essential scales (minor pentatonic, major pentatonic, natural minor, major, blues). Knows note names across all 6 strings up to the 12th fret. Uses scale sequences (groups of 3, groups of 4, 3rds, 4ths) as practice exercises. Can identify the key of a song and choose the correct pentatonic position. Corresponds to ABRSM Grades 3-5."
+        metrics:
+          - "Connects all 5 minor pentatonic positions smoothly — plays from box 1 through box 5 and back without stopping, at 100 BPM"
+          - "Names any note on any string (frets 1-12) within 3 seconds"
+          - "Plays the major scale in 2 positions at 100 BPM with alternate picking — no wrong notes"
+          - "Demonstrates all 5 essential scales (minor pentatonic, major pentatonic, natural minor, major, blues) in the key of A"
+          - "Plays a scale sequence in groups of 3 ascending and descending through a full pentatonic position at 80 BPM"
+          - "Given a backing track in an unknown key, identifies the key and plays the correct pentatonic scale within 30 seconds"
+      - level: advanced
+        criteria: "Plays modes of the major scale (Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian) and understands each mode's characteristic sound and application (e.g., Dorian over minor 7th chords, Mixolydian over dominant 7th chords). Uses scales for targeted improvisation — chooses specific scales to outline chord changes rather than playing one scale over everything. Harmonic minor and melodic minor scales accessible in at least 2 positions. Plays 3-note-per-string scale patterns for speed and position shifting. Corresponds to ABRSM Grades 5-7."
+        metrics:
+          - "Plays all 7 modes of the major scale and names the characteristic note that distinguishes each mode"
+          - "Improvises over a modal backing track using the appropriate mode — Dorian over m7, Mixolydian over dom7, Lydian over maj7#11"
+          - "Identifies the correct scale/mode for any diatonic chord (I through vii) in ≤5 seconds"
+          - "Plays harmonic minor scale in 2 positions and explains when to use it (over V7 in a minor key)"
+          - "Plays 3-note-per-string major scale pattern ascending across all 6 strings at 120 BPM with alternate picking"
+          - "Demonstrates scale sequences in 3rds and 4ths through the major scale at 100 BPM"
+      - level: expert
+        criteria: "Complete fretboard visualization — sees intervals, chord tones, and scale degrees simultaneously across all positions, not just patterns. Scales, arpeggios (major, minor, diminished, augmented, dominant 7th), and intervals accessible in any position without thinking. Creates melodic lines from any starting point on any string. Plays symmetrical scales (whole tone, diminished), bebop scales, and altered scales. Can visualize and play any interval from any note instantly. Corresponds to ABRSM Grade 8+."
+        metrics:
+          - "Improvises over unfamiliar chord changes using correct scales and chord tones in real time — no wrong notes over ≥32 bars"
+          - "Plays any arpeggio type (maj7, min7, dom7, dim7, m7b5) from any root in any position within 5 seconds"
+          - "Names the interval between any two randomly selected fretboard positions within 3 seconds"
+          - "Demonstrates diminished, whole tone, and altered scale from any root"
+          - "Plays a bebop scale over a ii-V-I progression, targeting chord tones on strong beats"
+    tags: ["scales", "fretboard", "theory"]
+
+  - id: "creative-arts/guitar/music-theory"
+    title: "Music Theory for Guitar"
+    description: >
+      Understanding the language of music as it applies to the guitar fretboard.
+      Theory transforms a player from someone who memorizes chord shapes and
+      scale patterns into someone who understands why certain notes and chords
+      work together. Core concepts build in layers: intervals (the distance
+      between two notes, measured in half steps on the fretboard) → scales
+      (a collection of intervals from a root note) → triads and chords (built
+      by stacking 3rds from a scale) → keys (a group of chords that belong
+      together) → progressions (common chord movement patterns). Practice
+      method: learn theory ON the guitar, not just on paper. For example, to
+      learn intervals, play a root note and then play each interval above it
+      while saying the interval name and listening to its sound. For chord
+      construction, build a C major triad by finding the root (C), major 3rd
+      (E, 4 frets up), and perfect 5th (G, 7 frets up) on one string. The
+      Nashville Number System replaces chord names with Roman numerals (I-ii-
+      iii-IV-V-vi-vii) making it easy to transpose songs to any key. Sub-skills:
+      identifying major vs. minor chords by ear (Guitareo intermediate
+      checklist item), recognizing the 4 most common pop progressions (I-V-vi-
+      IV, I-IV-V-I, vi-IV-I-V, ii-V-I), understanding the circle of fifths,
+      and applying theory to songwriting and improvisation.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the difference between major and minor keys and can hear the difference (major sounds 'happy,' minor sounds 'sad'). Knows how major and minor triads are built from scales (root-3rd-5th, with a major or minor 3rd). Can identify I-IV-V progressions in songs by ear. Knows what a key signature means (which sharps or flats are in a key). Can name the intervals: unison, minor 2nd, major 2nd, minor 3rd, major 3rd, perfect 4th, perfect 5th. Corresponds to ABRSM Grade 1-2 theory."
+        metrics:
+          - "Correctly names the key of a 3-chord song (I-IV-V or I-V-vi) 8 out of 10 times by ear"
+          - "Identifies whether a chord is major or minor by ear with ≥80% accuracy over 20 trials (Guitareo intermediate checklist)"
+          - "Builds a major triad (root, major 3rd, perfect 5th) on one string from any root note"
+          - "Names the I, IV, and V chords in the keys of C, G, D, A, and E"
+          - "Explains why Em is the 'vi' chord in the key of G (because E is the 6th note of the G major scale)"
+      - level: intermediate
+        criteria: "Understands diatonic harmony: can build all 7 chords from any major scale (I-ii-iii-IV-V-vi-vii°) and knows their qualities (major, minor, diminished). Uses Nashville Number System to communicate chord progressions. Identifies the 4 most common pop/rock progressions by ear (I-V-vi-IV, I-IV-V-I, vi-IV-I-V, ii-V-I). Understands the circle of fifths and uses it to find key signatures and related keys. Can transpose songs to new keys using theory (not just a capo). Corresponds to ABRSM Grades 3-5 theory."
+        metrics:
+          - "Writes out all 7 diatonic chords (with correct qualities) in any major key within 60 seconds"
+          - "Transposes a 4-chord song from one key to any other key using Nashville Numbers in ≤2 minutes"
+          - "Identifies the progression of an unfamiliar pop song as Nashville Numbers within 3 listens"
+          - "Draws the circle of fifths from memory and uses it to name key signatures for all 12 major keys"
+          - "Explains why the V chord wants to resolve to the I chord (leading tone resolution)"
+          - "Identifies ≥3 songs that use the I-V-vi-IV progression"
+      - level: advanced
+        criteria: "Understands secondary dominants (e.g., V/V, V/vi), borrowed chords (from parallel minor/major), modal interchange, and modulation techniques (pivot chord, direct modulation). Applies theory to composition — writes songs with intentional harmonic choices. Performs harmonic analysis of songs using Roman numeral notation. Understands chord extensions (7ths, 9ths, 11ths, 13ths) and how they're constructed. Knows functional harmony: tonic (I, iii, vi), subdominant (ii, IV), dominant (V, vii°). Corresponds to ABRSM Grades 6-7 theory."
+        metrics:
+          - "Harmonic analysis of a pop/rock song completed using Roman numerals in ≤10 minutes, including identification of any non-diatonic chords"
+          - "Composes an original song using ≥1 secondary dominant or borrowed chord with clear intent"
+          - "Identifies secondary dominants in a song by ear (e.g., 'that A7 is the V/V in the key of G')"
+          - "Explains the difference between a modulation and a borrowed chord, with a musical example of each"
+          - "Constructs maj7, min7, dom7, min7b5, and dim7 chords from any root on the fretboard"
+      - level: expert
+        criteria: "Deep theoretical understanding: voice leading principles (contrary and oblique motion, avoiding parallel 5ths), counterpoint basics, jazz harmony (tritone substitution, altered dominants, chord substitution, reharmonization), and form analysis (AABA, 12-bar blues, sonata form). Theory informs every musical decision — improvisation, composition, arrangement, and performance. Can teach theory to students at any level, adapting explanations to their current understanding. Corresponds to ABRSM Grade 8+ theory."
+        metrics:
+          - "Analyzes and explains the harmony of a piece in any genre (pop, jazz, classical, metal) using correct theoretical terminology"
+          - "Reharmonizes a simple melody (e.g., 'Happy Birthday') using jazz chord substitutions (tritone subs, passing diminished chords)"
+          - "Teaches a 30-minute theory lesson to a beginner that results in demonstrable understanding (student can apply the concept)"
+          - "Composes a piece that modulates through ≥3 keys using pivot chords, with clear harmonic analysis"
+          - "Explains tritone substitution and demonstrates it on the guitar in ≥3 keys"
+    tags: ["theory", "harmony", "knowledge"]
+
+  - id: "creative-arts/guitar/lead-soloing"
+    title: "Lead Guitar & Soloing"
+    description: >
+      Playing melodic lines, riffs, and solos — the skills that turn a rhythm
+      guitarist into a lead player. The 4 essential lead techniques per Guitareo's
+      intermediate checklist are: picking (alternate, economy, sweep), bending
+      (pushing a string to raise its pitch by a half step or whole step),
+      sliding (moving a fretted note up or down the fretboard without lifting
+      the finger), and vibrato (rapidly bending and releasing a note for
+      expressiveness). Additional essential techniques: hammer-ons (fretting
+      a note with force to sound it without picking), pull-offs (pulling a
+      fretting finger off the string to sound the note below), tapping (using
+      the picking hand to hammer-on notes on the fretboard), and legato playing
+      (smooth connected notes using hammer-ons and pull-offs instead of picking
+      every note). Practice method: learn the minor pentatonic scale first,
+      then practice the "call and response" method — play a 2-bar phrase (the
+      "call"), then improvise a 2-bar response that answers it. Start with
+      just 4-5 notes and focus on rhythm and phrasing before adding speed.
+      Record yourself improvising over a 12-bar blues backing track and listen
+      back critically. The goal is not speed — it is making every note count.
+      Sub-skills: targeting chord tones (playing the root, 3rd, or 5th of
+      the current chord on strong beats), using space and silence in solos,
+      building tension and release, playing melodically (singable lines), and
+      developing a personal vocabulary of licks that can be deployed in
+      different keys and contexts. Timeline: first simple solos around year 1,
+      bending/sliding/vibrato proficiency by year 1-2, improvisation comfort
+      by year 3-5.
+    benchmarks:
+      - level: beginner
+        criteria: "Plays simple melodies and recognizable riffs (e.g., 'Smoke on the Water,' 'Seven Nation Army,' 'Sunshine of Your Love'). Uses hammer-ons and pull-offs to connect notes within a pentatonic box. Can solo over a 12-bar blues using minor pentatonic box 1 with basic phrasing (not just running up and down the scale). Uses slides to connect notes between frets. Typically reached around year 1. Corresponds to ABRSM Grade 2-3."
+        metrics:
+          - "Plays ≥3 recognizable riffs or melody lines from well-known songs"
+          - "Improvises over a 12-bar blues backing track for the full 12 bars without stopping — uses at least 2 techniques (e.g., bends and slides)"
+          - "Hammer-on and pull-off exercises: plays 4 consecutive hammer-on/pull-off cycles on each string cleanly at 80 BPM"
+          - "Slides between notes within minor pentatonic box 1 — slide lands on the target note accurately 8/10 times"
+          - "Plays a simple solo (e.g., 'Wish You Were Here' solo, 'Wonderful Tonight' lead) from TAB at tempo"
+      - level: intermediate
+        criteria: "All 4 essential lead techniques mastered (Guitareo checklist): picking accuracy with alternate picking, bends to target pitch (half-step and whole-step), slides used expressively, and vibrato that is controlled and even. Plays solos from popular songs at original tempo. Improvises using pentatonic + blue note (b5) with musical phrasing — uses space, repetition, and rhythmic variation rather than just running scales. Can bend in tune consistently. Vibrato speed and width are controllable. Typically reached around year 1-2. Corresponds to ABRSM Grades 3-5."
+        metrics:
+          - "Bend accuracy: whole-step bend reaches target pitch (verified with tuner) on ≥85% of attempts across strings 1-3"
+          - "Vibrato: sustains a note with even, controlled vibrato for 4 beats at 80 BPM — pitch oscillation is consistent"
+          - "Learns and plays a moderate guitar solo from a recording (e.g., 'Hotel California,' 'Comfortably Numb' first solo) in ≤1 hour"
+          - "Improvises a 2-chorus solo over a 12-bar blues that includes bends, slides, vibrato, and hammer-ons/pull-offs"
+          - "Alternate picking: plays a pentatonic scale at 120 BPM with strict alternate picking (no double-downstrokes)"
+          - "Uses the blue note (b5) in at least 3 improvised phrases naturally"
+      - level: advanced
+        criteria: "Improvises over complex chord changes using appropriate scales and modes — changes scales when the chord changes rather than playing one scale over everything. Has developed a vocabulary of signature licks and a recognizable phrasing style. Plays convincingly in ≥3 distinct styles (blues, rock, jazz, country, metal). Uses advanced techniques: sweep picking, tapping, legato runs, string skipping. Targets chord tones (root, 3rd, 5th, 7th) on strong beats. Understands and applies concepts of tension and resolution. Typically reached around year 3-5. Corresponds to ABRSM Grades 6-7."
+        metrics:
+          - "Improvises a coherent, musical 32-bar solo over an unfamiliar chord progression — changes scale/approach with each chord change"
+          - "Plays convincingly in ≥3 distinct styles: demonstrates a blues solo, a rock solo, and a jazz or country solo over appropriate backing tracks"
+          - "Tapping: plays a tapped arpeggio pattern cleanly across ≥3 strings at 100 BPM"
+          - "Sweep picking: plays a 5-string major arpeggio sweep at 80 BPM cleanly"
+          - "Targets chord tones: in an improvised solo, ≥70% of notes on beat 1 of each bar are chord tones (root, 3rd, 5th, or 7th)"
+          - "Transcribes an 8-bar solo from a recording by ear in ≤30 minutes"
+      - level: expert
+        criteria: "Lead playing is a distinctive artistic voice — recognizable by tone, phrasing, and note choice. Creates solos that tell a story with a beginning, development, climax, and resolution. Improvisation sounds composed; composition sounds improvised. Can play over any harmonic context (standards, free jazz, complex metal progressions, odd meters). Speed is a tool, not a goal — can play blazingly fast AND agonizingly slow with equal musical impact. Corresponds to ABRSM Grade 8+."
+        metrics:
+          - "Solos are recognized as having a personal style by ≥3 independent listeners in a blind test"
+          - "Improvises a compelling solo over a tune in an unfamiliar genre on first attempt"
+          - "Plays a ballad solo where every note is intentional — no 'filler' notes, every phrase serves the melody"
+          - "Transcribes a complex solo (e.g., jazz or fusion) from recording by ear in ≤1 hour"
+          - "Teaches a lead guitar concept to an intermediate student resulting in measurable improvement in their playing"
+    tags: ["lead", "soloing", "improvisation"]
+
+  - id: "creative-arts/guitar/tone-dynamics"
+    title: "Tone & Dynamics"
+    description: >
+      Controlling the sound of the guitar through picking technique, volume
+      and tone controls, use of effects pedals, amp settings, and physical
+      touch. Tone is how a guitarist expresses emotion beyond the notes
+      themselves — two players can play the same notes and sound completely
+      different. The signal chain runs: guitar (pickups, volume/tone knobs) →
+      effects pedals → amplifier (preamp gain, EQ, master volume) → speaker
+      cabinet. Each link in the chain shapes the final sound. Sub-skills on
+      the guitar itself: pick angle (tilting the pick changes brightness),
+      pick attack (how hard you strike — soft for warmth, hard for bite),
+      picking position (near the bridge for a bright/trebly tone, near the
+      neck for a warm/mellow tone), using the volume knob to clean up a
+      dirty amp sound (rolling back from 10 to 6-7 cleans the tone without
+      changing the amp), and using the tone knob to remove harshness.
+      Dynamic control means varying volume through touch, not just a volume
+      pedal — playing pianissimo (very soft) to fortissimo (very loud)
+      within a single phrase. Effects literacy: the core effects categories
+      are gain/overdrive (OD, distortion, fuzz), modulation (chorus, flanger,
+      phaser, tremolo), time-based (delay, reverb), and filter (wah, EQ).
+      Practice method: play the same 4-bar phrase at 5 different dynamic
+      levels (pp, p, mp, mf, f) and record to hear the difference. Then
+      practice swelling from soft to loud within a single held note using
+      only pick attack or volume knob.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the function of volume and tone knobs on the guitar. Can produce clean tone (no distortion) and overdriven/distorted tone using an amp or pedal. Picks with consistent attack — notes are even in volume when playing a scale or chord progression. Understands the difference between single-coil and humbucker pickups. Knows how to use a pickup selector switch. Corresponds to ABRSM Grades 1-2."
+        metrics:
+          - "Demonstrates clean, crunch, and high-gain tones on an amp or modeler — explains the difference between each"
+          - "Plays the same chord progression at 3 distinct dynamic levels (soft, medium, loud) — volume difference is clearly audible on recording playback"
+          - "Uses the guitar volume knob to go from distorted to clean tone without touching the amp — demonstrated in real time"
+          - "Picks with even attack: plays a scale where no single note is >50% louder than any other (verified by recording waveform or by ear)"
+          - "Identifies which pickup is selected (bridge, middle, neck) by sound alone with ≥70% accuracy over 10 trials"
+      - level: intermediate
+        criteria: "Uses pick angle, attack velocity, and picking position (bridge vs. neck) to intentionally vary tone within a song. Understands and uses the 4 core effects categories: gain (overdrive/distortion), modulation (chorus/phaser), time-based (delay/reverb), and filter (wah). Dynamic range spans from whisper-quiet fingerpicked passages to full-volume strumming within a single performance. Can set up a basic effects chain in the correct signal order (tuner → wah → drive → modulation → delay → reverb). Corresponds to ABRSM Grades 3-5."
+        metrics:
+          - "Plays a single song that includes both pianissimo (pp) and fortissimo (ff) sections — dynamic contrast clearly audible"
+          - "Demonstrates the tonal difference between picking near the bridge vs. near the neck on the same chord"
+          - "Sets up effects pedals in correct signal chain order and explains why (e.g., drive before modulation, delay before reverb)"
+          - "Uses overdrive, delay, and reverb musically in a performance — each effect enhances the music rather than masking poor technique"
+          - "Recreates a recognizable guitar tone from a well-known song (e.g., clean chorus tone, overdriven crunch) using available gear within 10 minutes"
+      - level: advanced
+        criteria: "Has developed a signature tone that is consistent and intentional. Effects chain designed for specific sounds and switched during performance. Uses advanced tonal techniques: volume swells (violin-like effect), natural and artificial harmonics, pick harmonics (pinch harmonics), tapping for tonal variety, and amp channel switching. Can describe their target tone verbally before playing and achieve it. Can recreate reference tones from recordings using available gear. Corresponds to ABRSM Grades 6-7."
+        metrics:
+          - "Describes a target tone verbally (e.g., 'warm overdriven tone with slapback delay'), then produces it — matches description ≥80% of the time as judged by another musician"
+          - "Recreates a reference tone from a recording using available gear within 15 minutes — recognizably similar"
+          - "Demonstrates ≥4 advanced tonal techniques in a performance: volume swells, natural harmonics, pinch harmonics, and pick dynamics"
+          - "Switches between ≥3 distinct tones during a single song using pedals and/or guitar controls — transitions are smooth and musical"
+          - "Plays natural harmonics at frets 5, 7, and 12 cleanly with consistent volume"
+      - level: expert
+        criteria: "Tone is immediately recognizable — a sonic fingerprint. Understands guitar electronics (pickups, wiring, capacitors, pots), amplifier design (tube vs. solid state, preamp vs. power amp distortion), speaker characteristics, and the complete signal chain at a technical level. Creates tones that other players try to analyze and emulate. Can coax musical tones from any guitar and amp combination. Corresponds to ABRSM Grade 8+."
+        metrics:
+          - "Tone identified by ≥3 listeners in a blind test (hearing only, no visual cues) — 'that sounds like [player name]'"
+          - "Picks up an unfamiliar guitar and amp and produces a musical, intentional tone within 2 minutes of adjusting"
+          - "Explains the electronics of their guitar signal chain (pickups, pedal circuits, amp topology) and how each component shapes the tone"
+          - "Records a guitar part in a studio setting where the producer accepts the tone without requesting changes"
+          - "Demonstrates the same musical phrase with 5 distinctly different tones, each appropriate for a different genre (jazz, blues, metal, country, ambient)"
+    tags: ["tone", "dynamics", "expression"]
+
+  - id: "creative-arts/guitar/sight-reading-tab"
+    title: "Sight Reading & Tablature"
+    description: >
+      Reading music notation — both standard notation and guitar tablature (TAB).
+      TAB is the most common format for guitar music: six horizontal lines
+      represent the six strings (top line = highest string, string 1), and
+      numbers on the lines indicate fret positions. TAB is easy to read but
+      has a key limitation: it typically does not convey rhythm precisely
+      (though modern TAB adds rhythmic stems). Standard notation (the five-
+      line staff with treble clef) is required for classical guitar study,
+      session work, and formal education (ABRSM, Trinity, Rockschool exams).
+      A lead sheet combines chord symbols above a melody line in standard
+      notation — this is the standard format for jazz, worship, and pop session
+      work. Practice method for TAB: download TAB for a song you know, and
+      play through it following the fret numbers — verify against the recording.
+      For standard notation: start in first position (frets 0-4) where the
+      notes on the staff correspond to frets near the nut. Learn the notes on
+      each string in first position: string 1 (E-F-G), string 2 (B-C-D),
+      string 3 (G-A), string 4 (D-E-F), string 5 (A-B-C), string 6 (E-F-G).
+      Practice sight-reading daily — even 5 minutes per day builds the skill
+      over time. Use graded sight-reading books (e.g., ABRSM Guitar Sight
+      Reading, Trinity Sight Reading). Sub-skills: reading chord diagrams,
+      reading chord charts (slash notation with chord symbols), reading Nashville
+      Number charts, reading rhythmic notation (understanding note values,
+      rests, ties, dots, and time signatures on paper), and reading multi-voice
+      notation (melody and bass on the same staff).
+    benchmarks:
+      - level: beginner
+        criteria: "Reads guitar TAB fluently — understands fret numbers, string lines, and common TAB symbols (h = hammer-on, p = pull-off, / = slide up, \\ = slide down, b = bend, x = mute). Can learn songs from TAB without needing an audio reference. Reads chord diagrams (the box-shaped diagrams showing finger placement). Understands basic rhythm symbols when they appear in TAB (stems and beams). Corresponds to ABRSM Grade 1."
+        metrics:
+          - "Learns a new simple song (3-4 chords, basic rhythm) from TAB alone (no audio) in ≤30 minutes and plays it recognizably"
+          - "Identifies all common TAB symbols (h, p, /, \\, b, x, ~) and demonstrates each technique"
+          - "Reads a chord diagram for an unfamiliar chord shape and plays it correctly on first attempt — tested with 5 random chord diagrams"
+          - "Follows along with a TAB transcription while a song plays — finger placement matches the TAB in real time"
+          - "Plays a simple single-note melody from TAB at sight (no practice) within 2 attempts"
+      - level: intermediate
+        criteria: "Reads chord charts (slash notation with chord symbols above — the format used in band rehearsals and worship settings). Reads lead sheets (melody in standard notation + chord symbols). Basic standard notation reading in first position (frets 0-4): identifies notes on the staff and plays them on the guitar. Understands time signatures (4/4, 3/4, 6/8) and key signatures (up to 2 sharps or flats) in notation. Reads Nashville Number charts. Corresponds to ABRSM Grades 2-3."
+        metrics:
+          - "Plays a simple melody from standard notation at sight in first position (frets 0-4) — correct notes and approximate rhythm on first attempt"
+          - "Follows a lead sheet (chord symbols + melody line) in real time at moderate tempo (80 BPM) without getting lost"
+          - "Reads a chord chart (slash notation) for an unfamiliar song and plays the correct chords in time on first read-through"
+          - "Identifies the key signature and time signature of a piece of notation and explains what they mean (which sharps/flats, how many beats per bar)"
+          - "Names ≥20 notes on the treble clef staff and plays them on the guitar in first position within 3 seconds each"
+      - level: advanced
+        criteria: "Sight-reads standard notation across the fretboard — not limited to first position. Reads rhythmically complex passages (syncopation, ties across barlines, dotted rhythms, triplets, 16th-note passages). Transposes from notation on the fly (e.g., reads in C but plays in G). Reads multi-voice notation (melody and bass on the same staff with up-stems and down-stems). Comfortable reading in all positions up to 9th position. Corresponds to ABRSM Grades 5-6."
+        metrics:
+          - "Sight-reads an ABRSM Grade 5 level notation piece at first attempt — correct notes and rhythm with ≤3 errors per 16 bars"
+          - "Transposes a melody to a new key from notation in real time (e.g., reads in C, plays in Eb) at moderate tempo"
+          - "Reads a piece in 5th position (notes at frets 5-9) at sight with the same fluency as first position"
+          - "Plays a rhythmically complex passage (syncopation, ties, dotted 8ths) from notation correctly on second attempt"
+          - "Reads a two-voice piece (melody + bass line on the same staff) and plays both voices simultaneously"
+      - level: expert
+        criteria: "Fluent sight-reader in any position on the fretboard. Reads orchestral guitar parts, classical scores (multi-voice polyphony), and jazz charts (chord melody, walking bass lines from notation) at sight. Can read and perform from any notation format: standard notation, TAB, lead sheets, Nashville charts, and figured bass. Sight-reading is a practical professional skill — can walk into a session and play an unfamiliar part. Corresponds to ABRSM Grades 7-8+."
+        metrics:
+          - "Sight-reads an ABRSM Grade 8 level notation piece with ≤5 errors per page on first attempt"
+          - "Reads and performs a jazz lead sheet (melody + chord symbols) at sight, improvising appropriate comping and fills"
+          - "Plays a classical guitar piece from standard notation at sight — multi-voice polyphony with correct voicing"
+          - "Walks into a rehearsal and plays an unfamiliar chord chart correctly on first read-through with a band"
+          - "Reads figured bass notation and realizes chords from it on the guitar"
+    tags: ["reading", "notation", "literacy"]
+
+  - id: "creative-arts/guitar/performance-repertoire"
+    title: "Performance & Repertoire"
+    description: >
+      The capstone skill: playing for an audience, building a setlist, playing
+      with other musicians, and developing stage presence. Performance
+      integrates all other skills into a complete musical experience and is
+      where guitar playing becomes music-making. Repertoire means the
+      collection of songs you can play confidently from memory — timeline
+      milestones suggest ~3 songs by month 2, ~10-15 songs by month 4, ~20
+      songs by year 1, and growing continuously after that. Sub-skills for
+      solo performance: memorizing songs completely (lyrics, chords,
+      arrangement, dynamics), managing performance anxiety (controlled
+      breathing, preparation, exposure therapy through frequent low-stakes
+      performances), setlist construction (key variety, tempo flow, energy
+      arc), stage banter and audience connection, and using a microphone
+      while playing. Sub-skills for playing with others: following a song
+      structure (intro-verse-chorus-bridge-outro), watching for visual cues
+      (nods, count-ins, cuts), staying in time without a metronome, adjusting
+      volume to blend with the ensemble, and knowing when to play and when
+      to leave space. Practice method: record yourself performing a full
+      3-song set as if an audience were present — no stopping, no restarting.
+      Watch the recording and note: timing issues, forgotten sections,
+      awkward transitions, and body language. Open mic nights are the ideal
+      first performance venue (low pressure, supportive audience, short
+      sets). Year 3-5 timeline: comfortable at open mics, ready to jam with
+      other musicians, considering first paid gigs.
+    benchmarks:
+      - level: beginner
+        criteria: "Plays for friends or family without stopping mid-song. Has a repertoire of ≥5 songs playable start to finish from memory (chords, lyrics, and arrangement). Recovers from small mistakes without stopping — keeps the rhythm going even if a chord is missed. Can play and sing simultaneously on at least 1 song (if vocalist). Records a practice performance and watches it back for self-assessment. Typically reached around month 3-6."
+        metrics:
+          - "Performs 3 songs in sequence for an audience of ≥2 people without stopping or restarting any song"
+          - "Repertoire list: ≥5 songs written down with keys, tempos, and chord progressions — all playable from memory"
+          - "Records a 3-song practice set and identifies ≥3 specific areas for improvement on playback"
+          - "Recovers from a mistake during performance without stopping — chord or lyric error does not cause a full stop"
+          - "Transitions between songs without >10 seconds of silence (uses tuning, brief intro, or count-in)"
+      - level: intermediate
+        criteria: "Performs at open mic nights or jam sessions. Plays with other musicians: follows song structure, stays in time, watches for cues (count-ins, endings, dynamic changes). Setlist of ≥20 songs spanning at least 3 genres. Manages performance anxiety — nerves are present but do not derail the performance. Can use a microphone for vocals while playing. Introduces songs and engages with the audience between songs. Typically reached around year 1-3. Corresponds to ABRSM Grade 3-5 performance."
+        metrics:
+          - "Performs a 15-minute set (3-4 songs) at an open mic night — completes all songs without major errors"
+          - "Plays with a band, jam group, or another musician for ≥20 minutes and stays in sync — follows the structure without getting lost"
+          - "Setlist of ≥20 songs written out with keys and tempos — all playable from memory on demand"
+          - "Speaks to the audience between songs (song introductions, brief banter) without awkward extended silences"
+          - "Plays along with 3 songs they have never rehearsed with a band (jam setting) — follows chord charts and stays in time"
+          - "Performs the same set for 2 different audiences and adjusts energy/banter for each"
+      - level: advanced
+        criteria: "Gigs regularly (≥1 performance per month). Adapts performance to venue (acoustic coffee shop vs. loud bar vs. outdoor festival) and audience (age, energy level, genre expectations). Handles mistakes gracefully on stage — covers errors so the audience does not notice. Repertoire covers multiple genres (rock, folk, blues, pop, country). Builds setlists with intentional energy arc (opening with energy, building through the set, ending strong). Can play a full evening (2-3 hours with breaks) as a solo act or with a band. Corresponds to ABRSM Grades 6-7 performance."
+        metrics:
+          - "Performs a 60-minute set (12-15 songs) comfortably without fatigue or significant errors"
+          - "Audience engagement rated positively (applause, requests, positive comments) in ≥80% of performances"
+          - "Handles an on-stage mistake (broken string, wrong chord, forgotten lyric) and recovers within 4 beats — audience does not notice"
+          - "Builds a setlist with intentional flow: demonstrates opening song, energy build, ballad placement, and closer — explains the reasoning"
+          - "Performs in ≥3 different venue types (e.g., coffee shop, bar, outdoor, house concert) and adapts volume, setlist, and energy to each"
+          - "Repertoire includes songs in ≥4 genres, demonstrated on demand"
+      - level: expert
+        criteria: "Professional-level performance: creates memorable musical experiences that audiences talk about afterward. Can perform, record in a studio, and teach at a high level. Paid performances or session work contribute significant income. Original music written, performed, and well-received. Stage presence is commanding — commands attention from the first note. Can lead a band, direct rehearsals, and manage the musical aspects of a live show (sound check, monitor mix, set timing). Corresponds to ABRSM Grade 8+ performance."
+        metrics:
+          - "Paid performances or session work as a primary or significant income source (≥$500/month from music)"
+          - "Original music (≥5 original songs) performed live and well-received by audiences — measured by audience retention, applause, and/or streaming numbers"
+          - "Performs a 2-hour set (with breaks) as a solo act or with a band — audience stays engaged throughout"
+          - "Directs a sound check: communicates monitor needs, adjusts stage volume, and verifies front-of-house sound within 15 minutes"
+          - "Teaches a performance workshop or masterclass that results in measurable improvement in students' stage confidence"
+          - "Records a studio session (≥3 tracks) where takes are accepted by the producer with minimal re-recording"
+    tags: ["performance", "repertoire", "stage"]
+
+relationships:
+  # ── Foundation ──────────────────────────────────────────────────────────────
+  - source: "creative-arts/guitar/chords-strumming"
+    target: "creative-arts/guitar/rhythm-timing"
+    type: "enables"
+    note: "Strumming patterns introduce rhythm — rhythm mastery refines what chords make possible"
+
+  - source: "creative-arts/guitar/chords-strumming"
+    target: "creative-arts/guitar/barre-chords"
+    type: "requires"
+    note: "Barre chords require finger strength and chord concept understanding from open chords"
+
+  - source: "creative-arts/guitar/chords-strumming"
+    target: "creative-arts/guitar/fingerpicking"
+    type: "requires"
+    note: "Fingerpicking patterns are applied over chord shapes — chord knowledge is prerequisite"
+
+  # ── Intermediate skills ─────────────────────────────────────────────────────
+  - source: "creative-arts/guitar/barre-chords"
+    target: "creative-arts/guitar/scales-fretboard"
+    type: "enables"
+    note: "CAGED system from barre chords maps directly to scale positions on the fretboard"
+
+  - source: "creative-arts/guitar/scales-fretboard"
+    target: "creative-arts/guitar/music-theory"
+    type: "enables"
+    note: "Scale knowledge enables understanding of chord construction and key relationships"
+
+  - source: "creative-arts/guitar/scales-fretboard"
+    target: "creative-arts/guitar/lead-soloing"
+    type: "requires"
+    note: "Lead playing requires scale knowledge — you need to know which notes work over which chords"
+
+  # ── Advanced skills ─────────────────────────────────────────────────────────
+  - source: "creative-arts/guitar/music-theory"
+    target: "creative-arts/guitar/lead-soloing"
+    type: "enables"
+    note: "Theory enables intentional note choice in solos — mode selection, target notes, chord tones"
+
+  - source: "creative-arts/guitar/lead-soloing"
+    target: "creative-arts/guitar/tone-dynamics"
+    type: "enables"
+    note: "Lead playing develops the ear for tone — bending, vibrato, and attack shape the sound"
+
+  - source: "creative-arts/guitar/rhythm-timing"
+    target: "creative-arts/guitar/performance-repertoire"
+    type: "requires"
+    note: "Performance requires solid rhythm — timing issues are the most noticeable performance flaw"
+
+  - source: "creative-arts/guitar/music-theory"
+    target: "creative-arts/guitar/sight-reading-tab"
+    type: "enables"
+    note: "Theory knowledge (key signatures, intervals) accelerates sight reading ability"
+
+  # ── Capstone ────────────────────────────────────────────────────────────────
+  - source: "creative-arts/guitar/lead-soloing"
+    target: "creative-arts/guitar/performance-repertoire"
+    type: "enables"
+    note: "Lead skills expand performance repertoire and stage presence"
+
+  - source: "creative-arts/guitar/tone-dynamics"
+    target: "creative-arts/guitar/performance-repertoire"
+    type: "enables"
+    note: "Tone control and dynamics are what make live performance compelling"
+
+  # ── TAB reading accessible from day 1 (not trapped behind theory) ───────────
+  - source: "creative-arts/guitar/chords-strumming"
+    target: "creative-arts/guitar/sight-reading-tab"
+    type: "enables"
+    note: "Chord diagrams and TAB are the first notation a guitarist learns — reading TAB begins with first chord chart"
+
+  # ── Fingerpicking path to performance (not a dead end) ──────────────────────
+  - source: "creative-arts/guitar/fingerpicking"
+    target: "creative-arts/guitar/performance-repertoire"
+    type: "enables"
+    note: "Fingerstyle performers have a distinct path to performance — many guitarists perform fingerstyle exclusively"

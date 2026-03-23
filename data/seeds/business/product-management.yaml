@@ -2,15 +2,23 @@
 #
 # Domain:  Business / Product / Product Management
 # Author:  OpenSkillTree Team (first pass)
-# Version: 0.1.0
+# Version: 0.2.0
 #
 # Benchmark levels reference: Industry-standard PM leveling frameworks
-# (Reforge, Lenny's Newsletter, and common PM level definitions)
+# (Reforge/Ravi Mehta competency model, SVPG/Marty Cagan, Teresa Torres,
+# Lenny Rachitsky career ladders, Nikhyl Singhal Director-to-CPO framework)
 #   beginner     = Associate PM / new PM (0–2 years)
 #   intermediate = PM (2–5 years), executes independently on a product area
 #   advanced     = Senior PM / PM Lead (5–8 years), owns full product strategy
 #   expert       = Principal PM / Director of Product / CPO (8+ years),
 #                  shapes org and business strategy through product
+#
+# Progression arc (Reforge/Cagan consensus):
+#   Execution skills first (specs, shipping, basic metrics) →
+#   Customer insight (user research, data-driven decisions, discovery) →
+#   Strategy (vision, roadmap, business outcomes) →
+#   Influence (leadership, org design, culture).
+# APMs learn to write specs and ship first; user research deepens later.
 
 tree:
   id: "business/product-management"
@@ -25,51 +33,14 @@ tree:
   visibility: "public"
 
 nodes:
-  - id: "business/product-management/user-research"
-    title: "User Research"
-    description: >
-      The practice of systematically learning from users — their behaviors, needs,
-      goals, and pain points — to inform what to build and why. The foundation of
-      user-centered product thinking.
-    benchmarks:
-      - level: beginner
-        criteria: "Can conduct a basic user interview using a pre-written guide. Summarizes findings."
-        metrics:
-          - "Conducts 5+ user interviews per quarter"
-          - "Interview notes captured and shared within 24h"
-      - level: intermediate
-        criteria: >
-          Synthesizes multiple research sessions into actionable insights. Chooses
-          appropriate research method (interview, survey, usability test, diary study)
-          for the question at hand.
-        metrics:
-          - "Research synthesis docs with ≥3 actionable insights per study"
-          - "Uses ≥2 distinct research methods per quarter"
-          - "Research directly referenced in ≥50% of prioritization decisions"
-      - level: advanced
-        criteria: >
-          Designs mixed-methods research programs. Recruits participants from
-          scratch. Combines quant signals (analytics, surveys at scale) with
-          qual depth. Produces research that changes product direction.
-        metrics:
-          - "At least 1 research finding per quarter that changes a roadmap decision"
-          - "Maintains ongoing research calendar (continuous discovery, not just project-based)"
-      - level: expert
-        criteria: >
-          Builds and scales a research practice. Defines research standards and
-          methodology for an org. Research infrastructure enables PMs and designers
-          to run their own studies with quality guardrails.
-        metrics:
-          - "Research ops: ≥80% of PMs on the team run at least 1 self-serve study/quarter"
-          - "User panel maintained with ≥100 participants available for rapid recruitment"
-    tags: ["discovery", "qualitative", "foundation"]
-
+  # ── EXECUTION FOUNDATION (APM-level, learned first) ─────────────────────────
   - id: "business/product-management/problem-definition"
     title: "Problem Definition"
     description: >
       The ability to clearly articulate the problem being solved — for users, for
-      the business, and in the context of the opportunity. Poorly defined problems
-      produce well-executed solutions to the wrong question.
+      the business, and in the context of the opportunity. This is the first PM
+      skill: framing the problem is day-one work for any new product manager.
+      Poorly defined problems produce well-executed solutions to the wrong question.
     benchmarks:
       - level: beginner
         criteria: "Writes a clear problem statement that identifies who is affected and what they can't do today."
@@ -103,7 +74,8 @@ nodes:
     description: >
       Translating user needs and business goals into clear, buildable specifications
       — user stories, PRDs, technical briefs — that engineering and design can
-      act on without ambiguity.
+      act on without ambiguity. This is the first EXECUTION skill every APM learns:
+      clear documentation is the entry ticket to product management.
     benchmarks:
       - level: beginner
         criteria: "Writes user stories in the 'As a / I want / So that' format with basic acceptance criteria."
@@ -135,49 +107,12 @@ nodes:
           - "Spec template adopted org-wide"
     tags: ["execution", "communication", "technical"]
 
-  - id: "business/product-management/prioritization"
-    title: "Prioritization"
-    description: >
-      The discipline of deciding what to build and — critically — what NOT to
-      build. Effective prioritization aligns work to impact and makes tradeoffs
-      explicit.
-    benchmarks:
-      - level: beginner
-        criteria: "Applies a structured framework (RICE, ICE, MoSCoW) to rank backlog items."
-        metrics:
-          - "All backlog items have RICE or equivalent scores before sprint planning"
-      - level: intermediate
-        criteria: >
-          Adapts frameworks to context. Incorporates qualitative signals (user
-          interviews, support trends) alongside quant data. Makes tradeoffs
-          visible to stakeholders.
-        metrics:
-          - "Prioritization decisions have written rationale referencing user and business data"
-          - "Stakeholders disagree with priority < 20% of the time after explanation"
-      - level: advanced
-        criteria: >
-          Builds custom prioritization models for the team's specific context.
-          Maintains a decision log. Uses opportunity cost reasoning. Can defend
-          cuts under pressure with data.
-        metrics:
-          - "Priority changes after sprint planning: ≤10% of committed scope per sprint"
-          - "Opportunity cost documented for ≥50% of deprioritized items"
-      - level: expert
-        criteria: >
-          Prioritization as a strategic system: connects roadmap items to company
-          OKRs with explicit impact hypotheses. Teaches prioritization frameworks
-          to new PMs. Org trust in PM prioritization is measurable.
-        metrics:
-          - "CEO/exec override rate on PM prioritization decisions: ≤10%"
-          - "OKR coverage: ≥90% of quarterly roadmap items trace to a company OKR"
-    tags: ["execution", "strategy", "decision-making"]
-
   - id: "business/product-management/metrics-analytics"
     title: "Metrics & Analytics"
     description: >
       Defining, measuring, and analyzing the numbers that tell you whether your
-      product is working. Includes KPI definition, instrumentation, experiment
-      design, and using data to drive decisions.
+      product is working. Basic data fluency (dashboards, KPIs) is an early APM
+      skill; A/B testing and experiment design develop at the PM level.
     benchmarks:
       - level: beginner
         criteria: "Defines KPIs for features. Reads dashboards and reports on core metrics."
@@ -210,12 +145,94 @@ nodes:
           - "≥70% of product decisions reference quantitative data in rationale"
     tags: ["data", "experimentation", "measurement"]
 
+  # ── CUSTOMER INSIGHT (PM-level, builds on execution) ────────────────────────
+  - id: "business/product-management/user-research"
+    title: "User Research"
+    description: >
+      The practice of systematically learning from users — their behaviors, needs,
+      goals, and pain points. APMs participate in research passively (shadowing
+      calls, reading support tickets); PMs lead their own studies. User research
+      ENABLES better problem definition but is not a prerequisite for it — APMs
+      define problems from stakeholder input before learning formal research methods.
+    benchmarks:
+      - level: beginner
+        criteria: "Can conduct a basic user interview using a pre-written guide. Summarizes findings."
+        metrics:
+          - "Conducts 5+ user interviews per quarter"
+          - "Interview notes captured and shared within 24h"
+      - level: intermediate
+        criteria: >
+          Synthesizes multiple research sessions into actionable insights. Chooses
+          appropriate research method (interview, survey, usability test, diary study)
+          for the question at hand.
+        metrics:
+          - "Research synthesis docs with ≥3 actionable insights per study"
+          - "Uses ≥2 distinct research methods per quarter"
+          - "Research directly referenced in ≥50% of prioritization decisions"
+      - level: advanced
+        criteria: >
+          Designs mixed-methods research programs. Recruits participants from
+          scratch. Combines quant signals (analytics, surveys at scale) with
+          qual depth. Produces research that changes product direction.
+        metrics:
+          - "At least 1 research finding per quarter that changes a roadmap decision"
+          - "Maintains ongoing research calendar (continuous discovery, not just project-based)"
+      - level: expert
+        criteria: >
+          Builds and scales a research practice. Defines research standards and
+          methodology for an org. Research infrastructure enables PMs and designers
+          to run their own studies with quality guardrails.
+        metrics:
+          - "Research ops: ≥80% of PMs on the team run at least 1 self-serve study/quarter"
+          - "User panel maintained with ≥100 participants available for rapid recruitment"
+    tags: ["discovery", "qualitative", "foundation"]
+
+  - id: "business/product-management/prioritization"
+    title: "Prioritization"
+    description: >
+      The discipline of deciding what to build and — critically — what NOT to
+      build. Effective prioritization aligns work to impact and makes tradeoffs
+      explicit. Requires both metrics (quantitative sizing) and requirements
+      (scoping) as inputs.
+    benchmarks:
+      - level: beginner
+        criteria: "Applies a structured framework (RICE, ICE, MoSCoW) to rank backlog items."
+        metrics:
+          - "All backlog items have RICE or equivalent scores before sprint planning"
+      - level: intermediate
+        criteria: >
+          Adapts frameworks to context. Incorporates qualitative signals (user
+          interviews, support trends) alongside quant data. Makes tradeoffs
+          visible to stakeholders.
+        metrics:
+          - "Prioritization decisions have written rationale referencing user and business data"
+          - "Stakeholders disagree with priority < 20% of the time after explanation"
+      - level: advanced
+        criteria: >
+          Builds custom prioritization models for the team's specific context.
+          Maintains a decision log. Uses opportunity cost reasoning. Can defend
+          cuts under pressure with data.
+        metrics:
+          - "Priority changes after sprint planning: ≤10% of committed scope per sprint"
+          - "Opportunity cost documented for ≥50% of deprioritized items"
+      - level: expert
+        criteria: >
+          Prioritization as a strategic system: connects roadmap items to company
+          OKRs with explicit impact hypotheses. Teaches prioritization frameworks
+          to new PMs. Org trust in PM prioritization is measurable.
+        metrics:
+          - "CEO/exec override rate on PM prioritization decisions: ≤10%"
+          - "OKR coverage: ≥90% of quarterly roadmap items trace to a company OKR"
+    tags: ["execution", "strategy", "decision-making"]
+
   - id: "business/product-management/stakeholder-management"
     title: "Stakeholder Management"
     description: >
       The ability to align, communicate with, and influence the people whose
-      support (or opposition) determines what gets built. Includes executives,
-      engineering, sales, marketing, legal, and external partners.
+      support (or opposition) determines what gets built. Foundational stakeholder
+      skills (status updates, responsiveness) develop at the APM level; influence
+      without authority develops at the PM level and becomes increasingly
+      sophisticated through the Senior PM and Director levels.
     benchmarks:
       - level: beginner
         criteria: "Sends regular status updates. Responds to stakeholder questions within 24 hours."
@@ -245,12 +262,52 @@ nodes:
           - "Cross-functional NPS (how other teams rate working with product): ≥8/10"
     tags: ["leadership", "communication", "influence"]
 
+  # ── STRATEGY (Senior PM level) ──────────────────────────────────────────────
+  - id: "business/product-management/product-discovery"
+    title: "Product Discovery"
+    description: >
+      The structured process of validating ideas before committing engineering
+      resources — using prototypes, experiments, and user feedback to de-risk
+      bets before they become builds. Discovery integrates user research and
+      metrics into a continuous validation cadence (Teresa Torres' continuous
+      discovery habits framework).
+    benchmarks:
+      - level: beginner
+        criteria: "Tests assumptions with lo-fi prototypes (Figma mock, landing page, Wizard of Oz)."
+        metrics:
+          - "≥1 prototype test per feature before engineering starts"
+      - level: intermediate
+        criteria: >
+          Systematic discovery sprints: clearly defined assumptions, test methods,
+          and decision criteria before the test runs. Kills ideas that don't
+          validate without team frustration.
+        metrics:
+          - "Assumption log maintained: ≥5 assumptions documented and tested per quarter"
+          - "Discovery kill rate ≥20% (some ideas should fail validation)"
+      - level: advanced
+        criteria: >
+          Runs continuous discovery: ongoing touchpoints with users, fast
+          prototype-to-insight cycles, integrates discovery into team rhythm.
+        metrics:
+          - "User touchpoints: ≥4 sessions per week across team"
+          - "Time from idea to first user signal: ≤5 business days"
+      - level: expert
+        criteria: >
+          Builds a discovery culture: entire product team (eng, design) participates
+          in discovery. Discovery system is a competitive advantage. Mentors
+          other PMs on discovery methods.
+        metrics:
+          - "≥50% of discovery sessions include an engineer or designer"
+          - "Ideas killed in discovery vs. killed in production: ratio ≥3:1"
+    tags: ["discovery", "validation", "risk-reduction"]
+
   - id: "business/product-management/roadmap-planning"
     title: "Roadmap Planning"
     description: >
       The practice of defining and communicating a prioritized sequence of work
-      across time horizons — from the next sprint to the next year. Roadmaps
-      are plans, not contracts.
+      across time horizons — from the next sprint to the next year. APMs
+      contribute to backlog grooming; PMs own quarterly roadmaps; Senior PMs
+      build annual roadmaps tied to strategy. Roadmaps are plans, not contracts.
     benchmarks:
       - level: beginner
         criteria: "Maintains a prioritized backlog. Can articulate the next 4 weeks of work."
@@ -284,7 +341,8 @@ nodes:
     description: >
       The ability to plan and execute feature and product launches — coordinating
       with marketing, sales, customer success, and communications to drive
-      adoption and business impact.
+      adoption and business impact. Basic launch execution (release notes) is
+      an APM skill; GTM strategy develops at the Senior PM level.
     benchmarks:
       - level: beginner
         criteria: "Supports launch coordination. Writes feature copy and internal release notes."
@@ -315,48 +373,14 @@ nodes:
           - "Launch playbook used by ≥3 other PMs in the org"
     tags: ["execution", "cross-functional", "launch"]
 
-  - id: "business/product-management/product-discovery"
-    title: "Product Discovery"
-    description: >
-      The structured process of validating ideas before committing engineering
-      resources — using prototypes, experiments, and user feedback to de-risk
-      bets before they become builds.
-    benchmarks:
-      - level: beginner
-        criteria: "Tests assumptions with lo-fi prototypes (Figma mock, landing page, Wizard of Oz)."
-        metrics:
-          - "≥1 prototype test per feature before engineering starts"
-      - level: intermediate
-        criteria: >
-          Systematic discovery sprints: clearly defined assumptions, test methods,
-          and decision criteria before the test runs. Kills ideas that don't
-          validate without team frustration.
-        metrics:
-          - "Assumption log maintained: ≥5 assumptions documented and tested per quarter"
-          - "Discovery kill rate ≥20% (some ideas should fail validation)"
-      - level: advanced
-        criteria: >
-          Runs continuous discovery: ongoing touchpoints with users, fast
-          prototype-to-insight cycles, integrates discovery into team rhythm.
-        metrics:
-          - "User touchpoints: ≥4 sessions per week across team"
-          - "Time from idea to first user signal: ≤5 business days"
-      - level: expert
-        criteria: >
-          Builds a discovery culture: entire product team (eng, design) participates
-          in discovery. Discovery system is a competitive advantage. Mentors
-          other PMs on discovery methods.
-        metrics:
-          - "≥50% of discovery sessions include an engineer or designer"
-          - "Ideas killed in discovery vs. killed in production: ratio ≥3:1"
-    tags: ["discovery", "validation", "risk-reduction"]
-
+  # ── LEADERSHIP (Principal PM / Director+) ───────────────────────────────────
   - id: "business/product-management/cross-functional-leadership"
     title: "Cross-functional Leadership"
     description: >
       The ability to lead without authority — aligning engineering, design, data,
       marketing, and business stakeholders to move in the same direction. This is
-      the core leadership skill of a senior PM.
+      the core leadership skill of a senior PM and the primary differentiator
+      at the Principal PM and Director levels.
     benchmarks:
       - level: beginner
         criteria: "Collaborates well with immediate pod (engineer, designer). Runs effective sprint ceremonies."
@@ -392,7 +416,9 @@ nodes:
     description: >
       Connecting the company's mission and market opportunity to a coherent,
       differentiated product vision — and translating that vision into a plan
-      that the org can execute.
+      that the org can execute. Product strategy is the capstone PM skill,
+      developing at the Senior PM level and becoming the primary focus at
+      Director and CPO levels.
     benchmarks:
       - level: beginner
         criteria: "Understands the company's product strategy. Can explain how their area contributes to it."
@@ -424,11 +450,7 @@ nodes:
     tags: ["strategy", "vision", "leadership"]
 
 relationships:
-  - source: "business/product-management/user-research"
-    target: "business/product-management/problem-definition"
-    type: "requires"
-    note: "Problem definition requires real user evidence, not just assumption"
-
+  # ── Execution foundation ────────────────────────────────────────────────────
   - source: "business/product-management/problem-definition"
     target: "business/product-management/requirements-writing"
     type: "requires"
@@ -439,31 +461,60 @@ relationships:
     type: "enables"
     note: "Sizing and scoping requirements is prerequisite to meaningful prioritization"
 
-  - source: "business/product-management/prioritization"
-    target: "business/product-management/roadmap-planning"
-    type: "requires"
-    note: "A roadmap is a sequenced, time-boxed prioritization"
-
   - source: "business/product-management/metrics-analytics"
     target: "business/product-management/prioritization"
     type: "enables"
     note: "Data-driven prioritization requires analytics competence"
+
+  # ── Execution → Supporting skills (anchor to main tree) ──────────────────────
+  - source: "business/product-management/problem-definition"
+    target: "business/product-management/metrics-analytics"
+    type: "enables"
+    note: "Defining the problem clarifies what to measure — problem framing enables metric selection"
+
+  - source: "business/product-management/requirements-writing"
+    target: "business/product-management/stakeholder-management"
+    type: "enables"
+    note: "Writing specs requires communicating with stakeholders — the daily practice of spec review builds stakeholder skills"
+
+  # ── Customer insight builds on execution ────────────────────────────────────
+  - source: "business/product-management/problem-definition"
+    target: "business/product-management/user-research"
+    type: "enables"
+    note: "Knowing what problem to investigate focuses research — problem framing enables effective research design"
+
+  - source: "business/product-management/user-research"
+    target: "business/product-management/product-discovery"
+    type: "enables"
+    note: "Discovery is applied user research at a faster cadence — same muscle, continuous rhythm"
 
   - source: "business/product-management/metrics-analytics"
     target: "business/product-management/product-discovery"
     type: "enables"
     note: "Quantitative signals (analytics) complement qualitative discovery"
 
-  - source: "business/product-management/user-research"
-    target: "business/product-management/product-discovery"
+  - source: "business/product-management/metrics-analytics"
+    target: "business/product-management/go-to-market"
+    type: "enables"
+    note: "Launch success measurement requires analytics competence"
+
+  # ── Strategy layer ──────────────────────────────────────────────────────────
+  - source: "business/product-management/prioritization"
+    target: "business/product-management/roadmap-planning"
     type: "requires"
-    note: "Discovery is applied user research — same muscle, different cadence"
+    note: "A roadmap is a sequenced, time-boxed prioritization"
+
+  - source: "business/product-management/stakeholder-management"
+    target: "business/product-management/roadmap-planning"
+    type: "enables"
+    note: "Roadmap alignment requires stakeholder buy-in and trust"
 
   - source: "business/product-management/requirements-writing"
     target: "business/product-management/go-to-market"
     type: "enables"
     note: "Clear requirements enable effective GTM planning"
 
+  # ── Leadership capstone ─────────────────────────────────────────────────────
   - source: "business/product-management/stakeholder-management"
     target: "business/product-management/cross-functional-leadership"
     type: "requires"

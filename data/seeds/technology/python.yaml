@@ -2,13 +2,22 @@
 #
 # Domain:  Technology / Programming / Python
 # Author:  OpenSkillTree Team (first pass)
-# Version: 0.1.0
+# Version: 0.2.0
 #
 # Benchmark levels reference: Python Institute Certification Ladder + industry standards
 #   beginner     ≈ PCEP level (entry: syntax, basic control flow)
 #   intermediate ≈ PCAP level (associate: OOP, modules, stdlib, basic testing)
 #   advanced     ≈ PCPP level (professional: algorithms, concurrency, APIs, packaging)
 #   expert       = Staff / Principal engineer or data scientist (architecture, performance, mentoring)
+#
+# Teaching order based on MIT OCW 6.0001/6.100L, CS50P, Python Institute curriculum,
+# Codecademy, and Google Python Class:
+#   Variables & types → control flow & functions → error handling →
+#   file I/O & stdlib (before OOP in every curriculum) →
+#   OOP → testing → data structures & algorithms →
+#   packaging → APIs → data analysis → async → performance.
+# OOP is consistently introduced ~60-70% through an intro course, AFTER
+# functions, error handling, and file I/O. Testing follows OOP.
 
 tree:
   id: "technology/python"
@@ -23,18 +32,22 @@ tree:
   visibility: "public"
 
 nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
   - id: "technology/python/syntax-data-types"
     title: "Syntax & Data Types"
     description: >
-      The entry point to Python. Variables, primitive types, collections, and the
-      rules for writing valid code. Mastery here enables writing clear, idiomatic
-      Python without fighting the language.
+      The entry point to Python — including setup. Covers installing Python,
+      choosing an editor (VS Code, PyCharm, or IDLE), running your first script
+      from the terminal, using the REPL for experimentation, and then the
+      building blocks: variables, primitive types, collections, and the rules
+      for writing valid code.
     benchmarks:
       - level: beginner
-        criteria: "Writes simple scripts using variables, strings, numbers, booleans. Uses lists and dicts for basic storage."
+        criteria: "Installs Python and runs a script from the terminal. Uses the REPL to test expressions. Writes simple scripts using variables, strings, numbers, booleans. Uses lists and dicts for basic storage."
         metrics:
           - "Completes PCEP module 1 exercises with ≥70% first-attempt pass rate"
           - "Zero syntax errors in scripts reviewed by a peer"
+          - "Can create a .py file, run it from the terminal, and explain the output"
       - level: intermediate
         criteria: >
           Chooses the right collection type for the job (list vs. tuple vs. set vs. dict).
@@ -102,7 +115,8 @@ nodes:
     title: "Error Handling & Debugging"
     description: >
       Writing code that fails gracefully and diagnosing problems when they occur.
-      Robust error handling is what separates scripts from production software.
+      Error handling is taught early (after control flow) because robust
+      exception handling is needed for file I/O and any non-trivial program.
     benchmarks:
       - level: beginner
         criteria: "Uses try/except to catch exceptions. Can read a traceback and identify the error line."
@@ -134,12 +148,51 @@ nodes:
           - "0 incidents where root cause was obscured by missing logs or swallowed exceptions"
     tags: ["reliability", "debugging", "production"]
 
+  # ── FILE I/O & STDLIB (taught before OOP in every major curriculum) ─────────
+  - id: "technology/python/file-io-stdlib"
+    title: "File I/O & Standard Library"
+    description: >
+      Reading and writing files, working with paths, and leveraging Python's
+      extensive standard library to avoid reinventing the wheel. Every major
+      curriculum (MIT, CS50P, Google Python Class) teaches file I/O BEFORE
+      object-oriented programming, as it builds directly on functions and
+      error handling.
+    benchmarks:
+      - level: beginner
+        criteria: "Opens, reads, writes, and closes files using open() with context managers. Reads CSV and JSON."
+        metrics:
+          - "Completes file I/O exercises without resource leaks (context managers used 100% of the time)"
+      - level: intermediate
+        criteria: >
+          Uses pathlib for path manipulation. Handles binary vs. text mode, encodings.
+          Leverages csv, json, datetime, os, sys, re, and collections from stdlib.
+        metrics:
+          - "Uses pathlib (not os.path string concat) in 100% of new file-path code"
+          - "Can solve 8/10 common scripting tasks using only stdlib (no third-party packages)"
+      - level: advanced
+        criteria: >
+          Uses shutil, tempfile, glob, itertools, functools, contextlib fluently.
+          Writes custom context managers. Parses structured data formats (TOML, YAML, XML).
+        metrics:
+          - "Third-party packages added only when stdlib equivalent does not exist"
+          - "Custom context manager in use in ≥1 production module"
+      - level: expert
+        criteria: >
+          Contributes improvements to shared internal stdlib wrappers. Evaluates
+          third-party library vs. stdlib tradeoffs with benchmark evidence.
+          Teaches stdlib fluency to junior engineers.
+        metrics:
+          - "Stdlib usage enables team to ship features 10%+ faster vs. equivalent third-party approach (documented cases)"
+    tags: ["stdlib", "file-io", "scripting"]
+
+  # ── OBJECT-ORIENTED PROGRAMMING (introduced ~60-70% through intro courses) ──
   - id: "technology/python/object-oriented-programming"
     title: "Object-Oriented Programming"
     description: >
       Modeling the world in classes, objects, inheritance, and encapsulation.
-      Python's OOP layer enables code reuse and large-scale organization,
-      though idiomatic Python uses it more selectively than Java or C++.
+      OOP is consistently introduced after functions, error handling, and file
+      I/O in every major curriculum (MIT Lecture 8 of 12, CS50P Week 8 of 10,
+      PCAP exam). Idiomatic Python uses OOP more selectively than Java or C++.
     benchmarks:
       - level: beginner
         criteria: "Defines classes with __init__, instance attributes, and methods. Creates objects and calls methods."
@@ -171,81 +224,13 @@ nodes:
           - "0 unnecessary class hierarchies introduced in code owned"
     tags: ["OOP", "design", "architecture"]
 
-  - id: "technology/python/file-io-stdlib"
-    title: "File I/O & Standard Library"
-    description: >
-      Reading and writing files, working with paths, and leveraging Python's
-      extensive standard library to avoid reinventing the wheel.
-    benchmarks:
-      - level: beginner
-        criteria: "Opens, reads, writes, and closes files using open() with context managers. Reads CSV and JSON."
-        metrics:
-          - "Completes file I/O exercises without resource leaks (context managers used 100% of the time)"
-      - level: intermediate
-        criteria: >
-          Uses pathlib for path manipulation. Handles binary vs. text mode, encodings.
-          Leverages csv, json, datetime, os, sys, re, and collections from stdlib.
-        metrics:
-          - "Uses pathlib (not os.path string concat) in 100% of new file-path code"
-          - "Can solve 8/10 common scripting tasks using only stdlib (no third-party packages)"
-      - level: advanced
-        criteria: >
-          Uses shutil, tempfile, glob, itertools, functools, contextlib fluently.
-          Writes custom context managers. Parses structured data formats (TOML, YAML, XML).
-        metrics:
-          - "Third-party packages added only when stdlib equivalent does not exist"
-          - "Custom context manager in use in ≥1 production module"
-      - level: expert
-        criteria: >
-          Contributes improvements to shared internal stdlib wrappers. Evaluates
-          third-party library vs. stdlib tradeoffs with benchmark evidence.
-          Teaches stdlib fluency to junior engineers.
-        metrics:
-          - "Stdlib usage enables team to ship features 10%+ faster vs. equivalent third-party approach (documented cases)"
-    tags: ["stdlib", "file-io", "scripting"]
-
-  - id: "technology/python/data-structures-algorithms"
-    title: "Data Structures & Algorithms"
-    description: >
-      Understanding time and space complexity, selecting the right data structure,
-      and implementing common algorithms. The foundation for writing efficient Python
-      at any scale.
-    benchmarks:
-      - level: beginner
-        criteria: "Knows list vs. set lookup time difference. Implements linear search and simple sorting."
-        metrics:
-          - "Correctly identifies O(1) vs. O(n) operations in 8/10 quiz scenarios"
-      - level: intermediate
-        criteria: >
-          Uses dict and set for O(1) lookups. Understands list.sort() (Timsort), bisect
-          for binary search. Can implement BFS and DFS. Analyzes function complexity.
-        metrics:
-          - "Solves LeetCode Easy problems in Python in ≤20 minutes average"
-          - "Uses appropriate data structure (dict/set/heap) in 85%+ of production scenarios"
-      - level: advanced
-        criteria: >
-          Implements heapq, deque, and OrderedDict usage for complex problems.
-          Solves Medium-difficulty algorithmic problems. Profiles code with cProfile to
-          identify hot paths.
-        metrics:
-          - "Solves LeetCode Medium problems in ≤40 minutes average"
-          - "At least 2 production performance improvements traced to better algorithm/data structure choice"
-      - level: expert
-        criteria: >
-          Designs efficient algorithms for novel business problems. Recognizes
-          algorithmic complexity patterns in code review. Evaluates library internals
-          for hidden complexity.
-        metrics:
-          - "Algorithm-level optimizations ship with measured latency improvement"
-          - "Code review catches O(n²) patterns before they reach production"
-    tags: ["algorithms", "performance", "cs-fundamentals"]
-
+  # ── PROFESSIONAL PRACTICES ──────────────────────────────────────────────────
   - id: "technology/python/testing-code-quality"
     title: "Testing & Code Quality"
     description: >
       Writing tests that give you confidence to change code, and maintaining style
-      standards that keep a codebase readable as it grows. Professional Python
-      development is inseparable from testing.
+      standards that keep a codebase readable as it grows. Testing is introduced
+      after OOP (tests for classes) and before data structures / algorithms.
     benchmarks:
       - level: beginner
         criteria: "Writes basic pytest test functions with assertions. Runs tests from the command line."
@@ -278,6 +263,43 @@ nodes:
           - "Team test coverage trend: +5pp per quarter over last 4 quarters"
     tags: ["testing", "quality", "ci-cd"]
 
+  - id: "technology/python/data-structures-algorithms"
+    title: "Data Structures & Algorithms"
+    description: >
+      Understanding time and space complexity, selecting the right data structure,
+      and implementing common algorithms. DSA comes after OOP in all curricula
+      because custom data structures are implemented as classes.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows list vs. set lookup time difference. Implements linear search and simple sorting."
+        metrics:
+          - "Correctly identifies O(1) vs. O(n) operations in 8/10 quiz scenarios"
+      - level: intermediate
+        criteria: >
+          Uses dict and set for O(1) lookups. Understands list.sort() (Timsort), bisect
+          for binary search. Can implement BFS and DFS. Analyzes function complexity.
+        metrics:
+          - "Solves LeetCode Easy problems in Python in ≤20 minutes average"
+          - "Uses appropriate data structure (dict/set/heap) in 85%+ of production scenarios"
+      - level: advanced
+        criteria: >
+          Implements heapq, deque, and OrderedDict usage for complex problems.
+          Solves Medium-difficulty algorithmic problems. Profiles code with cProfile to
+          identify hot paths.
+        metrics:
+          - "Solves LeetCode Medium problems in ≤40 minutes average"
+          - "At least 2 production performance improvements traced to better algorithm/data structure choice"
+      - level: expert
+        criteria: >
+          Designs efficient algorithms for novel business problems. Recognizes
+          algorithmic complexity patterns in code review. Evaluates library internals
+          for hidden complexity.
+        metrics:
+          - "Algorithm-level optimizations ship with measured latency improvement"
+          - "Code review catches O(n²) patterns before they reach production"
+    tags: ["algorithms", "performance", "cs-fundamentals"]
+
+  # ── APPLIED SKILLS ──────────────────────────────────────────────────────────
   - id: "technology/python/packaging-environments"
     title: "Package Management & Environments"
     description: >
@@ -350,12 +372,13 @@ nodes:
           - "API design reviewed and approved by consuming teams before implementation"
     tags: ["apis", "web", "integration"]
 
+  # ── SPECIALIZATION ──────────────────────────────────────────────────────────
   - id: "technology/python/data-analysis"
     title: "Data Analysis with Pandas & NumPy"
     description: >
       Using Python's data science stack to manipulate, analyze, and visualize data.
-      Pandas and NumPy are the lingua franca of data work in Python, used by data
-      analysts, data scientists, and ML engineers alike.
+      Pandas and NumPy are the lingua franca of data work in Python. This is a
+      specialization fork — parallel to APIs/web, not a prerequisite for it.
     benchmarks:
       - level: beginner
         criteria: "Creates DataFrames from CSV/JSON. Selects columns, filters rows, and prints basic statistics."
@@ -390,8 +413,8 @@ nodes:
     title: "Async Programming & Concurrency"
     description: >
       Writing Python that does multiple things at once — async/await for I/O-bound
-      work, threads and processes for CPU-bound and parallel tasks. Critical for
-      high-performance servers and data pipelines.
+      work, threads and processes for CPU-bound and parallel tasks. Async is firmly
+      an advanced skill — no introductory or intermediate curriculum teaches it.
     benchmarks:
       - level: beginner
         criteria: "Understands the difference between synchronous and asynchronous code. Runs simple async functions with asyncio.run()."
@@ -461,6 +484,7 @@ nodes:
     tags: ["performance", "pythonic", "optimization"]
 
 relationships:
+  # ── Foundation chain ────────────────────────────────────────────────────────
   - source: "technology/python/syntax-data-types"
     target: "technology/python/control-flow-functions"
     type: "requires"
@@ -471,16 +495,39 @@ relationships:
     type: "enables"
     note: "Error handling is applied control flow — same mental model, defensive orientation"
 
-  - source: "technology/python/control-flow-functions"
-    target: "technology/python/object-oriented-programming"
+  # ── Error handling → File I/O → OOP (the curriculum-validated order) ────────
+  - source: "technology/python/error-handling-debugging"
+    target: "technology/python/file-io-stdlib"
     type: "enables"
-    note: "OOP requires solid function and scope fundamentals"
+    note: "File operations need try/except for IO errors — error handling is prerequisite"
 
   - source: "technology/python/syntax-data-types"
     target: "technology/python/file-io-stdlib"
     type: "enables"
     note: "File I/O is applied syntax — string handling and types are prerequisites"
 
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/object-oriented-programming"
+    type: "enables"
+    note: "OOP requires solid function and scope fundamentals"
+
+  - source: "technology/python/file-io-stdlib"
+    target: "technology/python/object-oriented-programming"
+    type: "enables"
+    note: "Understanding modules, file structure, and context managers prepares for class design"
+
+  # ── Professional practices ──────────────────────────────────────────────────
+  - source: "technology/python/object-oriented-programming"
+    target: "technology/python/testing-code-quality"
+    type: "enables"
+    note: "Testing classes and using mocks/fixtures requires OOP understanding"
+
+  - source: "technology/python/control-flow-functions"
+    target: "technology/python/testing-code-quality"
+    type: "enables"
+    note: "You cannot write meaningful tests until you can write testable functions"
+
+  # ── DSA (requires OOP for custom data structures) ───────────────────────────
   - source: "technology/python/control-flow-functions"
     target: "technology/python/data-structures-algorithms"
     type: "requires"
@@ -491,11 +538,7 @@ relationships:
     type: "requires"
     note: "Data structure selection depends on understanding Python collection semantics"
 
-  - source: "technology/python/control-flow-functions"
-    target: "technology/python/testing-code-quality"
-    type: "enables"
-    note: "You cannot write meaningful tests until you can write testable functions"
-
+  # ── Applied skills ──────────────────────────────────────────────────────────
   - source: "technology/python/file-io-stdlib"
     target: "technology/python/packaging-environments"
     type: "enables"
@@ -511,6 +554,12 @@ relationships:
     type: "enables"
     note: "Pandas/NumPy operations build on algorithmic thinking about data transformations"
 
+  - source: "technology/python/packaging-environments"
+    target: "technology/python/data-analysis"
+    type: "enables"
+    note: "Data analysis requires pip install pandas numpy — environment management is prerequisite for third-party library work"
+
+  # ── Advanced skills ─────────────────────────────────────────────────────────
   - source: "technology/python/control-flow-functions"
     target: "technology/python/async-concurrency"
     type: "requires"

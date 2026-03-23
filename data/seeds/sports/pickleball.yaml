@@ -2,7 +2,7 @@
 #
 # Domain:  Sports / Racket Sports / Pickleball
 # Author:  OpenSkillTree Team (first pass)
-# Version: 0.1.0
+# Version: 0.2.0
 #
 # Rating reference: DUPR (Dynamic Universal Pickleball Rating) 2.0–8.0 scale
 # Benchmark levels loosely map to:
@@ -10,6 +10,13 @@
 #   intermediate ≈ DUPR 3.0–3.9  (rec player, knows the game)
 #   advanced     ≈ DUPR 4.0–4.9  (competitive club / tournament player)
 #   expert       ≈ DUPR 5.0+     (open/pro level)
+#
+# Teaching order based on PPR, IPTPA, and PCI certified coaching curricula:
+#   Grip & ready position → dinking (soft game) → volleys → groundstrokes →
+#   serve & return → third-shot drop → drives → overhead → kitchen play →
+#   strategy → doubles communication.
+# Coaches universally teach the soft game BEFORE power. Dinking is the
+# foundational pickleball-specific skill taught in the first lesson.
 
 tree:
   id: "sports/pickleball"
@@ -23,60 +30,178 @@ tree:
   visibility: "public"
 
 nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
   - id: "sports/pickleball/footwork"
     title: "Footwork & Movement"
     description: >
-      The foundation of all pickleball skills. Efficient movement enables you to
-      reach balls, set up for shots, and recover to position. Prerequisite for
-      every other skill on the court.
+      The foundation of all pickleball skills. This is where every player starts —
+      covering the absolute basics: how to hold the paddle (continental grip),
+      athletic ready position, basic court layout (sidelines, baseline, kitchen/NVZ
+      line), essential rules (two-bounce rule, NVZ, scoring), and the movement
+      patterns that enable every other skill on the court.
+
+      Sub-skills covered: continental grip, eastern forehand grip awareness,
+      athletic ready position (knees bent, weight on balls of feet, paddle up at
+      chest height), split step timing, lateral shuffle, crossover step, drop step
+      for retreating, forward transition footwork (baseline to kitchen in 3–4
+      steps), recovery shuffle after wide shots, and weight transfer mechanics.
+
+      Drills to practice: (1) Shadow footwork — shuffle baseline to kitchen and
+      back, 10 reps, focusing on staying low and balanced. (2) Split-step reaction
+      drill — partner feeds random direction, you split-step and move to the ball.
+      (3) Ladder drill for quick feet — forward, lateral, in-out patterns.
+      (4) Two-up/two-back transition drill — both partners start at baseline,
+      practice approaching kitchen together after a drop. (5) Recovery cone drill —
+      touch wide cone, shuffle back to center, repeat 10 times each side.
     benchmarks:
       - level: beginner
-        criteria: "Moves to ball and makes contact without falling or losing balance. Uses basic split step."
+        criteria: "Holds paddle with continental grip. Assumes athletic ready position. Knows court zones (kitchen, baseline, sidelines) and basic rules (two-bounce rule, NVZ, scoring). Moves to ball and makes contact without losing balance. Uses basic split step before each shot."
         metrics:
-          - "Reaches 7/10 balls hit within 2 steps"
+          - "Reaches 7/10 balls hit within 2 steps in a feed drill"
+          - "Correctly explains the two-bounce rule, NVZ rule, and scoring format when quizzed"
+          - "Continental grip maintained during a full game without switching to forehand grip"
+          - "Performs split step on at least 5/10 opponent shots during live play"
+          - "Completes baseline-to-kitchen transition (20 feet) in under 4 seconds while staying balanced"
       - level: intermediate
-        criteria: "Consistent split step on every return. Lateral shuffles to kitchen line without crossing feet."
+        criteria: "Consistent split step on every return. Lateral shuffles to kitchen line without crossing feet. Uses crossover step for wide balls. Begins reading opponent paddle angle to anticipate direction."
         metrics:
-          - "Split step timed within 0.3s of opponent contact on 8/10 shots"
+          - "Split step timed within 0.3s of opponent contact on 8/10 shots (video analysis)"
           - "Reaches kitchen line within 3 steps of return on 8/10 rallies"
+          - "Lateral shuffle covers 10-foot span in under 2 seconds without crossing feet"
+          - "Moves in correct direction on first step 7/10 times based on opponent cues"
+          - "The Dink transition assessment: reaches optimal NVZ position on 70%+ of transition shots in a 30-shot drill"
       - level: advanced
-        criteria: "Anticipatory movement — reads opponent cues to preload direction. Efficient recovery from out-of-position."
+        criteria: "Anticipatory movement — reads opponent shoulder rotation, paddle face, and hip angle to preload direction. Efficient recovery from out-of-position. Moves as a unit with doubles partner. Uses drop step to retreat under lobs without turning back to net."
         metrics:
-          - "Court coverage: reaches 90% of balls hit within 5 feet"
-          - "Recovers to optimal position within 1 shot 8/10 times"
+          - "Court coverage: reaches 90% of balls hit within 5 feet in a randomized feed drill"
+          - "Recovers to optimal position within 1 shot 8/10 times after being pulled wide"
+          - "The Dink transition assessment: 83%+ success rate on 30-shot transition drill"
+          - "Drop step and overhead coverage: successfully retreats and plays lob 7/10 times"
+          - "Maintains parallel positioning with partner (within 2 feet lateral offset) on 85%+ of shots"
       - level: expert
-        criteria: "Proactive court positioning. Disguises movement to create deception. Explosive first step from static position."
+        criteria: "Proactive court positioning. Disguises movement to create deception. Explosive first step from static position. Controls court geometry — forces opponents into disadvantageous positions through movement alone."
         metrics:
           - "0–1 unforced movement errors per game set (11 pts)"
+          - "First-step reaction time under 0.25s from ready position (measured via video)"
+          - "Court positioning rated optimal on 90%+ of shots by coaching analysis"
+          - "Creates at least 2 geometric advantages per game through positioning alone (pulling opponents off-court)"
     tags: ["foundation", "athletic", "measurable"]
 
+  # ── SOFT GAME (taught first in coaching programs) ───────────────────────────
+  - id: "sports/pickleball/dinking"
+    title: "Dinking"
+    description: >
+      Dinking is the soft game — low arcing shots exchanged at the kitchen line.
+      Certified coaches (PPR, IPTPA, PCI) teach dinking as the FIRST
+      pickleball-specific skill after grip and ready position. The player who
+      wins the dink battle wins most pickleball matches. Dinking requires
+      patience, touch, and strategic placement.
+
+      Sub-skills covered: forehand dink, backhand dink, cross-court dink,
+      straight-ahead (line) dink, inside-out dink, body dink (aimed at
+      opponent's hip/paddle transition zone), topspin dink, backspin/slice dink,
+      roll dink, lob dink (disguised as normal dink), reset dink (absorbing
+      pace and redirecting into kitchen), and dink-to-speedup transition.
+
+      Drills to practice: (1) Cross-court dink rally — sustain as many shots as
+      possible, counting consecutive makes. (2) Figure-8 dink drill — alternate
+      cross-court and straight dinks in a pattern with a partner. (3) Targeted
+      zone dink drill — place cones or targets in 3 kitchen zones (wide angle,
+      center, feet) and aim for each zone in sequence. (4) Dink-under-pressure
+      drill — partner randomly speeds up, you must reset into kitchen.
+      (5) The Dink Assessment 30-shot dink test — feed 30 dinks from NVZ line,
+      count how many land unattackable in the kitchen. (6) Skinny singles dink
+      game — play half-court points starting from the kitchen line.
+    benchmarks:
+      - level: beginner
+        criteria: "Hits forehand and backhand dinks that clear the net and land in the kitchen. Uses a push motion (not a swing). Paddle face stays open. Keeps wrist firm on contact. Can sustain a basic rally without hitting into the net or popping the ball up."
+        metrics:
+          - "Sustains cross-court dink rally for 5+ consecutive shots without error"
+          - "The Dink Assessment 30-shot test: lands 15+ dinks (50%+) unattackable in kitchen"
+          - "Forehand and backhand dinks both clear net and land in NVZ on 5/10 attempts each"
+          - "0 hard swings during dink rallies (maintains soft touch throughout)"
+      - level: intermediate
+        criteria: "Cross-court and straight-ahead dinks with directional control. Controls depth within the kitchen (front vs. back of NVZ). Recognizes attackable pop-ups and speeds up. Begins using body dinks aimed at opponent's hip/transition zone. Sustains longer rallies with consistent placement."
+        metrics:
+          - "Sustains dink rally for 15+ consecutive shots at 75%+ success rate"
+          - "The Dink Assessment 30-shot test: lands 20+ dinks (67%+) unattackable in kitchen"
+          - "Places dink to intended zone (wide angle, center, or feet) 6/10 times in targeted drill"
+          - "Successfully attacks pop-ups (ball above net height) 5/10 times for winners or forced errors"
+          - "15+ consecutive dinks in a cross-court rally drill (The Dink protocol)"
+      - level: advanced
+        criteria: "Varied pace and spin dinks — topspin, backspin, and roll dinks on command. Forces pop-ups through deliberate placement at opponent's feet and backhand hip. Resets out-of-position speedup balls back into kitchen. Disguises dink direction. This is the 3.5-to-4.0 skill jump — mastering the soft game separates rec players from competitive players."
+        metrics:
+          - "Sustains rally 20+ consecutive shots at 85%+ success rate"
+          - "The Dink Assessment 30-shot test: lands 25+ dinks (83%+) unattackable in kitchen"
+          - "Forces pop-up or error on opponent 3/10 dink sequences through placement"
+          - "Resets opponent speedups back into kitchen 7/10 times in live play"
+          - "Executes topspin, backspin, and flat dinks on command (3 spin types at 6/10 accuracy each)"
+          - "Disguises dink direction — opponent moves wrong direction on first step 3/10 times"
+      - level: expert
+        criteria: "Dink as a weapon: combines misdirection, tempo changes, spin variation, and body shots to manufacture winners. Controls the pace and rhythm of the rally. Forces opponents into reactive mode through sequenced patterns. The dink game is the primary scoring tool."
+        metrics:
+          - "Wins 55%+ of extended dink rallies (>20 shots) in tournament play"
+          - "0–1 unforced dink errors per game (11-point game)"
+          - "The Dink Assessment 30-shot test: lands 28+ dinks (93%+) unattackable in kitchen"
+          - "Manufactures outright dink winners (untouched or forced error) 2+ times per game"
+          - "Controls rally tempo — can speed up or slow down pace at will without losing accuracy"
+    tags: ["soft-game", "technical", "patience"]
+
+  # ── SERVE & RETURN ──────────────────────────────────────────────────────────
   - id: "sports/pickleball/serve"
     title: "Serve"
     description: >
       The serve starts every rally. In pickleball, the serve must land in the
-      diagonal service box (cross-court) and clear the kitchen (NVZ). A
-      well-placed serve creates immediate offensive pressure.
+      diagonal service box (cross-court) and clear the kitchen (NVZ). Coaches
+      introduce the serve after dinking and volleying are established, since
+      consistency and placement matter more than power.
+
+      Sub-skills covered: legal underhand serve motion (paddle below wrist,
+      contact below waist), drop serve (bounce-then-hit variant), volley serve
+      (traditional no-bounce), topspin serve, backspin/slice serve, power serve,
+      lob serve (high deep arc), placement targeting (wide, middle, body),
+      depth control (deep vs. short), pre-serve routine and mental preparation,
+      and serve disguise (same toss, different spin/direction).
+
+      Drills to practice: (1) 10-serve consistency drill — serve 10 balls,
+      count makes, target 70%+ at beginner level. (2) Target zone drill — place
+      targets at deep corners and middle of service box, serve 10 to each zone.
+      (3) Spin serve station — hit 10 topspin, 10 slice, 10 flat in sequence,
+      track in-rate for each. (4) Pressure serve drill — simulate game point,
+      must make 2 consecutive serves to advance. (5) Serve-and-move drill —
+      serve then immediately split-step, preparing for the return.
     benchmarks:
       - level: beginner
-        criteria: "Gets serve in play consistently. Legal underhand motion."
+        criteria: "Gets serve in play consistently with legal underhand motion. Uses either drop serve or volley serve. Contact point is below the waist. Serve clears the net and lands in the correct diagonal service box. Has a consistent pre-serve routine."
         metrics:
-          - "70%+ serve in rate (7/10 serves land in)"
+          - "70%+ serve in rate (7/10 serves land in) in a 10-serve drill"
+          - "0 illegal serve motions (paddle above wrist, contact above waist) per game"
+          - "Serve clears the kitchen line and lands past the NVZ on 7/10 attempts"
+          - "Completes 10-serve drill in under 3 minutes with consistent routine"
       - level: intermediate
-        criteria: "Directional serve placement — can target wide, middle, or at body. Consistent depth."
+        criteria: "Directional serve placement — can target wide, middle, or at body on command. Consistent depth (serves land in back half of service box). Begins using topspin or slice to create movement on the ball. Develops a reliable second serve option if first is aggressive."
         metrics:
-          - "85%+ serve in rate"
-          - "Hits intended target zone 6/10 serves"
+          - "85%+ serve in rate in a 20-serve drill"
+          - "Hits intended target zone (wide, middle, body) on 6/10 serves in targeted drill"
+          - "80%+ of serves land in the back third of the service box (depth control)"
+          - "Can execute at least 2 distinct serve types (flat + one spin) at 75%+ in rate each"
+          - "The Dink serve assessment: 85%+ in rate on a 30-serve test with directional targets"
       - level: advanced
-        criteria: "Varied spin and pace serves (topspin, slice, power). Serve placement disrupts opponent positioning."
+        criteria: "Varied spin and pace serves — topspin, slice, and power serves executed on command. Serve placement disrupts opponent positioning and footwork. Uses serve selection strategically based on opponent weakness. Deep power serve and short angle serve are both reliable options."
         metrics:
-          - "90%+ serve in rate"
-          - "Spin/pace variation: can execute 3+ distinct serve types on command"
-          - "Forces weak return (short ball or pop-up) on 3/10 serves"
+          - "90%+ serve in rate in a 30-serve assessment drill"
+          - "Spin/pace variation: can execute 3+ distinct serve types at 80%+ in rate each"
+          - "Forces weak return (short ball, pop-up, or off-balance contact) on 3/10 serves"
+          - "Short angle serve (landing in front third of box, pulling opponent wide) at 70%+ in rate"
+          - "Maintains 85%+ in rate under simulated match pressure (partner keeps score)"
       - level: expert
-        criteria: "Serve as a strategic weapon. Disguises spin direction. Uses body and grip pressure variation."
+        criteria: "Serve as a strategic weapon. Disguises spin direction with identical toss and motion. Uses grip pressure variation to change pace without visible cues. Selects serve type based on score, opponent tendencies, and match situation. Serve sets up the third-shot pattern."
         metrics:
-          - "93%+ serve in rate under match pressure"
-          - "Ace or unreturnable serve rate ≥ 5% at tournament level"
+          - "93%+ serve in rate under tournament match pressure"
+          - "Ace or unreturnable serve rate of 5%+ at tournament level"
+          - "Opponent cannot predict serve type (spin/direction) better than 50% (effective disguise)"
+          - "Serve + third-shot combination wins point within 4 shots on 20%+ of service points"
+          - "0 double faults per match in tournament play"
     tags: ["technical", "offensive", "measurable"]
 
   - id: "sports/pickleball/return-of-serve"
@@ -84,196 +209,380 @@ nodes:
     description: >
       The return of serve is the receiver's first opportunity to gain court
       position. A deep return keeps the serving team back while the returning
-      team advances to the kitchen.
+      team advances to the kitchen. The return is the most undervalued shot in
+      pickleball — a deep, well-placed return neutralizes the serving team's
+      advantage and allows the returning team to establish kitchen position.
+
+      Sub-skills covered: forehand return, backhand return, deep return
+      (targeting back third of court), directional return (cross-court, down
+      the line, at the body), return off topspin serves, return off slice/cut
+      serves, return off power serves, short-ball attack return (driving a
+      short serve), lob return (high deep return for extra transition time),
+      chip-and-charge return (slice return while advancing), and split-step
+      timing after the return.
+
+      Drills to practice: (1) 30-return assessment — partner serves 30 balls,
+      count how many land in play and how many land in the back third.
+      (2) Deep return target drill — place a rope or line 3 feet from the
+      baseline, aim to land every return beyond the rope. (3) Return-and-
+      advance drill — return the serve, then sprint to kitchen line before
+      the third shot arrives; track how often you arrive in time.
+      (4) Spin return drill — partner hits topspin and slice serves, practice
+      reading spin and adjusting paddle face. (5) Cross-court vs. down-the-line
+      return drill — alternate return direction every 5 balls, track accuracy
+      to each zone.
     benchmarks:
       - level: beginner
-        criteria: "Gets ball back in play cross-court. Does not pop up."
+        criteria: "Gets ball back in play cross-court. Does not pop up the return (keeps it below net height on the opponent's side). Uses a compact swing with minimal backswing. Steps into the return with weight transfer. Begins moving forward after the return."
         metrics:
-          - "65%+ return in rate"
+          - "65%+ return in rate (13/20 returns land in play) in a 20-return drill"
+          - "Returns clear the net and land in bounds without popping up on 6/10 attempts"
+          - "Takes at least 1 step toward kitchen after return on 5/10 rallies"
+          - "The Dink return assessment: 65%+ in rate on a 30-return test"
       - level: intermediate
-        criteria: "Deep returns (land within 3 feet of baseline) to neutralize serving team. Moves to kitchen after return."
+        criteria: "Deep returns landing within 3 feet of baseline to neutralize serving team. Moves to kitchen immediately after return. Can direct returns cross-court and down the line. Reads topspin vs. flat serves and adjusts paddle angle. Consistent depth keeps opponents pinned at baseline."
         metrics:
-          - "80%+ return in rate"
-          - "70%+ of returns land in back third of court"
+          - "80%+ return in rate in a 30-return assessment drill"
+          - "70%+ of returns land in back third of court (within 7 feet of baseline)"
           - "Reaches kitchen line before serving team's 3rd shot on 7/10 rallies"
+          - "The Dink return assessment: 76%+ in rate on a 30-return test"
+          - "Can direct return to forehand or backhand side on command at 60%+ accuracy"
       - level: advanced
-        criteria: "Directional deep returns — targets weak side or gaps. Can attack short serves."
+        criteria: "Directional deep returns — targets weak side, seam between opponents, or gaps with intention. Attacks short serves aggressively. Reads serve spin (topspin, slice, power) and adjusts contact point and paddle face. Uses lob return to buy extra transition time when needed. This skill level separates 3.5 from 4.0 players."
         metrics:
-          - "88%+ return in rate"
-          - "Returns to intended zone 7/10 times"
-          - "Attacks short serves (below net height) on 80%+ of opportunities"
+          - "88%+ return in rate in a 30-return assessment drill"
+          - "Returns to intended zone (forehand, backhand, seam) 7/10 times in targeted drill"
+          - "Attacks short serves (landing in front half of box) on 80%+ of opportunities for winners or forced errors"
+          - "The Dink return assessment: 83%+ in rate on 30-return test with directional targets"
+          - "Reaches kitchen line before third shot on 9/10 rallies"
       - level: expert
-        criteria: "Return as an offensive weapon. Reads serve spin and adjusts contact point. Creates advantage on point 1."
+        criteria: "Return as an offensive weapon. Reads serve spin and speed within the first 10 feet of ball flight to adjust contact point. Creates immediate advantage — deep returns force weak third shots, short-ball attacks generate winners. Selects return type based on server's position, tendencies, and score situation."
         metrics:
-          - "92%+ return in rate under match pressure"
-          - "Forces weak 3rd shot (out of position or pop-up) on 4/10 returns"
+          - "92%+ return in rate under tournament match pressure"
+          - "Forces weak 3rd shot (off-balance, pop-up, or error) on 4/10 returns in match play"
+          - "The Dink return assessment: 90%+ in rate on 30-return test"
+          - "Return winner or forced error rate of 8%+ at tournament level"
+          - "0 unforced return errors on power serves per game (reliable under pace)"
     tags: ["technical", "defensive", "measurable"]
 
-  - id: "sports/pickleball/dinking"
-    title: "Dinking"
-    description: >
-      Dinking is the soft game — low arcing shots exchanged at the kitchen line.
-      The player who wins the dink battle wins most pickleball matches. Dinking
-      requires patience, touch, and strategic placement.
-    benchmarks:
-      - level: beginner
-        criteria: "Hits forehand and backhand dinks that clear the net and land in the kitchen. No hard swings."
-        metrics:
-          - "Sustains cross-court dink rally for 5+ shots without error"
-      - level: intermediate
-        criteria: "Cross-court and straight dinks. Controls depth. Attacks when opportunity arises."
-        metrics:
-          - "Sustains rally for 15+ shots at 75%+ success rate"
-          - "Places dink to intended zone (angle, body, feet) 6/10 times"
-      - level: advanced
-        criteria: "Varied pace and spin dinks. Forces pop-ups through deliberate placement. Resets out-of-position balls into dink."
-        metrics:
-          - "Sustains rally 20+ shots at 85%+ success rate"
-          - "Forces pop-up or error on opponent 3/10 dink sequences"
-          - "Resets speedups back into kitchen 7/10 times"
-      - level: expert
-        criteria: "Dink as a weapon: combines misdirection, tempo changes, and body shots to manufacture winners."
-        metrics:
-          - "Wins 55%+ of extended dink rallies (>20 shots) in tournament play"
-          - "0–1 unforced dink errors per game"
-    tags: ["soft-game", "technical", "patience"]
-
+  # ── TRANSITION GAME ─────────────────────────────────────────────────────────
   - id: "sports/pickleball/third-shot-drop"
     title: "Third Shot Drop"
     description: >
       The third shot drop is the most important shot in pickleball. Hit by the
       serving team after the return of serve, it is a soft arc shot that lands
       in the kitchen, forcing the returning team to dink up and allowing the
-      serving team to advance to the kitchen.
+      serving team to advance to the kitchen. The drop is essentially a dink
+      from the baseline — dinking skills directly transfer.
+
+      Sub-skills covered: forehand third-shot drop, backhand third-shot drop,
+      drop from baseline (full court distance), drop from mid-court (transition
+      zone), drop from no-man's land while moving forward, drop off a deep
+      return, drop off a short return, cross-court drop (higher margin over
+      net), straight-ahead drop, inside-out drop to wrong-foot opponent,
+      topspin drop (dips faster), slice drop (stays low after bounce), drop
+      under pressure (when opponent is charging), and the fifth-shot drop
+      (reset after a driven third shot is countered).
+
+      Drills to practice: (1) 10-drop baseline drill — stand at baseline,
+      partner feeds from kitchen, count how many of 10 drops land unattackable
+      in the kitchen. (2) Drop-and-advance drill — hit a drop, take 2-3 steps
+      forward, hit another drop, continue until at kitchen line.
+      (3) Cross-court vs. line drop drill — alternate drop direction every 5
+      balls, track accuracy to each zone. (4) Drop-drive mix drill — partner
+      calls "drop" or "drive" after the toss, practice switching between the
+      two on command. (5) The Dink 30-shot drop assessment — feed 30 balls
+      from baseline, count unattackable kitchen landings.
+      (6) Moving drop drill — feed balls while you are shuffling forward from
+      baseline, practice dropping while in motion.
     benchmarks:
       - level: beginner
-        criteria: "Gets ball into the kitchen at least 40% of the time from mid-court. No hard drives on every third shot."
+        criteria: "Gets ball into the kitchen at least 40% of the time from mid-court. Understands the purpose of the drop (to neutralize and advance). Uses a lifting, open-paddle-face motion rather than driving every third shot. Can distinguish when to attempt a drop vs. a drive (even if execution is inconsistent)."
         metrics:
-          - "Lands in kitchen on 4/10 third-shot attempts"
+          - "Lands in kitchen on 4/10 third-shot attempts from mid-court in a feed drill"
+          - "Lands in kitchen on 3/10 third-shot attempts from baseline in a feed drill"
+          - "The Dink 30-shot drop test: lands 12+ drops (40%+) unattackable in kitchen from mid-court"
+          - "Attempts a drop (not a drive) on at least 5/10 third-shot opportunities in live play"
       - level: intermediate
-        criteria: "Consistent drops landing in kitchen from baseline. Moves forward after executing drop."
+        criteria: "Consistent drops landing in kitchen from baseline. Moves forward after executing drop. Cross-court drops are more reliable than line drops. Begins reading the return depth to decide drop vs. drive. This is the hardest skill jump in pickleball — consistent third-shot drops separate 3.5 from 4.0 players."
         metrics:
-          - "Lands in kitchen on 65%+ of third-shot attempts"
+          - "Lands in kitchen on 65%+ of third-shot attempts from baseline in a feed drill"
+          - "The Dink 30-shot drop test: lands 20+ drops (65%+) unattackable in kitchen from baseline"
           - "Advances at least 2 steps toward kitchen after drop on 8/10 attempts"
+          - "Cross-court drop success rate 70%+ (higher net clearance = more margin)"
+          - "Reaches kitchen line within 3 shots on 6/10 service points in live play"
       - level: advanced
-        criteria: "Directional drops — attacks wide angles, feet, or seam. Drops under pressure and on the run."
+        criteria: "Directional drops — attacks wide angles, opponent's feet, or the seam between opponents. Drops under pressure (off deep, hard returns) and on the run (while moving through the transition zone). Uses topspin and slice to vary drop trajectory. Drop quality is high enough that opponents cannot attack it."
         metrics:
           - "75%+ drop success rate (kitchen landing, not attackable) under match conditions"
-          - "Executes drop moving forward at 70%+ success rate"
+          - "The Dink 30-shot drop test: lands 23+ drops (75%+) unattackable in kitchen"
+          - "Executes drop while moving forward through transition zone at 70%+ success rate"
+          - "Directional accuracy: places drop to intended zone (wide, middle, feet) 6/10 times"
+          - "Drop off a deep, hard return: 65%+ success rate (maintains quality under pace)"
+          - "The Dink transition assessment: 83%+ success rate combining drop + advance to kitchen"
       - level: expert
-        criteria: "Drop-drive combination. Opponent cannot read third shot selection. Reaches kitchen in 1–2 shots consistently."
+        criteria: "Drop-drive combination is seamless — opponent cannot read third-shot selection until after contact. Identical preparation for drop and drive. Reaches kitchen in 1-2 shots consistently. Drop quality forces dink-up from opponents, creating offensive opportunity on the next ball. Uses drop strategically, not habitually."
         metrics:
-          - "80%+ drop quality rating in tournament stats"
-          - "Reaches kitchen within 2 shots on 85%+ of points"
+          - "80%+ drop quality rating (unattackable kitchen landing) in tournament match stats"
+          - "The Dink 30-shot drop test: lands 25+ drops (83%+) unattackable in kitchen"
+          - "Reaches kitchen within 2 shots on 85%+ of service points in tournament play"
+          - "Opponent cannot distinguish drop from drive based on preparation (video analysis confirms identical setup)"
+          - "Drop-to-winner sequence (drop forces dink-up, next shot is a winner) on 15%+ of drop points"
     tags: ["signature-shot", "offensive", "critical-path"]
 
+  # ── POWER GAME ──────────────────────────────────────────────────────────────
   - id: "sports/pickleball/drives"
     title: "Drives & Power Shots"
     description: >
       Drives are hard, flat, low shots designed to create pressure, force errors,
       or set up finishing opportunities. Used as a change of pace against the soft
-      game.
+      game. The drive-drop mix is the core tactical choice at the intermediate
+      level and above.
+
+      Sub-skills covered: forehand flat drive, backhand flat drive, topspin
+      drive (dips down at opponent's feet), slice/cut drive (stays low after
+      bounce), cross-court drive, down-the-line drive, inside-out drive,
+      third-shot drive (alternative to third-shot drop), drive at the body
+      (targeting opponent's hip/paddle transition zone), counter-drive (driving
+      back an opponent's drive), drive-and-crash (driving then sprinting to
+      kitchen), and controlled roll drive (medium pace with heavy topspin).
+
+      Drills to practice: (1) 10-drive baseline drill — partner feeds from
+      kitchen, drive 10 balls, count makes and track target accuracy.
+      (2) Drive-at-feet drill — partner stands at kitchen line, drive at their
+      feet (below knees), count how many force a pop-up or defensive response.
+      (3) Cross-court vs. line drive drill — alternate direction every 5 balls.
+      (4) Drive-drop mix drill — hit 3 drives then 1 drop in sequence, practice
+      switching pace without changing preparation. (5) Counter-drive rally —
+      both players drive from baseline, sustain rally and track consistency.
+      (6) Topspin drive drill — focus on low-to-high swing path, count balls
+      that dip below net height at the opponent's position.
     benchmarks:
       - level: beginner
-        criteria: "Can hit flat drives that clear the net and land in bounds. Basic forehand and backhand."
+        criteria: "Can hit flat drives that clear the net and land in bounds. Basic forehand and backhand drives. Uses full swing motion with weight transfer. Understands when a drive is appropriate (off high balls, not every shot)."
         metrics:
-          - "60%+ drive success (in play) from mid-court"
+          - "60%+ drive success rate (in play) from mid-court in a 10-drive feed drill"
+          - "Forehand drive in rate: 6/10 from mid-court"
+          - "Backhand drive in rate: 5/10 from mid-court"
+          - "Drives clear the net by at least 6 inches on 6/10 attempts (not hitting net)"
       - level: intermediate
-        criteria: "Directional drives. Drive-dink combination. Targets opponent's weaker side."
+        criteria: "Directional drives with placement control. Drive-dink combination — can transition from driving to soft game. Targets opponent's weaker side or body (hip/paddle transition zone). Uses drives as a change-of-pace tool against the soft game. Begins incorporating topspin on forehand drives."
         metrics:
-          - "75%+ drive in rate from baseline"
-          - "Hits intended target half of court on 6/10 drives"
+          - "75%+ drive in rate from baseline in a 20-drive drill"
+          - "Hits intended target half of court on 6/10 drives in targeted drill"
+          - "Topspin drive: executes with visible dip at 50%+ success rate (5/10)"
+          - "Drive-to-dink transition: can follow a drive with a soft dink within 2 shots on 6/10 sequences"
+          - "Drive at opponent's body (hip zone): forces defensive contact on 4/10 attempts"
       - level: advanced
-        criteria: "Topspin and slice drives. Drive at feet of kitchen players to force pop-ups."
+        criteria: "Topspin and slice drives executed on command. Drives at feet of kitchen-line players to force pop-ups. Counter-drives opponent's pace back with control. Drive-and-crash play — drives then advances to kitchen behind the pressure. This is where the power game meets the soft game at the 3.5-to-4.0 transition."
         metrics:
-          - "82%+ drive in rate under pressure"
-          - "Forces defensive response (pop-up, reset) on 4/10 well-placed drives"
+          - "82%+ drive in rate under match pressure conditions"
+          - "Forces defensive response (pop-up, reset, or error) on 4/10 well-placed drives"
+          - "Topspin and slice drives both at 75%+ in rate (can vary spin on command)"
+          - "Counter-drive rally: sustains 5+ drive exchanges without error from baseline"
+          - "Drive-and-crash: reaches kitchen within 2 shots after a successful drive on 6/10 attempts"
       - level: expert
-        criteria: "Drives as a calculated weapon — knows when to drive vs. drop. Generates pace that opponents cannot handle."
+        criteria: "Drives as a calculated weapon — knows precisely when to drive vs. drop based on opponent position, ball height, and match situation. Generates pace that opponents cannot handle while maintaining accuracy. Drive disguise is identical to drop preparation. Drive winner rate is a significant scoring tool."
         metrics:
-          - "Drive outright winner or forced error rate ≥ 15% at tournament level"
+          - "Drive outright winner or forced error rate of 15%+ at tournament level"
+          - "Drive in rate 88%+ under match pressure (minimal unforced errors on drives)"
+          - "Opponent cannot distinguish drive from drop preparation (video analysis confirms)"
+          - "Drive speed differential: can vary pace by 30%+ between power drive and controlled roll drive"
+          - "Strategic drive selection: chooses drive on appropriate balls (high balls, short balls) 90%+ of the time"
     tags: ["power", "offensive"]
 
   - id: "sports/pickleball/overhead-smash"
     title: "Overhead Smash"
     description: >
       The overhead smash finishes high balls (lobs and pop-ups). A reliable
-      overhead ends rallies and discourages opponents from lobbing.
+      overhead ends rallies and discourages opponents from lobbing. The overhead
+      is a defensive deterrent as much as an offensive weapon — opponents who
+      know you can smash will stop lobbing, opening up more dink opportunities.
+
+      Sub-skills covered: forehand overhead smash, backhand overhead (typically
+      a high backhand volley or cut shot), standing smash (from a set position),
+      jump smash (for deeper lobs requiring airborne contact), scissor-kick
+      smash (for maximum reach on deep lobs), angled smash (placing the ball
+      away from opponents), body smash (targeting opponent directly), overhead
+      off a bounce (playing the lob after it bounces), tracking and positioning
+      under the ball (turning sideways, using non-paddle hand to track), and
+      overhead-to-reset transition (recovering position after smashing).
+
+      Drills to practice: (1) Lob-and-smash feed drill — partner lobs 10 balls,
+      you position and smash, count putaways. (2) Deep lob retreat drill —
+      start at kitchen line, partner lobs over your head, drop-step back, smash
+      or play high volley, count successful returns. (3) Angled smash target
+      drill — place targets in corners, smash 10 balls aiming for targets.
+      (4) Jump smash progression — start with standing smash, add 1-step
+      retreat, then 2-step retreat with jump, track consistency at each level.
+      (5) Overhead rally drill — partner lobs, you smash, partner retrieves and
+      lobs again, sustain the cycle for 5+ repetitions.
     benchmarks:
       - level: beginner
-        criteria: "Makes contact with overhead balls and returns them in bounds."
+        criteria: "Makes contact with overhead balls and returns them in bounds. Turns sideways and uses non-paddle hand to track the ball. Does not duck or avoid high balls. Can distinguish between balls to smash (above head height) and balls to let bounce."
         metrics:
-          - "Contacts 6/10 balls above shoulder height"
+          - "Contacts and returns in bounds 6/10 balls fed above shoulder height"
+          - "Turns sideways (proper setup) on 5/10 overhead opportunities"
+          - "Tracks ball with non-paddle hand on 5/10 overhead attempts"
+          - "Returns overhead in play (not necessarily a putaway) on 5/10 attempts from mid-court"
       - level: intermediate
-        criteria: "Putaway smashes on comfortable balls. Tracks lobs and sets up."
+        criteria: "Putaway smashes on comfortable balls — pop-ups and short lobs at or near the kitchen line. Tracks lobs and sets up sideways with a drop step. Moves feet to get under the ball rather than reaching. Can angle smashes cross-court or down the line."
         metrics:
-          - "Puts away 65%+ of smashable balls (clear pop-ups, short lobs)"
+          - "Puts away 65%+ of smashable balls (clear pop-ups, short lobs within 3 feet of NVZ line)"
+          - "Correct drop-step footwork on 7/10 overhead setups (video analysis)"
+          - "Angles smash to intended side of court (left vs. right) on 5/10 attempts"
+          - "Returns in play (even if not a putaway) on 80%+ of all overhead opportunities"
       - level: advanced
-        criteria: "Jump smashes on deep lobs. Angles smashes away from opponents."
+        criteria: "Jump smashes on deep lobs that push past the kitchen line. Angles smashes away from opponents into open court. Uses topspin on smash to bring ball down faster. Recovers position after smash and transitions to next shot. Can play a controlled overhead volley on balls that are not ideal smash height."
         metrics:
-          - "Puts away 80%+ of attackable overheads"
-          - "Executes jump smash within 2 steps on retreating lob"
+          - "Puts away 80%+ of attackable overheads in a feed drill"
+          - "Executes jump smash with proper contact on balls requiring 2+ retreat steps, 7/10 success rate"
+          - "Angled smash away from opponent results in winner or forced error 6/10 times"
+          - "Recovers to kitchen line within 2 shots after smashing from behind NVZ on 7/10 attempts"
+          - "Overhead error rate: 1 or fewer shanked or netted overheads per game"
       - level: expert
-        criteria: "Overhead as a finishing tool in any position. Can angle, topspin, or slice to create unreturnable placement."
+        criteria: "Overhead as a finishing tool from any court position. Can angle, topspin, or slice the smash to create unreturnable placement. Scissor-kick smash on the deepest lobs. Overhead is a reliable point-ender that opponents cannot retrieve. Smash placement is precise enough to exploit gaps between opponents."
         metrics:
-          - "0–1 overhead errors per game from baseline lob"
+          - "0–1 overhead errors per game (11-point game) from any lob depth"
+          - "Puts away 90%+ of attackable overheads in match play"
+          - "Scissor-kick or jump smash on deep lobs (past mid-court) at 75%+ putaway rate"
+          - "Overhead winner percentage: 80%+ of smash attempts result in a winner or forced error in tournament play"
+          - "Smash placement accuracy: hits intended target zone (angle, body, or open court) 7/10 times"
     tags: ["finishing", "power"]
 
+  # ── ADVANCED SKILLS ─────────────────────────────────────────────────────────
   - id: "sports/pickleball/kitchen-play"
     title: "Kitchen/NVZ Play"
     description: >
       Advanced play at the kitchen line (Non-Volley Zone) — the most contested
       real estate in pickleball. Includes volleying, Erne shots, and around-the-
-      post (ATP) plays.
+      post (ATP) plays. These advanced techniques typically emerge at the 4.0+
+      DUPR level.
+
+      Sub-skills covered: forehand volley at kitchen line, backhand volley at
+      kitchen line, punch volley (firm wrist, short compact motion), block
+      volley (absorbing pace and redirecting), speedup attack (accelerating a
+      dink into a drive volley), counter-speedup (blocking or redirecting an
+      opponent's speedup), reset volley (softening a hard ball back into a
+      dink), Erne shot (jumping or running around the NVZ to volley a ball
+      at the sideline), around-the-post (ATP) shot (hitting around the net
+      post when the ball travels wide), fake Erne (selling the Erne run to
+      freeze the opponent), roll volley (topspin volley aimed at feet),
+      drop volley (dead-hand volley that dies in the kitchen), and NVZ line
+      management (toeing the line without foot faults).
+
+      Drills to practice: (1) Rapid volley exchange drill — both players at
+      kitchen line, exchange volleys as fast as possible for 30 seconds, count
+      total makes. (2) Speedup-and-reset drill — one player dinks, then speeds
+      up; other player must reset into kitchen, alternate roles.
+      (3) Erne practice — partner feeds cross-court dink, you run wide and
+      jump or step around NVZ to volley, 10 attempts per side.
+      (4) Block volley drill — partner drives at you from mid-court, you block
+      into kitchen with soft hands, 10 reps each side. (5) ATP drill — partner
+      feeds wide angle dink that crosses sideline extended, you hit around the
+      post, 10 attempts. (6) The Dink 30-shot kitchen volley test — partner
+      feeds 30 balls with mixed pace at kitchen line, count successful
+      controlled volleys (in play, not popped up).
     benchmarks:
       - level: beginner
-        criteria: "Stays at kitchen line. Does not step into the kitchen on volleys. Exchanges basic volleys."
+        criteria: "Stays at kitchen line without stepping into the NVZ on volleys. Understands the NVZ rule (cannot volley while touching the kitchen zone, including momentum carrying you in). Exchanges basic forehand and backhand volleys with a partner. Uses compact punch volley motion rather than swinging."
         metrics:
-          - "0 foot faults per game (no NVZ violations)"
-          - "Returns 5+ consecutive kitchen volleys without error"
+          - "0 foot faults per game (no NVZ violations on volleys)"
+          - "Returns 5+ consecutive kitchen-line volleys without error in an exchange drill"
+          - "Maintains proper NVZ line positioning (toes within 2 inches of line) on 7/10 shots"
+          - "The Dink 30-shot kitchen volley test: 50%+ controlled volleys (in play, not popped up)"
       - level: intermediate
-        criteria: "Two-handed forehand and backhand volleys. Speeds up when opportunity appears. Controlled soft hands."
+        criteria: "Forehand and backhand volleys with directional control. Speeds up (attacks) when a ball is above net height. Controlled soft hands on block volleys — absorbs pace and redirects. Recognizes the difference between attackable balls (above net) and dinkable balls (below net). Begins reading opponent's paddle face to anticipate speedup direction."
         metrics:
-          - "Wins 50%+ of fast exchange sequences at kitchen"
-          - "Speedup results in winner or forced error 3/10 times"
+          - "Wins 50%+ of fast volley exchange sequences (3+ rapid volleys) at kitchen"
+          - "Speedup attack results in winner or forced error 3/10 times in live play"
+          - "Block volley: resets opponent's drive into kitchen 5/10 times"
+          - "The Dink 30-shot kitchen volley test: 67%+ controlled volleys"
+          - "Sustains rapid volley exchange for 8+ consecutive contacts without error"
       - level: advanced
-        criteria: "Erne shot execution. Reads and resets attacks back into kitchen. Controls pace in transition."
+        criteria: "Erne shot execution — can jump or run around the NVZ to intercept a cross-court dink. Reads and resets attacks back into kitchen with soft hands under pressure. Controls pace in the transition zone. Roll volleys aimed at opponent's feet. Drop volleys that die in the kitchen. This represents the 4.0+ DUPR level where NVZ play becomes a primary weapon."
         metrics:
-          - "Executes Erne on 3+ opportunities per match"
-          - "Resets speedups from kitchen into kitchen 75%+ of the time"
+          - "Executes Erne on 3+ opportunities per match with 60%+ success rate"
+          - "Resets opponent speedups back into kitchen 75%+ of the time in live play"
+          - "The Dink 30-shot kitchen volley test: 80%+ controlled volleys"
+          - "Roll volley at opponent's feet: forces defensive response (pop-up or error) 5/10 times"
+          - "Kitchen line winning percentage: wins 55%+ of points where both teams are at kitchen"
       - level: expert
-        criteria: "ATP shots. Creates angles opponents cannot defend. Reads opponent tendencies to preload positions."
+        criteria: "ATP shots executed when the ball travels wide. Creates angles opponents cannot defend through extreme cross-court volleys. Reads opponent tendencies to preload positions (anticipates speedup direction before it happens). Fake Erne freezes opponents and opens gaps. Complete arsenal of kitchen weapons deployed based on situation."
         metrics:
-          - "Executes ATP when presented 70%+ of the time"
-          - "Kitchen line winning percentage ≥ 60% in extended rallies"
+          - "Executes ATP when presented (ball crosses sideline extended) at 70%+ success rate"
+          - "Kitchen line winning percentage of 60%+ in extended rallies (10+ shots) in tournament play"
+          - "The Dink 30-shot kitchen volley test: 90%+ controlled volleys under mixed-pace feed"
+          - "Anticipates opponent speedup direction on first reaction 7/10 times (measured by correct movement)"
+          - "0–1 unforced volley errors per game at kitchen line in tournament play"
     tags: ["advanced", "NVZ", "soft-game"]
 
+  # ── COGNITIVE LAYER ─────────────────────────────────────────────────────────
   - id: "sports/pickleball/strategy"
     title: "Strategy & Game Sense"
     description: >
       The cognitive layer of pickleball — understanding when to attack, when to
       reset, how to exploit opponents, and how to manage a match score. Integrates
-      all physical skills into winning decisions.
+      all physical skills into winning decisions. Becomes the primary differentiator
+      at the 4.0+ DUPR level.
+
+      Sub-skills covered: shot selection decision-making (when to dink, drive,
+      drop, or lob), risk-reward assessment (attacking low-percentage shots vs.
+      playing safe), opponent scouting (identifying weaknesses in real-time),
+      pattern play (sequencing shots to set up winners), court positioning
+      strategy (controlling the geometry of the point), tempo control (speeding
+      up or slowing down the pace of play), score management (playing
+      differently at 0-0 vs. 9-9), timeout usage, side selection (sun, wind),
+      stacking strategy (forehand-in-the-middle formations), serving strategy
+      (which serve for which situation), return strategy (deep vs. aggressive),
+      transition zone decision-making (drop vs. drive on the third shot),
+      and mental game (managing frustration, staying patient, handling pressure).
+
+      Drills to practice: (1) Situational point play — start points from
+      specific situations (e.g., you are at baseline, opponents at kitchen;
+      score is 9-9) and track outcomes. (2) Pattern play drill — practice a
+      specific 3-shot sequence (e.g., dink cross-court, dink to body, speedup
+      to hip) until it becomes automatic. (3) Film study — record matches and
+      review shot selection decisions, noting where you chose wrong.
+      (4) Weakness exploitation drill — play games where you must target the
+      same opponent or same shot pattern for an entire game, see if the
+      strategy works. (5) Reset vs. attack decision drill — partner feeds
+      random balls at kitchen, you must decide in real-time whether to attack
+      or reset, partner rates your decisions. (6) Timeout simulation drill —
+      practice calling a timeout after losing 3 points, discuss adjustments,
+      then resume play.
     benchmarks:
       - level: beginner
-        criteria: "Knows the rules, scoring, and basic pattern: serve → get to kitchen → dink."
+        criteria: "Knows the rules, scoring format (side-out scoring in doubles), and the basic strategic pattern: serve, get to the kitchen line, dink until an opportunity opens. Understands why getting to the kitchen is important. Recognizes that soft play (dinking) is the default and power shots are the exception."
         metrics:
-          - "Correctly identifies when to play soft vs. hard 5/10 situations"
+          - "Correctly identifies when to play soft vs. hard in 5/10 video clip scenarios"
+          - "Attempts to reach kitchen line on 7/10 points when on the returning team"
+          - "Correctly explains the serve-return-drop-dink pattern when asked"
+          - "Makes fewer than 3 shot selection errors per game (driving when should dink, etc.)"
       - level: intermediate
-        criteria: "Stacks and poaches in doubles. Targets weaker opponent. Recognizes when to attack vs. reset."
+        criteria: "Stacks and uses correct formations in doubles. Targets the weaker opponent consistently. Recognizes when to attack (ball above net height) vs. reset (ball below net height). Begins reading opponent tendencies — notices if opponent favors forehand, struggles with backhand dinks, or has weak overhead. Adjusts serve and return based on opponent weakness."
         metrics:
-          - "Stacks correctly in 80%+ of formations"
-          - "Identifies and exploits weaker opponent in 70%+ of points"
+          - "Stacks correctly in 80%+ of formations (partners end up with forehands in the middle)"
+          - "Identifies and targets weaker opponent in 70%+ of points during rec play"
+          - "Attack-vs-reset decision accuracy: correctly chooses on 7/10 opportunities (coach or video review)"
+          - "Can name 2+ opponent weaknesses after 1 game of observation"
+          - "Wins 55%+ of games against same-rated opponents through strategic play (not just shot-making)"
       - level: advanced
-        criteria: "Pattern play: sets up winners 3 shots ahead. Adjusts strategy mid-match based on opponent tendencies."
+        criteria: "Pattern play: sets up winners 2-3 shots ahead through deliberate sequencing. Adjusts strategy mid-match based on opponent tendencies and score. Controls the tempo — can speed up or slow down the rally at will. Understands the 3.5-to-4.0 skill jump and exploits opponents who rely on power over soft game. Uses timeouts strategically."
         metrics:
-          - "Uses pattern sequences (e.g., dink to body → speedup to hip) on 5+ occasions per match"
-          - "Adapts strategy after losing 3+ consecutive points 90%+ of games"
+          - "Uses pattern sequences (e.g., dink to body, speedup to hip, finish to open court) on 5+ occasions per match"
+          - "Adapts strategy after losing 3+ consecutive points in 90%+ of games (observable adjustment)"
+          - "Win rate when ahead by 3+ points: maintains 80%+ (does not give away leads)"
+          - "Correctly selects serve type based on opponent weakness 7/10 times"
+          - "Post-match can articulate 3+ strategic adjustments made during the match"
       - level: expert
-        criteria: "Complete game management: controls tempo, exploits physical and mental gaps, manages score pressure."
+        criteria: "Complete game management: controls tempo, exploits physical and mental gaps, manages score pressure, and orchestrates the flow of the match. Plays differently at 0-0 vs. 9-9 — takes calculated risks at low-leverage scores, plays safe at high-leverage scores. Manufacturing points through sequenced patterns is the primary scoring method."
         metrics:
-          - "Win rate from tied game at 9-9 ≥ 55% in tournament play"
-          - "Converts 4th-game situations (down 2-3 pts) at above baseline rate"
+          - "Win rate from tied game at 9-9 of 55%+ in tournament play (clutch performance)"
+          - "Converts comeback situations (down 2-3 pts) at above-baseline rate vs. peer-rated opponents"
+          - "Strategic pattern play results in winner or forced error on 30%+ of offensive sequences"
+          - "Unforced error rate below 15% of all shots played in tournament matches"
+          - "Win rate vs. opponents rated 0.5 DUPR higher: 30%+ (consistently competitive above rating)"
     tags: ["cognitive", "strategy", "advanced"]
 
   - id: "sports/pickleball/doubles-communication"
@@ -281,36 +590,76 @@ nodes:
     description: >
       Doubles-specific skills: calling mine/yours, poaching volleys, stacking
       formations, and playing as a cohesive unit rather than two individuals.
+      Doubles is the dominant format in pickleball, and communication is what
+      separates two good singles players from a good doubles team.
+
+      Sub-skills covered: verbal calls ("mine," "yours," "out," "bounce it,"
+      "switch," "stay"), hand signals behind the back (indicating poach, stay,
+      or fake), stacking formations (both players on preferred sides),
+      switching sides mid-point, poaching (crossing into partner's zone to
+      intercept), covering for a poaching partner, middle ball decision-making
+      (who takes balls hit to the seam), synchronized movement (moving as a
+      unit laterally), parallel positioning (both partners at same depth),
+      pre-point communication (discussing strategy before the serve), and
+      post-point debrief (quick adjustments between points).
+
+      Drills to practice: (1) Middle ball drill — feed balls to the middle
+      seam, practice calling "mine" or "yours" before contact, track how many
+      result in clean hits vs. confusion. (2) Stacking practice — serve and
+      return in stacked formation for 10 consecutive points, track correct
+      execution. (3) Poach drill — one partner signals poach with hand signal,
+      feeds a dink to the signaling player's zone, they cross and intercept,
+      track success rate. (4) Synchronized movement drill — both partners
+      shuffle laterally together while a third player feeds balls to different
+      court locations. (5) Communication volume drill — play a game where
+      every ball must be called verbally before contact, count silent plays
+      (failures). (6) Switch drill — practice switching sides after a lob or
+      wide ball, track how quickly partners can reorganize.
     benchmarks:
       - level: beginner
-        criteria: "Calls 'mine' and 'yours' on balls hit to the middle. Stays on own side of court."
+        criteria: "Calls 'mine' and 'yours' on balls hit to the middle. Stays on own side of court. Does not cross into partner's zone without calling. Understands basic doubles positioning (both up or both back, not one up and one back)."
         metrics:
-          - "0 ball collisions per game with partner"
+          - "0 ball collisions per game with partner (no two paddles hitting the same ball)"
+          - "Verbal call made on 7/10 middle balls before contact"
+          - "Maintains own side of court on 9/10 shots (does not wander into partner's zone)"
+          - "Correct basic formation (both up or both back) on 7/10 rallies"
       - level: intermediate
-        criteria: "Stacks consistently. Poaches when partner is pulled wide. Communicates before each point."
+        criteria: "Stacks consistently with forehands in the middle. Poaches when partner is pulled wide or when a ball is floated to your zone. Communicates before each point (discusses serve target, return plan, or poach intention). Moves as a unit with partner — when partner moves left, you move left to maintain court coverage."
         metrics:
           - "Successful poach (winner or forced error) on 2+ poach attempts per game"
-          - "Correct stack execution on 85%+ of service points"
+          - "Correct stack execution on 85%+ of service points (both partners end up on preferred side)"
+          - "Pre-point communication occurs before 80%+ of service points"
+          - "Parallel positioning maintained (within 3 feet of same depth) on 7/10 shots during rally"
+          - "Middle ball decision: clean resolution (one player takes it without hesitation) on 8/10 middle balls"
       - level: advanced
-        criteria: "Signals poach intentions with hand signals. Creates overload patterns with partner. Seamless side switching."
+        criteria: "Signals poach intentions with hand signals behind the back before each serve. Creates overload patterns with partner (both players shifting to one side to take away an angle). Seamless side switching after lobs or wide balls. Covers for partner when they are pulled out of position. Pre-point strategy includes specific patterns (e.g., 'I will dink twice then you poach')."
         metrics:
-          - "Partner agreement on poach 90%+ of poach attempts (no confusion)"
+          - "Partner agreement on poach 90%+ of poach attempts (no confusion or missed signals)"
+          - "Hand signal used before 80%+ of service points at the kitchen line"
+          - "Successful side switch after lob or wide ball on 8/10 opportunities (no open court left)"
+          - "Overload pattern execution: successfully takes away opponent's preferred shot 4+ times per match"
+          - "Covers for out-of-position partner and wins the point 5/10 times"
       - level: expert
-        criteria: "Orchestrates team movement: dictates who takes what ball based on matchup advantages. Creates geometric traps."
+        criteria: "Orchestrates team movement: dictates who takes what ball based on matchup advantages and opponent tendencies. Creates geometric traps where both partners position to take away all high-percentage shots simultaneously. Communication is so refined that verbal calls are minimal — partners read each other's body language and intentions."
         metrics:
-          - "Partnership win rate correlation: above-average performance vs. higher-rated pairs"
+          - "Partnership win rate: above-average performance vs. pairs rated 0.3+ DUPR higher"
+          - "Middle ball confusion rate: 0 per game (every middle ball is taken cleanly by one partner)"
+          - "Geometric trap execution: creates situations where opponents have no safe shot 3+ times per match"
+          - "Silent communication accuracy: partner correctly reads intention without verbal call on 8/10 plays"
+          - "Partnership-specific winning percentage: 10%+ higher win rate with regular partner vs. pickup partner"
     tags: ["doubles", "teamwork", "communication"]
 
 relationships:
-  - source: "sports/pickleball/footwork"
-    target: "sports/pickleball/serve"
-    type: "enables"
-    note: "Stable base and weight transfer are required for a reliable serve"
-
+  # ── Foundation layer ────────────────────────────────────────────────────────
   - source: "sports/pickleball/footwork"
     target: "sports/pickleball/dinking"
     type: "enables"
     note: "Getting to the kitchen and balancing at the line is prerequisite to dinking"
+
+  - source: "sports/pickleball/footwork"
+    target: "sports/pickleball/serve"
+    type: "enables"
+    note: "Stable base and weight transfer are required for a reliable serve"
 
   - source: "sports/pickleball/footwork"
     target: "sports/pickleball/drives"
@@ -322,6 +671,12 @@ relationships:
     type: "enables"
     note: "Split step and court positioning enable effective returns"
 
+  # ── Soft game → transition game ─────────────────────────────────────────────
+  - source: "sports/pickleball/dinking"
+    target: "sports/pickleball/third-shot-drop"
+    type: "enables"
+    note: "The third-shot drop is a dink from the baseline — dinking touch transfers directly to drop execution"
+
   - source: "sports/pickleball/serve"
     target: "sports/pickleball/third-shot-drop"
     type: "requires"
@@ -331,6 +686,12 @@ relationships:
     target: "sports/pickleball/third-shot-drop"
     type: "complementary"
     note: "Understanding returns helps the serving team anticipate where to drop"
+
+  # ── Transition game → advanced play ─────────────────────────────────────────
+  - source: "sports/pickleball/third-shot-drop"
+    target: "sports/pickleball/kitchen-play"
+    type: "enables"
+    note: "The drop gets you TO the kitchen — kitchen play requires the ability to approach the net"
 
   - source: "sports/pickleball/dinking"
     target: "sports/pickleball/kitchen-play"
@@ -342,6 +703,7 @@ relationships:
     type: "enables"
     note: "Drive mechanics (contact point, swing path) transfer to overheads"
 
+  # ── Cognitive layer ─────────────────────────────────────────────────────────
   - source: "sports/pickleball/kitchen-play"
     target: "sports/pickleball/strategy"
     type: "requires"
