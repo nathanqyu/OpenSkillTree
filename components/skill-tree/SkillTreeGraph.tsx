@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useCallback } from "react";
+import { useEffect, useCallback, useRef } from "react";
 import ReactFlow, {
   ReactFlowProvider,
   Background,
@@ -241,13 +241,39 @@ function SkillTreeGraphInner({
   const [edges, setEdges, onEdgesChange] = useEdgesState([]);
   const { setCenter } = useReactFlow();
 
+  // Use a ref so the node onClick always calls the latest callback
+  // without needing to re-run layout or sync effects
+  const onNodeClickRef = useRef(onNodeClick);
+  onNodeClickRef.current = onNodeClick;
+
+  const selectedNodeIdRef = useRef(selectedNodeId);
+  selectedNodeIdRef.current = selectedNodeId;
+
+  const progressMapRef = useRef(progressMap);
+  progressMapRef.current = progressMap;
+
+  // Stable callback that delegates to the ref
+  const stableOnNodeClick = useCallback((nodeId: string) => {
+    onNodeClickRef.current(nodeId);
+  }, []);
+
   // Initial layout
   useEffect(() => {
     computeElkLayout(skillNodes, skillEdges).then(({ nodes: rfNodes, edges: rfEdges }) => {
-      setNodes(rfNodes);
+      // Inject live callbacks and state into each node
+      const enriched = rfNodes.map((n) => ({
+        ...n,
+        data: {
+          ...n.data,
+          isSelected: n.id === selectedNodeIdRef.current,
+          progressStatus: (progressMapRef.current[n.id] ?? "locked") as UserProgressStatus,
+          onNodeClick: stableOnNodeClick,
+        },
+      }));
+      setNodes(enriched);
       setEdges(rfEdges);
     });
-  }, [skillNodes, skillEdges, setNodes, setEdges]);
+  }, [skillNodes, skillEdges, setNodes, setEdges, stableOnNodeClick]);
 
   // Sync selected + progress state into node data without re-running layout
   useEffect(() => {
@@ -258,11 +284,11 @@ function SkillTreeGraphInner({
           ...n.data,
           isSelected: n.id === selectedNodeId,
           progressStatus: (progressMap[n.id] ?? "locked") as UserProgressStatus,
-          onNodeClick,
+          onNodeClick: stableOnNodeClick,
         },
       }))
     );
-  }, [selectedNodeId, progressMap, onNodeClick, setNodes]);
+  }, [selectedNodeId, progressMap, stableOnNodeClick, setNodes]);
 
   // Re-center on selected node (300ms animation)
   useEffect(() => {
