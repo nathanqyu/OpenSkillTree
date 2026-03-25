@@ -705,6 +705,23 @@ nodes:
           - "Turns sideways (proper setup) on 5/10 overhead opportunities"
           - "Tracks ball with non-paddle hand on 5/10 overhead attempts"
           - "Returns overhead in play (not necessarily a putaway) on 5/10 attempts from mid-court"
+        resources:
+          - title: "Pickleball Kitchen — How to Hit an Overhead Smash"
+            url: "https://www.youtube.com/watch?v=fLIxMC4lh00"
+            type: "video"
+          - title: "Selkirk TV — Overhead Basics for Beginners"
+            url: "https://www.youtube.com/watch?v=eFr8o2rg_lI"
+            type: "video"
+        practice:
+          - "10 min: Lob-and-smash feed drill — partner lobs 10 balls, you position and smash, count putaways"
+          - "5 min: Tracking drill — partner lobs, you track with non-paddle hand without hitting, focus on getting under the ball"
+          - "10 min: Deep lob retreat drill — start at kitchen, partner lobs over you, drop-step back and play the ball"
+        projects:
+          - "Return 6 out of 10 overhead balls in bounds from mid-court in a feed drill"
+          - "Track the ball with your non-paddle hand on every overhead opportunity in a practice game"
+        tips:
+          - "Don't face the net when hitting overheads — turn sideways (like a throwing position) and point your non-paddle hand at the ball to track it"
+          - "Move your feet to get under the ball rather than reaching — if you are reaching, you are not in position"
       - level: intermediate
         criteria: "Putaway smashes on comfortable balls — pop-ups and short lobs at or near the kitchen line. Tracks lobs and sets up sideways with a drop step. Moves feet to get under the ball rather than reaching. Can angle smashes cross-court or down the line."
         metrics:
@@ -712,6 +729,23 @@ nodes:
           - "Correct drop-step footwork on 7/10 overhead setups (video analysis)"
           - "Angles smash to intended side of court (left vs. right) on 5/10 attempts"
           - "Returns in play (even if not a putaway) on 80%+ of all overhead opportunities"
+        resources:
+          - title: "Third Shot Sports — Angled Overhead Smash Technique"
+            url: "https://www.youtube.com/watch?v=8F5WLOvBndE"
+            type: "video"
+          - title: "PrimeTime Pickleball — Drop Step Footwork for Overheads"
+            url: "https://www.youtube.com/watch?v=6tS5P-_Tgbc"
+            type: "video"
+        practice:
+          - "10 min: Angled smash target drill — place targets in corners, smash 10 balls aiming for targets"
+          - "10 min: Jump smash progression — start with standing smash, add 1-step retreat, then 2-step with jump"
+          - "10 min: Overhead rally drill — partner lobs, you smash, partner retrieves and lobs again for 5+ reps"
+        projects:
+          - "Put away 65%+ of smashable pop-ups in a 10-ball feed drill"
+          - "Correctly angle smashes to the intended side of the court on 5 out of 10 attempts"
+        tips:
+          - "Don't try to hit every overhead as hard as possible — placement beats power; aim smashes at open court or at your opponents' feet"
+          - "Use a drop step (pivot on front foot, push back with back foot) to retreat under deep lobs instead of backpedaling"
       - level: advanced
         criteria: "Jump smashes on deep lobs that push past the kitchen line. Angles smashes away from opponents into open court. Uses topspin on smash to bring ball down faster. Recovers position after smash and transitions to next shot. Can play a controlled overhead volley on balls that are not ideal smash height."
         metrics:
@@ -720,6 +754,12 @@ nodes:
           - "Angled smash away from opponent results in winner or forced error 6/10 times"
           - "Recovers to kitchen line within 2 shots after smashing from behind NVZ on 7/10 attempts"
           - "Overhead error rate: 1 or fewer shanked or netted overheads per game"
+        resources:
+          - title: "Selkirk TV — Jump Smash and Topspin Overhead Technique"
+            url: "https://www.youtube.com/watch?v=v7pzHXRhkpI"
+            type: "video"
+        tips:
+          - "Recover to the kitchen IMMEDIATELY after your smash — many players admire their smash and get caught flat-footed if the ball comes back"
       - level: expert
         criteria: "Overhead as a finishing tool from any court position. Can angle, topspin, or slice the smash to create unreturnable placement. Scissor-kick smash on the deepest lobs. Overhead is a reliable point-ender that opponents cannot retrieve. Smash placement is precise enough to exploit gaps between opponents."
         metrics:
@@ -728,6 +768,12 @@ nodes:
           - "Scissor-kick or jump smash on deep lobs (past mid-court) at 75%+ putaway rate"
           - "Overhead winner percentage: 80%+ of smash attempts result in a winner or forced error in tournament play"
           - "Smash placement accuracy: hits intended target zone (angle, body, or open court) 7/10 times"
+        resources:
+          - title: "PrimeTime Pickleball — Scissor Kick Smash Masterclass"
+            url: "https://www.youtube.com/watch?v=Uk97gMFrN0c"
+            type: "video"
+        tips:
+          - "Aim smashes at the gap between opponents (the seam) rather than directly at one player — seam shots create confusion about who should take the ball"
     tags: ["finishing", "power"]
 
   # ── ADVANCED SKILLS ─────────────────────────────────────────────────────────
@@ -773,6 +819,23 @@ nodes:
           - "Returns 5+ consecutive kitchen-line volleys without error in an exchange drill"
           - "Maintains proper NVZ line positioning (toes within 2 inches of line) on 7/10 shots"
           - "The Dink 30-shot kitchen volley test: 50%+ controlled volleys (in play, not popped up)"
+        resources:
+          - title: "Pickleball Kitchen — Kitchen/NVZ Rules Explained"
+            url: "https://www.youtube.com/watch?v=fFUPpPqGslA"
+            type: "video"
+          - title: "Selkirk TV — Volley Basics at the Kitchen Line"
+            url: "https://www.youtube.com/watch?v=Dj7kBM31NcI"
+            type: "video"
+        practice:
+          - "10 min: Rapid volley exchange drill — both players at kitchen line, exchange volleys for 30 seconds, count total makes"
+          - "10 min: Block volley drill — partner drives at you from mid-court, block into kitchen with soft hands"
+          - "5 min: NVZ awareness drill — practice volleying while keeping toes behind the line on every shot"
+        projects:
+          - "Complete a game with zero foot faults (no NVZ violations)"
+          - "Sustain 5 consecutive kitchen-line volleys without error in a volley exchange drill"
+        tips:
+          - "Don't swing at volleys — use a compact punch motion with a firm wrist; the ball should pop off the paddle, not be swung at"
+          - "Watch your feet — momentum carrying you into the kitchen after a volley counts as a fault even if you were behind the line when you hit the ball"
       - level: intermediate
         criteria: "Forehand and backhand volleys with directional control. Speeds up (attacks) when a ball is above net height. Controlled soft hands on block volleys — absorbs pace and redirects. Recognizes the difference between attackable balls (above net) and dinkable balls (below net). Begins reading opponent's paddle face to anticipate speedup direction."
         metrics:
@@ -781,6 +844,23 @@ nodes:
           - "Block volley: resets opponent's drive into kitchen 5/10 times"
           - "The Dink 30-shot kitchen volley test: 67%+ controlled volleys"
           - "Sustains rapid volley exchange for 8+ consecutive contacts without error"
+        resources:
+          - title: "Third Shot Sports — Speedup and Reset at the Kitchen"
+            url: "https://www.youtube.com/watch?v=yC0sJPmFtqU"
+            type: "video"
+          - title: "Pickleball Kitchen — Block Volley Soft Hands Technique"
+            url: "https://www.youtube.com/watch?v=YBWK8sHEwKs"
+            type: "video"
+        practice:
+          - "15 min: Speedup-and-reset drill — one player dinks then speeds up; other player must reset into kitchen, alternate roles"
+          - "10 min: Rapid fire volleys — exchange as many volleys as possible in 60 seconds at the kitchen, track your record"
+          - "10 min: Attack decision drill — partner feeds mixed-height balls; attack high ones, dink low ones"
+        projects:
+          - "Win 50%+ of fast volley exchanges (3+ rapid volleys) in live play"
+          - "Block and reset an opponent's drive back into the kitchen 5 out of 10 times"
+        tips:
+          - "Don't attack every ball that is near net height — only speed up balls that are CLEARLY above the net (2+ inches); borderline balls should be dinked"
+          - "On block volleys, soften your grip and let the paddle absorb the pace rather than adding force — think 'catch' not 'hit'"
       - level: advanced
         criteria: "Erne shot execution — can jump or run around the NVZ to intercept a cross-court dink. Reads and resets attacks back into kitchen with soft hands under pressure. Controls pace in the transition zone. Roll volleys aimed at opponent's feet. Drop volleys that die in the kitchen. This represents the 4.0+ DUPR level where NVZ play becomes a primary weapon."
         metrics:
@@ -789,6 +869,12 @@ nodes:
           - "The Dink 30-shot kitchen volley test: 80%+ controlled volleys"
           - "Roll volley at opponent's feet: forces defensive response (pop-up or error) 5/10 times"
           - "Kitchen line winning percentage: wins 55%+ of points where both teams are at kitchen"
+        resources:
+          - title: "Selkirk TV — How to Hit an Erne in Pickleball"
+            url: "https://www.youtube.com/watch?v=6hB1W0VhcuA"
+            type: "video"
+        tips:
+          - "Set up the Erne by dinking cross-court 2-3 times to establish a pattern, then run around the kitchen to intercept the next cross-court dink — the element of surprise is what makes the Erne work"
       - level: expert
         criteria: "ATP shots executed when the ball travels wide. Creates angles opponents cannot defend through extreme cross-court volleys. Reads opponent tendencies to preload positions (anticipates speedup direction before it happens). Fake Erne freezes opponents and opens gaps. Complete arsenal of kitchen weapons deployed based on situation."
         metrics:
@@ -797,6 +883,12 @@ nodes:
           - "The Dink 30-shot kitchen volley test: 90%+ controlled volleys under mixed-pace feed"
           - "Anticipates opponent speedup direction on first reaction 7/10 times (measured by correct movement)"
           - "0–1 unforced volley errors per game at kitchen line in tournament play"
+        resources:
+          - title: "PrimeTime Pickleball — ATP and Advanced Kitchen Weapons"
+            url: "https://www.youtube.com/watch?v=s9fDEqBDPJQ"
+            type: "video"
+        tips:
+          - "Use the fake Erne as a weapon — sell the run toward the sideline to freeze your opponent, then stop and cover the middle; the threat of the Erne is often more valuable than the shot itself"
     tags: ["advanced", "NVZ", "soft-game"]
 
   # ── COGNITIVE LAYER ─────────────────────────────────────────────────────────

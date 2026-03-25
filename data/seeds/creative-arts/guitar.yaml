@@ -795,6 +795,23 @@ nodes:
           - "Uses the guitar volume knob to go from distorted to clean tone without touching the amp — demonstrated in real time"
           - "Picks with even attack: plays a scale where no single note is >50% louder than any other (verified by recording waveform or by ear)"
           - "Identifies which pickup is selected (bridge, middle, neck) by sound alone with ≥70% accuracy over 10 trials"
+        resources:
+          - title: "JustinGuitar — Tone & Gear Basics"
+            url: "https://www.justinguitar.com/modules/gear-knowledge"
+            type: "course"
+          - title: "Marty Music — Understanding Guitar Tone"
+            url: "https://www.youtube.com/watch?v=lZ3MZ6rAavE"
+            type: "video"
+        practice:
+          - "5 min: play the same chord progression at 3 distinct dynamic levels (soft, medium, loud) and record to hear the difference"
+          - "5 min: practice using the guitar volume knob to go from distorted to clean tone without touching the amp"
+          - "5 min: pick the same note at 5 different spots between bridge and neck to hear the tonal change"
+        projects:
+          - "Demonstrate clean, crunch, and high-gain tones and explain when each is musically appropriate"
+          - "Record yourself playing one song at 3 dynamic levels and compare the recordings"
+        tips:
+          - "Tone starts in your fingers, not your gear — the same guitar and amp will sound completely different with a soft pick attack vs. hard attack"
+          - "Rolling the guitar volume knob from 10 to 7 cleans up a dirty amp sound — this is the cheapest and most effective tone trick"
       - level: intermediate
         criteria: "Uses pick angle, attack velocity, and picking position (bridge vs. neck) to intentionally vary tone within a song. Understands and uses the 4 core effects categories: gain (overdrive/distortion), modulation (chorus/phaser), time-based (delay/reverb), and filter (wah). Dynamic range spans from whisper-quiet fingerpicked passages to full-volume strumming within a single performance. Can set up a basic effects chain in the correct signal order (tuner → wah → drive → modulation → delay → reverb). Corresponds to ABRSM Grades 3-5."
         metrics:
@@ -803,6 +820,23 @@ nodes:
           - "Sets up effects pedals in correct signal chain order and explains why (e.g., drive before modulation, delay before reverb)"
           - "Uses overdrive, delay, and reverb musically in a performance — each effect enhances the music rather than masking poor technique"
           - "Recreates a recognizable guitar tone from a well-known song (e.g., clean chorus tone, overdriven crunch) using available gear within 10 minutes"
+        resources:
+          - title: "Paul Davids — Guitar Effects Explained"
+            url: "https://www.youtube.com/watch?v=YyAlcSalXjQ"
+            type: "video"
+          - title: "JustinGuitar — Effects Pedals for Beginners"
+            url: "https://www.justinguitar.com/modules/gear-knowledge"
+            type: "course"
+        practice:
+          - "10 min: play a single song that includes both pianissimo and fortissimo sections — exaggerate the contrast"
+          - "10 min: set up effects pedals in correct signal chain order (tuner-wah-drive-modulation-delay-reverb)"
+          - "5 min: practice picking near the bridge vs. near the neck on the same chord and notice the tonal difference"
+        projects:
+          - "Recreate a recognizable guitar tone from a favorite song using your available gear"
+          - "Set up and demonstrate a basic effects chain with overdrive, delay, and reverb used musically"
+        tips:
+          - "Effects should enhance your playing, not mask mistakes — if you sound bad clean, adding reverb will just make it a wetter mess"
+          - "Signal chain order matters: drive before modulation, modulation before delay, delay before reverb"
       - level: advanced
         criteria: "Has developed a signature tone that is consistent and intentional. Effects chain designed for specific sounds and switched during performance. Uses advanced tonal techniques: volume swells (violin-like effect), natural and artificial harmonics, pick harmonics (pinch harmonics), tapping for tonal variety, and amp channel switching. Can describe their target tone verbally before playing and achieve it. Can recreate reference tones from recordings using available gear. Corresponds to ABRSM Grades 6-7."
         metrics:
@@ -811,6 +845,12 @@ nodes:
           - "Demonstrates ≥4 advanced tonal techniques in a performance: volume swells, natural harmonics, pinch harmonics, and pick dynamics"
           - "Switches between ≥3 distinct tones during a single song using pedals and/or guitar controls — transitions are smooth and musical"
           - "Plays natural harmonics at frets 5, 7, and 12 cleanly with consistent volume"
+        resources:
+          - title: "Paul Davids — Finding Your Signature Guitar Tone"
+            url: "https://www.youtube.com/watch?v=YyAlcSalXjQ"
+            type: "video"
+        tips:
+          - "Describe your target tone in words before touching a knob — 'warm overdrive with slapback delay' is a clearer goal than randomly tweaking"
       - level: expert
         criteria: "Tone is immediately recognizable — a sonic fingerprint. Understands guitar electronics (pickups, wiring, capacitors, pots), amplifier design (tube vs. solid state, preamp vs. power amp distortion), speaker characteristics, and the complete signal chain at a technical level. Creates tones that other players try to analyze and emulate. Can coax musical tones from any guitar and amp combination. Corresponds to ABRSM Grade 8+."
         metrics:
@@ -819,6 +859,12 @@ nodes:
           - "Explains the electronics of their guitar signal chain (pickups, pedal circuits, amp topology) and how each component shapes the tone"
           - "Records a guitar part in a studio setting where the producer accepts the tone without requesting changes"
           - "Demonstrates the same musical phrase with 5 distinctly different tones, each appropriate for a different genre (jazz, blues, metal, country, ambient)"
+        resources:
+          - title: "Guitareo — Advanced Tone Shaping"
+            url: "https://www.guitareo.com/guitar-lessons/tone"
+            type: "course"
+        tips:
+          - "Your tone is your sonic fingerprint — develop it by playing through as many different guitars and amps as possible to discover what you gravitate toward"
     tags: ["tone", "dynamics", "expression"]
 
   - id: "creative-arts/guitar/sight-reading-tab"
@@ -856,6 +902,22 @@ nodes:
           - "Reads a chord diagram for an unfamiliar chord shape and plays it correctly on first attempt — tested with 5 random chord diagrams"
           - "Follows along with a TAB transcription while a song plays — finger placement matches the TAB in real time"
           - "Plays a simple single-note melody from TAB at sight (no practice) within 2 attempts"
+        resources:
+          - title: "JustinGuitar — How To Read TAB"
+            url: "https://www.justinguitar.com/guitar-lessons/how-to-read-tab-bc-108"
+            type: "course"
+          - title: "Marty Music — Reading Guitar TAB for Beginners"
+            url: "https://www.youtube.com/watch?v=IKnCGRsVVBY"
+            type: "video"
+        practice:
+          - "10 min daily: read through a simple TAB transcription of a song you know and play along"
+          - "5 min: practice reading TAB symbols (h, p, /, b, x) and demonstrate each technique on the guitar"
+        projects:
+          - "Learn a new song entirely from TAB (no audio reference) and play it recognizably"
+          - "Read 5 unfamiliar chord diagrams and play each correctly on first attempt"
+        tips:
+          - "TAB reads top-to-bottom as high-to-low strings — the top line is string 1 (thinnest), which confuses many beginners since it is physically the lowest string"
+          - "Always listen to the recording alongside TAB to learn the rhythm — TAB alone often omits timing information"
       - level: intermediate
         criteria: "Reads chord charts (slash notation with chord symbols above — the format used in band rehearsals and worship settings). Reads lead sheets (melody in standard notation + chord symbols). Basic standard notation reading in first position (frets 0-4): identifies notes on the staff and plays them on the guitar. Understands time signatures (4/4, 3/4, 6/8) and key signatures (up to 2 sharps or flats) in notation. Reads Nashville Number charts. Corresponds to ABRSM Grades 2-3."
         metrics:
@@ -864,6 +926,23 @@ nodes:
           - "Reads a chord chart (slash notation) for an unfamiliar song and plays the correct chords in time on first read-through"
           - "Identifies the key signature and time signature of a piece of notation and explains what they mean (which sharps/flats, how many beats per bar)"
           - "Names ≥20 notes on the treble clef staff and plays them on the guitar in first position within 3 seconds each"
+        resources:
+          - title: "JustinGuitar — Reading Standard Notation"
+            url: "https://www.justinguitar.com/modules/reading-music-standard-notation"
+            type: "course"
+          - title: "Guitareo — Lead Sheet Reading"
+            url: "https://www.guitareo.com/guitar-lessons/reading"
+            type: "course"
+        practice:
+          - "5 min daily: sight-read simple melodies from standard notation in first position (frets 0-4)"
+          - "10 min: follow a lead sheet (chord symbols + melody) in real time with a backing track"
+          - "5 min: flash card drill — name notes on the treble clef staff and play them on guitar"
+        projects:
+          - "Play a simple melody from standard notation at sight in first position on first attempt"
+          - "Follow a chord chart for an unfamiliar song and play the correct chords in time on first read-through"
+        tips:
+          - "Sight-reading improves with daily short sessions, not weekly long ones — 5 minutes daily beats 35 minutes once a week"
+          - "Start with notation that stays in first position (frets 0-4) — trying to read across the full fretboard too early creates confusion"
       - level: advanced
         criteria: "Sight-reads standard notation across the fretboard — not limited to first position. Reads rhythmically complex passages (syncopation, ties across barlines, dotted rhythms, triplets, 16th-note passages). Transposes from notation on the fly (e.g., reads in C but plays in G). Reads multi-voice notation (melody and bass on the same staff with up-stems and down-stems). Comfortable reading in all positions up to 9th position. Corresponds to ABRSM Grades 5-6."
         metrics:
@@ -872,6 +951,12 @@ nodes:
           - "Reads a piece in 5th position (notes at frets 5-9) at sight with the same fluency as first position"
           - "Plays a rhythmically complex passage (syncopation, ties, dotted 8ths) from notation correctly on second attempt"
           - "Reads a two-voice piece (melody + bass line on the same staff) and plays both voices simultaneously"
+        resources:
+          - title: "JustinGuitar — Advanced Sight Reading"
+            url: "https://www.justinguitar.com/modules/reading-music-standard-notation"
+            type: "course"
+        tips:
+          - "When reading in higher positions, use landmark notes (fret 5 = same as adjacent open string, fret 12 = octave) as anchors"
       - level: expert
         criteria: "Fluent sight-reader in any position on the fretboard. Reads orchestral guitar parts, classical scores (multi-voice polyphony), and jazz charts (chord melody, walking bass lines from notation) at sight. Can read and perform from any notation format: standard notation, TAB, lead sheets, Nashville charts, and figured bass. Sight-reading is a practical professional skill — can walk into a session and play an unfamiliar part. Corresponds to ABRSM Grades 7-8+."
         metrics:
@@ -880,6 +965,12 @@ nodes:
           - "Plays a classical guitar piece from standard notation at sight — multi-voice polyphony with correct voicing"
           - "Walks into a rehearsal and plays an unfamiliar chord chart correctly on first read-through with a band"
           - "Reads figured bass notation and realizes chords from it on the guitar"
+        resources:
+          - title: "JustinGuitar — Professional Reading Skills"
+            url: "https://www.justinguitar.com/modules/reading-music-standard-notation"
+            type: "course"
+        tips:
+          - "Professional sight-reading is about keeping your eyes ahead of your hands — always look 1-2 bars ahead of what you are playing"
     tags: ["reading", "notation", "literacy"]
 
   - id: "creative-arts/guitar/performance-repertoire"
@@ -917,6 +1008,23 @@ nodes:
           - "Records a 3-song practice set and identifies ≥3 specific areas for improvement on playback"
           - "Recovers from a mistake during performance without stopping — chord or lyric error does not cause a full stop"
           - "Transitions between songs without >10 seconds of silence (uses tuning, brief intro, or count-in)"
+        resources:
+          - title: "JustinGuitar — Performance & Stage Tips"
+            url: "https://www.justinguitar.com/modules/performance-skills"
+            type: "course"
+          - title: "Marty Music — Tips for Your First Performance"
+            url: "https://www.youtube.com/watch?v=0Y8JTasqdSQ"
+            type: "video"
+        practice:
+          - "15 min weekly: record a full 3-song set as if performing for an audience — no stopping, no restarting"
+          - "5 min: practice recovering from a mistake — deliberately make an error and keep playing without stopping"
+          - "10 min: practice transitions between songs — minimize silence with tuning, count-ins, or brief introductions"
+        projects:
+          - "Perform 3 songs in sequence for friends or family without stopping"
+          - "Build a repertoire list of 5+ songs with keys, tempos, and chord progressions written down"
+        tips:
+          - "Performance anxiety decreases with exposure — play for 1-2 people first, then gradually increase the audience size"
+          - "If you make a mistake, keep strumming the rhythm — the audience notices silence far more than a wrong chord"
       - level: intermediate
         criteria: "Performs at open mic nights or jam sessions. Plays with other musicians: follows song structure, stays in time, watches for cues (count-ins, endings, dynamic changes). Setlist of ≥20 songs spanning at least 3 genres. Manages performance anxiety — nerves are present but do not derail the performance. Can use a microphone for vocals while playing. Introduces songs and engages with the audience between songs. Typically reached around year 1-3. Corresponds to ABRSM Grade 3-5 performance."
         metrics:
@@ -926,6 +1034,23 @@ nodes:
           - "Speaks to the audience between songs (song introductions, brief banter) without awkward extended silences"
           - "Plays along with 3 songs they have never rehearsed with a band (jam setting) — follows chord charts and stays in time"
           - "Performs the same set for 2 different audiences and adjusts energy/banter for each"
+        resources:
+          - title: "JustinGuitar — Jamming & Playing With Others"
+            url: "https://www.justinguitar.com/modules/performance-skills"
+            type: "course"
+          - title: "Guitareo — Stage Performance Essentials"
+            url: "https://www.guitareo.com/guitar-lessons/performance"
+            type: "course"
+        practice:
+          - "Play with other musicians at least once a month — jam sessions, open mics, or just a friend with a guitar"
+          - "15 min weekly: practice your full 15-minute set (3-4 songs) with transitions, audience banter, and song introductions"
+          - "10 min: practice following chord charts for songs you have never rehearsed — simulate a jam setting"
+        projects:
+          - "Perform a 15-minute set (3-4 songs) at an open mic night"
+          - "Build a setlist of 20 songs spanning at least 3 genres, all playable from memory"
+        tips:
+          - "Open mic nights are the best low-pressure training ground — the audience is supportive and expects imperfection"
+          - "Playing with other musicians exposes timing weaknesses that solo practice hides — seek it out as often as possible"
       - level: advanced
         criteria: "Gigs regularly (≥1 performance per month). Adapts performance to venue (acoustic coffee shop vs. loud bar vs. outdoor festival) and audience (age, energy level, genre expectations). Handles mistakes gracefully on stage — covers errors so the audience does not notice. Repertoire covers multiple genres (rock, folk, blues, pop, country). Builds setlists with intentional energy arc (opening with energy, building through the set, ending strong). Can play a full evening (2-3 hours with breaks) as a solo act or with a band. Corresponds to ABRSM Grades 6-7 performance."
         metrics:
