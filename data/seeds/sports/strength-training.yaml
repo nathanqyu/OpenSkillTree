@@ -71,7 +71,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=R6gZoAzAhCg"
             type: "video"
           - title: "Starting Strength — How to Set Up a Squat Rack Safely"
-            url: "https://www.youtube.com/watch?v=H1tM0IS_gvY"
+            url: "https://www.youtube.com/watch?v=sXXnLstL80A"
             type: "video"
         practice:
           - "10 min: Bodyweight squat practice — 3 sets of 15, focus on depth (hip crease below knee) with heels flat"
@@ -182,7 +182,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=wYREQkVtvEc"
             type: "video"
           - title: "Starting Strength — The Novice Linear Progression"
-            url: "https://www.youtube.com/watch?v=FnW5kVIDdJk"
+            url: "https://www.youtube.com/watch?v=wqsZ7DE9fw8"
             type: "video"
         practice:
           - "60 min (3x/week): Follow a novice linear progression program (Starting Strength 3x5 or StrongLifts 5x5) exactly as written"
@@ -205,13 +205,13 @@ nodes:
           - "All four lifts tracked with RPE/RIR for every working set over 12+ weeks"
         resources:
           - title: "Jeff Nippard — The Best Intermediate Strength Programs Compared"
-            url: "https://www.youtube.com/watch?v=Enn0JFbTJfI"
+            url: "https://www.youtube.com/watch?v=5RtVbWCX5y0"
             type: "video"
           - title: "Stronger by Science — Bench Press Guide (Form, Programming, and Sticking Points)"
             url: "https://www.strongerbyscience.com/how-to-bench/"
             type: "article"
           - title: "Starting Strength — When to Switch from Novice to Intermediate Programming"
-            url: "https://www.youtube.com/watch?v=5L0R-gaBi0A"
+            url: "https://www.youtube.com/watch?v=5cY9DKGwrjg"
             type: "video"
         practice:
           - "4x/week: Follow a structured intermediate program (5/3/1, Texas Method, or GZCL) with every set logged with RPE/RIR"
@@ -294,7 +294,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=PLHY2-nt-y4"
             type: "video"
           - title: "Jeff Nippard — The Best Core Exercises (Science-Based)"
-            url: "https://www.youtube.com/watch?v=g_BYB0R-4Ts"
+            url: "https://www.youtube.com/watch?v=eLCBC6fjtQU"
             type: "video"
         practice:
           - "10 min: Front plank holds — 3 attempts of max hold, target 60 seconds with neutral spine"
@@ -316,7 +316,7 @@ nodes:
           - "Maintains brace integrity through a set of 5 back squats at 1.25x bodyweight"
         resources:
           - title: "Jeff Nippard — Ab Wheel Rollout Progression (Beginner to Advanced)"
-            url: "https://www.youtube.com/watch?v=cNs2l2Wt7jQ"
+            url: "https://www.youtube.com/watch?v=6DUbeqa9g3M"
             type: "video"
           - title: "Stronger by Science — Belt Use and Bracing Under Load"
             url: "https://www.strongerbyscience.com/the-belt-bible/"
@@ -447,7 +447,7 @@ nodes:
           - "Can identify the sticking point in a failed lift on video and prescribe 3 appropriate accessories to address it"
         resources:
           - title: "Jeff Nippard — How to Identify and Fix Weak Points in Your Lifts"
-            url: "https://www.youtube.com/watch?v=bHb1hULMYzg"
+            url: "https://www.youtube.com/watch?v=deDlhPmT2SY"
             type: "video"
         tips:
           - "Film failed attempts and analyze WHERE the lift breaks down — off the chest on bench means pec weakness (use pause bench or DB press); at lockout means triceps (use close-grip bench or board press)"
@@ -505,7 +505,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=BH11j4kSQ8E"
             type: "video"
           - title: "Jeff Nippard — Mobility for Lifters: The 3 Tests You Need"
-            url: "https://www.youtube.com/watch?v=Fo97kNsBwQs"
+            url: "https://www.youtube.com/watch?v=E81GN-3A8XM"
             type: "video"
         practice:
           - "10 min before every session: RAMP warm-up — 5 min light cardio, 2 min band activation (glutes, shoulders), 3 min targeted mobility for that session's lifts"
@@ -527,7 +527,7 @@ nodes:
           - "Adjusts training intensity or volume on at least 2 occasions per 12-week block based on recovery data"
         resources:
           - title: "Jeff Nippard — Sleep and Recovery for Lifters (Evidence-Based)"
-            url: "https://www.youtube.com/watch?v=q9XA_3mPEB4"
+            url: "https://www.youtube.com/watch?v=tP-yJL0t9l8"
             type: "video"
           - title: "Stronger by Science — Recovery: The Most Underrated Variable"
             url: "https://www.strongerbyscience.com/grow-like-a-new-lifter-again/"
@@ -609,7 +609,7 @@ nodes:
           - "Eats a meal with 30-50 g protein and 40-60 g carbohydrates within 2 hours post-training"
         resources:
           - title: "Jeff Nippard — The Complete Nutrition Guide for Lifters"
-            url: "https://www.youtube.com/watch?v=n-bOAgEqUbI"
+            url: "https://www.youtube.com/watch?v=OqRvmJ2eyBA"
             type: "video"
           - title: "Stronger by Science — How Much Protein Do You Need?"
             url: "https://www.strongerbyscience.com/reflecting-on-five-years/"
@@ -634,7 +634,7 @@ nodes:
           - "Caffeine usage at 3-6 mg/kg pre-training on heavy sessions with no use within 8 hours of bedtime"
         resources:
           - title: "Jeff Nippard — Creatine: Everything You Need to Know"
-            url: "https://www.youtube.com/watch?v=JzWgUMOcedc"
+            url: "https://www.youtube.com/watch?v=Z9mlsyV7Hek"
             type: "video"
           - title: "Stronger by Science — The Science of Nutrition for Strength"
             url: "https://www.strongerbyscience.com/nutrition/"
@@ -672,7 +672,7 @@ nodes:
           - "Designs phase-specific nutrition plans with distinct macro targets for accumulation (surplus), intensification (maintenance), and peaking (slight deficit or maintenance) phases"
         resources:
           - title: "Jeff Nippard — Reverse Dieting: The Science and Practice"
-            url: "https://www.youtube.com/watch?v=A9Xp3X5tMBM"
+            url: "https://www.youtube.com/watch?v=1zm2YtZnAy8"
             type: "video"
         tips:
           - "After a competition cut, reverse diet by adding 100-200 kcal/week back to gradually restore metabolic rate — jumping straight to pre-diet calories causes rapid fat regain"
@@ -720,10 +720,10 @@ nodes:
           - "Can explain why they chose their program and what they would switch to when linear progression stalls"
         resources:
           - title: "Starting Strength — How to Run the Novice Linear Progression"
-            url: "https://www.youtube.com/watch?v=FnW5kVIDdJk"
+            url: "https://www.youtube.com/watch?v=YfOI8BdrntQ"
             type: "video"
           - title: "Jeff Nippard — RPE Training Explained (How to Use It)"
-            url: "https://www.youtube.com/watch?v=VozvbGhkRqQ"
+            url: "https://www.youtube.com/watch?v=deDlhPmT2SY"
             type: "video"
         practice:
           - "Every session: Log exercise, sets, reps, weight, and RPE for every working set"
@@ -745,7 +745,7 @@ nodes:
           - "Uses a training max set at 90% of true 1RM and progresses it based on performance, not ego"
         resources:
           - title: "Jeff Nippard — 5/3/1 Program Explained (Jim Wendler's Method)"
-            url: "https://www.youtube.com/watch?v=FjTNUfCb6JI"
+            url: "https://www.youtube.com/watch?v=DVjLwzMAJSM"
             type: "video"
           - title: "Stronger by Science — Volume Landmarks and Training Volume"
             url: "https://www.strongerbyscience.com/the-new-approach-to-training-volume/"
@@ -828,10 +828,10 @@ nodes:
           - "No reduction in main lift progression (still adding weight per session) despite adding conditioning"
         resources:
           - title: "Alan Thrall — Cardio for Strength Athletes (What, When, and How Much)"
-            url: "https://www.youtube.com/watch?v=aHQLx_ynePc"
+            url: "https://www.youtube.com/watch?v=su80oUpZxh8"
             type: "video"
           - title: "Jeff Nippard — The Truth About Cardio and Gaining Muscle"
-            url: "https://www.youtube.com/watch?v=0bGraflOMC0"
+            url: "https://www.youtube.com/watch?v=3Y2vxKsaK9A"
             type: "video"
         practice:
           - "3x/week: 30 minutes of walking or cycling at conversational pace (HR 120-140 bpm)"
@@ -856,7 +856,7 @@ nodes:
             url: "https://www.strongerbyscience.com/concurrent-training/"
             type: "article"
           - title: "Alan Thrall — Sled Work for Strength Athletes"
-            url: "https://www.youtube.com/watch?v=aSzTkWMEJT0"
+            url: "https://www.youtube.com/watch?v=yi5zarQFyn0"
             type: "video"
         practice:
           - "2x/week: Sled pushes — 40 meters at 1x bodyweight, 6 rounds with 90 seconds rest"
@@ -892,7 +892,7 @@ nodes:
           - "Heart rate recovery: drops from 170+ bpm to below 120 bpm within 60 seconds after an all-out 30-second effort"
         resources:
           - title: "Jeff Nippard — Work Capacity for Strength Athletes"
-            url: "https://www.youtube.com/watch?v=3z7HqbWPh90"
+            url: "https://www.youtube.com/watch?v=OPEDjl88P-4"
             type: "video"
         tips:
           - "Elite work capacity means your cardiovascular system supports high-volume training without compromising strength — if you can complete a 10-set squat session at 75% 1RM with 3-minute rests and all sets under RPE 8, your conditioning is sufficient"
@@ -938,7 +938,7 @@ nodes:
           - "Hook grip maintained on cleans at 0.5x bodyweight without releasing during the catch"
         resources:
           - title: "Alan Thrall — How to Power Clean (Complete Beginner Guide)"
-            url: "https://www.youtube.com/watch?v=KjGVlwGlkSo"
+            url: "https://www.youtube.com/watch?v=mPsxlNjv7Aw"
             type: "video"
           - title: "Starting Strength — The Front Squat for Olympic Lifting"
             url: "https://www.youtube.com/watch?v=m4ytaCJZpl0"
@@ -966,7 +966,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=9xQp2sldyts"
             type: "video"
           - title: "Starting Strength — The Three Pulls of the Clean"
-            url: "https://www.youtube.com/watch?v=_oi_djY4Cdo"
+            url: "https://www.youtube.com/watch?v=7yI4V8E77qI"
             type: "video"
         practice:
           - "15 min: Hang clean below the knee — 5 sets of 3, focus on smooth transition through the knee"
@@ -1002,7 +1002,7 @@ nodes:
           - "Can demonstrate and explain differences between Chinese-style (close feet, upright torso) and Russian-style (wider feet, more horizontal back) pulling mechanics"
         resources:
           - title: "Starting Strength — Comparing Weightlifting Technique Schools"
-            url: "https://www.youtube.com/watch?v=V-ljBr6lxOc"
+            url: "https://www.youtube.com/watch?v=pwZeSfgHmKs"
             type: "video"
         tips:
           - "At the expert level, understand that technique schools (Chinese vs. Russian vs. American) reflect different anthropometric optimization — there is no universally 'best' technique, only the best technique for a given body type"
@@ -1054,10 +1054,10 @@ nodes:
           - "Wilks score under 200 calculated from test-day total"
         resources:
           - title: "Alan Thrall — How to Test Your 1 Rep Max Safely"
-            url: "https://www.youtube.com/watch?v=s2kdPZqGeaA"
+            url: "https://www.youtube.com/watch?v=0856Q79n12A"
             type: "video"
           - title: "Starting Strength — Attempt Selection for Your First Meet"
-            url: "https://www.youtube.com/watch?v=PLkVLf7eAK4"
+            url: "https://www.youtube.com/watch?v=UJahL5EmY0o"
             type: "video"
         practice:
           - "Test day: Follow a planned warm-up progression — empty bar, 40%, 60%, 75%, 85%, 92%, 100% with 3-5 min rest between attempts"
@@ -1080,7 +1080,7 @@ nodes:
           - "Eats and hydrates between lifts according to a pre-planned competition nutrition strategy"
         resources:
           - title: "Jeff Nippard — Your First Powerlifting Meet: Complete Guide"
-            url: "https://www.youtube.com/watch?v=OGp4lf7S8uI"
+            url: "https://www.youtube.com/watch?v=OPEDjl88P-4"
             type: "video"
           - title: "Stronger by Science — Competition Day Strategy"
             url: "https://www.strongerbyscience.com/peaking/"
@@ -1121,7 +1121,7 @@ nodes:
           - "Qualifies for or competes at a national-level competition (e.g., USAPL Nationals, IPF Worlds qualifying total)"
         resources:
           - title: "Starting Strength — Tactical Attempt Selection at the Elite Level"
-            url: "https://www.youtube.com/watch?v=HxFob3Lj6YA"
+            url: "https://www.youtube.com/watch?v=tEvvMBiCDEY"
             type: "video"
         tips:
           - "At the elite level, learn to make tactical third-attempt adjustments based on competitor totals and scoring systems — sometimes a conservative third to secure placement is smarter than a risky PR attempt"
