@@ -70,7 +70,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=t39ff1AWAHw"
             type: "video"
           - title: "USA Pickleball — Official Rules Summary"
-            url: "https://usapickleball.org/what-is-pickleball/how-to-play-old/basics/rules-summary/"
+            url: "https://usapickleball.org/what-is-pickleball/official-rules/rules-summary/"
             type: "article"
         practice:
           - "10 min: Shadow footwork — shuffle from baseline to kitchen and back, 10 reps, stay low and balanced"

@@ -423,8 +423,8 @@ nodes:
           - title: "Jeff Nippard — Pull-Up Progressions (From 0 to 10 Reps)"
             url: "https://www.youtube.com/watch?v=fO3dKSQayfg"
             type: "video"
-          - title: "Stronger by Science — Weak Point Training for Powerlifters"
-            url: "https://www.strongerbyscience.com/weakpoint/"
+          - title: "Stronger by Science — Powerlifters Should Train More Like Bodybuilders"
+            url: "https://www.strongerbyscience.com/powerlifters-should-train-more-like-bodybuilders/"
             type: "article"
         practice:
           - "Pull-up progression: Band-assisted pull-ups or negatives 3x max, working toward 10 unassisted reps"
@@ -459,8 +459,8 @@ nodes:
           - "Weighted pull-ups with 50%+ bodyweight added for 3 reps"
           - "Can cite research-backed exercise selections for any muscle group and explain the biomechanical rationale"
         resources:
-          - title: "Stronger by Science — Hypertrophy Training Guide"
-            url: "https://www.strongerbyscience.com/hypertrophy-range-fact-and-fiction/"
+          - title: "Stronger by Science — The Hypertrophy Rep Range: Fact or Fiction?"
+            url: "https://www.strongerbyscience.com/hypertrophy-range-fact-fiction/"
             type: "article"
         tips:
           - "Understand the stimulus-to-fatigue ratio when selecting accessories — choose exercises that produce maximum muscle stimulus with minimum systemic fatigue; for example, a leg press creates less fatigue than a squat for equivalent quad stimulus"
@@ -551,8 +551,8 @@ nodes:
           - "Successfully auto-regulates training around minor aches — modifies exercises rather than skipping sessions (e.g., switching to SSB squat during a shoulder flare-up)"
           - "Completes every warm-up in under 15 minutes while addressing all relevant mobility demands"
         resources:
-          - title: "Stronger by Science — Managing Training Around Pain"
-            url: "https://www.strongerbyscience.com/pain-in-training/"
+          - title: "Stronger by Science — Pain, Recovery, and Injury Prevention Q&A"
+            url: "https://www.strongerbyscience.com/qa/injury-recovery/"
             type: "article"
         tips:
           - "Modify exercises around minor aches instead of skipping sessions entirely — a shoulder flare-up means switching to SSB squats instead of back squats, not taking a week off"
@@ -564,8 +564,8 @@ nodes:
           - "Can correctly identify 3+ red-flag symptoms that require medical referral vs. training modification"
           - "Designs deload protocols for athletes at different training levels that preserve performance while allowing recovery"
         resources:
-          - title: "Stronger by Science — Pain Science for Strength Athletes"
-            url: "https://www.strongerbyscience.com/pain-science/"
+          - title: "Stronger by Science — Injury Prevention and Pain Science Q&A"
+            url: "https://www.strongerbyscience.com/qa/injury-recovery/"
             type: "article"
         tips:
           - "Learn pain science: pain is not a reliable indicator of tissue damage; fear avoidance and catastrophizing are bigger obstacles to recovery than the injury itself in most cases"
@@ -658,8 +658,8 @@ nodes:
           - "Protein intake never drops below 2.0 g/kg even during a caloric deficit"
           - "Successfully refeeds after competition: regains competition-day bodyweight within 48 hours through strategic carbohydrate and sodium loading"
         resources:
-          - title: "Stronger by Science — Evidence-Based Supplement Guide"
-            url: "https://www.strongerbyscience.com/supplement-guide/"
+          - title: "Stronger by Science — The Only Supplements You Should Consider"
+            url: "https://www.strongerbyscience.com/supplements-to-consider/"
             type: "article"
         tips:
           - "During a weight cut, never drop protein below 2.0 g/kg — reduce calories from carbs and fats first; protein preserves muscle mass during a deficit"
@@ -769,8 +769,8 @@ nodes:
           - "Successfully transitions between accumulation, transmutation, and realization phases with appropriate volume and intensity changes"
           - "Programs for 2+ training days per lift with distinct purposes (e.g., heavy singles day + volume back-off day for squat)"
         resources:
-          - title: "Stronger by Science — Block Periodization for Strength Athletes"
-            url: "https://www.strongerbyscience.com/block-periodization/"
+          - title: "Stronger by Science — Periodization: What the Data Say"
+            url: "https://www.strongerbyscience.com/periodization-data/"
             type: "article"
         tips:
           - "During peaking, reduce volume but maintain intensity — the mistake most lifters make is dropping both; keep singles at 90-95% while cutting total sets by 40-60%"
@@ -877,8 +877,8 @@ nodes:
           - "Prowler push: 1.5x bodyweight for 6 x 40-meter sprints with 90-second rest"
           - "Conditioning volume adjusted across training phases: 4 sessions/week during GPP, 2 sessions/week during peaking"
         resources:
-          - title: "Stronger by Science — GPP and Conditioning for Powerlifters"
-            url: "https://www.strongerbyscience.com/conditioning/"
+          - title: "Stronger by Science — Avoiding Cardio Could Be Holding You Back"
+            url: "https://www.strongerbyscience.com/avoiding-cardio-could-be-holding-you-back/"
             type: "article"
         tips:
           - "Periodize conditioning alongside strength — higher volume during GPP/accumulation blocks, reduced during peaking; if you maintain the same conditioning volume year-round, it will interfere during intensity phases"
