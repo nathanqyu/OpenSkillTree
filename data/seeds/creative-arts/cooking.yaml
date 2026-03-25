@@ -63,7 +63,7 @@ nodes:
             url: "https://www.seriouseats.com/mise-en-place-what-it-means-cooking"
             type: "article"
           - title: "Joshua Weissman — Kitchen Essentials for Beginners"
-            url: "https://www.youtube.com/watch?v=biSGbJl5JGg"
+            url: "https://www.youtube.com/watch?v=O5hW_65fTxs"
             type: "video"
         practice:
           - "Before every cooking session: read the recipe fully, then gather and pre-measure all ingredients before turning on any heat"
@@ -89,7 +89,7 @@ nodes:
           - "Sink contains fewer than 3 dirty items at the moment the last dish is plated"
         resources:
           - title: "ATK/Cook's Illustrated — Kitchen Organization Tips"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
           - title: "Serious Eats — How to Cook a Weeknight Dinner in 30 Minutes"
             url: "https://www.seriouseats.com/essential-weeknight-cooking-tips"
@@ -137,7 +137,7 @@ nodes:
           - "Station layout diagram created for a specific menu that eliminates unnecessary movement (fewer than 10 steps between stations)"
         resources:
           - title: "ATK — Professional Kitchen Workflow"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Mise en place is a habit, not a skill level — even expert cooks who skip it make mistakes; treat it as non-negotiable"
@@ -171,7 +171,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=G-Fg7l7G1zw"
             type: "video"
           - title: "ATK/Cook's Illustrated — How to Hold a Chef's Knife"
-            url: "https://www.youtube.com/watch?v=20gwf7YttSM"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         practice:
           - "10 min daily: dice one onion using proper pinch grip and tucked guide hand — focus on safety, not speed"
@@ -196,7 +196,7 @@ nodes:
           - "Honing steel used correctly (15-20 degree angle, heel to tip, alternating sides) before every cutting session"
         resources:
           - title: "Kenji Lopez-Alt — Knife Skills Tutorial"
-            url: "https://www.youtube.com/watch?v=cFxHBLSD7bU"
+            url: "https://www.youtube.com/watch?v=vwOEDR0gQLw"
             type: "video"
           - title: "Serious Eats — Essential Knife Cuts for Home Cooks"
             url: "https://www.seriouseats.com/knife-skills-how-to-dice-onion"
@@ -244,7 +244,7 @@ nodes:
           - "ACF Certified Culinarian knife skills section: passes with 80%+ score on cut precision and safety"
         resources:
           - title: "ATK — Professional Knife Techniques"
-            url: "https://www.youtube.com/watch?v=20gwf7YttSM"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Speed and accuracy should be simultaneous at this level — if you sacrifice uniformity for speed, slow down until both are equal"
@@ -282,7 +282,7 @@ nodes:
             url: "https://www.seriouseats.com/how-to-saute-food"
             type: "article"
           - title: "Joshua Weissman — Cooking Methods Every Home Cook Should Know"
-            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            url: "https://www.youtube.com/watch?v=P6W8kwmwcno"
             type: "video"
         practice:
           - "10 min: saute onions to translucent (not burned, not raw) 3 times in a row — practice adjusting heat if they color too fast"
@@ -313,7 +313,7 @@ nodes:
             url: "https://www.seriouseats.com/how-to-pan-sear"
             type: "article"
           - title: "ATK/Cook's Illustrated — Science of Searing"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         practice:
           - "15 min: practice pan-searing a protein (chicken thigh or steak) — heat pan, add oil, wait for shimmer, sear without moving for 3-4 minutes"
@@ -360,7 +360,7 @@ nodes:
           - "Adapts a familiar recipe to unfamiliar equipment (e.g., gas to induction, home oven to wood-fired) and produces equivalent results on first attempt"
         resources:
           - title: "ATK — Advanced Cooking Methods"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Heat management becomes intuitive only through hundreds of hours of practice — there is no shortcut; cook more"
@@ -396,7 +396,7 @@ nodes:
             url: "https://www.seriouseats.com/seasoning-and-salting-tips"
             type: "article"
           - title: "Joshua Weissman — How to Season Food Properly"
-            url: "https://www.youtube.com/watch?v=hqXvtBSY1Eg"
+            url: "https://www.youtube.com/watch?v=lLNH-JnbigM"
             type: "video"
         practice:
           - "Every cooking session: taste your food at least 3 times — once during cooking, once near the end, once before serving"
@@ -427,7 +427,7 @@ nodes:
             url: "https://www.seriouseats.com/how-to-deglaze-a-pan"
             type: "article"
           - title: "ATK — How to Build a Pan Sauce"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         practice:
           - "15 min: build a mirepoix or soffritto base — sweat onions to translucent, add carrot and celery, cook until soft"
@@ -473,7 +473,7 @@ nodes:
           - "ACF practical exam: taste-and-presentation section passed with 75%+ score"
         resources:
           - title: "Joshua Weissman — Advanced Flavor Development"
-            url: "https://www.youtube.com/watch?v=hqXvtBSY1Eg"
+            url: "https://www.youtube.com/watch?v=lLNH-JnbigM"
             type: "video"
         tips:
           - "Flavor intuition develops by tasting everything deliberately — taste ingredients raw, taste at every cooking stage, taste the finished dish before serving"
@@ -509,7 +509,7 @@ nodes:
             url: "https://www.seriouseats.com/how-to-roast-vegetables"
             type: "article"
           - title: "Joshua Weissman — Roasted Vegetables Done Right"
-            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            url: "https://www.youtube.com/watch?v=P6W8kwmwcno"
             type: "video"
         practice:
           - "20 min: roast a sheet pan of mixed vegetables at 425F — single layer, space between pieces, season with oil and salt before roasting"
@@ -538,7 +538,7 @@ nodes:
             url: "https://www.seriouseats.com/salad-guide"
             type: "article"
           - title: "ATK — Vegetable Cooking Methods"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         practice:
           - "15 min: match cooking method to vegetable type for 5 different vegetables and explain your reasoning"
@@ -618,7 +618,7 @@ nodes:
             url: "https://www.seriouseats.com/the-food-lab-scrambled-eggs"
             type: "article"
           - title: "Joshua Weissman — How to Cook Every Protein"
-            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            url: "https://www.youtube.com/watch?v=P6W8kwmwcno"
             type: "video"
         practice:
           - "10 min: cook scrambled eggs with low heat and constant gentle stirring — pull from heat while still slightly glossy"
@@ -650,7 +650,7 @@ nodes:
             url: "https://www.seriouseats.com/pan-roasted-chicken-breast"
             type: "article"
           - title: "ATK — The Science of Perfect Eggs"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         practice:
           - "20 min: pan-roast a skin-on chicken breast — start skin-side-down in a cold pan, render fat slowly until golden"
@@ -701,7 +701,7 @@ nodes:
           - "Cooks an unfamiliar protein (e.g., duck breast, lamb rack, whole lobster) to correct doneness on first attempt using knowledge of heat transfer principles"
         resources:
           - title: "ATK — Multi-Protein Service Techniques"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Managing multi-protein service is the definitive professional test — stagger start times so everything finishes together"
@@ -739,7 +739,7 @@ nodes:
             url: "https://www.seriouseats.com/best-rich-chicken-stock-recipe"
             type: "article"
           - title: "Joshua Weissman — Homemade Stock That Jiggles"
-            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            url: "https://www.youtube.com/watch?v=P6W8kwmwcno"
             type: "video"
         practice:
           - "4-6 hours: make a chicken stock from scratch — bare simmer (tiny bubbles), skim impurities every 30 minutes during the first hour"
@@ -765,7 +765,7 @@ nodes:
           - "Reduces 1 quart of stock to 1 cup of demi-glace with concentrated flavor and syrupy consistency that coats a spoon"
         resources:
           - title: "ATK — Brown Stock and Demi-Glace"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
           - title: "Serious Eats — The Best Brown Stock"
             url: "https://www.seriouseats.com/best-rich-chicken-stock-recipe"
@@ -814,7 +814,7 @@ nodes:
           - "ACF practical exam: stock and soup components pass with 80%+ on clarity, flavor, and proper technique"
         resources:
           - title: "ATK — Professional Stock Program"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Stock-making should be a habitual practice — always save bones, always have stock in the freezer; it is the invisible foundation of great cooking"
@@ -850,7 +850,7 @@ nodes:
             url: "https://www.seriouseats.com/bechamel-white-sauce"
             type: "article"
           - title: "Joshua Weissman — 5 Mother Sauces in 10 Minutes"
-            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            url: "https://www.youtube.com/watch?v=P6W8kwmwcno"
             type: "video"
         practice:
           - "15 min: make a smooth bechamel — cook roux for 2-3 minutes (no raw flour taste), add milk gradually while whisking"
@@ -877,7 +877,7 @@ nodes:
           - "Pan sauce: deglazes all fond, reduces by half, mounts with cold butter for glossy emulsion — completed in under 5 minutes from removing the protein"
         resources:
           - title: "ATK — How to Make Hollandaise"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
           - title: "Kenji Lopez-Alt — The Five Mother Sauces"
             url: "https://www.seriouseats.com/bechamel-white-sauce"
@@ -928,7 +928,7 @@ nodes:
           - "Teaches all five mother sauces in a single instructional session with students producing at least 3 of 5 correctly by session end"
         resources:
           - title: "ATK — Professional Sauce Service"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Original sauce creation starts from flavor goals, not recipes — describe the flavor you want, then work backward to technique and ingredients"
@@ -963,7 +963,7 @@ nodes:
           - "Can explain the difference between baking soda and baking powder and predict what happens if you substitute one for the other incorrectly"
         resources:
           - title: "Joshua Weissman — Baking Basics for Beginners"
-            url: "https://www.youtube.com/watch?v=biSGbJl5JGg"
+            url: "https://www.youtube.com/watch?v=O5hW_65fTxs"
             type: "video"
           - title: "Serious Eats — How to Bake Better Bread at Home"
             url: "https://www.seriouseats.com/bread-baking-guide"
@@ -993,7 +993,7 @@ nodes:
           - "Muffins: domed tops, tender crumb, no tunneling (a sign of overmixing) — achieved on 3 consecutive batches"
         resources:
           - title: "ATK — The Science of Pie Dough"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
           - title: "Serious Eats — How to Proof Yeast Dough"
             url: "https://www.seriouseats.com/bread-baking-guide"
@@ -1024,7 +1024,7 @@ nodes:
           - "Fresh pasta dough: smooth, elastic, rolls thin enough to see a hand through it (the 'sfoglia' test for Italian pasta), cooks to al dente in 2-3 minutes"
         resources:
           - title: "Joshua Weissman — Croissants from Scratch"
-            url: "https://www.youtube.com/watch?v=biSGbJl5JGg"
+            url: "https://www.youtube.com/watch?v=O5hW_65fTxs"
             type: "video"
         tips:
           - "Laminated dough (croissants) requires the butter and dough to be the same temperature — too cold and it shatters, too warm and it melts into the dough"
@@ -1045,7 +1045,7 @@ nodes:
           - "ACF practical exam baking section: passes with 80%+ score on technique, consistency, flavor, and presentation"
         resources:
           - title: "ATK — Professional Baking Techniques"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Diagnose baking failures from the finished product: dense cake = overmixed; flat cookies = warm butter; gummy bread = cut too soon; tough pie = overworked"
@@ -1082,7 +1082,7 @@ nodes:
             url: "https://www.seriouseats.com/essential-weeknight-cooking-tips"
             type: "article"
           - title: "ATK — Efficient Weeknight Cooking"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         practice:
           - "30 min weekly: plan a balanced meal plan for the week before grocery shopping — include vegetables in every dinner"
@@ -1159,7 +1159,7 @@ nodes:
           - "ACF Certified Culinarian exam: overall score of 75%+ across all four sections (safety, organization, cooking skills, taste/presentation) in a 2.5-hour practical"
         resources:
           - title: "ATK — Professional Menu Design"
-            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            url: "https://www.youtube.com/watch?v=dtEfBKJZrVQ"
             type: "video"
         tips:
           - "Restaurant-style menus balance creativity with consistency — every dish should be reproducible on demand, not a one-time experiment"
@@ -1196,7 +1196,7 @@ nodes:
             url: "https://www.seriouseats.com/wok-cooking-guide"
             type: "article"
           - title: "Joshua Weissman — Exploring World Cuisines"
-            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            url: "https://www.youtube.com/watch?v=P6W8kwmwcno"
             type: "video"
         practice:
           - "30 min: cook one authentic dish from a cuisine you have never tried — follow a trusted recipe from a cultural authority"

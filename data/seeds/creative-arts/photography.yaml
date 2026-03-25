@@ -76,7 +76,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
             type: "video"
           - title: "Karl Taylor — Understanding Camera Modes"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         practice:
           - "15 min: photograph a moving subject (person walking, pet playing) in Tv mode — experiment with 1/125, 1/250, 1/500s"
@@ -97,7 +97,7 @@ nodes:
           - "0 missed shots due to incorrect camera mode or AF setting per shoot"
         resources:
           - title: "Karl Taylor — Advanced Camera Configuration"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Set up custom banks (C1/C2/C3) for your most common scenarios so you can switch instantly"
@@ -137,7 +137,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
             type: "video"
           - title: "B&H Photo — Understanding Exposure"
-            url: "https://www.youtube.com/watch?v=lBpWJjgEJSA"
+            url: "https://www.youtube.com/watch?v=Edvpu_939l4"
             type: "video"
         practice:
           - "15 min: in Manual mode, set correct exposure for a stationary subject using only 3 adjustments — repeat 10 times"
@@ -158,10 +158,10 @@ nodes:
           - "ISO choice explained correctly for 9/10 lighting scenarios presented"
         resources:
           - title: "Karl Taylor — Manual Exposure Masterclass"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
           - title: "Peter McKinnon — How I Expose My Photos"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
         practice:
           - "20 min: photograph in changing light conditions (indoors to outdoors, shade to sun) adjusting exposure in real time"
@@ -196,7 +196,7 @@ nodes:
           - "0 recoverable exposure errors on a 100-shot professional shoot"
         resources:
           - title: "Karl Taylor — Exposure in Extreme Conditions"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "In extreme contrast scenes, bracket your exposures (3 shots at -2, 0, +2 EV) and blend later for maximum dynamic range"
@@ -278,7 +278,7 @@ nodes:
           - "Focus stacking workflow produces tack-sharp macro images at any magnification"
         resources:
           - title: "Karl Taylor — Professional Focus Techniques"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Focus should be invisible to the viewer — if someone notices the focus technique, it is drawing attention away from the subject"
@@ -299,7 +299,7 @@ nodes:
           - "Horizon within 1° of level in ≥90% of landscape images"
         resources:
           - title: "Peter McKinnon — 5 Composition Tips for Better Photos"
-            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            url: "https://www.youtube.com/watch?v=bpDRftkteFE"
             type: "video"
           - title: "B&H Photo — Composition Fundamentals"
             url: "https://www.youtube.com/watch?v=7ZVyNjKSr0M"
@@ -323,7 +323,7 @@ nodes:
           - "Composition matches stated intent in 80%+ of images from a focused shoot"
         resources:
           - title: "Peter McKinnon — Advanced Composition Techniques"
-            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            url: "https://www.youtube.com/watch?v=bpDRftkteFE"
             type: "video"
           - title: "Tony Northrup — Leading Lines, Framing & Negative Space"
             url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
@@ -347,7 +347,7 @@ nodes:
           - "0 important compositional elements cropped by mistake in final edits"
         resources:
           - title: "Karl Taylor — Compositional Storytelling"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Visualize the final frame before raising the camera — the best compositions happen in your mind before the viewfinder"
@@ -361,7 +361,7 @@ nodes:
           - "PSA merit star achieved at least once in landscape or travel category"
         resources:
           - title: "Peter McKinnon — Developing Your Photographic Eye"
-            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            url: "https://www.youtube.com/watch?v=bpDRftkteFE"
             type: "video"
         tips:
           - "A distinctive compositional voice emerges from consistent practice, not from copying trends — shoot what interests you, not what gets likes"
@@ -399,7 +399,7 @@ nodes:
           - "Uses at least 2 different focal lengths intentionally in a single shoot"
         resources:
           - title: "Karl Taylor — Lens Selection Masterclass"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         practice:
           - "20 min: shoot the same scene with 3 different focal lengths and write down why you would choose each for publication"
@@ -433,7 +433,7 @@ nodes:
           - "Can identify focal length of an unlabeled image within ±15mm in 8/10 examples"
         resources:
           - title: "Karl Taylor — Professional Lens Selection"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Knowing the exact lens for a brief comes from experience — shoot enough and you will pre-visualize the focal length before picking up the camera"
@@ -454,7 +454,7 @@ nodes:
           - "Can name 3 lighting qualities (hard, soft, diffuse) and give real-world examples of each"
         resources:
           - title: "Karl Taylor — Understanding Light for Photography"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
           - title: "Tony Northrup — Natural Light Photography Tips"
             url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
@@ -478,10 +478,10 @@ nodes:
           - "Demonstrates 3 portrait lighting patterns correctly in a controlled test"
         resources:
           - title: "Karl Taylor — Portrait Lighting Patterns"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
           - title: "Peter McKinnon — How To Use Natural Light"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
         practice:
           - "20 min: practice creating Rembrandt, butterfly, and split lighting using a window as a single light source"
@@ -502,7 +502,7 @@ nodes:
           - "0 lighting technical failures on a portrait session (harsh shadows, unflattering direction)"
         resources:
           - title: "Karl Taylor — Advanced Natural Light Techniques"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Train yourself to read light in every environment — notice the direction, quality, and color of light even when you are not shooting"
@@ -516,7 +516,7 @@ nodes:
           - "Workshop students can identify and reproduce 5 lighting patterns after 1 day of instruction"
         resources:
           - title: "Karl Taylor — Lighting Masterclass"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Study paintings by old masters (Rembrandt, Vermeer, Caravaggio) — their lighting techniques directly apply to photography"
@@ -542,7 +542,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
             type: "video"
           - title: "B&H Photo — Understanding Histograms"
-            url: "https://www.youtube.com/watch?v=lBpWJjgEJSA"
+            url: "https://www.youtube.com/watch?v=Edvpu_939l4"
             type: "video"
         practice:
           - "10 min: take 10 photos and check the histogram after each — identify if the exposure is over, under, or correct"
@@ -582,7 +582,7 @@ nodes:
           - "0 shots with unexplained clipping in professional work"
         resources:
           - title: "Karl Taylor — Advanced Exposure Control"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Use exposure lock (AEL) to decouple metering from composition — meter on the subject, lock, recompose, shoot"
@@ -636,7 +636,7 @@ nodes:
           - "Color palette intentional and harmonious in 75%+ of images in critique"
         resources:
           - title: "Peter McKinnon — Color Theory for Photographers"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
         practice:
           - "15 min: set custom white balance using a grey card and compare to AWB in mixed lighting"
@@ -657,7 +657,7 @@ nodes:
           - "HSL adjustments in Lightroom used correctly on ≥80% of edited images"
         resources:
           - title: "Peter McKinnon — Color Grading in Lightroom"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
         tips:
           - "Use the HSL panel's luminance channel to brighten skin tones (orange slider) without affecting overall exposure"
@@ -670,7 +670,7 @@ nodes:
           - "Color consistency across a 20-image editorial set: all images pass art director review without color notes"
         resources:
           - title: "Karl Taylor — Signature Color & Style"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "A signature color language is built through consistent choices over years, not by copying presets — develop your own"
@@ -694,7 +694,7 @@ nodes:
             url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
             type: "video"
           - title: "Peter McKinnon — How I Edit My Photos"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
         practice:
           - "15 min: import a RAW file into Lightroom and adjust exposure, highlights, shadows, and white balance"
@@ -715,7 +715,7 @@ nodes:
           - "Edit covers exposure, tone, color, and cleanup in 100% of image edits"
         resources:
           - title: "Peter McKinnon — Advanced Lightroom Editing"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
           - title: "Tony Northrup — Lightroom Workflow & Organization"
             url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
@@ -754,7 +754,7 @@ nodes:
           - "Art director requires 0 re-edits on 80%+ of delivered image sets"
         resources:
           - title: "Peter McKinnon — Professional Editing Workflow"
-            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            url: "https://www.youtube.com/watch?v=ixRKeQMa7Nc"
             type: "video"
         tips:
           - "Editing should serve the image, not call attention to itself — if a viewer notices the editing, it is overdone"
@@ -794,7 +794,7 @@ nodes:
           - "Flash exposures consistent within ±0.3 EV across a 10-image sequence"
         resources:
           - title: "Karl Taylor — Off-Camera Flash Setup"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
           - title: "Tony Northrup — Manual Flash for Consistent Results"
             url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
@@ -819,7 +819,7 @@ nodes:
           - "0 sync-speed artifacts on any flash image in portfolio"
         resources:
           - title: "Karl Taylor — Advanced Flash Techniques"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Know your camera's max sync speed (usually 1/200-1/250s) — exceeding it without HSS causes a black band across the image"
@@ -833,7 +833,7 @@ nodes:
           - "Workshop students: 90%+ rate lighting instruction as 'significantly improved my work'"
         resources:
           - title: "Karl Taylor — Studio Lighting Masterclass"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Lighting design is about intent — before placing a light, ask: what mood, what direction, what story does this light tell?"
@@ -874,7 +874,7 @@ nodes:
           - "Images from 2+ genres in portfolio rated technically correct by instructor"
         resources:
           - title: "Peter McKinnon — How To Find Your Photography Niche"
-            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            url: "https://www.youtube.com/watch?v=bpDRftkteFE"
             type: "video"
           - title: "B&H Photo — Genre-Specific Photography Tips"
             url: "https://www.youtube.com/watch?v=7ZVyNjKSr0M"
@@ -897,7 +897,7 @@ nodes:
           - "Secondary genre images rated publishable by working professional in that genre"
         resources:
           - title: "Karl Taylor — Professional Genre Techniques"
-            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            url: "https://www.youtube.com/watch?v=RS2jdUQLwbM"
             type: "video"
         tips:
           - "Genre mastery means understanding the unique business requirements — portrait photographers need client management skills; landscape photographers need patience and planning"

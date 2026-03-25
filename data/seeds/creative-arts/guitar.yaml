@@ -96,10 +96,10 @@ nodes:
             url: "https://www.justinguitar.com/modules/strumming-dynamics-1"
             type: "course"
           - title: "Marty Music — 4 Strumming Patterns Every Beginner Needs"
-            url: "https://www.youtube.com/watch?v=DRAfUOqb7IA"
+            url: "https://www.youtube.com/watch?v=ely9LaJJJr4"
             type: "video"
           - title: "Paul Davids — How To Use a Capo"
-            url: "https://www.youtube.com/watch?v=V2xY8Iz8axo"
+            url: "https://www.youtube.com/watch?v=xPZOx58_9mc"
             type: "video"
         practice:
           - "10 min daily: practice 4 different strumming patterns over the same chord progression (e.g., G-C-D-Em) at 100 BPM"
@@ -120,7 +120,7 @@ nodes:
           - "Walking bass line between chords demonstrated in at least 2 songs"
         resources:
           - title: "Paul Davids — How To Figure Out Chords By Ear"
-            url: "https://www.youtube.com/watch?v=ACLZH88Knbw"
+            url: "https://www.youtube.com/watch?v=_MEcFu3CevQ"
             type: "video"
         tips:
           - "Learning chords by ear is faster when you identify the bass note first — hum the lowest note and find it on your guitar"
@@ -170,7 +170,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/rhythm-reading-essential"
             type: "course"
           - title: "Marty Music — How To Play In Time (Metronome Practice)"
-            url: "https://www.youtube.com/watch?v=6cMjpGKbkBs"
+            url: "https://www.youtube.com/watch?v=txsw1O2gEe4"
             type: "video"
         practice:
           - "5 min daily: strum quarter notes with a metronome at 60, 80, and 100 BPM — tap foot on every beat"
@@ -195,7 +195,7 @@ nodes:
             url: "https://www.justinguitar.com/guitar-lessons/all-about-syncopation-te-831"
             type: "course"
           - title: "Paul Davids — Rhythm Guitar Techniques You NEED To Know"
-            url: "https://www.youtube.com/watch?v=F5QsEaanwnk"
+            url: "https://www.youtube.com/watch?v=ADR4-sIXoPE"
             type: "video"
         practice:
           - "10 min daily: play syncopated strumming patterns (accent the 'and' counts) at 90 BPM with a metronome"
@@ -216,7 +216,7 @@ nodes:
           - "Records a rhythm track for a song — tempo deviates ≤3 BPM from start to finish without click track"
         resources:
           - title: "Paul Davids — Odd Time Signatures Explained"
-            url: "https://www.youtube.com/watch?v=_K6_kPKtix0"
+            url: "https://www.youtube.com/watch?v=ayT-4nQ_dTM"
             type: "video"
         tips:
           - "When learning odd meters like 7/8, subdivide into groups (e.g., 2+2+3 or 3+2+2) rather than counting every beat"
@@ -228,8 +228,8 @@ nodes:
           - "Plays rubato (free time) passage and returns to click tempo within 1 beat"
           - "Demonstrates metric modulation — transitions from one tempo to a mathematically related tempo mid-song"
         resources:
-          - title: "Guitareo — Advanced Rhythm Concepts"
-            url: "https://www.guitareo.com/guitar-lessons/rhythm"
+          - title: "JustinGuitar — Advanced Rhythm & Groove"
+            url: "https://www.justinguitar.com/modules/rhythm-guitar-advanced"
             type: "course"
         tips:
           - "Metric modulation is easier to internalize if you practice feeling the new subdivision for 4 bars before the transition point"
@@ -271,7 +271,7 @@ nodes:
             url: "https://www.justinguitar.com/guitar-lessons/f-chord-full-grip-ch-240"
             type: "course"
           - title: "Marty Music — Barre Chords Made Easy"
-            url: "https://www.youtube.com/watch?v=QDY4VlPo8rE"
+            url: "https://www.youtube.com/watch?v=lvkFFyCXjYc"
             type: "video"
         practice:
           - "5 min daily: partial barre exercise — barre strings 1-2 only, then 1-3, then 1-4 with index finger, checking each string rings"
@@ -318,7 +318,7 @@ nodes:
           - "Derives the pentatonic scale pattern from each CAGED chord shape"
         resources:
           - title: "Paul Davids — CAGED System Deep Dive"
-            url: "https://www.youtube.com/watch?v=w5gLj8iLgyE"
+            url: "https://www.youtube.com/watch?v=L-0c5QTQ8Q0"
             type: "video"
         tips:
           - "When learning CAGED shapes, visualize the open chord 'inside' the barre shape — it makes the system click"
@@ -372,7 +372,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/fingerstyle-fingerpicking"
             type: "course"
           - title: "Marty Music — Fingerpicking For Beginners"
-            url: "https://www.youtube.com/watch?v=yMBJqOYMc0A"
+            url: "https://www.youtube.com/watch?v=RY3BllNolnY"
             type: "video"
         practice:
           - "10 min daily: p-i-m-a arpeggio pattern over C-G-Am-Em at 60 BPM — focus on thumb accuracy on the correct bass string for each chord"
@@ -397,7 +397,7 @@ nodes:
             url: "https://www.justinguitar.com/guitar-lessons/travis-picking-basic-pattern-te-601"
             type: "course"
           - title: "Paul Davids — Fingerstyle Guitar Essentials"
-            url: "https://www.youtube.com/watch?v=sSgS4jVkVzM"
+            url: "https://www.youtube.com/watch?v=m6b371mNkCw"
             type: "video"
         practice:
           - "15 min daily: Travis picking — alternate bass with thumb while adding melody notes on treble strings, starting at 60 BPM"
@@ -419,7 +419,7 @@ nodes:
           - "Plays a banjo roll or cross-picking pattern at 100 BPM cleanly for 1 minute"
         resources:
           - title: "Paul Davids — Advanced Fingerstyle Techniques"
-            url: "https://www.youtube.com/watch?v=sSgS4jVkVzM"
+            url: "https://www.youtube.com/watch?v=m6b371mNkCw"
             type: "video"
         tips:
           - "Hybrid picking (pick + fingers together) opens up speed and tonal variety — practice holding the pick while using m and a fingers"
@@ -433,7 +433,7 @@ nodes:
           - "Incorporates percussive techniques (body slaps, string snaps, harmonics) musically in an original arrangement"
         resources:
           - title: "Paul Davids — Fingerstyle Masterclass"
-            url: "https://www.youtube.com/watch?v=sSgS4jVkVzM"
+            url: "https://www.youtube.com/watch?v=m6b371mNkCw"
             type: "video"
         tips:
           - "Original fingerstyle arrangements need a strong bass line as the anchor — write the bass part first, then layer melody and harmony"
@@ -477,7 +477,7 @@ nodes:
             url: "https://www.justinguitar.com/guitar-lessons/the-minor-pentatonic-scale-sc-001"
             type: "course"
           - title: "Marty Music — Pentatonic Scale For Beginners"
-            url: "https://www.youtube.com/watch?v=1I3JdBits1A"
+            url: "https://www.youtube.com/watch?v=83GZUBdupaI"
             type: "video"
         practice:
           - "10 min daily: play minor pentatonic box 1 ascending and descending with alternate picking at 60-80 BPM"
@@ -503,7 +503,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/pentatonic-playground"
             type: "course"
           - title: "Paul Davids — The Only Scale Video You'll Ever Need"
-            url: "https://www.youtube.com/watch?v=vPoEoYl9lUc"
+            url: "https://www.youtube.com/watch?v=X9rYOhX77mA"
             type: "video"
         practice:
           - "15 min daily: connect pentatonic boxes 1 through 5 by sliding between positions — play the full fretboard at 80-100 BPM"
@@ -582,7 +582,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/practical-music-theory"
             type: "course"
           - title: "Marty Music — Music Theory for Guitar Players"
-            url: "https://www.youtube.com/watch?v=1LaGIbCLQJo"
+            url: "https://www.youtube.com/watch?v=6V4SRq1SaMI"
             type: "video"
         practice:
           - "10 min: build major and minor triads on one string from any root note — say the interval name (root, 3rd, 5th) aloud"
@@ -630,7 +630,7 @@ nodes:
           - "Constructs maj7, min7, dom7, min7b5, and dim7 chords from any root on the fretboard"
         resources:
           - title: "Paul Davids — Secondary Dominants Explained"
-            url: "https://www.youtube.com/watch?v=py4XiMECfSA"
+            url: "https://www.youtube.com/watch?v=xDZi5XkqS8U"
             type: "video"
         tips:
           - "Secondary dominants are easier to hear than to explain — listen for the moment a chord 'wants' to resolve to the next chord more strongly than expected"
@@ -691,7 +691,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/blues-lead-guitar"
             type: "course"
           - title: "Marty Music — Your First Guitar Solo"
-            url: "https://www.youtube.com/watch?v=1zCOW5Ie0ZM"
+            url: "https://www.youtube.com/watch?v=xJH21UfcgVU"
             type: "video"
         practice:
           - "10 min daily: 'call and response' exercise — play a 2-bar phrase, then improvise a 2-bar answer using only 4-5 notes"
@@ -717,7 +717,7 @@ nodes:
             url: "https://www.justinguitar.com/guitar-lessons/vibrato-te-401"
             type: "course"
           - title: "Paul Davids — How To Improvise on Guitar"
-            url: "https://www.youtube.com/watch?v=V7UJoSFrKBk"
+            url: "https://www.youtube.com/watch?v=NbNH_C3QAS0"
             type: "video"
         practice:
           - "10 min daily: bending exercise — fret the target note, hear it, then bend from 2 frets below to match; verify with a tuner"
@@ -740,7 +740,7 @@ nodes:
           - "Transcribes an 8-bar solo from a recording by ear in ≤30 minutes"
         resources:
           - title: "Paul Davids — Advanced Lead Guitar Techniques"
-            url: "https://www.youtube.com/watch?v=V7UJoSFrKBk"
+            url: "https://www.youtube.com/watch?v=NbNH_C3QAS0"
             type: "video"
         tips:
           - "Target chord tones (root, 3rd, 5th) on beat 1 of each bar — this single habit makes solos sound intentional instead of random"
@@ -753,8 +753,8 @@ nodes:
           - "Transcribes a complex solo (e.g., jazz or fusion) from recording by ear in ≤1 hour"
           - "Teaches a lead guitar concept to an intermediate student resulting in measurable improvement in their playing"
         resources:
-          - title: "Guitareo — Soloing Masterclass"
-            url: "https://www.guitareo.com/guitar-lessons/lead"
+          - title: "JustinGuitar — Advanced Lead Guitar"
+            url: "https://www.justinguitar.com/modules/blues-lead-guitar"
             type: "course"
         tips:
           - "The mark of expert soloing is restraint — every note serves the music; if a note does not add meaning, leave silence instead"
@@ -800,7 +800,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/gear-knowledge"
             type: "course"
           - title: "Marty Music — Understanding Guitar Tone"
-            url: "https://www.youtube.com/watch?v=lZ3MZ6rAavE"
+            url: "https://www.youtube.com/watch?v=1988Wd10i-E"
             type: "video"
         practice:
           - "5 min: play the same chord progression at 3 distinct dynamic levels (soft, medium, loud) and record to hear the difference"
@@ -822,7 +822,7 @@ nodes:
           - "Recreates a recognizable guitar tone from a well-known song (e.g., clean chorus tone, overdriven crunch) using available gear within 10 minutes"
         resources:
           - title: "Paul Davids — Guitar Effects Explained"
-            url: "https://www.youtube.com/watch?v=YyAlcSalXjQ"
+            url: "https://www.youtube.com/watch?v=UUbyZwXjQ-8"
             type: "video"
           - title: "JustinGuitar — Effects Pedals for Beginners"
             url: "https://www.justinguitar.com/modules/gear-knowledge"
@@ -847,7 +847,7 @@ nodes:
           - "Plays natural harmonics at frets 5, 7, and 12 cleanly with consistent volume"
         resources:
           - title: "Paul Davids — Finding Your Signature Guitar Tone"
-            url: "https://www.youtube.com/watch?v=YyAlcSalXjQ"
+            url: "https://www.youtube.com/watch?v=UUbyZwXjQ-8"
             type: "video"
         tips:
           - "Describe your target tone in words before touching a knob — 'warm overdrive with slapback delay' is a clearer goal than randomly tweaking"
@@ -860,8 +860,8 @@ nodes:
           - "Records a guitar part in a studio setting where the producer accepts the tone without requesting changes"
           - "Demonstrates the same musical phrase with 5 distinctly different tones, each appropriate for a different genre (jazz, blues, metal, country, ambient)"
         resources:
-          - title: "Guitareo — Advanced Tone Shaping"
-            url: "https://www.guitareo.com/guitar-lessons/tone"
+          - title: "JustinGuitar — Guitar Tone & Gear"
+            url: "https://www.justinguitar.com/modules/gear-knowledge"
             type: "course"
         tips:
           - "Your tone is your sonic fingerprint — develop it by playing through as many different guitars and amps as possible to discover what you gravitate toward"
@@ -907,7 +907,7 @@ nodes:
             url: "https://www.justinguitar.com/guitar-lessons/how-to-read-tab-bc-108"
             type: "course"
           - title: "Marty Music — Reading Guitar TAB for Beginners"
-            url: "https://www.youtube.com/watch?v=IKnCGRsVVBY"
+            url: "https://www.youtube.com/watch?v=pQC3JsbgaTw"
             type: "video"
         practice:
           - "10 min daily: read through a simple TAB transcription of a song you know and play along"
@@ -930,8 +930,8 @@ nodes:
           - title: "JustinGuitar — Reading Standard Notation"
             url: "https://www.justinguitar.com/modules/reading-music-standard-notation"
             type: "course"
-          - title: "Guitareo — Lead Sheet Reading"
-            url: "https://www.guitareo.com/guitar-lessons/reading"
+          - title: "JustinGuitar — Reading Music & Lead Sheets"
+            url: "https://www.justinguitar.com/modules/reading-music-standard-notation"
             type: "course"
         practice:
           - "5 min daily: sight-read simple melodies from standard notation in first position (frets 0-4)"
@@ -1013,7 +1013,7 @@ nodes:
             url: "https://www.justinguitar.com/modules/performance-skills"
             type: "course"
           - title: "Marty Music — Tips for Your First Performance"
-            url: "https://www.youtube.com/watch?v=0Y8JTasqdSQ"
+            url: "https://www.youtube.com/watch?v=rfAtb5F2-60"
             type: "video"
         practice:
           - "15 min weekly: record a full 3-song set as if performing for an audience — no stopping, no restarting"
@@ -1038,8 +1038,8 @@ nodes:
           - title: "JustinGuitar — Jamming & Playing With Others"
             url: "https://www.justinguitar.com/modules/performance-skills"
             type: "course"
-          - title: "Guitareo — Stage Performance Essentials"
-            url: "https://www.guitareo.com/guitar-lessons/performance"
+          - title: "JustinGuitar — Stage Performance Skills"
+            url: "https://www.justinguitar.com/modules/performance-skills"
             type: "course"
         practice:
           - "Play with other musicians at least once a month — jam sessions, open mics, or just a friend with a guitar"
@@ -1061,8 +1061,8 @@ nodes:
           - "Performs in ≥3 different venue types (e.g., coffee shop, bar, outdoor, house concert) and adapts volume, setlist, and energy to each"
           - "Repertoire includes songs in ≥4 genres, demonstrated on demand"
         resources:
-          - title: "Guitareo — Gigging & Setlist Building"
-            url: "https://www.guitareo.com/guitar-lessons/performance"
+          - title: "JustinGuitar — Gigging & Setlist Building"
+            url: "https://www.justinguitar.com/modules/performance-skills"
             type: "course"
         tips:
           - "Build setlists with intentional energy flow: open strong, build energy, place the ballad at 60%, close with your best song"
