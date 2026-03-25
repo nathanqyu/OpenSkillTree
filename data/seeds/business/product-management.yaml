@@ -124,8 +124,8 @@ nodes:
           - "≥90% of stories have at least 3 acceptance criteria"
           - "Engineering starts work without spec clarification questions on 60%+ of tickets"
         resources:
-          - title: "Product School - How to Write a Product Requirements Document"
-            url: "https://www.youtube.com/watch?v=SBwq9Jz2KeE"
+          - title: "Product School - How to Write Great Product Requirements (Amazon Sr PM)"
+            url: "https://www.youtube.com/watch?v=ydHLajgdT4c"
             type: "video"
           - title: "Lenny's Newsletter - My Favorite Product Management Templates"
             url: "https://www.lennysnewsletter.com/p/my-favorite-templates-issue-37"
@@ -149,8 +149,8 @@ nodes:
           - title: "SVPG - Product Discovery Techniques (Marty Cagan)"
             url: "https://www.svpg.com/product-discovery-techniques/"
             type: "article"
-          - title: "Product School - PRD Template & Best Practices"
-            url: "https://www.youtube.com/watch?v=U56PjLIXJcs"
+          - title: "Product School - How to Write Great Product Requirements (Amazon Sr PM)"
+            url: "https://www.youtube.com/watch?v=ydHLajgdT4c"
             type: "video"
         practice:
           - "Before your next sprint, list 10 edge cases for the top feature and add them to the spec (30 minutes)"
@@ -202,11 +202,11 @@ nodes:
           - "Every shipped feature has ≥1 success metric defined before launch"
           - "Weekly metrics review completed within 2 days of week end"
         resources:
-          - title: "Lenny's Newsletter - Choosing Your North Star Metric"
-            url: "https://www.lennysnewsletter.com/p/what-is-a-north-star-metric"
+          - title: "Lenny Rachitsky - Choosing Your North Star Metric"
+            url: "https://www.lennysnewsletter.com/p/choosing-your-north-star-metric"
             type: "article"
-          - title: "Product School - KPIs for Product Managers"
-            url: "https://www.youtube.com/watch?v=bi3BcQM2k28"
+          - title: "Product School - Product KPIs & Metrics That Every PM Should Know"
+            url: "https://www.youtube.com/watch?v=WBqyg0Nx2_Q"
             type: "video"
         practice:
           - "For 3 features in a product you use, define 1 success metric and 1 guardrail metric for each (20 minutes)"
@@ -228,8 +228,8 @@ nodes:
           - title: "Reforge - Mastering Product Experimentation"
             url: "https://www.reforge.com/blog/product-experimentation"
             type: "article"
-          - title: "Product School - A/B Testing for Product Managers"
-            url: "https://www.youtube.com/watch?v=XjGYxnb0YHY"
+          - title: "Product School - How to Run A/B Tests Successfully"
+            url: "https://www.youtube.com/watch?v=NsiDwGntnpA"
             type: "video"
         practice:
           - "Write an analytics spec for an upcoming feature: list every event to track, with event name, properties, and trigger conditions (30 minutes)"
@@ -287,8 +287,8 @@ nodes:
           - title: "Teresa Torres - How to Conduct an Effective Customer Interview"
             url: "https://www.producttalk.org/2022/12/customer-interviews/"
             type: "article"
-          - title: "Product School - User Research for Product Managers"
-            url: "https://www.youtube.com/watch?v=TkAVfcJjrBk"
+          - title: "Product School - Customer Interviews: Lessons After 300 Interviews (Zillow Sr PM)"
+            url: "https://www.youtube.com/watch?v=4_RncQFFBqE"
             type: "video"
         practice:
           - "Write a 10-question interview guide for a product problem, focusing on open-ended 'tell me about...' questions (20 minutes)"
@@ -364,11 +364,11 @@ nodes:
         metrics:
           - "All backlog items have RICE or equivalent scores before sprint planning"
         resources:
-          - title: "Lenny's Newsletter - The Most Common Prioritization Frameworks"
-            url: "https://www.lennysnewsletter.com/p/prioritization"
+          - title: "Lenny Rachitsky - Prioritizing"
+            url: "https://www.lennysnewsletter.com/p/prioritizing"
             type: "article"
-          - title: "Product School - RICE Scoring Model Explained"
-            url: "https://www.youtube.com/watch?v=2fLCBXmVXxk"
+          - title: "ProductPlan - What is the RICE Scoring Model?"
+            url: "https://www.youtube.com/watch?v=pzyRafZJ-0M"
             type: "video"
         practice:
           - "Score 10 backlog items using RICE (Reach, Impact, Confidence, Effort) and rank them (30 minutes)"
@@ -444,8 +444,8 @@ nodes:
         metrics:
           - "Weekly product status update sent on time 90%+ of weeks"
         resources:
-          - title: "Product School - Stakeholder Management for PMs"
-            url: "https://www.youtube.com/watch?v=GwPxTbLmjAA"
+          - title: "Product School - Effective Tips & Tools for Stakeholder Management (Peloton Sr PM)"
+            url: "https://www.youtube.com/watch?v=98bmkeIjZjE"
             type: "video"
           - title: "SVPG - Product Manager vs Product Owner"
             url: "https://www.svpg.com/product-manager-vs-product-owner/"
@@ -525,8 +525,8 @@ nodes:
           - title: "Teresa Torres - Assumption Testing (producttalk.org)"
             url: "https://www.producttalk.org/2023/10/assumption-testing/"
             type: "article"
-          - title: "Product School - Product Discovery Explained"
-            url: "https://www.youtube.com/watch?v=s0_6eAJ0p1g"
+          - title: "Product School - A Scalable Approach to Product Discovery (Atlassian Sr PM)"
+            url: "https://www.youtube.com/watch?v=-9iNbo-WOsQ"
             type: "video"
         practice:
           - "List 5 assumptions behind your next feature and rank them by risk (20 minutes)"
@@ -600,11 +600,11 @@ nodes:
         metrics:
           - "Backlog groomed with ≥2 sprints of ready stories at all times"
         resources:
-          - title: "Lenny's Newsletter - How to Build a Product Roadmap"
-            url: "https://www.lennysnewsletter.com/p/how-to-build-a-product-roadmap"
+          - title: "Lenny Rachitsky - Building Better Product Roadmaps"
+            url: "https://www.lennysnewsletter.com/p/building-better-roadmaps-janna-bastow"
             type: "article"
-          - title: "Product School - Product Roadmap Basics"
-            url: "https://www.youtube.com/watch?v=1bQILAKxfnY"
+          - title: "Product School - How to Build a Product Roadmap (Walmart Sr PM)"
+            url: "https://www.youtube.com/watch?v=x0d_GE_jWGE"
             type: "video"
         practice:
           - "Groom your backlog: ensure the top 20 items have clear acceptance criteria and priority order (30 minutes)"
@@ -675,8 +675,8 @@ nodes:
         metrics:
           - "Release notes completed 5 days before ship date on 90%+ of launches"
         resources:
-          - title: "Product School - How to Launch a Product"
-            url: "https://www.youtube.com/watch?v=mXNBCsh4PNc"
+          - title: "Product School - How to Launch a New Product (Spotify PM)"
+            url: "https://www.youtube.com/watch?v=Rr_RO0Rwp8k"
             type: "video"
           - title: "Lenny's Newsletter - How to Launch a Product Feature"
             url: "https://www.lennysnewsletter.com/"
@@ -699,8 +699,8 @@ nodes:
           - title: "Reforge - Growth Series: Go-to-Market Strategy"
             url: "https://www.reforge.com/blog/go-to-market-strategy"
             type: "article"
-          - title: "Product School - Go-to-Market Strategy"
-            url: "https://www.youtube.com/watch?v=1_OXz3nXlf0"
+          - title: "Dreamit Ventures - How To Create a Killer Go-To-Market (GTM) Strategy"
+            url: "https://www.youtube.com/watch?v=KMVjS5HRHIk"
             type: "video"
         practice:
           - "Write a GTM plan for an upcoming feature: launch tier, audience, messaging, success metrics, rollback criteria (1 hour)"
@@ -753,8 +753,8 @@ nodes:
         metrics:
           - "Sprint retrospective action items completed ≥80% of the time"
         resources:
-          - title: "Product School - Working with Engineers as a PM"
-            url: "https://www.youtube.com/watch?v=YGVKtHkHPKI"
+          - title: "Product School - How to Work with Product Managers (Box Software Engineer)"
+            url: "https://www.youtube.com/watch?v=qRQiQxhmhlk"
             type: "video"
           - title: "SVPG - The PM/Engineer Relationship"
             url: "https://www.svpg.com/the-pm-engineer-relationship/"
@@ -855,8 +855,8 @@ nodes:
           - title: "Reforge - Product Strategy Program"
             url: "https://www.reforge.com/programs/strategy"
             type: "course"
-          - title: "Lenny's Newsletter - How to Define Product Strategy"
-            url: "https://www.lennysnewsletter.com/p/how-to-build-a-great-product-strategy"
+          - title: "Lenny Rachitsky - How to Create a Winning Product Strategy"
+            url: "https://www.lennysnewsletter.com/p/how-to-create-a-winning-product-strategy"
             type: "article"
         practice:
           - "Write a strategy document covering: vision (where we are going), bets (how we will get there), and success metrics (how we will know) (2 hours)"
