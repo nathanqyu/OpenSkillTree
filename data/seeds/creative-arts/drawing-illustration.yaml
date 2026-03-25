@@ -527,6 +527,22 @@ nodes:
           - "Objects diminish in size consistently with distance from the viewer — a far chair is proportionally smaller than a near chair based on its position in the perspective grid"
           - "Horizon line placed at eye level and remains consistent across the entire drawing — all vanishing points sit on it"
           - "Can draw a simple box in 1-point perspective with correct convergence, then place a second box beside it at the same depth with matching perspective"
+        resources:
+          - title: "Drawabox — 250 Box Challenge (Perspective Foundation)"
+            url: "https://drawabox.com/lesson/250boxes"
+            type: "exercise"
+          - title: "Proko — 1-Point Perspective for Beginners"
+            url: "https://www.youtube.com/watch?v=nAlCyQqEZSU"
+            type: "video"
+        practice:
+          - "15 min: draw a room interior in 1-point perspective with all parallel lines converging to a single vanishing point"
+          - "10 min: place 3 boxes at different depths in a 1-point perspective scene with consistent size diminishment"
+        projects:
+          - "Draw a room interior in 1-point perspective with furniture (table, chair, bookshelf) placed at correct size and depth"
+          - "Draw 5 boxes in 1-point perspective at different positions, all converging to the same vanishing point"
+        tips:
+          - "The horizon line is ALWAYS at your eye level — if you are standing, it is at standing eye height; if sitting, it drops to seated eye height"
+          - "Check convergence by extending lines with a straightedge — if they do not meet at the vanishing point, adjust"
       - level: intermediate
         criteria: >
           Constructs accurate 2-point perspective scenes — the most common perspective
@@ -541,6 +557,23 @@ nodes:
           - "Ellipses in perspective have minor axis aligned to the vanishing point within 5 degrees — tested on 3 ellipses at different depths (near, mid, far)"
           - "Perspective grid used to place 5 equally-spaced elements (e.g., street lamps, columns) receding into distance — spacing diminishes correctly"
           - "250 Box Challenge completed: convergence accuracy measurably improved from first 10 boxes to last 10 boxes — checked by extending edges to test vanishing point consistency"
+        resources:
+          - title: "Drawabox — Lesson 6: Everyday Objects in Perspective"
+            url: "https://drawabox.com/lesson/6"
+            type: "course"
+          - title: "Proko — 2-Point Perspective"
+            url: "https://www.youtube.com/watch?v=nAlCyQqEZSU"
+            type: "video"
+        practice:
+          - "20 min: draw a building in 2-point perspective with vertical edges truly vertical and receding edges converging correctly"
+          - "15 min: draw ellipses in perspective (cups, wheels) with minor axis aligned to vanishing point"
+          - "10 min: use a perspective grid to place 5 equally-spaced elements receding into distance"
+        projects:
+          - "Draw a 2-point perspective building with correct convergence verified by straightedge"
+          - "Complete the 250 Box Challenge or draw 50 freehand boxes in 3-point perspective"
+        tips:
+          - "Ellipses in perspective always have their minor axis pointing at the vanishing point — this is the rule that makes wheels and cups look correct"
+          - "Perspective is about training your eye, not using rulers — freehand perspective should eventually look correct without construction lines"
       - level: advanced
         criteria: >
           Applies 3-point perspective for dramatic viewpoints (bird's-eye looking down,
@@ -555,6 +588,12 @@ nodes:
           - "3-point perspective cityscape has all three vanishing points functioning correctly with consistent convergence across all buildings"
           - "Freehand perspective sketch of a street scene (no ruler, no grid) rated as spatially convincing by 8/10 viewers"
           - "Vehicle or complex machine drawn in perspective with correct proportions, ellipses, and surface curves — rated as spatially correct by an instructor"
+        resources:
+          - title: "Drawabox — Lesson 7: Vehicles in Perspective"
+            url: "https://drawabox.com/lesson/7"
+            type: "course"
+        tips:
+          - "Foreshortening the human figure is the hardest perspective application — practice extended limbs and reclining poses to train your eye"
       - level: expert
         criteria: >
           Perspective is fully internalized — draws complex environments from imagination
@@ -568,6 +607,12 @@ nodes:
           - "Students construct accurate 2-point perspective scenes independently after one 2-hour teaching session"
           - "Curvilinear or 5-point perspective drawing demonstrates correct distortion (edges curve toward vanishing points at periphery of vision)"
           - "Environment concept art portfolio includes 5+ imagined scenes in correct perspective — rated hire-ready by an industry professional"
+        resources:
+          - title: "Proko — Advanced Perspective Techniques"
+            url: "https://www.youtube.com/watch?v=nAlCyQqEZSU"
+            type: "video"
+        tips:
+          - "Perspective is fully internalized when you can draw from imagination and it looks spatially correct without construction lines"
     tags: ["perspective", "spatial", "construction"]
 
   # ── COMPOSITION & DESIGN ───────────────────────────────────────────────────
@@ -599,6 +644,23 @@ nodes:
           - "Focal point placed at a rule-of-thirds intersection in 80%+ of compositions — confirmed by overlaying the grid"
           - "Zero tangencies in finished drawings — no edges that barely touch or lines that create unintended visual merges"
           - "Cropping is intentional: subjects are either fully included or cropped decisively (not awkwardly at joints or mid-feature)"
+        resources:
+          - title: "Proko — Composition and Thumbnailing"
+            url: "https://www.youtube.com/watch?v=wg-So3ElA8g"
+            type: "video"
+          - title: "Love Life Drawing — How to Compose a Drawing"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        practice:
+          - "10 min: create 3 thumbnail sketches (2-5 cm each, 3-value max) before starting any finished drawing"
+          - "10 min: practice placing focal points at rule-of-thirds intersections — overlay a 3x3 grid to check"
+          - "5 min: review your last 5 drawings and check for tangencies (edges that barely touch) and awkward cropping"
+        projects:
+          - "Create 3 meaningfully different thumbnail compositions for a single subject before selecting one for a finished drawing"
+          - "Complete 5 drawings with focal points placed at rule-of-thirds intersections"
+        tips:
+          - "The thumbnail test is the most important composition habit: if it does not read clearly at 5 cm, it will not read at full size"
+          - "Never crop hands at the wrist or heads at the forehead — either include the full element or crop decisively mid-limb or mid-torso"
       - level: intermediate
         criteria: >
           Uses leading lines, framing devices (doorways, arches, tree branches), and
@@ -612,6 +674,22 @@ nodes:
           - "Composition uses at least 2 distinct design principles identified by instructor (e.g., leading lines + value contrast, rhythm + framing)"
           - "Negative space has intentional shape — when the background is isolated as a silhouette, it reads as a designed shape rather than random leftover"
           - "5+ thumbnails produced per finished piece with at least 3 substantially different compositional approaches explored"
+        resources:
+          - title: "Proko — Leading Lines and Visual Flow"
+            url: "https://www.youtube.com/watch?v=wg-So3ElA8g"
+            type: "video"
+          - title: "Love Life Drawing — Negative Space and Design"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        practice:
+          - "15 min: produce 5+ thumbnails for each finished piece with meaningful variation — explore different focal points, aspect ratios, and value distributions"
+          - "10 min: practice using leading lines and framing devices in compositions — draw the same scene with and without leading lines"
+        projects:
+          - "Create a 10-image series where each demonstrates a different compositional principle (rule of thirds, leading lines, framing, symmetry, golden ratio)"
+          - "Poll 10 viewers on where their eye goes first in your drawings — confirm it matches your intended focal point"
+        tips:
+          - "Negative space (the empty areas) should have intentional shape — if the background is random leftover, the composition is not designed"
+          - "Professional illustrators produce 10-50 thumbnails before choosing a composition — you should produce at least 5"
       - level: advanced
         criteria: >
           Composes for narrative — uses visual hierarchy to tell a story across the
@@ -627,6 +705,12 @@ nodes:
           - "Composition reads clearly when reduced to thumbnail size (5 cm) — the focal point, value structure, and basic shapes are all identifiable at small scale"
           - "Same subject composed effectively in 3 different aspect ratios (square, 2:3 portrait, 16:9 landscape) — each composition works for its format"
           - "Compositional rule broken intentionally with clear expressive purpose — identified and explained by the artist, confirmed as effective by an instructor"
+        resources:
+          - title: "Proko — Narrative Composition"
+            url: "https://www.youtube.com/watch?v=wg-So3ElA8g"
+            type: "video"
+        tips:
+          - "Compositions for storytelling should be readable as a sequence — the viewer reads primary focal point first, then secondaries, then context"
       - level: expert
         criteria: >
           Compositional design is a defining strength of the portfolio. Creates
@@ -641,6 +725,12 @@ nodes:
           - "Master study analysis correctly identifies 5+ compositional strategies in a classic painting (e.g., leading lines, value grouping, figure placement, color temperature shifts, framing devices)"
           - "Teaches a composition workshop where students produce effective thumbnail compositions by session end — 80%+ of student thumbnails have a clear focal point and readable value structure"
           - "Portfolio consistency: compositional quality is maintained across 10+ pieces (no weak compositions in the set) — meets entry-level concept art or editorial illustration portfolio standards"
+        resources:
+          - title: "Love Life Drawing — Master Study Analysis"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        tips:
+          - "Study master compositions by tracing the visual flow — identify how Rockwell, Leyendecker, or Mucha direct the viewer's eye through the image"
     tags: ["composition", "design", "visual-language"]
 
   # ── FIGURE DRAWING & ANATOMY ───────────────────────────────────────────────
@@ -672,6 +762,26 @@ nodes:
           - "1-minute gesture: proportions roughed in with major masses (head, ribcage, pelvis) indicated as simple shapes — weight distribution (which leg bears weight) is clear"
           - "2-minute gesture: correct proportions (8-head canon within 1/2 head tolerance), joint placement visible (shoulders, elbows, knees, ankles), basic volumes indicated"
           - "Skeletal landmarks (ribcage, pelvis, knees, shoulder line tilt, hip line tilt) placed within 10% of correct position on a standing figure"
+        resources:
+          - title: "Proko — Figure Drawing Fundamentals"
+            url: "https://www.youtube.com/watch?v=74HR59yFZ7Y"
+            type: "video"
+          - title: "Love Life Drawing — Gesture Drawing for Beginners"
+            url: "https://www.youtube.com/watch?v=8j39_YEmISs"
+            type: "video"
+          - title: "Line of Action — Free Timed Pose References"
+            url: "https://line-of-action.com/practice-tools/figure-drawing"
+            type: "tool"
+        practice:
+          - "20 min daily: gesture drawing from Line of Action — 10 poses at 30 seconds each, then 5 poses at 2 minutes each"
+          - "10 min: practice capturing the action line (single sweeping line showing the pose's thrust) in 15-second poses"
+          - "10 min: identify skeletal landmarks (ribcage, pelvis, shoulder/hip tilt) on figure reference photos"
+        projects:
+          - "Fill a sketchbook page with 20+ gesture drawings at 30 seconds each from Line of Action"
+          - "Draw 5 two-minute gestures with correct proportions, major masses indicated, and weight distribution clear"
+        tips:
+          - "Start every figure drawing with the action line — the single sweeping line that captures the pose's energy and direction of thrust"
+          - "Draw figures REGULARLY (at least weekly) — figure drawing improves only with consistent practice, not occasional marathon sessions"
       - level: intermediate
         criteria: >
           Constructs the figure using Loomis or Reilly method with correct proportions.
@@ -687,6 +797,26 @@ nodes:
           - "Major muscle groups identifiable and correctly placed in a 20-minute figure study — deltoid, pectoralis, and quadriceps labeled correctly on a finished study"
           - "Hands drawn with correct proportions: middle finger length equals palm length, fingers taper, thumb opposes correctly — 3 out of 5 hand studies rated 'structurally correct' by instructor"
           - "10-minute figure drawing: full construction from primitives plus shading with 3-5 value range — figure reads as volumetric and anatomically plausible"
+        resources:
+          - title: "Proko — Anatomy for Artists"
+            url: "https://www.youtube.com/watch?v=Pv-gLSFGFsM"
+            type: "course"
+          - title: "Love Life Drawing — How to Draw Hands and Feet"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+          - title: "Andrew Loomis — Figure Drawing for All It's Worth (classic reference)"
+            url: "https://www.youtube.com/watch?v=74HR59yFZ7Y"
+            type: "book"
+        practice:
+          - "20 min daily: timed figure drawing sessions — mix 30-second gestures with 5-minute studies and 10-minute full constructions"
+          - "15 min: study and draw the 10 major muscle groups from front and back view (deltoid, pectoralis, quadriceps, etc.)"
+          - "10 min: draw hands from observation — focus on proportions (middle finger = palm length) and joint articulation"
+        projects:
+          - "Complete a 5-minute figure drawing with proportions, basic anatomy, and a two-value light/shadow pattern"
+          - "Draw hands with correct proportions in 3 different positions (open, fist, pointing)"
+        tips:
+          - "Weight and balance are what make figure drawings look alive — the figure's center of gravity should sit over the weight-bearing foot"
+          - "Study anatomy by drawing it on your own body — use a mirror and mark the muscles you are studying with eyeliner to see them"
       - level: advanced
         criteria: >
           Draws the figure from imagination in varied poses with anatomically plausible
@@ -702,6 +832,12 @@ nodes:
           - "Dynamic pose from imagination conveys intended emotion as rated by 8/10 viewers (e.g., 'confident,' 'fearful,' 'joyful' — without verbal cues)"
           - "20-minute figure drawing: full rendering with smooth value gradations, correct anatomy, hands and feet included with structural accuracy"
           - "Character turnaround sheet (front, three-quarter, side, back) maintains consistent proportions within 5% across all views"
+        resources:
+          - title: "Proko — Drawing Dynamic Poses from Imagination"
+            url: "https://www.youtube.com/watch?v=Pv-gLSFGFsM"
+            type: "video"
+        tips:
+          - "Drawing from imagination requires constructing poses you have drawn hundreds of times from observation — the volume of life drawing is what fills your mental library"
       - level: expert
         criteria: >
           Figure drawing is at professional illustration or concept art level — meets
