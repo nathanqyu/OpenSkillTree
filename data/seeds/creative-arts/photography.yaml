@@ -47,6 +47,22 @@ nodes:
         metrics:
           - "Can switch between Auto, Av, and Tv modes and explain why each is chosen"
           - "Takes 20 photos in Auto mode with correct framing and no camera shake"
+        resources:
+          - title: "Tony Northrup — Photography Basics in 10 Minutes"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+          - title: "B&H Photo — Camera Basics: Understanding Your Camera"
+            url: "https://www.youtube.com/watch?v=7ZVyNjKSr0M"
+            type: "video"
+        practice:
+          - "15 min: practice switching between Auto, Av, and Tv modes and take 5 photos in each — note how the camera's choices differ"
+          - "10 min: hold the camera with proper two-hand grip and take 20 photos of a stationary subject — check for camera shake"
+        projects:
+          - "Photograph a simple subject (a pet, a flower, a coffee cup) in each camera mode (P, Av, Tv, M) and compare the results"
+          - "Take 20 photos in one outing using Auto mode with intentional framing — review and pick your best 5"
+        tips:
+          - "Camera shake is the #1 cause of blurry beginner photos — brace your elbows against your body and exhale before pressing the shutter"
+          - "Do not try to learn Manual mode first; start in Auto, then Aperture Priority (Av/A) to understand one variable at a time"
       - level: intermediate
         criteria: >
           Uses Av for portraits and landscapes, Tv for sports and motion. Operates
@@ -55,6 +71,22 @@ nodes:
         metrics:
           - "Correct mode selection in 8/10 scenario-matching exercises"
           - "Burst mode used on ≥80% of action shots submitted"
+        resources:
+          - title: "Tony Northrup — Camera Settings for Every Situation"
+            url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
+            type: "video"
+          - title: "Karl Taylor — Understanding Camera Modes"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        practice:
+          - "15 min: photograph a moving subject (person walking, pet playing) in Tv mode — experiment with 1/125, 1/250, 1/500s"
+          - "10 min: configure AF mode (single vs. continuous) for stationary vs. moving subjects and test each"
+        projects:
+          - "Photograph the same scene in Av, Tv, and M modes — compare exposure and creative differences in the results"
+          - "Complete a 10-photo shoot using Manual mode in controlled lighting with correct exposure on every shot"
+        tips:
+          - "In Manual mode, watch the exposure meter in your viewfinder — keep it centered until you intentionally want to deviate"
+          - "Use continuous AF (AF-C/AI Servo) for anything that moves; single AF (AF-S/One Shot) for everything else"
       - level: advanced
         criteria: >
           Uses back-button focus, custom function buttons, and preset banks to
@@ -63,6 +95,12 @@ nodes:
         metrics:
           - "Camera reconfigured for new shooting scenario in ≤30 seconds"
           - "0 missed shots due to incorrect camera mode or AF setting per shoot"
+        resources:
+          - title: "Karl Taylor — Advanced Camera Configuration"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Set up custom banks (C1/C2/C3) for your most common scenarios so you can switch instantly"
       - level: expert
         criteria: >
           Camera operation is fully automatic/muscle-memory. Custom settings banks
@@ -71,6 +109,12 @@ nodes:
         metrics:
           - "Professional shoot completed with 0 technically ruined shots due to camera error"
           - "Student camera setup: 100% configured correctly after 1 coaching session"
+        resources:
+          - title: "Tony Northrup — Stunning Digital Photography (full course)"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "course"
+        tips:
+          - "Camera operation should become muscle memory — practice mode changes and AF configuration until you can do them without looking"
     tags: ["technical", "foundation", "camera-operation"]
 
   # ── EXPOSURE (the physics foundation) ───────────────────────────────────────
@@ -88,6 +132,22 @@ nodes:
         metrics:
           - "Can achieve correct exposure in Manual mode in ≤3 adjustments"
           - "Correctly names all three triangle elements and their primary effects in a quiz"
+        resources:
+          - title: "Tony Northrup — Exposure Triangle Explained"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+          - title: "B&H Photo — Understanding Exposure"
+            url: "https://www.youtube.com/watch?v=lBpWJjgEJSA"
+            type: "video"
+        practice:
+          - "15 min: in Manual mode, set correct exposure for a stationary subject using only 3 adjustments — repeat 10 times"
+          - "10 min: change one exposure setting and compensate with another to maintain the same exposure — practice all 3 pairs"
+        projects:
+          - "Take 3 photos of the same subject: one with wide aperture (shallow DOF), one with fast shutter (frozen motion), one with high ISO (low light)"
+          - "Photograph in Manual mode for one full hour without switching to Auto"
+        tips:
+          - "Do not memorize numbers — understand relationships: wider aperture = more light + shallower DOF; faster shutter = less light + frozen motion"
+          - "If your photo is too dark, ask: 'Can I open the aperture? Slow the shutter? Raise the ISO?' in that priority order"
       - level: intermediate
         criteria: >
           Makes exposure decisions in real-time for changing light conditions.
@@ -96,6 +156,22 @@ nodes:
         metrics:
           - "Nails exposure (within ±0.5 EV of intended) on first shot 80%+ of the time"
           - "ISO choice explained correctly for 9/10 lighting scenarios presented"
+        resources:
+          - title: "Karl Taylor — Manual Exposure Masterclass"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+          - title: "Peter McKinnon — How I Expose My Photos"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+        practice:
+          - "20 min: photograph in changing light conditions (indoors to outdoors, shade to sun) adjusting exposure in real time"
+          - "10 min: practice using exposure compensation (+/- EV) in Av mode on bright and dark subjects"
+        projects:
+          - "Photograph a full day (golden hour to midday to blue hour) adjusting exposure for each lighting condition"
+          - "Take 10 portraits in mixed lighting with exposure within 0.5 EV of ideal on first shot"
+        tips:
+          - "Use the lowest ISO you can get away with — only raise ISO when you cannot open the aperture wider or slow the shutter further"
+          - "Exposure compensation is your best friend in semi-auto modes: +1 EV for snow/white subjects, -1 EV for dark subjects"
       - level: advanced
         criteria: >
           Exposure decisions become creative tools: deliberately underexposes for dramatic
@@ -104,6 +180,12 @@ nodes:
         metrics:
           - "ETTR technique applied in ≥80% of RAW landscape/studio shots"
           - "0 clipped highlights on intentional shots (only on deliberate overexposure)"
+        resources:
+          - title: "Tony Northrup — ETTR and Dynamic Range"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+        tips:
+          - "ETTR (expose to the right) maximizes dynamic range in RAW — push the histogram right without clipping highlights"
       - level: expert
         criteria: >
           Masters exposure in extreme conditions (backlit subjects, mixed lighting, high-contrast
@@ -112,6 +194,12 @@ nodes:
         metrics:
           - "500px Pulse score ≥85 on technically challenging lighting shots"
           - "0 recoverable exposure errors on a 100-shot professional shoot"
+        resources:
+          - title: "Karl Taylor — Exposure in Extreme Conditions"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "In extreme contrast scenes, bracket your exposures (3 shots at -2, 0, +2 EV) and blend later for maximum dynamic range"
     tags: ["foundation", "technical", "measurable"]
 
   # ── FOCUS & SHARPNESS ───────────────────────────────────────────────────────
@@ -126,6 +214,22 @@ nodes:
         criteria: "Achieves in-focus images on stationary subjects using single AF. Understands that aperture affects depth of field."
         metrics:
           - "In-focus rate on stationary portrait subjects: ≥90%"
+        resources:
+          - title: "Tony Northrup — Focus & Depth of Field Explained"
+            url: "https://www.youtube.com/watch?v=34jkJoN8qOI"
+            type: "video"
+          - title: "B&H Photo — Understanding Autofocus"
+            url: "https://www.youtube.com/watch?v=7ZVyNjKSr0M"
+            type: "video"
+        practice:
+          - "15 min: photograph a portrait subject at f/2.8, f/5.6, and f/11 — compare depth of field in each"
+          - "10 min: practice half-pressing the shutter to lock focus, then recomposing the shot before fully pressing"
+        projects:
+          - "Take 20 portrait photos focusing on the subject's eye — check focus accuracy by zooming to 100% on screen"
+          - "Photograph the same scene at 3 different apertures and compare the depth of field"
+        tips:
+          - "Always focus on the nearest eye in portraits — if the eyes are sharp, the photo works; if the eyes are soft, nothing else matters"
+          - "Wide apertures (f/1.8-2.8) look beautiful but make focus critical — a few inches of error puts the focus on the ear instead of the eye"
       - level: intermediate
         criteria: >
           Uses AF-Continuous for moving subjects. Selects specific focus points.

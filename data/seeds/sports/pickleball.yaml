@@ -933,6 +933,22 @@ nodes:
           - "Attempts to reach kitchen line on 7/10 points when on the returning team"
           - "Correctly explains the serve-return-drop-dink pattern when asked"
           - "Makes fewer than 3 shot selection errors per game (driving when should dink, etc.)"
+        resources:
+          - title: "Pickleball Kitchen — Beginner Strategy: The 4 Pillars"
+            url: "https://www.youtube.com/watch?v=KLEp-T2FTLI"
+            type: "video"
+          - title: "USA Pickleball — Official Rulebook"
+            url: "https://usapickleball.org/what-is-pickleball/official-rules/rules-summary/"
+            type: "article"
+        practice:
+          - "10 min: Watch a recorded match and call out whether each shot should have been soft or hard"
+          - "15 min: Play a practice game where the only goal is to reach the kitchen line on every point"
+        projects:
+          - "Explain the serve-return-drop-dink pattern to a new player without prompting"
+          - "Play 3 games making fewer than 3 shot selection errors per game"
+        tips:
+          - "Don't try to win points with power — the default in pickleball is soft play (dinking); power shots are the exception, not the rule"
+          - "Always prioritize getting to the kitchen line — the team at the kitchen wins most points"
       - level: intermediate
         criteria: "Stacks and uses correct formations in doubles. Targets the weaker opponent consistently. Recognizes when to attack (ball above net height) vs. reset (ball below net height). Begins reading opponent tendencies — notices if opponent favors forehand, struggles with backhand dinks, or has weak overhead. Adjusts serve and return based on opponent weakness."
         metrics:
@@ -941,6 +957,23 @@ nodes:
           - "Attack-vs-reset decision accuracy: correctly chooses on 7/10 opportunities (coach or video review)"
           - "Can name 2+ opponent weaknesses after 1 game of observation"
           - "Wins 55%+ of games against same-rated opponents through strategic play (not just shot-making)"
+        resources:
+          - title: "Third Shot Sports — Stacking Explained Simply"
+            url: "https://www.youtube.com/watch?v=LLsT9gL-3oE"
+            type: "video"
+          - title: "Selkirk TV — How to Read Your Opponents"
+            url: "https://www.youtube.com/watch?v=PLmGW1pkhPM"
+            type: "video"
+        practice:
+          - "15 min: Play a game where you must target the same opponent for an entire game"
+          - "10 min: Reset vs. attack decision drill — partner feeds random balls at kitchen, decide in real-time whether to attack or reset"
+          - "10 min: Stacking practice — serve and return in stacked formation for 10 points, track correct execution"
+        projects:
+          - "Identify and name 2+ opponent weaknesses after watching or playing 1 game"
+          - "Win 55%+ of games against same-rated opponents over 10 games through strategic play"
+        tips:
+          - "Don't attack balls below the net — if the ball is below net height when you contact it, reset softly into the kitchen; attacking low balls produces pop-ups and errors"
+          - "Observe your opponents during warm-up — watch for which side they avoid, which shots they struggle with, and whether they prefer soft or hard play"
       - level: advanced
         criteria: "Pattern play: sets up winners 2-3 shots ahead through deliberate sequencing. Adjusts strategy mid-match based on opponent tendencies and score. Controls the tempo — can speed up or slow down the rally at will. Understands the 3.5-to-4.0 skill jump and exploits opponents who rely on power over soft game. Uses timeouts strategically."
         metrics:
@@ -949,6 +982,12 @@ nodes:
           - "Win rate when ahead by 3+ points: maintains 80%+ (does not give away leads)"
           - "Correctly selects serve type based on opponent weakness 7/10 times"
           - "Post-match can articulate 3+ strategic adjustments made during the match"
+        resources:
+          - title: "PrimeTime Pickleball — Pattern Play and Shot Sequencing"
+            url: "https://www.youtube.com/watch?v=87C7fxyVa8Y"
+            type: "video"
+        tips:
+          - "Think in patterns, not shots — plan 2-3 shots ahead (e.g., dink to body to create a pop-up, then attack the pop-up to the open court)"
       - level: expert
         criteria: "Complete game management: controls tempo, exploits physical and mental gaps, manages score pressure, and orchestrates the flow of the match. Plays differently at 0-0 vs. 9-9 — takes calculated risks at low-leverage scores, plays safe at high-leverage scores. Manufacturing points through sequenced patterns is the primary scoring method."
         metrics:
@@ -957,6 +996,12 @@ nodes:
           - "Strategic pattern play results in winner or forced error on 30%+ of offensive sequences"
           - "Unforced error rate below 15% of all shots played in tournament matches"
           - "Win rate vs. opponents rated 0.5 DUPR higher: 30%+ (consistently competitive above rating)"
+        resources:
+          - title: "Selkirk TV — Pro Match Analysis: Game Management Breakdown"
+            url: "https://www.youtube.com/watch?v=k7NpQ5Lj6zg"
+            type: "video"
+        tips:
+          - "Adjust your risk tolerance based on the score — at low-leverage scores (0-0, 2-1), experiment and take risks; at high-leverage scores (9-9, 10-9), play your highest-percentage patterns"
     tags: ["cognitive", "strategy", "advanced"]
 
   - id: "sports/pickleball/doubles-communication"
@@ -997,6 +1042,23 @@ nodes:
           - "Verbal call made on 7/10 middle balls before contact"
           - "Maintains own side of court on 9/10 shots (does not wander into partner's zone)"
           - "Correct basic formation (both up or both back) on 7/10 rallies"
+        resources:
+          - title: "Pickleball Kitchen — Doubles Communication for Beginners"
+            url: "https://www.youtube.com/watch?v=8lUB5ymdHDQ"
+            type: "video"
+          - title: "Selkirk TV — Basic Doubles Positioning and Formations"
+            url: "https://www.youtube.com/watch?v=jXqz4cPmJ2c"
+            type: "video"
+        practice:
+          - "15 min: Middle ball drill — feed balls to the middle seam, practice calling 'mine' or 'yours' before contact"
+          - "10 min: Communication volume drill — play a game where every ball must be called verbally before contact"
+          - "5 min: Formation drill — practice moving both up or both back together after each shot"
+        projects:
+          - "Play a full game with zero ball collisions (no two paddles hitting the same ball)"
+          - "Make a verbal call on 7 out of 10 middle balls before contact"
+        tips:
+          - "The forehand player takes the middle — if both players are right-handed, the player on the left side (ad side) has the forehand in the middle and should take middle balls"
+          - "Never be one up and one back in doubles — if your partner is at the kitchen, get to the kitchen; if they are at the baseline, stay at the baseline"
       - level: intermediate
         criteria: "Stacks consistently with forehands in the middle. Poaches when partner is pulled wide or when a ball is floated to your zone. Communicates before each point (discusses serve target, return plan, or poach intention). Moves as a unit with partner — when partner moves left, you move left to maintain court coverage."
         metrics:
@@ -1005,6 +1067,23 @@ nodes:
           - "Pre-point communication occurs before 80%+ of service points"
           - "Parallel positioning maintained (within 3 feet of same depth) on 7/10 shots during rally"
           - "Middle ball decision: clean resolution (one player takes it without hesitation) on 8/10 middle balls"
+        resources:
+          - title: "Third Shot Sports — Stacking and Poaching Strategy"
+            url: "https://www.youtube.com/watch?v=q5PrT5Mz1oY"
+            type: "video"
+          - title: "PrimeTime Pickleball — How to Move as a Unit in Doubles"
+            url: "https://www.youtube.com/watch?v=BFR4K78_yQU"
+            type: "video"
+        practice:
+          - "15 min: Poach drill — one partner signals poach with hand signal, partner feeds a dink, signaling player crosses and intercepts"
+          - "10 min: Synchronized movement drill — both partners shuffle laterally together while a third player feeds balls"
+          - "10 min: Stacking practice — serve and return in stacked formation for 10 consecutive points"
+        projects:
+          - "Execute 2+ successful poaches per game across 5 games"
+          - "Communicate before 80%+ of service points with your partner in a practice session"
+        tips:
+          - "Use hand signals behind your back before each serve to indicate your plan — closed fist means stay, open hand means poach, wiggle means fake"
+          - "Move as a connected unit with your partner — imagine a 10-foot rope between you; when they shift left, you shift left to maintain court coverage"
       - level: advanced
         criteria: "Signals poach intentions with hand signals behind the back before each serve. Creates overload patterns with partner (both players shifting to one side to take away an angle). Seamless side switching after lobs or wide balls. Covers for partner when they are pulled out of position. Pre-point strategy includes specific patterns (e.g., 'I will dink twice then you poach')."
         metrics:
@@ -1013,6 +1092,12 @@ nodes:
           - "Successful side switch after lob or wide ball on 8/10 opportunities (no open court left)"
           - "Overload pattern execution: successfully takes away opponent's preferred shot 4+ times per match"
           - "Covers for out-of-position partner and wins the point 5/10 times"
+        resources:
+          - title: "Selkirk TV — Advanced Doubles Formations and Overload Patterns"
+            url: "https://www.youtube.com/watch?v=_Qe2QWwh0Qc"
+            type: "video"
+        tips:
+          - "Discuss specific patterns before each point, not just general plans — 'I will dink twice cross-court then you poach the third ball' is much more effective than 'let us try to poach'"
       - level: expert
         criteria: "Orchestrates team movement: dictates who takes what ball based on matchup advantages and opponent tendencies. Creates geometric traps where both partners position to take away all high-percentage shots simultaneously. Communication is so refined that verbal calls are minimal — partners read each other's body language and intentions."
         metrics:
@@ -1021,6 +1106,12 @@ nodes:
           - "Geometric trap execution: creates situations where opponents have no safe shot 3+ times per match"
           - "Silent communication accuracy: partner correctly reads intention without verbal call on 8/10 plays"
           - "Partnership-specific winning percentage: 10%+ higher win rate with regular partner vs. pickup partner"
+        resources:
+          - title: "PrimeTime Pickleball — Pro Doubles Partnerships: What Makes Them Work"
+            url: "https://www.youtube.com/watch?v=QZ1FoL2pq8g"
+            type: "video"
+        tips:
+          - "At the expert level, invest in building chemistry with a regular partner — the silent communication and automatic coverage patterns that develop over hundreds of games together cannot be replicated with pickup partners"
     tags: ["doubles", "teamwork", "communication"]
 
 relationships:

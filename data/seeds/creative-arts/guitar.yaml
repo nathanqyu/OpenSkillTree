@@ -1060,6 +1060,12 @@ nodes:
           - "Builds a setlist with intentional flow: demonstrates opening song, energy build, ballad placement, and closer — explains the reasoning"
           - "Performs in ≥3 different venue types (e.g., coffee shop, bar, outdoor, house concert) and adapts volume, setlist, and energy to each"
           - "Repertoire includes songs in ≥4 genres, demonstrated on demand"
+        resources:
+          - title: "Guitareo — Gigging & Setlist Building"
+            url: "https://www.guitareo.com/guitar-lessons/performance"
+            type: "course"
+        tips:
+          - "Build setlists with intentional energy flow: open strong, build energy, place the ballad at 60%, close with your best song"
       - level: expert
         criteria: "Professional-level performance: creates memorable musical experiences that audiences talk about afterward. Can perform, record in a studio, and teach at a high level. Paid performances or session work contribute significant income. Original music written, performed, and well-received. Stage presence is commanding — commands attention from the first note. Can lead a band, direct rehearsals, and manage the musical aspects of a live show (sound check, monitor mix, set timing). Corresponds to ABRSM Grade 8+ performance."
         metrics:
@@ -1069,6 +1075,12 @@ nodes:
           - "Directs a sound check: communicates monitor needs, adjusts stage volume, and verifies front-of-house sound within 15 minutes"
           - "Teaches a performance workshop or masterclass that results in measurable improvement in students' stage confidence"
           - "Records a studio session (≥3 tracks) where takes are accepted by the producer with minimal re-recording"
+        resources:
+          - title: "JustinGuitar — Professional Performance & Recording"
+            url: "https://www.justinguitar.com/modules/performance-skills"
+            type: "course"
+        tips:
+          - "Treat every performance as practice for the next one — record every gig (even phone audio) and review it for improvement"
     tags: ["performance", "repertoire", "stage"]
 
 relationships:

@@ -283,6 +283,21 @@ nodes:
         metrics:
           - "Conducts 5+ user interviews per quarter"
           - "Interview notes captured and shared within 24h"
+        resources:
+          - title: "Teresa Torres - How to Conduct an Effective Customer Interview"
+            url: "https://www.producttalk.org/2022/12/customer-interviews/"
+            type: "article"
+          - title: "Product School - User Research for Product Managers"
+            url: "https://www.youtube.com/watch?v=TkAVfcJjrBk"
+            type: "video"
+        practice:
+          - "Write a 10-question interview guide for a product problem, focusing on open-ended 'tell me about...' questions (20 minutes)"
+          - "Conduct 2 practice interviews with colleagues acting as users and take timestamped notes (1 hour)"
+        projects:
+          - "Conduct 5 user interviews about a real product problem, synthesize findings into a 1-page summary with 3 key insights"
+        tips:
+          - "Never ask users 'would you use this feature?' They will always say yes. Instead ask 'tell me about the last time you had this problem' to uncover real behavior."
+          - "Ask 'why' at least 3 times. The first answer is usually surface-level. The real insight comes from the third follow-up."
       - level: intermediate
         criteria: >
           Synthesizes multiple research sessions into actionable insights. Chooses
@@ -292,6 +307,20 @@ nodes:
           - "Research synthesis docs with ≥3 actionable insights per study"
           - "Uses ≥2 distinct research methods per quarter"
           - "Research directly referenced in ≥50% of prioritization decisions"
+        resources:
+          - title: "Teresa Torres - Continuous Discovery Habits (producttalk.org)"
+            url: "https://www.producttalk.org/2021/05/continuous-discovery-habits/"
+            type: "article"
+          - title: "SVPG - Discovery Techniques Overview"
+            url: "https://www.svpg.com/product-discovery-techniques/"
+            type: "article"
+        practice:
+          - "Synthesize 5 interview transcripts into an affinity map: group insights by theme and identify the top 3 patterns (1 hour)"
+          - "Choose 3 research questions and match each to the best method (interview, survey, usability test) with a written justification (20 minutes)"
+        projects:
+          - "Run a mixed-method study: 5 interviews + a 50-person survey on the same topic, then compare and synthesize the findings"
+        tips:
+          - "Separate observation from interpretation. Write down what the user DID and SAID, then separately note what you THINK it means."
       - level: advanced
         criteria: >
           Designs mixed-methods research programs. Recruits participants from
@@ -300,6 +329,12 @@ nodes:
         metrics:
           - "At least 1 research finding per quarter that changes a roadmap decision"
           - "Maintains ongoing research calendar (continuous discovery, not just project-based)"
+        resources:
+          - title: "Teresa Torres - Continuous Discovery Habits (Book Site)"
+            url: "https://www.producttalk.org/continuous-discovery-habits/"
+            type: "book"
+        tips:
+          - "Ship research insights within 48 hours. A perfect report delivered 3 weeks later is worthless because the team has already moved on."
       - level: expert
         criteria: >
           Builds and scales a research practice. Defines research standards and
@@ -308,6 +343,12 @@ nodes:
         metrics:
           - "Research ops: ≥80% of PMs on the team run at least 1 self-serve study/quarter"
           - "User panel maintained with ≥100 participants available for rapid recruitment"
+        resources:
+          - title: "SVPG - The Role of User Research in Product (Marty Cagan)"
+            url: "https://www.svpg.com/the-role-of-user-research/"
+            type: "article"
+        tips:
+          - "Democratize research by creating templates and training other PMs to run their own interviews. Research should not be a bottleneck."
     tags: ["discovery", "qualitative", "foundation"]
 
   - id: "business/product-management/prioritization"
@@ -322,6 +363,21 @@ nodes:
         criteria: "Applies a structured framework (RICE, ICE, MoSCoW) to rank backlog items."
         metrics:
           - "All backlog items have RICE or equivalent scores before sprint planning"
+        resources:
+          - title: "Lenny's Newsletter - The Most Common Prioritization Frameworks"
+            url: "https://www.lennysnewsletter.com/p/prioritization"
+            type: "article"
+          - title: "Product School - RICE Scoring Model Explained"
+            url: "https://www.youtube.com/watch?v=2fLCBXmVXxk"
+            type: "video"
+        practice:
+          - "Score 10 backlog items using RICE (Reach, Impact, Confidence, Effort) and rank them (30 minutes)"
+          - "Compare your RICE ranking to your gut-feel ranking and identify where they differ and why (15 minutes)"
+        projects:
+          - "Create a prioritized backlog for a side project or feature area with RICE scores, written rationale, and a 'not doing' list"
+        tips:
+          - "Frameworks like RICE are thinking aids, not calculators. If the ranking feels wrong, investigate why — your judgment is data too."
+          - "Always include an Effort estimate from engineering, not your own guess. PMs consistently underestimate implementation cost."
       - level: intermediate
         criteria: >
           Adapts frameworks to context. Incorporates qualitative signals (user
@@ -330,6 +386,20 @@ nodes:
         metrics:
           - "Prioritization decisions have written rationale referencing user and business data"
           - "Stakeholders disagree with priority < 20% of the time after explanation"
+        resources:
+          - title: "Reforge - How to Prioritize Product Features"
+            url: "https://www.reforge.com/blog/prioritization"
+            type: "article"
+          - title: "Teresa Torres - Opportunity Solution Trees"
+            url: "https://www.producttalk.org/2016/08/opportunity-solution-trees/"
+            type: "article"
+        practice:
+          - "Write a 1-paragraph rationale for your top 3 priorities that references both user data and business impact (30 minutes)"
+          - "Present your prioritization to a stakeholder and practice responding to pushback with data (30 minutes)"
+        projects:
+          - "Create an opportunity solution tree for your product area, map opportunities to solutions, and prioritize the top 3 bets with explicit tradeoffs"
+        tips:
+          - "Make tradeoffs visible. Instead of saying 'X is higher priority,' say 'If we do X, we delay Y by 2 weeks. Here is why X is worth the delay.'"
       - level: advanced
         criteria: >
           Builds custom prioritization models for the team's specific context.
@@ -338,6 +408,12 @@ nodes:
         metrics:
           - "Priority changes after sprint planning: ≤10% of committed scope per sprint"
           - "Opportunity cost documented for ≥50% of deprioritized items"
+        resources:
+          - title: "SVPG - Product Roadmap Prioritization (Marty Cagan)"
+            url: "https://www.svpg.com/the-alternative-to-roadmaps/"
+            type: "article"
+        tips:
+          - "Keep a decision log. When you revisit priorities next quarter, you will forget why you made each tradeoff. The log prevents re-litigating settled decisions."
       - level: expert
         criteria: >
           Prioritization as a strategic system: connects roadmap items to company
@@ -346,6 +422,12 @@ nodes:
         metrics:
           - "CEO/exec override rate on PM prioritization decisions: ≤10%"
           - "OKR coverage: ≥90% of quarterly roadmap items trace to a company OKR"
+        resources:
+          - title: "Reforge - Strategy and Prioritization Program"
+            url: "https://www.reforge.com/programs/strategy"
+            type: "course"
+        tips:
+          - "Exec trust in PM prioritization is built through transparency, not correctness. Share your reasoning openly and be right 70% of the time."
     tags: ["execution", "strategy", "decision-making"]
 
   - id: "business/product-management/stakeholder-management"
@@ -361,6 +443,20 @@ nodes:
         criteria: "Sends regular status updates. Responds to stakeholder questions within 24 hours."
         metrics:
           - "Weekly product status update sent on time 90%+ of weeks"
+        resources:
+          - title: "Product School - Stakeholder Management for PMs"
+            url: "https://www.youtube.com/watch?v=GwPxTbLmjAA"
+            type: "video"
+          - title: "SVPG - Product Manager vs Product Owner"
+            url: "https://www.svpg.com/product-manager-vs-product-owner/"
+            type: "article"
+        practice:
+          - "Write a weekly status update covering: what shipped, what is in progress, what is blocked, and key metrics (15 minutes)"
+          - "Map your stakeholders: list every person who cares about your product area and their primary concern (20 minutes)"
+        projects:
+          - "Create a stakeholder map and a weekly update template, then send consistent updates for 8 consecutive weeks"
+        tips:
+          - "Overcommunicate blockers, undercommunicate wins. Stakeholders hate surprises. A blocker shared early is a problem; shared late it is a crisis."
       - level: intermediate
         criteria: >
           Proactively manages competing priorities. Navigates pushback with data
@@ -368,6 +464,20 @@ nodes:
         metrics:
           - "Escalated conflicts resolved at PM level (no exec escalation) ≥70% of the time"
           - "Stakeholder satisfaction survey: ≥7/10 average among key stakeholders"
+        resources:
+          - title: "Lenny's Newsletter - Influence Without Authority"
+            url: "https://www.lennysnewsletter.com/"
+            type: "article"
+          - title: "SVPG - Stakeholder Management"
+            url: "https://www.svpg.com/stakeholder-management/"
+            type: "article"
+        practice:
+          - "Role-play a difficult stakeholder conversation: have a colleague push back on your priority and practice responding with data (30 minutes)"
+          - "After each stakeholder disagreement, write a brief post-mortem: what happened, what worked, what to do differently (15 minutes)"
+        projects:
+          - "Resolve a real cross-team dependency conflict by documenting the tradeoff, presenting data to both sides, and reaching an agreement without escalation"
+        tips:
+          - "When a stakeholder disagrees, ask 'what data would change your mind?' If neither of you can answer that, the disagreement is about values, not facts."
       - level: advanced
         criteria: >
           Aligns C-suite on roadmap with minimal pushback. Builds trust through
@@ -376,6 +486,12 @@ nodes:
         metrics:
           - "Exec roadmap approval on first review 75%+ of the time"
           - "0 stakeholder surprises on major feature decisions per quarter"
+        resources:
+          - title: "SVPG - Communicating Product Vision (Marty Cagan)"
+            url: "https://www.svpg.com/communicating-product-vision/"
+            type: "article"
+        tips:
+          - "Pre-wire important decisions. Never walk into a roadmap review cold. Meet with each key stakeholder individually first so there are no surprises."
       - level: expert
         criteria: >
           Influences organizational direction through stakeholder alignment.
@@ -383,6 +499,12 @@ nodes:
           and business stakeholders. Coaches PMs on influence without authority.
         metrics:
           - "Cross-functional NPS (how other teams rate working with product): ≥8/10"
+        resources:
+          - title: "Reforge - Managing Up and Across"
+            url: "https://www.reforge.com/blog/managing-up"
+            type: "article"
+        tips:
+          - "Influence at scale comes from making others successful. When your stakeholders win because of your work, they become your advocates."
     tags: ["leadership", "communication", "influence"]
 
   # ── STRATEGY (Senior PM level) ──────────────────────────────────────────────
@@ -399,6 +521,21 @@ nodes:
         criteria: "Tests assumptions with low-fidelity prototypes — quick, rough versions of an idea (Figma mock, landing page, Wizard of Oz) — before committing engineering resources."
         metrics:
           - "≥1 prototype test per feature before engineering starts"
+        resources:
+          - title: "Teresa Torres - Assumption Testing (producttalk.org)"
+            url: "https://www.producttalk.org/2023/10/assumption-testing/"
+            type: "article"
+          - title: "Product School - Product Discovery Explained"
+            url: "https://www.youtube.com/watch?v=s0_6eAJ0p1g"
+            type: "video"
+        practice:
+          - "List 5 assumptions behind your next feature and rank them by risk (20 minutes)"
+          - "Create a low-fidelity prototype (paper sketch or Figma wireframe) and test it with 3 people (2 hours)"
+        projects:
+          - "Run a discovery sprint: identify the riskiest assumption for a feature, design a test, run it with 5 users, and write up the findings"
+        tips:
+          - "The riskiest assumption is the one where being wrong wastes the most engineering time. Test that one first."
+          - "Prototypes should be embarrassingly rough. If you spend more than 2 hours on a prototype, you are over-investing before validation."
       - level: intermediate
         criteria: >
           Systematic discovery sprints: clearly defined assumptions, test methods,
@@ -407,6 +544,20 @@ nodes:
         metrics:
           - "Assumption log maintained: ≥5 assumptions documented and tested per quarter"
           - "Discovery kill rate ≥20% (some ideas should fail validation)"
+        resources:
+          - title: "Teresa Torres - Continuous Discovery Habits (producttalk.org)"
+            url: "https://www.producttalk.org/2021/05/continuous-discovery-habits/"
+            type: "article"
+          - title: "SVPG - Discovery vs. Delivery (Marty Cagan)"
+            url: "https://www.svpg.com/discovery-vs-delivery/"
+            type: "article"
+        practice:
+          - "Write a test card for 3 assumptions: assumption, test method, success criteria, and decision rule (30 minutes)"
+          - "Kill an idea based on discovery evidence and communicate the reasoning to your team (30 minutes)"
+        projects:
+          - "Maintain an assumption log for a quarter: document every assumption tested, the result, and the decision made based on it"
+        tips:
+          - "If 100% of your discovery tests succeed, your tests are too easy. A healthy discovery kill rate is 20-40% — it means you are testing genuinely risky ideas."
       - level: advanced
         criteria: >
           Runs continuous discovery: ongoing touchpoints with users, fast
@@ -414,6 +565,12 @@ nodes:
         metrics:
           - "User touchpoints: ≥4 sessions per week across team"
           - "Time from idea to first user signal: ≤5 business days"
+        resources:
+          - title: "Teresa Torres - Continuous Discovery Habits (Book)"
+            url: "https://www.producttalk.org/continuous-discovery-habits/"
+            type: "book"
+        tips:
+          - "Bake discovery into the team cadence. Weekly 30-minute user touchpoints are more valuable than quarterly 2-day research sprints."
       - level: expert
         criteria: >
           Builds a discovery culture: entire product team (eng, design) participates
@@ -422,6 +579,12 @@ nodes:
         metrics:
           - "≥50% of discovery sessions include an engineer or designer"
           - "Ideas killed in discovery vs. killed in production: ratio ≥3:1"
+        resources:
+          - title: "SVPG - Empowered Product Teams (Marty Cagan)"
+            url: "https://www.svpg.com/empowered-product-teams/"
+            type: "article"
+        tips:
+          - "The strongest discovery cultures include engineers in user sessions. When engineers see user pain firsthand, they build better solutions."
     tags: ["discovery", "validation", "risk-reduction"]
 
   - id: "business/product-management/roadmap-planning"
