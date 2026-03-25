@@ -47,21 +47,62 @@ nodes:
         metrics:
           - "Written positioning statement reviewed by peer or mentor"
           - "3 content pillars documented with 5+ topic ideas per pillar"
+        resources:
+          - title: "Justin Welsh - The LinkedIn Operating System (free preview)"
+            url: "https://www.justinwelsh.me/"
+            type: "course"
+          - title: "LinkedIn Creator Hub - Getting Started"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        practice:
+          - "Complete the positioning formula: 'I help [audience] achieve [transformation] through [unique angle]' — write 5 variations and pick the best (30 minutes)"
+          - "Define 3 content pillars and brainstorm 10 topic ideas for each (30 minutes)"
+        projects:
+          - "Write your positioning statement, define 3 content pillars with 5+ topics each, and get feedback from 3 people in your target audience"
+        tips:
+          - "The #1 reason content strategies fail: skipping positioning. If you do not know who you help and how, your content will be generic and forgettable."
+          - "Pick a niche so specific it feels uncomfortable. 'Marketing tips' is too broad. 'LinkedIn growth for B2B SaaS founders' is a niche."
       - level: intermediate
         criteria: "Refines niche based on audience feedback. Positioning differentiates from competitors. Content pillars generate consistent engagement."
         metrics:
           - "Positioning statement A/B tested in headlines — best-performing version identified"
           - "Content pillars cover 90%+ of posts without feeling forced"
+        resources:
+          - title: "Jasmin Alic - LinkedIn Growth Strategies (LinkedIn posts)"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+          - title: "Lara Acosta - SLAY Framework Overview"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        practice:
+          - "Test 3 different positioning statements as LinkedIn headlines for 1 week each and compare profile views (3 weeks)"
+          - "Audit your last 20 posts: tag each with its content pillar and identify which pillar gets the most engagement (30 minutes)"
+        projects:
+          - "Refine your positioning by interviewing 5 engaged followers about why they follow you, then update your pillars based on feedback"
+        tips:
+          - "Your positioning should make some people unfollow you. If everyone likes your content, your niche is too broad to build authority."
       - level: advanced
         criteria: "Brand is recognized in niche without introduction. Voice and perspective are distinctive and consistent across all content. Audience describes brand in consistent terms."
         metrics:
           - "Inbound mentions by other creators ≥5/month"
           - "Audience survey: 80%+ can describe brand positioning accurately"
+        resources:
+          - title: "Justin Welsh - Content Operating System"
+            url: "https://www.justinwelsh.me/"
+            type: "course"
+        tips:
+          - "Consistency builds recognition. Post at the same time, on the same topics, with the same voice. Variety kills brand recall."
       - level: expert
         criteria: "Creates category authority. Brand becomes synonymous with the niche. Collaborations sought by complementary creators. Strategic partnerships based on brand value."
         metrics:
           - "Invited to ≥3 podcasts/events per quarter based on LinkedIn authority"
           - "Brand mentioned in industry publications or reports"
+        resources:
+          - title: "Justin Welsh - How I Built a $5M One-Person Business"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "Category authority comes from saying one thing a thousand times, not a thousand things once. Repetition with variation is how brands are built."
     tags: ["strategy", "positioning", "foundation"]
 
   - id: "business/linkedin-content-creation/profile-optimization"
@@ -77,20 +118,61 @@ nodes:
         metrics:
           - "LinkedIn profile strength: All-Star"
           - "Headline includes target audience and value proposition"
+        resources:
+          - title: "LinkedIn Creator Hub - Optimize Your Profile"
+            url: "https://www.linkedin.com/help/linkedin/answer/a543852"
+            type: "article"
+          - title: "Jasmin Alic - How to Write a LinkedIn Headline That Converts"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+        practice:
+          - "Rewrite your headline using the format: '[Role] | I help [audience] [transformation]' — test 3 versions (20 minutes)"
+          - "Write your About section using the hook-bridge-value-proof structure in 200 words or less (30 minutes)"
+        projects:
+          - "Complete a full profile overhaul: new headline, About section, banner image, and Featured section with 3 top posts"
+        tips:
+          - "Your headline is NOT your job title. 'Marketing Manager at Acme' tells visitors nothing. 'I help B2B SaaS companies grow pipeline through content' tells them why to follow you."
+          - "Get a professional headshot. Profiles with professional photos get 14x more views. A phone selfie with good lighting is better than nothing."
       - level: intermediate
         criteria: "Featured section curated with top-performing content. Custom URL set. Banner image reflects brand. About section follows hook → bridge → value → proof → personality structure."
         metrics:
           - "Profile view-to-follow conversion rate ≥ 5%"
           - "Featured section updated monthly with current best content"
+        resources:
+          - title: "Lara Acosta - LinkedIn Profile Optimization Tips"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+          - title: "LinkedIn Help - Customize Your Public Profile URL"
+            url: "https://www.linkedin.com/help/linkedin/answer/a542685"
+            type: "article"
+        practice:
+          - "Audit your Featured section: replace underperforming content with your 3 highest-engagement posts (15 minutes)"
+          - "Set your custom URL to linkedin.com/in/yourname and add it to your email signature (5 minutes)"
+        projects:
+          - "Redesign your banner image to match your brand colors and include a tagline, then A/B test it for 2 weeks by tracking profile views"
+        tips:
+          - "Your Featured section is prime real estate. Pin your best-performing post, a lead magnet, and a testimonial. Update it monthly."
       - level: advanced
         criteria: "Profile functions as a conversion funnel: visitors find, read, and act. Experience section tells a narrative, not a resume. Recommendations support positioning."
         metrics:
           - "Profile-driven inbound leads or connection requests ≥10/week"
           - "≥5 recommendations from recognizable names in niche"
+        resources:
+          - title: "Justin Welsh - LinkedIn Profile as a Landing Page"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "Rewrite your Experience section as achievements, not responsibilities. 'Grew pipeline by 3x' beats 'Responsible for demand generation.'"
       - level: expert
         criteria: "Profile is a reference example in the niche. Other creators study and emulate the format. Profile drives measurable business outcomes."
         metrics:
           - "Profile referenced by ≥3 LinkedIn coaches or guides as an example"
+        resources:
+          - title: "LinkedIn Creator Hub - Advanced Profile Features"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        tips:
+          - "Your profile should have one clear CTA. If visitors can follow, subscribe, book a call, and download — they will do none. Pick one action."
     tags: ["profile", "conversion", "foundation"]
 
   # ── ENGAGEMENT (before content creation — the 80/20 rule) ───────────────────
@@ -108,21 +190,62 @@ nodes:
         metrics:
           - "5+ meaningful comments per day for 30 consecutive days"
           - "Own post comment response rate: 100% within first 2 hours"
+        resources:
+          - title: "Jasmin Alic - The Power of LinkedIn Comments"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+          - title: "LinkedIn Creator Hub - Build Your Community"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        practice:
+          - "Set a daily 20-minute timer: find 5 posts from people in your niche and leave a 2-3 sentence comment that adds value (20 minutes/day)"
+          - "Reply to every comment on your posts within 2 hours of posting — use the first hour to engage actively (ongoing)"
+        projects:
+          - "Complete a 30-day commenting challenge: 5+ meaningful comments per day for 30 consecutive days, tracking profile views weekly"
+        tips:
+          - "A meaningful comment adds a personal insight, a follow-up question, or a respectful disagreement. 'Great post!' is invisible to the algorithm and to the author."
+          - "Comments carry 15x more algorithmic weight than likes. Commenting is the highest-ROI activity on LinkedIn."
       - level: intermediate
         criteria: "Strategic commenting on target accounts. Builds relationships through consistent engagement. Comment quality generates profile visits."
         metrics:
           - "Profile views from commenting: ≥50/week"
           - "Connection acceptance rate from engagement-first outreach: ≥60%"
+        resources:
+          - title: "Justin Welsh - How to Grow on LinkedIn Through Engagement"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+          - title: "Lara Acosta - Strategic Commenting Framework"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        practice:
+          - "Build a list of 20 target accounts in your niche and comment on their posts 3x/week for 4 weeks (ongoing)"
+          - "After 2 weeks of commenting on someone's posts, send a connection request referencing a specific post (ongoing)"
+        projects:
+          - "Track your commenting strategy for 4 weeks: log who you comment on, how many profile views result, and which comments drive the most visits"
+        tips:
+          - "Comment on posts from people 1-2 levels above your follower count. Their audience is your next audience."
       - level: advanced
         criteria: "Engagement creates inbound opportunities. Community of engaged followers actively supports content. Engagement is systematized (daily routine, tools)."
         metrics:
           - "Engagement pod or community of ≥20 active reciprocal relationships"
           - "Average comments on own posts: ≥15 per post"
+        resources:
+          - title: "Richard van der Blom - LinkedIn Algorithm Research"
+            url: "https://www.linkedin.com/in/richardvanderblom/"
+            type: "article"
+        tips:
+          - "Systematize engagement: block 20 minutes in the morning and 20 in the evening. Without a routine, engagement is the first thing that gets dropped."
       - level: expert
         criteria: "Engagement ecosystem is self-sustaining. Community drives content reach without active management. Recognized as a community builder, not just a creator."
         metrics:
           - "Average comments on own posts: ≥50 per post"
           - "Content shared by followers generates ≥20% of total impressions"
+        resources:
+          - title: "Justin Welsh - Building a LinkedIn Community"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "The ultimate engagement moat: genuine relationships. DM 5 engaged followers per week to build real connections. Authenticity cannot be automated."
     tags: ["engagement", "community", "networking"]
 
   # ── CONTENT CREATION ────────────────────────────────────────────────────────
@@ -138,20 +261,61 @@ nodes:
         criteria: "Writes hooks that create curiosity or tension. Uses proven hook formats (question, bold claim, number, story opener)."
         metrics:
           - "Posts with intentional hooks get 50%+ more impressions than posts without"
+        resources:
+          - title: "Jasmin Alic - 50 LinkedIn Hook Templates"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+          - title: "Justin Welsh - How to Write Hooks That Stop the Scroll"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        practice:
+          - "Write 5 hooks for the same topic using 5 different formats (question, bold claim, number, story, controversy) (15 minutes)"
+          - "Study the first 2 lines of 10 viral LinkedIn posts and identify which hook format each uses (15 minutes)"
+        projects:
+          - "Build a personal hook swipe file of 30+ hooks from high-performing posts in your niche, organized by format type"
+        tips:
+          - "LinkedIn shows only 3 lines in the feed. If your hook fails, nobody reads the rest. Spend 50% of your writing time on the first 2 lines."
+          - "The strongest hook format for beginners: 'I [did unexpected thing] and here is what happened.' Story hooks outperform advice hooks."
       - level: intermediate
         criteria: "Adapts hook style to content type. Tests multiple hook variants. Hooks feel natural to voice, not formulaic."
         metrics:
           - "Click-through rate (see more) ≥ 4% on text posts"
           - "Can generate 5 distinct hooks for any given topic in under 5 minutes"
+        resources:
+          - title: "Lara Acosta - Hook Mastery for LinkedIn"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+          - title: "Jasmin Alic - Advanced Hook Frameworks"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+        practice:
+          - "For your next 10 posts, write 3 hook variants for each and post the strongest one (ongoing)"
+          - "Track 'see more' click-through rates and identify which hook format performs best for your audience (4 weeks)"
+        projects:
+          - "Run a 4-week hook A/B test: alternate between your top 3 hook formats and measure which consistently drives the highest engagement"
+        tips:
+          - "Avoid hook formulas that sound generic ('Most people think X. They are wrong.'). Add a personal angle to make it feel like YOU, not a template."
       - level: advanced
         criteria: "Hook writing is instinctive. Creates hooks that perform across different audience segments. Teaches hook frameworks to others."
         metrics:
           - "Top 3 hooks per month each exceed 2x average post impressions"
           - "Hook success rate (above-average engagement): ≥70% of posts"
+        resources:
+          - title: "Justin Welsh - Content OS (Hook Module)"
+            url: "https://www.justinwelsh.me/"
+            type: "course"
+        tips:
+          - "Your best hooks come from real moments, not formulas. Keep a running note on your phone for surprising observations, failures, and insights."
       - level: expert
         criteria: "Hooks create brand-distinctive moments. Audience recognizes creator's style from the hook alone. Hook innovation creates new formats adopted by others."
         metrics:
           - "Hook style identifiable without seeing author name by ≥50% of surveyed followers"
+        resources:
+          - title: "Jasmin Alic - Building a Distinctive LinkedIn Voice"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+        tips:
+          - "At the expert level, your hook IS your brand. Develop a signature opening style that feels impossible to copy because it comes from your unique perspective."
     tags: ["writing", "hooks", "attention"]
 
   - id: "business/linkedin-content-creation/copywriting"
@@ -166,21 +330,62 @@ nodes:
         metrics:
           - "Posts ≥3 times per week for 8+ consecutive weeks"
           - "Average post read time (dwell time proxy): above platform average"
+        resources:
+          - title: "Justin Welsh - LinkedIn Post Anatomy"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+          - title: "LinkedIn Creator Hub - Writing Tips"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        practice:
+          - "Write 3 posts this week following the structure: hook (2 lines) + space + body (3-5 short paragraphs) + lesson/CTA (20 minutes each)"
+          - "Read your post aloud before publishing. If any sentence makes you stumble, simplify it (5 minutes per post)"
+        projects:
+          - "Complete an 8-week posting challenge: publish 3+ posts per week and track impressions and engagement weekly"
+        tips:
+          - "Use one idea per sentence and one idea per paragraph. Wall-of-text posts die on LinkedIn because people scroll fast."
+          - "End every post with a question or CTA. Posts that invite a response get 2-3x more comments than posts that do not."
       - level: intermediate
         criteria: "Develops a consistent voice. Uses storytelling (personal anecdotes, case studies). Varies post format: listicles, stories, opinions, frameworks."
         metrics:
           - "Engagement rate ≥ 3% average across posts"
           - "Uses ≥3 distinct post formats per month"
+        resources:
+          - title: "Jasmin Alic - LinkedIn Storytelling Framework"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+          - title: "Lara Acosta - Content Formats That Work on LinkedIn"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        practice:
+          - "Write 1 personal story post, 1 listicle, and 1 opinion post this week and compare engagement (1 week)"
+          - "Develop your voice: write 5 posts and have a friend identify what sounds uniquely 'you' vs generic (1 week)"
+        projects:
+          - "Create a content format playbook for yourself: document 5 post formats you can rotate, with a template and example for each"
+        tips:
+          - "Storytelling beats advice-giving on LinkedIn. 'Here is what happened to me and what I learned' outperforms 'Here are 7 tips' every time."
       - level: advanced
         criteria: "Writing has a signature style. Posts drive meaningful conversations. Can write about complex topics accessibly. Audience saves and shares posts."
         metrics:
           - "Shares/reposts ≥ 5% of total engagement"
           - "DM conversations initiated by readers ≥ 5/week"
+        resources:
+          - title: "Justin Welsh - Developing Your Writing Voice"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "To write about complex topics accessibly, use the 'explain it to a smart friend' test. If your parent would not understand the post, it is too jargon-heavy."
       - level: expert
         criteria: "Copywriting is a recognized skill. Writing voice is distinctive enough to be parodied or referenced. Posts become reference material in the niche."
         metrics:
           - "Posts bookmarked/saved at 3x+ platform average rate"
           - "Writing style referenced by other creators as influence"
+        resources:
+          - title: "Jasmin Alic - Advanced Copywriting for LinkedIn"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+        tips:
+          - "Your writing voice is the sum of your beliefs, experiences, and language patterns. You cannot shortcut it — it develops through writing 500+ posts."
     tags: ["writing", "storytelling", "voice"]
 
   - id: "business/linkedin-content-creation/content-ideation"
@@ -196,20 +401,61 @@ nodes:
         metrics:
           - "Content backlog has ≥20 unused ideas at all times"
           - "Never misses a scheduled post due to lack of ideas"
+        resources:
+          - title: "Justin Welsh - Content Idea Generation (LinkedIn OS preview)"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+          - title: "LinkedIn Creator Hub - Content Ideas"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        practice:
+          - "Set a 15-minute timer and brainstorm 10 post ideas based on your content pillars using the prompt 'What do beginners get wrong about [topic]?' (15 minutes)"
+          - "Create a simple spreadsheet with columns: Idea, Pillar, Format, Status — and add 20 ideas (30 minutes)"
+        projects:
+          - "Build a content backlog of 30+ ideas organized by content pillar, with at least 3 post formats for each pillar"
+        tips:
+          - "Never sit down to write without an idea ready. Separate ideation from writing. Batch ideation on Mondays, write on Tuesdays."
+          - "Your best content ideas come from real conversations, comments, and DMs — not from staring at a blank screen."
       - level: intermediate
         criteria: "Uses systematic ideation (content matrix, repurposing frameworks). Batches content creation. Plans content 2-4 weeks ahead."
         metrics:
           - "Content calendar maintained with 2+ weeks of planned posts"
           - "Ideation session produces 10+ viable ideas in 30 minutes"
+        resources:
+          - title: "Justin Welsh - Content Matrix Framework"
+            url: "https://www.justinwelsh.me/"
+            type: "course"
+          - title: "Lara Acosta - Content Batching for LinkedIn"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        practice:
+          - "Create a content matrix: 3 pillars x 5 formats = 15 post templates you can reuse (30 minutes)"
+          - "Batch-write 5 posts in one sitting using your content matrix (1 hour)"
+        projects:
+          - "Set up a 4-week content calendar using a content matrix, batch-write all posts, and schedule them"
+        tips:
+          - "Repurpose your best content. A viral post becomes a carousel, a thread, a newsletter section, and a video script. One idea, five pieces of content."
       - level: advanced
         criteria: "Content ideas emerge from audience signals (comments, DMs, trends). Content calendar is dynamic — responsive to engagement data and current events."
         metrics:
           - "30%+ of post ideas sourced from audience questions or comments"
           - "Trending topic posts created and published within 24 hours of trend"
+        resources:
+          - title: "Justin Welsh - Audience-Driven Content Strategy"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "Save every interesting comment, DM question, and objection in a swipe file. These are pre-validated content ideas."
       - level: expert
         criteria: "Content ideation is a competitive moat. Creates original frameworks and concepts that become reference points in the niche."
         metrics:
           - "Original framework or concept adopted by ≥3 other creators"
+        resources:
+          - title: "Lara Acosta - Building Original Frameworks"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        tips:
+          - "Original frameworks are created by naming patterns you already see. If you notice yourself giving the same advice repeatedly, name it — that is your framework."
     tags: ["ideation", "planning", "systems"]
 
   - id: "business/linkedin-content-creation/visual-content"
@@ -224,21 +470,62 @@ nodes:
         criteria: "Creates basic image posts using Canva or similar. Understands that visual posts get higher engagement."
         metrics:
           - "≥2 image or carousel posts per month"
+        resources:
+          - title: "Canva - Free Design Tool"
+            url: "https://www.canva.com/"
+            type: "tool"
+          - title: "LinkedIn Creator Hub - Visual Content Best Practices"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        practice:
+          - "Create a branded Canva template with your brand colors, fonts, and logo for LinkedIn posts (30 minutes)"
+          - "Turn one of your best text posts into a simple image quote card and compare engagement (20 minutes)"
+        projects:
+          - "Create your first LinkedIn carousel (PDF document): take a top-performing text post, break it into 8-10 slides, and post it"
+        tips:
+          - "Carousels get 4x the reach of text-only posts. Start with simple ones: 1 tip per slide, consistent font and color, no more than 10 slides."
+          - "Do not start with video. Master text posts first, then carousels, then video. Each format builds on the skills from the previous one."
       - level: intermediate
         criteria: "Creates carousel/document posts (multi-page PDFs). Designs with consistent brand colors and fonts. Visual hierarchy guides the reader."
         metrics:
           - "Carousel posts average 2x+ the engagement of text-only posts"
           - "Consistent visual brand across all carousel posts"
+        resources:
+          - title: "Canva - LinkedIn Carousel Templates"
+            url: "https://www.canva.com/templates/?query=linkedin-carousel"
+            type: "tool"
+          - title: "Jasmin Alic - How to Create LinkedIn Carousels That Go Viral"
+            url: "https://www.linkedin.com/in/jasminalic/"
+            type: "article"
+        practice:
+          - "Create a carousel template kit: cover slide, content slide, and CTA slide with your brand colors (30 minutes)"
+          - "Produce 2 carousels this week by repurposing your top-performing text posts (1 hour)"
+        projects:
+          - "Create a carousel series: 4 carousels over 4 weeks on a single theme, with consistent branding and a series title"
+        tips:
+          - "The first slide of a carousel IS the hook. Treat it like a book cover: bold claim, clean design, zero clutter."
       - level: advanced
         criteria: "Creates infographics, data visualizations, and custom illustrations. Video content (short-form, under 60 seconds) produced regularly."
         metrics:
           - "Visual content represents ≥30% of total posts"
           - "Video posts achieve ≥80% of text post engagement with growing trend"
+        resources:
+          - title: "Lara Acosta - Video Content Strategy for LinkedIn"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        tips:
+          - "LinkedIn native video under 60 seconds outperforms longer videos. Hook in the first 3 seconds, add captions (80% of viewers watch without sound)."
       - level: expert
         criteria: "Visual brand is distinctive and recognizable. Creates visual formats adopted by other creators. LinkedIn Live sessions with engaged audiences."
         metrics:
           - "Visual content style is identifiable without seeing author name"
           - "LinkedIn Live sessions average ≥50 concurrent viewers"
+        resources:
+          - title: "LinkedIn Help - LinkedIn Live"
+            url: "https://www.linkedin.com/help/linkedin/answer/a523568"
+            type: "article"
+        tips:
+          - "A distinctive visual brand means saying no to trends. Pick 2-3 colors, 1 font, and 1 layout style — then use them for 100 posts until they become yours."
     tags: ["visual", "carousels", "design"]
 
   # ── OPTIMIZATION & SCALING ──────────────────────────────────────────────────
@@ -253,20 +540,61 @@ nodes:
         criteria: "Checks post analytics weekly. Identifies top and bottom performing posts."
         metrics:
           - "Weekly analytics review completed for ≥8 consecutive weeks"
+        resources:
+          - title: "LinkedIn Help - View Post Analytics"
+            url: "https://www.linkedin.com/help/linkedin/answer/a507508"
+            type: "article"
+          - title: "Justin Welsh - LinkedIn Analytics That Matter"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        practice:
+          - "Review your last 10 posts: rank them by impressions and engagement rate, then identify what the top 3 have in common (20 minutes)"
+          - "Set up a simple spreadsheet to track impressions, engagement rate, and follower growth weekly (15 minutes)"
+        projects:
+          - "Create a weekly analytics habit: every Sunday, review the week's posts, identify the top performer, and write down why it worked"
+        tips:
+          - "Do not check analytics daily — it causes anxiety and leads to chasing virality. Weekly reviews give enough data to spot patterns without noise."
+          - "Engagement rate matters more than impressions. 10,000 impressions with 1% engagement is worse than 2,000 impressions with 8% engagement."
       - level: intermediate
         criteria: "Tracks KPIs (impressions, engagement rate, profile views, follower growth). Identifies patterns in top-performing content. Tests deliberately."
         metrics:
           - "Monthly follower growth rate ≥ 5%"
           - "A/B tests ≥2 variables per month (hook style, format, posting time)"
+        resources:
+          - title: "Richard van der Blom - LinkedIn Algorithm Research Report"
+            url: "https://www.linkedin.com/in/richardvanderblom/"
+            type: "article"
+          - title: "Lara Acosta - LinkedIn Analytics Deep Dive"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        practice:
+          - "Run a 4-week A/B test: post the same topic in 2 different formats on alternating weeks and compare results (4 weeks)"
+          - "Test posting at 3 different times this month and track which time gets the most engagement in the first hour (1 month)"
+        projects:
+          - "Create a monthly analytics report: track 5 KPIs, identify top 3 posts, extract 3 lessons, and plan next month's content based on findings"
+        tips:
+          - "Test only one variable at a time. If you change the hook, the format, and the posting time, you will not know which change made the difference."
       - level: advanced
         criteria: "Data-driven content strategy. Audience demographics analyzed. Content calendar adjusted based on performance patterns. Dwell time and save rate tracked."
         metrics:
           - "Content performance prediction accuracy: ≥60% (identifies top-performing posts before publishing)"
           - "Engagement rate trend: increasing quarter-over-quarter"
+        resources:
+          - title: "Richard van der Blom - Advanced LinkedIn Analytics"
+            url: "https://www.linkedin.com/in/richardvanderblom/"
+            type: "article"
+        tips:
+          - "Build a 'pre-publish checklist' based on your analytics: the 5 elements your top posts have in common. Score each post before publishing."
       - level: expert
         criteria: "Analytics drives strategic decisions. Builds dashboards and reporting systems. Performance benchmarking against niche peers."
         metrics:
           - "Content performance consistently in top 10% of niche benchmarks"
+        resources:
+          - title: "Justin Welsh - Content Performance Systems"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "At scale, benchmark against your niche, not against yourself. Your engagement rate relative to peers tells you more than your absolute numbers."
     tags: ["analytics", "data", "optimization"]
 
   - id: "business/linkedin-content-creation/newsletter-longform"
@@ -281,21 +609,62 @@ nodes:
         criteria: "Publishes first LinkedIn newsletter or article. Understands the difference between posts, articles, and newsletters."
         metrics:
           - "First newsletter published with ≥50 subscribers"
+        resources:
+          - title: "LinkedIn Help - Create a Newsletter"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+          - title: "Justin Welsh - How to Start a LinkedIn Newsletter"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        practice:
+          - "Write your first newsletter issue: take your best-performing post, expand it to 500-800 words with deeper insights (1 hour)"
+          - "Promote your newsletter in 3 regular posts this week, inviting followers to subscribe (ongoing)"
+        projects:
+          - "Launch a LinkedIn newsletter: pick a name, write the first issue, promote it in 3 posts, and reach 50 subscribers"
+        tips:
+          - "Do NOT start a newsletter from scratch. Wait until you have 500+ followers and a proven content style. A newsletter to an empty audience is wasted effort."
+          - "Keep newsletter issues under 1,000 words. LinkedIn newsletters are not blog posts — readers expect concise, actionable content."
       - level: intermediate
         criteria: "Consistent newsletter cadence (weekly or biweekly). Newsletter content extends post topics with deeper analysis."
         metrics:
           - "Newsletter open rate ≥ 40%"
           - "≥200 subscribers within 3 months of launch"
+        resources:
+          - title: "Lara Acosta - LinkedIn Newsletter Growth Strategy"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+          - title: "LinkedIn Help - Newsletter Best Practices"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+        practice:
+          - "Establish a publishing cadence: commit to weekly or biweekly and never miss a scheduled issue for 8 weeks (ongoing)"
+          - "Promote each newsletter issue with a teaser post that gives the first insight and ends with 'Read the full breakdown in my newsletter' (per issue)"
+        projects:
+          - "Grow your newsletter to 200 subscribers: publish consistently for 3 months, promote each issue in a post, and cross-reference newsletter content in your regular posts"
+        tips:
+          - "Newsletter open rates on LinkedIn are naturally high (40-60%) because notifications go to subscribers. Focus on subscriber growth over open rate optimization."
       - level: advanced
         criteria: "Newsletter is a distinct content product. Drives traffic, leads, or revenue. Cross-promotes between posts and newsletter."
         metrics:
           - "Newsletter subscriber growth ≥ 10% per month"
           - "Newsletter generates ≥3 inbound opportunities per month"
+        resources:
+          - title: "Justin Welsh - Monetizing a LinkedIn Newsletter"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "Your newsletter should offer something your posts do not: deeper analysis, templates, behind-the-scenes, or exclusive frameworks. Give people a reason to subscribe."
       - level: expert
         criteria: "Newsletter is an industry reference. Sponsorship or monetization viable. Content quality comparable to paid media."
         metrics:
           - "≥5,000 newsletter subscribers"
           - "Newsletter content cited by other publications or creators"
+        resources:
+          - title: "Lenny's Newsletter - How I Built a 500K Subscriber Newsletter"
+            url: "https://www.lennysnewsletter.com/"
+            type: "article"
+        tips:
+          - "At 5,000+ subscribers, treat your newsletter as a media product. Consistent quality, consistent cadence, and a clear editorial voice are non-negotiable."
     tags: ["newsletter", "long-form", "depth"]
 
   - id: "business/linkedin-content-creation/content-distribution"
@@ -310,21 +679,62 @@ nodes:
         criteria: "Uses relevant hashtags (3-5 per post). Shares content in relevant LinkedIn groups."
         metrics:
           - "Hashtag strategy consistent across posts"
+        resources:
+          - title: "LinkedIn Help - Hashtag Best Practices"
+            url: "https://www.linkedin.com/help/linkedin/answer/a522537"
+            type: "article"
+          - title: "Richard van der Blom - LinkedIn Hashtag Research"
+            url: "https://www.linkedin.com/in/richardvanderblom/"
+            type: "article"
+        practice:
+          - "Research 10 relevant hashtags in your niche: check the number of followers for each and pick 3-5 with 10K-500K followers (20 minutes)"
+          - "Join 3 LinkedIn groups in your niche and share your best post with a short introduction (15 minutes)"
+        projects:
+          - "Create a hashtag strategy document: 5 core hashtags you use on every post, 5 rotating hashtags by topic"
+        tips:
+          - "Use 3-5 hashtags maximum. More than 5 looks spammy and does not increase reach. Mix broad hashtags (#marketing) with niche ones (#B2BSaaS)."
+          - "Do not put hashtags at the beginning of the post. They break the reading flow. Place them at the end or in the first comment."
       - level: intermediate
         criteria: "Repurposes top LinkedIn content to 1-2 other platforms (Twitter/X, blog). Collaborates with complementary creators."
         metrics:
           - "Content appears on ≥2 platforms with platform-appropriate formatting"
           - "≥1 content collaboration per month"
+        resources:
+          - title: "Justin Welsh - Content Repurposing Framework"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+          - title: "Lara Acosta - Cross-Platform Content Strategy"
+            url: "https://www.linkedin.com/in/laraacostauk/"
+            type: "article"
+        practice:
+          - "Take your top 3 LinkedIn posts from last month and adapt them for Twitter/X (shorter, thread format) (30 minutes)"
+          - "Reach out to 3 complementary creators this month and propose a content collaboration (ongoing)"
+        projects:
+          - "Set up a content repurposing workflow: 1 LinkedIn post becomes a tweet thread, a blog paragraph, and a carousel slide — document the process"
+        tips:
+          - "Do not copy-paste across platforms. Each platform has a different format, tone, and audience. Adapt the content, do not duplicate it."
       - level: advanced
         criteria: "Systematic content repurposing workflow. Paid amplification of proven organic content. Partnership strategy with complementary creators."
         metrics:
           - "Cross-platform content generates ≥20% additional reach beyond LinkedIn"
           - "Paid amplification ROI: positive on 70%+ of boosted posts"
+        resources:
+          - title: "LinkedIn Help - Boost Posts and Ads"
+            url: "https://www.linkedin.com/help/lms/answer/a425764"
+            type: "article"
+        tips:
+          - "Only boost content that already performed well organically. Paid amplification multiplies success — it does not create it."
       - level: expert
         criteria: "Content distribution is a system, not a task. Multi-platform presence is self-reinforcing. Content flywheel generates growth without proportional effort increase."
         metrics:
           - "Total cross-platform reach ≥3x LinkedIn-only reach"
           - "Content system maintained with ≤5 hours/week of creator time"
+        resources:
+          - title: "Justin Welsh - Building a Content Flywheel"
+            url: "https://www.justinwelsh.me/"
+            type: "article"
+        tips:
+          - "The content flywheel works when each platform feeds the others. LinkedIn posts become newsletter content, newsletters become blog posts, blog posts become LinkedIn carousels."
     tags: ["distribution", "repurposing", "scale"]
 
 relationships:

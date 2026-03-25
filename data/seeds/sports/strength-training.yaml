@@ -63,6 +63,28 @@ nodes:
           - "10 floor push-ups with chest touching the ground and full lockout at top"
           - "Hip hinge with dowel: 3 points of contact maintained for 10 reps without coaching cues"
           - "FMS composite score of 14+ (out of 21) with no asymmetries scoring 1"
+        resources:
+          - title: "Alan Thrall — How to Squat with Proper Form (Bodyweight to Barbell)"
+            url: "https://www.youtube.com/watch?v=UFs6E3Ti1jg"
+            type: "video"
+          - title: "Jeff Nippard — The 5 Fundamental Movement Patterns Explained"
+            url: "https://www.youtube.com/watch?v=R6gZoAzAhCg"
+            type: "video"
+          - title: "Starting Strength — How to Set Up a Squat Rack Safely"
+            url: "https://www.youtube.com/watch?v=H1tM0IS_gvY"
+            type: "video"
+        practice:
+          - "10 min: Bodyweight squat practice — 3 sets of 15, focus on depth (hip crease below knee) with heels flat"
+          - "10 min: Hip hinge with dowel — 3 sets of 10, maintain contact at head, upper back, and sacrum"
+          - "5 min: Push-up progression — wall push-ups if needed, incline, then floor; 3 sets of max reps at appropriate level"
+          - "5 min: Dead hang practice — 3 attempts of max hold time, target 30 seconds"
+        projects:
+          - "Perform 20 consecutive bodyweight squats to parallel with heels flat"
+          - "Hold a dead hang for 30 seconds with packed shoulders"
+          - "Load and unload a barbell safely with collars in under 60 seconds"
+        tips:
+          - "Don't skip the bodyweight phase — spend 2-4 weeks mastering bodyweight patterns before touching a barbell; rushing to add weight on bad form builds bad habits that are hard to fix later"
+          - "Learn to set up safety pins BEFORE you need them — set them at the correct height for squats and bench press so you know how to bail safely"
       - level: intermediate
         criteria: "Goblet squat with controlled tempo demonstrating full depth and upright torso, Romanian deadlift with neutral spine and hamstring stretch at bottom, overhead press with full lockout and no excessive back arch. Demonstrates bilateral and unilateral patterns without compensation. Can perform split squat, single-leg RDL, and half-kneeling press with stable positioning. Understands the difference between mobility and stability limitations."
         metrics:
@@ -70,6 +92,23 @@ nodes:
           - "Single-leg Romanian deadlift 3x8 each side without loss of balance or hip rotation"
           - "Bulgarian split squat 3x8 each leg with 20% bodyweight (goblet hold) and rear knee 1 inch from floor"
           - "Half-kneeling Pallof press 3x8 each side without torso rotation or lateral shift"
+        resources:
+          - title: "Jeff Nippard — Goblet Squat Technique and Progressions"
+            url: "https://www.youtube.com/watch?v=CkFzgR55gho"
+            type: "video"
+          - title: "Alan Thrall — Romanian Deadlift Form Guide"
+            url: "https://www.youtube.com/watch?v=jEy_czb3RKA"
+            type: "video"
+        practice:
+          - "15 min: Goblet squat tempo work — 3x10 with 3-second lowering phase and 1-second pause at the bottom"
+          - "10 min: Single-leg RDL balance drill — 3x8 each side with light dumbbell, focus on hip hinge without rotation"
+          - "10 min: Bulgarian split squat practice — 3x8 each leg with bodyweight or light goblet hold"
+        projects:
+          - "Goblet squat 25% bodyweight for 3x10 with 3-second eccentric and pause at bottom"
+          - "Single-leg RDL 3x8 each side without losing balance or hip rotation"
+        tips:
+          - "If you cannot do a single-leg RDL without losing balance, start by keeping your back toes on the ground for balance — gradually lift them as you get stronger"
+          - "Understand the difference between mobility and stability: if you cannot reach a position even when assisted, it is a mobility problem; if you can reach it but cannot control it under load, it is a stability problem"
       - level: advanced
         criteria: "Moves fluidly between all patterns under moderate load (0.5-0.75x bodyweight). Can coach others through movement corrections using internal and external cueing strategies. Recognizes and corrects own compensations in real time during working sets. Understands compensatory movement patterns (e.g., knee valgus from weak glute medius, butt wink from hip anatomy vs. hamstring tightness, forward lean from ankle mobility vs. quad weakness)."
         metrics:
@@ -77,6 +116,12 @@ nodes:
           - "Successfully cues and corrects 5 common faults in others: knee valgus, butt wink, forward lean, elbow flare on bench, and back rounding on deadlift"
           - "Pistol squat (single-leg squat) to full depth for 3 reps each side bodyweight"
           - "Performs all 5 fundamental patterns with 0.5x bodyweight load for 5+ reps without form breakdown"
+        resources:
+          - title: "Stronger by Science — Understanding Compensatory Movement Patterns"
+            url: "https://www.strongerbyscience.com/how-to-squat/"
+            type: "article"
+        tips:
+          - "Use external cues over internal cues when coaching — 'push the floor away' works better than 'extend your knees' because external cues produce faster motor learning"
       - level: expert
         criteria: "Performs high-skill loaded movements (Turkish get-up, windmill, single-leg squat, L-sit) with control under significant load. Can design corrective exercise sequences for diverse populations including post-rehab athletes, seniors, and youth. Understands biomechanical principles (force vectors, moment arms, leverage) and applies them to movement coaching. Can administer and interpret FMS, SFMA, or equivalent screening systems."
         metrics:
@@ -84,6 +129,12 @@ nodes:
           - "Designs individualized corrective programs based on movement screening for 5+ distinct dysfunction patterns (ankle dorsiflexion deficit, hip internal rotation deficit, thoracic extension deficit, scapular dyskinesis, core stability deficit)"
           - "Windmill with 25% bodyweight overhead for 5 reps each side with straight legs"
           - "Administers and interprets a complete FMS or SFMA screen in under 15 minutes with reliable scoring"
+        resources:
+          - title: "Starting Strength — Turkish Get-Up Technique and Coaching"
+            url: "https://www.youtube.com/watch?v=0bWRPC49-KI"
+            type: "video"
+        tips:
+          - "The Turkish get-up is the ultimate movement screen — if an athlete can perform it smoothly under load, they have adequate mobility, stability, and coordination for virtually any training program"
     tags: ["foundation", "movement", "screening"]
 
   # ── COMPOUND BARBELL LIFTS ────────────────────────────────────────────────
@@ -120,6 +171,29 @@ nodes:
           - "Overhead press 0.35x bodyweight for 5 reps with full lockout overhead and no excessive back lean"
           - "Lift ratios within 20% of the 4:3:2:1 target (Deadlift:Squat:Bench:Press)"
           - "Completes 8+ weeks of linear progression adding weight every session on all four lifts"
+        resources:
+          - title: "Alan Thrall — How to Squat (Complete Guide)"
+            url: "https://www.youtube.com/watch?v=UFs6E3Ti1jg"
+            type: "video"
+          - title: "Alan Thrall — How to Bench Press (Complete Guide)"
+            url: "https://www.youtube.com/watch?v=BYKScL2sgCs"
+            type: "video"
+          - title: "Alan Thrall — How to Deadlift (Complete Guide)"
+            url: "https://www.youtube.com/watch?v=wYREQkVtvEc"
+            type: "video"
+          - title: "Starting Strength — The Novice Linear Progression"
+            url: "https://www.youtube.com/watch?v=FnW5kVIDdJk"
+            type: "video"
+        practice:
+          - "60 min (3x/week): Follow a novice linear progression program (Starting Strength 3x5 or StrongLifts 5x5) exactly as written"
+          - "10 min pre-session: Practice bracing technique — big belly breath, brace obliques, hold for 5 seconds, release, repeat 10 times"
+          - "5 min: Film one working set per session and review form immediately after"
+        projects:
+          - "Complete 8 consecutive weeks of linear progression adding weight every session"
+          - "Squat 0.75x bodyweight, bench 0.5x bodyweight, deadlift 1.0x bodyweight, and press 0.35x bodyweight for 5 reps each"
+        tips:
+          - "Don't change programs — pick Starting Strength, StrongLifts, or GZCLP and follow it exactly for at least 12 weeks; program hopping is the number one reason beginners stall"
+          - "Film your lifts — you cannot see your own form; film one set per session from a side angle and compare it to coaching videos to catch issues early"
       - level: intermediate
         criteria: "Consistent technique under working loads. Has exhausted novice linear progression (can no longer add weight every session despite adequate sleep and 1.6-2.2 g/kg protein). Follows a structured intermediate program (Texas Method, 5/3/1, GZCL, or similar). Tracks all lifts in a training log. Understands cue systems for each lift (e.g., 'spread the floor' for squats, 'bend the bar' for bench, 'push the floor away' for deadlifts). Wilks score in the 200-300 range."
         metrics:
@@ -129,6 +203,26 @@ nodes:
           - "Overhead press 0.65-0.8x bodyweight for 1 rep"
           - "Wilks score 200-300 (based on powerlifting total of squat + bench + deadlift)"
           - "All four lifts tracked with RPE/RIR for every working set over 12+ weeks"
+        resources:
+          - title: "Jeff Nippard — The Best Intermediate Strength Programs Compared"
+            url: "https://www.youtube.com/watch?v=Enn0JFbTJfI"
+            type: "video"
+          - title: "Stronger by Science — Bench Press Guide (Form, Programming, and Sticking Points)"
+            url: "https://www.strongerbyscience.com/how-to-bench/"
+            type: "article"
+          - title: "Starting Strength — When to Switch from Novice to Intermediate Programming"
+            url: "https://www.youtube.com/watch?v=5L0R-gaBi0A"
+            type: "video"
+        practice:
+          - "4x/week: Follow a structured intermediate program (5/3/1, Texas Method, or GZCL) with every set logged with RPE/RIR"
+          - "10 min/session: Cue practice — focus on one cue per lift per session (e.g., 'spread the floor' for squats) and evaluate whether it improved your set"
+          - "Weekly: Review training log for RPE trends — if RPE is drifting up on the same weight, plan a deload"
+        projects:
+          - "Squat 1.25x bodyweight, bench 1.0x bodyweight, and deadlift 1.5x bodyweight for 1 rep"
+          - "Track every working set with RPE/RIR for 12 consecutive weeks"
+        tips:
+          - "Don't ego-lift at the intermediate stage — use a training max (90% of true 1RM) and leave reps in the tank on most sets; sustainable progress comes from submaximal training"
+          - "Log every session including RPE — if the same weight feels harder over 2-3 weeks (RPE drift), it is time for a deload, not more volume"
       - level: advanced
         criteria: "Lifts at competitive standards with a Wilks score of 300-400. Executes each lift with minimal technical breakdown under near-maximal loads (95%+ 1RM). Understands individual leverages (limb length, torso proportions) and has made informed stance and grip adjustments — chosen between high bar vs. low bar squat, conventional vs. sumo deadlift, and competition bench grip width. Uses specialty bars (SSB, trap bar, cambered bar) for targeted development. Executes planned peaking cycles that produce PRs."
         metrics:
@@ -139,6 +233,12 @@ nodes:
           - "Wilks score 300-400 (based on powerlifting total)"
           - "Lift ratios within 10% of the 4:3:2:1 target, indicating balanced development"
           - "Completes a 12-16 week periodized program that produces PRs on at least 2 of 4 lifts"
+        resources:
+          - title: "Stronger by Science — The Complete Strength Training Guide"
+            url: "https://www.strongerbyscience.com/complete-strength-training-guide/"
+            type: "article"
+        tips:
+          - "Experiment with stance and grip adjustments based on YOUR body proportions — long femurs may benefit from low bar or wider stance squats; long arms from sumo deadlift; these are individual decisions, not universal rules"
       - level: expert
         criteria: "Elite-level proficiency in all four lifts with a Wilks score of 400+ (500+ is world-class). Technique holds under maximal attempts at 98-100% 1RM. Can coach all lifts to a high standard and identify subtle form breakdowns at speed (e.g., detecting 5 degrees of knee cave or a slight bar drift on video review). Understands and applies biomechanical analysis to optimize individual technique. Has competed at regional or national level."
         metrics:
@@ -149,6 +249,12 @@ nodes:
           - "Powerlifting total (squat + bench + deadlift) yields Wilks score 400+ (elite) or 500+ (world-class)"
           - "Lift ratios within 5% of the 4:3:2:1 target across all four lifts"
           - "Competition PRs within 2% of best gym lifts, demonstrating platform consistency"
+        resources:
+          - title: "Starting Strength — Coaching the Lifts at the Elite Level"
+            url: "https://www.youtube.com/watch?v=rxD321l2svE"
+            type: "video"
+        tips:
+          - "At the elite level, technique refinement never stops — film every heavy single and review it for bar path deviations measured in centimeters; small technical improvements at 95%+ 1RM translate to kilos on the total"
     tags: ["barbell", "squat", "bench", "deadlift", "measurable"]
 
   # ── CORE & STABILITY ──────────────────────────────────────────────────────
@@ -183,6 +289,23 @@ nodes:
           - "Dead bug 3x8 each side with arms and legs moving without any lumbar extension (back stays flat)"
           - "Farmer carry with 0.5x bodyweight total (0.25x per hand) for 30 meters with upright posture"
           - "Demonstrates Valsalva brace that resists partner's push from front, side, and back"
+        resources:
+          - title: "Alan Thrall — How to Brace Your Core for Heavy Lifting"
+            url: "https://www.youtube.com/watch?v=PLHY2-nt-y4"
+            type: "video"
+          - title: "Jeff Nippard — The Best Core Exercises (Science-Based)"
+            url: "https://www.youtube.com/watch?v=g_BYB0R-4Ts"
+            type: "video"
+        practice:
+          - "10 min: Front plank holds — 3 attempts of max hold, target 60 seconds with neutral spine"
+          - "10 min: Dead bug drill — 3x8 each side, focus on keeping your lower back pressed flat into the floor"
+          - "5 min: Bracing practice — take a big belly breath, brace your abs as if you are about to be punched, hold 5 seconds, repeat 10 times"
+        projects:
+          - "Hold a front plank for 60 seconds with neutral spine and no hip sag"
+          - "Farmer carry 0.5x bodyweight total for 30 meters with upright posture"
+        tips:
+          - "Don't suck your belly in when bracing — push your abs OUT in all directions (front, sides, and back) to create intra-abdominal pressure; sucking in reduces stability"
+          - "If your squat stalls and your back rounds before your legs give out, your core is the bottleneck — prioritize direct core work"
       - level: intermediate
         criteria: "Braces effectively with a belt under moderate barbell loads (squat at 1.0-1.25x BW). Performs anti-rotation exercises (Pallof press) and loaded carries with good posture under fatigue. Uses the belt correctly — positioned over the obliques, not on the hip bones, and braces out against it rather than relying on it passively. Performs hanging leg raises with control (no swinging). Core endurance sufficient to maintain brace through sets of 5 on heavy compounds."
         metrics:
@@ -191,6 +314,23 @@ nodes:
           - "Ab wheel rollout from knees for 3x10 with full extension and no hip sag on the return"
           - "Hanging knee raise 3x12 with controlled tempo (no kipping or swinging)"
           - "Maintains brace integrity through a set of 5 back squats at 1.25x bodyweight"
+        resources:
+          - title: "Jeff Nippard — Ab Wheel Rollout Progression (Beginner to Advanced)"
+            url: "https://www.youtube.com/watch?v=cNs2l2Wt7jQ"
+            type: "video"
+          - title: "Stronger by Science — Belt Use and Bracing Under Load"
+            url: "https://www.strongerbyscience.com/the-belt-bible/"
+            type: "article"
+        practice:
+          - "10 min: Pallof press — 3x10 each side, focus on resisting rotation with zero torso movement"
+          - "10 min: Ab wheel rollouts from knees — 3x10, control the return and avoid hip sag"
+          - "10 min: Farmer carry with heavier weight — 0.75x bodyweight total for 40 meters, stay upright"
+        projects:
+          - "Perform ab wheel rollouts from knees for 3x10 with full extension and controlled return"
+          - "Maintain brace integrity through a full set of 5 squats at 1.25x bodyweight"
+        tips:
+          - "Position your belt over the obliques, not on the hip bones — brace OUT against the belt rather than relying on it passively; the belt amplifies your brace, it does not replace it"
+          - "Train all four core categories: anti-extension (planks, ab wheel), anti-rotation (Pallof press), anti-lateral flexion (suitcase carry), and hip flexion (hanging knee raises)"
       - level: advanced
         criteria: "Maintains brace integrity through heavy squats (1.75x+ BW) and deadlifts (2.0x+ BW) with no visible core breakdown on video review. Performs ab wheel rollout from standing — one of the most demanding anti-extension exercises. Demonstrates trunk stability under asymmetric and rotational loading. Core strength is no longer a limiting factor on any compound lift. Can perform L-sits and front levers (partial or full)."
         metrics:
@@ -199,6 +339,12 @@ nodes:
           - "Hanging straight-leg raise (toes to bar) for 8 reps with controlled tempo"
           - "L-sit hold on parallettes or dip bars for 15 seconds"
           - "Maintains brace through a set of 3 deadlifts at 2.0x bodyweight with no lumbar rounding"
+        resources:
+          - title: "Jeff Nippard — Standing Ab Wheel Rollout Progression"
+            url: "https://www.youtube.com/watch?v=uYBOBBv9GzY"
+            type: "video"
+        tips:
+          - "The standing ab wheel rollout is the gold standard of anti-extension exercises — if you can do 5 clean reps from standing, your anti-extension core strength is no longer a limiting factor"
       - level: expert
         criteria: "Core bracing is automatic and invisible under maximal loads (2.5x+ BW squat, 3.0x+ BW deadlift). Can teach bracing and belt use to beginners through advanced lifters, diagnosing core-related weaknesses from video. Performs advanced stability work (dragon flags, heavy yoke walks, front levers). Understands and can explain the biomechanics of spinal loading (Stuart McGill's 'Big 3', moment arms on the spine, shear vs. compression forces)."
         metrics:
@@ -206,6 +352,12 @@ nodes:
           - "Yoke walk 2x bodyweight for 15 meters without stumble or excessive forward lean"
           - "Front lever hold (full body horizontal) for 5 seconds or tuck front lever for 15 seconds"
           - "Can identify core-related technique breakdowns on video and prescribe corrective core exercises for 5+ distinct patterns (e.g., squat good-morning, deadlift rounding, bench arch collapse)"
+        resources:
+          - title: "Stronger by Science — Stuart McGill's Big 3 and Spinal Stability"
+            url: "https://www.strongerbyscience.com/core-training/"
+            type: "article"
+        tips:
+          - "Master Stuart McGill's Big 3 (curl-up, side plank, bird dog) as diagnostic tools — if an athlete cannot perform these pain-free, they need corrective work before heavy loading"
     tags: ["core", "stability", "bracing", "foundation"]
 
   # ── ACCESSORY & ISOLATION ─────────────────────────────────────────────────
@@ -241,6 +393,23 @@ nodes:
           - "Face pulls 3x15-20 with external rotation at top — performed every upper body session"
           - "Lat pulldown 3x10 at 0.4x bodyweight with full stretch at top and squeeze at bottom"
           - "Dumbbell curl 3x12 at 10-15% bodyweight per hand with no swinging"
+        resources:
+          - title: "Jeff Nippard — Best Accessory Exercises for Beginners"
+            url: "https://www.youtube.com/watch?v=R6gZoAzAhCg"
+            type: "video"
+          - title: "Alan Thrall — Face Pulls: The Most Important Exercise You Are Not Doing"
+            url: "https://www.youtube.com/watch?v=rep-qVOkqgk"
+            type: "video"
+        practice:
+          - "10 min: Barbell rows — 3x10 with controlled eccentric, chest touches the bar at top"
+          - "5 min: Face pulls — 3x15-20 with external rotation at the top; do these EVERY upper body session"
+          - "10 min: Walking lunges — 3x12 each leg bodyweight, focus on knee tracking over toes"
+        projects:
+          - "Perform face pulls every upper body session for 8 consecutive weeks"
+          - "Barbell row 0.5x bodyweight for 3x10 with controlled form"
+        tips:
+          - "Do face pulls EVERY upper body session — they protect your shoulders from the wear of heavy pressing and cost almost no recovery"
+          - "Use higher rep ranges (8-15 reps) for accessories — this drives muscle growth with lower joint stress than heavy sets of 3-5"
       - level: intermediate
         criteria: "Selects accessories based on identified weaknesses in the main lifts — can analyze a failed squat/bench/deadlift and choose the correct accessory to address the sticking point. Performs pull-ups and dips unassisted. Uses progressive overload on accessory movements (adds weight or reps week to week). Tracks accessory work in training log alongside main lifts. Maintains 1:1 push-to-pull volume ratio weekly."
         metrics:
@@ -250,6 +419,23 @@ nodes:
           - "Barbell row 0.7x bodyweight for 3x8 with torso at 45 degrees or lower"
           - "Face pulls 3x15-20 with 15%+ bodyweight — performed 3-4 times per week"
           - "Tracks and maintains 1:1 or better weekly push-to-pull volume ratio (e.g., 15 sets push, 15+ sets pull)"
+        resources:
+          - title: "Jeff Nippard — Pull-Up Progressions (From 0 to 10 Reps)"
+            url: "https://www.youtube.com/watch?v=fO3dKSQayfg"
+            type: "video"
+          - title: "Stronger by Science — Weak Point Training for Powerlifters"
+            url: "https://www.strongerbyscience.com/weakpoint/"
+            type: "article"
+        practice:
+          - "Pull-up progression: Band-assisted pull-ups or negatives 3x max, working toward 10 unassisted reps"
+          - "Dip progression: Bench dips or assisted dips 3x max, working toward 12 unassisted parallel bar dips"
+          - "Track push-to-pull ratio weekly — count all pushing and pulling sets and ensure 1:1 or better"
+        projects:
+          - "Perform 10 strict pull-ups at bodyweight"
+          - "Maintain a 1:1 push-to-pull volume ratio for 12 consecutive weeks"
+        tips:
+          - "Choose accessories based on where your main lifts break down: fail squats by pitching forward? Strengthen upper back with rows. Miss bench at lockout? Do close-grip bench and tricep work"
+          - "Maintain at least a 1:1 push-to-pull ratio — most lifters push too much and pull too little, leading to shoulder problems"
       - level: advanced
         criteria: "Systematically targets weak links in competition lifts using variation selection — close-grip bench for lockout weakness, pause squats for hole strength, deficit deadlifts for off-the-floor speed, pin press for mid-range bench sticking point. Uses varied rep ranges (5-8 for strength accessories, 8-12 for hypertrophy, 12-20 for pump and recovery) and tempos (3-1-1-0 for hypertrophy, 1-3-1-0 for pause work). Balances push/pull volume ratios. Programs accessories in mesocycle blocks that align with main lift goals."
         metrics:
@@ -259,6 +445,12 @@ nodes:
           - "Bulgarian split squat 3x8 each leg at 0.5x bodyweight (barbell on back) with rear knee 1 inch from floor"
           - "Maintains 1:1 or better push-to-pull volume ratio across weekly programming with documented tracking"
           - "Can identify the sticking point in a failed lift on video and prescribe 3 appropriate accessories to address it"
+        resources:
+          - title: "Jeff Nippard — How to Identify and Fix Weak Points in Your Lifts"
+            url: "https://www.youtube.com/watch?v=bHb1hULMYzg"
+            type: "video"
+        tips:
+          - "Film failed attempts and analyze WHERE the lift breaks down — off the chest on bench means pec weakness (use pause bench or DB press); at lockout means triceps (use close-grip bench or board press)"
       - level: expert
         criteria: "Accessory selection is precisely matched to individual biomechanical needs based on video analysis, strength curves, and competition lift patterns. Understands EMG data and muscle activation research to inform exercise choice (e.g., selecting incline dumbbell press over flat for upper pec development based on Contreras et al. research). Can design complete accessory programs for different training phases — higher volume and variety during hypertrophy blocks, reduced and specific during peaking. Understands and applies concepts like stimulus-to-fatigue ratio, mechanical tension vs. metabolic stress, and lengthened partial training."
         metrics:
@@ -266,6 +458,12 @@ nodes:
           - "Barbell row exceeds 1.0x bodyweight for 5 reps while maintaining strict horizontal torso"
           - "Weighted pull-ups with 50%+ bodyweight added for 3 reps"
           - "Can cite research-backed exercise selections for any muscle group and explain the biomechanical rationale"
+        resources:
+          - title: "Stronger by Science — Hypertrophy Training Guide"
+            url: "https://www.strongerbyscience.com/hypertrophy-range-fact-and-fiction/"
+            type: "article"
+        tips:
+          - "Understand the stimulus-to-fatigue ratio when selecting accessories — choose exercises that produce maximum muscle stimulus with minimum systemic fatigue; for example, a leg press creates less fatigue than a squat for equivalent quad stimulus"
     tags: ["accessory", "hypertrophy", "weak-points"]
 
   # ── MOBILITY & RECOVERY ───────────────────────────────────────────────────
@@ -302,6 +500,23 @@ nodes:
           - "Ankle dorsiflexion test: knee touches wall from 5 inches (12.7 cm) on both sides"
           - "Performs a structured 10-minute warm-up before every training session for 8+ consecutive weeks"
           - "Can name own primary mobility limitation and demonstrate 2 drills to address it"
+        resources:
+          - title: "Alan Thrall — The Only Warm-Up You Need Before Lifting"
+            url: "https://www.youtube.com/watch?v=BH11j4kSQ8E"
+            type: "video"
+          - title: "Jeff Nippard — Mobility for Lifters: The 3 Tests You Need"
+            url: "https://www.youtube.com/watch?v=Fo97kNsBwQs"
+            type: "video"
+        practice:
+          - "10 min before every session: RAMP warm-up — 5 min light cardio, 2 min band activation (glutes, shoulders), 3 min targeted mobility for that session's lifts"
+          - "5 min daily: Ankle dorsiflexion drill — banded ankle distraction, 2 min each side"
+          - "5 min daily: Hip 90/90 stretch — hold 60 seconds each side"
+        projects:
+          - "Perform a structured 10-minute warm-up before every training session for 8 consecutive weeks"
+          - "Pass the ankle dorsiflexion test (knee touches wall from 5 inches) on both sides"
+        tips:
+          - "Never touch a barbell cold — always warm up with the RAMP protocol; cold muscles and joints under load is the fastest path to injury"
+          - "Identify YOUR primary limitation (ankle, hip, or thoracic) and do 5 minutes of targeted drills for it EVERY DAY, not just on training days"
       - level: intermediate
         criteria: "Uses targeted mobility drills for individual limitations (hip, ankle, thoracic spine) with measurable progress tracked over time. Implements a post-training recovery routine including static stretching (held 60-120 seconds per position) and foam rolling of trained muscle groups. Tracks sleep quality and adjusts training load based on recovery markers (subjective rating, HRV if available, morning bodyweight trends). Understands when to use heel-elevated shoes vs. working on ankle mobility. Performs soft-tissue work on quads, adductors, lats, and pecs using foam roller or lacrosse ball."
         metrics:
@@ -310,6 +525,23 @@ nodes:
           - "Ankle dorsiflexion test: knee touches wall from 6+ inches (15 cm) on both sides"
           - "Hip 90/90 position held for 60 seconds each side with torso upright and both knees at 90 degrees"
           - "Adjusts training intensity or volume on at least 2 occasions per 12-week block based on recovery data"
+        resources:
+          - title: "Jeff Nippard — Sleep and Recovery for Lifters (Evidence-Based)"
+            url: "https://www.youtube.com/watch?v=q9XA_3mPEB4"
+            type: "video"
+          - title: "Stronger by Science — Recovery: The Most Underrated Variable"
+            url: "https://www.strongerbyscience.com/grow-like-a-new-lifter-again/"
+            type: "article"
+        practice:
+          - "Daily: Track sleep hours and subjective recovery rating (1-10) in your training log"
+          - "Post-training: 10 min static stretching of trained muscle groups (hold each position 60-120 seconds)"
+          - "2x/week: Foam rolling of quads, adductors, lats, and pecs — 2 min per area"
+        projects:
+          - "Log 7-9 hours of sleep with recovery rating above 7/10 on training days for 8 consecutive weeks"
+          - "Pass the ankle dorsiflexion test from 6+ inches on both sides"
+        tips:
+          - "Sleep is the number one recovery tool — 7-9 hours per night with consistent bed/wake times beats every supplement, foam roller, and recovery gadget combined"
+          - "Use heel-elevated shoes as a BRIDGE while you work on ankle mobility, not as a permanent crutch — continue doing ankle dorsiflexion work even if you lift in elevated shoes"
       - level: advanced
         criteria: "Maintains mobility under heavy training loads (1.75x+ BW squat, 2.0x+ BW deadlift) without mobility degrading as training stress increases. Uses self-myofascial release, banded distraction, and PNF stretching (contract-relax method) systematically. Periodizes recovery work alongside training phases — more recovery work during high-volume accumulation blocks, less during peaking. Manages training through minor aches without worsening them. Understands the difference between pain and discomfort and adjusts training accordingly."
         metrics:
@@ -318,6 +550,12 @@ nodes:
           - "Demonstrates PNF stretching protocol for hip flexors, hamstrings, and shoulders"
           - "Successfully auto-regulates training around minor aches — modifies exercises rather than skipping sessions (e.g., switching to SSB squat during a shoulder flare-up)"
           - "Completes every warm-up in under 15 minutes while addressing all relevant mobility demands"
+        resources:
+          - title: "Stronger by Science — Managing Training Around Pain"
+            url: "https://www.strongerbyscience.com/pain-in-training/"
+            type: "article"
+        tips:
+          - "Modify exercises around minor aches instead of skipping sessions entirely — a shoulder flare-up means switching to SSB squats instead of back squats, not taking a week off"
       - level: expert
         criteria: "Designs mobility and recovery programs for others based on individual assessment. Understands pain science (the biopsychosocial model — pain is not a reliable indicator of tissue damage, fear avoidance, graded exposure) and knows when to refer to medical professionals (red flags: unexplained weight loss, night pain, neurological symptoms, trauma). Integrates active recovery, deload protocols (planned every 4-6 weeks; reduced volume by 40-60%, maintain intensity), and lifestyle factors (sleep hygiene, stress management, work schedule) into a comprehensive system."
         metrics:
@@ -325,6 +563,12 @@ nodes:
           - "Maintains injury-free training across 2+ consecutive years of high-volume programming (16+ sets per muscle group per week)"
           - "Can correctly identify 3+ red-flag symptoms that require medical referral vs. training modification"
           - "Designs deload protocols for athletes at different training levels that preserve performance while allowing recovery"
+        resources:
+          - title: "Stronger by Science — Pain Science for Strength Athletes"
+            url: "https://www.strongerbyscience.com/pain-science/"
+            type: "article"
+        tips:
+          - "Learn pain science: pain is not a reliable indicator of tissue damage; fear avoidance and catastrophizing are bigger obstacles to recovery than the injury itself in most cases"
     tags: ["mobility", "recovery", "injury-prevention", "longevity"]
 
   # ── NUTRITION ─────────────────────────────────────────────────────────────
@@ -363,6 +607,23 @@ nodes:
           - "Correctly estimates protein content of 10 common foods (chicken breast, eggs, Greek yogurt, milk, rice, oats, beef, whey, beans, tofu) within 20% accuracy"
           - "Drinks minimum 0.5 oz water per pound bodyweight daily, tracked for 2+ weeks"
           - "Eats a meal with 30-50 g protein and 40-60 g carbohydrates within 2 hours post-training"
+        resources:
+          - title: "Jeff Nippard — The Complete Nutrition Guide for Lifters"
+            url: "https://www.youtube.com/watch?v=n-bOAgEqUbI"
+            type: "video"
+          - title: "Stronger by Science — How Much Protein Do You Need?"
+            url: "https://www.strongerbyscience.com/reflecting-on-five-years/"
+            type: "article"
+        practice:
+          - "Week 1-2: Track all food with MyFitnessPal or MacroFactor for 14 consecutive days to calibrate portion awareness"
+          - "Daily: Hit protein target of 1.6-2.2 g/kg bodyweight — plan meals around protein sources first, then fill in carbs and fats"
+          - "Post-training: Eat a meal containing 30-50 g protein within 2 hours of finishing"
+        projects:
+          - "Track protein intake daily for 4 consecutive weeks and hit 1.6-2.2 g/kg bodyweight on 90%+ of days"
+          - "Correctly estimate protein content of 10 common foods within 20% accuracy without looking them up"
+        tips:
+          - "Don't overthink nutrition at the beginner level — the single most important thing is getting enough protein (1.6-2.2 g/kg bodyweight); everything else is secondary"
+          - "Use a food scale for the first 2-4 weeks to learn what portions actually look like — most people drastically underestimate calorie intake"
       - level: intermediate
         criteria: "Adjusts calories based on training phase — surplus of 250-500 kcal/day during hypertrophy/growth blocks, maintenance during strength blocks, slight deficit during cuts. Uses creatine monohydrate (5 g daily) consistently. Times carbohydrate intake around training (largest carb meals pre- and post-workout). Understands macronutrient ratios and adjusts carbs and fats based on training demands while keeping protein constant at 1.6-2.2 g/kg. Can prepare 5+ high-protein meals without a recipe."
         metrics:
@@ -371,6 +632,23 @@ nodes:
           - "Hits protein target of 1.6-2.2 g/kg daily with 90%+ compliance over a 12-week block"
           - "Carbohydrate intake of 3-5 g/kg/day during training phases, with 40%+ of daily carbs consumed within the peri-workout window (2 hours before through 2 hours after)"
           - "Caffeine usage at 3-6 mg/kg pre-training on heavy sessions with no use within 8 hours of bedtime"
+        resources:
+          - title: "Jeff Nippard — Creatine: Everything You Need to Know"
+            url: "https://www.youtube.com/watch?v=JzWgUMOcedc"
+            type: "video"
+          - title: "Stronger by Science — The Science of Nutrition for Strength"
+            url: "https://www.strongerbyscience.com/nutrition/"
+            type: "article"
+        practice:
+          - "Daily: Take 5 g creatine monohydrate — no loading phase needed, just consistency"
+          - "Weekly: Meal prep 5+ high-protein meals for the week to ensure consistent intake"
+          - "Training days: Time largest carb meals within 2 hours before and after training"
+        projects:
+          - "Take 5 g creatine monohydrate daily for 8 consecutive weeks without missing a day"
+          - "Manage body composition within 5% bodyweight range across a 12-week training block while maintaining or improving lifts"
+        tips:
+          - "Creatine monohydrate is the most researched supplement in history with overwhelming evidence of benefit — take 5 g daily, every day, with no loading phase or cycling needed"
+          - "Avoid caffeine within 8 hours of bedtime — caffeine has a 5-6 hour half-life and even if you fall asleep, it reduces sleep quality and therefore recovery"
       - level: advanced
         criteria: "Periodizes nutrition alongside training blocks — higher calories and carbs during high-volume accumulation phases, controlled deficit during weight cuts, precise macro targets during peaking. Executes successful weight cuts for competition (3-5% bodyweight over 8-12 weeks for a chronic cut, or 2-3% water cut in the final 24 hours for a 24-hour weigh-in) without significant strength loss. Understands supplement research hierarchy and distinguishes evidence-based (creatine, caffeine, vitamin D) from marketing claims (BCAAs for trained individuals, testosterone boosters, fat burners). Can calculate maintenance calories from bodyweight trends and adjust dynamically."
         metrics:
@@ -379,6 +657,12 @@ nodes:
           - "Calculates own maintenance calories within 5% accuracy using 3-week bodyweight and intake data"
           - "Protein intake never drops below 2.0 g/kg even during a caloric deficit"
           - "Successfully refeeds after competition: regains competition-day bodyweight within 48 hours through strategic carbohydrate and sodium loading"
+        resources:
+          - title: "Stronger by Science — Evidence-Based Supplement Guide"
+            url: "https://www.strongerbyscience.com/supplement-guide/"
+            type: "article"
+        tips:
+          - "During a weight cut, never drop protein below 2.0 g/kg — reduce calories from carbs and fats first; protein preserves muscle mass during a deficit"
       - level: expert
         criteria: "Designs nutrition plans for athletes across weight classes and training phases with precise macro targets for each phase. Understands metabolic adaptation (metabolic rate decreases during prolonged dieting beyond what bodyweight loss predicts) and implements reverse dieting protocols (gradually increasing calories by 100-200 kcal/week after a cut to restore metabolic rate while minimizing fat regain). Can manage water and sodium manipulation for weigh-in sports (water loading at 8-10 L/day for 3 days, then cutting to 0.5 L the day before weigh-in, while reducing sodium from 5+ g/day to near zero). Understands nutrient periodization research and applies it to competition prep."
         metrics:
@@ -386,6 +670,12 @@ nodes:
           - "Maintains or improves body composition across a full competitive season of 3+ meets spanning 6+ months"
           - "Successfully implements reverse diet for 3+ athletes post-competition, restoring maintenance calories within 10% of pre-diet levels while keeping bodyweight within 3% of competition weight"
           - "Designs phase-specific nutrition plans with distinct macro targets for accumulation (surplus), intensification (maintenance), and peaking (slight deficit or maintenance) phases"
+        resources:
+          - title: "Jeff Nippard — Reverse Dieting: The Science and Practice"
+            url: "https://www.youtube.com/watch?v=A9Xp3X5tMBM"
+            type: "video"
+        tips:
+          - "After a competition cut, reverse diet by adding 100-200 kcal/week back to gradually restore metabolic rate — jumping straight to pre-diet calories causes rapid fat regain"
     tags: ["nutrition", "protein", "body-composition", "supplements"]
 
   # ── PROGRAMMING & PERIODIZATION ───────────────────────────────────────────
@@ -428,6 +718,23 @@ nodes:
           - "Adds weight every session according to program protocol: 5 lb upper body, 10 lb lower body (or 2.5 kg/5 kg)"
           - "Reaches novice stall points (squat 225+ lb, bench 155+ lb, deadlift 275+ lb, press 115+ lb for average male) before transitioning to intermediate programming"
           - "Can explain why they chose their program and what they would switch to when linear progression stalls"
+        resources:
+          - title: "Starting Strength — How to Run the Novice Linear Progression"
+            url: "https://www.youtube.com/watch?v=FnW5kVIDdJk"
+            type: "video"
+          - title: "Jeff Nippard — RPE Training Explained (How to Use It)"
+            url: "https://www.youtube.com/watch?v=VozvbGhkRqQ"
+            type: "video"
+        practice:
+          - "Every session: Log exercise, sets, reps, weight, and RPE for every working set"
+          - "Every session: Add weight according to program protocol — 5 lb upper body, 10 lb lower body"
+          - "Weekly: Review training log to confirm weights are going up on all four lifts"
+        projects:
+          - "Complete 12 consecutive weeks of a linear progression program with every session logged"
+          - "Reach novice stall points before transitioning to intermediate programming"
+        tips:
+          - "Follow the program EXACTLY as written — do not add exercises, change rep schemes, or skip sessions; the novice linear progression works if you do not modify it"
+          - "Learn RPE early: RPE 7 means 3 reps left in the tank, RPE 8 means 2, RPE 9 means 1, RPE 10 means max; practice rating your sets to build this skill"
       - level: intermediate
         criteria: "Designs or selects an intermediate program with weekly or daily undulation (Texas Method, 5/3/1, GZCL, DUP, or similar). Understands volume landmarks: MV (maintenance volume: ~6-8 sets/muscle/week), MEV (minimum effective volume: ~8-12), MAV (maximum adaptive volume: ~12-20), MRV (maximum recoverable volume: ~20-25). Implements planned deloads every 4-6 weeks (reduce volume 40-60%, maintain intensity at 85-90% of working loads). Uses a training max (90% of true 1RM) for percentage-based programming. Trains each main lift 2x/week with at least one variation day. Wilks score progresses through the 200-300 range."
         metrics:
@@ -436,6 +743,23 @@ nodes:
           - "Correctly identifies own MEV and MAV for major muscle groups based on 2+ training blocks of data"
           - "Deloads proactively (scheduled) rather than reactively (forced by injury or burnout) for 80%+ of deload weeks"
           - "Uses a training max set at 90% of true 1RM and progresses it based on performance, not ego"
+        resources:
+          - title: "Jeff Nippard — 5/3/1 Program Explained (Jim Wendler's Method)"
+            url: "https://www.youtube.com/watch?v=FjTNUfCb6JI"
+            type: "video"
+          - title: "Stronger by Science — Volume Landmarks and Training Volume"
+            url: "https://www.strongerbyscience.com/the-new-approach-to-training-volume/"
+            type: "article"
+        practice:
+          - "Every 4-6 weeks: Plan and execute a deload week (reduce volume 40-60%, maintain intensity at 85-90%)"
+          - "Monthly: Assess own MEV and MAV for major muscle groups based on training log data"
+          - "Daily: Rate RPE on every working set and compare to planned RPE — recalibrate if consistently off by more than 1 point"
+        projects:
+          - "Complete a 16-week intermediate program with 2+ planned deloads and PR on at least 1 lift"
+          - "Identify own MEV and MAV for major muscle groups based on 2+ training blocks of data"
+        tips:
+          - "Deload PROACTIVELY every 4-6 weeks rather than waiting until you feel terrible — scheduled deloads prevent burnout and injury"
+          - "Understand volume landmarks: MV (~6-8 sets/muscle/week) maintains, MEV (~8-12) starts growth, MAV (~12-20) is the sweet spot, MRV (~20-25) is the most you can recover from"
       - level: advanced
         criteria: "Designs block-periodized programs with accumulation (high volume 12-20 sets/muscle/week, moderate intensity 65-75% 1RM, 4-6 weeks), transmutation (moderate volume 8-12 sets, high intensity 80-90% 1RM, 3-4 weeks), and realization/peaking phases (low volume 4-6 sets, maximal intensity 90-100% 1RM, 1-2 weeks). Manages multiple training variables simultaneously across 3-4 training days/week. Understands and can implement multiple periodization models: linear, undulating (daily and weekly), block, and conjugate (Westside). Familiar with established methodologies: Sheiko (high frequency, submaximal volume), RTS (RPE-based autoregulation), Juggernaut (wave loading), and Westside (max effort + dynamic effort). Wilks score progresses through the 300-400 range."
         metrics:
@@ -444,6 +768,12 @@ nodes:
           - "Manages training stress across a block using objective markers (bar speed, RPE accuracy, volume load trends) and makes mid-block adjustments"
           - "Successfully transitions between accumulation, transmutation, and realization phases with appropriate volume and intensity changes"
           - "Programs for 2+ training days per lift with distinct purposes (e.g., heavy singles day + volume back-off day for squat)"
+        resources:
+          - title: "Stronger by Science — Block Periodization for Strength Athletes"
+            url: "https://www.strongerbyscience.com/block-periodization/"
+            type: "article"
+        tips:
+          - "During peaking, reduce volume but maintain intensity — the mistake most lifters make is dropping both; keep singles at 90-95% while cutting total sets by 40-60%"
       - level: expert
         criteria: "Creates individualized programs for athletes at all levels from novice through elite. Adjusts programming in real time based on autoregulation data (RPE, bar velocity, HRV, wellness questionnaires). Understands and applies current sport-science research to program design — reads and interprets primary literature from JSCR, EJSS, and Sports Medicine. Has a documented coaching track record with multiple athletes. Can design programs for special populations (masters lifters, post-rehab athletes, weight-class athletes cutting weight). Wilks score of athletes coached reaches 400+ level."
         metrics:
@@ -452,6 +782,12 @@ nodes:
           - "Athletes coached achieve Wilks scores of 300+ (intermediate), 400+ (advanced), or improve by 20+ Wilks points over a training year"
           - "Designs programs across 3+ distinct athlete profiles (novice, intermediate, advanced) with documented rationale for all programming decisions"
           - "Adjusts programming mid-cycle based on velocity-based training data or autoregulation metrics with documented outcomes"
+        resources:
+          - title: "Stronger by Science — Autoregulation and VBT in Programming"
+            url: "https://www.strongerbyscience.com/autoregulation/"
+            type: "article"
+        tips:
+          - "Read primary literature from JSCR and Sports Medicine to stay current — the field evolves rapidly and popular sources often lag behind research by 3-5 years"
     tags: ["programming", "periodization", "coaching", "cognitive"]
 
   # ── CONDITIONING ──────────────────────────────────────────────────────────
@@ -490,6 +826,23 @@ nodes:
           - "Heart rate recovers to below 120 bpm within 3 minutes after a set of 5 squats at 0.75x bodyweight"
           - "Can sustain 20 minutes of continuous activity (walking, cycling) without stopping, at 60-70% max heart rate"
           - "No reduction in main lift progression (still adding weight per session) despite adding conditioning"
+        resources:
+          - title: "Alan Thrall — Cardio for Strength Athletes (What, When, and How Much)"
+            url: "https://www.youtube.com/watch?v=aHQLx_ynePc"
+            type: "video"
+          - title: "Jeff Nippard — The Truth About Cardio and Gaining Muscle"
+            url: "https://www.youtube.com/watch?v=0bGraflOMC0"
+            type: "video"
+        practice:
+          - "3x/week: 30 minutes of walking or cycling at conversational pace (HR 120-140 bpm)"
+          - "After each lifting session: 10-15 minutes of walking as active recovery"
+          - "Weekly: Check resting heart rate first thing in the morning to track cardiovascular health"
+        projects:
+          - "Complete 30 minutes of walking or cycling at conversational pace 3x/week for 8 consecutive weeks"
+          - "Achieve a resting heart rate below 80 bpm while maintaining strength progression"
+        tips:
+          - "Walking is the best conditioning for beginners — it builds cardiovascular health without interfering with strength gains; just walk 30 minutes 3 times a week"
+          - "Do NOT run as your primary conditioning — the eccentric impact creates additional recovery demands that can slow your strength progress; use walking, cycling, or elliptical instead"
       - level: intermediate
         criteria: "Incorporates structured conditioning that supports training without causing excessive fatigue or interference with strength gains. Uses sled work and loaded carries as primary conditioning tools (concentric-only, low eccentric damage). Manages the interference effect by separating HIIT from heavy training by 6+ hours and keeping HIIT to 1-2 sessions/week maximum. Monitors resting heart rate trends weekly to assess recovery. Performs conditioning on light training days or separate sessions."
         metrics:
@@ -498,6 +851,23 @@ nodes:
           - "Sled drag 0.75x bodyweight for 10 minutes continuously without stopping"
           - "Assault bike or rower intervals: 8 rounds of 20 seconds all-out / 40 seconds rest"
           - "Completes 3 conditioning sessions per week for 12+ weeks without any reduction in main lift working weights"
+        resources:
+          - title: "Stronger by Science — Concurrent Training: Cardio and Strength"
+            url: "https://www.strongerbyscience.com/concurrent-training/"
+            type: "article"
+          - title: "Alan Thrall — Sled Work for Strength Athletes"
+            url: "https://www.youtube.com/watch?v=aSzTkWMEJT0"
+            type: "video"
+        practice:
+          - "2x/week: Sled pushes — 40 meters at 1x bodyweight, 6 rounds with 90 seconds rest"
+          - "1x/week: HIIT on assault bike or rower — 8 rounds of 20 seconds all-out / 40 seconds rest"
+          - "Monitor: If main lift RPE drifts up by 1+ point on the same weight, reduce conditioning volume first"
+        projects:
+          - "Sled push 1x bodyweight for 40 meters in under 30 seconds"
+          - "Complete 3 conditioning sessions per week for 12 weeks without any reduction in main lift working weights"
+        tips:
+          - "Sled work is ideal for strength athletes because it is concentric-only — no eccentric component means minimal muscle soreness and faster recovery compared to running"
+          - "Separate HIIT from heavy training by 6+ hours — doing HIIT and heavy squats in the same session will compromise both"
       - level: advanced
         criteria: "Periodizes conditioning alongside strength training phases — higher conditioning volume during accumulation (GPP) blocks, reduced during peaking. High work capacity enables completion of high-volume training blocks (20+ working sets per session) without excessive fatigue carrying into the next session. Performs strongman conditioning events (tire flip, atlas stone, sandbag carry, prowler push) competently. Can complete a high-volume squat session with short rest periods due to superior cardiovascular fitness."
         metrics:
@@ -506,6 +876,12 @@ nodes:
           - "Resting heart rate below 65 bpm while training at Wilks 300+ strength levels"
           - "Prowler push: 1.5x bodyweight for 6 x 40-meter sprints with 90-second rest"
           - "Conditioning volume adjusted across training phases: 4 sessions/week during GPP, 2 sessions/week during peaking"
+        resources:
+          - title: "Stronger by Science — GPP and Conditioning for Powerlifters"
+            url: "https://www.strongerbyscience.com/conditioning/"
+            type: "article"
+        tips:
+          - "Periodize conditioning alongside strength — higher volume during GPP/accumulation blocks, reduced during peaking; if you maintain the same conditioning volume year-round, it will interfere during intensity phases"
       - level: expert
         criteria: "Conditioning supports elite training volumes (25+ sets per session) and competition schedules (multiple meets per year). Designs conditioning programs for strength athletes at all levels that improve recovery and work capacity without compromising maximal strength. Demonstrates exceptional work capacity — can sustain high-quality training across 5-6 sessions per week. Understands concurrent training research and applies it to program design. Resting heart rate remains in the athletic range despite prioritizing strength over cardiovascular fitness."
         metrics:
@@ -514,6 +890,12 @@ nodes:
           - "Designs conditioning programs for 5+ strength athletes that demonstrably improve work capacity (measured by session completion quality) without reducing main lift performance"
           - "Sustains 5-6 training sessions per week across a 16-week block with no missed sessions due to fatigue or under-recovery"
           - "Heart rate recovery: drops from 170+ bpm to below 120 bpm within 60 seconds after an all-out 30-second effort"
+        resources:
+          - title: "Jeff Nippard — Work Capacity for Strength Athletes"
+            url: "https://www.youtube.com/watch?v=3z7HqbWPh90"
+            type: "video"
+        tips:
+          - "Elite work capacity means your cardiovascular system supports high-volume training without compromising strength — if you can complete a 10-set squat session at 75% 1RM with 3-minute rests and all sets under RPE 8, your conditioning is sufficient"
     tags: ["conditioning", "GPP", "work-capacity", "cardiovascular"]
 
   # ── OLYMPIC LIFTING FOUNDATIONS ───────────────────────────────────────────
@@ -554,6 +936,23 @@ nodes:
           - "Overhead squat with empty barbell (45 lb/20 kg) for 5 reps at full depth with bar over mid-foot"
           - "Muscle clean with empty barbell for 5 reps demonstrating the bar path (close to body, elbows rotate around the bar)"
           - "Hook grip maintained on cleans at 0.5x bodyweight without releasing during the catch"
+        resources:
+          - title: "Alan Thrall — How to Power Clean (Complete Beginner Guide)"
+            url: "https://www.youtube.com/watch?v=KjGVlwGlkSo"
+            type: "video"
+          - title: "Starting Strength — The Front Squat for Olympic Lifting"
+            url: "https://www.youtube.com/watch?v=m4ytaCJZpl0"
+            type: "video"
+        practice:
+          - "15 min: Muscle clean with empty barbell — 5 sets of 3, focus on keeping the bar close to the body"
+          - "10 min: Front squat practice — 3x5 with emphasis on upright torso and high elbows"
+          - "5 min: Hook grip practice — hold the bar in hook grip for 30 seconds, release, repeat 5 times"
+        projects:
+          - "Power clean 0.5x bodyweight from the hang position for 3 reps with proper front rack"
+          - "Overhead squat with empty barbell for 5 reps at full depth"
+        tips:
+          - "Learn the muscle clean before the power clean — the muscle clean teaches the correct bar path (close to the body, elbows rotate around the bar) without the speed that masks technique errors"
+          - "Hook grip hurts at first — tape your thumbs for the first few weeks and push through the discomfort; it becomes painless within 2-3 weeks of consistent use"
       - level: intermediate
         criteria: "Performs power clean and power snatch from the floor with consistent technique — bar stays close to the body through all pull phases, catches in a partial squat with stable receiving position. Understands the three pull phases (first pull: floor to knee; transition: knee to hip; second pull: explosive extension). Push press and push jerk executed with proper timing (dip, drive, press/catch). Can perform hang snatch and hang clean from below the knee. Demonstrates the 'scarecrow' position in the snatch pull. Uses power position drills to refine the second pull."
         metrics:
@@ -562,6 +961,23 @@ nodes:
           - "Push press at 0.6x bodyweight for 3 reps with proper dip-drive timing (no press-out or excessive back lean)"
           - "Hang clean (below knee) at 0.65x bodyweight for 3 reps with smooth transition through the knee"
           - "Snatch grip behind-the-neck press in overhead squat position (Sots press) with empty barbell for 5 reps"
+        resources:
+          - title: "Alan Thrall — Power Snatch from the Floor Tutorial"
+            url: "https://www.youtube.com/watch?v=9xQp2sldyts"
+            type: "video"
+          - title: "Starting Strength — The Three Pulls of the Clean"
+            url: "https://www.youtube.com/watch?v=_oi_djY4Cdo"
+            type: "video"
+        practice:
+          - "15 min: Hang clean below the knee — 5 sets of 3, focus on smooth transition through the knee"
+          - "10 min: Power position drills — hip-level hang cleans emphasizing explosive triple extension"
+          - "10 min: Push press and push jerk — 3x3 each, focus on dip-drive timing"
+        projects:
+          - "Power clean from the floor at 0.75x bodyweight for 1 rep with clean bar path"
+          - "Power snatch from the floor at 0.5x bodyweight for 1 rep with stable overhead lockout"
+        tips:
+          - "Keep reps low (1-3 per set) even during learning — fatigue degrades Olympic lift technique rapidly, and practicing with bad form builds bad habits"
+          - "Always train Olympic lifts FIRST in the session when you are fresh — they are the most technique-sensitive movements and suffer most from fatigue"
       - level: advanced
         criteria: "Performs full squat clean and full squat snatch with competent technique — catches the bar in the bottom position of a deep front squat (clean) or deep overhead squat (snatch) with control and no crash. Executes the split jerk with proper footwork (front shin vertical, rear knee slightly bent, weight balanced between feet) and recovers to standing with the bar overhead. Can teach the full Olympic lift progressions to others using the top-down teaching method. Understands common faults (early arm bend, swinging the bar away, starfishing, not finishing the pull) and can self-correct."
         metrics:
@@ -570,6 +986,12 @@ nodes:
           - "Split jerk at 0.85x bodyweight for 1 rep with front shin vertical, stable overhead position, and controlled recovery to standing"
           - "Can perform a clean complex (1 clean pull + 1 hang clean + 1 clean from floor + 1 front squat + 1 jerk) at 0.75x bodyweight"
           - "Teaches the power clean progression (muscle clean → hang power clean → power clean from floor) to a novice who achieves acceptable technique within 3 sessions"
+        resources:
+          - title: "Starting Strength — Full Squat Clean and Jerk Tutorial"
+            url: "https://www.youtube.com/watch?v=mPsxlNjv7Aw"
+            type: "video"
+        tips:
+          - "The most common fault in the clean is an early arm bend — the arms should stay straight until the hips fully extend; think of your arms as ropes and your hips as the engine"
       - level: expert
         criteria: "Executes all Olympic lifts at competitive standards with precise timing and minimal energy leakage. Demonstrates explosive power output measurable through bar velocity (>1.5 m/s on power clean second pull). Can program Olympic lifting progressions for athletes across sports (weightlifters, CrossFit athletes, field sport athletes). Understands the biomechanical differences between weightlifting technique schools (Chinese, Russian, American) and can apply each. Manages training loads for Olympic lifts using percentage-based and RPE systems appropriate for these movements."
         metrics:
@@ -578,6 +1000,12 @@ nodes:
           - "Programs and coaches Olympic lifting progressions for 3+ athletes who achieve measurable power output improvements (vertical jump increase of 2+ inches or clean PR improvement of 10%+ over 12 weeks)"
           - "Clean pull bar velocity exceeds 1.5 m/s at the second pull measured by bar tracking (GymAware, OpenBarbell, or similar)"
           - "Can demonstrate and explain differences between Chinese-style (close feet, upright torso) and Russian-style (wider feet, more horizontal back) pulling mechanics"
+        resources:
+          - title: "Starting Strength — Comparing Weightlifting Technique Schools"
+            url: "https://www.youtube.com/watch?v=V-ljBr6lxOc"
+            type: "video"
+        tips:
+          - "At the expert level, understand that technique schools (Chinese vs. Russian vs. American) reflect different anthropometric optimization — there is no universally 'best' technique, only the best technique for a given body type"
     tags: ["olympic", "explosive", "power", "technical"]
 
   # ── COMPETITION & TESTING ─────────────────────────────────────────────────
@@ -624,6 +1052,23 @@ nodes:
           - "Warm-up follows a planned progression: empty bar → 40% → 60% → 75% → 85% → 92% → opener, with appropriate rest between each"
           - "Knows the equipment rules (belt width, knee sleeve length, wrist wrap length) for their chosen federation"
           - "Wilks score under 200 calculated from test-day total"
+        resources:
+          - title: "Alan Thrall — How to Test Your 1 Rep Max Safely"
+            url: "https://www.youtube.com/watch?v=s2kdPZqGeaA"
+            type: "video"
+          - title: "Starting Strength — Attempt Selection for Your First Meet"
+            url: "https://www.youtube.com/watch?v=PLkVLf7eAK4"
+            type: "video"
+        practice:
+          - "Test day: Follow a planned warm-up progression — empty bar, 40%, 60%, 75%, 85%, 92%, 100% with 3-5 min rest between attempts"
+          - "Practice commands: Have a partner call 'squat', 'press', 'rack', and 'down' while you lift"
+          - "Pre-test: Practice all three lifts to competition standards (squat depth, bench pause, deadlift lockout)"
+        projects:
+          - "Complete a structured 3-lift max testing session with all lifts at legal standards"
+          - "Select openers at 90-92% of estimated max and hit them all successfully"
+        tips:
+          - "Your opener should be a weight you can triple on your worst day — it is a confidence builder, not a PR attempt; save heroics for the third attempt"
+          - "Practice the bench press pause in training — get used to holding the bar motionless on your chest before the 'press' command; this is the most common mistake in competition"
       - level: intermediate
         criteria: "Competes in a sanctioned local meet or well-organized mock meet. Executes all referee commands correctly: bench press 'start', 'press', 'rack'; squat 'squat', 'rack'; deadlift waits for 'down' signal. Manages warm-up timing in a shared warm-up room using the flight sheet and lifter count. Goes 7/9 or better on attempts (hits at least 7 of 9 lifts). Manages pre-competition nutrition: eats a familiar meal 2-3 hours before lifting, brings snacks (simple carbs between attempts). Handles competition nerves without it significantly impacting performance."
         metrics:
@@ -633,6 +1078,23 @@ nodes:
           - "All bench press commands executed correctly (no racking early, no pressing before 'press' command)"
           - "Competition total within 95%+ of best gym total (demonstrates ability to perform under meet conditions)"
           - "Eats and hydrates between lifts according to a pre-planned competition nutrition strategy"
+        resources:
+          - title: "Jeff Nippard — Your First Powerlifting Meet: Complete Guide"
+            url: "https://www.youtube.com/watch?v=OGp4lf7S8uI"
+            type: "video"
+          - title: "Stronger by Science — Competition Day Strategy"
+            url: "https://www.strongerbyscience.com/peaking/"
+            type: "article"
+        practice:
+          - "Pre-meet: Run a mock meet 4 weeks out — 3 lifts, 3 attempts each, with a handler calling commands"
+          - "Warm-up timing: Practice counting lifters in a flight to estimate your timing (last warm-up 5-8 min before platform)"
+          - "Competition nutrition: Test your meet-day meal plan during a heavy training session to ensure it works"
+        projects:
+          - "Complete a sanctioned local powerlifting meet going at least 7/9 on attempts"
+          - "Time warm-ups so last warm-up set is 5-8 minutes before first platform attempt"
+        tips:
+          - "Bring a meet-day bag with everything you need: singlet, belt, wrist wraps, knee sleeves, chalk, deadlift socks, change of clothes, food (simple carbs like candy, bananas), and water"
+          - "Do NOT try new things on meet day — eat familiar foods, use your usual warm-up routine, and lift in the same equipment you train in"
       - level: advanced
         criteria: "Consistently performs at or above gym PRs on the competition platform — the adrenaline and structure of competition produces a performance boost rather than anxiety-driven regression. Uses strategic attempt selection to maximize total: conservative opener to get on the board, calculated second to build the total, aggressive third for PRs. Executes a full 12-16 week peaking cycle leading into competition with planned taper (volume drops 40-60%, intensity maintained at 90-95% of openers). Manages weight cut (chronic: 8-12 week diet to get within 3-5% of class limit; acute: 24-hour water cut of 2-3% if needed for 24-hour weigh-in) and post-weigh-in refeed. Competes 2-3 times per year with improving totals."
         metrics:
@@ -642,6 +1104,12 @@ nodes:
           - "Goes 8/9 or 9/9 on attempts across 3+ competitions"
           - "Successfully executes a weight cut: weigh-in within 0.5 kg of class limit, then refeeds to compete at 2-3% above weigh-in weight"
           - "Third attempts selected based on how opener and second moved (RPE assessment), not pre-determined ego numbers"
+        resources:
+          - title: "Stronger by Science — Peaking for Competition"
+            url: "https://www.strongerbyscience.com/peaking/"
+            type: "article"
+        tips:
+          - "Select third attempts based on how the second attempt MOVED, not a pre-determined number — if your second was RPE 9.5, do not jump 5 kg; if it was RPE 8, you can be aggressive"
       - level: expert
         criteria: "Competes at regional, national, or international level in a drug-tested or untested federation. Masters tactical attempt selection based on competitor totals and flight position — knows when to take a conservative third to secure placement vs. when to go for a big third to win. Performs at peak under maximum competitive pressure (national-level stage, large audience, high stakes). Coaches others through competition day including warm-up timing, attempt selection, commands, and mental preparation. Understands all major scoring systems (Wilks, DOTS, IPF GL, Goodlift Points) and can calculate them to inform tactical decisions mid-meet."
         metrics:
@@ -651,6 +1119,12 @@ nodes:
           - "Makes tactical third-attempt adjustments mid-meet based on competitor performance and scoring system calculations"
           - "Competition PRs within 2% of best gym lifts across all three movements, demonstrating consistent platform performance under pressure"
           - "Qualifies for or competes at a national-level competition (e.g., USAPL Nationals, IPF Worlds qualifying total)"
+        resources:
+          - title: "Starting Strength — Tactical Attempt Selection at the Elite Level"
+            url: "https://www.youtube.com/watch?v=HxFob3Lj6YA"
+            type: "video"
+        tips:
+          - "At the elite level, learn to make tactical third-attempt adjustments based on competitor totals and scoring systems — sometimes a conservative third to secure placement is smarter than a risky PR attempt"
     tags: ["competition", "testing", "peaking", "strategy"]
 
 relationships:

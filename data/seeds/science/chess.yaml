@@ -68,6 +68,25 @@ nodes:
           - "Records a 10-move game in algebraic notation with 0 errors"
           - "Passes the Lichess 'Learn Chess' module with 100% completion"
           - "Correctly states all 5 conditions that prevent castling (king moved, rook moved, in check, through check, into check)"
+        resources:
+          - title: "Lichess Learn - Interactive Chess Lessons (free)"
+            url: "https://lichess.org/learn"
+            type: "course"
+          - title: "GothamChess - How to Play Chess (Complete Guide)"
+            url: "https://www.youtube.com/watch?v=OCSbzArwB10"
+            type: "video"
+          - title: "Chess.com - Learn to Play Chess"
+            url: "https://www.chess.com/learn-how-to-play-chess"
+            type: "course"
+        practice:
+          - "Complete all Lichess Learn modules (pieces, capture, check, checkmate) — takes about 1 hour total"
+          - "Play 10 games against the Lichess computer at level 1-2 to practice legal moves without time pressure (2 hours)"
+          - "Practice K+Q vs K checkmate from 5 random positions until you can do it in under 20 moves every time (30 minutes)"
+        projects:
+          - "Play 20 rated games on Lichess or Chess.com and review each game's biggest mistake using the built-in analysis tool"
+        tips:
+          - "The #1 beginner mistake: moving randomly without checking if your pieces are safe. Before every move, ask 'can my opponent capture anything I am leaving undefended?'"
+          - "Learn algebraic notation early — it is how you read chess books, follow analysis, and record your own games. It takes 30 minutes to learn and saves hundreds of hours later."
       - level: intermediate
         criteria: "Understands piece values (pawn=1, knight=3, bishop=3, rook=5, queen=9). Recognizes basic checkmate patterns (back-rank, smothered mate). Knows all draw rules (stalemate, threefold repetition, 50-move rule, insufficient material, agreement). Corresponds roughly to Elo 800–1200."
         metrics:
@@ -76,17 +95,43 @@ nodes:
           - "Correctly identifies stalemate vs. checkmate in 10/10 diagram positions"
           - "Can list all draw conditions and identify which applies in 5 given game scenarios"
           - "Identifies back-rank mate threats in 8/10 positions where they exist"
+        resources:
+          - title: "GothamChess - Everything You Need to Know About Chess (Beginner to 1000)"
+            url: "https://www.youtube.com/watch?v=Ao9ipmsDics"
+            type: "video"
+          - title: "Lichess Practice - Checkmate Patterns"
+            url: "https://lichess.org/practice"
+            type: "exercise"
+        practice:
+          - "Practice K+R vs K checkmate (box method) from 5 random positions until automatic (30 minutes)"
+          - "Study 5 back-rank mate examples and solve 10 back-rank mate puzzles on Lichess (30 minutes)"
+        projects:
+          - "Reach Lichess or Chess.com rating of 1000 by playing 50+ rated games and reviewing every loss"
+        tips:
+          - "Stalemate is the #1 way beginners throw away won games. When you have a huge material advantage, always check: does your opponent have any legal moves?"
       - level: advanced
         criteria: "Piece movement is automatic — no thinking required for legal moves. Understands piece activity and coordination. Recognizes when bishop pair is advantageous, when knights outperform bishops (closed positions), and can evaluate exchanges using positional context beyond raw piece values. Corresponds to Elo 1200–1600."
         metrics:
           - "0 illegal moves in any game (standard, rapid, or blitz)"
           - "Correctly evaluates 'is this trade good?' in 8/10 positions considering positional factors beyond material count"
           - "Identifies when castling should be delayed or forgone for strategic reasons in annotated positions"
+        resources:
+          - title: "Hanging Pawns - Piece Activity and Coordination"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "Stop counting material mechanically. A well-placed knight on an outpost can be worth more than a passive rook trapped behind its own pawns."
       - level: expert
         criteria: "Complete mastery of rules including obscure edge cases (dead position rule, triple repetition via different move orders, 75-move auto-draw). Can serve as an arbiter for FIDE-rated events. Corresponds to Elo 1800+."
         metrics:
           - "Can correctly rule on any FIDE rules dispute including obscure cases (e.g., illegal move penalties, phone ringing, piece displacement)"
           - "Passes a FIDE Arbiter examination or equivalent rules quiz with ≥90% score"
+        resources:
+          - title: "FIDE Laws of Chess (Official)"
+            url: "https://www.fide.com/FIDE/handbook/LawsOfChess.pdf"
+            type: "article"
+        tips:
+          - "Rules mastery matters in tournament play. Know the dead position rule and the 75-move auto-draw rule — they come up rarely but deciding them wrong has real consequences."
     tags: ["foundation", "rules", "beginner-friendly"]
 
   # ── TACTICS (the #1 rating driver below 2000) ──────────────────────────────
@@ -129,6 +174,24 @@ nodes:
           - "Completes Lichess 'Basic Tactics' practice module with ≥80% accuracy"
           - "Puzzle Rush (Chess.com) or Puzzle Storm (Lichess) score: ≥15 correct in 5 minutes"
           - "Hangs (leaves undefended) a piece in ≤3 instances per game"
+        resources:
+          - title: "Lichess Puzzle Storm (free)"
+            url: "https://lichess.org/storm"
+            type: "exercise"
+          - title: "GothamChess - Chess Tactics for Beginners"
+            url: "https://www.youtube.com/watch?v=Ao9ipmsDics"
+            type: "video"
+          - title: "ChessBrah - Building Habits Series (Beginner)"
+            url: "https://www.youtube.com/playlist?list=PLJPJNMHCVLse7E-3hfzPp0_x-KWOY6B4"
+            type: "video"
+        practice:
+          - "Solve 10 tactical puzzles per day on Lichess at your rating level (15 minutes/day)"
+          - "Study one tactical pattern per week (fork, pin, skewer, etc.) using Lichess themed puzzles (20 minutes/day for 7 days)"
+        projects:
+          - "Complete the Lichess Basic Tactics practice module and achieve a puzzle rating of 1200"
+        tips:
+          - "The #1 rating booster below 1000: do 10 puzzles every single day. Consistency beats volume. 10 puzzles daily for 3 months beats 100 puzzles in a weekend."
+          - "When you miss a puzzle, do not just click 'next.' Study why you missed it, name the tactical pattern, and try to explain the solution aloud."
       - level: intermediate
         criteria: "Consistently spots 2-move combinations. Recognizes the additional ~10 intermediate patterns (double attack, deflection, decoy, overloaded defender, X-ray, interference, Greek gift sacrifice, attraction, undermining, battery). Game rating 1000–1500 Elo; puzzle rating 1400–1900."
         metrics:
@@ -137,6 +200,23 @@ nodes:
           - "Can identify the correct tactical motif name in 15/20 themed puzzle positions"
           - "Puzzle Rush/Storm score: ≥25 correct in 5 minutes"
           - "Completes a set of 100 themed tactical puzzles (e.g., all pins) with ≥75% accuracy"
+        resources:
+          - title: "Lichess Themed Puzzles (free)"
+            url: "https://lichess.org/training/themes"
+            type: "exercise"
+          - title: "GothamChess - Tactics You Must Know"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Hanging Pawns - Tactical Patterns Explained"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        practice:
+          - "Do 100 themed puzzles on one tactical motif (e.g., all deflection puzzles) in a week, then move to the next motif (30 minutes/day)"
+          - "After every game, use engine analysis to find the tactics you missed and add them to a personal puzzle collection (10 minutes/game)"
+        projects:
+          - "Achieve a puzzle rating of 1600+ on Lichess or Chess.com by completing 1,000 total puzzles with deliberate study of missed patterns"
+        tips:
+          - "In games, tactics are harder than in puzzles because you have to FIND that a tactic exists. Train pattern recognition by doing high-volume puzzle sets."
       - level: advanced
         criteria: "Solves 3–4 move combinations reliably. Recognizes advanced tactical patterns (Greek gift sacrifice, Boden's mate, windmill, zwischenzug, desperado) from experience. Can calculate forcing sequences (checks, captures, threats) without moving pieces. Game rating 1500–2000 Elo; puzzle rating 1900–2400."
         metrics:
@@ -145,6 +225,12 @@ nodes:
           - "Puzzle Rush/Storm score: ≥35 correct in 5 minutes"
           - "In game analysis, engine-flagged missed tactics ≤1 per game on average"
           - "Can solve a set of 20 'find the combination' positions (3–4 moves deep) in under 30 minutes with ≥70% accuracy"
+        resources:
+          - title: "Chesstempo - Tactical Training with Spaced Repetition"
+            url: "https://chesstempo.com/"
+            type: "exercise"
+        tips:
+          - "Use the Woodpecker Method: solve the same set of 200 puzzles repeatedly, getting faster each cycle. Pattern recognition comes from repetition, not variety."
       - level: expert
         criteria: "Tactical vision is near-automatic for standard patterns. Creates complex combinations in game play. Can analyze sacrificial variations 5+ moves deep. Recognizes all ~32 standard tactical motifs instantly. Game rating 2000+ Elo; puzzle rating 2400+."
         metrics:
@@ -153,6 +239,12 @@ nodes:
           - "Can solve GM-level combination puzzles (puzzle rating 2200+) at ≥50% accuracy"
           - "Puzzle Rush/Storm score: ≥45 correct in 5 minutes"
           - "Creates original tactical combinations (not known patterns) in ≥2 tournament games per event"
+        resources:
+          - title: "Chesstempo - Advanced Tactical Training"
+            url: "https://chesstempo.com/"
+            type: "exercise"
+        tips:
+          - "At the expert level, missed tactics are usually caused by not considering the opponent's resources. Always ask 'what can my opponent do if I play this sacrifice?'"
     tags: ["tactics", "combinations", "critical-skill"]
 
   # ── OPENING PRINCIPLES ─────────────────────────────────────────────────────
@@ -200,6 +292,24 @@ nodes:
           - "Avoids early queen moves (before move 5) in 90%+ of games"
           - "Engine evaluation after move 10: no worse than −1.0 in 70%+ of games (i.e., not losing material from opening mistakes)"
           - "Can state 5 opening principles from memory and explain why each matters"
+        resources:
+          - title: "GothamChess - Opening Principles for Beginners"
+            url: "https://www.youtube.com/watch?v=3dWdqNm3rEs"
+            type: "video"
+          - title: "ChessBrah - Building Habits: The Opening"
+            url: "https://www.youtube.com/playlist?list=PLJPJNMHCVLse7E-3hfzPp0_x-KWOY6B4"
+            type: "video"
+          - title: "Lichess Opening Explorer"
+            url: "https://lichess.org/analysis#explorer"
+            type: "tool"
+        practice:
+          - "Play 10 games focusing only on opening principles: center control, piece development, castle by move 10 (no memorized lines) (2 hours)"
+          - "After each game, check the engine evaluation at move 10. If worse than -1.0, identify which principle you violated (5 minutes/game)"
+        projects:
+          - "Play 20 games following only opening principles (no memorized theory) and track how often you achieve a good position by move 10"
+        tips:
+          - "Below 1200 Elo, do NOT memorize opening lines. Principles (develop pieces, control center, castle) will serve you better than any memorized sequence."
+          - "The #1 beginner opening mistake: bringing the queen out early. The queen gets chased by opponent's developing pieces, wasting your tempo."
       - level: intermediate
         criteria: "Plays 2–3 openings as White and 1–2 defenses as Black with understanding of the underlying ideas (not just memorized moves). Knows 5–8 moves of main-line theory for each. Understands which pawn structure results from each opening and the associated middlegame plans. Game rating 1200–1500 Elo."
         metrics:
@@ -208,6 +318,23 @@ nodes:
           - "Can explain the middlegame plan for each opening in repertoire (e.g., 'In the Italian, White aims to control the center and attack on the kingside')"
           - "Recognizes when opponent deviates from main lines and can identify a reasonable response in ≤2 minutes"
           - "Knows at least 3 common traps in chosen openings and can avoid them"
+        resources:
+          - title: "Hanging Pawns - Opening Repertoire for Beginners/Intermediate"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "Lichess Opening Explorer - Study Your Lines"
+            url: "https://lichess.org/analysis#explorer"
+            type: "tool"
+          - title: "GothamChess - How to Build an Opening Repertoire"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+        practice:
+          - "Pick 1 opening as White and study the first 5-8 moves of the main line and 2 sidelines using Lichess Opening Explorer (1 hour)"
+          - "For each opening in your repertoire, write down the middlegame plan in one sentence (30 minutes)"
+        projects:
+          - "Build a documented opening repertoire: 2 openings as White, 1 defense vs 1.e4 and 1 vs 1.d4 as Black, with main lines and key ideas for each"
+        tips:
+          - "Learn IDEAS, not just moves. For each opening, know: what pawn structure results, which side of the board to play on, and what the typical middlegame plan is."
       - level: advanced
         criteria: "Complete opening repertoire with responses to all major opponent systems (e.g., vs 1.e4: Sicilian Najdorf with prep against Anti-Sicilians; vs 1.d4: Nimzo-Indian with QGD as fallback). Understands resulting middlegame structures and plans for each opening. Knows theory 10–15 moves deep in main lines. Game rating 1500–2000 Elo."
         metrics:
@@ -216,6 +343,12 @@ nodes:
           - "Has prepared responses to at least 3 sidelines per opening (e.g., in the Sicilian: Anti-Sicilians, Smith-Morra Gambit, Closed Sicilian)"
           - "Repertoire covers both 1.e4 and 1.d4 responses as Black, with at least 10 moves of theory in each"
           - "Wins ≥70% of games where opponent deviates from theory before move 8"
+        resources:
+          - title: "Hanging Pawns - Complete Opening Repertoire Series"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "Study your openings by playing through master games in that opening, not just by memorizing moves. Understanding the plans matters more than knowing move 15."
       - level: expert
         criteria: "Deep theoretical knowledge in primary openings (15–25+ moves in critical lines). Prepares novelties and improvements over existing theory. Studies opponent-specific preparation using databases. Understands opening trends at the master level and adapts repertoire accordingly. Game rating 2000+ Elo."
         metrics:
@@ -224,6 +357,12 @@ nodes:
           - "Prepares opponent-specific lines using database analysis before ≥80% of tournament games"
           - "Can identify the current theoretical status (advantage White/Black/equal) of main lines in chosen openings"
           - "Repertoire includes ≥2 options against each major opponent system for flexibility"
+        resources:
+          - title: "Lichess Opening Database"
+            url: "https://lichess.org/analysis#explorer"
+            type: "tool"
+        tips:
+          - "At the expert level, opening preparation is about knowing when your opponent leaves theory, not memorizing 25 moves. The first new move decides the game."
     tags: ["openings", "theory", "preparation"]
 
   # ── ENDGAME ─────────────────────────────────────────────────────────────────
@@ -266,6 +405,24 @@ nodes:
           - "Correctly applies the rule of the square in 8/10 king-vs-passed-pawn scenarios"
           - "Identifies whether a K+P vs K position is won or drawn (based on opposition) in 7/10 diagrams"
           - "Completes Lichess 'Checkmate Patterns' practice module for basic endgame mates"
+        resources:
+          - title: "Lichess Practice - Basic Endgames (free)"
+            url: "https://lichess.org/practice"
+            type: "exercise"
+          - title: "GothamChess - Endgame Basics You Must Know"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Chess.com Lessons - Basic Checkmates"
+            url: "https://www.chess.com/lessons"
+            type: "course"
+        practice:
+          - "Practice K+Q vs K and K+R vs K checkmates against the computer from random positions until automatic (30 minutes each)"
+          - "Study the rule of the square and practice identifying won/drawn positions in K+P vs K (20 minutes)"
+        projects:
+          - "Complete all basic endgame modules on Lichess Practice and achieve 100% accuracy on K+Q vs K and K+R vs K checkmates"
+        tips:
+          - "Endgame knowledge is permanent — unlike opening theory, endgame principles do not change. Time spent on endgames pays dividends forever."
+          - "Practice K+R vs K checkmate with the 'box method': use your rook to create a shrinking rectangle, then use your king to force the opponent king to the edge."
       - level: intermediate
         criteria: "Knows key pawn endgame concepts (direct and distant opposition, key squares, passed pawns, king activity). Can evaluate and execute basic rook endgames (Philidor defense and Lucena 'bridge-building' technique). Understands the principle 'rooks belong behind passed pawns.' Game rating 1000–1500 Elo."
         metrics:
@@ -275,6 +432,24 @@ nodes:
           - "Correctly applies distant opposition in 6/10 king-and-pawn endgame positions"
           - "Identifies whether rook belongs in front of or behind a passed pawn in 8/10 rook endgame positions"
           - "Solves 6/10 endgame study positions from 'Silman's Complete Endgame Course' (Class C–B level)"
+        resources:
+          - title: "GothamChess - Rook Endgames You Must Know (Philidor & Lucena)"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Lichess Practice - Rook Endgames"
+            url: "https://lichess.org/practice"
+            type: "exercise"
+          - title: "Hanging Pawns - Endgame Fundamentals"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        practice:
+          - "Set up the Philidor position on a board and practice the defensive technique 5 times against the computer (30 minutes)"
+          - "Set up the Lucena position and practice the 'bridge-building' technique 5 times until automatic (30 minutes)"
+          - "Solve 10 K+P vs K positions: determine if each is won or drawn using key squares (20 minutes)"
+        projects:
+          - "Study and master the Philidor and Lucena positions, then play 10 rook endgames against the computer from common starting positions"
+        tips:
+          - "Rook endgames occur in ~50% of all games that reach an endgame. Knowing Philidor (defense) and Lucena (winning technique) will save and win you more games than any opening preparation."
       - level: advanced
         criteria: "Proficient in rook endgames (R+P vs R, R+2P vs R+P, rook activity principles), bishop vs. knight endings (open vs closed position evaluation), and queen endgames. Understands Zugzwang, fortresses, corresponding squares, and tablebase-verified drawing techniques. Can evaluate whether an endgame is theoretically won, drawn, or lost. Game rating 1500–2000 Elo."
         metrics:
@@ -284,6 +459,12 @@ nodes:
           - "Correctly determines whether bishop or knight is superior in 8/10 positions based on pawn structure"
           - "Solves 7/10 endgame study positions from '100 Endgames You Must Know' by de la Villa"
           - "Correctly uses triangulation in K+P endgames to gain the opposition in 6/10 positions"
+        resources:
+          - title: "Hanging Pawns - Complex Endgame Technique"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "Study endgames by position type, not randomly. Spend 2 weeks on rook endgames, then 2 weeks on bishop vs knight, then queen endgames."
       - level: expert
         criteria: "Endgame as a weapon: steers games toward favorable endgames from the middlegame. Studies tablebases for complex material balances (e.g., R+B vs R, Q+P vs Q). Deep knowledge of practical rook endgame technique, queen endgame perpetual check avoidance, and complex pawn structures. Game rating 2000+ Elo."
         metrics:
@@ -292,6 +473,12 @@ nodes:
           - "Can correctly evaluate R+B vs R positions (winning or drawing) and execute the winning technique in ≥70% of cases"
           - "Successfully steers ≥3 tournament games per event from middlegame into a favorable endgame type"
           - "Solves advanced endgame studies (Dvoretsky's Endgame Manual, chapters 3–5) at ≥60% accuracy"
+        resources:
+          - title: "Syzygy Endgame Tablebases (free)"
+            url: "https://syzygy-tables.info/"
+            type: "tool"
+        tips:
+          - "The strongest endgame players steer the game toward favorable endgames from the middlegame. Choose your endgame type before you trade pieces."
     tags: ["endgame", "technique", "permanent-knowledge"]
 
   # ── POSITIONAL PLAY ─────────────────────────────────────────────────────────
@@ -335,6 +522,21 @@ nodes:
           - "Avoids creating doubled pawns unnecessarily in 70%+ of games"
           - "Places rooks on open or semi-open files when available in 50%+ of games"
           - "Can explain why a centralized knight is stronger than a knight on the rim in simple terms"
+        resources:
+          - title: "GothamChess - Positional Chess for Beginners"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Chess.com Lessons - Basic Strategy"
+            url: "https://www.chess.com/lessons"
+            type: "course"
+        practice:
+          - "In your next 5 games, after every move ask: 'are my rooks on open files? Is my knight centralized?' Track how often you achieve good piece placement (ongoing)"
+          - "Study 3 annotated games that highlight positional themes and identify the key positional features in each (30 minutes)"
+        projects:
+          - "Analyze 10 of your recent games focusing only on positional factors: pawn structure, piece activity, and open files. Write down 1 positional lesson per game"
+        tips:
+          - "'A knight on the rim is dim.' Knights are strongest in the center of the board. Always look for a way to get your knight to a central square."
+          - "Rooks need open files to be effective. If there are no open files, consider a pawn break to create one."
       - level: intermediate
         criteria: "Evaluates pawn structures and identifies their strengths/weaknesses. Uses outposts for knights (squares protected by own pawns that cannot be attacked by enemy pawns). Understands good vs. bad bishops (bishop blocked by own pawns on same color). Fights for open files with rooks. Game rating 1200–1500 Elo."
         metrics:
@@ -344,6 +546,20 @@ nodes:
           - "Contests open files with rooks (doesn't leave them uncontested) in 70%+ of games"
           - "Can name the pawn structure type (isolani, hanging pawns, pawn chain, etc.) in 7/10 middlegame positions"
           - "Engine evaluation swing from positional errors (not tactical blunders): ≤0.5 per move on average"
+        resources:
+          - title: "Hanging Pawns - Pawn Structures Explained"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "Lichess Studies - Positional Chess Themes"
+            url: "https://lichess.org/study"
+            type: "exercise"
+        practice:
+          - "Study 5 positions with isolated pawns and 5 with pawn chains: identify the strengths and weaknesses of each structure (30 minutes)"
+          - "In your next 10 games, actively look for knight outposts and try to occupy them. Review with engine after (ongoing)"
+        projects:
+          - "Create a Lichess Study of 10 positions from your own games showing positional mistakes, annotated with the correct positional plan"
+        tips:
+          - "A 'bad bishop' is not necessarily bad — it depends on the position. The key question is: are your pawns on the same color as your bishop, blocking it?"
       - level: advanced
         criteria: "Creates and exploits long-term positional advantages (permanent weak squares, pawn majorities on the queenside, piece imbalances favoring own position). Understands typical pawn structures from openings and the associated plans (e.g., IQP positions: piece activity and kingside attack; Carlsbad structure: minority attack). Game rating 1500–2000 Elo."
         metrics:
@@ -352,6 +568,12 @@ nodes:
           - "Can identify the correct pawn structure plan in 8/10 positions derived from common openings"
           - "Creates or exploits weak squares in ≥50% of middlegame positions where the opportunity exists"
           - "Correctly evaluates bishop vs knight in 9/10 positions based on pawn structure (open/closed)"
+        resources:
+          - title: "Hanging Pawns - Typical Pawn Structures and Plans"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "Learn the standard plans for 5 common pawn structures (IQP, Carlsbad, Maroczy Bind, hedgehog, stonewall). These plans repeat across hundreds of games."
       - level: expert
         criteria: "Positional mastery: controls the character of the game (steers toward open or closed positions based on piece advantage). Creates positions where opponent has no counterplay. Understands and applies prophylaxis (preventing opponent's plans before executing own). Plays in the style of Karpov/Petrosian — opponents are gradually squeezed. Game rating 2000+ Elo."
         metrics:
@@ -360,6 +582,12 @@ nodes:
           - "Opponent's piece activity (measured by engine mobility score) decreases over the course of the game in 60%+ of tournament games"
           - "Can annotate any master game with correct positional assessments matching engine evaluation at ≥80% of critical moments"
           - "Wins ≥40% of games without any tactical combination — purely on positional grounds"
+        resources:
+          - title: "Hanging Pawns - Prophylaxis in Chess"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "Prophylaxis (asking 'what does my opponent want to do?' before deciding your own move) is the single most underrated skill at the 1800-2200 level."
     tags: ["positional", "strategy", "pawn-structure"]
 
   # ── CALCULATION ─────────────────────────────────────────────────────────────
@@ -409,6 +637,21 @@ nodes:
           - "Blunder rate (moves hanging a piece or losing ≥1 pawn for nothing): ≤5 per game"
           - "Can correctly predict opponent's best response to own move in 5/10 test positions"
           - "Solves 'What's the best move?' 1-move exercises at ≥60% accuracy without moving pieces"
+        resources:
+          - title: "GothamChess - How to Calculate in Chess"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "ChessBrah - Building Habits: Thinking Process"
+            url: "https://www.youtube.com/playlist?list=PLJPJNMHCVLse7E-3hfzPp0_x-KWOY6B4"
+            type: "video"
+        practice:
+          - "Before every move in your next 5 games, say aloud (or think): 'If I move here, what can my opponent do?' (ongoing)"
+          - "Solve 10 puzzles without moving pieces on the screen — calculate entirely in your head (20 minutes)"
+        projects:
+          - "Play 10 slow games (15+ minutes) and after each game, count the number of pieces you hung. Target: reduce by 50% over 10 games"
+        tips:
+          - "The single habit that reduces blunders the most: before every move, ask 'does this move leave anything undefended?' This one question will gain you 200 rating points."
+          - "Resist the urge to play the first move you see. Consider at least 2 candidate moves before choosing."
       - level: intermediate
         criteria: "Calculates 3–4 moves deep on critical positions. Can hold 2 variations in mind simultaneously without confusing piece positions. Uses the checks-captures-threats (CCT) priority when looking for forcing moves. Game rating 1000–1500 Elo."
         metrics:
@@ -417,6 +660,20 @@ nodes:
           - "Can calculate 2 alternative variations for a given position and correctly evaluate which is better in 6/10 exercises"
           - "Uses CCT (checks, captures, threats) priority and can demonstrate the method when solving a puzzle aloud"
           - "Solves 'Guess the Move' exercises in master games at ≥40% match rate (matching the master's actual move)"
+        resources:
+          - title: "Hanging Pawns - How to Calculate Variations"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "Lichess Puzzles - Solve Without Moving Pieces (blind mode)"
+            url: "https://lichess.org/training"
+            type: "exercise"
+        practice:
+          - "Practice the CCT method: in 10 positions, list all checks first, then all captures, then all threats before choosing a move (30 minutes)"
+          - "Do 'Guess the Move' on 2 master games per week: cover the moves and try to predict each one (1 hour/week)"
+        projects:
+          - "Analyze 5 of your own games without an engine: write down your analysis for the 3 most critical positions, then compare to the engine"
+        tips:
+          - "Always calculate checks first, then captures, then threats (CCT). Forcing moves narrow the opponent's options and make calculation manageable."
       - level: advanced
         criteria: "Calculates 5–6 moves deep on critical positions. Evaluates forcing sequences (checks, captures, threats) accurately. Uses elimination to narrow candidate moves. Does not 'tree-hop' (follows each variation to a clear evaluation before starting the next). Game rating 1500–2000 Elo."
         metrics:
@@ -425,6 +682,12 @@ nodes:
           - "Correctly evaluates the resulting position at the end of a calculated variation in 7/10 exercises"
           - "Solves 'Guess the Move' exercises in master games at ≥55% match rate"
           - "Can analyze a complex position for 5 minutes and write down 3 main variations with evaluations, matching engine in ≥2 of 3"
+        resources:
+          - title: "Hanging Pawns - Deep Calculation Training"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "Do not tree-hop. Follow each variation to a clear conclusion before starting the next one. Jumping between lines confuses your mental board."
       - level: expert
         criteria: "Deep calculation (7+ moves) on complex positions with multiple branching variations. Visualization is fluid — can play and analyze positions without a board (blindfold). Calculates with candidate moves systematically following Kotov's method. Game rating 2000+ Elo."
         metrics:
@@ -433,6 +696,12 @@ nodes:
           - "Can calculate 7+ move forcing variations with ≥2 branches and arrive at the correct evaluation"
           - "Solves 'Guess the Move' exercises in GM games at ≥65% match rate"
           - "Pre-move analysis (written before checking engine) matches engine evaluation within 0.2 pawns in ≥70% of critical positions"
+        resources:
+          - title: "Lichess Blindfold Mode (puzzle settings)"
+            url: "https://lichess.org/training"
+            type: "exercise"
+        tips:
+          - "Build visualization through progressive blindfold exercises. Start with simple K+P positions, then add pieces gradually. Visualization is a trainable muscle."
     tags: ["calculation", "visualization", "analysis"]
 
   # ── STRATEGIC PLANNING ──────────────────────────────────────────────────────
@@ -476,6 +745,21 @@ nodes:
           - "≥70% of moves in a game serve a discernible purpose (development, attack, defense) rather than being aimless"
           - "Can identify whether they are ahead, equal, or behind in material in 9/10 positions and state an appropriate goal"
           - "Knows 3 basic strategic principles: trade when ahead, attack where you have more pieces, improve your worst piece"
+        resources:
+          - title: "GothamChess - How to Think in Chess (Plans and Strategy)"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Chess.com Lessons - Basic Strategy and Planning"
+            url: "https://www.chess.com/lessons"
+            type: "course"
+        practice:
+          - "In your next 5 games, before every move say aloud what your plan is (even if simple: 'I want to develop my bishop' or 'I want to attack the f7 pawn') (ongoing)"
+          - "After each game, annotate your moves: for each move, write why you played it. If you cannot explain why, that is a move to improve (15 minutes/game)"
+        projects:
+          - "Annotate 5 of your own games with a plan stated for every move. Share with a stronger player or coach for feedback"
+        tips:
+          - "A bad plan is better than no plan. Even if your plan is 'trade pieces because I am ahead in material,' having any plan makes your moves 10x more purposeful."
+          - "The simplest strategic framework: (1) Am I ahead, equal, or behind? (2) If ahead: trade pieces. If behind: avoid trades. If equal: improve your worst piece."
       - level: intermediate
         criteria: "Forms multi-step plans (3+ coordinated moves toward a goal). Identifies which part of the board to play on based on pawn structure and piece placement. Understands pawn breaks and their timing. Can explain 'why' for each move in a game when annotating. Game rating 1200–1500 Elo."
         metrics:
@@ -484,6 +768,20 @@ nodes:
           - "Can identify the correct pawn break for 6/10 standard pawn structures (e.g., f4-f5 in King's Indian, c4-c5 in QGD)"
           - "Post-game annotations include a stated plan for ≥80% of moves (not just move descriptions)"
           - "Plan quality: stated plans match engine's top-3 strategic assessment in ≥50% of positions"
+        resources:
+          - title: "Hanging Pawns - Strategic Planning in Chess"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "GothamChess - Pawn Breaks Explained"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+        practice:
+          - "Study 3 master games focusing on the winning side's plan: write down what the plan was and how it was executed (30 minutes)"
+          - "In 5 positions from your games, write a 3-step plan before checking the engine. Compare your plan to the engine's recommendation (30 minutes)"
+        projects:
+          - "Create an annotated collection of 10 games (5 own + 5 master games) where you identify the winning plan in each"
+        tips:
+          - "When you do not know what to do, ask: 'What is my worst-placed piece and how do I improve it?' This simple question creates a plan in any position."
       - level: advanced
         criteria: "Adapts plans based on opponent's responses. Balances attack and defense simultaneously. Creates multi-front pressure (two weaknesses principle). Understands when to change plans versus when to persist. Uses prophylaxis. Game rating 1500–2000 Elo."
         metrics:
@@ -492,6 +790,12 @@ nodes:
           - "Correctly applies the 'two weaknesses' principle: creates a second weakness when opponent successfully defends the first in ≥40% of games where applicable"
           - "Prophylactic thinking: identifies and prevents opponent's best plan in ≥60% of critical positions"
           - "Engine agreement on strategic decisions (non-tactical, positional moves): ≥65%"
+        resources:
+          - title: "Hanging Pawns - The Two Weaknesses Principle"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "When your opponent successfully defends one weakness, create a second one on the other side of the board. Defending two weaknesses simultaneously is much harder."
       - level: expert
         criteria: "Strategic mastery: sees the entire game as a connected narrative from opening through endgame. Plans from the opening reach into the endgame (e.g., choosing an opening specifically for the favorable endgame it produces). Opponent's plans are anticipated and neutralized before they begin. Can teach strategic concepts using own games as examples. Game rating 2000+ Elo."
         metrics:
@@ -500,6 +804,12 @@ nodes:
           - "Opponents report feeling 'outplayed' or 'squeezed' (subjective but consistent pattern across opponents)"
           - "Can annotate any master game with correct strategic assessments at ≥80% of critical moments"
           - "Strategic preparation: chooses openings based on desired middlegame/endgame type against specific opponents in ≥70% of tournament games"
+        resources:
+          - title: "Hanging Pawns - Master Game Analysis (Strategic Themes)"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+        tips:
+          - "The hallmark of strategic mastery: choosing your opening based on the endgame you want. If you want a bishop endgame, play an opening that keeps bishops on the board."
     tags: ["strategy", "planning", "advanced"]
 
   # ── PATTERN RECOGNITION ─────────────────────────────────────────────────────
@@ -549,6 +859,20 @@ nodes:
           - "Recognizes the 7 core tactical motifs on sight in ≤10 seconds per diagram in 8/10 test positions"
           - "Has studied ≥20 annotated master games (tracked in a study log)"
           - "Solves ≥500 total tactical puzzles (lifetime count on Chess.com/Lichess/Chesstempo)"
+        resources:
+          - title: "Lichess Puzzle Themes - Mating Patterns"
+            url: "https://lichess.org/training/themes"
+            type: "exercise"
+          - title: "GothamChess - Checkmate Patterns You Must Know"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+        practice:
+          - "Study 5 classic short games (Morphy's Opera Game, Scholar's Mate, Legal's Mate, etc.) and identify the patterns that led to checkmate (30 minutes)"
+          - "Solve 500 tactical puzzles on Lichess across all basic themes (ongoing — aim for 10/day for 50 days)"
+        projects:
+          - "Start a study log: track every master game studied and every puzzle milestone (500, 1000, 2000 puzzles solved)"
+        tips:
+          - "Pattern recognition is built through volume, not intensity. Solving 10 easy puzzles daily builds patterns faster than solving 3 hard puzzles weekly."
       - level: intermediate
         criteria: "Recognizes common pawn structures and their associated plans. Identifies standard attacking setups (Greek gift sacrifice Bxh7+, battery on open file, rook lift). Begins to recognize familiar positions from own opening repertoire. Game rating 1200–1500 Elo; pattern library ~1,000–5,000 patterns."
         metrics:
@@ -558,6 +882,20 @@ nodes:
           - "Solves ≥2,000 total tactical puzzles (lifetime count)"
           - "Recognizes opening transpositions in own repertoire in ≥60% of cases"
           - "Can identify the 'classic game' example for ≥3 tactical/positional themes (e.g., Morphy's Opera Game for development advantage)"
+        resources:
+          - title: "Hanging Pawns - Model Games for Each Opening"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "Lichess Studies - Pawn Structure Themes"
+            url: "https://lichess.org/study"
+            type: "exercise"
+        practice:
+          - "Study 2 annotated master games per week in your opening repertoire and write down the key patterns (1 hour/week)"
+          - "Do themed puzzle sets: 50 puzzles on one pattern (e.g., Greek gift sacrifice) to deepen recognition (30 minutes)"
+        projects:
+          - "Build a personal collection of 20 model games: 2-3 games per opening in your repertoire, annotated with key patterns and plans"
+        tips:
+          - "Study master games by covering the moves and trying to guess each one. This 'Guess the Move' exercise is the fastest way to build pattern recognition."
       - level: advanced
         criteria: "Extensive pattern library: recognizes positions from master games, standard sacrifices, and typical middlegame plans. Pattern recognition speeds up decision-making significantly — 'intuitive' moves are often correct. Recognizes endgame patterns (Lucena, Philidor, Vancura, fortresses) on sight. Game rating 1500–2000 Elo; pattern library ~5,000–20,000 patterns."
         metrics:
@@ -567,6 +905,12 @@ nodes:
           - "Solves ≥10,000 total tactical puzzles (lifetime count)"
           - "Identifies the 'type of position' (attacking, defensive, maneuvering, endgame conversion) in ≤15 seconds in 8/10 test positions"
           - "Correctly predicts the master's move in 'Guess the Move' exercises at ≥50% rate"
+        resources:
+          - title: "Chesstempo - Spaced Repetition Tactics Training"
+            url: "https://chesstempo.com/"
+            type: "exercise"
+        tips:
+          - "Use spaced repetition for pattern retention. Solve the same set of 500 puzzles multiple times over weeks — research shows this builds faster pattern recall than always solving new puzzles."
       - level: expert
         criteria: "Pattern recognition approaching intuition — first-instinct moves are usually correct. Finds candidate moves in unfamiliar positions by analogy to known patterns. Can teach pattern recognition through curated game collections. Pattern library estimated at 20,000–100,000+ positions. Game rating 2000+ Elo."
         metrics:
@@ -576,6 +920,12 @@ nodes:
           - "Solves ≥25,000 total tactical puzzles (lifetime count)"
           - "Can identify the critical feature of any given position in ≤10 seconds in 9/10 test positions"
           - "Correctly predicts the master's move in 'Guess the Move' exercises at ≥65% rate in GM-level games"
+        resources:
+          - title: "Lichess Studies - Curated Master Game Collections"
+            url: "https://lichess.org/study"
+            type: "exercise"
+        tips:
+          - "At the expert level, your intuition IS your pattern library. Trust it for fast decisions, but always calculate to verify in critical positions."
     tags: ["patterns", "experience", "intuition"]
 
   # ── PRACTICAL SKILLS ────────────────────────────────────────────────────────
@@ -627,6 +977,21 @@ nodes:
           - "Does not spend more than 5 minutes on any single move in games with ≥30 minutes per side"
           - "Completes ≥90% of online rapid (15+10) games without flagging"
           - "Can name the time control format (bullet/blitz/rapid/classical) for given clock settings"
+        resources:
+          - title: "GothamChess - Time Management in Chess"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Chess.com - Understanding Time Controls"
+            url: "https://www.chess.com/article/view/chess-time-controls"
+            type: "article"
+        practice:
+          - "Play 5 rapid games (15+10) and review your time-per-move graph after each game. Identify where you spent too long (ongoing)"
+          - "Practice playing forced recaptures and obvious responses in under 10 seconds to save time for critical moments (ongoing)"
+        projects:
+          - "Play 20 rapid games and track how many you lose on time. Target: lose on time in fewer than 2 out of 20 games"
+        tips:
+          - "The #1 beginner time mistake: spending 3 minutes on move 5 when the opening is not critical, then having no time for the complicated middlegame."
+          - "Play rapid (15+10) to develop your chess. Blitz is fun but you learn little. Classical is great but games are long. Rapid is the sweet spot for improvement."
       - level: intermediate
         criteria: "Allocates time proportionally — spends more time on critical positions (tactical complications, key decisions) and plays quickly on forced or routine moves. Checks the clock regularly. Reaches the middlegame with sufficient time for deep thought. Game rating 1200–1500 Elo."
         metrics:
@@ -635,6 +1000,20 @@ nodes:
           - "Average time per move on forced/routine positions: ≤30 seconds (in standard games)"
           - "Average time per move on critical positions: ≥3 minutes (in standard games)"
           - "Checks clock every 3–5 moves (self-reported or observed)"
+        resources:
+          - title: "Hanging Pawns - Time Management Tips"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "Lichess - Time Per Move Graph (post-game analysis)"
+            url: "https://lichess.org/"
+            type: "tool"
+        practice:
+          - "Set time checkpoints for your next 5 games: by move 15 I should have 80% of time remaining, by move 30 I should have 40% (ongoing)"
+          - "Review your time-per-move graph after each game and identify the 3 moves where you spent the most time. Were they truly critical? (5 minutes/game)"
+        projects:
+          - "Track your time management over 10 games: note critical positions, time spent, and whether the time investment led to a better move"
+        tips:
+          - "Think on your opponent's time. When it is their turn, use that time to consider your likely responses. Pre-calculating saves minutes per game."
       - level: advanced
         criteria: "Performs well in rapid (15–30 min) and blitz (5–10 min) time controls without significant quality drop. Maintains move quality under time pressure. Uses opponent's thinking time effectively (pre-calculating responses). Game rating 1500–2000 Elo."
         metrics:
@@ -643,6 +1022,12 @@ nodes:
           - "Uses opponent's time productively: has a candidate move ready ≥70% of the time when it becomes their turn"
           - "Time trouble (under 5 minutes remaining before increment) occurs in ≤20% of standard games"
           - "Accuracy in blitz games (engine ACPL ≤ 40) in ≥60% of games"
+        resources:
+          - title: "GothamChess - How to Play Blitz Chess"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+        tips:
+          - "In time trouble, play safe and solid moves over ambitious ones. A safe move that maintains your position is better than a brilliant move you miscalculate."
       - level: expert
         criteria: "Time management as a weapon: maintains composure and accuracy when opponent is in time trouble. Creates time pressure for opponent through complex positions. Plays objectively best moves under any time constraint. Nearly eliminates time-related losses. Game rating 2000+ Elo."
         metrics:
@@ -651,6 +1036,12 @@ nodes:
           - "Engine accuracy (ACPL ≤ 20) maintained even in final 10 moves of time-pressure situations"
           - "Blitz rating within 100 Elo points of standard rating"
           - "Can play a full rapid game (15+10) with no move taking more than 3 minutes and maintain ≥80% accuracy"
+        resources:
+          - title: "ChessBrah - Speed Chess Masterclass"
+            url: "https://www.youtube.com/c/chessbrah"
+            type: "video"
+        tips:
+          - "When your opponent is in time trouble, create complex positions that require calculation. Simple positions let them play on autopilot; complexity exploits their time deficit."
     tags: ["practical", "time", "tournament"]
 
   - id: "science/chess/game-analysis-preparation"
@@ -706,6 +1097,24 @@ nodes:
           - "Uses engine analysis tool (any platform) and can explain what '+2.5' or '-1.0' means"
           - "Spends ≥5 minutes reviewing each game before checking engine analysis"
           - "Can identify ≥2 lessons learned from each analyzed game (e.g., 'I left my back rank weak,' 'I should have traded queens when ahead')"
+        resources:
+          - title: "Lichess Analysis Board (free)"
+            url: "https://lichess.org/analysis"
+            type: "tool"
+          - title: "GothamChess - How to Analyze Your Chess Games"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+          - title: "Chess.com - Game Review Feature"
+            url: "https://www.chess.com/analysis"
+            type: "tool"
+        practice:
+          - "After every rated game, spend 5 minutes reviewing without the engine first, then turn on the engine to see what you missed (10 minutes/game)"
+          - "Write down 2 lessons from each game in a notebook or study log (5 minutes/game)"
+        projects:
+          - "Analyze your last 20 games and create a 'mistake journal' listing the 3 most common errors you make"
+        tips:
+          - "Analyze your own games BEFORE using the engine. If you let the engine do the thinking, you learn nothing. Your analysis skills only improve through practice."
+          - "Focus on 'what was I thinking?' not just 'what was the best move?' Understanding your thought process helps you fix the root cause of mistakes."
       - level: intermediate
         criteria: "Annotates games with critical moments and lessons learned. Studies master games in chosen openings to understand typical plans and structures. Identifies recurring patterns in own mistakes and designs targeted practice to address them. Maintains a study schedule. Game rating 1200–1500 Elo."
         metrics:
@@ -715,6 +1124,23 @@ nodes:
           - "Has a written training schedule allocating ≥3 hours/week to chess improvement"
           - "Tracks rating progress monthly and can identify trends (improving, plateauing, declining)"
           - "Can use Lichess Opening Explorer or similar database to check opening statistics for chosen lines"
+        resources:
+          - title: "Lichess Opening Explorer"
+            url: "https://lichess.org/analysis#explorer"
+            type: "tool"
+          - title: "Hanging Pawns - How to Study Chess Effectively"
+            url: "https://www.youtube.com/c/HangingPawns"
+            type: "video"
+          - title: "GothamChess - Rating Climb Series"
+            url: "https://www.youtube.com/c/GothamChess"
+            type: "video"
+        practice:
+          - "Create a weekly study schedule: 30 min puzzles (3x/week), 30 min game analysis (2x/week), 30 min master game study (2x/week)"
+          - "Track your rating monthly and identify whether you are improving, plateauing, or declining (ongoing)"
+        projects:
+          - "Build a structured training plan targeting your 3 weakest areas, follow it for 3 months, and measure rating progress"
+        tips:
+          - "The fastest way to improve: find your most common mistake type (tactical blunders, endgame errors, opening disasters) and train specifically on that weakness."
       - level: advanced
         criteria: "Systematic improvement plan: targeted training on identified weaknesses with measurable goals. Prepares for specific opponents using databases (reviews their recent games, opening choices, and tendencies). Uses engines critically — understands engine limitations and does not blindly accept the top move. Game rating 1500–2000 Elo."
         metrics:
@@ -724,6 +1150,12 @@ nodes:
           - "Measurable rating improvement of ≥50 Elo points over any 6-month period while following the training plan"
           - "Uses at least 2 different training tools (e.g., Chesstempo + Lichess Studies + endgame practice)"
           - "Has broken through at least 1 rating plateau by identifying and fixing a specific weakness"
+        resources:
+          - title: "Chesstempo - Structured Training Platform"
+            url: "https://chesstempo.com/"
+            type: "tool"
+        tips:
+          - "Rating plateaus are normal and usually mean your weakest area is holding you back. Identify it with a coach or by analyzing your last 30 losses, then train specifically on that weakness."
       - level: expert
         criteria: "Professional-level preparation: deep engine analysis with multiple engines (Stockfish + Leela), novelty preparation in openings, opponent-specific game preparation with database research. Coaches others on analysis methodology. Designs training programs. Game rating 2000+ Elo."
         metrics:
@@ -733,6 +1165,12 @@ nodes:
           - "Uses multiple engines (Stockfish + Leela) to cross-reference analysis and identify positions where engines disagree"
           - "Maintains a personal opening database with ≥100 prepared lines including novelties and improvements"
           - "Post-game analysis identifies the 'turning point' of the game and the correct continuation in ≥90% of cases"
+        resources:
+          - title: "Stockfish - Open Source Chess Engine"
+            url: "https://stockfishchess.org/"
+            type: "tool"
+        tips:
+          - "Use both Stockfish (best at tactics) and Leela Chess Zero (better at long-term evaluation) to cross-reference analysis. When they disagree, the position is genuinely complex."
     tags: ["analysis", "improvement", "preparation"]
 
 relationships:

@@ -599,11 +599,39 @@ nodes:
         criteria: "Maintains a prioritized backlog. Can articulate the next 4 weeks of work."
         metrics:
           - "Backlog groomed with ≥2 sprints of ready stories at all times"
+        resources:
+          - title: "Lenny's Newsletter - How to Build a Product Roadmap"
+            url: "https://www.lennysnewsletter.com/p/how-to-build-a-product-roadmap"
+            type: "article"
+          - title: "Product School - Product Roadmap Basics"
+            url: "https://www.youtube.com/watch?v=1bQILAKxfnY"
+            type: "video"
+        practice:
+          - "Groom your backlog: ensure the top 20 items have clear acceptance criteria and priority order (30 minutes)"
+          - "Practice articulating 'what we are building next and why' in a 2-minute pitch (15 minutes)"
+        projects:
+          - "Create a 4-week sprint plan with prioritized stories, capacity allocation, and a clear goal for each sprint"
+        tips:
+          - "A backlog is not a wishlist. Ruthlessly delete items older than 6 months that no one has asked about. They are noise."
       - level: intermediate
         criteria: "Quarterly roadmap with themes and priorities. Communicates tradeoffs to team and stakeholders."
         metrics:
           - "Quarterly roadmap delivered to stakeholders ≥2 weeks before quarter start"
           - "Roadmap vs. delivered: ≥70% of committed Q items shipped in quarter"
+        resources:
+          - title: "SVPG - The Alternative to Roadmaps (Marty Cagan)"
+            url: "https://www.svpg.com/the-alternative-to-roadmaps/"
+            type: "article"
+          - title: "Lenny's Newsletter - Roadmap Planning"
+            url: "https://www.lennysnewsletter.com/"
+            type: "article"
+        practice:
+          - "Draft a quarterly roadmap with 3 themes, each with 2-3 initiatives, and present it to a colleague for feedback (1 hour)"
+          - "Compare last quarter's roadmap to what actually shipped and identify why items slipped or were cut (30 minutes)"
+        projects:
+          - "Deliver a quarterly roadmap presentation to stakeholders, covering themes, priorities, tradeoffs, and what was intentionally deprioritized"
+        tips:
+          - "Use 'now / next / later' instead of dates. Dates create false precision. Themes and sequences communicate intent without over-committing."
       - level: advanced
         criteria: >
           Annual roadmap tied to company strategy. Separates 'now / next / later'
@@ -612,6 +640,12 @@ nodes:
         metrics:
           - "Annual roadmap includes confidence level per initiative (high/medium/speculative)"
           - "Roadmap change log maintained: every change has written rationale"
+        resources:
+          - title: "SVPG - Product Strategy Overview (Marty Cagan)"
+            url: "https://www.svpg.com/product-strategy-overview/"
+            type: "article"
+        tips:
+          - "Label each roadmap item with confidence (high/medium/speculative). It sets expectations and earns trust when speculative items change."
       - level: expert
         criteria: >
           Multi-year product vision translated into a rolling roadmap. Roadmap
@@ -620,6 +654,12 @@ nodes:
         metrics:
           - "Strategic initiatives (3–12 month bets) represent ≥20% of roadmap capacity"
           - "Roadmap reviewed and endorsed at board or exec level quarterly"
+        resources:
+          - title: "Reforge - Product Strategy Program"
+            url: "https://www.reforge.com/programs/strategy"
+            type: "course"
+        tips:
+          - "Reserve 20-30% of roadmap capacity for innovation bets. Without protected time for exploration, the roadmap becomes a feature factory."
     tags: ["strategy", "planning", "communication"]
 
   - id: "business/product-management/go-to-market"
@@ -634,6 +674,20 @@ nodes:
         criteria: "Supports launch coordination. Writes feature copy and internal release notes."
         metrics:
           - "Release notes completed 5 days before ship date on 90%+ of launches"
+        resources:
+          - title: "Product School - How to Launch a Product"
+            url: "https://www.youtube.com/watch?v=mXNBCsh4PNc"
+            type: "video"
+          - title: "Lenny's Newsletter - How to Launch a Product Feature"
+            url: "https://www.lennysnewsletter.com/"
+            type: "article"
+        practice:
+          - "Write release notes for a recent feature using the format: what changed, why it matters, how to use it (20 minutes)"
+          - "Create an internal launch checklist covering: docs, support training, analytics, rollback plan (30 minutes)"
+        projects:
+          - "Own the launch coordination for a small feature: write release notes, coordinate with support, and track adoption in the first week"
+        tips:
+          - "Write release notes for the user, not for yourself. 'Improved caching layer' means nothing to users. 'Pages now load 2x faster' matters to them."
       - level: intermediate
         criteria: >
           Owns GTM strategy for a feature: defines launch tier, success metrics,
@@ -641,6 +695,20 @@ nodes:
         metrics:
           - "GTM plan delivered to cross-functional stakeholders ≥3 weeks before launch"
           - "Post-launch review completed within 4 weeks of launch date"
+        resources:
+          - title: "Reforge - Growth Series: Go-to-Market Strategy"
+            url: "https://www.reforge.com/blog/go-to-market-strategy"
+            type: "article"
+          - title: "Product School - Go-to-Market Strategy"
+            url: "https://www.youtube.com/watch?v=1_OXz3nXlf0"
+            type: "video"
+        practice:
+          - "Write a GTM plan for an upcoming feature: launch tier, audience, messaging, success metrics, rollback criteria (1 hour)"
+          - "Conduct a post-launch review 2 weeks after a recent ship: adoption, feedback, what to improve next time (30 minutes)"
+        projects:
+          - "Own a full feature launch end-to-end: GTM plan, cross-functional coordination, launch execution, and post-launch review with documented learnings"
+        tips:
+          - "Define launch tiers (P0 = full GTM, P1 = blog + email, P2 = changelog only). Not every feature needs a press release."
       - level: advanced
         criteria: >
           Drives cross-functional launches with multiple workstreams (sales, marketing,
@@ -649,6 +717,12 @@ nodes:
         metrics:
           - "0 critical launch blockers discovered < 72 hours before launch"
           - "Launch objectives achieved (vs. defined success metrics) on 70%+ of major launches"
+        resources:
+          - title: "SVPG - Product Launch Best Practices"
+            url: "https://www.svpg.com/"
+            type: "article"
+        tips:
+          - "Build a kill switch into every major launch. If adoption is below threshold or bugs spike, you need a way to roll back without a full incident."
       - level: expert
         criteria: >
           GTM as a strategic lever: launch sequencing creates market moments and
@@ -657,6 +731,12 @@ nodes:
         metrics:
           - "Major launches covered by external press or analyst commentary ≥50% of the time"
           - "Launch playbook used by ≥3 other PMs in the org"
+        resources:
+          - title: "Reforge - Growth Marketing Program"
+            url: "https://www.reforge.com/programs/growth-marketing"
+            type: "course"
+        tips:
+          - "Sequence launches to build narrative. Three small launches in a month can tell a bigger story than one large launch."
     tags: ["execution", "cross-functional", "launch"]
 
   # ── LEADERSHIP (Principal PM / Director+) ───────────────────────────────────
@@ -672,6 +752,20 @@ nodes:
         criteria: "Collaborates well with immediate pod (engineer, designer). Runs effective sprint ceremonies."
         metrics:
           - "Sprint retrospective action items completed ≥80% of the time"
+        resources:
+          - title: "Product School - Working with Engineers as a PM"
+            url: "https://www.youtube.com/watch?v=YGVKtHkHPKI"
+            type: "video"
+          - title: "SVPG - The PM/Engineer Relationship"
+            url: "https://www.svpg.com/the-pm-engineer-relationship/"
+            type: "article"
+        practice:
+          - "Run a sprint retrospective: what went well, what to improve, one action item to change next sprint (30 minutes)"
+          - "Shadow your engineering lead for a day to understand their constraints and communication style (ongoing)"
+        projects:
+          - "Run 4 consecutive sprint ceremonies (planning, standup facilitation, retro) and gather feedback from the team on how to improve"
+        tips:
+          - "Earn engineering trust by being reliable, not by being technical. Deliver on your commitments (specs on time, decisions made quickly) and engineers will trust you."
       - level: intermediate
         criteria: >
           Drives team-level delivery. Unblocks cross-functional dependencies.
@@ -680,6 +774,20 @@ nodes:
         metrics:
           - "Sprint velocity: ≥80% of committed points delivered per sprint"
           - "Cross-team dependencies resolved at PM level ≥60% of the time"
+        resources:
+          - title: "Lenny's Newsletter - How to Work with Engineering"
+            url: "https://www.lennysnewsletter.com/"
+            type: "article"
+          - title: "SVPG - Missionaries vs. Mercenaries (Marty Cagan)"
+            url: "https://www.svpg.com/missionaries-vs-mercenaries/"
+            type: "article"
+        practice:
+          - "Map all cross-team dependencies for your next quarter and proactively schedule sync meetings for each (1 hour)"
+          - "Practice making a tie-breaking product decision: gather context, state the tradeoff, decide, and communicate within 24 hours (ongoing)"
+        projects:
+          - "Lead a cross-functional working group to resolve a dependency, document the resolution process, and share the playbook with the team"
+        tips:
+          - "When the team is stuck, make a decision within 24 hours even if imperfect. A 70% correct decision today beats a 95% correct decision next week."
       - level: advanced
         criteria: >
           Leads multi-team programs across multiple product areas. Sets team
@@ -688,6 +796,12 @@ nodes:
         metrics:
           - "Engineering team eNPS for PM partnership: ≥8/10"
           - "≥1 junior PM mentored with documented career growth"
+        resources:
+          - title: "SVPG - Coaching Tools for Product Leaders (Marty Cagan)"
+            url: "https://www.svpg.com/coaching-tools/"
+            type: "article"
+        tips:
+          - "Mentoring is not telling people what to do. Ask questions that help junior PMs develop their own judgment. 'What would you do and why?' is more powerful than any advice."
       - level: expert
         criteria: >
           Shapes product culture and process at org scale. Hiring, team design,
@@ -695,6 +809,12 @@ nodes:
         metrics:
           - "Team attrition rate below engineering org average"
           - "At least 2 PMs promoted to next level under mentorship per year"
+        resources:
+          - title: "SVPG - Empowered: Ordinary People, Extraordinary Products (Book Site)"
+            url: "https://www.svpg.com/empowered-ordinary-people-extraordinary-products/"
+            type: "book"
+        tips:
+          - "Culture is what people do when you are not in the room. Define it explicitly, hire for it, and reinforce it in every 1:1 and retro."
     tags: ["leadership", "people", "delivery"]
 
   - id: "business/product-management/product-strategy"
@@ -710,6 +830,20 @@ nodes:
         criteria: "Understands the company's product strategy. Can explain how their area contributes to it."
         metrics:
           - "Can articulate product strategy in 2 minutes without referring to notes"
+        resources:
+          - title: "SVPG - Product Strategy Overview (Marty Cagan)"
+            url: "https://www.svpg.com/product-strategy-overview/"
+            type: "article"
+          - title: "Product School - What is Product Strategy?"
+            url: "https://www.youtube.com/watch?v=11b2JdeHoGM"
+            type: "video"
+        practice:
+          - "Write a 2-minute pitch explaining your product area's strategy and how it connects to the company mission (20 minutes)"
+          - "Read your company's last earnings call or strategy doc and list 3 themes that should guide your work (30 minutes)"
+        projects:
+          - "Write a one-page strategy summary for your product area: mission, target user, key differentiator, and top 3 bets"
+        tips:
+          - "If you cannot explain the strategy in 2 minutes, you do not understand it well enough. Simplify until you can."
       - level: intermediate
         criteria: >
           Writes and defends a product area strategy document (vision, bets,
@@ -717,6 +851,20 @@ nodes:
         metrics:
           - "Product area strategy doc reviewed and approved by VP/CPO"
           - "Team OKRs trace to strategy themes on 100% of objectives"
+        resources:
+          - title: "Reforge - Product Strategy Program"
+            url: "https://www.reforge.com/programs/strategy"
+            type: "course"
+          - title: "Lenny's Newsletter - How to Define Product Strategy"
+            url: "https://www.lennysnewsletter.com/p/how-to-build-a-great-product-strategy"
+            type: "article"
+        practice:
+          - "Write a strategy document covering: vision (where we are going), bets (how we will get there), and success metrics (how we will know) (2 hours)"
+          - "Map every team OKR to a strategy theme and identify any OKRs that do not connect (30 minutes)"
+        projects:
+          - "Write and present a product area strategy document, get VP/CPO feedback, and iterate to approval"
+        tips:
+          - "A strategy without bets is just a vision. Name the 2-3 bets you are making and what you are explicitly choosing NOT to do."
       - level: advanced
         criteria: >
           Defines differentiated positioning for the product. Makes strategic
@@ -725,6 +873,12 @@ nodes:
         metrics:
           - "Competitive win rate improves ≥10pp in segments where strategy changes are applied"
           - "Strategy reviews held quarterly with exec alignment maintained"
+        resources:
+          - title: "Reforge - Strategy and Execution"
+            url: "https://www.reforge.com/blog/strategy-vs-execution"
+            type: "article"
+        tips:
+          - "Strategy should change when the market changes, not when the calendar changes. Build a system to detect market shifts early."
       - level: expert
         criteria: >
           Product strategy is company strategy. Creates category-defining product
@@ -733,6 +887,12 @@ nodes:
         metrics:
           - "Product vision referenced in external company communications (pitch deck, press)"
           - "Strategy framework adopted by ≥3 other product leads"
+        resources:
+          - title: "SVPG - Inspired: How to Create Tech Products Customers Love (Book Site)"
+            url: "https://www.svpg.com/inspired-how-to-create-tech-products-customers-love/"
+            type: "book"
+        tips:
+          - "The best product vision inspires the team to do their best work. If your vision reads like a business plan, rewrite it until it reads like a story of the future."
     tags: ["strategy", "vision", "leadership"]
 
 relationships:

@@ -58,6 +58,22 @@ nodes:
           - "Correctly names and selects the appropriate pan for 8/10 cooking tasks (saute pan vs. saucepan vs. sheet pan vs. stockpot)"
           - "Completes a simple dish (e.g., scrambled eggs or a basic stir-fry) with zero mid-cook interruptions to find tools or ingredients"
           - "Workspace is wiped down and cutting board cleared between prep tasks (no raw-chicken board reused for vegetables)"
+        resources:
+          - title: "Kenji Lopez-Alt — Serious Eats: The Food Lab's Guide to Mise en Place"
+            url: "https://www.seriouseats.com/mise-en-place-what-it-means-cooking"
+            type: "article"
+          - title: "Joshua Weissman — Kitchen Essentials for Beginners"
+            url: "https://www.youtube.com/watch?v=biSGbJl5JGg"
+            type: "video"
+        practice:
+          - "Before every cooking session: read the recipe fully, then gather and pre-measure all ingredients before turning on any heat"
+          - "10 min: practice identifying the correct pan for different tasks — saute pan for searing, saucepan for liquids, sheet pan for roasting"
+        projects:
+          - "Cook a simple 2-component meal (e.g., scrambled eggs with toast) with all ingredients gathered and measured before any burner is turned on"
+          - "Complete a simple stir-fry with zero mid-cook pauses to find tools or ingredients"
+        tips:
+          - "Read the entire recipe before you start — the #1 beginner mistake is discovering a step mid-cook that requires 30 minutes you did not plan for"
+          - "Clean as you go: wash a bowl immediately after emptying it; a clean sink during cooking means a calm kitchen"
       - level: intermediate
         criteria: >
           Organizes prep in logical order to minimize idle time (e.g., starts rice before
@@ -71,6 +87,22 @@ nodes:
           - "Zero cross-contamination incidents across 10 consecutive cooking sessions (separate boards for raw protein and produce, handwashing between)"
           - "Written timing plan for a three-component dinner (protein, starch, vegetable) executed with all elements hot at plating"
           - "Sink contains fewer than 3 dirty items at the moment the last dish is plated"
+        resources:
+          - title: "ATK/Cook's Illustrated — Kitchen Organization Tips"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+          - title: "Serious Eats — How to Cook a Weeknight Dinner in 30 Minutes"
+            url: "https://www.seriouseats.com/essential-weeknight-cooking-tips"
+            type: "article"
+        practice:
+          - "Before a 3-dish meal: write a simple timing plan (start rice, then chop vegetables, then cook protein) so everything finishes together"
+          - "10 min: practice the 'clean as you go' habit — wash each tool immediately after use during a cooking session"
+        projects:
+          - "Cook a 3-component dinner (protein, starch, vegetable) where all components finish within 5 minutes of each other"
+          - "Write a timing plan for a weeknight dinner and execute it with everything hot at plating"
+        tips:
+          - "Start with the component that takes longest (rice, roasted vegetables) and work backward to the fastest item (salad, sauteed greens)"
+          - "FIFO (first in, first out) in the fridge prevents waste — put new groceries behind old ones so you use the oldest items first"
       - level: advanced
         criteria: >
           Designs prep lists and cooking timelines for multi-course meals without a recipe.
@@ -84,6 +116,12 @@ nodes:
           - "Kitchen passes health-inspection-level cleanliness standards during and after service (no raw protein residue on surfaces, sanitizer solution at correct concentration)"
           - "Prep-ahead plan correctly identifies make-ahead vs. last-minute tasks for a dinner party (verified by no quality loss in pre-made components)"
           - "Delegates 3+ prep tasks to a helper with clear instructions, and all delegated tasks meet quality standards"
+        resources:
+          - title: "Serious Eats — Dinner Party Planning Guide"
+            url: "https://www.seriouseats.com/how-to-plan-a-dinner-party"
+            type: "article"
+        tips:
+          - "Write a reverse-timeline for dinner parties — start from plating time and work backward to identify what needs to happen when"
       - level: expert
         criteria: >
           Mise en place is instinctive and invisible — the kitchen runs as a calm, organized
@@ -97,6 +135,12 @@ nodes:
           - "Students or team members replicate organized prep workflow independently after one training session"
           - "Eight-person dinner party: all courses served at correct temperature with host spending less than 60% of party time in the kitchen"
           - "Station layout diagram created for a specific menu that eliminates unnecessary movement (fewer than 10 steps between stations)"
+        resources:
+          - title: "ATK — Professional Kitchen Workflow"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Mise en place is a habit, not a skill level — even expert cooks who skip it make mistakes; treat it as non-negotiable"
     tags: ["foundation", "workflow", "food-safety", "organization"]
 
   # -- KNIFE SKILLS (tool mastery) -----------------------------------------------
@@ -122,6 +166,22 @@ nodes:
           - "Dices one onion into roughly uniform pieces (within 1/4 inch of each other) in under 3 minutes"
           - "Zero cuts or near-misses across 10 practice sessions (safety is the beginner priority, not speed)"
           - "Can demonstrate the rocking motion, push cut, and pull/draw cut and explain when each is appropriate"
+        resources:
+          - title: "Joshua Weissman — Ultimate Guide to Knife Skills"
+            url: "https://www.youtube.com/watch?v=G-Fg7l7G1zw"
+            type: "video"
+          - title: "ATK/Cook's Illustrated — How to Hold a Chef's Knife"
+            url: "https://www.youtube.com/watch?v=20gwf7YttSM"
+            type: "video"
+        practice:
+          - "10 min daily: dice one onion using proper pinch grip and tucked guide hand — focus on safety, not speed"
+          - "5 min: practice the rocking motion on herbs (parsley, cilantro) until you get a fine mince"
+        projects:
+          - "Dice 3 onions into roughly uniform pieces (within 1/4 inch) with zero cuts or near-misses"
+          - "Prepare a full mise en place for a stir-fry using only a chef's knife — all vegetables prepped and uniform"
+        tips:
+          - "The pinch grip (thumb and index finger on the blade heel) gives far more control than gripping the handle — it feels odd at first but is safer"
+          - "Keep your guide hand fingertips curled under with knuckles forward — your knuckles guide the blade, your fingertips stay behind them"
       - level: intermediate
         criteria: >
           Executes CIA standard classical cuts with reasonable uniformity: small dice
@@ -134,6 +194,23 @@ nodes:
           - "Small dice (1/4 inch) onion: 80%+ uniformity across 50 pieces sampled"
           - "Chiffonade basil into ribbons 2mm or thinner without bruising (leaves stay green, not black)"
           - "Honing steel used correctly (15-20 degree angle, heel to tip, alternating sides) before every cutting session"
+        resources:
+          - title: "Kenji Lopez-Alt — Knife Skills Tutorial"
+            url: "https://www.youtube.com/watch?v=cFxHBLSD7bU"
+            type: "video"
+          - title: "Serious Eats — Essential Knife Cuts for Home Cooks"
+            url: "https://www.seriouseats.com/knife-skills-how-to-dice-onion"
+            type: "article"
+        practice:
+          - "15 min: practice julienne carrots — cut planks first, then stack and cut into matchsticks; measure a sample of 20 pieces"
+          - "5 min: hone your knife before every session using a honing steel at 15-20 degree angle"
+          - "10 min: practice small dice (1/4 inch) on onions — consistency matters more than speed"
+        projects:
+          - "Julienne 2 carrots with 80%+ of pieces within 1mm of target 1/8-inch width"
+          - "Chiffonade a bunch of basil into thin ribbons without bruising (leaves stay green, not black)"
+        tips:
+          - "A sharp knife is safer than a dull one — dull knives require more pressure and slip more easily; hone before every session"
+          - "Uniformity matters more than speed: pieces that look the same cook at the same rate, which is the entire point of precise cuts"
       - level: advanced
         criteria: >
           Performs brunoise (1/8" cube), tournee (7-sided football shape), and precise
@@ -146,6 +223,12 @@ nodes:
           - "Whole chicken broken down into 8 pieces cleanly — no bone fragments, no meat left on carcass, completed in under 5 minutes"
           - "Tournee: 7 even sides, smooth taper, consistent shape across 10 pieces of potato"
           - "Sharpens a dull chef's knife on a 1000/6000 grit whetstone to an edge that cleanly slices a sheet of paper"
+        resources:
+          - title: "Joshua Weissman — How to Sharpen a Knife"
+            url: "https://www.youtube.com/watch?v=G-Fg7l7G1zw"
+            type: "video"
+        tips:
+          - "Break down proteins by feeling for the joints — the knife should pass through cartilage, not bone; if you are forcing, you are in the wrong spot"
       - level: expert
         criteria: >
           All knife work is fast, silent, and precisely uniform. Speed and accuracy are
@@ -159,6 +242,12 @@ nodes:
           - "Students demonstrate safe pinch grip, tucked guide hand, and basic dice correctly after a single 90-minute knife-skills class"
           - "Completes full mise en place knife prep for a 5-course dinner (multiple vegetables, herbs, proteins) in under 30 minutes with 90%+ uniformity across all cuts"
           - "ACF Certified Culinarian knife skills section: passes with 80%+ score on cut precision and safety"
+        resources:
+          - title: "ATK — Professional Knife Techniques"
+            url: "https://www.youtube.com/watch?v=20gwf7YttSM"
+            type: "video"
+        tips:
+          - "Speed and accuracy should be simultaneous at this level — if you sacrifice uniformity for speed, slow down until both are equal"
     tags: ["foundation", "technique", "safety", "precision"]
 
   # -- HEAT & COOKING METHODS (the physics of cooking) ---------------------------
@@ -188,6 +277,23 @@ nodes:
           - "Scrambled eggs: soft curds, no browning, creamy texture — achieved on 3 consecutive attempts"
           - "Pasta cooked to al dente: firm bite with no chalky core, tested by cutting a piece in half (thin white line visible at center)"
           - "Stir-fry: vegetables have visible sear marks and remain crisp-tender, not limp or waterlogged — pan not overcrowded (cook in batches of no more than 2 cups at a time)"
+        resources:
+          - title: "Kenji Lopez-Alt — The Food Lab: How to Saute"
+            url: "https://www.seriouseats.com/how-to-saute-food"
+            type: "article"
+          - title: "Joshua Weissman — Cooking Methods Every Home Cook Should Know"
+            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            type: "video"
+        practice:
+          - "10 min: saute onions to translucent (not burned, not raw) 3 times in a row — practice adjusting heat if they color too fast"
+          - "15 min: cook scrambled eggs with low heat and constant gentle stirring — pull from heat while still slightly wet"
+          - "10 min: practice a stir-fry in small batches (no more than 2 cups per batch) to achieve sear marks"
+        projects:
+          - "Cook scrambled eggs with soft, creamy curds 3 times in a row — no browning, no rubber"
+          - "Cook pasta to al dente (firm bite, no chalky core) and serve with a simple sauce"
+        tips:
+          - "The pan must be hot before adding food — if you do not hear an immediate sizzle, the pan is too cold and the food will steam instead of sear"
+          - "Overcrowding the pan drops the temperature and causes steaming instead of searing — cook in batches, even if it takes longer"
       - level: intermediate
         criteria: >
           Controls pan temperature by sight and sound (oil shimmer at ~350 F, immediate
@@ -202,6 +308,23 @@ nodes:
           - "Braised short ribs reach fork-tender (a fork slides in and out with no resistance) in the correct time window (2.5-3.5 hours at 325 F)"
           - "Poached eggs: whites fully set, yolk runny, no vinegar taste, shape is compact — achieved 3 out of 5 attempts"
           - "Simple vinaigrette (3:1 oil to acid ratio) emulsifies and holds through dressing a salad without separating"
+        resources:
+          - title: "Kenji Lopez-Alt — The Food Lab: Perfect Searing"
+            url: "https://www.seriouseats.com/how-to-pan-sear"
+            type: "article"
+          - title: "ATK/Cook's Illustrated — Science of Searing"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        practice:
+          - "15 min: practice pan-searing a protein (chicken thigh or steak) — heat pan, add oil, wait for shimmer, sear without moving for 3-4 minutes"
+          - "10 min: braise a tough cut (chicken legs or short ribs) at 325F — check at 2 hours for fork-tenderness"
+          - "10 min: practice poaching eggs — vinegar in simmering water, gentle swirl, 3 minutes"
+        projects:
+          - "Pan-sear a steak with deep-brown sear and intact fond (not burned) — deglaze to make a pan sauce"
+          - "Braise short ribs to fork-tender in the correct time window (2.5-3.5 hours at 325F)"
+        tips:
+          - "Dry the surface of protein with paper towels before searing — moisture on the surface creates steam instead of browning (the Maillard reaction needs dry heat above 280F)"
+          - "Do not move the protein after placing it in the pan — let the sear develop for 3-4 minutes before flipping; it will release naturally when ready"
       - level: advanced
         criteria: >
           Selects the optimal cooking method for any ingredient based on texture, fat content,
@@ -215,6 +338,12 @@ nodes:
           - "Correctly identifies the best cooking method for 9/10 ingredient-and-goal scenarios (e.g., braise for tough cuts, saute for tender cuts, steam for delicate fish)"
           - "Roast chicken: 165 F at thickest part of thigh, skin golden-brown and crispy, juices run clear — the Michel Roux chef test dish"
           - "Sous vide protein (e.g., steak at 130 F for medium-rare) held at target temperature for correct duration with final sear achieving crust without overcooking interior"
+        resources:
+          - title: "Kenji Lopez-Alt — The Perfect Roast Chicken"
+            url: "https://www.seriouseats.com/the-food-lab-roast-chicken"
+            type: "article"
+        tips:
+          - "The roast chicken test: if you can roast a whole chicken with crispy skin and 165F thigh temperature, you have graduated to advanced heat control"
       - level: expert
         criteria: >
           Heat management is intuitive — adjusts burners, oven position, and timing by
@@ -229,6 +358,12 @@ nodes:
           - "Can explain conduction, convection, and radiation as they apply to 5 different cooking methods and predict how changing the method would change the result"
           - "ACF Certified Culinarian practical: cooking skills section passed with 75%+ (timed execution of multiple cooking methods under exam conditions)"
           - "Adapts a familiar recipe to unfamiliar equipment (e.g., gas to induction, home oven to wood-fired) and produces equivalent results on first attempt"
+        resources:
+          - title: "ATK — Advanced Cooking Methods"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Heat management becomes intuitive only through hundreds of hours of practice — there is no shortcut; cook more"
     tags: ["foundation", "technique", "heat-control", "science"]
 
   # -- FLAVOR BUILDING (the art of seasoning) ------------------------------------
@@ -256,6 +391,23 @@ nodes:
           - "Correctly identifies which of the 5 basic tastes (salt, acid, sweet, bitter, umami) is dominant in 8/10 blind tasting samples"
           - "Tastes and adjusts a simple vinaigrette to balance: acid is bright but not harsh, salt enhances without dominating, fat is present but not greasy"
           - "Can name 3 common sources of umami (e.g., soy sauce, parmesan, tomato paste, mushrooms, fish sauce) and explain why they deepen flavor"
+        resources:
+          - title: "Serious Eats — Samin Nosrat's Salt Fat Acid Heat Framework"
+            url: "https://www.seriouseats.com/seasoning-and-salting-tips"
+            type: "article"
+          - title: "Joshua Weissman — How to Season Food Properly"
+            url: "https://www.youtube.com/watch?v=hqXvtBSY1Eg"
+            type: "video"
+        practice:
+          - "Every cooking session: taste your food at least 3 times — once during cooking, once near the end, once before serving"
+          - "10 min: make a simple vinaigrette and adjust by tasting until balanced — not too sharp, not too oily, not flat"
+          - "5 min: season the same plain rice with salt only, then with salt + acid (lemon), then with salt + acid + fat (butter) — taste the difference"
+        projects:
+          - "Cook the same simple dish (e.g., roasted vegetables) twice: once seasoned only at the end, once seasoned at every stage — compare the results"
+          - "Make a balanced vinaigrette from scratch that a taster confirms is bright, smooth, and well-seasoned"
+        tips:
+          - "Season at every stage of cooking, not just at the end — salt in the pasta water, salt on the protein before searing, salt on vegetables as they sweat"
+          - "If a dish tastes flat but salty enough, it probably needs acid (lemon juice, vinegar) — acid brightens flavor more than additional salt"
       - level: intermediate
         criteria: >
           Balances salt, acid, fat, and heat in a finished dish — applies the Samin Nosrat
@@ -270,6 +422,23 @@ nodes:
           - "Correctly builds a mirepoix or soffritto base: onions sweated to translucent (not browned unless intended), aromatics soft but not burned, in under 10 minutes"
           - "Pan sauce from deglazing: captures all fond, reduces to coat a spoon, flavor is concentrated and balanced — achieved on 3 out of 4 attempts"
           - "Blooms whole spices in oil until fragrant without burning (no acrid smell, spices darken slightly but do not blacken)"
+        resources:
+          - title: "Kenji Lopez-Alt — Building Flavor: Aromatics and Deglazing"
+            url: "https://www.seriouseats.com/how-to-deglaze-a-pan"
+            type: "article"
+          - title: "ATK — How to Build a Pan Sauce"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        practice:
+          - "15 min: build a mirepoix or soffritto base — sweat onions to translucent, add carrot and celery, cook until soft"
+          - "10 min: bloom dried spices (cumin, coriander) in oil for 30-60 seconds until fragrant but not burned"
+          - "10 min: deglaze a pan after searing protein — add wine or stock, scrape up fond, reduce by half"
+        projects:
+          - "Make a complete pan sauce: sear protein, deglaze fond, reduce, mount with cold butter for a glossy finish"
+          - "Cook a dish that layers 3 umami sources (e.g., soy sauce + tomato paste + parmesan)"
+        tips:
+          - "Blooming spices in fat releases fat-soluble flavor compounds — 30-60 seconds over medium heat until fragrant, then add other ingredients immediately"
+          - "Deglaze the pan to capture the fond (brown bits) — they are concentrated flavor, not dirt; wine or stock dissolves them into liquid gold"
       - level: advanced
         criteria: >
           Creates complex spice blends from whole spices (toasting in dry pan, grinding,
@@ -283,6 +452,12 @@ nodes:
           - "Rescues an intentionally over-salted dish to acceptable balance using acid, fat, dilution, or starch addition — tasters rate the corrected dish as 6/10 or better"
           - "Layers flavor across at least 3 time stages in a single dish (e.g., overnight marinade, slow braise, fresh herb finish) with each layer identifiable in the final taste"
           - "Demonstrates the 'acid correction' technique: adds a squeeze of lemon or splash of vinegar to a flat-tasting dish and has tasters confirm improved brightness"
+        resources:
+          - title: "Serious Eats — Advanced Spice Blending"
+            url: "https://www.seriouseats.com/spice-guide"
+            type: "article"
+        tips:
+          - "Rescue an over-salted dish with acid (lemon), fat (butter/cream), or starch (potato, rice) rather than adding more water, which dilutes all flavor"
       - level: expert
         criteria: >
           Flavor intuition is fully developed — can taste a dish and identify what is
@@ -296,6 +471,12 @@ nodes:
           - "Multi-course tasting menu demonstrates intentional flavor arc: light to rich, progression of spice intensity, palate-cleansing transitions between heavy courses"
           - "Develops an original recipe starting from a target flavor profile description (e.g., 'smoky, bright, with umami depth') and produces a dish that 3+ tasters confirm matches the description"
           - "ACF practical exam: taste-and-presentation section passed with 75%+ score"
+        resources:
+          - title: "Joshua Weissman — Advanced Flavor Development"
+            url: "https://www.youtube.com/watch?v=hqXvtBSY1Eg"
+            type: "video"
+        tips:
+          - "Flavor intuition develops by tasting everything deliberately — taste ingredients raw, taste at every cooking stage, taste the finished dish before serving"
     tags: ["technique", "palate", "seasoning", "creativity"]
 
   # -- VEGETABLE COOKERY & SALADS ------------------------------------------------
@@ -323,6 +504,22 @@ nodes:
           - "Blanched green beans or broccoli: vibrant green color retained, crisp-tender texture (snaps when bent, not mushy), shocked in ice water within 10 seconds of leaving the pot"
           - "Basic vinaigrette (3:1 ratio): emulsifies and holds for at least 5 minutes, tastes balanced — bright acid, smooth oil, salt enhances but does not dominate"
           - "Steams or boils a starchy vegetable (potato, sweet potato) to fork-tender without falling apart — fork slides in smoothly, pieces hold their shape"
+        resources:
+          - title: "Kenji Lopez-Alt — Serious Eats: How to Roast Vegetables"
+            url: "https://www.seriouseats.com/how-to-roast-vegetables"
+            type: "article"
+          - title: "Joshua Weissman — Roasted Vegetables Done Right"
+            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            type: "video"
+        practice:
+          - "20 min: roast a sheet pan of mixed vegetables at 425F — single layer, space between pieces, season with oil and salt before roasting"
+          - "10 min: blanch green beans or broccoli in salted boiling water for 2-3 minutes, then shock in ice water within 10 seconds"
+        projects:
+          - "Roast a sheet pan of vegetables with visible caramelization on at least one side of every piece"
+          - "Make a basic vinaigrette (3:1 oil to acid) that emulsifies and holds for at least 5 minutes"
+        tips:
+          - "The #1 vegetable mistake is overcrowding the pan — vegetables touching each other steam instead of roasting; give them space"
+          - "Blanching and shocking (boiling then ice bath) locks in the vibrant green color and crisp-tender texture of green vegetables"
       - level: intermediate
         criteria: >
           Matches cooking method to vegetable type: high-moisture vegetables (zucchini,
@@ -336,6 +533,22 @@ nodes:
           - "Composed salad rated as balanced in flavor, texture (minimum 3 distinct textures), and visual appeal by peer tasters"
           - "Grilled vegetables (zucchini, peppers, onions): clear grill marks, tender interior, no char bitterness — on 3 out of 4 attempts"
           - "Sautes leafy greens (spinach, kale, chard) until just wilted with garlic and oil — no sliminess, stems still have slight bite"
+        resources:
+          - title: "Serious Eats — How to Build a Better Salad"
+            url: "https://www.seriouseats.com/salad-guide"
+            type: "article"
+          - title: "ATK — Vegetable Cooking Methods"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        practice:
+          - "15 min: match cooking method to vegetable type for 5 different vegetables and explain your reasoning"
+          - "20 min: compose a salad with 3+ contrasting textures, a balanced dressing, and proper seasoning"
+        projects:
+          - "Compose a salad with at least 3 contrasting textures (crunchy, creamy, chewy) rated as balanced by a taster"
+          - "Grill vegetables (zucchini, peppers, onions) with defined char marks and tender interior"
+        tips:
+          - "High-moisture vegetables (zucchini, tomatoes) need high heat to drive off water before they brown — low heat will steam them into mush"
+          - "Season salads right before serving — salt draws water from vegetables and makes them soggy if dressed too early"
       - level: advanced
         criteria: >
           Prepares vegetable-forward dishes as impressive main courses that satisfy
@@ -349,6 +562,12 @@ nodes:
           - "Produces a smooth vegetable puree (e.g., carrot, cauliflower, or pea) with no graininess or lumps — passes through a fine-mesh strainer with no solid residue"
           - "Quick pickles: vegetables retain crunch, brine is balanced (not too vinegary, not flat), ready in under 1 hour"
           - "Garlic confit: cloves are creamy-soft, golden (not browned), oil is infused and usable — achieved without burning"
+        resources:
+          - title: "Serious Eats — Vegetable-Forward Main Courses"
+            url: "https://www.seriouseats.com/vegetable-mains"
+            type: "article"
+        tips:
+          - "Vegetable-forward dishes satisfy omnivores when they have enough fat, salt, and textural contrast — do not try to make vegetables taste like meat"
       - level: expert
         criteria: >
           Elevates vegetables to the center of the plate with restaurant-quality technique
@@ -361,6 +580,12 @@ nodes:
           - "Can identify peak season (month range) for 20+ common vegetables and adjusts menus accordingly — tested by naming the season for a random list of 25 vegetables with 80%+ accuracy"
           - "Plated vegetable dish uses 3+ techniques (e.g., roast, puree, pickle, raw) on the same plate for textural and flavor contrast"
           - "Develops an original vegetable-forward recipe that is requested again by diners — the 'would you make that again' test"
+        resources:
+          - title: "Kenji Lopez-Alt — Seasonal Vegetable Techniques"
+            url: "https://www.seriouseats.com/how-to-roast-vegetables"
+            type: "article"
+        tips:
+          - "Seasonality is the key to great vegetable cooking — a tomato in January cannot compete with a tomato in August no matter how skilled you are"
     tags: ["technique", "vegetables", "salads", "nutrition"]
 
   # -- PROTEIN COOKERY -----------------------------------------------------------
@@ -388,6 +613,23 @@ nodes:
           - "Steak cooked to requested doneness (verified by thermometer: rare 120-125 F, medium-rare 130-135 F, medium 140-145 F) on 3 out of 4 attempts"
           - "Scrambled eggs: soft curds, no browning, creamy texture, served while still slightly glossy — achieved on 3 consecutive attempts"
           - "Fried eggs: whites fully set, yolk runny (unless otherwise requested), no brown lace on whites — achieved on 3 out of 4 attempts"
+        resources:
+          - title: "Kenji Lopez-Alt — The Food Lab: Perfect Scrambled Eggs"
+            url: "https://www.seriouseats.com/the-food-lab-scrambled-eggs"
+            type: "article"
+          - title: "Joshua Weissman — How to Cook Every Protein"
+            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            type: "video"
+        practice:
+          - "10 min: cook scrambled eggs with low heat and constant gentle stirring — pull from heat while still slightly glossy"
+          - "15 min: cook a chicken breast using an instant-read thermometer — pull at 160F and let carryover reach 165F"
+          - "10 min: practice the finger test for steak doneness — compare protein firmness to the base of your thumb"
+        projects:
+          - "Cook chicken breast to 165F (not exceeding 170F) on 3 consecutive attempts using a thermometer"
+          - "Produce scrambled eggs with soft, creamy curds 3 times in a row without any browning"
+        tips:
+          - "Buy an instant-read thermometer — it costs $15 and eliminates guesswork; it is the single most impactful kitchen tool after a sharp knife"
+          - "Pull protein from heat 5-10F below target temperature — carryover cooking continues to raise internal temperature after removal"
       - level: intermediate
         criteria: >
           Judges doneness by touch (the finger test: compare protein firmness to the feel
@@ -403,6 +645,23 @@ nodes:
           - "French omelette: no color on exterior, creamy interior, classic oval shape — achieved on 3 out of 5 attempts"
           - "Brined pork chop retains noticeably more moisture than unbrined control (side-by-side comparison: brined chop loses less than 15% weight during cooking)"
           - "Roast chicken (3-4 lb): 165 F at thickest part of thigh, skin golden and crispy all over, rested 15 minutes before carving — juices run clear"
+        resources:
+          - title: "Kenji Lopez-Alt — The Perfect Pan-Roasted Chicken"
+            url: "https://www.seriouseats.com/pan-roasted-chicken-breast"
+            type: "article"
+          - title: "ATK — The Science of Perfect Eggs"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        practice:
+          - "20 min: pan-roast a skin-on chicken breast — start skin-side-down in a cold pan, render fat slowly until golden"
+          - "15 min: practice the French omelette technique — no color, creamy interior, under 60 seconds"
+          - "10 min: fillet a whole fish — remove head, tail, and bones while keeping fillets intact"
+        projects:
+          - "Roast a whole chicken with crispy golden skin, 165F at the thigh, and make a pan sauce from the drippings"
+          - "Execute a French omelette — no color, creamy interior, classic oval shape — 3 out of 5 attempts"
+        tips:
+          - "Start skin-on chicken breast skin-side-down in a COLD pan — starting cold renders the fat slowly, producing crispier skin than a hot start"
+          - "Rest meat after cooking — 5 minutes for steaks, 15-20 minutes for roasts — cutting too early lets juices run out onto the cutting board"
       - level: advanced
         criteria: >
           Breaks down a whole chicken into 8 pieces (2 breasts, 2 thighs, 2 drumsticks,
@@ -418,6 +677,12 @@ nodes:
           - "Whole fish or large fillet portioned and cooked with zero over- or under-done pieces across the entire fillet"
           - "Hollandaise: smooth emulsion, holds at service temperature (145-150 F) for 15+ minutes without breaking, flavor is rich and lemony"
           - "Whole chicken broken down into 8 pieces: clean joint separation, no bone fragments, minimal meat left on carcass, completed in under 5 minutes"
+        resources:
+          - title: "Serious Eats — Advanced Protein Techniques"
+            url: "https://www.seriouseats.com/how-to-pan-sear"
+            type: "article"
+        tips:
+          - "Hollandaise is the gateway to advanced sauces — the technique of maintaining a gentle emulsion under controlled heat applies to many preparations"
       - level: expert
         criteria: >
           Protein cookery is intuitive across all species and cuts. Selects cut, method,
@@ -434,6 +699,12 @@ nodes:
           - "ACF Certified Culinarian practical exam protein section passed with score of 80%+ (safety/organization/cooking skills/taste-presentation)"
           - "Develops an original protein preparation (e.g., custom dry rub, novel cooking technique) that receives positive feedback from 3+ experienced tasters"
           - "Cooks an unfamiliar protein (e.g., duck breast, lamb rack, whole lobster) to correct doneness on first attempt using knowledge of heat transfer principles"
+        resources:
+          - title: "ATK — Multi-Protein Service Techniques"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Managing multi-protein service is the definitive professional test — stagger start times so everything finishes together"
     tags: ["technique", "protein", "doneness", "butchery"]
 
   # -- STOCK & SOUP MAKING ------------------------------------------------------
@@ -463,6 +734,22 @@ nodes:
           - "Can explain the difference between stock (bones, no salt, used as ingredient), broth (meat, seasoned, served as-is), and bouillon (concentrated/dehydrated)"
           - "Maintains a bare simmer (tiny bubbles, no rolling boil) throughout the cooking time — checked every 30 minutes"
           - "Strains stock through a fine-mesh strainer or cheesecloth with no solids remaining in the final liquid"
+        resources:
+          - title: "Serious Eats — How to Make the Best Chicken Stock"
+            url: "https://www.seriouseats.com/best-rich-chicken-stock-recipe"
+            type: "article"
+          - title: "Joshua Weissman — Homemade Stock That Jiggles"
+            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            type: "video"
+        practice:
+          - "4-6 hours: make a chicken stock from scratch — bare simmer (tiny bubbles), skim impurities every 30 minutes during the first hour"
+          - "10 min: practice maintaining a bare simmer — adjust heat so bubbles barely break the surface"
+        projects:
+          - "Make a chicken stock that passes the gel test: chill a cup overnight and check that it sets like gelatin"
+          - "Use homemade stock as a base for a simple soup and compare it to water-based soup"
+        tips:
+          - "Never boil stock — boiling emulsifies fat into the liquid, making it cloudy and greasy; a bare simmer produces clear, clean stock"
+          - "Save all your vegetable scraps and chicken bones in a freezer bag — when the bag is full, you have free stock ingredients"
       - level: intermediate
         criteria: >
           Makes brown stock from scratch: roasts bones at 400-425 F until deeply browned,
@@ -476,6 +763,22 @@ nodes:
           - "Cream soup is velvety smooth with no lumps or graininess after straining — tested by running a finger across the back of a coated spoon (clean line, no particles)"
           - "Stock used as risotto base: finished risotto has rich body and flavor compared to water-based control (side-by-side tasting)"
           - "Reduces 1 quart of stock to 1 cup of demi-glace with concentrated flavor and syrupy consistency that coats a spoon"
+        resources:
+          - title: "ATK — Brown Stock and Demi-Glace"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+          - title: "Serious Eats — The Best Brown Stock"
+            url: "https://www.seriouseats.com/best-rich-chicken-stock-recipe"
+            type: "article"
+        practice:
+          - "6-8 hours: make a brown stock — roast bones at 400-425F until deeply browned, caramelize mirepoix, simmer 6-8 hours"
+          - "20 min: make a cream soup or pureed soup with smooth texture — blend and strain for no lumps"
+        projects:
+          - "Make a brown stock that passes the gel test (sets firmly when chilled)"
+          - "Reduce stock to demi-glace with concentrated flavor and syrupy consistency"
+        tips:
+          - "Roast the bones until deeply brown (not just golden) for brown stock — the darker the roast, the richer the stock"
+          - "Cream soups get lumpy from undissolved roux — whisk the cold liquid into the hot roux gradually, not all at once"
       - level: advanced
         criteria: >
           Clarifies stock into consomme using a clarification raft (egg whites, ground
@@ -490,6 +793,12 @@ nodes:
           - "Bisque extracts maximum flavor from shells: rich orange-red color, smooth texture (no shell grit after straining through fine chinois), intense crustacean flavor"
           - "Produces 3 different stocks in a single day (e.g., chicken white, beef brown, fish fumet) with appropriate timing and technique for each"
           - "Adjusts stock concentration for specific uses: light stock for risotto vs. double-strength for sauce reduction — end dishes demonstrate appropriate body"
+        resources:
+          - title: "Serious Eats — Consomme Technique"
+            url: "https://www.seriouseats.com/best-rich-chicken-stock-recipe"
+            type: "article"
+        tips:
+          - "Consomme is a test of patience — do not stir the clarification raft once it forms, or you will break it and cloud the liquid"
       - level: expert
         criteria: >
           Stock-making is a habitual practice — bones are always saved, stock is always
@@ -503,6 +812,12 @@ nodes:
           - "Students produce gel-setting stock independently after one instructional session — verified by chilling their stock overnight"
           - "Designs a custom stock for a specific menu application (e.g., mushroom-kombu dashi for a vegetarian tasting menu) that enhances the target dishes"
           - "ACF practical exam: stock and soup components pass with 80%+ on clarity, flavor, and proper technique"
+        resources:
+          - title: "ATK — Professional Stock Program"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Stock-making should be a habitual practice — always save bones, always have stock in the freezer; it is the invisible foundation of great cooking"
     tags: ["technique", "stocks", "soups", "foundation"]
 
   # -- SAUCE MAKING --------------------------------------------------------------
@@ -530,6 +845,22 @@ nodes:
           - "Pan sauce captures fond flavor and has correct consistency: coats a spoon lightly, pours but does not run like water — achieved on 3 out of 4 attempts"
           - "Roux cooked to correct stage: white roux (2-3 minutes, no color) for bechamel, blond roux (4-5 minutes, light gold) for veloute — no raw flour taste remaining"
           - "Can explain the difference between a roux-thickened sauce and a reduction sauce and when to use each"
+        resources:
+          - title: "Serious Eats — How to Make Bechamel"
+            url: "https://www.seriouseats.com/bechamel-white-sauce"
+            type: "article"
+          - title: "Joshua Weissman — 5 Mother Sauces in 10 Minutes"
+            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            type: "video"
+        practice:
+          - "15 min: make a smooth bechamel — cook roux for 2-3 minutes (no raw flour taste), add milk gradually while whisking"
+          - "10 min: make a pan sauce after searing protein — deglaze with wine, add stock, reduce, finish with butter"
+        projects:
+          - "Make a lump-free bechamel that coats the back of a spoon (nappe consistency)"
+          - "Make a pan sauce that captures all the fond and has the right consistency to coat a spoon lightly"
+        tips:
+          - "Add liquid to roux gradually, whisking constantly — dumping all the liquid at once creates lumps that are nearly impossible to fix"
+          - "Cook the roux for at least 2-3 minutes before adding liquid to eliminate the raw flour taste"
       - level: intermediate
         criteria: >
           Produces all five mother sauces correctly in a single practical session. Makes a
@@ -544,6 +875,22 @@ nodes:
           - "All five mother sauces produced correctly in a single practical session with proper consistency and flavor for each"
           - "Mornay sauce: smooth cheese integration (no graininess from overheating cheese), coats pasta or vegetables evenly"
           - "Pan sauce: deglazes all fond, reduces by half, mounts with cold butter for glossy emulsion — completed in under 5 minutes from removing the protein"
+        resources:
+          - title: "ATK — How to Make Hollandaise"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+          - title: "Kenji Lopez-Alt — The Five Mother Sauces"
+            url: "https://www.seriouseats.com/bechamel-white-sauce"
+            type: "article"
+        practice:
+          - "20 min: make hollandaise — constant whisking over gentle heat, add clarified butter in a thin stream, maintain 145-160F"
+          - "15 min: practice all five mother sauces in a single session for muscle memory"
+        projects:
+          - "Produce a stable hollandaise that holds for 15+ minutes at service temperature without breaking"
+          - "Make mornay sauce (bechamel + cheese) smooth enough to coat pasta without any graininess"
+        tips:
+          - "Hollandaise breaks from too much heat (eggs scramble) or adding butter too fast (emulsion fails) — go slow and keep heat gentle"
+          - "Mount a pan sauce with COLD butter off the heat — cold butter emulsifies into a glossy sauce; warm butter just melts into an oily pool"
       - level: advanced
         criteria: >
           Makes beurre blanc (white wine and shallot reduction mounted with cold butter
@@ -559,6 +906,12 @@ nodes:
           - "Demi-glace coats a spoon with rich, glossy consistency and concentrated flavor — reduces cleanly without scorching"
           - "Beurre blanc: stable butter emulsion (does not break into oily pool), bright wine-shallot flavor, served within 10 minutes of completion (it waits for no one)"
           - "Designs a sauce for a specific protein that enhances without masking — tasters rate the pairing as complementary (e.g., beurre blanc for sole, red wine reduction for steak)"
+        resources:
+          - title: "Serious Eats — Advanced Sauce Techniques"
+            url: "https://www.seriouseats.com/bechamel-white-sauce"
+            type: "article"
+        tips:
+          - "Rescue a broken hollandaise by starting a fresh yolk in a clean bowl and slowly whisking the broken sauce into it"
       - level: expert
         criteria: >
           Creates original sauces for menu development — designs a sauce starting from
@@ -573,6 +926,12 @@ nodes:
           - "Original sauce creation rated as balanced and complementary by 3+ professional tasters — sauce enhances the dish without dominating"
           - "ACF Certified Culinarian sauce section: passes with 80%+ score on technique, consistency, flavor, and presentation"
           - "Teaches all five mother sauces in a single instructional session with students producing at least 3 of 5 correctly by session end"
+        resources:
+          - title: "ATK — Professional Sauce Service"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Original sauce creation starts from flavor goals, not recipes — describe the flavor you want, then work backward to technique and ingredients"
     tags: ["technique", "sauces", "classical", "emulsions"]
 
   # -- BAKING FUNDAMENTALS -------------------------------------------------------
@@ -602,6 +961,22 @@ nodes:
           - "Basic yeast bread loaf: proper rise (doubled in volume during proofing), golden crust, interior crumb is even with small-to-medium holes (not dense, not cavernous)"
           - "Cookies: edges set and lightly golden, centers slightly soft when removed from oven, texture matches target (chewy, crispy, or cakey) on 3 out of 4 batches"
           - "Can explain the difference between baking soda and baking powder and predict what happens if you substitute one for the other incorrectly"
+        resources:
+          - title: "Joshua Weissman — Baking Basics for Beginners"
+            url: "https://www.youtube.com/watch?v=biSGbJl5JGg"
+            type: "video"
+          - title: "Serious Eats — How to Bake Better Bread at Home"
+            url: "https://www.seriouseats.com/bread-baking-guide"
+            type: "article"
+        practice:
+          - "Before every baking session: weigh all ingredients on a kitchen scale in grams — never use volume cups for flour"
+          - "3-4 hours: make a basic yeast bread loaf from scratch — mix, knead 8-10 min, bulk ferment until doubled, shape, proof, bake"
+        projects:
+          - "Bake a yeast bread loaf with proper rise, golden crust, and even interior crumb"
+          - "Bake a batch of cookies with edges set and centers still slightly soft — correct texture on 3 out of 4 batches"
+        tips:
+          - "Use a kitchen scale, not measuring cups — a cup of flour can vary by 30% depending on how it is scooped, which ruins baking ratios"
+          - "Baking is chemistry, not cooking — follow the recipe exactly until you understand why each ingredient is there; then you can experiment"
       - level: intermediate
         criteria: >
           Understands gluten development and adjusts mixing time for different products:
@@ -616,6 +991,23 @@ nodes:
           - "Cake layers bake level (within 3mm variance across the top) and release cleanly from greased-and-floured pans"
           - "Yeast bread proofed to correct volume: poke test shows slow spring-back (not immediate = underproofed, not no spring-back = overproofed)"
           - "Muffins: domed tops, tender crumb, no tunneling (a sign of overmixing) — achieved on 3 consecutive batches"
+        resources:
+          - title: "ATK — The Science of Pie Dough"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+          - title: "Serious Eats — How to Proof Yeast Dough"
+            url: "https://www.seriouseats.com/bread-baking-guide"
+            type: "article"
+        practice:
+          - "30 min: make pie dough with cold butter and minimal handling — visible butter pieces before rolling means flaky layers"
+          - "15 min: practice the poke test for yeast dough proofing — correctly proofed dough springs back slowly"
+          - "10 min: mix muffin batter just until combined (minimal gluten) — overmixing produces tunneling"
+        projects:
+          - "Make a pie dough with visible flaky layers when cut (not tough or crumbly)"
+          - "Bake cake layers that are level (within 3mm variance) and release cleanly from pans"
+        tips:
+          - "Keep butter COLD for pie dough — if the butter melts before baking, you lose the flaky layers; chill dough between steps if needed"
+          - "The poke test for yeast bread: if the indent springs back immediately, it is underproofed; if it does not spring back at all, it is overproofed; slow spring-back is perfect"
       - level: advanced
         criteria: >
           Bakes enriched doughs (brioche: high butter and egg content, soft and rich;
@@ -630,6 +1022,12 @@ nodes:
           - "Recipe scaled from 1x to 3x using baker's percentages with identical results (texture, rise, flavor match the original)"
           - "Brioche: rich, buttery, soft crumb with fine even texture — butter incorporated fully during mixing without greasing out"
           - "Fresh pasta dough: smooth, elastic, rolls thin enough to see a hand through it (the 'sfoglia' test for Italian pasta), cooks to al dente in 2-3 minutes"
+        resources:
+          - title: "Joshua Weissman — Croissants from Scratch"
+            url: "https://www.youtube.com/watch?v=biSGbJl5JGg"
+            type: "video"
+        tips:
+          - "Laminated dough (croissants) requires the butter and dough to be the same temperature — too cold and it shatters, too warm and it melts into the dough"
       - level: expert
         criteria: >
           Develops original baking recipes using baker's percentages and ingredient
@@ -645,6 +1043,12 @@ nodes:
           - "Diagnoses the cause of 9/10 common baking failures from a finished product: dense cake (overmixed or too much flour), flat cookies (butter too warm, old leavening), gummy bread (underproofed or cut too soon), tough pie crust (overworked), tunneling muffins (overmixed)"
           - "Designs and executes a complete baking menu for an event (bread, pastry, dessert) with all items at professional quality"
           - "ACF practical exam baking section: passes with 80%+ score on technique, consistency, flavor, and presentation"
+        resources:
+          - title: "ATK — Professional Baking Techniques"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Diagnose baking failures from the finished product: dense cake = overmixed; flat cookies = warm butter; gummy bread = cut too soon; tough pie = overworked"
     tags: ["technique", "baking", "precision", "science"]
 
   # -- MENU PLANNING & NUTRITION -------------------------------------------------
@@ -673,6 +1077,22 @@ nodes:
           - "Grocery waste under 10% of purchased perishables over a 2-week tracking period"
           - "Weeknight meals completed in under 45 minutes from start to plating on 80%+ of planned dinners"
           - "Meal plan includes at least 5 servings of vegetables per day across all meals (USDA dietary guideline baseline)"
+        resources:
+          - title: "Serious Eats — Weeknight Meal Planning Guide"
+            url: "https://www.seriouseats.com/essential-weeknight-cooking-tips"
+            type: "article"
+          - title: "ATK — Efficient Weeknight Cooking"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        practice:
+          - "30 min weekly: plan a balanced meal plan for the week before grocery shopping — include vegetables in every dinner"
+          - "10 min: write a shopping list organized by store section to minimize wandering and impulse buys"
+        projects:
+          - "Plan and execute a balanced weekly meal plan with grocery waste under 10% of purchased perishables"
+          - "Cook 5 weeknight dinners in under 45 minutes each following your meal plan"
+        tips:
+          - "Plan your meals before shopping, not after — this single habit cuts food waste, saves money, and eliminates daily 'what should I make?' stress"
+          - "Batch-cook grains (rice, quinoa) on Sunday and use them in different meals throughout the week"
       - level: intermediate
         criteria: >
           Designs menus around seasonal availability and market offerings (summer: tomatoes,
@@ -686,6 +1106,22 @@ nodes:
           - "Dietary-restricted meal (e.g., gluten-free dinner) rated as equally satisfying as unrestricted version by 3+ tasters in a blind comparison"
           - "Prep-ahead strategy saves measurable time: weeknight dinners completed in under 30 minutes on 3+ nights per week"
           - "Tracks food cost per serving for a full week and stays within a per-person budget target (e.g., under $5/serving)"
+        resources:
+          - title: "Serious Eats — Seasonal Menu Planning"
+            url: "https://www.seriouseats.com/essential-weeknight-cooking-tips"
+            type: "article"
+          - title: "Kenji Lopez-Alt — Efficient Home Cooking"
+            url: "https://www.seriouseats.com/how-to-plan-a-dinner-party"
+            type: "article"
+        practice:
+          - "20 min: create a prep-ahead strategy for the week — identify what can be prepped on Sunday for weeknight speed"
+          - "15 min: plan meals around seasonal produce — check what is in season this month and build meals around it"
+        projects:
+          - "Execute a prep-ahead strategy that saves measurable time: weeknight dinners under 30 minutes on 3+ nights"
+          - "Plan a dietary-restricted dinner (e.g., gluten-free) rated equally satisfying as the unrestricted version"
+        tips:
+          - "Prep-ahead is the key to fast weeknight dinners — chop vegetables, cook grains, and marinate protein on Sunday for the week"
+          - "Accommodate dietary restrictions by building the meal around what everyone CAN eat, not by removing ingredients from a standard meal"
       - level: advanced
         criteria: >
           Plans multi-course menus with intentional flavor progression (light to rich,
@@ -700,6 +1136,12 @@ nodes:
           - "Food cost for a planned menu falls within 5% of target budget — calculated in advance and verified by receipt"
           - "Reverse-timeline created for a dinner party: identifies make-ahead items (day before), morning-of prep, and a-la-minute items — all executed on schedule"
           - "Multi-course menu demonstrates intentional progression: tasters identify the flavor arc (e.g., light-to-rich) without prompting"
+        resources:
+          - title: "Serious Eats — Multi-Course Dinner Party Planning"
+            url: "https://www.seriouseats.com/how-to-plan-a-dinner-party"
+            type: "article"
+        tips:
+          - "A reverse-timeline is the key to dinner party success — start from plating time and work backward; assign every task a specific time"
       - level: expert
         criteria: >
           Designs restaurant-style menus balancing creativity, cost, dietary inclusivity,
@@ -715,6 +1157,12 @@ nodes:
           - "Menu designed for a specific dietary goal (e.g., anti-inflammatory, heart-healthy, athletic performance) reviewed favorably by a nutritionist or dietitian"
           - "Multi-course dinner party for 8+ guests with original recipes: all courses at correct temperature, host spends less than 60% of event time in kitchen, all guests report satisfaction"
           - "ACF Certified Culinarian exam: overall score of 75%+ across all four sections (safety, organization, cooking skills, taste/presentation) in a 2.5-hour practical"
+        resources:
+          - title: "ATK — Professional Menu Design"
+            url: "https://www.youtube.com/watch?v=BXswe0AH5fA"
+            type: "video"
+        tips:
+          - "Restaurant-style menus balance creativity with consistency — every dish should be reproducible on demand, not a one-time experiment"
     tags: ["planning", "nutrition", "budgeting", "seasonal"]
 
   # -- WORLD CUISINES & ADAPTATION -----------------------------------------------
@@ -743,6 +1191,22 @@ nodes:
           - "Produces an authentic-tasting dish from 3 different cuisines using traditional recipes — each rated as recognizably authentic by a taster familiar with that cuisine"
           - "Can name the foundational fat, acid, and aromatics for at least 5 cuisines (e.g., French: butter/wine/shallot, Thai: coconut oil/lime/lemongrass)"
           - "Correctly identifies and purchases 3+ specialty ingredients (e.g., fish sauce, miso paste, dried chiles) from an Asian or Latin grocery and uses them in a dish"
+        resources:
+          - title: "Kenji Lopez-Alt — Wok Skills and Chinese Cooking Basics"
+            url: "https://www.seriouseats.com/wok-cooking-guide"
+            type: "article"
+          - title: "Joshua Weissman — Exploring World Cuisines"
+            url: "https://www.youtube.com/watch?v=nHPpL6NvFLc"
+            type: "video"
+        practice:
+          - "30 min: cook one authentic dish from a cuisine you have never tried — follow a trusted recipe from a cultural authority"
+          - "15 min: taste and identify the signature aromatics and seasonings of 3 major cuisines (e.g., soy-ginger for Chinese, cumin-coriander for Indian)"
+        projects:
+          - "Cook representative dishes from 3 distinct cuisines using authentic recipes"
+          - "Visit an international grocery store and purchase 3 specialty ingredients, then use each in a dish"
+        tips:
+          - "Use recipes from authentic sources, not fusion blogs, when learning a new cuisine — respect the tradition before experimenting"
+          - "Fish sauce, miso, and soy sauce are umami powerhouses that cross cultural boundaries — having all three in your pantry opens up dozens of cuisines"
       - level: intermediate
         criteria: >
           Understands the foundational techniques specific to regional cuisines: wok hei
@@ -758,6 +1222,23 @@ nodes:
           - "Substituted-ingredient version of a traditional dish rated as 7/10 or higher for authenticity by a taster who knows the original cuisine"
           - "Produces dashi from kombu and katsuobushi: clear, golden, deeply savory — used as a base for miso soup that a Japanese-food enthusiast rates as authentic"
           - "Makes fresh corn tortillas from masa harina that are pliable, not cracking, with visible char spots from a hot comal — 3 out of 4 are well-formed"
+        resources:
+          - title: "Serious Eats — Wok Hei and Chinese Wok Cooking"
+            url: "https://www.seriouseats.com/wok-cooking-guide"
+            type: "article"
+          - title: "Kenji Lopez-Alt — Japanese Dashi from Scratch"
+            url: "https://www.seriouseats.com/dashi-guide"
+            type: "article"
+        practice:
+          - "20 min: practice wok cooking at maximum heat — small batches, constant motion, achieve visible wok hei (smoky char)"
+          - "15 min: make dashi from kombu and katsuobushi — steep (do not boil) for clear, savory broth"
+          - "20 min: practice making fresh tortillas from masa harina — press, cook on hot comal, flip when edges lift"
+        projects:
+          - "Produce dashi from scratch that a Japanese-food enthusiast rates as authentic"
+          - "Cook a wok-fried dish with visible wok hei character using your home stove"
+        tips:
+          - "Wok cooking requires a BLAZING hot pan — preheat the wok until it smokes, then work in small batches (1-2 cups max); home stoves need maximum heat"
+          - "Dashi is about restraint — steep the kombu gently, do not boil it, or the broth becomes slimy and bitter"
       - level: advanced
         criteria: >
           Creates fusion dishes that respectfully combine techniques and flavors from
@@ -773,6 +1254,12 @@ nodes:
           - "Cooks a dish from an unfamiliar cuisine (one never attempted before) using only a traditional recipe and produces a result rated 7/10+ for authenticity on first attempt"
           - "Can explain the cultural or historical reason behind a technique or ingredient pairing for 5+ cuisines (e.g., 'Indian cuisine blooms spices in fat because fat-soluble flavor compounds release more fully in oil than in water')"
           - "Adapts a recipe from one cuisine using the technique framework of another (e.g., French-technique mole, Japanese-inflected Italian broth) with coherent results"
+        resources:
+          - title: "Kenji Lopez-Alt — Cross-Cultural Cooking Techniques"
+            url: "https://www.seriouseats.com/wok-cooking-guide"
+            type: "article"
+        tips:
+          - "Fusion works only when you understand both source cuisines deeply — otherwise it is confusion, not fusion"
       - level: expert
         criteria: >
           Deep fluency in multiple culinary traditions — can design a complete menu within
@@ -786,6 +1273,12 @@ nodes:
           - "Teaches a cuisine-specific technique class (e.g., Thai curry paste from scratch, Japanese knife skills, French sauce-making) with accurate cultural and historical context — students produce an authentic dish by session end"
           - "Develops an original recipe within a specific cuisine's framework that 3+ knowledgeable tasters rate as 'it belongs' within that tradition"
           - "Maintains a working pantry of specialty ingredients from 5+ cuisines and uses them regularly — pantry audit shows active use of miso, fish sauce, dried chiles, whole spices, etc."
+        resources:
+          - title: "Serious Eats — Mastering World Cuisines"
+            url: "https://www.seriouseats.com/wok-cooking-guide"
+            type: "article"
+        tips:
+          - "Deep fluency in a cuisine comes from cooking it repeatedly, not from reading about it — cook the same dish 10 times and it will teach you more than 10 different recipes"
     tags: ["cuisines", "cultural", "creativity", "adaptation", "capstone"]
 
 relationships:

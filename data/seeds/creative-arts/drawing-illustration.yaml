@@ -56,6 +56,23 @@ nodes:
           - "Completes a full page of superimposed lines (Drawabox exercise): lines start from the same point and fraying occurs only at the end, not the beginning"
           - "Draws ellipses that close cleanly (ends meet within 2mm) and are drawn through 2-3 times per ellipse as per Drawabox method"
           - "Draws from the shoulder for lines longer than 5 cm — wrist is used only for fine detail work under 3 cm"
+        resources:
+          - title: "Drawabox — Lesson 1: Lines, Ellipses, and Boxes"
+            url: "https://drawabox.com/lesson/1"
+            type: "course"
+          - title: "Proko — How to Draw a Straight Line"
+            url: "https://www.youtube.com/watch?v=pMC0Cx3Uk84"
+            type: "video"
+        practice:
+          - "15 min daily: Drawabox superimposed lines exercise — draw over the same line repeatedly to build muscle memory"
+          - "10 min daily: ghosted lines exercise — hover over the path, aim, then commit to a single confident stroke"
+          - "10 min daily: fill a page of parallel hatching lines with consistent spacing and angle"
+        projects:
+          - "Complete Drawabox Lesson 1 exercises: superimposed lines, ghosted lines, ghosted planes, tables of ellipses"
+          - "Fill a full page of hatching lines that are parallel within 5 degrees across a 5 cm swatch"
+        tips:
+          - "Draw from the shoulder, not the wrist — wrist-drawn lines wobble and curve; shoulder-drawn lines are straight and confident"
+          - "Accept imperfect lines rather than scratching over them — a single confident wrong line looks better than 10 hairy correction marks"
       - level: intermediate
         criteria: >
           Controls line weight to convey depth and emphasis — thicker lines for
@@ -71,6 +88,26 @@ nodes:
           - "30-second gesture drawings capture primary action line and weight distribution — figure's balance point is correctly placed"
           - "Cross-hatching builds 4+ distinct value steps in a controlled swatch (even spacing, consistent angle per layer)"
           - "250 Box Challenge: completed 250 freehand boxes in 3-point perspective with convergence accuracy improving measurably from box 1 to box 250 (compare first 10 to last 10)"
+        resources:
+          - title: "Drawabox — 250 Box Challenge"
+            url: "https://drawabox.com/lesson/250boxes"
+            type: "exercise"
+          - title: "Proko — Gesture Drawing Basics"
+            url: "https://www.youtube.com/watch?v=74HR59yFZ7Y"
+            type: "video"
+          - title: "Love Life Drawing — Gesture Drawing for Beginners"
+            url: "https://www.youtube.com/watch?v=8j39_YEmISs"
+            type: "video"
+        practice:
+          - "15 min daily: 30-second gesture drawings from a pose reference site (e.g., Line of Action) — capture action line and weight"
+          - "10 min daily: cross-hatching exercise — build 4+ value steps with even spacing and consistent angle per layer"
+          - "Ongoing: work through the 250 Box Challenge at 5-10 boxes per session"
+        projects:
+          - "Complete the Drawabox 250 Box Challenge — compare your first 10 boxes to your last 10 for measurable improvement"
+          - "Fill a sketchbook page with 30-second gesture drawings (20+ gestures) capturing primary action line and weight"
+        tips:
+          - "Line weight is not about pressing harder — it is about drawing thicker lines for foreground/shadows and thinner lines for background/light"
+          - "The 250 Box Challenge feels tedious but it builds spatial intuition that cannot be gained any other way — trust the process"
       - level: advanced
         criteria: >
           Line quality is expressive and intentional — thick-to-thin transitions
@@ -86,6 +123,12 @@ nodes:
           - "Instructor identifies intentional line weight hierarchy in 90%+ of submitted drawings — thick-to-thin transitions align with light source direction"
           - "Economy of line test: a 2-minute sketch communicates the same subject information as a 10-minute sketch (rated by 3+ peers as equally readable)"
           - "Cross-contour hatching follows surface curvature on organic forms — tested on a sphere, cylinder, and organic subject (fruit, shoe)"
+        resources:
+          - title: "Drawabox — Lesson 2: Contour Lines and Texture"
+            url: "https://drawabox.com/lesson/2"
+            type: "course"
+        tips:
+          - "Economy of line comes from confidence — say more with fewer marks by committing to each line rather than sketching tentatively"
       - level: expert
         criteria: >
           Line work is a recognizable personal signature — peers can identify the
@@ -99,6 +142,12 @@ nodes:
           - "Students reproduce taught line techniques (ghosting, shoulder drawing, line weight control) accurately after a single 90-minute demonstration session"
           - "Work identified as the artist's by line quality alone (no subject matter cues) by 5+ peers familiar with the style"
           - "Line drawings selected for professional publication, exhibition, or client work on at least 2 occasions"
+        resources:
+          - title: "Proko — Expressive Line Work"
+            url: "https://www.youtube.com/watch?v=pMC0Cx3Uk84"
+            type: "video"
+        tips:
+          - "Personal line style emerges naturally from thousands of hours of practice — do not try to force a style; let it develop organically"
     tags: ["foundation", "technique", "mark-making"]
 
   # ── PROPORTION & MEASUREMENT ───────────────────────────────────────────────
@@ -126,6 +175,26 @@ nodes:
           - "Head drawing: eyes placed at vertical center (within 5% of total head height), nose at 3/4 mark, ears span from eyebrow to nose bottom"
           - "Standing figure proportions: head-to-body ratio within 1/2 head of the 7.5-8 head canon — crotch at midpoint, knees at 3/4 of leg length"
           - "Love Life Drawing 'past beginner' test attempted: draw from reference, hide both, redraw from memory — memory version captures overall proportions even if details are lost"
+        resources:
+          - title: "Proko — How to Measure Proportions"
+            url: "https://www.youtube.com/watch?v=2T7cDY7YDsg"
+            type: "video"
+          - title: "Love Life Drawing — Are You Past the Beginner Stage?"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+          - title: "Andrew Loomis — Drawing the Head and Hands (classic reference)"
+            url: "https://www.youtube.com/watch?v=2T7cDY7YDsg"
+            type: "book"
+        practice:
+          - "15 min daily: practice sighting technique — hold pencil at arm's length with locked elbow to compare relative sizes of objects"
+          - "10 min: draw a head placing features at correct landmarks (eyes at vertical center, nose at 3/4, mouth at 7/8)"
+          - "10 min: attempt the Love Life Drawing 'past beginner' test — draw from reference, hide both, redraw from memory"
+        projects:
+          - "Draw a still life with proportional accuracy within 15% at 5 key landmarks"
+          - "Draw a head with features placed at correct proportional landmarks (eyes at center, ears from eyebrow to nose)"
+        tips:
+          - "The #1 beginner proportion error is drawing eyes too high — eyes sit at the VERTICAL CENTER of the head, not near the top"
+          - "Lock your elbow when sighting proportions — a bent elbow changes the distance and ruins the measurement"
       - level: intermediate
         criteria: >
           Applies Loomis head construction (ball + plane) from multiple angles: front,
@@ -139,6 +208,23 @@ nodes:
           - "Loomis head drawn from 3 angles (front, three-quarter, profile) with feature placement within 5% of model sheet — jaw, brow, and ear positions all correct"
           - "Standing figure: all 8-head canon landmarks placed within 1/4 head of correct position (nipple line at head 2, navel at head 3, crotch at head 4, etc.)"
           - "Comparative measurement demonstrated: uses one element (e.g., head height) as a measuring unit and correctly identifies 3+ proportional relationships in a still life"
+        resources:
+          - title: "Proko — Loomis Head Construction"
+            url: "https://www.youtube.com/watch?v=wAOldLWIDSM"
+            type: "video"
+          - title: "Love Life Drawing — Proportion and Measurement"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        practice:
+          - "20 min: draw the Loomis head from 3 angles (front, three-quarter, profile) using the ball + plane method"
+          - "15 min: draw a standing figure to the 8-head canon — mark landmarks at each head-height interval"
+          - "10 min: use comparative measurement in an observational study — pick one element as a unit and relate all others to it"
+        projects:
+          - "Draw the Loomis head from 3 angles with feature placement within 5% of the model sheet"
+          - "Draw a standing figure to the 8-head canon with all landmarks within 1/4 head of correct position"
+        tips:
+          - "Use plumb lines (vertical reference lines) to check alignment — drop an imaginary vertical from the nose to see where it aligns with the ankle"
+          - "The Loomis method makes head construction systematic — learn it once and you can draw any head from any angle"
       - level: advanced
         criteria: >
           Measures proportions quickly and intuitively — sighting becomes a verification
@@ -151,6 +237,12 @@ nodes:
           - "Foreshortened figure proportions accurate within 8% of photographic reference — tested on a reclining or reaching pose with strong foreshortening"
           - "Multi-figure composition (3+ figures): proportional relationships between figures are consistent (near figures larger, far figures smaller in correct ratio)"
           - "Love Life Drawing memory test: redraw from memory within 10% proportional accuracy of the original reference"
+        resources:
+          - title: "Proko — Advanced Proportional Accuracy"
+            url: "https://www.youtube.com/watch?v=2T7cDY7YDsg"
+            type: "video"
+        tips:
+          - "Sighting should become a verification tool, not your primary method — measure to check, not to draw"
       - level: expert
         criteria: >
           Proportional accuracy is instinctive — internalized through thousands of
@@ -164,6 +256,12 @@ nodes:
           - "Identifies proportional errors in student drawings within 10 seconds of viewing and can articulate the specific fix (e.g., 'head is 10% too large relative to torso')"
           - "Draws 5 different standard poses from imagination (standing, sitting, walking, reaching, reclining) with proportions that pass peer review for anatomical plausibility"
           - "Portrait from imagination captures a recognizable likeness of a known person — rated recognizable by 5+ viewers"
+        resources:
+          - title: "Love Life Drawing — Drawing from Imagination"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        tips:
+          - "Proportional accuracy from imagination is internalized through thousands of observational drawings — there is no shortcut"
     tags: ["observation", "measurement", "foundation"]
 
   # ── FORM & VOLUME ──────────────────────────────────────────────────────────
@@ -194,6 +292,23 @@ nodes:
           - "Still life uses overlapping to establish clear spatial layering of 3+ objects — viewer can identify which object is in front without ambiguity"
           - "Draws through a box (showing all 12 edges including hidden ones) with correct convergence — the Drawabox foundational exercise"
           - "Breaks down a simple object (e.g., a mug = cylinder + handle, an apple = sphere + cone stem) into labeled primitives in a construction sketch"
+        resources:
+          - title: "Drawabox — Lesson 1: Drawing Boxes"
+            url: "https://drawabox.com/lesson/1"
+            type: "course"
+          - title: "Proko — How to Draw Basic Forms"
+            url: "https://www.youtube.com/watch?v=3uEtdDvK6Xo"
+            type: "video"
+        practice:
+          - "15 min daily: draw each primitive (sphere, cube, cylinder, cone) with a consistent implied light source — 3 of each"
+          - "10 min: practice 'drawing through' boxes — show all 12 edges including hidden ones"
+          - "10 min: break down 3 simple objects into their primitive components in construction sketches"
+        projects:
+          - "Draw all 4 primitives (sphere, cube, cylinder, cone) that read as 3D, with consistent shadow placement"
+          - "Break down 5 household objects into labeled primitive components"
+        tips:
+          - "Draw through your forms (show hidden edges) even though they will be erased — this trains you to think in 3D, not flat shapes"
+          - "Every object you see can be broken into spheres, cubes, cylinders, and cones — practice this decomposition everywhere you look"
       - level: intermediate
         criteria: >
           Breaks down complex organic and man-made objects into combinations of
@@ -208,6 +323,23 @@ nodes:
           - "Cross-contour lines follow surface curvature accurately on organic forms — tested on a fruit, a shoe, and a human limb"
           - "Draws through forms: hidden edges of a box, cylinder, and compound object are correctly placed, showing the back side of the form"
           - "Drawabox Lesson 3 (plants) or Lesson 4 (insects): completed with construction from primitives visible — organic forms built from geometric foundations"
+        resources:
+          - title: "Drawabox — Lesson 3: Plants (Organic Forms)"
+            url: "https://drawabox.com/lesson/3"
+            type: "course"
+          - title: "Proko — Constructive Drawing Technique"
+            url: "https://www.youtube.com/watch?v=3uEtdDvK6Xo"
+            type: "video"
+        practice:
+          - "20 min: break down complex objects (shoe, chair, teapot) into labeled primitives in construction sketches before rendering"
+          - "15 min: draw cross-contour lines on organic forms (fruit, limbs) — lines should wrap around the surface, showing curvature"
+          - "Ongoing: work through Drawabox Lessons 3-4 (plants and insects)"
+        projects:
+          - "Complete Drawabox Lesson 3 (plants) — organic forms built from cylindrical and spherical primitives"
+          - "Decompose a complex object (shoe, teapot) into labeled primitives, then render the final form"
+        tips:
+          - "Cross-contour lines are the key to showing volume — they should curve with the surface, not lie flat across it"
+          - "Always construct before rendering — drawing a construction skeleton first (even if you erase it) produces more accurate forms"
       - level: advanced
         criteria: >
           Constructs convincing forms from imagination without reference — the critical
@@ -223,6 +355,12 @@ nodes:
           - "Form turning visible in value transitions on 90%+ of rendered drawings — the terminator line (light-to-shadow boundary) accurately follows surface curvature"
           - "Constructs a vehicle or complex machine from imagination using only primitive-based construction — result is spatially convincing from a single viewing angle"
           - "Figure construction from imagination: ribcage, pelvis, and limbs built from primitives with correct 3D overlap and foreshortening"
+        resources:
+          - title: "Drawabox — Lessons 5-7: Animals, Objects, Vehicles"
+            url: "https://drawabox.com/lesson/5"
+            type: "course"
+        tips:
+          - "The leap from observation to imagination requires constructing forms you have drawn hundreds of times — volume of practice builds the mental library"
       - level: expert
         criteria: >
           Form construction is effortless and invisible to the viewer — objects simply
@@ -236,6 +374,12 @@ nodes:
           - "Students demonstrate measurable improvement in form accuracy after one workshop session — pre/post comparison of a drawn sphere, box, and compound object"
           - "Concept art portfolio includes 5+ invented objects or characters that read as fully 3D — rated as spatially convincing by an industry professional"
           - "Teaches the primitive-to-complex construction pipeline and students successfully construct a recognizable object from primitives by session end"
+        resources:
+          - title: "Proko — Advanced Constructive Drawing"
+            url: "https://www.youtube.com/watch?v=3uEtdDvK6Xo"
+            type: "video"
+        tips:
+          - "Form construction should eventually become invisible — objects simply look real without visible construction scaffolding"
     tags: ["construction", "3D-form", "spatial"]
 
   # ── LIGHT, SHADOW & VALUE ──────────────────────────────────────────────────
@@ -264,6 +408,23 @@ nodes:
           - "Lit sphere study includes core shadow, cast shadow, highlight, and reflected light in correct positions relative to a single light source — labeled by the student"
           - "Two-value study of a simple object (e.g., apple, mug): light side and shadow side clearly separated at the terminator line — no gradual blending, just two flat values"
           - "Can name and point to all 6 elements of light/shadow on a lit object: highlight, center light, halftone, core shadow, reflected light, cast shadow"
+        resources:
+          - title: "Proko — How to Shade a Drawing (Light and Shadow)"
+            url: "https://www.youtube.com/watch?v=V3WmrWUEIJo"
+            type: "video"
+          - title: "Love Life Drawing — Value and Shading for Beginners"
+            url: "https://www.youtube.com/watch?v=iwRa5qTnr8o"
+            type: "video"
+        practice:
+          - "15 min: create a 5-step value scale from white to black with visually even gradations"
+          - "20 min: draw a lit sphere identifying and labeling all shadow elements (core shadow, cast shadow, highlight, reflected light)"
+          - "10 min: practice two-value studies — separate a simple object into light side and shadow side only"
+        projects:
+          - "Render a lit sphere with all 6 elements of light/shadow correctly placed and labeled"
+          - "Create a 5-step value scale with visually even spacing from white to black"
+        tips:
+          - "Start with two values only (light side and shadow side) before attempting gradations — this simplification teaches you to see the light/dark boundary"
+          - "Squint at your subject to simplify the value structure — squinting reduces detail and reveals the major light/dark patterns"
       - level: intermediate
         criteria: >
           Maps shadow shapes accurately from observation — draws the shadow as a shape
@@ -278,6 +439,23 @@ nodes:
           - "Light direction consistent across all objects in a 5-object still life — all cast shadows point the same direction and match light source position"
           - "Form shadow vs. cast shadow correctly distinguished in a study: form shadows have soft/gradual edges, cast shadows have hard/defined edges"
           - "5-minute figure drawing shows clear two-value light/shadow separation with correctly placed terminator line"
+        resources:
+          - title: "Proko — Light and Shadow on Forms"
+            url: "https://www.youtube.com/watch?v=V3WmrWUEIJo"
+            type: "video"
+          - title: "Love Life Drawing — Shadow Mapping Technique"
+            url: "https://www.youtube.com/watch?v=iwRa5qTnr8o"
+            type: "video"
+        practice:
+          - "20 min: draw a multi-object still life with consistent single light source — all shadows must point the same direction"
+          - "15 min: practice distinguishing form shadow (soft edges) from cast shadow (sharp edges) in a still life study"
+          - "10 min: 5-minute figure drawings with two-value light/shadow separation"
+        projects:
+          - "Render a 5-object still life with consistent light direction across all objects"
+          - "Create a value study matching a photographic reference within 1 value step at 10 sampled points"
+        tips:
+          - "Map the shadow as a SHAPE first, then refine gradations within it — drawing shadows as shapes is faster and more accurate than gradual shading"
+          - "Form shadow has soft edges (follows the form's curvature); cast shadow has hard edges (projects the shape of the casting object)"
       - level: advanced
         criteria: >
           Uses value as a primary compositional tool — directs the viewer's eye through
@@ -292,6 +470,12 @@ nodes:
           - "Complex lighting scenario (2+ sources) rendered with correct shadow logic on all forms — each light source produces its own set of shadows with appropriate relative intensity"
           - "Value key exercise: same subject rendered as high-key and low-key — mood difference is immediately apparent to 8/10 viewers"
           - "10-minute figure drawing: correct proportions, anatomical construction, and 3-5 value shading with smooth gradations — not flat or patchy"
+        resources:
+          - title: "Proko — Advanced Value and Lighting"
+            url: "https://www.youtube.com/watch?v=V3WmrWUEIJo"
+            type: "video"
+        tips:
+          - "Use value as a compositional tool — place highest contrast at the focal point and lower contrast at the periphery to direct the viewer's eye"
       - level: expert
         criteria: >
           Value rendering rivals photographic realism when desired, yet can also be
@@ -307,6 +491,12 @@ nodes:
           - "Value structure remains readable when drawing is reduced to 50% size — the compositional value plan holds at thumbnail scale"
           - "20-minute figure drawing: full rendering with smooth value gradations, correct anatomy, atmospheric depth, and clear focal point"
           - "Teaches a 'light logic' workshop where students correctly place shadows on 3 different forms from an assigned light source by session end"
+        resources:
+          - title: "Love Life Drawing — Master Class: Light Logic"
+            url: "https://www.youtube.com/watch?v=iwRa5qTnr8o"
+            type: "video"
+        tips:
+          - "Inventing convincing lighting from imagination requires understanding light logic so deeply that you can predict shadow placement without reference"
     tags: ["value", "lighting", "rendering"]
 
   # ── PERSPECTIVE DRAWING ────────────────────────────────────────────────────

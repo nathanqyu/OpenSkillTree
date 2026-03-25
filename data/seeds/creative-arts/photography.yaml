@@ -238,6 +238,22 @@ nodes:
         metrics:
           - "In-focus rate on walking subjects: ≥80% with continuous AF"
           - "DOF matches intent (isolating subject or sharpening scene) on 85%+ of shots"
+        resources:
+          - title: "Tony Northrup — Continuous AF for Moving Subjects"
+            url: "https://www.youtube.com/watch?v=34jkJoN8qOI"
+            type: "video"
+          - title: "Peter McKinnon — Depth of Field Explained"
+            url: "https://www.youtube.com/watch?v=34jkJoN8qOI"
+            type: "video"
+        practice:
+          - "15 min: photograph a person walking toward you using AF-C (continuous AF) — review hit rate at 100% zoom"
+          - "10 min: practice deliberate DOF control — wide aperture for subject isolation, narrow aperture for landscapes"
+        projects:
+          - "Shoot a portrait series with shallow DOF (f/1.8-2.8) where the subject's eye is tack-sharp in 80%+ of images"
+          - "Photograph a landscape with front-to-back sharpness using f/8-f/11"
+        tips:
+          - "For moving subjects, switch to continuous AF (AF-C) immediately — single AF (AF-S) locks on one distance and the subject will walk out of focus"
+          - "Depth of field depends on 3 factors: aperture, focal length, and distance to subject — closer subjects have shallower DOF at any aperture"
       - level: advanced
         criteria: >
           Uses hyperfocal distance for landscape photography. Applies focus stacking
@@ -246,6 +262,12 @@ nodes:
         metrics:
           - "In-focus rate on birds in flight: ≥70% with correct tracking AF"
           - "Hyperfocal calculation applied correctly on ≥80% of landscape sessions"
+        resources:
+          - title: "Tony Northrup — Focus Stacking Tutorial"
+            url: "https://www.youtube.com/watch?v=34jkJoN8qOI"
+            type: "video"
+        tips:
+          - "Use a hyperfocal distance app (like PhotoPills) to calculate the exact focus point for maximum landscape sharpness"
       - level: expert
         criteria: >
           Focus operates at reflex level. Anticipates subject movement to preload focus.
@@ -254,6 +276,12 @@ nodes:
         metrics:
           - "0 out-of-focus shots in final edited professional portfolio"
           - "Focus stacking workflow produces tack-sharp macro images at any magnification"
+        resources:
+          - title: "Karl Taylor — Professional Focus Techniques"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Focus should be invisible to the viewer — if someone notices the focus technique, it is drawing attention away from the subject"
     tags: ["technical", "focus", "optics"]
 
   # ── VISUAL LANGUAGE ─────────────────────────────────────────────────────────
@@ -269,6 +297,22 @@ nodes:
         metrics:
           - "Rule of thirds applied in ≥70% of images submitted for critique"
           - "Horizon within 1° of level in ≥90% of landscape images"
+        resources:
+          - title: "Peter McKinnon — 5 Composition Tips for Better Photos"
+            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            type: "video"
+          - title: "B&H Photo — Composition Fundamentals"
+            url: "https://www.youtube.com/watch?v=7ZVyNjKSr0M"
+            type: "video"
+        practice:
+          - "15 min: enable the rule-of-thirds grid overlay on your camera and shoot 20 images placing the subject at grid intersections"
+          - "10 min: review your last 20 photos and identify distracting backgrounds, mergers, and tilted horizons"
+        projects:
+          - "Photograph 10 subjects using rule of thirds — review each and confirm the focal point sits on a grid intersection"
+          - "Shoot a series of 5 landscape photos with perfectly level horizons"
+        tips:
+          - "Check the background before pressing the shutter — a tree growing out of someone's head ruins an otherwise great portrait"
+          - "Turn on the grid overlay in your camera or phone — it costs nothing and instantly improves composition"
       - level: intermediate
         criteria: >
           Uses leading lines, framing, negative space, foreground interest, and
@@ -277,6 +321,22 @@ nodes:
         metrics:
           - "≥3 distinct compositional techniques identified in any single image reviewed by instructor"
           - "Composition matches stated intent in 80%+ of images from a focused shoot"
+        resources:
+          - title: "Peter McKinnon — Advanced Composition Techniques"
+            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            type: "video"
+          - title: "Tony Northrup — Leading Lines, Framing & Negative Space"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+        practice:
+          - "20 min: photograph one subject using 5 different compositional techniques (rule of thirds, leading lines, framing, symmetry, negative space)"
+          - "15 min: shoot the same scene from 5 different angles and heights — review how perspective changes the composition"
+        projects:
+          - "Create a 10-image series where each image demonstrates a different compositional technique, labeled"
+          - "Photograph a local street scene using leading lines to draw the viewer's eye to a focal point"
+        tips:
+          - "Breaking compositional rules works only when you understand why the rule exists — center a subject only when symmetry is the point"
+          - "If a composition feels off but you cannot identify why, try moving your feet — physical position change often solves it"
       - level: advanced
         criteria: >
           Composes for storytelling: uses environmental context, layers of depth,
@@ -285,6 +345,12 @@ nodes:
         metrics:
           - "PSA judge rates composition 7/10 or higher on 70%+ of submitted images"
           - "0 important compositional elements cropped by mistake in final edits"
+        resources:
+          - title: "Karl Taylor — Compositional Storytelling"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Visualize the final frame before raising the camera — the best compositions happen in your mind before the viewfinder"
       - level: expert
         criteria: >
           Develops a distinctive compositional voice. Images are compositionally
@@ -293,6 +359,12 @@ nodes:
         metrics:
           - "500px Pulse score ≥90 on composition-heavy images"
           - "PSA merit star achieved at least once in landscape or travel category"
+        resources:
+          - title: "Peter McKinnon — Developing Your Photographic Eye"
+            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            type: "video"
+        tips:
+          - "A distinctive compositional voice emerges from consistent practice, not from copying trends — shoot what interests you, not what gets likes"
     tags: ["artistic", "composition", "visual-language"]
 
   - id: "creative-arts/photography/lens-selection"
@@ -306,6 +378,17 @@ nodes:
         criteria: "Understands the difference between wide, standard, and telephoto focal lengths. Knows which focal lengths suit portraits vs. landscapes."
         metrics:
           - "Correctly matches focal length to genre in 8/10 scenario exercises"
+        resources:
+          - title: "Tony Northrup — Understanding Focal Length"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+        practice:
+          - "15 min: photograph the same subject at wide (24mm), standard (50mm), and telephoto (85mm+) focal lengths — compare perspective"
+        projects:
+          - "Create a comparison set showing how the same portrait looks at 24mm, 50mm, and 85mm from different distances"
+        tips:
+          - "Wider lenses exaggerate features near the camera (big nose effect in close-up portraits) — use 50mm+ for flattering portraits"
+          - "Start with one lens (a 50mm or kit zoom) and learn it thoroughly before buying more glass"
       - level: intermediate
         criteria: >
           Uses wide angles (14–35mm) for environmental storytelling, standard (35–85mm)
@@ -314,6 +397,17 @@ nodes:
         metrics:
           - "Focal length choice justified in image critique in 85%+ of cases"
           - "Uses at least 2 different focal lengths intentionally in a single shoot"
+        resources:
+          - title: "Karl Taylor — Lens Selection Masterclass"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        practice:
+          - "20 min: shoot the same scene with 3 different focal lengths and write down why you would choose each for publication"
+        projects:
+          - "Complete a photo walk using at least 2 different focal lengths intentionally and annotate why each was chosen"
+        tips:
+          - "Zoom with your feet first, then with the lens — physical movement creates perspective change, zooming only crops"
+          - "Prime lenses (fixed focal length) force you to move and compose more deliberately than zooms"
       - level: advanced
         criteria: >
           Uses lens distortion and compression creatively. Chooses maximum aperture
@@ -323,6 +417,12 @@ nodes:
         metrics:
           - "Bokeh quality matches creative intent on 85%+ of wide-aperture shots"
           - "Lens selection documented and justified for every professional shoot"
+        resources:
+          - title: "Tony Northrup — Best Lenses for Every Situation"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+        tips:
+          - "The best lens is the one you have with you — obsessing over gear prevents you from making photos"
       - level: expert
         criteria: >
           Lens kit is curated and purposeful. Identifies the exact lens for an editorial
@@ -331,6 +431,12 @@ nodes:
         metrics:
           - "Client briefs fulfilled with first-choice lens on 90%+ of commercial shoots"
           - "Can identify focal length of an unlabeled image within ±15mm in 8/10 examples"
+        resources:
+          - title: "Karl Taylor — Professional Lens Selection"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Knowing the exact lens for a brief comes from experience — shoot enough and you will pre-visualize the focal length before picking up the camera"
     tags: ["technical", "optics", "gear"]
 
   # ── LIGHT ───────────────────────────────────────────────────────────────────
@@ -346,6 +452,22 @@ nodes:
         criteria: "Avoids harsh midday sun for portraits. Seeks open shade or golden hour. Identifies front, side, and backlight."
         metrics:
           - "Can name 3 lighting qualities (hard, soft, diffuse) and give real-world examples of each"
+        resources:
+          - title: "Karl Taylor — Understanding Light for Photography"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+          - title: "Tony Northrup — Natural Light Photography Tips"
+            url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
+            type: "video"
+        practice:
+          - "15 min: photograph a subject in direct sun, open shade, and overcast light — compare the quality of shadows in each"
+          - "10 min: shoot portraits at golden hour and note how the warm, directional light changes the mood"
+        projects:
+          - "Photograph the same subject at 3 different times of day (morning, midday, golden hour) and compare the light quality"
+          - "Find and photograph in open shade — notice how soft, even light eliminates harsh shadows"
+        tips:
+          - "Avoid midday direct sun for portraits — it creates harsh shadows under the eyes and nose; seek shade or wait for golden hour"
+          - "The best free light is an overcast sky or open shade — nature's giant softbox"
       - level: intermediate
         criteria: >
           Uses golden hour and blue hour intentionally. Works in overcast light for
@@ -354,6 +476,22 @@ nodes:
         metrics:
           - "Shoots golden hour sessions with ≥80% technically keeper images (warm tone, correct exposure)"
           - "Demonstrates 3 portrait lighting patterns correctly in a controlled test"
+        resources:
+          - title: "Karl Taylor — Portrait Lighting Patterns"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+          - title: "Peter McKinnon — How To Use Natural Light"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+        practice:
+          - "20 min: practice creating Rembrandt, butterfly, and split lighting using a window as a single light source"
+          - "10 min: use a reflector (or white board) to fill shadows on a portrait subject in directional light"
+        projects:
+          - "Photograph a portrait demonstrating 3 distinct lighting patterns (Rembrandt, butterfly, split) using only window light"
+          - "Shoot a golden hour portrait session with 80%+ technically keeper images"
+        tips:
+          - "Window light is a free studio light — have your subject face a window and you can create any lighting pattern by moving them relative to it"
+          - "A white poster board costs a dollar and works as a reflector to fill shadows — you do not need expensive gear"
       - level: advanced
         criteria: >
           Reads light in any environment and adapts technique: uses backlight for
@@ -362,6 +500,12 @@ nodes:
         metrics:
           - "Can recreate any lighting pattern using only available light in an unfamiliar location"
           - "0 lighting technical failures on a portrait session (harsh shadows, unflattering direction)"
+        resources:
+          - title: "Karl Taylor — Advanced Natural Light Techniques"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Train yourself to read light in every environment — notice the direction, quality, and color of light even when you are not shooting"
       - level: expert
         criteria: >
           Shapes light as a primary creative medium. Recognizes iconic lighting
@@ -370,6 +514,12 @@ nodes:
         metrics:
           - "Editorial clients request photographer by name for lighting style"
           - "Workshop students can identify and reproduce 5 lighting patterns after 1 day of instruction"
+        resources:
+          - title: "Karl Taylor — Lighting Masterclass"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Study paintings by old masters (Rembrandt, Vermeer, Caravaggio) — their lighting techniques directly apply to photography"
     tags: ["lighting", "artistic", "technical"]
 
   # ── EXPOSURE FEEDBACK ───────────────────────────────────────────────────────
@@ -387,6 +537,21 @@ nodes:
         criteria: "Reads a histogram and identifies whether an image is overexposed, underexposed, or correctly exposed."
         metrics:
           - "Correctly classifies 9/10 histogram examples as over/under/correct"
+        resources:
+          - title: "Tony Northrup — How to Read a Histogram"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+          - title: "B&H Photo — Understanding Histograms"
+            url: "https://www.youtube.com/watch?v=lBpWJjgEJSA"
+            type: "video"
+        practice:
+          - "10 min: take 10 photos and check the histogram after each — identify if the exposure is over, under, or correct"
+          - "5 min: deliberately overexpose and underexpose a shot and compare their histograms to a correctly exposed version"
+        projects:
+          - "Review 10 photos from your last shoot and classify each histogram as overexposed, underexposed, or correct"
+        tips:
+          - "Do not trust your LCD screen in bright sunlight — it looks darker than it is; the histogram never lies about exposure"
+          - "A histogram pushed to the right (bright) is not automatically overexposed — a snow scene should have a right-biased histogram"
       - level: intermediate
         criteria: >
           Switches metering modes (evaluative/matrix, center-weighted, spot) based on
@@ -395,6 +560,18 @@ nodes:
         metrics:
           - "Spot metering used correctly on 85%+ of backlit or high-contrast portraits"
           - "RGB histogram checked on 100% of outdoor shoots"
+        resources:
+          - title: "Tony Northrup — Metering Modes Explained"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+        practice:
+          - "15 min: photograph a backlit subject using spot metering on the face, then evaluative metering — compare results"
+          - "10 min: check the RGB histogram on 10 outdoor shots to detect color channel clipping"
+        projects:
+          - "Photograph a high-contrast scene (backlit portrait) using spot metering and achieve correct face exposure"
+        tips:
+          - "Switch to spot metering for backlit subjects — evaluative metering will be fooled by the bright background and underexpose the face"
+          - "Check the RGB histogram, not just the luminance histogram — you can clip a color channel without clipping overall brightness"
       - level: advanced
         criteria: >
           Uses exposure lock (AEL) to decouple metering from composition. Understands
@@ -403,6 +580,12 @@ nodes:
         metrics:
           - "ETTR application produces maximum shadow detail on 80%+ of RAW landscape shots"
           - "0 shots with unexplained clipping in professional work"
+        resources:
+          - title: "Karl Taylor — Advanced Exposure Control"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Use exposure lock (AEL) to decouple metering from composition — meter on the subject, lock, recompose, shoot"
       - level: expert
         criteria: >
           Exposure metering system operates intuitively across all scene types. Can
@@ -410,6 +593,12 @@ nodes:
           reading as a feedback loop.
         metrics:
           - "Histogram prediction accuracy: within ±0.5 EV on 90%+ of shots in known conditions"
+        resources:
+          - title: "Tony Northrup — Intuitive Exposure Control"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+        tips:
+          - "Predicting the histogram before shooting is the mark of intuitive exposure — practice by guessing before checking"
     tags: ["technical", "exposure", "measurable"]
 
   # ── COLOR ───────────────────────────────────────────────────────────────────
@@ -425,6 +614,17 @@ nodes:
         criteria: "Uses preset white balance (Daylight, Cloudy, Shade, Tungsten) appropriately. Knows that AWB can be corrected in RAW."
         metrics:
           - "Correct WB preset chosen for the light source on 80%+ of shots"
+        resources:
+          - title: "Tony Northrup — White Balance Explained"
+            url: "https://www.youtube.com/watch?v=YojL7UQTVhc"
+            type: "video"
+        practice:
+          - "10 min: photograph the same subject under different WB presets (Daylight, Cloudy, Tungsten) and compare the warmth/coolness"
+        projects:
+          - "Photograph in 3 different lighting conditions and choose the correct WB preset for each"
+        tips:
+          - "If you shoot RAW, white balance can be corrected perfectly in post — but getting it right in-camera saves editing time"
+          - "Auto white balance (AWB) struggles with mixed lighting and golden hour — set Daylight WB at golden hour to preserve the warm tones"
       - level: intermediate
         criteria: >
           Sets custom white balance using a grey card or Kelvin value. Understands
@@ -434,6 +634,19 @@ nodes:
         metrics:
           - "Skin tones render naturally (no green or magenta cast) in 90%+ of portrait edits"
           - "Color palette intentional and harmonious in 75%+ of images in critique"
+        resources:
+          - title: "Peter McKinnon — Color Theory for Photographers"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+        practice:
+          - "15 min: set custom white balance using a grey card and compare to AWB in mixed lighting"
+          - "10 min: practice basic color correction in Lightroom — adjust temperature and tint until skin tones look natural"
+        projects:
+          - "Photograph portraits in mixed lighting and produce natural skin tones in post (no green or magenta cast)"
+          - "Create a 5-image series with a consistent, intentional color palette"
+        tips:
+          - "Skin tone is the litmus test of white balance — if skin looks natural, your WB is correct; if it looks green or magenta, adjust"
+          - "Use a grey card for critical work — it costs under $10 and gives you a perfect reference for custom white balance"
       - level: advanced
         criteria: >
           Uses intentional color grading as a creative signature. Applies color
@@ -442,6 +655,12 @@ nodes:
         metrics:
           - "Color grade matches creative brief on first pass 80%+ of the time"
           - "HSL adjustments in Lightroom used correctly on ≥80% of edited images"
+        resources:
+          - title: "Peter McKinnon — Color Grading in Lightroom"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+        tips:
+          - "Use the HSL panel's luminance channel to brighten skin tones (orange slider) without affecting overall exposure"
       - level: expert
         criteria: >
           Develops signature color language. Color grade is recognizable across a
@@ -449,6 +668,12 @@ nodes:
         metrics:
           - "Commercial clients describe photographer's 'look' in color terms"
           - "Color consistency across a 20-image editorial set: all images pass art director review without color notes"
+        resources:
+          - title: "Karl Taylor — Signature Color & Style"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "A signature color language is built through consistent choices over years, not by copying presets — develop your own"
     tags: ["technical", "color", "post-processing"]
 
   # ── POST-PRODUCTION ─────────────────────────────────────────────────────────
@@ -464,6 +689,22 @@ nodes:
         criteria: "Imports RAW files and applies basic exposure, highlights, shadows, and white balance adjustments."
         metrics:
           - "Can produce a clean edit from a RAW file in ≤10 minutes"
+        resources:
+          - title: "Tony Northrup — Lightroom Tutorial for Beginners"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+          - title: "Peter McKinnon — How I Edit My Photos"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+        practice:
+          - "15 min: import a RAW file into Lightroom and adjust exposure, highlights, shadows, and white balance"
+          - "10 min: practice the basic edit workflow — exposure first, then highlights/shadows, then white balance, then crop"
+        projects:
+          - "Edit 10 RAW files using only basic adjustments (exposure, highlights, shadows, WB) and produce clean results"
+          - "Compare a JPEG straight from camera to your RAW edit of the same photo to see the difference"
+        tips:
+          - "Always shoot RAW, not JPEG — RAW files contain far more information for recovery of highlights and shadows in editing"
+          - "Start every edit by setting white balance and exposure first — everything else builds on these two settings"
       - level: intermediate
         criteria: >
           Uses tone curve, HSL panel, lens correction, and local adjustments (radial
@@ -472,6 +713,22 @@ nodes:
         metrics:
           - "Non-destructive workflow maintained: original RAW never overwritten"
           - "Edit covers exposure, tone, color, and cleanup in 100% of image edits"
+        resources:
+          - title: "Peter McKinnon — Advanced Lightroom Editing"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+          - title: "Tony Northrup — Lightroom Workflow & Organization"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+        practice:
+          - "20 min: edit a photo using tone curve, HSL panel, and local adjustments (radial filter, graduated filter)"
+          - "10 min: practice exporting with correct settings for web (sRGB, 2048px long edge, 80% quality JPEG)"
+        projects:
+          - "Develop a complete editing workflow: import, cull, edit, export — process a 50-photo shoot from start to finish"
+          - "Create a before/after comparison showing the impact of tone curve, HSL, and local adjustments"
+        tips:
+          - "Never overwrite the original RAW file — Lightroom and Capture One are non-destructive by design; keep it that way"
+          - "The tone curve is the most powerful tool in Lightroom — learn S-curves for contrast and faded-black looks"
       - level: advanced
         criteria: >
           Develops a consistent Lightroom preset or Capture One style that defines
@@ -481,6 +738,12 @@ nodes:
         metrics:
           - "20-image shoot edited to visual consistency in ≤2 hours"
           - "0 distracting artifacts (halos, banding, excessive noise) in exported images"
+        resources:
+          - title: "Tony Northrup — Creating Lightroom Presets"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+        tips:
+          - "Develop a personal preset as a starting point, not a final product — adjust every image individually after applying the preset"
       - level: expert
         criteria: >
           Post-production workflow is a competitive advantage. Editing decisions
@@ -489,6 +752,12 @@ nodes:
         metrics:
           - "Client delivery turnaround: 100-image professional shoot edited and delivered in ≤48 hours"
           - "Art director requires 0 re-edits on 80%+ of delivered image sets"
+        resources:
+          - title: "Peter McKinnon — Professional Editing Workflow"
+            url: "https://www.youtube.com/watch?v=K9SrnEpgTHo"
+            type: "video"
+        tips:
+          - "Editing should serve the image, not call attention to itself — if a viewer notices the editing, it is overdone"
     tags: ["post-processing", "editing", "workflow"]
 
   # ── ADVANCED SKILLS ─────────────────────────────────────────────────────────
@@ -504,6 +773,17 @@ nodes:
         criteria: "Fires an external flash in TTL mode. Understands sync speed and why it matters."
         metrics:
           - "Uses TTL external flash to fill shadows on portraits in 3 different environments"
+        resources:
+          - title: "Tony Northrup — Flash Photography for Beginners"
+            url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
+            type: "video"
+        practice:
+          - "15 min: use an external flash in TTL mode to fill shadows on portrait subjects in 3 environments (indoor, shade, backlit)"
+        projects:
+          - "Photograph a portrait using on-camera flash bounced off a ceiling — compare to direct flash"
+        tips:
+          - "Never point a flash directly at someone's face — bounce it off a ceiling or wall for soft, natural-looking fill light"
+          - "If you do not own a flash yet, a $30 reflector can fill shadows almost as well for portraits"
       - level: intermediate
         criteria: >
           Uses manual flash power for consistent and repeatable exposures. Applies
@@ -512,6 +792,22 @@ nodes:
         metrics:
           - "2-light portrait setup built and shooting in ≤10 minutes"
           - "Flash exposures consistent within ±0.3 EV across a 10-image sequence"
+        resources:
+          - title: "Karl Taylor — Off-Camera Flash Setup"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+          - title: "Tony Northrup — Manual Flash for Consistent Results"
+            url: "https://www.youtube.com/watch?v=F8T94sdiNjc"
+            type: "video"
+        practice:
+          - "20 min: set up a 2-light portrait (key + fill) using off-camera flash and a light modifier (umbrella or softbox)"
+          - "10 min: practice manual flash power settings for consistent exposure across a 10-shot sequence"
+        projects:
+          - "Build a 2-light portrait setup (key + fill or key + backlight) and produce 10 consistently exposed portraits"
+          - "Compare TTL vs. manual flash — shoot the same portrait setup with each and note consistency differences"
+        tips:
+          - "Manual flash power gives consistent results shot-to-shot; TTL varies with each frame — switch to manual for studio-style work"
+          - "Start with one light and a modifier before adding a second — understand one light well before complicating the setup"
       - level: advanced
         criteria: >
           Balances flash with ambient light (day-for-night, fill-flash outdoors).
@@ -521,6 +817,12 @@ nodes:
         metrics:
           - "Commercial product image delivered with professional lighting quality to client brief"
           - "0 sync-speed artifacts on any flash image in portfolio"
+        resources:
+          - title: "Karl Taylor — Advanced Flash Techniques"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Know your camera's max sync speed (usually 1/200-1/250s) — exceeding it without HSS causes a black band across the image"
       - level: expert
         criteria: >
           Lighting design is a signature skill. Can recreate any published lighting
@@ -529,6 +831,12 @@ nodes:
         metrics:
           - "Advertising or editorial clients book specifically for lighting capabilities"
           - "Workshop students: 90%+ rate lighting instruction as 'significantly improved my work'"
+        resources:
+          - title: "Karl Taylor — Studio Lighting Masterclass"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Lighting design is about intent — before placing a light, ask: what mood, what direction, what story does this light tell?"
     tags: ["lighting", "studio", "advanced", "technical"]
 
   - id: "creative-arts/photography/genre-techniques"
@@ -544,6 +852,17 @@ nodes:
         criteria: "Shoots competently in one chosen genre using genre-appropriate settings."
         metrics:
           - "Produces 5 technically acceptable images in chosen genre in a single session"
+        resources:
+          - title: "Tony Northrup — Photography Genres Explained"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+        practice:
+          - "30 min: photograph 10 images in your chosen genre using genre-appropriate settings and technique"
+        projects:
+          - "Produce 5 technically acceptable images in one genre (portrait, landscape, or street) in a single session"
+        tips:
+          - "Pick one genre to focus on first — trying to be a portrait, landscape, and street photographer simultaneously dilutes your growth"
+          - "Study the work of 3 photographers in your chosen genre and identify what makes their images successful"
       - level: intermediate
         criteria: >
           Applies genre-specific technique in at least 2 genres:
@@ -553,6 +872,21 @@ nodes:
         metrics:
           - "Genre-specific checklist (e.g., catchlights visible, correct FL for portraits) met on 80%+ of shots"
           - "Images from 2+ genres in portfolio rated technically correct by instructor"
+        resources:
+          - title: "Peter McKinnon — How To Find Your Photography Niche"
+            url: "https://www.youtube.com/watch?v=VArISvUuyr0"
+            type: "video"
+          - title: "B&H Photo — Genre-Specific Photography Tips"
+            url: "https://www.youtube.com/watch?v=7ZVyNjKSr0M"
+            type: "video"
+        practice:
+          - "30 min: apply genre-specific checklists when shooting (portraits: catchlights, flattering FL, fill light; landscapes: golden hour, tripod, wide FL)"
+        projects:
+          - "Build a portfolio with technically correct images from 2 different genres (e.g., portrait and landscape)"
+          - "Photograph a portrait session using a genre-specific checklist: catchlights visible, flattering focal length, clean background"
+        tips:
+          - "Every genre has a technical checklist — learn it and follow it before trying to break the rules creatively"
+          - "Portraits need catchlights (reflections in the eyes from the light source) — without them, eyes look lifeless"
       - level: advanced
         criteria: >
           Specializes in 1 primary and 1 secondary genre with professional-quality output.
@@ -561,6 +895,12 @@ nodes:
         metrics:
           - "Primary genre images accepted into at least 1 PSA or photography competition"
           - "Secondary genre images rated publishable by working professional in that genre"
+        resources:
+          - title: "Karl Taylor — Professional Genre Techniques"
+            url: "https://www.youtube.com/watch?v=4wJbznWERHE"
+            type: "video"
+        tips:
+          - "Genre mastery means understanding the unique business requirements — portrait photographers need client management skills; landscape photographers need patience and planning"
       - level: expert
         criteria: >
           Recognized by peers and clients as a master of chosen genre. Image style
@@ -568,6 +908,12 @@ nodes:
         metrics:
           - "Images published in editorial, exhibition, or licensed for commercial use"
           - "500px Pulse average ≥90 in primary genre across last 20 submitted images"
+        resources:
+          - title: "Tony Northrup — Building a Photography Portfolio"
+            url: "https://www.youtube.com/watch?v=LxO-6rlihSg"
+            type: "video"
+        tips:
+          - "Publication and competition success follows consistent, distinctive work — build a cohesive body of work rather than chasing variety"
     tags: ["genre", "specialization", "advanced"]
 
 relationships:

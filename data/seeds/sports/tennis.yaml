@@ -50,23 +50,72 @@ nodes:
           - "Reaches 6/10 balls hit within 3 steps"
           - "Split step attempted on 7/10 opponent shots"
           - "Correctly explains scoring through a full game and identifies all court zones"
+        resources:
+          - title: "Essential Tennis — Tennis Grips for Beginners (Eastern, Continental)"
+            url: "https://www.youtube.com/watch?v=Ov4KvRJHdYk"
+            type: "video"
+          - title: "Feel Tennis — Ready Position and Split Step Basics"
+            url: "https://www.youtube.com/watch?v=2bFGMPqVJPo"
+            type: "video"
+          - title: "USTA — Official Rules and Scoring Guide"
+            url: "https://www.usta.com/en/home/improve/tips-and-instruction/national/tennis-scoring-rules.html"
+            type: "article"
+        practice:
+          - "10 min: Shadow footwork — shuffle along the baseline, split step, move to imaginary ball, recover to center"
+          - "10 min: Split-step reaction drill — partner feeds random directions, you split-step and move"
+          - "5 min: Court orientation — walk the court identifying all lines, zones, and service boxes"
+        projects:
+          - "Pass a scoring quiz: explain how to score a full match including tiebreaks"
+          - "Sustain a rally of 5+ shots while using split steps and recovering to center"
+        tips:
+          - "Don't stand flat-footed between shots — stay on the balls of your feet with knees bent and racquet out in front; this is the ready position"
+          - "Time your split step to land just as your opponent makes contact — this loads your legs for an explosive first step in any direction"
       - level: intermediate
         criteria: "Consistent split step on every return. Uses crossover steps and lateral shuffle for court coverage. Recovers to center after each shot."
         metrics:
           - "Split step timed within 0.3s of opponent contact on 8/10 shots"
           - "Recovers to within 1 meter of baseline center after groundstroke on 7/10 rallies"
           - "Reaches wide balls that require 2+ steps on 75%+ of attempts"
+        resources:
+          - title: "Top Tennis Training — Footwork Patterns for Court Coverage"
+            url: "https://www.youtube.com/watch?v=iu8FjSXEZFk"
+            type: "video"
+          - title: "Essential Tennis — Recovery Step Technique"
+            url: "https://www.youtube.com/watch?v=1P30J76jEew"
+            type: "video"
+        practice:
+          - "15 min: Wide ball drill — partner feeds alternating wide balls, practice crossover step and recovery to center"
+          - "10 min: Lateral shuffle cone drill — set up cones across the baseline, shuffle between them touching each"
+          - "5 min: Open vs. closed stance practice — forehand from both stances, 10 balls each"
+        projects:
+          - "Recover to within 1 meter of baseline center after every groundstroke for a full practice set"
+          - "Reach 75%+ of wide balls requiring 2+ steps in a live rally session"
+        tips:
+          - "Don't admire your shot — recover to center IMMEDIATELY after hitting; use a shuffle step or crossover to get back to the baseline center"
+          - "Use a crossover step (not a shuffle) for wide balls that require more than 2 steps — it covers more ground faster"
       - level: advanced
         criteria: "Anticipatory movement — reads opponent cues to preload direction. Explosive first step from split position. Open and closed stance used selectively based on ball position."
         metrics:
           - "Court coverage: reaches 85%+ of balls hit within the singles court"
           - "0–2 unforced movement errors per set (balls not reached due to positioning)"
           - "Correct stance selection (open vs. closed) on 80%+ of groundstrokes"
+        resources:
+          - title: "Top Tennis Training — Advanced Footwork for Competitive Players"
+            url: "https://www.youtube.com/watch?v=J9FfSEzzMRg"
+            type: "video"
+        tips:
+          - "Read your opponent's shoulders and hip rotation before they hit — this gives you a half-step head start in the correct direction"
       - level: expert
         criteria: "Proactive positioning: shadows opponent and controls court geometry. Disguises movement to neutralize opponent reads. Explosive recovery from extreme out-of-position situations."
         metrics:
           - "NTRP 5.0+ evaluator rates movement as 'above average' or higher in match play"
           - "0 points lost solely due to court position (not shot selection) in a set"
+        resources:
+          - title: "Feel Tennis — Pro Movement Analysis: Djokovic Court Coverage"
+            url: "https://www.youtube.com/watch?v=qTVZp4FRJHQ"
+            type: "video"
+        tips:
+          - "Control court geometry proactively — position yourself to take away your opponent's highest-percentage shot, forcing them into lower-percentage options"
     tags: ["foundation", "athletic", "measurable"]
 
   # ── GROUNDSTROKES (taught first in all programs) ────────────────────────────
@@ -83,23 +132,69 @@ nodes:
         metrics:
           - "70%+ forehand in rate from mid-court feed"
           - "Ball lands past the service line on 6/10 forehands"
+        resources:
+          - title: "Essential Tennis — Forehand Fundamentals Step by Step"
+            url: "https://www.youtube.com/watch?v=vgiHfjSdI9w"
+            type: "video"
+          - title: "Feel Tennis — The Modern Forehand for Beginners"
+            url: "https://www.youtube.com/watch?v=0ByMHnLqPvY"
+            type: "video"
+        practice:
+          - "15 min: Drop-and-hit drill — drop the ball yourself, hit forehands cross-court, count makes out of 20"
+          - "10 min: Rally with a partner — sustain forehand rallies cross-court, count consecutive makes"
+          - "5 min: Shadow swings — practice the swing path (low to high) without a ball, focusing on follow-through"
+        projects:
+          - "Rally 10 consecutive forehands cross-court with a partner without an error"
+          - "Hit 7 out of 10 forehands past the service line from a mid-court feed"
+        tips:
+          - "Don't swing with just your arm — turn your shoulders back during the backswing and rotate your hips forward through the shot; power comes from rotation, not arm speed"
+          - "Make contact in front of your body (at roughly 1 o'clock on a clock face) — late contact causes the ball to spray to the right"
       - level: intermediate
         criteria: "Directional control: can target cross-court or down the line reliably. Generates topspin using low-to-high swing path. Controls rally pace."
         metrics:
           - "80%+ forehand in rate in rallies"
           - "Hits intended target (cross-court vs. down-the-line) on 65%+ of forehands"
           - "Topspin rate above 1,200 RPM achievable on command"
+        resources:
+          - title: "Top Tennis Training — Topspin Forehand Technique Breakdown"
+            url: "https://www.youtube.com/watch?v=3mW4CXMTkTU"
+            type: "video"
+          - title: "Essential Tennis — Forehand Direction Control"
+            url: "https://www.youtube.com/watch?v=JLpmb8G2hHo"
+            type: "video"
+        practice:
+          - "15 min: Cross-court vs. down-the-line drill — alternate direction every 5 balls, track accuracy to each target"
+          - "10 min: Topspin drill — focus on low-to-high racquet path with a windshield-wiper finish, count topspin balls out of 20"
+          - "10 min: Rally pace control — sustain a rally at 3 different pace levels (slow, medium, fast)"
+        projects:
+          - "Hit intended target (cross-court or down-the-line) on 7 out of 10 forehands in a targeted drill"
+          - "Sustain a 20-ball topspin forehand rally cross-court with consistent depth"
+        tips:
+          - "Don't hit down-the-line on every ball — cross-court is the higher-percentage shot (lower net, more court); save down-the-line for when you have an opening"
+          - "Generate topspin by brushing UP on the ball with a low-to-high swing path, not by rolling the wrist over the ball"
       - level: advanced
         criteria: "Inside-out and inside-in forehand used to control rally and exploit court geometry. Generates heavy topspin under pressure. High ball and short ball forehands executed at full pace."
         metrics:
           - "85%+ forehand in rate under match pressure"
           - "Inside-out forehand executed to correct target zone (deep cross-court) on 7/10 attempts"
           - "Forces opponent behind baseline or wide on 4/10 well-struck forehands"
+        resources:
+          - title: "Top Tennis Training — Inside-Out Forehand Mastery"
+            url: "https://www.youtube.com/watch?v=SgUKJlMVi-s"
+            type: "video"
+        tips:
+          - "Run around your backhand to hit inside-out forehands to your opponent's backhand corner — this is the most dominant rally pattern at the advanced level"
       - level: expert
         criteria: "Forehand as a primary match-winner. Creates angles opponents cannot cover. Adjusts swing path and contact point for any ball height and trajectory without loss of pace or direction."
         metrics:
           - "Forehand winner or forced error rate ≥ 25% in tournament play"
           - "Opponent win percentage from forehand exchange ≤ 40%"
+        resources:
+          - title: "Feel Tennis — Forehand Analysis: What Makes a World-Class Forehand"
+            url: "https://www.youtube.com/watch?v=x5Y-CUuEdFk"
+            type: "video"
+        tips:
+          - "At the expert level, adjust your contact point and swing path for every ball height — low balls get more lift, high balls get more drive, and short balls get attacked with a flatter trajectory"
     tags: ["technical", "offensive", "groundstroke"]
 
   - id: "sports/tennis/backhand"
@@ -115,23 +210,69 @@ nodes:
         metrics:
           - "65%+ backhand in rate from mid-court feed"
           - "Ball lands past the service line on 5/10 backhands"
+        resources:
+          - title: "Essential Tennis — Two-Handed Backhand for Beginners"
+            url: "https://www.youtube.com/watch?v=kSCUkmAqlpw"
+            type: "video"
+          - title: "Feel Tennis — One-Handed Backhand Fundamentals"
+            url: "https://www.youtube.com/watch?v=I0F7Dq2CgWs"
+            type: "video"
+        practice:
+          - "15 min: Drop-and-hit backhand drill — drop the ball, hit backhands cross-court, count makes out of 20"
+          - "10 min: Forehand-backhand alternation rally — partner feeds alternating sides, focus on backhand consistency"
+          - "5 min: Grip check — between every 5 balls, consciously check your backhand grip to build the habit"
+        projects:
+          - "Rally 8 consecutive backhands cross-court with a partner without error"
+          - "Hit 5 out of 10 backhands past the service line from a mid-court feed"
+        tips:
+          - "Don't grip the racquet too tight on the backhand — a relaxed grip allows the wrist to work naturally; think of holding a bird (firm enough it does not escape, loose enough you do not hurt it)"
+          - "For two-handed backhands, your non-dominant hand does most of the work — think of it as a forehand with your other hand"
       - level: intermediate
         criteria: "Directional control cross-court and down the line. Slice backhand used for defensive situations and change of pace. Generates consistent depth."
         metrics:
           - "75%+ backhand in rate in rallies"
           - "Hits intended target (cross-court vs. down-the-line) on 60%+ of backhands"
           - "Slice backhand lands deep (within 1 meter of baseline) on 70%+ of attempts"
+        resources:
+          - title: "Top Tennis Training — Slice Backhand Technique"
+            url: "https://www.youtube.com/watch?v=7RQOQ5d_NE8"
+            type: "video"
+          - title: "Essential Tennis — Backhand Direction Control Drills"
+            url: "https://www.youtube.com/watch?v=Kbp_s_Iojvc"
+            type: "video"
+        practice:
+          - "15 min: Cross-court vs. down-the-line backhand drill — alternate direction every 5 balls, track accuracy"
+          - "10 min: Slice backhand practice — focus on keeping the racquet face open and cutting under the ball for backspin"
+          - "10 min: Deep backhand rally — sustain cross-court backhand rallies with every ball landing past the service line"
+        projects:
+          - "Hit a slice backhand that lands within 1 meter of the baseline on 7 out of 10 attempts"
+          - "Direct backhands cross-court or down-the-line on command at 60%+ accuracy in a drill"
+        tips:
+          - "Use the slice backhand when you are on the run or stretched wide — it is a safer shot than trying to hit topspin from a compromised position"
+          - "Keep the ball deep — a short backhand is the most common invitation for your opponent to attack"
       - level: advanced
         criteria: "Two-handed backhand generates topspin and pace comparable to forehand. One-handed players use running backhand down the line. High backhand and stretch backhand executed reliably."
         metrics:
           - "82%+ backhand in rate under match pressure"
           - "Backhand landing depth (within 1 meter of baseline) on 70%+ of topspin shots"
           - "Running backhand (2+ steps outside singles sideline) lands in play on 65%+ of attempts"
+        resources:
+          - title: "Top Tennis Training — Advanced Two-Handed Backhand Power"
+            url: "https://www.youtube.com/watch?v=u4OdUMNJVzk"
+            type: "video"
+        tips:
+          - "Practice the running backhand down-the-line in drills — it is the hardest shot in tennis to execute under pressure but the most effective when pulled off"
       - level: expert
         criteria: "Backhand as a weapon, not a liability. Can redirect pace and produce winners from defensive positions. One-handers use kick-ball with full swing; two-handers generate elite-level topspin."
         metrics:
           - "Backhand winner or forced error rate ≥ 20% in tournament play"
           - "Loss of backhand rally (error + winner against) ≤ 45% of backhand exchanges"
+        resources:
+          - title: "Feel Tennis — Backhand Analysis: Turning Defense into Offense"
+            url: "https://www.youtube.com/watch?v=gfhjCUKLbIo"
+            type: "video"
+        tips:
+          - "Turn your backhand into a weapon by taking the ball early on the rise — this takes time away from your opponent and turns a defensive position into an offensive one"
     tags: ["technical", "defensive", "groundstroke"]
 
   # ── SERVE & RETURN (taught after groundstrokes) ─────────────────────────────
@@ -149,24 +290,70 @@ nodes:
         metrics:
           - "60%+ first serve in rate (6/10 serves land in)"
           - "Second serve double-fault rate ≤ 20%"
+        resources:
+          - title: "Essential Tennis — Tennis Serve for Beginners (Step by Step)"
+            url: "https://www.youtube.com/watch?v=9S_U9v1pKGo"
+            type: "video"
+          - title: "Feel Tennis — Continental Grip and Serve Toss"
+            url: "https://www.youtube.com/watch?v=YH2jFCsIJxo"
+            type: "video"
+        practice:
+          - "10 min: Toss drill — practice the toss without hitting; the ball should land 1 foot in front of and slightly to the right (for right-handers)"
+          - "10 min: Abbreviated serve — start with the racquet already at the trophy position, focus on the throwing motion"
+          - "10 min: 10-serve drill — serve 10 balls, count makes, target 60%+ in rate"
+        projects:
+          - "Hit 6 out of 10 serves in play with a continental grip"
+          - "Play a practice set with a double-fault rate of 20% or lower"
+        tips:
+          - "Don't use a forehand grip to serve — the continental grip feels awkward at first but is essential for developing all serve types (flat, slice, kick) later"
+          - "The most common serve problem is a bad toss — practice your toss until it consistently lands in the same spot; a good toss makes the rest of the serve easy"
       - level: intermediate
         criteria: "Directional placement — can target T, body, or wide on command. Consistent depth past the service line."
         metrics:
           - "75%+ first serve in rate"
           - "Hits intended target zone (T, body, or wide) on 6/10 first serves"
           - "Second serve double-fault rate ≤ 10%"
+        resources:
+          - title: "Top Tennis Training — Serve Placement and Targeting"
+            url: "https://www.youtube.com/watch?v=Z1DXQRQEQGE"
+            type: "video"
+          - title: "Essential Tennis — How to Develop a Reliable Second Serve"
+            url: "https://www.youtube.com/watch?v=7X0C3K22aLI"
+            type: "video"
+        practice:
+          - "15 min: Target zone drill — place cones or towels at T, body, and wide positions, serve 10 to each zone"
+          - "10 min: Second serve consistency drill — serve 20 second serves, target less than 2 double faults"
+          - "5 min: Serve-and-recover drill — serve then immediately split-step for the return"
+        projects:
+          - "Hit intended serve target zone (T, body, or wide) on 6 out of 10 first serves"
+          - "Serve a practice set with 10% or lower double-fault rate"
+        tips:
+          - "Develop a reliable second serve before making your first serve bigger — a weak second serve that you cannot depend on will cost you more points than a bigger first serve wins"
+          - "Vary your serve placement even in practice — never serve to the same spot more than 3 times in a row"
       - level: advanced
         criteria: "Varied spin serves: flat, slice, and kick serve executed reliably. Serve placement disrupts opponent positioning and forces weak returns."
         metrics:
           - "85%+ first serve in rate under match conditions"
           - "Executes all 3 distinct serve types (flat, slice, kick) on command"
           - "Forces weak return (short ball or floating pop-up) on 3/10 serves"
+        resources:
+          - title: "Essential Tennis — Kick Serve Tutorial"
+            url: "https://www.youtube.com/watch?v=aZqJp0BTTPA"
+            type: "video"
+        tips:
+          - "The kick serve is the most important advanced serve to develop — it gives you a reliable, high-bouncing second serve that pushes opponents back and buys you time to set up"
       - level: expert
         criteria: "Serve as a strategic weapon. Disguises spin direction. Uses opponent's positioning and tendencies to dictate serve patterns. Second serve is an offensive weapon in its own right."
         metrics:
           - "88%+ first serve in rate under tournament pressure"
           - "Ace or unreturnable serve rate ≥ 8% in competitive match play"
           - "Second serve direct winner or forced error rate ≥ 15%"
+        resources:
+          - title: "Feel Tennis — Serve Disguise and Pattern Play"
+            url: "https://www.youtube.com/watch?v=xWZJ2pFN7Xs"
+            type: "video"
+        tips:
+          - "Turn your second serve into a weapon by developing a heavy kick serve — an aggressive second serve wins more points than a cautious one and puts pressure on the returner"
     tags: ["technical", "offensive", "measurable", "signature-shot"]
 
   - id: "sports/tennis/return-of-serve"
@@ -182,23 +369,69 @@ nodes:
         metrics:
           - "60%+ return in rate on second serves"
           - "Reaches return position (2 steps behind baseline center) before opponent tosses ball on 8/10 points"
+        resources:
+          - title: "Essential Tennis — Return of Serve Basics"
+            url: "https://www.youtube.com/watch?v=jVfB51V5CmY"
+            type: "video"
+          - title: "Top Tennis Training — Return Position and Timing"
+            url: "https://www.youtube.com/watch?v=jXLIB0TaXvA"
+            type: "video"
+        practice:
+          - "10 min: Partner serves, you return cross-court — count makes out of 20"
+          - "10 min: Split-step timing drill — focus on split-stepping as the server tosses the ball"
+          - "5 min: Return position setup — practice moving to the correct position before each serve"
+        projects:
+          - "Return 60%+ of second serves in play over a practice set"
+          - "Consistently reach return position before the server tosses the ball on 8 out of 10 points"
+        tips:
+          - "Don't stand too close to the baseline to return — stand 2-3 feet behind the baseline so you have time to read the serve"
+          - "Use a compact swing on returns — the server provides the pace, so you just need to redirect the ball"
       - level: intermediate
         criteria: "Directional returns to target zones. Adjusts depth and pace based on serve type (flat vs. kick). Chip-and-charge on short second serves."
         metrics:
           - "75%+ return in rate on both first and second serves"
           - "Returns to intended half of court on 65%+ of returns"
           - "Attacks short second serves (above net height contact point) on 70%+ of opportunities"
+        resources:
+          - title: "Essential Tennis — Aggressive Return Strategy"
+            url: "https://www.youtube.com/watch?v=K3bCd-3YRMU"
+            type: "video"
+          - title: "Feel Tennis — Reading the Serve and Adjusting Your Return"
+            url: "https://www.youtube.com/watch?v=oHg7GMcahRE"
+            type: "video"
+        practice:
+          - "15 min: Directional return drill — partner serves, return to called target (cross-court or down-the-line), track accuracy"
+          - "10 min: Chip-and-charge drill — partner serves second serves, chip return and approach the net"
+          - "10 min: Serve-reading drill — call out the serve direction before it lands, track accuracy"
+        projects:
+          - "Return to intended court half on 65%+ of returns in a practice match"
+          - "Attack 70%+ of short second serves (above net height) with an aggressive return"
+        tips:
+          - "Read the server's toss — a toss to the right (for right-handers) usually means a slice serve going wide; a toss behind the head means a kick serve"
+          - "Step inside the baseline to attack weak second serves — taking the ball early takes time away from the server"
       - level: advanced
         criteria: "Aggressive returns that put server on defensive. Reads spin off the racquet and adjusts contact point. Uses slice backhand return to stay in rally on wide serves."
         metrics:
           - "85%+ return in rate under match pressure"
           - "Forces server into defensive position (behind baseline, wide) on 35%+ of returns"
           - "Slice backhand return lands deep (within 1 meter of baseline) on 75%+ of wide-body serves"
+        resources:
+          - title: "Top Tennis Training — Aggressive Return Tactics for Advanced Players"
+            url: "https://www.youtube.com/watch?v=JRf2EPkQ_nM"
+            type: "video"
+        tips:
+          - "Use the slice backhand return on wide serves to your backhand — it gives you more reach and keeps the ball deep while you recover to center"
       - level: expert
         criteria: "Return as a primary offensive weapon. Reads spin direction before ball leaves server's racquet. Creates break point opportunities consistently through return aggression."
         metrics:
           - "Break point conversion rate ≥ 40% at NTRP 5.0+ level"
           - "Return winner or forced error rate ≥ 20% on second serves"
+        resources:
+          - title: "Feel Tennis — Return of Serve Analysis: Pro-Level Patterns"
+            url: "https://www.youtube.com/watch?v=qE3phHYce1s"
+            type: "video"
+        tips:
+          - "Read the server's racquet face angle and body position at the trophy point — this reveals serve direction 0.2 seconds before contact, which is enough time to load the correct step"
     tags: ["technical", "defensive", "measurable"]
 
   # ── SPIN & NET PLAY (NTRP 3.0-3.5+) ────────────────────────────────────────
@@ -216,23 +449,69 @@ nodes:
         metrics:
           - "Topspin ball visually dips compared to flat ball on 6/10 attempts"
           - "Slice backhand lands shorter than topspin backhand (demonstrating different trajectory) on 7/10 attempts"
+        resources:
+          - title: "Essential Tennis — Understanding Topspin and Slice"
+            url: "https://www.youtube.com/watch?v=dMKpZOT_b-Y"
+            type: "video"
+          - title: "Feel Tennis — How Spin Works in Tennis (Visual Guide)"
+            url: "https://www.youtube.com/watch?v=FTXvCNaWmi4"
+            type: "video"
+        practice:
+          - "10 min: Topspin vs. flat comparison — hit 10 forehands flat and 10 with topspin, observe the difference in trajectory and bounce"
+          - "10 min: Slice backhand practice — focus on keeping racquet face open and cutting under the ball"
+          - "5 min: Spin awareness drill — have a partner hit topspin and slice, call out which spin you see before the bounce"
+        projects:
+          - "Produce a visually noticeable topspin dip on 6 out of 10 forehand attempts"
+          - "Hit slice backhands that stay below knee height on bounce 7 out of 10 times"
+        tips:
+          - "Don't roll your wrist over the ball to create topspin — brush UP on the back of the ball with a low-to-high racquet path; the spin comes from the angle of the racquet path, not wrist manipulation"
+          - "For slice, think of the racquet as a knife cutting under the ball — keep the face slightly open and swing from high to low"
       - level: intermediate
         criteria: "Heavy topspin used to create high-bouncing shots to opponent's backhand. Backhand slice used consistently as defensive weapon and approach shot."
         metrics:
           - "Topspin groundstroke bounces above shoulder height of 5'10\" player on 60%+ of shots from baseline"
           - "Slice backhand stays below knee height at bounce on 65%+ of attempts"
           - "Topspin lob clears net and lands in baseline zone on 6/10 attempts"
+        resources:
+          - title: "Top Tennis Training — Heavy Topspin Technique"
+            url: "https://www.youtube.com/watch?v=qLz6YBuHnwg"
+            type: "video"
+          - title: "Essential Tennis — Topspin Lob Tutorial"
+            url: "https://www.youtube.com/watch?v=rFXYRo9Bytw"
+            type: "video"
+        practice:
+          - "15 min: Heavy topspin drill — exaggerate the low-to-high swing path, aim for balls that bounce above shoulder height"
+          - "10 min: Slice approach shot drill — hit slice approach shots and follow them to the net"
+          - "10 min: Topspin lob practice — hit lobs over a partner standing at the net, landing in the baseline zone"
+        projects:
+          - "Hit topspin groundstrokes that bounce above shoulder height on 60%+ of baseline shots"
+          - "Execute a topspin lob that clears the net player and lands in bounds on 6 out of 10 attempts"
+        tips:
+          - "Use heavy topspin cross-court to your opponent's backhand as your default rally pattern — the high bounce on the backhand side is the hardest shot for most players to handle"
+          - "The slice approach shot should stay LOW after the bounce — if your slice bounces up, you are not cutting under the ball enough"
       - level: advanced
         criteria: "Kick serve (topspin serve) used as reliable second serve weapon. Drives heavy topspin crosscourt from defensive positions to create rally reset. Slice approach shot hugs low and forces opponent to hit up."
         metrics:
           - "Kick serve bounce exceeds shoulder height on 65%+ of attempts"
           - "Slice approach shot bounce height ≤ knee level on 70%+ of attempts"
           - "Topspin passing shot winner or forced error rate ≥ 35% when opponent is at net"
+        resources:
+          - title: "Top Tennis Training — Mastering the Kick Serve"
+            url: "https://www.youtube.com/watch?v=WqmJf82ruCA"
+            type: "video"
+        tips:
+          - "The kick serve is all about the toss — toss the ball over your head (not in front), and swing up and across to create the topspin that makes the ball jump high after bouncing"
       - level: expert
         criteria: "Complete spin vocabulary used strategically: heavy topspin to create angles, slice to neutralize pace, kick serve to attack specific weaknesses. Spin selection invisible to opponent until ball bounces."
         metrics:
           - "Spin type (topspin vs. slice) correctly disguised until contact: rated unreadable by NTRP 5.0+ opponents on 70%+ of spins"
           - "Kick serve ace or forced short return rate ≥ 30% in match play"
+        resources:
+          - title: "Feel Tennis — Spin Disguise and Deception Techniques"
+            url: "https://www.youtube.com/watch?v=P4B7WaLcLqk"
+            type: "video"
+        tips:
+          - "At the expert level, spin disguise comes from using the same body position and backswing for topspin and slice — only the racquet angle and wrist position change at the last moment"
     tags: ["technical", "spin", "advanced"]
 
   - id: "sports/tennis/volley-net-play"
@@ -249,23 +528,69 @@ nodes:
         metrics:
           - "Returns 5/10 mid-court feeds into the service box from net position"
           - "Uses continental grip on ≥70% of volleys"
+        resources:
+          - title: "Essential Tennis — Volley Basics for Beginners"
+            url: "https://www.youtube.com/watch?v=TYL1GcRBHBc"
+            type: "video"
+          - title: "Feel Tennis — Continental Grip for Volleys"
+            url: "https://www.youtube.com/watch?v=FkhdpwUlibg"
+            type: "video"
+        practice:
+          - "10 min: Volley feed drill — partner feeds 10 balls from mid-court, you volley from net position into the service box"
+          - "10 min: Volley-to-volley exchange — both players at the net, exchange volleys, count consecutive makes"
+          - "5 min: Grip check — volley 10 balls and check continental grip between each set of 5"
+        projects:
+          - "Return 5 out of 10 mid-court feeds into the service box from net position"
+          - "Use the continental grip on every volley for an entire practice session"
+        tips:
+          - "Don't swing at volleys — use a short punch motion; the ball should redirect off the racquet face, not be hit with a full stroke"
+          - "Keep the racquet head above the wrist on all volleys — a dropped racquet head means weak, inconsistent volleys"
       - level: intermediate
         criteria: "Punch volleys with direction. Approaches net off short balls. Low volleys handled with open face and lift. First volley lands deep to opponent's baseline."
         metrics:
           - "Directional volley lands in intended half of court on 70%+ of attempts from net position"
           - "Approach → first volley → putaway completed successfully on 5/10 approach sequences"
           - "Low volley (below net height) returned in play on 75%+ of attempts"
+        resources:
+          - title: "Top Tennis Training — Approach Shot and First Volley Sequence"
+            url: "https://www.youtube.com/watch?v=XoxKMqvDRsA"
+            type: "video"
+          - title: "Essential Tennis — Low Volley Technique"
+            url: "https://www.youtube.com/watch?v=gMnDyjG3CfI"
+            type: "video"
+        practice:
+          - "15 min: Approach-volley-putaway drill — hit approach shot off short ball, follow to net, volley, put away"
+          - "10 min: Low volley practice — partner feeds balls below net height, practice open-face lift volley"
+          - "10 min: Directional volley drill — volley to forehand side 5 times, backhand side 5 times, track accuracy"
+        projects:
+          - "Complete the approach-volley-putaway sequence successfully on 5 out of 10 attempts"
+          - "Return low volleys (below net height) in play on 75%+ of attempts in a feed drill"
+        tips:
+          - "On low volleys, bend your KNEES to get down to the ball, do not drop the racquet head — dropping the head causes the ball to float up"
+          - "Approach the net on short balls — if the ball bounces inside the service line, that is your cue to come forward"
       - level: advanced
         criteria: "Drop volleys and angle volleys executed at appropriate moments. Touch volleys from half-volley position. Net position won within 2 shots of approach. Poaches in doubles."
         metrics:
           - "Net point winning percentage ≥ 60% across a match"
           - "Drop volley lands in the service box on 70%+ of attempts"
           - "Poach results in winner or forced error on 40%+ of poach attempts in doubles"
+        resources:
+          - title: "Essential Tennis — Drop Volley and Angle Volley"
+            url: "https://www.youtube.com/watch?v=3v5Jd6QTRWM"
+            type: "video"
+        tips:
+          - "Use the drop volley when your opponent is deep behind the baseline — the contrast between a deep first volley and a soft drop volley is devastating"
       - level: expert
         criteria: "Net game dominates opponents. Reaction volleys off hard drives turned into angles. Reads opponent lob early and handles with overhead or repositioning. Volleys are a category weapon in match tactics."
         metrics:
           - "Net point winning percentage ≥ 70% in tournament play"
           - "0 half-volley errors per set at net position"
+        resources:
+          - title: "Feel Tennis — Net Game Analysis: Federer's Volley Mastery"
+            url: "https://www.youtube.com/watch?v=JnlUhx1HLxo"
+            type: "video"
+        tips:
+          - "Train reaction volleys by having a partner hit drives directly at you from the baseline — this develops the reflexes needed to handle pace at the net in match play"
     tags: ["net-play", "finishing", "technical"]
 
   - id: "sports/tennis/overhead-smash"
@@ -280,21 +605,56 @@ nodes:
         criteria: "Makes contact with overhead balls and returns them in bounds. Tracks the ball and positions behind it."
         metrics:
           - "Contacts 6/10 balls above shoulder height and returns in play"
+        resources:
+          - title: "Essential Tennis — Overhead Smash for Beginners"
+            url: "https://www.youtube.com/watch?v=P7pZuRWNmlo"
+            type: "video"
+        practice:
+          - "10 min: Partner lobs 10 balls, you track and hit overheads, count makes in play"
+          - "5 min: Tracking drill — partner lobs, point at the ball with your non-racquet hand without hitting"
+        projects:
+          - "Return 6 out of 10 overhead balls in bounds from a lob feed"
+        tips:
+          - "Turn sideways and point at the ball with your non-racquet hand — this keeps you balanced and helps you track the ball"
       - level: intermediate
         criteria: "Putaway smashes on comfortable mid-court lobs. Tracks lobs and sets up correctly. Overhead directed away from opponent."
         metrics:
           - "Puts away 65%+ of smashable overheads (lobs not passing the service line)"
           - "Overhead directed to intended court half on 70%+ of attempts"
+        resources:
+          - title: "Top Tennis Training — Overhead Placement and Footwork"
+            url: "https://www.youtube.com/watch?v=1vFqNPbSVDA"
+            type: "video"
+        practice:
+          - "10 min: Directional overhead drill — smash 10 balls aiming at the deuce side, 10 at the ad side"
+          - "10 min: Overhead-after-volley sequence — volley, partner lobs, you smash"
+        projects:
+          - "Put away 65%+ of smashable overheads in a 10-ball feed drill"
+          - "Direct overheads to the intended court half on 7 out of 10 attempts"
+        tips:
+          - "Do not let the ball drop too low before hitting — make contact at full arm extension above your head for maximum power and control"
       - level: advanced
         criteria: "Jump smashes on deep lobs. Overhead executed on the run. Angle smashes to open court. Second overhead (after opponent retrieves) executed consistently."
         metrics:
           - "Overhead winner or forced error rate ≥ 80% on attackable balls (lobs landing in service box)"
           - "Jump smash executed within 3 steps on deep retreating lob on 65%+ of opportunities"
+        resources:
+          - title: "Essential Tennis — Jump Smash and Scissor Kick Overhead"
+            url: "https://www.youtube.com/watch?v=xmv9rGmH9kI"
+            type: "video"
+        tips:
+          - "On deep lobs, use a scissor kick (jump and switch legs mid-air) to generate power while moving backward — this technique prevents you from falling backward off balance"
       - level: expert
         criteria: "Overhead as a point-ending weapon from any position. Disguises direction. Handles high deep lobs with scissor kick and swinging overhead. 0 overhead liability under tournament pressure."
         metrics:
           - "0–1 overhead errors per set in match play"
           - "Overhead winner rate ≥ 70% across a full match"
+        resources:
+          - title: "Feel Tennis — Pro Overhead Analysis and Direction Disguise"
+            url: "https://www.youtube.com/watch?v=f7SFFQZ_Ksc"
+            type: "video"
+        tips:
+          - "Disguise your overhead direction by using the same body position regardless of where you aim — your opponent should not be able to read the target until the ball is struck"
     tags: ["finishing", "power", "net-play"]
 
   # ── COGNITIVE LAYER (NTRP 4.0+) ────────────────────────────────────────────
@@ -310,24 +670,69 @@ nodes:
         metrics:
           - "Cross-court preference on neutral balls (vs. down-the-line): 70%+ of shots"
           - "Can explain 3 basic tactical principles (safety margin, high percentage, center rally) without prompting"
+        resources:
+          - title: "Essential Tennis — 3 Simple Tennis Strategies That Win Matches"
+            url: "https://www.youtube.com/watch?v=CpIrKHC90Bs"
+            type: "video"
+          - title: "Feel Tennis — Why You Should Hit Cross-Court"
+            url: "https://www.youtube.com/watch?v=FhGsF1oMEUM"
+            type: "video"
+        practice:
+          - "15 min: Cross-court rally game — play points where both players must hit cross-court only"
+          - "10 min: Watch a match video and identify which player is hitting more cross-court shots"
+        projects:
+          - "Play a practice set hitting cross-court on 70%+ of neutral rally balls"
+          - "Explain 3 basic tactical principles (safety margin, high percentage, center rally) to a partner"
+        tips:
+          - "Hit cross-court as your default — the net is lower in the middle, the court is longer diagonally, and cross-court shots keep you in a strong recovery position"
+          - "Don't aim for the lines — give yourself 2-3 feet of margin inside the lines; consistency beats precision at the beginner level"
       - level: intermediate
         criteria: "Identifies opponent weaknesses (backhand, high ball, net). Constructs rally patterns: pushes opponent wide → approaches open court. Manages pressure points differently than normal points."
         metrics:
           - "Identifies and targets opponent's weaker shot on 65%+ of points"
           - "Converts break points at or above game average (not below) in a set"
           - "Approach shot landing zone (within 1 meter of baseline) before net advance on 75%+ of approaches"
+        resources:
+          - title: "Top Tennis Training — How to Find and Exploit Opponent Weaknesses"
+            url: "https://www.youtube.com/watch?v=UikJoxwBbJY"
+            type: "video"
+          - title: "Essential Tennis — Constructing Points with Rally Patterns"
+            url: "https://www.youtube.com/watch?v=9KVYJ8GDFwY"
+            type: "video"
+        practice:
+          - "15 min: Weakness targeting drill — play a set where you must identify your opponent's weakness after the first 2 games and target it for the rest"
+          - "10 min: Approach shot drill — hit approach shots deep, then come to the net on short balls"
+          - "10 min: Pressure point simulation — play games starting at 30-30 to practice clutch situations"
+        projects:
+          - "Identify and target your opponent's weaker shot on 65%+ of points in a practice match"
+          - "Convert break points at or above your game average in a practice set"
+        tips:
+          - "Most recreational players have a weaker backhand — test it early in the match by hitting 3-4 balls to the backhand and see how they respond"
+          - "On break points, play your highest-percentage pattern — this is not the time to try something new"
       - level: advanced
         criteria: "Pattern play: constructs 3-shot sequences (open court, wrong-foot, approach) deliberately. Adjusts strategy between sets when current plan isn't working. Uses score situational awareness (30-40 vs. 40-0 tactics differ)."
         metrics:
           - "Tactical pattern (defined 3-shot sequence) executed to correct conclusion on 6/10 attempts per pattern type"
           - "Second set win rate after losing first set: ≥ 45% (adapts successfully)"
           - "Break point opportunities created per service game: ≥ 1.5 average"
+        resources:
+          - title: "Essential Tennis — 3-Shot Pattern Play for Competitive Players"
+            url: "https://www.youtube.com/watch?v=8CJKxdW9aP4"
+            type: "video"
+        tips:
+          - "If your plan is not working after the first set, change something concrete — serve placement, rally direction, or net approach frequency; vague adjustments like 'play better' do not work"
       - level: expert
         criteria: "Complete game management: controls tempo, dictates rally pattern from first shot of each point, exploits physical and mental fatigue. Adjusts tactics under time pressure and at critical score moments."
         metrics:
           - "Win rate from tied 5-5 game score ≥ 55% in tournament match play"
           - "Tactical adjustment time: within 3 games of recognizing a new pattern that isn't working"
           - "Double break (two breaks of serve in a set) conversion rate ≥ 70%"
+        resources:
+          - title: "Feel Tennis — Match Management: How the Pros Control Tempo"
+            url: "https://www.youtube.com/watch?v=Y_xmkjEvz4A"
+            type: "video"
+        tips:
+          - "Control the tempo deliberately — slow down between points when ahead (use your towel, walk slowly) and speed up when your opponent has momentum; tempo control is a legal and effective tactic"
     tags: ["cognitive", "strategy", "advanced"]
 
   - id: "sports/tennis/mental-game"
@@ -344,24 +749,69 @@ nodes:
         criteria: "Keeps trying after unforced errors. Does not visibly give up on games or sets. Plays each point as a fresh start."
         metrics:
           - "Rallies after losing 3 consecutive points without withdrawing effort (observer-rated) on 8/10 occurrences"
+        resources:
+          - title: "Essential Tennis — Mental Toughness for Beginners"
+            url: "https://www.youtube.com/watch?v=tRIuMPkF__M"
+            type: "video"
+          - title: "Feel Tennis — How to Reset After Errors"
+            url: "https://www.youtube.com/watch?v=HjPRCslj_BI"
+            type: "video"
+        practice:
+          - "10 min: Play a practice set where after every error, you take a deep breath, bounce on your toes, and reset before the next point"
+          - "10 min: Intentional adversity drill — start every game down 0-30 and practice fighting back"
+        projects:
+          - "Play a full match without visibly giving up on any point, even when losing badly"
+          - "Develop a personal pre-point reset routine (e.g., adjust strings, take a breath, bounce)"
+        tips:
+          - "Treat every point as 0-0 — the score does not matter for the current point; what matters is your effort and decision on THIS ball"
+          - "After an unforced error, do not replay it in your head — physically reset (bounce on your toes, adjust your strings) to break the mental loop"
       - level: intermediate
         criteria: "Bounces back after losing a set. Uses a consistent pre-point routine to reset focus. Does not argue calls or display destructive behavior."
         metrics:
           - "Pre-point routine (bounce, breath, or physical reset) used before ≥80% of service points"
           - "Win rate in second set after losing first set: ≥ 40%"
           - "0 code-of-conduct violations per match"
+        resources:
+          - title: "Essential Tennis — Developing a Pre-Point Routine"
+            url: "https://www.youtube.com/watch?v=CvhXu4fxLIE"
+            type: "video"
+          - title: "Top Tennis Training — Bouncing Back After Losing a Set"
+            url: "https://www.youtube.com/watch?v=QpYdX5_RzAo"
+            type: "video"
+        practice:
+          - "Full match: Use your pre-point routine before EVERY serve for an entire match — track compliance"
+          - "10 min: Pressure set drill — play a set starting down 0-3 and practice the comeback mindset"
+          - "5 min: Breathing exercise — practice 4-7-8 breathing (inhale 4 sec, hold 7, exhale 8) between changeovers"
+        projects:
+          - "Use your pre-point routine before 80%+ of service points across a full match"
+          - "Win the second set after losing the first set at least once in your next 5 matches"
+        tips:
+          - "A pre-point routine is not optional — it is the single most effective mental tool in tennis; pick one (bounce ball, adjust strings, deep breath) and use it before EVERY serve"
+          - "After losing a set, sit at the changeover, take 3 deep breaths, and identify ONE specific thing to change in the next set — do not try to fix everything at once"
       - level: advanced
         criteria: "Thrives on pressure points (break points, tiebreaks). Recognizes and combats own negative self-talk patterns. Momentum management: responds differently after errors vs. winners."
         metrics:
           - "Tiebreak win rate: ≥ 50% (performs at or above baseline under maximum pressure)"
           - "Break point save rate: ≥ 55% when serving"
           - "Points won after an unforced error: ≥ 55% (resets and recovers)"
+        resources:
+          - title: "Essential Tennis — Performing Under Pressure on Big Points"
+            url: "https://www.youtube.com/watch?v=cW6HFZyGjlY"
+            type: "video"
+        tips:
+          - "After winning a big point, keep your composure — many players celebrate too early and lose focus on the next point; stay in your routine"
       - level: expert
         criteria: "Mental game as a competitive weapon. Reads opponent's mental state and applies pressure at their weakest moments. Performs above baseline on the biggest points in a match."
         metrics:
           - "Win rate on set points (when opponent is serving for the set): ≥ 50%"
           - "Super-tiebreak (10-point) win rate: ≥ 55% in tournament play"
           - "Match comeback rate (winning from one set and 3-5 down): measurable above zero in competitive matches"
+        resources:
+          - title: "Feel Tennis — Mental Warfare: Reading and Exploiting Opponent Psychology"
+            url: "https://www.youtube.com/watch?v=r5AJhDJdXUE"
+            type: "video"
+        tips:
+          - "Watch for signs your opponent is mentally cracking — rushed serving, avoiding eye contact, negative body language — and apply maximum tactical pressure at those moments"
     tags: ["mental", "composure", "competitive"]
 
 relationships:
