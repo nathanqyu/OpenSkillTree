@@ -2,7 +2,14 @@
 
 import { useState, useCallback, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
-import type { SkillNode, SkillEdge, EphemeralProgressMap, UserProgressStatus } from "@/types/skill-tree";
+import type {
+  SkillNode,
+  SkillEdge,
+  EphemeralProgressMap,
+  EphemeralLevelMap,
+  BenchmarkLevelValue,
+  UserProgressStatus,
+} from "@/types/skill-tree";
 import { SkillTreeGraph } from "./SkillTreeGraph";
 import { NodeDetailPanel } from "./NodeDetailPanel";
 
@@ -14,13 +21,12 @@ interface SkillTreeClientProps {
 
 export function SkillTreeClient({ treeId, nodes, edges }: SkillTreeClientProps) {
   const searchParams = useSearchParams();
-  // ?node=<uuid> — auto-select a node when arriving from search results
   const initialNodeId = searchParams.get("node") ?? null;
 
   const [selectedNodeId, setSelectedNodeId] = useState<string | null>(initialNodeId);
   const [progressMap, setProgressMap] = useState<EphemeralProgressMap>({});
+  const [levelMap, setLevelMap] = useState<EphemeralLevelMap>({});
 
-  // If the URL ?node param changes (e.g. browser back/forward), sync selection
   useEffect(() => {
     setSelectedNodeId(searchParams.get("node") ?? null);
   }, [searchParams]);
@@ -36,6 +42,13 @@ export function SkillTreeClient({ treeId, nodes, edges }: SkillTreeClientProps) 
   const handleProgressChange = useCallback(
     (nodeId: string, status: UserProgressStatus) => {
       setProgressMap((prev) => ({ ...prev, [nodeId]: status }));
+    },
+    []
+  );
+
+  const handleLevelChange = useCallback(
+    (nodeId: string, level: BenchmarkLevelValue | null) => {
+      setLevelMap((prev) => ({ ...prev, [nodeId]: level }));
     },
     []
   );
@@ -59,7 +72,9 @@ export function SkillTreeClient({ treeId, nodes, edges }: SkillTreeClientProps) 
         allEdges={edges}
         treeId={treeId}
         progressMap={progressMap}
+        levelMap={levelMap}
         onProgressChange={handleProgressChange}
+        onLevelChange={handleLevelChange}
         onGraphNavigate={handleGraphNavigate}
         onClose={handleClose}
       />

@@ -39,10 +39,20 @@ const validateTree = ajv.compile(rawSchema);
 // Types mirroring the YAML structure
 // ---------------------------------------------------------------------------
 
+interface YamlResource {
+  title: string;
+  url: string;
+  type?: "video" | "article" | "course" | "book" | "tool" | "exercise";
+}
+
 interface YamlBenchmark {
   level: "beginner" | "intermediate" | "advanced" | "expert";
   criteria: string;
   metrics?: string[];
+  resources?: YamlResource[];
+  practice?: string[];
+  projects?: string[];
+  tips?: string[];
 }
 
 interface YamlNode {

@@ -33,7 +33,9 @@ const defaultProps = {
   allEdges: mockEdges,
   treeId: TREE_ID,
   progressMap: {},
+  levelMap: {},
   onProgressChange: vi.fn(),
+  onLevelChange: vi.fn(),
   onGraphNavigate: vi.fn(),
   onClose: vi.fn(),
 };
@@ -57,7 +59,9 @@ describe("NodeDetailPanel", () => {
 
   it("renders benchmark criteria text", () => {
     render(<NodeDetailPanel {...defaultProps} />);
-    expect(screen.getByText(/60% consistency/)).toBeInTheDocument();
+    // Criteria may appear in both "What to Do Next" and benchmark card sections
+    const matches = screen.getAllByText(/60% consistency/);
+    expect(matches.length).toBeGreaterThanOrEqual(1);
   });
 
   it("renders benchmark metrics when present", () => {

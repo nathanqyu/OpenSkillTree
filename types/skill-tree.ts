@@ -63,24 +63,34 @@ export interface SkillTreeWithGraph extends SkillTree {
 // SkillNode
 // ---------------------------------------------------------------------------
 
+/** A learning resource (tutorial, video, course, etc.) linked from a benchmark. */
+export interface BenchmarkResource {
+  title: string;
+  url: string;
+  type?: "video" | "article" | "course" | "book" | "tool" | "exercise";
+}
+
 /**
  * A benchmark describes mastery criteria at a specific level within a skill.
  *
  * Design note: structured (not free-form markdown) so tooling can render level
  * selectors, filter by level, and compare benchmarks across trees programmatically.
  * The `metrics` array captures quantitative targets where they exist.
- *
- * Example:
- *   {
- *     level: "beginner",
- *     criteria: "Can execute 5 serves in a row with > 60% first-serve percentage.",
- *     metrics: ["≥ 60% first-serve %", "5 consecutive serves"]
- *   }
+ * The `resources`, `practice`, `projects`, and `tips` arrays provide actionable
+ * "what to do next" guidance for learners at each level.
  */
 export interface SkillBenchmark {
   level: "beginner" | "intermediate" | "advanced" | "expert";
   criteria: string;
   metrics?: string[];
+  /** Tutorials, videos, courses, or tools to help reach this level. */
+  resources?: BenchmarkResource[];
+  /** Specific drills, exercises, or practice routines with time estimates. */
+  practice?: string[];
+  /** Concrete things to build, achieve, or demonstrate at this level. */
+  projects?: string[];
+  /** Common mistakes and how to avoid them. */
+  tips?: string[];
 }
 
 /**
@@ -259,3 +269,11 @@ export interface SearchResponse {
  * Stored in sessionStorage as JSON.
  */
 export type EphemeralProgressMap = Record<Uuid, UserProgressStatus>;
+
+/**
+ * Per-node level self-assessment. Maps nodeId to the highest benchmark level
+ * the user feels they've reached. null = not assessed (show beginner guidance).
+ * Used by the "What to Do Next" section to determine which level's resources to show.
+ */
+export type BenchmarkLevelValue = SkillBenchmark["level"];
+export type EphemeralLevelMap = Record<Uuid, BenchmarkLevelValue | null>;

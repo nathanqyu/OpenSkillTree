@@ -48,6 +48,24 @@ nodes:
           - "Completes PCEP module 1 exercises with ≥70% first-attempt pass rate"
           - "Zero syntax errors in scripts reviewed by a peer"
           - "Can create a .py file, run it from the terminal, and explain the output"
+        resources:
+          - title: "CS50P - Lecture 0: Functions, Variables"
+            url: "https://cs50.harvard.edu/python/2022/weeks/0/"
+            type: "course"
+          - title: "Python Official Tutorial - An Informal Introduction"
+            url: "https://docs.python.org/3/tutorial/introduction.html"
+            type: "article"
+          - title: "Automate the Boring Stuff - Chapter 1: Python Basics"
+            url: "https://automatetheboringstuff.com/2e/chapter1/"
+            type: "book"
+        practice:
+          - "Open the Python REPL and experiment with each data type (str, int, float, bool, list, dict) for 15 minutes"
+          - "Write a script that asks for user input and prints a formatted greeting using f-strings (20 minutes)"
+        projects:
+          - "Build a simple tip calculator that takes bill amount, tip percentage, and number of people, then prints each person's share"
+        tips:
+          - "Do not memorize syntax — type it out in the REPL. Muscle memory builds faster than flashcards."
+          - "If you get a NameError, check your spelling and capitalization. Python is case-sensitive: 'Name' and 'name' are different variables."
       - level: intermediate
         criteria: >
           Chooses the right collection type for the job (list vs. tuple vs. set vs. dict).
@@ -56,6 +74,21 @@ nodes:
         metrics:
           - "Correctly selects collection type in 9/10 design scenarios"
           - "Code review: no type misuse comments on collections in ≥3 consecutive PRs"
+        resources:
+          - title: "Real Python - Lists and Tuples in Python"
+            url: "https://realpython.com/python-lists-tuples/"
+            type: "article"
+          - title: "MIT OCW 6.100L - Lecture 5: Tuples, Lists, Mutability"
+            url: "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/"
+            type: "course"
+        practice:
+          - "Convert 5 pieces of code that use the wrong collection type to the right one (30 minutes)"
+          - "Rewrite 3 for-loops as list comprehensions and compare readability (20 minutes)"
+        projects:
+          - "Build a contact book CLI app that stores contacts in a dict of dicts, supports add/search/delete, and saves to JSON"
+        tips:
+          - "The #1 bug: mutating a list while iterating over it. Always iterate over a copy (list[:]) or use a comprehension instead."
+          - "If two variables point to the same list, changing one changes both. Use .copy() or list() to make an independent copy."
       - level: advanced
         criteria: >
           Uses type annotations throughout. Understands Python's data model (dunder
@@ -64,6 +97,12 @@ nodes:
         metrics:
           - "100% of new functions include type hints (mypy/pyright passes)"
           - "Peer review: 0 'what does this mean?' comments on syntax in last 5 PRs"
+        resources:
+          - title: "Real Python - Python Type Checking Guide"
+            url: "https://realpython.com/python-type-checking/"
+            type: "article"
+        tips:
+          - "Start adding type hints to function signatures first, not every variable. Gradual typing is how real teams adopt it."
       - level: expert
         criteria: >
           Deep understanding of CPython internals: object model, reference counting,
@@ -72,6 +111,12 @@ nodes:
         metrics:
           - "Can explain behavior of id(), is, == for any Python object without looking it up"
           - "At least 1 codebase-level syntax/typing improvement shipped per quarter"
+        resources:
+          - title: "CPython Internals Book (free online)"
+            url: "https://realpython.com/cpython-source-code-guide/"
+            type: "article"
+        tips:
+          - "Metaclasses and descriptors are rarely the right tool. Exhaust dataclasses, protocols, and __init_subclass__ first."
     tags: ["foundation", "syntax", "beginner-friendly"]
 
   - id: "technology/python/control-flow-functions"
@@ -86,6 +131,21 @@ nodes:
         metrics:
           - "Passes PCEP control-flow exercises with ≥75% accuracy"
           - "Functions have ≤3 levels of nesting in all scripts written"
+        resources:
+          - title: "CS50P - Lecture 1: Conditionals & Lecture 2: Loops"
+            url: "https://cs50.harvard.edu/python/2022/weeks/1/"
+            type: "course"
+          - title: "Automate the Boring Stuff - Chapter 2: Flow Control"
+            url: "https://automatetheboringstuff.com/2e/chapter2/"
+            type: "book"
+        practice:
+          - "Write a number-guessing game using while loops and if/else (30 minutes)"
+          - "Refactor a 50-line script into 3-4 small functions, each with a clear purpose (30 minutes)"
+        projects:
+          - "Build a Rock-Paper-Scissors game with input validation, score tracking, and a play-again loop"
+        tips:
+          - "The #1 beginner mistake: putting too much logic in one function. If your function is longer than 15 lines, split it."
+          - "Use 'return' to send values back from functions, not 'print'. Print is for humans; return is for code."
       - level: intermediate
         criteria: >
           Uses default and keyword arguments, *args/**kwargs. Understands scope (LEGB).
@@ -93,6 +153,21 @@ nodes:
         metrics:
           - "Functions average ≤20 lines of code in new code written"
           - "No global variable side-effects in any new function"
+        resources:
+          - title: "Real Python - Defining Your Own Python Function"
+            url: "https://realpython.com/defining-your-own-python-function/"
+            type: "article"
+          - title: "Codecademy - Learn Python 3: Functions"
+            url: "https://www.codecademy.com/learn/learn-python-3"
+            type: "course"
+        practice:
+          - "Take 3 existing functions and add default arguments and keyword-only arguments (20 minutes)"
+          - "Replace 5 explicit for-loops with comprehensions and compare readability (25 minutes)"
+        projects:
+          - "Build a CLI expense tracker with functions for add, remove, summarize-by-category, and export to CSV"
+        tips:
+          - "Never use a mutable default argument (def f(items=[])). Use None and create the list inside the function."
+          - "If you find yourself passing the same 4+ arguments to every function, that is a sign you need a class or a config dict."
       - level: advanced
         criteria: >
           Uses closures, decorators, and higher-order functions effectively. Applies
@@ -101,6 +176,12 @@ nodes:
         metrics:
           - "Implements at least 2 custom decorators for cross-cutting concerns (logging, retry)"
           - "Recursion used correctly with 0 stack-overflow bugs in production"
+        resources:
+          - title: "Real Python - Primer on Python Decorators"
+            url: "https://realpython.com/primer-on-python-decorators/"
+            type: "article"
+        tips:
+          - "Always use @functools.wraps in your decorators, or the decorated function loses its name and docstring."
       - level: expert
         criteria: >
           Function design as an API surface: writes functions that are easy to use correctly
@@ -109,6 +190,12 @@ nodes:
         metrics:
           - "New public APIs require ≤1 follow-up question from consumers"
           - "Code review: function design approved without change on 85%+ of first submissions"
+        resources:
+          - title: "Talk: Stop Writing Classes (PyCon, Jack Diederich)"
+            url: "https://www.youtube.com/watch?v=o9pEzgHorH0"
+            type: "video"
+        tips:
+          - "The best function API uses keyword-only arguments for anything that is not obvious from the call site. Use the * separator."
     tags: ["foundation", "logic", "functions"]
 
   - id: "technology/python/error-handling-debugging"
@@ -122,6 +209,21 @@ nodes:
         criteria: "Uses try/except to catch exceptions. Can read a traceback and identify the error line."
         metrics:
           - "Zero unhandled exceptions in submitted scripts for ≥3 consecutive assignments"
+        resources:
+          - title: "CS50P - Lecture 3: Exceptions"
+            url: "https://cs50.harvard.edu/python/2022/weeks/3/"
+            type: "course"
+          - title: "Real Python - Python Exceptions: An Introduction"
+            url: "https://realpython.com/python-exceptions/"
+            type: "article"
+        practice:
+          - "Take a working script and intentionally cause 5 different exception types, then add try/except for each (30 minutes)"
+          - "Read 5 tracebacks and identify the file, line number, and error type within 2 minutes each (10 minutes)"
+        projects:
+          - "Add error handling to your tip calculator or contact book so it never crashes on bad user input"
+        tips:
+          - "Never use a bare 'except:' — it swallows every error, including typos and KeyboardInterrupt, making bugs invisible."
+          - "Read the traceback from the BOTTOM up. The last line tells you the error type; the lines above show where it happened."
       - level: intermediate
         criteria: >
           Catches specific exception types (not bare except). Uses finally and context
@@ -130,6 +232,20 @@ nodes:
         metrics:
           - "All exception handlers catch specific types in 100% of code written"
           - "Mean time to diagnose a bug using debugger: ≤15 minutes for medium complexity bugs"
+        resources:
+          - title: "Real Python - Python Debugging With pdb"
+            url: "https://realpython.com/python-debugging-pdb/"
+            type: "article"
+          - title: "Python Docs - Errors and Exceptions"
+            url: "https://docs.python.org/3/tutorial/errors.html"
+            type: "article"
+        practice:
+          - "Set a breakpoint with 'breakpoint()' in a script and step through 10 lines with pdb commands (n, s, p, c) (20 minutes)"
+          - "Audit an existing project: replace every bare 'except' with a specific exception type (30 minutes)"
+        projects:
+          - "Build a file-processing script that logs warnings for bad rows, raises custom errors for corrupt files, and never crashes"
+        tips:
+          - "Use 'raise ... from e' to chain exceptions. Without it, the original cause is lost and debugging becomes much harder."
       - level: advanced
         criteria: >
           Designs custom exception hierarchies for domain errors. Implements structured
@@ -138,6 +254,12 @@ nodes:
         metrics:
           - "Custom exceptions cover ≥80% of domain error cases in owned modules"
           - "Logging setup enables root-cause diagnosis from logs alone on 85%+ of prod incidents"
+        resources:
+          - title: "Real Python - Logging in Python"
+            url: "https://realpython.com/python-logging/"
+            type: "article"
+        tips:
+          - "Use logging.getLogger(__name__) per module, not a single root logger. This gives you granular control over log levels."
       - level: expert
         criteria: >
           Error handling as a product feature: errors surface actionable information to
@@ -146,6 +268,12 @@ nodes:
         metrics:
           - "MTTR for P1 incidents in owned services: ≤30 minutes"
           - "0 incidents where root cause was obscured by missing logs or swallowed exceptions"
+        resources:
+          - title: "Real Python - Python Logging: A Stroll Through the Source Code"
+            url: "https://realpython.com/python-logging-source-code/"
+            type: "article"
+        tips:
+          - "Structured logging (JSON format) pays for itself the moment you need to search logs at scale. Adopt it before you need it."
     tags: ["reliability", "debugging", "production"]
 
   # ── FILE I/O & STDLIB (taught before OOP in every major curriculum) ─────────
@@ -162,6 +290,21 @@ nodes:
         criteria: "Opens, reads, writes, and closes files using open() with context managers. Reads CSV and JSON."
         metrics:
           - "Completes file I/O exercises without resource leaks (context managers used 100% of the time)"
+        resources:
+          - title: "Automate the Boring Stuff - Chapter 9: Reading and Writing Files"
+            url: "https://automatetheboringstuff.com/2e/chapter9/"
+            type: "book"
+          - title: "CS50P - Lecture 6: File I/O"
+            url: "https://cs50.harvard.edu/python/2022/weeks/6/"
+            type: "course"
+        practice:
+          - "Write a script that reads a CSV file and prints a summary of each column (30 minutes)"
+          - "Read a JSON file, modify one field, and write it back with proper indentation (20 minutes)"
+        projects:
+          - "Build a personal expense logger that appends entries to a CSV file, then reads and summarizes spending by category"
+        tips:
+          - "Always use 'with open(...)' instead of manually calling .close(). The context manager handles cleanup even if an error occurs."
+          - "Specify encoding='utf-8' explicitly when opening text files. The default encoding varies by OS and causes subtle bugs."
       - level: intermediate
         criteria: >
           Uses pathlib for path manipulation. Handles binary vs. text mode, encodings.
@@ -169,6 +312,20 @@ nodes:
         metrics:
           - "Uses pathlib (not os.path string concat) in 100% of new file-path code"
           - "Can solve 8/10 common scripting tasks using only stdlib (no third-party packages)"
+        resources:
+          - title: "Real Python - Python's pathlib Module: Taming the File System"
+            url: "https://realpython.com/python-pathlib/"
+            type: "article"
+          - title: "Python Module of the Week (PyMOTW-3)"
+            url: "https://pymotw.com/3/"
+            type: "article"
+        practice:
+          - "Rewrite an existing script to use pathlib instead of os.path for all file operations (30 minutes)"
+          - "Write a regex that extracts email addresses from a text file using the re module (20 minutes)"
+        projects:
+          - "Build a file organizer script that sorts files in a folder into subfolders by extension using pathlib and shutil"
+        tips:
+          - "Use pathlib.Path('/some/path') / 'subdir' / 'file.txt' for path joining. Never concatenate strings with '/' or '\\\\'."
       - level: advanced
         criteria: >
           Uses shutil, tempfile, glob, itertools, functools, contextlib fluently.
@@ -176,6 +333,12 @@ nodes:
         metrics:
           - "Third-party packages added only when stdlib equivalent does not exist"
           - "Custom context manager in use in ≥1 production module"
+        resources:
+          - title: "Python Docs - contextlib — Utilities for with-statement contexts"
+            url: "https://docs.python.org/3/library/contextlib.html"
+            type: "article"
+        tips:
+          - "Use @contextlib.contextmanager to write context managers as generator functions. It is far simpler than implementing __enter__/__exit__."
       - level: expert
         criteria: >
           Contributes improvements to shared internal stdlib wrappers. Evaluates
@@ -183,6 +346,12 @@ nodes:
           Teaches stdlib fluency to junior engineers.
         metrics:
           - "Stdlib usage enables team to ship features 10%+ faster vs. equivalent third-party approach (documented cases)"
+        resources:
+          - title: "Python Docs - The Python Standard Library"
+            url: "https://docs.python.org/3/library/index.html"
+            type: "article"
+        tips:
+          - "Before adding a dependency, search the stdlib. collections, itertools, functools, and operator cover most utility needs."
     tags: ["stdlib", "file-io", "scripting"]
 
   # ── OBJECT-ORIENTED PROGRAMMING (introduced ~60-70% through intro courses) ──
@@ -198,6 +367,21 @@ nodes:
         criteria: "Defines classes with __init__, instance attributes, and methods. Creates objects and calls methods."
         metrics:
           - "Writes a working class with ≥3 methods from scratch in under 20 minutes"
+        resources:
+          - title: "CS50P - Lecture 8: Object-Oriented Programming"
+            url: "https://cs50.harvard.edu/python/2022/weeks/8/"
+            type: "course"
+          - title: "Real Python - Object-Oriented Programming in Python 3"
+            url: "https://realpython.com/python3-object-oriented-programming/"
+            type: "article"
+        practice:
+          - "Define a BankAccount class with deposit, withdraw, and balance methods, then test it in the REPL (30 minutes)"
+          - "Model a real-world object as a class with at least 3 attributes and 3 methods (25 minutes)"
+        projects:
+          - "Build a Library Management System with Book, Member, and Library classes that tracks checkouts and returns"
+        tips:
+          - "Do not put all logic inside one giant class. If your class has 10+ methods, it is probably doing too many jobs — split it."
+          - "Always define __repr__ on your classes so you can debug them. Without it, print(obj) shows something useless."
       - level: intermediate
         criteria: >
           Uses inheritance and super() correctly. Implements __repr__, __str__, __eq__.
@@ -206,6 +390,20 @@ nodes:
         metrics:
           - "Inheritance hierarchies used correctly with 0 MRO-related bugs in code reviewed"
           - "All classes have meaningful __repr__ implementations"
+        resources:
+          - title: "Real Python - Inheritance and Composition: A Python OOP Guide"
+            url: "https://realpython.com/inheritance-composition-python/"
+            type: "article"
+          - title: "MIT OCW 6.100L - Lecture 8: Classes and OOP"
+            url: "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/"
+            type: "course"
+        practice:
+          - "Add __repr__, __str__, and __eq__ to 3 existing classes and verify behavior in the REPL (20 minutes)"
+          - "Refactor a class hierarchy to use composition instead of inheritance and compare the result (30 minutes)"
+        projects:
+          - "Build a shapes hierarchy (Shape, Circle, Rectangle, Triangle) with area/perimeter methods using inheritance and @property"
+        tips:
+          - "The most common inheritance bug: forgetting to call super().__init__() in the child class, which skips parent setup."
       - level: advanced
         criteria: >
           Designs inheritance vs. composition tradeoffs deliberately. Uses abstract
@@ -214,6 +412,12 @@ nodes:
         metrics:
           - "Composition preferred over inheritance in ≥60% of class design decisions (justified)"
           - "Uses dataclasses or similar for ≥80% of data-carrying classes"
+        resources:
+          - title: "Real Python - Data Classes in Python 3.7+"
+            url: "https://realpython.com/python-data-classes/"
+            type: "article"
+        tips:
+          - "Default to @dataclass for classes that mainly hold data. Writing __init__, __repr__, __eq__ by hand is busywork the decorator eliminates."
       - level: expert
         criteria: >
           Metaclasses, descriptors, and __init_subclass__ applied where they genuinely
@@ -222,6 +426,12 @@ nodes:
         metrics:
           - "Library APIs using advanced OOP rated 4/5+ for ergonomics in team survey"
           - "0 unnecessary class hierarchies introduced in code owned"
+        resources:
+          - title: "Talk: The Art of Subclassing (PyCon, Raymond Hettinger)"
+            url: "https://www.youtube.com/watch?v=miGolgp9xq8"
+            type: "video"
+        tips:
+          - "Ask 'would a function do the job?' before reaching for a class. Many Python patterns are simpler as functions or modules."
     tags: ["OOP", "design", "architecture"]
 
   # ── PROFESSIONAL PRACTICES ──────────────────────────────────────────────────
@@ -237,6 +447,21 @@ nodes:
         metrics:
           - "Test file exists for every new module submitted"
           - "All tests pass locally before submitting code"
+        resources:
+          - title: "Real Python - Getting Started With Testing in Python"
+            url: "https://realpython.com/python-testing/"
+            type: "article"
+          - title: "CS50P - Lecture 5: Unit Tests"
+            url: "https://cs50.harvard.edu/python/2022/weeks/5/"
+            type: "course"
+        practice:
+          - "Write 3 test functions for an existing function using assert statements and run them with 'pytest' (20 minutes)"
+          - "Practice the red-green-refactor cycle: write a failing test, make it pass, clean up (30 minutes)"
+        projects:
+          - "Add a test_*.py file for every module in your contact book or expense tracker project, covering happy paths and edge cases"
+        tips:
+          - "Name your tests descriptively: test_withdraw_negative_amount_raises_error is far better than test_withdraw_3."
+          - "Run pytest with the -v flag to see which tests pass and fail. Run with --tb=short for cleaner tracebacks."
       - level: intermediate
         criteria: >
           Uses fixtures, parametrize, and marks in pytest. Mocks external dependencies
@@ -245,6 +470,20 @@ nodes:
         metrics:
           - "≥70% line coverage on all new modules"
           - "CI passes (lint + tests) on first push 80%+ of the time"
+        resources:
+          - title: "Real Python - Effective Python Testing With Pytest"
+            url: "https://realpython.com/pytest-python-testing/"
+            type: "article"
+          - title: "Ruff Linter Documentation"
+            url: "https://docs.astral.sh/ruff/"
+            type: "tool"
+        practice:
+          - "Convert 3 repetitive test functions into a single @pytest.mark.parametrize test (20 minutes)"
+          - "Mock an API call with unittest.mock.patch and verify your code handles both success and failure (30 minutes)"
+        projects:
+          - "Set up a CI pipeline (GitHub Actions) that runs pytest and ruff on every push, and add a coverage report"
+        tips:
+          - "Do not mock everything. Only mock external dependencies (APIs, databases, file systems). Over-mocking makes tests brittle and useless."
       - level: advanced
         criteria: >
           Writes property-based tests (hypothesis). Adds integration and contract tests.
@@ -253,6 +492,12 @@ nodes:
         metrics:
           - "≥85% branch coverage on all new modules"
           - "Test suite runs in ≤5 minutes in CI"
+        resources:
+          - title: "Hypothesis Documentation - Getting Started"
+            url: "https://hypothesis.readthedocs.io/en/latest/quickstart.html"
+            type: "tool"
+        tips:
+          - "High coverage with meaningless assertions is worse than low coverage with strong assertions. Test behavior, not implementation."
       - level: expert
         criteria: >
           Designs the test strategy for a codebase (unit/integration/e2e pyramid).
@@ -261,6 +506,12 @@ nodes:
         metrics:
           - "Mutation test score ≥60% on critical business logic"
           - "Team test coverage trend: +5pp per quarter over last 4 quarters"
+        resources:
+          - title: "mutmut - Mutation Testing for Python"
+            url: "https://mutmut.readthedocs.io/"
+            type: "tool"
+        tips:
+          - "Use the test pyramid: many unit tests, fewer integration tests, even fewer e2e tests. Inverting this pyramid makes CI slow and flaky."
     tags: ["testing", "quality", "ci-cd"]
 
   - id: "technology/python/data-structures-algorithms"
@@ -274,6 +525,20 @@ nodes:
         criteria: "Knows list vs. set lookup time difference. Understands Big-O notation (how fast an operation is as data grows — O(1) means constant time, O(n) means time grows with data size). Implements linear search and simple sorting."
         metrics:
           - "Correctly identifies O(1) vs. O(n) operations in 8/10 quiz scenarios"
+        resources:
+          - title: "MIT OCW 6.100L - Lecture 11: Algorithmic Complexity"
+            url: "https://ocw.mit.edu/courses/6-100l-introduction-to-cs-and-programming-using-python-fall-2022/"
+            type: "course"
+          - title: "Real Python - Sorting Algorithms in Python"
+            url: "https://realpython.com/sorting-algorithms-python/"
+            type: "article"
+        practice:
+          - "Implement linear search and binary search from scratch, then time them on a list of 100,000 items (30 minutes)"
+          - "For 10 code snippets, identify the Big-O complexity and explain your reasoning (20 minutes)"
+        projects:
+          - "Build a word frequency counter that reads a text file and reports the top 10 most common words using a dict"
+        tips:
+          - "If you are searching a list repeatedly, convert it to a set first. 'x in my_list' is O(n), but 'x in my_set' is O(1)."
       - level: intermediate
         criteria: >
           Uses dict and set for O(1) lookups. Understands list.sort() (Timsort), bisect
@@ -281,6 +546,20 @@ nodes:
         metrics:
           - "Solves LeetCode Easy problems in Python in ≤20 minutes average"
           - "Uses appropriate data structure (dict/set/heap) in 85%+ of production scenarios"
+        resources:
+          - title: "NeetCode - Roadmap for Data Structures & Algorithms"
+            url: "https://neetcode.io/roadmap"
+            type: "course"
+          - title: "Python Docs - collections module"
+            url: "https://docs.python.org/3/library/collections.html"
+            type: "article"
+        practice:
+          - "Solve 3 LeetCode Easy problems per week using only stdlib data structures (1 hour/week)"
+          - "Implement BFS and DFS on a simple graph represented as a dict of lists (30 minutes)"
+        projects:
+          - "Build a maze solver that reads a maze from a text file and finds the shortest path using BFS"
+        tips:
+          - "Before writing a custom algorithm, check if collections.Counter, collections.defaultdict, or heapq already solves the problem."
       - level: advanced
         criteria: >
           Implements heapq, deque, and OrderedDict usage for complex problems.
@@ -289,6 +568,12 @@ nodes:
         metrics:
           - "Solves LeetCode Medium problems in ≤40 minutes average"
           - "At least 2 production performance improvements traced to better algorithm/data structure choice"
+        resources:
+          - title: "Python Docs - cProfile and profile"
+            url: "https://docs.python.org/3/library/profile.html"
+            type: "article"
+        tips:
+          - "Profile before you optimize. cProfile shows you where time is actually spent — your intuition about hot paths is usually wrong."
       - level: expert
         criteria: >
           Designs efficient algorithms for novel business problems. Recognizes
@@ -297,6 +582,12 @@ nodes:
         metrics:
           - "Algorithm-level optimizations ship with measured latency improvement"
           - "Code review catches O(n²) patterns before they reach production"
+        resources:
+          - title: "Talk: Beyond PEP 8 (PyCon, Raymond Hettinger)"
+            url: "https://www.youtube.com/watch?v=wf-BqAjZb8M"
+            type: "video"
+        tips:
+          - "The hidden O(n^2) trap: calling 'x in list' inside a for loop. Refactor to use a set for the lookup collection."
     tags: ["algorithms", "performance", "cs-fundamentals"]
 
   # ── APPLIED SKILLS ──────────────────────────────────────────────────────────
@@ -312,6 +603,21 @@ nodes:
         metrics:
           - "Every project has its own venv (no global installs)"
           - "requirements.txt generated with pinned versions before sharing code"
+        resources:
+          - title: "Real Python - Python Virtual Environments: A Primer"
+            url: "https://realpython.com/python-virtual-environments-a-primer/"
+            type: "article"
+          - title: "Python Docs - venv — Creation of Virtual Environments"
+            url: "https://docs.python.org/3/library/venv.html"
+            type: "article"
+        practice:
+          - "Create a new project folder, set up a venv, install 2 packages, and freeze requirements.txt (15 minutes)"
+          - "Clone a project with a requirements.txt, create a fresh venv, and install all dependencies (10 minutes)"
+        projects:
+          - "Set up a project from scratch with a venv, install requests and pytest, write a simple script, and share the repo with requirements.txt so a friend can recreate it"
+        tips:
+          - "Never run 'pip install' without activating a venv first. Global installs create version conflicts across projects."
+          - "Use 'pip freeze > requirements.txt' to pin exact versions. Without pinning, your code may break when a dependency updates."
       - level: intermediate
         criteria: >
           Uses pyproject.toml for project metadata. Understands transitive dependencies
@@ -319,6 +625,20 @@ nodes:
         metrics:
           - "All projects use pyproject.toml (not setup.py) for new work"
           - "0 'works on my machine' failures due to environment differences per quarter"
+        resources:
+          - title: "Real Python - A pyproject.toml Primer"
+            url: "https://realpython.com/python-toml/"
+            type: "article"
+          - title: "pip-tools Documentation"
+            url: "https://pip-tools.readthedocs.io/"
+            type: "tool"
+        practice:
+          - "Migrate an existing project from setup.py to pyproject.toml (30 minutes)"
+          - "Use pip-compile to generate a locked requirements file from a loose requirements.in (15 minutes)"
+        projects:
+          - "Convert your best project to use pyproject.toml with build-system, project metadata, and optional dev dependencies"
+        tips:
+          - "Use pip-tools (pip-compile + pip-sync) to manage locked dependencies. It solves the 'works on my machine' problem."
       - level: advanced
         criteria: >
           Publishes packages to PyPI or internal index. Uses multiple Python version
@@ -326,6 +646,12 @@ nodes:
         metrics:
           - "Has published ≥1 reusable package (internal or public)"
           - "Multi-version CI matrix (Python 3.11, 3.12) passes on all owned packages"
+        resources:
+          - title: "Python Packaging User Guide - Packaging Python Projects"
+            url: "https://packaging.python.org/en/latest/tutorials/packaging-projects/"
+            type: "article"
+        tips:
+          - "Publish to TestPyPI first before pushing to real PyPI. A bad release to PyPI cannot be fully deleted."
       - level: expert
         criteria: >
           Designs packaging strategy for a monorepo or SDK. Evaluates build backends
@@ -333,6 +659,12 @@ nodes:
         metrics:
           - "Package build is reproducible (byte-identical wheel) across 3+ environments"
           - "Packaging standards adopted by ≥3 other projects in the org"
+        resources:
+          - title: "Hatch - Modern Python Project Manager"
+            url: "https://hatch.pypa.io/"
+            type: "tool"
+        tips:
+          - "Evaluate build backends (setuptools, flit, hatch, maturin) by your real needs. Most projects do not need setuptools' complexity."
     tags: ["packaging", "devops", "reproducibility"]
 
   - id: "technology/python/apis-web-requests"
@@ -346,6 +678,20 @@ nodes:
         criteria: "Makes GET and POST requests with the requests library. Parses JSON responses."
         metrics:
           - "Writes a working API client that fetches data and prints results in ≤30 minutes"
+        resources:
+          - title: "Real Python - Python's Requests Library (Guide)"
+            url: "https://realpython.com/python-requests/"
+            type: "article"
+          - title: "Automate the Boring Stuff - Chapter 12: Web Scraping"
+            url: "https://automatetheboringstuff.com/2e/chapter12/"
+            type: "book"
+        practice:
+          - "Fetch weather data from a free API (e.g., Open-Meteo) and print the current temperature for your city (30 minutes)"
+          - "Make a GET request, parse the JSON response, and extract 3 specific fields (15 minutes)"
+        projects:
+          - "Build a CLI tool that fetches top stories from the Hacker News API and displays titles, scores, and links"
+        tips:
+          - "Always check response.status_code or call response.raise_for_status() before accessing .json(). A 404 response still returns valid JSON on some APIs."
       - level: intermediate
         criteria: >
           Handles authentication (API keys, OAuth tokens, Bearer headers). Implements
@@ -354,6 +700,20 @@ nodes:
         metrics:
           - "API integration code handles all HTTP errors gracefully (no unhandled 4xx/5xx)"
           - "Retry logic implemented for transient failures (429, 503) in all API clients"
+        resources:
+          - title: "Real Python - Python and REST APIs: Interacting With Web Services"
+            url: "https://realpython.com/api-integration-in-python/"
+            type: "article"
+          - title: "MDN Web Docs - HTTP Status Codes"
+            url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status"
+            type: "article"
+        practice:
+          - "Add retry logic with exponential backoff to an API client using urllib3.util.Retry (30 minutes)"
+          - "Implement pagination to fetch all results from an API that returns 100 items per page (30 minutes)"
+        projects:
+          - "Build a GitHub repository dashboard that authenticates with a personal access token, fetches your repos, and displays stats"
+        tips:
+          - "Always set a timeout on requests.get(url, timeout=10). Without a timeout, your code can hang forever on a slow server."
       - level: advanced
         criteria: >
           Builds REST APIs with FastAPI or Django REST Framework. Uses async HTTP clients
@@ -362,6 +722,12 @@ nodes:
         metrics:
           - "API endpoints have OpenAPI schemas with ≥90% field coverage"
           - "P95 API latency under load meets SLO (defined per project)"
+        resources:
+          - title: "FastAPI Official Tutorial"
+            url: "https://fastapi.tiangolo.com/tutorial/"
+            type: "course"
+        tips:
+          - "Design your API schema first (OpenAPI/Pydantic models), then write the code. Schema-first development catches design mistakes early."
       - level: expert
         criteria: >
           Designs API contracts for external consumers. Versions APIs with backward
@@ -370,6 +736,12 @@ nodes:
         metrics:
           - "0 breaking API changes shipped without versioning and migration guide"
           - "API design reviewed and approved by consuming teams before implementation"
+        resources:
+          - title: "Microsoft REST API Guidelines"
+            url: "https://github.com/microsoft/api-guidelines/blob/vNext/Guidelines.md"
+            type: "article"
+        tips:
+          - "Version your API from day one (/v1/). Retrofitting versioning onto an unversioned API is painful for every consumer."
     tags: ["apis", "web", "integration"]
 
   # ── SPECIALIZATION ──────────────────────────────────────────────────────────
@@ -384,6 +756,20 @@ nodes:
         criteria: "Creates DataFrames from CSV/JSON. Selects columns, filters rows, and prints basic statistics."
         metrics:
           - "Completes a basic EDA (exploratory data analysis) notebook on a new dataset in ≤2 hours"
+        resources:
+          - title: "Kaggle - Intro to Pandas (Free Micro-Course)"
+            url: "https://www.kaggle.com/learn/pandas"
+            type: "course"
+          - title: "Real Python - Pandas DataFrames 101"
+            url: "https://realpython.com/pandas-dataframe/"
+            type: "article"
+        practice:
+          - "Load a CSV dataset from Kaggle, select 3 columns, filter rows by a condition, and compute .describe() (30 minutes)"
+          - "Practice selecting data with .loc[] and .iloc[] on 5 different scenarios (20 minutes)"
+        projects:
+          - "Download a public dataset (e.g., Titanic from Kaggle), perform a basic EDA in a Jupyter notebook, and summarize 3 findings"
+        tips:
+          - "Use .head(), .info(), and .describe() immediately after loading data. They reveal data types, missing values, and outliers in seconds."
       - level: intermediate
         criteria: >
           Uses groupby, merge, pivot_table, and apply. Handles missing data and type
@@ -391,6 +777,20 @@ nodes:
         metrics:
           - "EDA notebooks include ≥3 visualizations per dataset"
           - "Data cleaning scripts handle null values explicitly (no silent drops)"
+        resources:
+          - title: "Real Python - Pandas GroupBy: Your Guide to Grouping Data"
+            url: "https://realpython.com/pandas-groupby/"
+            type: "article"
+          - title: "Kaggle - Data Visualization with Seaborn (Free Micro-Course)"
+            url: "https://www.kaggle.com/learn/data-visualization"
+            type: "course"
+        practice:
+          - "Use groupby to compute per-category averages, then create a bar chart with matplotlib (30 minutes)"
+          - "Merge two DataFrames on a common key and handle rows that exist in only one (20 minutes)"
+        projects:
+          - "Analyze a sales dataset: clean missing values, group by product category, visualize trends over time, and export a summary report"
+        tips:
+          - "Never silently drop NaN values with .dropna() in production. Always log how many rows were removed and why."
       - level: advanced
         criteria: >
           Vectorizes operations (avoids Python loops over DataFrames). Uses multi-index,
@@ -399,6 +799,12 @@ nodes:
         metrics:
           - "Processing time for 1M-row dataset: ≤10 seconds on standard hardware"
           - "No iterrows() in any production data pipeline"
+        resources:
+          - title: "Real Python - Fast, Flexible, Easy and Intuitive: Working with Pandas"
+            url: "https://realpython.com/fast-flexible-pandas/"
+            type: "article"
+        tips:
+          - "Replace every .iterrows() loop with a vectorized operation or .apply(). A single vectorized line replaces 20 lines of loop code and runs 100x faster."
       - level: expert
         criteria: >
           Designs scalable data processing pipelines (Dask, Polars, or Spark via PySpark).
@@ -407,6 +813,12 @@ nodes:
         metrics:
           - "10B+ row datasets processed within resource constraints"
           - "Team data pipeline performance improved ≥2x through vectorization coaching"
+        resources:
+          - title: "Polars User Guide"
+            url: "https://docs.pola.rs/"
+            type: "tool"
+        tips:
+          - "For datasets that fit in RAM but are slow in Pandas, try Polars before jumping to Spark. Polars is often 10-50x faster on a single machine."
     tags: ["data-science", "pandas", "numpy", "analysis"]
 
   - id: "technology/python/async-concurrency"
@@ -420,6 +832,20 @@ nodes:
         criteria: "Understands the difference between synchronous and asynchronous code. Runs simple async functions with asyncio.run()."
         metrics:
           - "Can explain event loop, coroutine, and await in plain language"
+        resources:
+          - title: "Real Python - Async IO in Python: A Complete Walkthrough"
+            url: "https://realpython.com/async-io-python/"
+            type: "article"
+          - title: "Python Docs - asyncio — Asynchronous I/O"
+            url: "https://docs.python.org/3/library/asyncio.html"
+            type: "article"
+        practice:
+          - "Write an async function that fetches 3 URLs concurrently with aiohttp and compare total time vs sequential requests (30 minutes)"
+          - "Convert a synchronous file-reading script to async using aiofiles (20 minutes)"
+        projects:
+          - "Build an async web scraper that fetches 10 pages concurrently and prints the title of each page"
+        tips:
+          - "The #1 async mistake: calling a blocking function (like requests.get or time.sleep) inside an async function. Use aiohttp and asyncio.sleep instead."
       - level: intermediate
         criteria: >
           Uses asyncio.gather() and asyncio.create_task() for concurrent I/O.
@@ -428,6 +854,20 @@ nodes:
         metrics:
           - "Async I/O refactoring reduces latency by ≥50% on I/O-bound tasks vs. sync equivalent"
           - "0 blocking calls inside async functions in owned code"
+        resources:
+          - title: "Real Python - Speed Up Your Python Program With Concurrency"
+            url: "https://realpython.com/python-concurrency/"
+            type: "article"
+          - title: "Python Docs - concurrent.futures"
+            url: "https://docs.python.org/3/library/concurrent.futures.html"
+            type: "article"
+        practice:
+          - "Refactor a script that makes 20 API calls sequentially to use asyncio.gather() and measure the speedup (30 minutes)"
+          - "Use asyncio.to_thread() or ThreadPoolExecutor to run a blocking library call from an async function (20 minutes)"
+        projects:
+          - "Build an async CLI tool that downloads multiple files concurrently, shows progress, and handles failures gracefully"
+        tips:
+          - "Use asyncio.create_task() to start background work, not just 'await'. Awaiting immediately defeats the purpose of concurrency."
       - level: advanced
         criteria: >
           Uses asyncio Queues, Semaphores, and Locks correctly. Handles cancellation
@@ -436,6 +876,12 @@ nodes:
         metrics:
           - "Async concurrency bugs (race conditions, deadlocks) in owned code: 0 in last 6 months"
           - "Concurrent task throughput meets production SLO"
+        resources:
+          - title: "Python Docs - asyncio Synchronization Primitives"
+            url: "https://docs.python.org/3/library/asyncio-sync.html"
+            type: "article"
+        tips:
+          - "Use asyncio.Semaphore to limit concurrent operations (e.g., max 10 HTTP requests at once). Without limits, you will overwhelm servers."
       - level: expert
         criteria: >
           Designs async architectures: event-driven systems, async message queues,
@@ -444,6 +890,12 @@ nodes:
         metrics:
           - "Async library used by ≥3 services with 0 critical async bugs"
           - "Can diagnose any asyncio bug from logs and task dump alone"
+        resources:
+          - title: "Talk: asyncio Pitfalls (Lynn Root, PyCon)"
+            url: "https://www.youtube.com/watch?v=Qb9s3UiMSTA"
+            type: "video"
+        tips:
+          - "Always handle task cancellation. Uncaught CancelledError exceptions leak resources and cause silent failures in production."
     tags: ["async", "concurrency", "performance"]
 
   - id: "technology/python/performance-pythonic-code"
@@ -457,6 +909,20 @@ nodes:
         criteria: "Writes readable code. Avoids obvious inefficiencies (repeated list.append in tight loops, unnecessary copies)."
         metrics:
           - "Code passes basic pylint/ruff checks on first submission"
+        resources:
+          - title: "PEP 8 - Style Guide for Python Code"
+            url: "https://peps.python.org/pep-0008/"
+            type: "article"
+          - title: "Real Python - How to Write Beautiful Python Code With PEP 8"
+            url: "https://realpython.com/python-pep8/"
+            type: "article"
+        practice:
+          - "Run ruff or flake8 on an existing script and fix all style warnings (20 minutes)"
+          - "Rewrite 3 code snippets to be more Pythonic (use enumerate, zip, unpacking) (15 minutes)"
+        projects:
+          - "Set up ruff as a pre-commit hook on your project so style issues are caught before every commit"
+        tips:
+          - "Readable code beats clever code. If a list comprehension is hard to read, use a for loop instead."
       - level: intermediate
         criteria: >
           Uses list comprehensions, generators, and itertools to replace explicit loops.
@@ -465,6 +931,20 @@ nodes:
         metrics:
           - "Comprehensions preferred over equivalent map/filter/loop in 85%+ of cases"
           - "Memory-intensive code uses generators rather than materializing full lists"
+        resources:
+          - title: "Real Python - Introduction to Python Generators"
+            url: "https://realpython.com/introduction-to-python-generators/"
+            type: "article"
+          - title: "Python Docs - itertools — Functions creating iterators"
+            url: "https://docs.python.org/3/library/itertools.html"
+            type: "article"
+        practice:
+          - "Replace 3 functions that return lists with generator functions using 'yield' and compare memory usage (30 minutes)"
+          - "Add @lru_cache to a recursive Fibonacci function and measure the speedup with timeit (15 minutes)"
+        projects:
+          - "Refactor a data processing script to use generators and itertools, then benchmark before/after memory usage"
+        tips:
+          - "If you only need to iterate over results once, use a generator (parentheses) instead of a list comprehension (brackets). It uses nearly zero memory."
       - level: advanced
         criteria: >
           Profiles with cProfile, line_profiler. Benchmarks with timeit. Uses
@@ -473,6 +953,12 @@ nodes:
         metrics:
           - "Performance optimizations are benchmark-driven (before/after numbers documented)"
           - "Hot path optimization achieves ≥30% improvement vs. baseline"
+        resources:
+          - title: "py-spy - Sampling Profiler for Python"
+            url: "https://github.com/benfred/py-spy"
+            type: "tool"
+        tips:
+          - "Never optimize without profiling first. Use cProfile to find the top 3 slowest functions, then optimize only those."
       - level: expert
         criteria: >
           System-level performance: profiling at the OS level (perf, py-spy). Identifies
@@ -481,6 +967,12 @@ nodes:
         metrics:
           - "Production service meets P99 latency SLO after expert-level optimization pass"
           - "Memory optimization reduces footprint by ≥40% on memory-constrained services"
+        resources:
+          - title: "Talk: Memory Management in Python (PyCon, Nina Zakharenko)"
+            url: "https://www.youtube.com/watch?v=F6u5rhUQ6dU"
+            type: "video"
+        tips:
+          - "Use __slots__ on classes instantiated millions of times. It can reduce per-object memory by 40-50% by eliminating __dict__."
     tags: ["performance", "pythonic", "optimization"]
 
 relationships:

@@ -62,6 +62,26 @@ nodes:
           - "Continental grip maintained during a full game without switching to forehand grip"
           - "Performs split step on at least 5/10 opponent shots during live play"
           - "Completes baseline-to-kitchen transition (20 feet) in under 4 seconds while staying balanced"
+        resources:
+          - title: "Pickleball Kitchen — How to Play Pickleball (Complete Beginner Guide)"
+            url: "https://www.youtube.com/watch?v=fTbBQnwSxHM"
+            type: "video"
+          - title: "Selkirk TV — Footwork Fundamentals for Pickleball"
+            url: "https://www.youtube.com/watch?v=ZdSk4ChPil4"
+            type: "video"
+          - title: "USA Pickleball — Official Rules Summary"
+            url: "https://usapickleball.org/what-is-pickleball/how-to-play-old/basics/rules-summary/"
+            type: "article"
+        practice:
+          - "10 min: Shadow footwork — shuffle from baseline to kitchen and back, 10 reps, stay low and balanced"
+          - "10 min: Split-step reaction drill — partner feeds random directions, you split-step and move to the ball"
+          - "5 min: Ladder drill — forward, lateral, and in-out patterns for quick feet"
+        projects:
+          - "Play 3 full games using only a continental grip without switching"
+          - "Pass a rules quiz covering the two-bounce rule, NVZ, and scoring with 100% accuracy"
+        tips:
+          - "Don't stand upright between shots — stay in an athletic position with knees bent, weight on the balls of your feet, and paddle up at chest height"
+          - "Split-step BEFORE your opponent hits, not after — time it so you land as they make contact"
       - level: intermediate
         criteria: "Consistent split step on every return. Lateral shuffles to kitchen line without crossing feet. Uses crossover step for wide balls. Begins reading opponent paddle angle to anticipate direction."
         metrics:
@@ -70,6 +90,23 @@ nodes:
           - "Lateral shuffle covers 10-foot span in under 2 seconds without crossing feet"
           - "Moves in correct direction on first step 7/10 times based on opponent cues"
           - "The Dink transition assessment: reaches optimal NVZ position on 70%+ of transition shots in a 30-shot drill"
+        resources:
+          - title: "Third Shot Sports — Pickleball Footwork Secrets"
+            url: "https://www.youtube.com/watch?v=JqAQsgaFfpA"
+            type: "video"
+          - title: "PrimeTime Pickleball — Transition Zone Movement"
+            url: "https://www.youtube.com/watch?v=QY3GBxjMpeM"
+            type: "video"
+        practice:
+          - "10 min: Two-up/two-back transition drill — both partners start at baseline, practice approaching kitchen together after a drop"
+          - "10 min: Recovery cone drill — touch wide cone, shuffle back to center, repeat 10 times each side"
+          - "5 min: Crossover step drill — partner feeds wide balls, practice crossover step to reach them"
+        projects:
+          - "Reach the kitchen line within 3 steps after your return on 8 out of 10 rallies in a practice set"
+          - "Record yourself playing and count split steps per rally — aim for one on every opponent shot"
+        tips:
+          - "Don't cross your feet when shuffling laterally — it kills your balance and slows recovery; use a lateral shuffle with feet always shoulder-width apart"
+          - "Watch the opponent's paddle face, not the ball, to predict where their shot is going before they hit it"
       - level: advanced
         criteria: "Anticipatory movement — reads opponent shoulder rotation, paddle face, and hip angle to preload direction. Efficient recovery from out-of-position. Moves as a unit with doubles partner. Uses drop step to retreat under lobs without turning back to net."
         metrics:
@@ -78,6 +115,12 @@ nodes:
           - "The Dink transition assessment: 83%+ success rate on 30-shot transition drill"
           - "Drop step and overhead coverage: successfully retreats and plays lob 7/10 times"
           - "Maintains parallel positioning with partner (within 2 feet lateral offset) on 85%+ of shots"
+        resources:
+          - title: "Selkirk TV — Advanced Pickleball Footwork with Tyson McGuffin"
+            url: "https://www.youtube.com/watch?v=2JgXRnosEaI"
+            type: "video"
+        tips:
+          - "Don't turn your back to the net when retreating for lobs — use a drop step (pivot and push off the front foot) to move backward while keeping your eyes on the ball"
       - level: expert
         criteria: "Proactive court positioning. Disguises movement to create deception. Explosive first step from static position. Controls court geometry — forces opponents into disadvantageous positions through movement alone."
         metrics:
@@ -85,6 +128,12 @@ nodes:
           - "First-step reaction time under 0.25s from ready position (measured via video)"
           - "Court positioning rated optimal on 90%+ of shots by coaching analysis"
           - "Creates at least 2 geometric advantages per game through positioning alone (pulling opponents off-court)"
+        resources:
+          - title: "PrimeTime Pickleball — Pro Movement Patterns Breakdown"
+            url: "https://www.youtube.com/watch?v=5b3BrNbfasA"
+            type: "video"
+        tips:
+          - "At the expert level, disguise your movement — show one direction and shift the other to force opponents into late reactions"
     tags: ["foundation", "athletic", "measurable"]
 
   # ── SOFT GAME (taught first in coaching programs) ───────────────────────────
@@ -120,6 +169,23 @@ nodes:
           - "The Dink Assessment 30-shot test: lands 15+ dinks (50%+) unattackable in kitchen"
           - "Forehand and backhand dinks both clear net and land in NVZ on 5/10 attempts each"
           - "0 hard swings during dink rallies (maintains soft touch throughout)"
+        resources:
+          - title: "Pickleball Kitchen — Dinking 101: The Most Important Shot in Pickleball"
+            url: "https://www.youtube.com/watch?v=B2y8aBWpNpM"
+            type: "video"
+          - title: "Selkirk TV — How to Dink in Pickleball (Beginner Guide)"
+            url: "https://www.youtube.com/watch?v=D244M0dNMNI"
+            type: "video"
+        practice:
+          - "10 min: Cross-court dink rally with a partner — count consecutive makes, goal is 5+"
+          - "10 min: Figure-8 dink drill — alternate cross-court and straight dinks in a pattern"
+          - "5 min: Wall dink practice — stand 7 feet from a wall and dink softly, maintaining control"
+        projects:
+          - "Sustain a 10-shot cross-court dink rally with zero pop-ups above net height"
+          - "Complete the 30-shot Dink Assessment and score 15+ unattackable kitchen landings"
+        tips:
+          - "Don't swing at dinks — use a push motion from the shoulder with a firm wrist; the paddle should barely move, like pushing a door open"
+          - "Keep your paddle face open (angled slightly upward) and make contact in front of your body, not at your side"
       - level: intermediate
         criteria: "Cross-court and straight-ahead dinks with directional control. Controls depth within the kitchen (front vs. back of NVZ). Recognizes attackable pop-ups and speeds up. Begins using body dinks aimed at opponent's hip/transition zone. Sustains longer rallies with consistent placement."
         metrics:
@@ -128,6 +194,23 @@ nodes:
           - "Places dink to intended zone (wide angle, center, or feet) 6/10 times in targeted drill"
           - "Successfully attacks pop-ups (ball above net height) 5/10 times for winners or forced errors"
           - "15+ consecutive dinks in a cross-court rally drill (The Dink protocol)"
+        resources:
+          - title: "Third Shot Sports — Advanced Dinking Strategies"
+            url: "https://www.youtube.com/watch?v=vnOBFwl_az0"
+            type: "video"
+          - title: "Pickleball Kitchen — Body Dinks: The Shot Nobody Expects"
+            url: "https://www.youtube.com/watch?v=cYNgm6MWPvM"
+            type: "video"
+        practice:
+          - "15 min: Targeted zone dink drill — place cones in 3 kitchen zones (wide angle, center, feet) and aim for each in sequence"
+          - "10 min: Dink-under-pressure drill — partner randomly speeds up, you must reset into kitchen"
+          - "10 min: Skinny singles dink game — play half-court points starting from the kitchen line"
+        projects:
+          - "Sustain a 15-shot cross-court dink rally at 75%+ success rate"
+          - "Score 20+ on the 30-shot Dink Assessment"
+        tips:
+          - "Don't attack every ball above the net — wait for balls clearly above net height (2+ inches) before speeding up; patience wins dink battles"
+          - "Aim body dinks at the opponent's paddle-side hip (the transition zone between forehand and backhand) to force awkward contact"
       - level: advanced
         criteria: "Varied pace and spin dinks — topspin, backspin, and roll dinks on command. Forces pop-ups through deliberate placement at opponent's feet and backhand hip. Resets out-of-position speedup balls back into kitchen. Disguises dink direction. This is the 3.5-to-4.0 skill jump — mastering the soft game separates rec players from competitive players."
         metrics:
@@ -137,6 +220,12 @@ nodes:
           - "Resets opponent speedups back into kitchen 7/10 times in live play"
           - "Executes topspin, backspin, and flat dinks on command (3 spin types at 6/10 accuracy each)"
           - "Disguises dink direction — opponent moves wrong direction on first step 3/10 times"
+        resources:
+          - title: "Selkirk TV — Spin Dinks Masterclass with Tyson McGuffin"
+            url: "https://www.youtube.com/watch?v=hT6wJr_ioWQ"
+            type: "video"
+        tips:
+          - "Don't telegraph your dink direction with your shoulders — keep your body and paddle preparation identical for cross-court and line dinks, changing direction with wrist angle at the last moment"
       - level: expert
         criteria: "Dink as a weapon: combines misdirection, tempo changes, spin variation, and body shots to manufacture winners. Controls the pace and rhythm of the rally. Forces opponents into reactive mode through sequenced patterns. The dink game is the primary scoring tool."
         metrics:
@@ -145,6 +234,12 @@ nodes:
           - "The Dink Assessment 30-shot test: lands 28+ dinks (93%+) unattackable in kitchen"
           - "Manufactures outright dink winners (untouched or forced error) 2+ times per game"
           - "Controls rally tempo — can speed up or slow down pace at will without losing accuracy"
+        resources:
+          - title: "PrimeTime Pickleball — Pro Dink Patterns and Sequencing"
+            url: "https://www.youtube.com/watch?v=TYi-Vo5GBFA"
+            type: "video"
+        tips:
+          - "At the expert level, think in sequences, not single shots — plan 2-3 dinks ahead to manufacture a pop-up or opening"
     tags: ["soft-game", "technical", "patience"]
 
   # ── SERVE & RETURN ──────────────────────────────────────────────────────────
@@ -178,6 +273,23 @@ nodes:
           - "0 illegal serve motions (paddle above wrist, contact above waist) per game"
           - "Serve clears the kitchen line and lands past the NVZ on 7/10 attempts"
           - "Completes 10-serve drill in under 3 minutes with consistent routine"
+        resources:
+          - title: "Pickleball Kitchen — How to Serve in Pickleball (Beginner Guide)"
+            url: "https://www.youtube.com/watch?v=EAPTmpv4sag"
+            type: "video"
+          - title: "Third Shot Sports — Drop Serve vs Volley Serve Explained"
+            url: "https://www.youtube.com/watch?v=GZajHXpqSmw"
+            type: "video"
+        practice:
+          - "10 min: 10-serve consistency drill — serve 10 balls, count makes, target 70%+ in rate"
+          - "10 min: Serve-and-move drill — serve then immediately split-step for the return"
+          - "5 min: Alternate drop serve and volley serve to find which feels more natural"
+        projects:
+          - "Serve 10 legal serves in a row without a fault (no illegal motions, all land in the correct box)"
+          - "Play 3 full games with zero service faults from illegal motion"
+        tips:
+          - "Don't try to hit serves hard — consistency beats power at the beginner level; focus on a smooth pendulum motion and getting the ball deep"
+          - "Use the drop serve if you struggle with the volley serve — it is legal and gives you more time to set up your swing"
       - level: intermediate
         criteria: "Directional serve placement — can target wide, middle, or at body on command. Consistent depth (serves land in back half of service box). Begins using topspin or slice to create movement on the ball. Develops a reliable second serve option if first is aggressive."
         metrics:
@@ -186,6 +298,23 @@ nodes:
           - "80%+ of serves land in the back third of the service box (depth control)"
           - "Can execute at least 2 distinct serve types (flat + one spin) at 75%+ in rate each"
           - "The Dink serve assessment: 85%+ in rate on a 30-serve test with directional targets"
+        resources:
+          - title: "Selkirk TV — Serve Placement Strategy for Intermediate Players"
+            url: "https://www.youtube.com/watch?v=wFgIcDATQRE"
+            type: "video"
+          - title: "Third Shot Sports — How to Add Spin to Your Pickleball Serve"
+            url: "https://www.youtube.com/watch?v=w3FfOMOOkWE"
+            type: "video"
+        practice:
+          - "15 min: Target zone drill — place targets at deep corners and middle of service box, serve 10 to each zone"
+          - "10 min: Spin serve station — hit 10 topspin and 10 slice serves in sequence, track in-rate for each"
+          - "5 min: Pressure serve drill — simulate game point, must make 2 consecutive serves to advance"
+        projects:
+          - "Hit 6 out of 10 serves to a called target zone (wide, middle, or body) in a targeted drill"
+          - "Develop a reliable topspin or slice serve at 75%+ in rate over a 20-serve drill"
+        tips:
+          - "Don't sacrifice depth for placement — a deep serve to the wrong zone is better than a short serve to the right zone"
+          - "Develop a pre-serve routine (bounce the ball, take a breath, pick your target) and use it every time to build consistency under pressure"
       - level: advanced
         criteria: "Varied spin and pace serves — topspin, slice, and power serves executed on command. Serve placement disrupts opponent positioning and footwork. Uses serve selection strategically based on opponent weakness. Deep power serve and short angle serve are both reliable options."
         metrics:
@@ -194,6 +323,12 @@ nodes:
           - "Forces weak return (short ball, pop-up, or off-balance contact) on 3/10 serves"
           - "Short angle serve (landing in front third of box, pulling opponent wide) at 70%+ in rate"
           - "Maintains 85%+ in rate under simulated match pressure (partner keeps score)"
+        resources:
+          - title: "Selkirk TV — Advanced Serve Techniques with Pro Players"
+            url: "https://www.youtube.com/watch?v=hMjrmMBsPS0"
+            type: "video"
+        tips:
+          - "Use the same toss and backswing for every serve type — variation should come from paddle angle and wrist at contact, not from your setup"
       - level: expert
         criteria: "Serve as a strategic weapon. Disguises spin direction with identical toss and motion. Uses grip pressure variation to change pace without visible cues. Selects serve type based on score, opponent tendencies, and match situation. Serve sets up the third-shot pattern."
         metrics:
@@ -202,6 +337,12 @@ nodes:
           - "Opponent cannot predict serve type (spin/direction) better than 50% (effective disguise)"
           - "Serve + third-shot combination wins point within 4 shots on 20%+ of service points"
           - "0 double faults per match in tournament play"
+        resources:
+          - title: "PrimeTime Pickleball — Serve and Third Shot Combinations"
+            url: "https://www.youtube.com/watch?v=sFUH_6fHNiA"
+            type: "video"
+        tips:
+          - "Think of the serve not as an isolated shot but as the first move in a two-shot sequence — pick your serve based on where you want the return to go so you can set up your third shot"
     tags: ["technical", "offensive", "measurable"]
 
   - id: "sports/pickleball/return-of-serve"
@@ -239,6 +380,23 @@ nodes:
           - "Returns clear the net and land in bounds without popping up on 6/10 attempts"
           - "Takes at least 1 step toward kitchen after return on 5/10 rallies"
           - "The Dink return assessment: 65%+ in rate on a 30-return test"
+        resources:
+          - title: "Pickleball Kitchen — Return of Serve Basics"
+            url: "https://www.youtube.com/watch?v=uwpKQqbcXAU"
+            type: "video"
+          - title: "Third Shot Sports — The Deep Return: Most Underrated Shot"
+            url: "https://www.youtube.com/watch?v=Io-qlOWjjcI"
+            type: "video"
+        practice:
+          - "10 min: 30-return assessment — partner serves 30 balls, count how many land in play"
+          - "10 min: Return-and-advance drill — return the serve, then sprint to kitchen line before the third shot"
+          - "5 min: Deep return target drill — place a rope 3 feet from the baseline, aim to land every return beyond the rope"
+        projects:
+          - "Get 13 out of 20 returns in play in a drill session"
+          - "Consistently take at least 2 steps toward the kitchen after every return in a practice game"
+        tips:
+          - "Don't take a big backswing on returns — use a compact stroke and let the incoming serve provide the pace"
+          - "Start moving forward IMMEDIATELY after contact — the return is a transition shot, not a rally shot; your goal is to get to the kitchen"
       - level: intermediate
         criteria: "Deep returns landing within 3 feet of baseline to neutralize serving team. Moves to kitchen immediately after return. Can direct returns cross-court and down the line. Reads topspin vs. flat serves and adjusts paddle angle. Consistent depth keeps opponents pinned at baseline."
         metrics:
@@ -247,6 +405,23 @@ nodes:
           - "Reaches kitchen line before serving team's 3rd shot on 7/10 rallies"
           - "The Dink return assessment: 76%+ in rate on a 30-return test"
           - "Can direct return to forehand or backhand side on command at 60%+ accuracy"
+        resources:
+          - title: "Selkirk TV — Deep Return Strategy for Intermediate Players"
+            url: "https://www.youtube.com/watch?v=05B-25fHkKg"
+            type: "video"
+          - title: "PrimeTime Pickleball — Return and Advance Technique"
+            url: "https://www.youtube.com/watch?v=f9bZlH3RI8Y"
+            type: "video"
+        practice:
+          - "15 min: Deep return target drill — place a rope 3 feet from the baseline, track what percentage of returns land beyond it"
+          - "10 min: Return-and-advance with timing — return and reach kitchen before the third shot on 7/10 rallies"
+          - "10 min: Spin return drill — partner hits topspin and slice serves, practice reading spin and adjusting paddle face"
+        projects:
+          - "Land 70%+ of returns in the back third of the court in a 30-return drill"
+          - "Reach the kitchen line before the third shot on 7 out of 10 rallies in a practice game"
+        tips:
+          - "Don't return short — a short return is the serving team's dream because it lets them hit an easy third shot; prioritize depth over placement"
+          - "Read the server's paddle angle before the ball arrives — an open paddle face means slice or lob, a closed face means topspin"
       - level: advanced
         criteria: "Directional deep returns — targets weak side, seam between opponents, or gaps with intention. Attacks short serves aggressively. Reads serve spin (topspin, slice, power) and adjusts contact point and paddle face. Uses lob return to buy extra transition time when needed. This skill level separates 3.5 from 4.0 players."
         metrics:
@@ -255,6 +430,12 @@ nodes:
           - "Attacks short serves (landing in front half of box) on 80%+ of opportunities for winners or forced errors"
           - "The Dink return assessment: 83%+ in rate on 30-return test with directional targets"
           - "Reaches kitchen line before third shot on 9/10 rallies"
+        resources:
+          - title: "Third Shot Sports — Attacking Returns at the 4.0 Level"
+            url: "https://www.youtube.com/watch?v=RjBqSuP_R-o"
+            type: "video"
+        tips:
+          - "Vary your return depth and direction — if you always return deep cross-court, the serving team can pre-position for their third shot"
       - level: expert
         criteria: "Return as an offensive weapon. Reads serve spin and speed within the first 10 feet of ball flight to adjust contact point. Creates immediate advantage — deep returns force weak third shots, short-ball attacks generate winners. Selects return type based on server's position, tendencies, and score situation."
         metrics:
@@ -263,6 +444,12 @@ nodes:
           - "The Dink return assessment: 90%+ in rate on 30-return test"
           - "Return winner or forced error rate of 8%+ at tournament level"
           - "0 unforced return errors on power serves per game (reliable under pace)"
+        resources:
+          - title: "Selkirk TV — Pro Return Patterns Analysis"
+            url: "https://www.youtube.com/watch?v=yBTiHflx7Gs"
+            type: "video"
+        tips:
+          - "Select your return type based on the server's position — if they are standing near the baseline center, go deep to the backhand; if they are cheating to one side, return behind them"
     tags: ["technical", "defensive", "measurable"]
 
   # ── TRANSITION GAME ─────────────────────────────────────────────────────────
@@ -304,6 +491,23 @@ nodes:
           - "Lands in kitchen on 3/10 third-shot attempts from baseline in a feed drill"
           - "The Dink 30-shot drop test: lands 12+ drops (40%+) unattackable in kitchen from mid-court"
           - "Attempts a drop (not a drive) on at least 5/10 third-shot opportunities in live play"
+        resources:
+          - title: "Pickleball Kitchen — Third Shot Drop for Beginners"
+            url: "https://www.youtube.com/watch?v=dbymMTamirE"
+            type: "video"
+          - title: "Selkirk TV — The Third Shot Drop Explained Simply"
+            url: "https://www.youtube.com/watch?v=ax78MdgK1w4"
+            type: "video"
+        practice:
+          - "10 min: 10-drop baseline drill — stand at baseline, partner feeds from kitchen, count how many land unattackable in the kitchen"
+          - "10 min: Drop-and-advance drill — hit a drop, take 2-3 steps forward, hit another drop, continue until at kitchen line"
+          - "5 min: Cross-court drop practice — aim all drops cross-court (higher margin over net)"
+        projects:
+          - "Land 4 out of 10 third-shot drops in the kitchen from mid-court in a feed drill"
+          - "Score 12+ on the 30-shot drop assessment from mid-court"
+        tips:
+          - "Don't swing at the drop — use the same push motion as a dink with an open paddle face; the drop is just a dink from farther back"
+          - "Aim cross-court for your first drops — the net is 2 inches lower at the center, and the cross-court angle gives you more court to land in"
       - level: intermediate
         criteria: "Consistent drops landing in kitchen from baseline. Moves forward after executing drop. Cross-court drops are more reliable than line drops. Begins reading the return depth to decide drop vs. drive. This is the hardest skill jump in pickleball — consistent third-shot drops separate 3.5 from 4.0 players."
         metrics:
@@ -312,6 +516,23 @@ nodes:
           - "Advances at least 2 steps toward kitchen after drop on 8/10 attempts"
           - "Cross-court drop success rate 70%+ (higher net clearance = more margin)"
           - "Reaches kitchen line within 3 shots on 6/10 service points in live play"
+        resources:
+          - title: "Third Shot Sports — The 3.5 to 4.0 Drop Shot Breakthrough"
+            url: "https://www.youtube.com/watch?v=rVCJ2ZhXSrg"
+            type: "video"
+          - title: "Pickleball Kitchen — Drop vs Drive Decision Making"
+            url: "https://www.youtube.com/watch?v=3cPfkLqGCks"
+            type: "video"
+        practice:
+          - "15 min: Drop-drive mix drill — partner calls 'drop' or 'drive' after the toss, practice switching between the two on command"
+          - "15 min: Moving drop drill — feed balls while you shuffle forward from baseline, practice dropping while in motion"
+          - "10 min: Cross-court vs. line drop drill — alternate drop direction every 5 balls, track accuracy to each zone"
+        projects:
+          - "Score 20+ on the 30-shot drop assessment from the baseline"
+          - "Reach the kitchen line within 3 shots on 6 out of 10 service points in a practice game"
+        tips:
+          - "Don't always drop — if the return is short and high, DRIVE it; the drop vs. drive decision depends on return depth and height"
+          - "Move forward AFTER you hit the drop, not before — commit to the drop first, then take 2-3 quick steps forward while the ball is in the air"
       - level: advanced
         criteria: "Directional drops — attacks wide angles, opponent's feet, or the seam between opponents. Drops under pressure (off deep, hard returns) and on the run (while moving through the transition zone). Uses topspin and slice to vary drop trajectory. Drop quality is high enough that opponents cannot attack it."
         metrics:
@@ -321,6 +542,12 @@ nodes:
           - "Directional accuracy: places drop to intended zone (wide, middle, feet) 6/10 times"
           - "Drop off a deep, hard return: 65%+ success rate (maintains quality under pace)"
           - "The Dink transition assessment: 83%+ success rate combining drop + advance to kitchen"
+        resources:
+          - title: "Selkirk TV — Directional Drops and Spin Variations"
+            url: "https://www.youtube.com/watch?v=oPbvz3H_Sac"
+            type: "video"
+        tips:
+          - "Don't drop habitually — use the drop strategically when the opponents are at the kitchen and you need to advance; if they are still at the baseline, a drive is often better"
       - level: expert
         criteria: "Drop-drive combination is seamless — opponent cannot read third-shot selection until after contact. Identical preparation for drop and drive. Reaches kitchen in 1-2 shots consistently. Drop quality forces dink-up from opponents, creating offensive opportunity on the next ball. Uses drop strategically, not habitually."
         metrics:
@@ -329,6 +556,12 @@ nodes:
           - "Reaches kitchen within 2 shots on 85%+ of service points in tournament play"
           - "Opponent cannot distinguish drop from drive based on preparation (video analysis confirms identical setup)"
           - "Drop-to-winner sequence (drop forces dink-up, next shot is a winner) on 15%+ of drop points"
+        resources:
+          - title: "PrimeTime Pickleball — Drop-Drive Disguise at the Pro Level"
+            url: "https://www.youtube.com/watch?v=b6hP-N6CJ1Q"
+            type: "video"
+        tips:
+          - "Make your drop and drive preparation identical — same backswing, same body position, same timing; the only difference should be paddle angle and follow-through at the last moment"
     tags: ["signature-shot", "offensive", "critical-path"]
 
   # ── POWER GAME ──────────────────────────────────────────────────────────────
@@ -366,6 +599,23 @@ nodes:
           - "Forehand drive in rate: 6/10 from mid-court"
           - "Backhand drive in rate: 5/10 from mid-court"
           - "Drives clear the net by at least 6 inches on 6/10 attempts (not hitting net)"
+        resources:
+          - title: "Pickleball Kitchen — How to Hit a Drive in Pickleball"
+            url: "https://www.youtube.com/watch?v=DY8kAu-ZGF8"
+            type: "video"
+          - title: "Selkirk TV — Forehand and Backhand Drive Fundamentals"
+            url: "https://www.youtube.com/watch?v=YGO-nSMHfdo"
+            type: "video"
+        practice:
+          - "10 min: 10-drive baseline drill — partner feeds from kitchen, drive 10 balls, count makes"
+          - "10 min: Counter-drive rally — both players drive from baseline, sustain rally and track consistency"
+          - "5 min: Backhand drive focus — feed 10 balls to backhand side, work on compact swing and contact out front"
+        projects:
+          - "Hit 6 out of 10 forehand drives in play from mid-court"
+          - "Play a practice game where you only drive when the ball is above net height at contact"
+        tips:
+          - "Don't drive every ball — drives work best on high balls (above net height at contact); driving low balls puts the ball in the net"
+          - "Step into your drives with your front foot and transfer weight forward — power comes from the legs and body rotation, not the arm"
       - level: intermediate
         criteria: "Directional drives with placement control. Drive-dink combination — can transition from driving to soft game. Targets opponent's weaker side or body (hip/paddle transition zone). Uses drives as a change-of-pace tool against the soft game. Begins incorporating topspin on forehand drives."
         metrics:
@@ -374,6 +624,23 @@ nodes:
           - "Topspin drive: executes with visible dip at 50%+ success rate (5/10)"
           - "Drive-to-dink transition: can follow a drive with a soft dink within 2 shots on 6/10 sequences"
           - "Drive at opponent's body (hip zone): forces defensive contact on 4/10 attempts"
+        resources:
+          - title: "Third Shot Sports — Topspin Drives in Pickleball"
+            url: "https://www.youtube.com/watch?v=t2TMSN-QQKQ"
+            type: "video"
+          - title: "PrimeTime Pickleball — Drive at the Body Strategy"
+            url: "https://www.youtube.com/watch?v=Xq6BPHlyqlA"
+            type: "video"
+        practice:
+          - "15 min: Drive-at-feet drill — partner at kitchen line, drive at their feet, count how many force a pop-up or defensive response"
+          - "10 min: Drive-drop mix drill — hit 3 drives then 1 drop in sequence, practice switching pace without changing preparation"
+          - "10 min: Topspin drive drill — focus on low-to-high swing path, aim for balls that dip at the opponent's feet"
+        projects:
+          - "Execute a topspin drive with visible ball dip on 5 out of 10 attempts"
+          - "Successfully transition from a drive to a soft dink within 2 shots on 6 out of 10 sequences"
+        tips:
+          - "Don't drive at the opponent's paddle — aim at their feet or hip (the transition zone where they struggle to choose forehand or backhand)"
+          - "Add topspin by brushing up on the ball with a low-to-high swing path — this makes the ball dip down at the opponent's feet"
       - level: advanced
         criteria: "Topspin and slice drives executed on command. Drives at feet of kitchen-line players to force pop-ups. Counter-drives opponent's pace back with control. Drive-and-crash play — drives then advances to kitchen behind the pressure. This is where the power game meets the soft game at the 3.5-to-4.0 transition."
         metrics:
@@ -382,6 +649,12 @@ nodes:
           - "Topspin and slice drives both at 75%+ in rate (can vary spin on command)"
           - "Counter-drive rally: sustains 5+ drive exchanges without error from baseline"
           - "Drive-and-crash: reaches kitchen within 2 shots after a successful drive on 6/10 attempts"
+        resources:
+          - title: "Selkirk TV — Drive and Crash Strategy with Pro Breakdown"
+            url: "https://www.youtube.com/watch?v=gHCYG2SMXMY"
+            type: "video"
+        tips:
+          - "Don't drive and stay back — if your drive lands well, advance behind it; the drive-and-crash is what makes the power game work at the advanced level"
       - level: expert
         criteria: "Drives as a calculated weapon — knows precisely when to drive vs. drop based on opponent position, ball height, and match situation. Generates pace that opponents cannot handle while maintaining accuracy. Drive disguise is identical to drop preparation. Drive winner rate is a significant scoring tool."
         metrics:
@@ -390,6 +663,12 @@ nodes:
           - "Opponent cannot distinguish drive from drop preparation (video analysis confirms)"
           - "Drive speed differential: can vary pace by 30%+ between power drive and controlled roll drive"
           - "Strategic drive selection: chooses drive on appropriate balls (high balls, short balls) 90%+ of the time"
+        resources:
+          - title: "PrimeTime Pickleball — Pro Drive Analysis and Shot Selection"
+            url: "https://www.youtube.com/watch?v=zQJ7b4sNpGQ"
+            type: "video"
+        tips:
+          - "Vary your drive speed deliberately — alternate between a full-power drive and a controlled roll drive to keep opponents guessing and prevent them from timing your pace"
     tags: ["power", "offensive"]
 
   - id: "sports/pickleball/overhead-smash"

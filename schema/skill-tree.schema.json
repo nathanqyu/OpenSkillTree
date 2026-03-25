@@ -72,6 +72,28 @@
         }
       }
     },
+    "Resource": {
+      "type": "object",
+      "required": ["title", "url"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Display name of the resource (e.g., 'CS50P Lecture 0: Functions')."
+        },
+        "url": {
+          "type": "string",
+          "format": "uri",
+          "description": "URL to the resource."
+        },
+        "type": {
+          "type": "string",
+          "enum": ["video", "article", "course", "book", "tool", "exercise"],
+          "description": "Type of resource for icon display."
+        }
+      }
+    },
     "Benchmark": {
       "type": "object",
       "required": ["level", "criteria"],
@@ -92,6 +114,37 @@
             "minLength": 1
           },
           "description": "Optional quantitative targets that can be measured (e.g., '≥ 60% first-serve %')."
+        },
+        "resources": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/Resource"
+          },
+          "description": "Tutorials, videos, courses, or tools to help reach this level."
+        },
+        "practice": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Specific drills, exercises, or practice routines with time estimates."
+        },
+        "projects": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Concrete things to build, achieve, or demonstrate at this level."
+        },
+        "tips": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "description": "Common mistakes and how to avoid them."
         }
       }
     },

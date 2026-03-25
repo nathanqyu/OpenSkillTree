@@ -54,6 +54,8 @@ interface SkillNodeData {
   nodeId: string;
   isSelected: boolean;
   progressStatus: UserProgressStatus;
+  isReadyToLearn: boolean;
+  isRootNode: boolean;
   onNodeClick: (nodeId: string) => void;
 }
 
@@ -74,6 +76,12 @@ function SkillNodeCard({ data }: NodeProps<SkillNodeData>) {
     ? "border-2 border-zinc-800 dark:border-zinc-200 shadow-md"
     : "border border-zinc-200 dark:border-zinc-700 shadow-sm hover:border-zinc-400 dark:hover:border-zinc-500";
 
+  // Ready-to-learn glow for unlocked nodes with completed prerequisites
+  const readyGlow =
+    data.progressStatus === "locked" && data.isReadyToLearn
+      ? "animate-[readyPulse_2s_ease-in-out_infinite]"
+      : "";
+
   return (
     <div
       className={[
@@ -81,6 +89,7 @@ function SkillNodeCard({ data }: NodeProps<SkillNodeData>) {
         selectedCls,
         PROGRESS_RING[data.progressStatus],
         PROGRESS_BG[data.progressStatus],
+        readyGlow,
       ].join(" ")}
       style={{ width: NODE_WIDTH }}
       onClick={() => data.onNodeClick(data.nodeId)}
@@ -100,9 +109,19 @@ function SkillNodeCard({ data }: NodeProps<SkillNodeData>) {
             Learning
           </span>
         )}
-        {data.progressStatus === "locked" &&
+        {data.progressStatus === "locked" && data.isRootNode && (
+          <span className="rounded bg-emerald-100 px-1.5 py-0.5 text-[10px] font-semibold text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-400">
+            ★ Start here
+          </span>
+        )}
+        {data.progressStatus === "locked" && !data.isRootNode && data.isReadyToLearn && (
+          <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[10px] font-medium text-amber-700 dark:bg-amber-900/40 dark:text-amber-400">
+            Ready to learn
+          </span>
+        )}
+        {data.progressStatus === "locked" && !data.isRootNode && !data.isReadyToLearn &&
           (data.benchmarkCount > 0 ? (
-            <span className="rounded bg-emerald-50 px-1.5 py-0.5 text-[10px] text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400">
+            <span className="rounded bg-zinc-100 px-1.5 py-0.5 text-[10px] text-zinc-500 dark:bg-zinc-800 dark:text-zinc-400">
               {data.benchmarkCount} levels
             </span>
           ) : (
@@ -164,6 +183,8 @@ async function computeElkLayout(
         nodeId: skillNode.id,
         isSelected: false,
         progressStatus: "locked" as UserProgressStatus,
+        isReadyToLearn: false,
+        isRootNode: false,
         onNodeClick: () => {},
       } satisfies SkillNodeData,
       type: "skillNode",
@@ -257,38 +278,63 @@ function SkillTreeGraphInner({
     onNodeClickRef.current(nodeId);
   }, []);
 
+  // Compute whether a node is "ready to learn" (all required prerequisites completed)
+  const computeNodeFlags = useCallback(
+    (nodeId: string, pMap: EphemeralProgressMap) => {
+      const prereqs = skillEdges.filter(
+        (e) => e.targetNodeId === nodeId && e.relationshipType === "requires"
+      );
+      const isRoot = !skillEdges.some(
+        (e) => e.targetNodeId === nodeId && e.relationshipType === "requires"
+      );
+      const isReadyToLearn =
+        isRoot || prereqs.every((e) => pMap[e.sourceNodeId] === "completed");
+      return { isReadyToLearn, isRootNode: isRoot };
+    },
+    [skillEdges]
+  );
+
   // Initial layout
   useEffect(() => {
     computeElkLayout(skillNodes, skillEdges).then(({ nodes: rfNodes, edges: rfEdges }) => {
-      // Inject live callbacks and state into each node
-      const enriched = rfNodes.map((n) => ({
-        ...n,
-        data: {
-          ...n.data,
-          isSelected: n.id === selectedNodeIdRef.current,
-          progressStatus: (progressMapRef.current[n.id] ?? "locked") as UserProgressStatus,
-          onNodeClick: stableOnNodeClick,
-        },
-      }));
+      const enriched = rfNodes.map((n) => {
+        const flags = computeNodeFlags(n.id, progressMapRef.current);
+        return {
+          ...n,
+          data: {
+            ...n.data,
+            isSelected: n.id === selectedNodeIdRef.current,
+            progressStatus: (progressMapRef.current[n.id] ?? "locked") as UserProgressStatus,
+            isReadyToLearn: flags.isReadyToLearn,
+            isRootNode: flags.isRootNode,
+            onNodeClick: stableOnNodeClick,
+          },
+        };
+      });
       setNodes(enriched);
       setEdges(rfEdges);
     });
-  }, [skillNodes, skillEdges, setNodes, setEdges, stableOnNodeClick]);
+  }, [skillNodes, skillEdges, setNodes, setEdges, stableOnNodeClick, computeNodeFlags]);
 
   // Sync selected + progress state into node data without re-running layout
   useEffect(() => {
     setNodes((prev) =>
-      prev.map((n) => ({
-        ...n,
-        data: {
-          ...n.data,
-          isSelected: n.id === selectedNodeId,
-          progressStatus: (progressMap[n.id] ?? "locked") as UserProgressStatus,
-          onNodeClick: stableOnNodeClick,
-        },
-      }))
+      prev.map((n) => {
+        const flags = computeNodeFlags(n.id, progressMap);
+        return {
+          ...n,
+          data: {
+            ...n.data,
+            isSelected: n.id === selectedNodeId,
+            progressStatus: (progressMap[n.id] ?? "locked") as UserProgressStatus,
+            isReadyToLearn: flags.isReadyToLearn,
+            isRootNode: flags.isRootNode,
+            onNodeClick: stableOnNodeClick,
+          },
+        };
+      })
     );
-  }, [selectedNodeId, progressMap, stableOnNodeClick, setNodes]);
+  }, [selectedNodeId, progressMap, stableOnNodeClick, setNodes, computeNodeFlags]);
 
   // Re-center on selected node (300ms animation)
   useEffect(() => {

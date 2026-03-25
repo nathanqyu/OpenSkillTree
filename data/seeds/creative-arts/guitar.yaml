@@ -63,6 +63,26 @@ nodes:
           - "Tunes guitar to standard tuning (EADGBE) using a clip-on tuner in ≤2 minutes"
           - "Strums a down-down-up-up-down-up pattern at 60 BPM for 2 minutes without losing the beat"
           - "All 6 strings ring clearly when strumming each chord — test by picking each string individually"
+        resources:
+          - title: "JustinGuitar Beginner Course Module 1 — First Chords"
+            url: "https://www.justinguitar.com/guitar-lessons/the-best-beginner-guitar-course-bc-100"
+            type: "course"
+          - title: "Marty Music — Absolute Beginner Guitar Lesson"
+            url: "https://www.youtube.com/watch?v=BBz-Jyr23M4"
+            type: "video"
+          - title: "JustinGuitar — One Minute Changes Exercise"
+            url: "https://www.justinguitar.com/guitar-lessons/one-minute-changes-b1-104"
+            type: "exercise"
+        practice:
+          - "15 min daily: One Minute Changes drill — alternate between 2 chord pairs (Em-Am, D-A), record count and try to beat it"
+          - "10 min daily: strum a down-down-up-up-down-up pattern with a metronome at 60 BPM, increase by 5 BPM only after 10 clean reps"
+          - "5 min daily: pick each string of every chord individually to check for buzzing and muted strings"
+        projects:
+          - "Learn and perform 3 complete songs from memory using open chords (e.g., 'Knockin on Heaven's Door,' 'Horse With No Name,' 'Wonderwall')"
+          - "Record yourself playing a 2-song set and watch it back to self-critique"
+        tips:
+          - "Press fingertips just behind the fret wire, not on top of it — this is the #1 cause of fret buzz for beginners"
+          - "Keep your thumb behind the neck (not wrapped over the top) to maximize finger reach and reduce hand fatigue"
       - level: intermediate
         criteria: "Plays all major and minor open chords (A, B7, C, D, Dm, E, Em, F, G, Am) plus common additions (A7, D7, E7, Cadd9, Dsus2, Dsus4). Chord changes are smooth and automatic — eyes no longer need to watch the fretting hand. Uses ≥4 distinct strumming patterns musically (e.g., folk strum, pop ballad, reggae upstroke, boom-chicka). Can apply a capo and transpose chord shapes. Corresponds to ABRSM Grade 2."
         metrics:
@@ -71,6 +91,26 @@ nodes:
           - "Repertoire of ≥10 songs playable from memory, spanning at least 2 genres"
           - "Demonstrates ≥4 distinct strumming patterns on demand"
           - "Applies capo to transpose a song to a new key and plays it correctly"
+        resources:
+          - title: "JustinGuitar Beginner Course Module 7 — Strumming & Dynamics"
+            url: "https://www.justinguitar.com/modules/strumming-dynamics-1"
+            type: "course"
+          - title: "Marty Music — 4 Strumming Patterns Every Beginner Needs"
+            url: "https://www.youtube.com/watch?v=DRAfUOqb7IA"
+            type: "video"
+          - title: "Paul Davids — How To Use a Capo"
+            url: "https://www.youtube.com/watch?v=V2xY8Iz8axo"
+            type: "video"
+        practice:
+          - "10 min daily: practice 4 different strumming patterns over the same chord progression (e.g., G-C-D-Em) at 100 BPM"
+          - "15 min: play through your full 10-song repertoire from memory without stopping, noting any weak transitions"
+          - "5 min: practice chord changes without looking at your fretting hand — build muscle memory by feel"
+        projects:
+          - "Build a setlist of 10 songs spanning at least 2 genres (e.g., folk and pop) playable from memory"
+          - "Transpose a song using a capo and play it in a new key for a different singer's range"
+        tips:
+          - "If you always strum the same pattern, your songs will sound identical — practice switching patterns mid-song to add dynamics"
+          - "When struggling with a new chord, isolate the transition: practice only the 2 chords that give trouble, not the whole song"
       - level: advanced
         criteria: "Extended chord vocabulary: 7ths (Cmaj7, Am7, Dm7, G7), sus2, sus4, add9, slash chords (e.g., G/B, D/F#). Creates chord arrangements for songs by ear — listens to a recording and figures out the chord progression without looking it up. Understands and applies chord embellishments (walking bass lines between chords, percussive muting, chord stabs). Corresponds to ABRSM Grades 3-5."
         metrics:
@@ -78,6 +118,12 @@ nodes:
           - "Uses ≥3 strumming/picking patterns per song for dynamic variety (e.g., fingerpicked verse, strummed chorus, muted bridge)"
           - "Plays ≥20 distinct chord shapes from memory, including 7ths, sus, and add9 voicings"
           - "Walking bass line between chords demonstrated in at least 2 songs"
+        resources:
+          - title: "Paul Davids — How To Figure Out Chords By Ear"
+            url: "https://www.youtube.com/watch?v=ACLZH88Knbw"
+            type: "video"
+        tips:
+          - "Learning chords by ear is faster when you identify the bass note first — hum the lowest note and find it on your guitar"
       - level: expert
         criteria: "Complete chord vocabulary including jazz voicings (9ths, 11ths, 13ths, altered chords), drop-2 and drop-3 voicings, and chord melody technique. Creates solo guitar arrangements that sound full without accompaniment — bass, harmony, and melody simultaneously. Comps behind a vocalist or soloist with taste and variety. Corresponds to ABRSM Grades 6-8+."
         metrics:
@@ -85,6 +131,12 @@ nodes:
           - "Plays ≥5 jazz chord voicings (9ths, 13ths, altered) in at least 3 keys"
           - "Creates a chord melody arrangement of a standard song within 30 minutes"
           - "Comps behind a vocalist for a full set, using varied voicings and rhythmic variety"
+        resources:
+          - title: "JustinGuitar — Chord Melody & Jazz Voicings"
+            url: "https://www.justinguitar.com/modules/jazz-introduction"
+            type: "course"
+        tips:
+          - "Chord melody sounds thin if you neglect the bass note — always ensure your lowest note defines the harmony"
     tags: ["foundation", "chords", "strumming"]
 
   - id: "creative-arts/guitar/rhythm-timing"
@@ -113,6 +165,23 @@ nodes:
           - "Strums consistent quarter notes at 60, 80, and 100 BPM for 1 minute each without drifting"
           - "Claps back a simple 4-bar rhythm pattern correctly after hearing it twice"
           - "Records self playing a song and identifies ≥2 spots where timing drifts on playback"
+        resources:
+          - title: "JustinGuitar — Rhythm & Strumming Essentials"
+            url: "https://www.justinguitar.com/modules/rhythm-reading-essential"
+            type: "course"
+          - title: "Marty Music — How To Play In Time (Metronome Practice)"
+            url: "https://www.youtube.com/watch?v=6cMjpGKbkBs"
+            type: "video"
+        practice:
+          - "5 min daily: strum quarter notes with a metronome at 60, 80, and 100 BPM — tap foot on every beat"
+          - "5 min daily: count out loud '1-and-2-and-3-and-4-and' while strumming eighth notes"
+          - "10 min weekly: record yourself playing along with a song, listen back and mark where you rush or drag"
+        projects:
+          - "Play 3 full songs with a metronome from start to finish without losing the beat"
+          - "Record a 3-minute practice performance and timestamp 2+ timing issues to fix next session"
+        tips:
+          - "Rushing at chord changes is the #1 timing problem — slow the metronome to a speed where you can change chords without pausing"
+          - "Always tap your foot on the beat; if your foot stops, you have lost the pulse"
       - level: intermediate
         criteria: "Plays syncopated rhythms (accenting the 'and' counts). Uses ghost notes and fret-hand muting for groove and feel. Plays in 3/4 (waltz) and 6/8 (compound) time confidently. Locks in with a drummer or backing track — tempo stays steady even when other musicians fluctuate. Understands the difference between straight and swing eighth notes. Corresponds to ABRSM Grades 2-4."
         metrics:
@@ -121,6 +190,23 @@ nodes:
           - "Demonstrates palm-muted power chord rhythm at 120 BPM with consistent muting (no ringing open strings)"
           - "Switches between straight and swing feel on the same chord progression"
           - "Can play a 3/4 waltz pattern and a 6/8 fingerpicking pattern from memory"
+        resources:
+          - title: "JustinGuitar — Syncopation & Muting Techniques"
+            url: "https://www.justinguitar.com/guitar-lessons/all-about-syncopation-te-831"
+            type: "course"
+          - title: "Paul Davids — Rhythm Guitar Techniques You NEED To Know"
+            url: "https://www.youtube.com/watch?v=F5QsEaanwnk"
+            type: "video"
+        practice:
+          - "10 min daily: play syncopated strumming patterns (accent the 'and' counts) at 90 BPM with a metronome"
+          - "10 min: practice palm-muted power chord rhythms at 100-120 BPM, focusing on consistent muting pressure"
+          - "5 min: play a chord progression in 3/4 time, counting '1-2-3, 1-2-3'"
+        projects:
+          - "Play along with 5 backing tracks in different time signatures and feels without losing the beat"
+          - "Record a rhythm part demonstrating both straight and swing feel on the same chord progression"
+        tips:
+          - "Ghost notes (muted strums) are what make rhythm guitar groove — practice them as deliberately as you practice ringing chords"
+          - "If your palm muting sounds like complete deadening, lighten the pressure — you want a thud with some pitch, not silence"
       - level: advanced
         criteria: "Plays complex rhythmic patterns: 16th-note funk grooves, shuffle and swing feels, odd time signatures (5/4, 7/8, 9/8). Palm muting, percussive slaps, and body percussion used musically. Can play polyrhythmic patterns (e.g., 3-over-4). Understands and applies rhythmic displacement (shifting a pattern by an eighth or sixteenth note). Corresponds to ABRSM Grades 5-7."
         metrics:
@@ -128,6 +214,12 @@ nodes:
           - "Demonstrates a 16th-note funk groove with ghost notes at 90 BPM (clean, even subdivisions)"
           - "Plays a 3-over-4 polyrhythmic pattern on guitar (e.g., accenting every 3rd 16th note over a 4/4 beat)"
           - "Records a rhythm track for a song — tempo deviates ≤3 BPM from start to finish without click track"
+        resources:
+          - title: "Paul Davids — Odd Time Signatures Explained"
+            url: "https://www.youtube.com/watch?v=_K6_kPKtix0"
+            type: "video"
+        tips:
+          - "When learning odd meters like 7/8, subdivide into groups (e.g., 2+2+3 or 3+2+2) rather than counting every beat"
       - level: expert
         criteria: "Rhythm is a musical signature — identifiable in the way time is felt, not just kept. Can lock into any groove instantly with unfamiliar musicians. Internal clock is reliable without metronome for a full set. Can play rubato (free time) and return to tempo precisely. Understands metric modulation and can shift between tempos smoothly. Corresponds to ABRSM Grade 8+."
         metrics:
@@ -135,6 +227,12 @@ nodes:
           - "Joins an unfamiliar jam and locks into the groove within 4 bars"
           - "Plays rubato (free time) passage and returns to click tempo within 1 beat"
           - "Demonstrates metric modulation — transitions from one tempo to a mathematically related tempo mid-song"
+        resources:
+          - title: "Guitareo — Advanced Rhythm Concepts"
+            url: "https://www.guitareo.com/guitar-lessons/rhythm"
+            type: "course"
+        tips:
+          - "Metric modulation is easier to internalize if you practice feeling the new subdivision for 4 bars before the transition point"
     tags: ["rhythm", "timing", "foundation"]
 
   - id: "creative-arts/guitar/barre-chords"
@@ -168,6 +266,23 @@ nodes:
           - "Can play a song that uses F barre chord without stopping or pausing at the chord change"
           - "Names the chord produced by E-form barre at any fret (frets 1-12) within 3 seconds"
           - "Plays 3 power chord shapes (root-5th on strings 6-5, 5-4, and root-5th-octave) and moves them to 5 different fret positions"
+        resources:
+          - title: "JustinGuitar — F Chord & Barre Chord Technique"
+            url: "https://www.justinguitar.com/guitar-lessons/f-chord-full-grip-ch-240"
+            type: "course"
+          - title: "Marty Music — Barre Chords Made Easy"
+            url: "https://www.youtube.com/watch?v=QDY4VlPo8rE"
+            type: "video"
+        practice:
+          - "5 min daily: partial barre exercise — barre strings 1-2 only, then 1-3, then 1-4 with index finger, checking each string rings"
+          - "10 min daily: practice F major barre chord — strum, lift off, replace, strum — until all 6 strings ring 5 times in a row"
+          - "5 min daily: name the chord at each fret for E-form and A-form barre shapes (frets 1-12)"
+        projects:
+          - "Play a full song that requires F major barre chord without pausing at the chord change"
+          - "Learn 3 songs that use only barre chords and power chords (no open chords)"
+        tips:
+          - "Use the bony edge of your index finger (not the flat pad) for the barre — roll it slightly toward the nut for better contact"
+          - "If barre chords hurt after 2 minutes, take a break — finger strength builds over weeks, not days; forcing it causes injury"
       - level: intermediate
         criteria: "Plays all major and minor barre chord shapes in both E-form and A-form. Moves between barre chord positions smoothly — no audible gap or pause during transitions. Can play dominant 7th and minor 7th barre shapes. Knows root note locations on strings 5 and 6 to instantly name any barre chord. Uses barre chords to play songs in any key without a capo. Corresponds to ABRSM Grades 3-4."
         metrics:
@@ -176,6 +291,23 @@ nodes:
           - "Names the major and minor barre chord at any fret position for both E-form and A-form within 3 seconds"
           - "Plays a song in a sharp key (e.g., F#, Eb) using only barre chords — no open chords or capo"
           - "Demonstrates major, minor, dominant 7th, and minor 7th barre shapes in both E-form and A-form (8 shapes total)"
+        resources:
+          - title: "JustinGuitar — The CAGED System Explained"
+            url: "https://www.justinguitar.com/modules/the-caged-system"
+            type: "course"
+          - title: "Paul Davids — Understanding CAGED Once And For All"
+            url: "https://www.youtube.com/watch?v=0Qp26KcDrGw"
+            type: "video"
+        practice:
+          - "10 min daily: play E-form and A-form barre chords moving chromatically up the neck (frets 1-12), naming each chord"
+          - "10 min: practice switching between barre chords in different positions (e.g., F to Bm) at 80 BPM with no gaps"
+          - "5 min: quiz yourself — point to a random fret on strings 5 and 6 and name the note within 3 seconds"
+        projects:
+          - "Play a song in a sharp key (e.g., F# or Eb) using only barre chords, no capo"
+          - "Learn all 8 barre shapes (major, minor, dom7, min7 in E-form and A-form) and demonstrate each"
+        tips:
+          - "Speed up barre chord changes by keeping your index finger barred while changing the shape behind it — lift minimum fingers"
+          - "If your A-form barre buzzes on string 1, it is okay to mute it — many guitarists play A-form as a 5-string chord"
       - level: advanced
         criteria: "Uses the CAGED system to find ≥3 voicings for any chord across the fretboard. Plays partial barres and chord fragments for voice-leading and comping. Power chords, triads on inner strings, and inversions (root position, 1st inversion, 2nd inversion) used musically. Can derive scale patterns from CAGED chord shapes. Corresponds to ABRSM Grades 5-6."
         metrics:
@@ -184,6 +316,12 @@ nodes:
           - "Plays a chord progression using only triads on strings 2-3-4 (interior voicings) in 3 different positions"
           - "Demonstrates root position, 1st inversion, and 2nd inversion for major and minor triads"
           - "Derives the pentatonic scale pattern from each CAGED chord shape"
+        resources:
+          - title: "Paul Davids — CAGED System Deep Dive"
+            url: "https://www.youtube.com/watch?v=w5gLj8iLgyE"
+            type: "video"
+        tips:
+          - "When learning CAGED shapes, visualize the open chord 'inside' the barre shape — it makes the system click"
       - level: expert
         criteria: "Complete fretboard chord mastery. Creates voicings on the fly for any harmonic situation — jazz comping, chord melody, reharmonization. Voice-leads through chord progressions using minimal hand movement and smooth note connections. Drop-2, drop-3, and spread voicings accessible. Corresponds to ABRSM Grades 7-8+."
         metrics:
@@ -191,6 +329,12 @@ nodes:
           - "Creates a chord melody arrangement of a standard melody using CAGED-derived voicings"
           - "Plays a jazz standard comping part using ≥3 different voicing types (drop-2, shell voicings, triads)"
           - "Given any chord symbol (e.g., Db13#11), plays an appropriate voicing within 5 seconds"
+        resources:
+          - title: "JustinGuitar — Jazz Chord Voicings"
+            url: "https://www.justinguitar.com/modules/jazz-introduction"
+            type: "course"
+        tips:
+          - "Voice leading is about minimizing hand movement — look for common tones between chords and keep them on the same string"
     tags: ["chords", "technique", "fretboard"]
 
   - id: "creative-arts/guitar/fingerpicking"
@@ -223,6 +367,23 @@ nodes:
           - "Thumb accurately targets the correct bass string (root note) for each chord — tested over C (string 5), G (string 6), Am (string 5), Em (string 6)"
           - "Plays 'Dust in the Wind' intro pattern or equivalent simple fingerpicking song recognizably"
           - "Demonstrates 3 distinct fingerpicking patterns: ascending arpeggio (p-i-m-a), pinch + arpeggio, and a song-specific pattern"
+        resources:
+          - title: "JustinGuitar — Fingerpicking Basics"
+            url: "https://www.justinguitar.com/modules/fingerstyle-fingerpicking"
+            type: "course"
+          - title: "Marty Music — Fingerpicking For Beginners"
+            url: "https://www.youtube.com/watch?v=yMBJqOYMc0A"
+            type: "video"
+        practice:
+          - "10 min daily: p-i-m-a arpeggio pattern over C-G-Am-Em at 60 BPM — focus on thumb accuracy on the correct bass string for each chord"
+          - "5 min daily: anchor your thumb on string 6 and pluck strings 3-2-1 with i-m-a, keeping right hand still"
+          - "10 min: learn the intro to 'Dust in the Wind' or 'Nothing Else Matters' as a fingerpicking exercise"
+        projects:
+          - "Learn and perform 1 complete fingerpicking song from start to finish (e.g., 'Dust in the Wind,' 'Nothing Else Matters')"
+          - "Demonstrate 3 distinct fingerpicking patterns over the same chord progression"
+        tips:
+          - "Keep your right hand anchored and still — only move the fingers, not the whole hand; bouncing causes missed strings"
+          - "Assign each finger to its string and never deviate: p=bass (4-6), i=string 3, m=string 2, a=string 1"
       - level: intermediate
         criteria: "Travis picking (alternating bass with melody on top) maintained steadily — the bass is on autopilot while attention focuses on melody. Classical fingerpicking patterns applied to ≥5 songs. Arpeggiated chords used musically in songs where strumming would also work. Plays fingerpicking patterns in both 4/4 and 3/4 time. Can play with or without a thumbpick. Corresponds to ABRSM Grades 3-4."
         metrics:
@@ -231,6 +392,23 @@ nodes:
           - "Plays a 3/4 waltz arpeggio pattern (p-i-m-a-m-i) at 100 BPM for 2 minutes"
           - "Demonstrates pinch technique (thumb + finger simultaneously) on beats 1 and 3 while arpeggios fill beats 2 and 4"
           - "Switches between strumming and fingerpicking within the same song without pausing"
+        resources:
+          - title: "JustinGuitar — Travis Picking Technique"
+            url: "https://www.justinguitar.com/guitar-lessons/travis-picking-basic-pattern-te-601"
+            type: "course"
+          - title: "Paul Davids — Fingerstyle Guitar Essentials"
+            url: "https://www.youtube.com/watch?v=sSgS4jVkVzM"
+            type: "video"
+        practice:
+          - "15 min daily: Travis picking — alternate bass with thumb while adding melody notes on treble strings, starting at 60 BPM"
+          - "10 min: practice the 3/4 waltz arpeggio (p-i-m-a-m-i) at increasing tempos"
+          - "5 min: switch between strumming and fingerpicking within the same song without pausing"
+        projects:
+          - "Learn 5 fingerpicking songs from memory (e.g., 'Blackbird,' 'Landslide,' 'Tears in Heaven')"
+          - "Perform a song that transitions between strummed verses and fingerpicked choruses"
+        tips:
+          - "Travis picking clicks when your thumb becomes automatic — practice bass-only for 5 minutes before adding melody notes"
+          - "If your alternating bass drifts, sing or hum the melody while the thumb plays alone to separate the mental tasks"
       - level: advanced
         criteria: "Complex fingerpicking arrangements: simultaneous independent melody and bass lines (like a pianist's left and right hands). Hybrid picking (holding a flat pick between thumb and index while using middle and ring fingers) for country, rock, and jazz applications. Classical tremolo technique (p-a-m-i rapid repetition on a single string). Banjo rolls and cross-picking patterns. Can arrange a simple melody as a solo fingerstyle piece. Corresponds to ABRSM Grades 5-7."
         metrics:
@@ -239,6 +417,12 @@ nodes:
           - "Classical tremolo (p-a-m-i on string 1) sustained evenly for 30 seconds — notes are even in volume and spacing"
           - "Arranges a well-known melody (e.g., a folk tune) as a solo fingerstyle piece with bass, chords, and melody within 1 hour"
           - "Plays a banjo roll or cross-picking pattern at 100 BPM cleanly for 1 minute"
+        resources:
+          - title: "Paul Davids — Advanced Fingerstyle Techniques"
+            url: "https://www.youtube.com/watch?v=sSgS4jVkVzM"
+            type: "video"
+        tips:
+          - "Hybrid picking (pick + fingers together) opens up speed and tonal variety — practice holding the pick while using m and a fingers"
       - level: expert
         criteria: "Fingerpicking as a primary technique and artistic voice. Creates original fingerstyle arrangements that exploit the full range of the guitar (harmonics, percussive tapping on the body, altered tunings). Can transcribe and perform complex arrangements by ear. Performs solo fingerstyle concerts. Influenced by or capable of performing in the styles of players like Tommy Emmanuel, Andy McKee, or classical masters. Corresponds to ABRSM Grade 8+."
         metrics:
@@ -247,6 +431,12 @@ nodes:
           - "Performs a 30-minute solo fingerstyle set with dynamic variety, audience engagement, and zero accompaniment"
           - "Demonstrates ≥3 alternate tunings (DADGAD, Open G, Open D) and plays a piece in each"
           - "Incorporates percussive techniques (body slaps, string snaps, harmonics) musically in an original arrangement"
+        resources:
+          - title: "Paul Davids — Fingerstyle Masterclass"
+            url: "https://www.youtube.com/watch?v=sSgS4jVkVzM"
+            type: "video"
+        tips:
+          - "Original fingerstyle arrangements need a strong bass line as the anchor — write the bass part first, then layer melody and harmony"
     tags: ["fingerpicking", "technique", "classical"]
 
   - id: "creative-arts/guitar/scales-fretboard"
@@ -282,6 +472,23 @@ nodes:
           - "Names all 12 notes on string 5 (A) within 5 seconds per note when pointed to random frets"
           - "Improvises 4 bars over an Am backing track using minor pentatonic box 1 — stays in the scale, plays in time"
           - "Plays the major pentatonic scale in one position ascending and descending"
+        resources:
+          - title: "JustinGuitar — Minor Pentatonic Scale"
+            url: "https://www.justinguitar.com/guitar-lessons/the-minor-pentatonic-scale-sc-001"
+            type: "course"
+          - title: "Marty Music — Pentatonic Scale For Beginners"
+            url: "https://www.youtube.com/watch?v=1I3JdBits1A"
+            type: "video"
+        practice:
+          - "10 min daily: play minor pentatonic box 1 ascending and descending with alternate picking at 60-80 BPM"
+          - "5 min daily: note-per-day drill — pick one note (e.g., C) and find it on every string"
+          - "10 min: improvise over an Am backing track using only pentatonic box 1, focusing on rhythm and phrasing, not speed"
+        projects:
+          - "Memorize all 12 notes on strings 5 and 6 (the root-note strings) and pass a random quiz within 5 seconds per note"
+          - "Improvise a simple 12-bar blues solo over a backing track using minor pentatonic"
+        tips:
+          - "Do not try to play fast yet — beginners who rush scales develop sloppy alternate picking that is hard to fix later"
+          - "Learn the scale as a musical tool, not a finger exercise — practice making 3-note phrases that sound like music, not drills"
       - level: intermediate
         criteria: "Plays all 5 pentatonic positions (boxes 1-5) and connects them smoothly across the fretboard. Plays the major scale in at least 2 positions. Knows all 5 essential scales (minor pentatonic, major pentatonic, natural minor, major, blues). Knows note names across all 6 strings up to the 12th fret. Uses scale sequences (groups of 3, groups of 4, 3rds, 4ths) as practice exercises. Can identify the key of a song and choose the correct pentatonic position. Corresponds to ABRSM Grades 3-5."
         metrics:
@@ -291,6 +498,23 @@ nodes:
           - "Demonstrates all 5 essential scales (minor pentatonic, major pentatonic, natural minor, major, blues) in the key of A"
           - "Plays a scale sequence in groups of 3 ascending and descending through a full pentatonic position at 80 BPM"
           - "Given a backing track in an unknown key, identifies the key and plays the correct pentatonic scale within 30 seconds"
+        resources:
+          - title: "JustinGuitar — Connecting Pentatonic Patterns"
+            url: "https://www.justinguitar.com/modules/pentatonic-playground"
+            type: "course"
+          - title: "Paul Davids — The Only Scale Video You'll Ever Need"
+            url: "https://www.youtube.com/watch?v=vPoEoYl9lUc"
+            type: "video"
+        practice:
+          - "15 min daily: connect pentatonic boxes 1 through 5 by sliding between positions — play the full fretboard at 80-100 BPM"
+          - "10 min: scale sequences in groups of 3 ascending and descending through a pentatonic position"
+          - "5 min: fretboard quiz — point to random frets on all 6 strings and name the note within 3 seconds"
+        projects:
+          - "Play the major scale in 2 positions at 100 BPM with alternate picking and zero wrong notes"
+          - "Identify the key of 5 unfamiliar backing tracks and solo over each using the correct pentatonic"
+        tips:
+          - "Learning all 5 pentatonic boxes at once is overwhelming — master box 1 and box 4 first, then fill in the rest"
+          - "Connect boxes by finding overlapping notes — box 1's highest notes are box 2's lowest notes"
       - level: advanced
         criteria: "Plays modes of the major scale (Ionian, Dorian, Phrygian, Lydian, Mixolydian, Aeolian, Locrian) and understands each mode's characteristic sound and application (e.g., Dorian over minor 7th chords, Mixolydian over dominant 7th chords). Uses scales for targeted improvisation — chooses specific scales to outline chord changes rather than playing one scale over everything. Harmonic minor and melodic minor scales accessible in at least 2 positions. Plays 3-note-per-string scale patterns for speed and position shifting. Corresponds to ABRSM Grades 5-7."
         metrics:
@@ -300,6 +524,12 @@ nodes:
           - "Plays harmonic minor scale in 2 positions and explains when to use it (over V7 in a minor key)"
           - "Plays 3-note-per-string major scale pattern ascending across all 6 strings at 120 BPM with alternate picking"
           - "Demonstrates scale sequences in 3rds and 4ths through the major scale at 100 BPM"
+        resources:
+          - title: "Paul Davids — Music Modes Explained"
+            url: "https://www.youtube.com/watch?v=bwaeBUYcO5o"
+            type: "video"
+        tips:
+          - "Learn modes by their characteristic sound (Dorian = minor + bright 6th, Mixolydian = major + flat 7th) rather than as scale patterns"
       - level: expert
         criteria: "Complete fretboard visualization — sees intervals, chord tones, and scale degrees simultaneously across all positions, not just patterns. Scales, arpeggios (major, minor, diminished, augmented, dominant 7th), and intervals accessible in any position without thinking. Creates melodic lines from any starting point on any string. Plays symmetrical scales (whole tone, diminished), bebop scales, and altered scales. Can visualize and play any interval from any note instantly. Corresponds to ABRSM Grade 8+."
         metrics:
@@ -308,6 +538,12 @@ nodes:
           - "Names the interval between any two randomly selected fretboard positions within 3 seconds"
           - "Demonstrates diminished, whole tone, and altered scale from any root"
           - "Plays a bebop scale over a ii-V-I progression, targeting chord tones on strong beats"
+        resources:
+          - title: "JustinGuitar — Jazz Scale Applications"
+            url: "https://www.justinguitar.com/modules/jazz-introduction"
+            type: "course"
+        tips:
+          - "Stop thinking in patterns — at the expert level, see intervals and chord tones across the fretboard, not box shapes"
     tags: ["scales", "fretboard", "theory"]
 
   - id: "creative-arts/guitar/music-theory"
@@ -341,6 +577,23 @@ nodes:
           - "Builds a major triad (root, major 3rd, perfect 5th) on one string from any root note"
           - "Names the I, IV, and V chords in the keys of C, G, D, A, and E"
           - "Explains why Em is the 'vi' chord in the key of G (because E is the 6th note of the G major scale)"
+        resources:
+          - title: "JustinGuitar — Practical Music Theory"
+            url: "https://www.justinguitar.com/modules/practical-music-theory"
+            type: "course"
+          - title: "Marty Music — Music Theory for Guitar Players"
+            url: "https://www.youtube.com/watch?v=1LaGIbCLQJo"
+            type: "video"
+        practice:
+          - "10 min: build major and minor triads on one string from any root note — say the interval name (root, 3rd, 5th) aloud"
+          - "5 min: listen to songs and identify whether chords are major or minor by ear"
+          - "5 min: name the I, IV, and V chords in 5 different keys from memory"
+        projects:
+          - "Name the key and I-IV-V progression for 5 songs you already know"
+          - "Build a major and minor triad on one string from every natural note (A through G)"
+        tips:
+          - "Learn theory ON the guitar, not just on paper — play each interval while saying its name to connect sound to concept"
+          - "Major vs. minor by ear: if you struggle, listen to the 3rd — major 3rds sound bright and resolved, minor 3rds sound dark and tense"
       - level: intermediate
         criteria: "Understands diatonic harmony: can build all 7 chords from any major scale (I-ii-iii-IV-V-vi-vii°) and knows their qualities (major, minor, diminished). Uses Nashville Number System to communicate chord progressions. Identifies the 4 most common pop/rock progressions by ear (I-V-vi-IV, I-IV-V-I, vi-IV-I-V, ii-V-I). Understands the circle of fifths and uses it to find key signatures and related keys. Can transpose songs to new keys using theory (not just a capo). Corresponds to ABRSM Grades 3-5 theory."
         metrics:
@@ -350,6 +603,23 @@ nodes:
           - "Draws the circle of fifths from memory and uses it to name key signatures for all 12 major keys"
           - "Explains why the V chord wants to resolve to the I chord (leading tone resolution)"
           - "Identifies ≥3 songs that use the I-V-vi-IV progression"
+        resources:
+          - title: "JustinGuitar — Nashville Number System"
+            url: "https://www.justinguitar.com/guitar-lessons/nashville-number-system-mt-106"
+            type: "course"
+          - title: "Paul Davids — Circle of Fifths Explained"
+            url: "https://www.youtube.com/watch?v=d1aJ6HixSe0"
+            type: "video"
+        practice:
+          - "10 min: write out all 7 diatonic chords (with qualities) in 3 different major keys"
+          - "10 min: transpose a song to a new key using Nashville Numbers and play it"
+          - "5 min: listen to unfamiliar pop songs and identify the progression as Nashville Numbers"
+        projects:
+          - "Transpose 3 songs to new keys using the Nashville Number System"
+          - "Draw the circle of fifths from memory and use it to name key signatures for all 12 major keys"
+        tips:
+          - "The Nashville Number System is the single most practical theory tool for gigging musicians — learn it before diving into modes"
+          - "If the circle of fifths feels abstract, play the fifths ascending on your guitar (C-G-D-A-E-B-F#) to hear the relationships"
       - level: advanced
         criteria: "Understands secondary dominants (e.g., V/V, V/vi), borrowed chords (from parallel minor/major), modal interchange, and modulation techniques (pivot chord, direct modulation). Applies theory to composition — writes songs with intentional harmonic choices. Performs harmonic analysis of songs using Roman numeral notation. Understands chord extensions (7ths, 9ths, 11ths, 13ths) and how they're constructed. Knows functional harmony: tonic (I, iii, vi), subdominant (ii, IV), dominant (V, vii°). Corresponds to ABRSM Grades 6-7 theory."
         metrics:
@@ -358,6 +628,12 @@ nodes:
           - "Identifies secondary dominants in a song by ear (e.g., 'that A7 is the V/V in the key of G')"
           - "Explains the difference between a modulation and a borrowed chord, with a musical example of each"
           - "Constructs maj7, min7, dom7, min7b5, and dim7 chords from any root on the fretboard"
+        resources:
+          - title: "Paul Davids — Secondary Dominants Explained"
+            url: "https://www.youtube.com/watch?v=py4XiMECfSA"
+            type: "video"
+        tips:
+          - "Secondary dominants are easier to hear than to explain — listen for the moment a chord 'wants' to resolve to the next chord more strongly than expected"
       - level: expert
         criteria: "Deep theoretical understanding: voice leading principles (contrary and oblique motion, avoiding parallel 5ths), counterpoint basics, jazz harmony (tritone substitution, altered dominants, chord substitution, reharmonization), and form analysis (AABA, 12-bar blues, sonata form). Theory informs every musical decision — improvisation, composition, arrangement, and performance. Can teach theory to students at any level, adapting explanations to their current understanding. Corresponds to ABRSM Grade 8+ theory."
         metrics:
@@ -366,6 +642,12 @@ nodes:
           - "Teaches a 30-minute theory lesson to a beginner that results in demonstrable understanding (student can apply the concept)"
           - "Composes a piece that modulates through ≥3 keys using pivot chords, with clear harmonic analysis"
           - "Explains tritone substitution and demonstrates it on the guitar in ≥3 keys"
+        resources:
+          - title: "JustinGuitar — Advanced Jazz Theory"
+            url: "https://www.justinguitar.com/modules/jazz-introduction"
+            type: "course"
+        tips:
+          - "Teaching theory forces you to truly understand it — if you cannot explain a concept simply, you do not understand it deeply enough"
     tags: ["theory", "harmony", "knowledge"]
 
   - id: "creative-arts/guitar/lead-soloing"
@@ -404,6 +686,23 @@ nodes:
           - "Hammer-on and pull-off exercises: plays 4 consecutive hammer-on/pull-off cycles on each string cleanly at 80 BPM"
           - "Slides between notes within minor pentatonic box 1 — slide lands on the target note accurately 8/10 times"
           - "Plays a simple solo (e.g., 'Wish You Were Here' solo, 'Wonderful Tonight' lead) from TAB at tempo"
+        resources:
+          - title: "JustinGuitar — Lead Guitar & Blues Course"
+            url: "https://www.justinguitar.com/modules/blues-lead-guitar"
+            type: "course"
+          - title: "Marty Music — Your First Guitar Solo"
+            url: "https://www.youtube.com/watch?v=1zCOW5Ie0ZM"
+            type: "video"
+        practice:
+          - "10 min daily: 'call and response' exercise — play a 2-bar phrase, then improvise a 2-bar answer using only 4-5 notes"
+          - "10 min: hammer-on and pull-off exercises on each string at 80 BPM, 4 cycles per string"
+          - "10 min: improvise over a 12-bar blues backing track, focusing on rhythm and phrasing, not speed"
+        projects:
+          - "Learn and play 3 recognizable guitar riffs from well-known songs (e.g., 'Smoke on the Water,' 'Seven Nation Army')"
+          - "Record a 12-bar blues solo using minor pentatonic with at least 2 techniques (bends, slides, hammer-ons)"
+        tips:
+          - "Beginners run up and down the scale — instead, play 3-4 notes, add rhythm and space, and repeat; phrasing beats speed every time"
+          - "Practice bending to a target pitch by fretting the target note first, hearing it, then bending from 2 frets below to match"
       - level: intermediate
         criteria: "All 4 essential lead techniques mastered (Guitareo checklist): picking accuracy with alternate picking, bends to target pitch (half-step and whole-step), slides used expressively, and vibrato that is controlled and even. Plays solos from popular songs at original tempo. Improvises using pentatonic + blue note (b5) with musical phrasing — uses space, repetition, and rhythmic variation rather than just running scales. Can bend in tune consistently. Vibrato speed and width are controllable. Typically reached around year 1-2. Corresponds to ABRSM Grades 3-5."
         metrics:
@@ -413,6 +712,23 @@ nodes:
           - "Improvises a 2-chorus solo over a 12-bar blues that includes bends, slides, vibrato, and hammer-ons/pull-offs"
           - "Alternate picking: plays a pentatonic scale at 120 BPM with strict alternate picking (no double-downstrokes)"
           - "Uses the blue note (b5) in at least 3 improvised phrases naturally"
+        resources:
+          - title: "JustinGuitar — Bending & Vibrato Technique"
+            url: "https://www.justinguitar.com/guitar-lessons/vibrato-te-401"
+            type: "course"
+          - title: "Paul Davids — How To Improvise on Guitar"
+            url: "https://www.youtube.com/watch?v=V7UJoSFrKBk"
+            type: "video"
+        practice:
+          - "10 min daily: bending exercise — fret the target note, hear it, then bend from 2 frets below to match; verify with a tuner"
+          - "10 min: vibrato practice — sustain a note with controlled, even vibrato for 4 beats at 80 BPM"
+          - "15 min: learn a moderate guitar solo from TAB/recording (e.g., 'Hotel California,' 'Comfortably Numb' first solo)"
+        projects:
+          - "Improvise a 2-chorus solo over a 12-bar blues that includes bends, slides, vibrato, and hammer-ons/pull-offs"
+          - "Learn and play a complete intermediate guitar solo from a recording at original tempo"
+        tips:
+          - "Vibrato is what separates amateurs from good players — practice slow, wide vibrato before fast, narrow vibrato"
+          - "Use a tuner to check your bends — most beginners under-bend by a quarter step and it sounds out of tune"
       - level: advanced
         criteria: "Improvises over complex chord changes using appropriate scales and modes — changes scales when the chord changes rather than playing one scale over everything. Has developed a vocabulary of signature licks and a recognizable phrasing style. Plays convincingly in ≥3 distinct styles (blues, rock, jazz, country, metal). Uses advanced techniques: sweep picking, tapping, legato runs, string skipping. Targets chord tones (root, 3rd, 5th, 7th) on strong beats. Understands and applies concepts of tension and resolution. Typically reached around year 3-5. Corresponds to ABRSM Grades 6-7."
         metrics:
@@ -422,6 +738,12 @@ nodes:
           - "Sweep picking: plays a 5-string major arpeggio sweep at 80 BPM cleanly"
           - "Targets chord tones: in an improvised solo, ≥70% of notes on beat 1 of each bar are chord tones (root, 3rd, 5th, or 7th)"
           - "Transcribes an 8-bar solo from a recording by ear in ≤30 minutes"
+        resources:
+          - title: "Paul Davids — Advanced Lead Guitar Techniques"
+            url: "https://www.youtube.com/watch?v=V7UJoSFrKBk"
+            type: "video"
+        tips:
+          - "Target chord tones (root, 3rd, 5th) on beat 1 of each bar — this single habit makes solos sound intentional instead of random"
       - level: expert
         criteria: "Lead playing is a distinctive artistic voice — recognizable by tone, phrasing, and note choice. Creates solos that tell a story with a beginning, development, climax, and resolution. Improvisation sounds composed; composition sounds improvised. Can play over any harmonic context (standards, free jazz, complex metal progressions, odd meters). Speed is a tool, not a goal — can play blazingly fast AND agonizingly slow with equal musical impact. Corresponds to ABRSM Grade 8+."
         metrics:
@@ -430,6 +752,12 @@ nodes:
           - "Plays a ballad solo where every note is intentional — no 'filler' notes, every phrase serves the melody"
           - "Transcribes a complex solo (e.g., jazz or fusion) from recording by ear in ≤1 hour"
           - "Teaches a lead guitar concept to an intermediate student resulting in measurable improvement in their playing"
+        resources:
+          - title: "Guitareo — Soloing Masterclass"
+            url: "https://www.guitareo.com/guitar-lessons/lead"
+            type: "course"
+        tips:
+          - "The mark of expert soloing is restraint — every note serves the music; if a note does not add meaning, leave silence instead"
     tags: ["lead", "soloing", "improvisation"]
 
   - id: "creative-arts/guitar/tone-dynamics"
