@@ -10,7 +10,7 @@ import type { TreeListItem, SearchResultItem } from "@/types/skill-tree";
  * Server component: fetches directly from DB (no API round-trip needed on server).
  * When ?q= is present the page is dynamic (ISR bypassed); otherwise ISR at 1 hour.
  */
-export const revalidate = 3600;
+export const revalidate = 60; // ISR: revalidate every minute to pick up data changes quickly
 
 export default async function GalleryPage({
   searchParams,

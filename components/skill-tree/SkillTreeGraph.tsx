@@ -85,7 +85,7 @@ function SkillNodeCard({ data }: NodeProps<SkillNodeData>) {
       style={{ width: NODE_WIDTH }}
       onClick={() => data.onNodeClick(data.nodeId)}
     >
-      <Handle type="target" position={Position.Top} style={{ background: "#a1a1aa" }} />
+      <Handle type="source" position={Position.Top} style={{ background: "#a1a1aa" }} />
       <p className="text-xs font-semibold text-zinc-900 dark:text-zinc-50 line-clamp-2 leading-tight">
         {data.label}
       </p>
@@ -111,7 +111,7 @@ function SkillNodeCard({ data }: NodeProps<SkillNodeData>) {
             </span>
           ))}
       </div>
-      <Handle type="source" position={Position.Bottom} style={{ background: "#a1a1aa" }} />
+      <Handle type="target" position={Position.Bottom} style={{ background: "#a1a1aa" }} />
     </div>
   );
 }
@@ -133,7 +133,7 @@ async function computeElkLayout(
     id: "root",
     layoutOptions: {
       "elk.algorithm": "layered",
-      "elk.direction": "DOWN",
+      "elk.direction": "UP",
       "elk.spacing.nodeNode": "40",
       "elk.layered.spacing.nodeNodeBetweenLayers": "80",
       "elk.layered.nodePlacement.strategy": "SIMPLE",
@@ -321,8 +321,7 @@ export function SkillTreeGraph({
 }: SkillTreeGraphProps) {
   return (
     <div
-      style={{ height: 520 }}
-      className="rounded-xl border border-zinc-200 bg-zinc-50 overflow-hidden dark:border-zinc-700 dark:bg-zinc-900"
+      className="rounded-xl border border-zinc-200 bg-zinc-50 overflow-hidden dark:border-zinc-700 dark:bg-zinc-900 h-[calc(100vh-220px)] min-h-[400px]"
     >
       <ReactFlowProvider>
         <SkillTreeGraphInner

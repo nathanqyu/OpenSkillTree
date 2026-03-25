@@ -4,7 +4,7 @@ import { query } from "@/lib/db";
 import type { SkillTree, SkillNode, SkillEdge } from "@/types/skill-tree";
 import { SkillTreeClient } from "@/components/skill-tree/SkillTreeClient";
 
-export const revalidate = 86400; // ISR: revalidate daily
+export const revalidate = 60; // ISR: revalidate every minute to pick up data changes quickly
 
 interface PageParams {
   params: Promise<{ treeId: string }>;
