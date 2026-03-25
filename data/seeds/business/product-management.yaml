@@ -70,7 +70,7 @@ nodes:
     tags: ["discovery", "framing", "foundation"]
 
   - id: "business/product-management/requirements-writing"
-    title: "Requirements Writing"
+    title: "Product Specs & Requirements"
     description: >
       Translating user needs and business goals into clear, buildable specifications
       — user stories, PRDs, technical briefs — that engineering and design can
@@ -273,7 +273,7 @@ nodes:
       discovery habits framework).
     benchmarks:
       - level: beginner
-        criteria: "Tests assumptions with lo-fi prototypes (Figma mock, landing page, Wizard of Oz)."
+        criteria: "Tests assumptions with low-fidelity prototypes — quick, rough versions of an idea (Figma mock, landing page, Wizard of Oz) — before committing engineering resources."
         metrics:
           - "≥1 prototype test per feature before engineering starts"
       - level: intermediate
@@ -337,7 +337,7 @@ nodes:
     tags: ["strategy", "planning", "communication"]
 
   - id: "business/product-management/go-to-market"
-    title: "Go-to-Market"
+    title: "Go-to-Market (GTM)"
     description: >
       The ability to plan and execute feature and product launches — coordinating
       with marketing, sales, customer success, and communications to drive

@@ -210,7 +210,7 @@ nodes:
 
   # ── ACCESSORY & ISOLATION ─────────────────────────────────────────────────
   - id: "sports/strength-training/accessory-isolation"
-    title: "Accessory & Isolation Work"
+    title: "Supporting Exercises"
     description: >
       Supplementary exercises that address weak points in the main lifts,
       build muscle in lagging areas, and reduce injury risk through balanced
@@ -390,7 +390,7 @@ nodes:
 
   # ── PROGRAMMING & PERIODIZATION ───────────────────────────────────────────
   - id: "sports/strength-training/programming-periodization"
-    title: "Programming & Periodization"
+    title: "Training Program Design"
     description: >
       The systematic planning of training variables — volume, intensity,
       frequency, exercise selection, and rest periods — across time to

@@ -271,7 +271,7 @@ nodes:
       because custom data structures are implemented as classes.
     benchmarks:
       - level: beginner
-        criteria: "Knows list vs. set lookup time difference. Implements linear search and simple sorting."
+        criteria: "Knows list vs. set lookup time difference. Understands Big-O notation (how fast an operation is as data grows — O(1) means constant time, O(n) means time grows with data size). Implements linear search and simple sorting."
         metrics:
           - "Correctly identifies O(1) vs. O(n) operations in 8/10 quiz scenarios"
       - level: intermediate

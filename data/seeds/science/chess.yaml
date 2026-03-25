@@ -364,7 +364,7 @@ nodes:
 
   # ── CALCULATION ─────────────────────────────────────────────────────────────
   - id: "science/chess/calculation-visualization"
-    title: "Calculation & Visualization"
+    title: "Thinking Ahead (Calculation)"
     description: >
       The ability to see moves ahead without physically moving pieces — the
       mental skill of calculating variations. Calculation is distinct from
@@ -504,7 +504,7 @@ nodes:
 
   # ── PATTERN RECOGNITION ─────────────────────────────────────────────────────
   - id: "science/chess/pattern-recognition"
-    title: "Pattern Recognition"
+    title: "Position Recognition & Patterns"
     description: >
       The accumulated library of positions, structures, and motifs that a player
       recognizes on sight. Pattern recognition is what allows strong players to

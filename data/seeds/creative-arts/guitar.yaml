@@ -436,12 +436,13 @@ nodes:
     title: "Tone & Dynamics"
     description: >
       Controlling the sound of the guitar through picking technique, volume
-      and tone controls, use of effects pedals, amp settings, and physical
-      touch. Tone is how a guitarist expresses emotion beyond the notes
-      themselves — two players can play the same notes and sound completely
-      different. The signal chain runs: guitar (pickups, volume/tone knobs) →
-      effects pedals → amplifier (preamp gain, EQ, master volume) → speaker
-      cabinet. Each link in the chain shapes the final sound. Sub-skills on
+      and tone controls, and physical touch. Tone is how a guitarist expresses
+      emotion beyond the notes — two players can play the same notes and
+      sound completely different. For acoustic players: pick attack (hard vs.
+      soft), picking position (near the bridge for bright, near the neck for
+      warm), and finger vs. pick choice are the primary tone tools. For
+      electric players, the signal chain adds: guitar pickups, effects pedals,
+      and amplifier settings (preamp gain, EQ, master volume). Sub-skills on
       the guitar itself: pick angle (tilting the pick changes brightness),
       pick attack (how hard you strike — soft for warmth, hard for bite),
       picking position (near the bridge for a bright/trebly tone, near the
@@ -493,7 +494,7 @@ nodes:
     tags: ["tone", "dynamics", "expression"]
 
   - id: "creative-arts/guitar/sight-reading-tab"
-    title: "Sight Reading & Tablature"
+    title: "Reading Music: TAB & Notation"
     description: >
       Reading music notation — both standard notation and guitar tablature (TAB).
       TAB is the most common format for guitar music: six horizontal lines

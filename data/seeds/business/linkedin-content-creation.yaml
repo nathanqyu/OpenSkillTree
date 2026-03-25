@@ -106,7 +106,7 @@ nodes:
       - level: beginner
         criteria: "Comments on 10+ posts daily with substantive 2-3 sentence responses. Responds to every comment on own posts within 2 hours."
         metrics:
-          - "10+ meaningful comments per day for 30 consecutive days"
+          - "5+ meaningful comments per day for 30 consecutive days"
           - "Own post comment response rate: 100% within first 2 hours"
       - level: intermediate
         criteria: "Strategic commenting on target accounts. Builds relationships through consistent engagement. Comment quality generates profile visits."

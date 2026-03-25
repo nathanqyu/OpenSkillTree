@@ -267,12 +267,13 @@ nodes:
 
   # ── TRANSITION GAME ─────────────────────────────────────────────────────────
   - id: "sports/pickleball/third-shot-drop"
-    title: "Third Shot Drop"
+    title: "The Drop Shot (Third Shot)"
     description: >
-      The third shot drop is the most important shot in pickleball. Hit by the
-      serving team after the return of serve, it is a soft arc shot that lands
-      in the kitchen, forcing the returning team to dink up and allowing the
-      serving team to advance to the kitchen. The drop is essentially a dink
+      After the serve (shot 1) and the return (shot 2), the serving team's
+      third shot is the most important decision point in pickleball. The "drop"
+      is a soft arc shot that lands in the kitchen (the area near the net),
+      forcing the returning team to hit up and allowing the serving team to
+      advance to the net. The drop is essentially a dink
       from the baseline — dinking skills directly transfer.
 
       Sub-skills covered: forehand third-shot drop, backhand third-shot drop,
@@ -452,12 +453,14 @@ nodes:
 
   # ── ADVANCED SKILLS ─────────────────────────────────────────────────────────
   - id: "sports/pickleball/kitchen-play"
-    title: "Kitchen/NVZ Play"
+    title: "Net Play & Non-Volley Zone Skills"
     description: >
-      Advanced play at the kitchen line (Non-Volley Zone) — the most contested
-      real estate in pickleball. Includes volleying, Erne shots, and around-the-
-      post (ATP) plays. These advanced techniques typically emerge at the 4.0+
-      DUPR level.
+      Advanced play at the kitchen line — the 7-foot zone on each side of the
+      net where you cannot hit the ball out of the air (called the Non-Volley
+      Zone or "kitchen"). This is the most contested area in pickleball.
+      Includes volleying, Erne shots (jumping around the kitchen to hit a
+      volley), and around-the-post (ATP) plays. These advanced techniques
+      typically emerge at the 4.0+ DUPR level.
 
       Sub-skills covered: forehand volley at kitchen line, backhand volley at
       kitchen line, punch volley (firm wrist, short compact motion), block

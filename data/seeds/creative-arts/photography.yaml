@@ -270,12 +270,14 @@ nodes:
 
   # ── EXPOSURE FEEDBACK ───────────────────────────────────────────────────────
   - id: "creative-arts/photography/histogram-metering"
-    title: "Histogram & Metering"
+    title: "Checking Your Exposure"
     description: >
-      Reading the histogram to evaluate exposure objectively, and using metering
-      modes to measure light in the scene. These are feedback tools that refine
-      exposure and lighting decisions — positioned after exposure triangle and
-      light quality because they require both to use effectively.
+      Your camera has built-in tools to tell you whether your photo is too dark,
+      too bright, or just right. The histogram is a graph that shows the
+      distribution of brightness in your image — left side is shadows, right
+      side is highlights. Metering modes control how your camera measures the
+      light in a scene. Together, these feedback tools refine your exposure
+      decisions beyond what the LCD screen alone can show.
     benchmarks:
       - level: beginner
         criteria: "Reads a histogram and identifies whether an image is overexposed, underexposed, or correctly exposed."

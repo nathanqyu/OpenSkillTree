@@ -33,7 +33,7 @@ tree:
 nodes:
   # -- MISE EN PLACE & KITCHEN ORGANIZATION (foundation of all cooking) ----------
   - id: "creative-arts/cooking/mise-en-place"
-    title: "Mise en Place & Kitchen Organization"
+    title: "Kitchen Setup & Preparation (Mise en Place)"
     description: >
       The habit and discipline of preparation before cooking begins. Starts with
       day-zero basics: identifying essential equipment (chef's knife, cutting board,
