@@ -52,10 +52,10 @@ nodes:
           - "Correctly explains scoring through a full game and identifies all court zones"
         resources:
           - title: "Essential Tennis — Tennis Grips for Beginners (Eastern, Continental)"
-            url: "https://www.youtube.com/watch?v=Ov4KvRJHdYk"
+            url: "https://www.youtube.com/watch?v=3Zik6qiel1k"
             type: "video"
           - title: "Feel Tennis — Ready Position and Split Step Basics"
-            url: "https://www.youtube.com/watch?v=2bFGMPqVJPo"
+            url: "https://www.youtube.com/watch?v=J1UhPl1UrYs"
             type: "video"
           - title: "USTA — Official Rules and Scoring Guide"
             url: "https://www.usta.com/en/home/improve/tips-and-instruction/national/tennis-scoring-rules.html"
@@ -78,10 +78,10 @@ nodes:
           - "Reaches wide balls that require 2+ steps on 75%+ of attempts"
         resources:
           - title: "Top Tennis Training — Footwork Patterns for Court Coverage"
-            url: "https://www.youtube.com/watch?v=iu8FjSXEZFk"
+            url: "https://www.youtube.com/watch?v=MPfZ7qvoSgM"
             type: "video"
           - title: "Essential Tennis — Recovery Step Technique"
-            url: "https://www.youtube.com/watch?v=1P30J76jEew"
+            url: "https://www.youtube.com/watch?v=fXNF9SP7vSk"
             type: "video"
         practice:
           - "15 min: Wide ball drill — partner feeds alternating wide balls, practice crossover step and recovery to center"
@@ -101,7 +101,7 @@ nodes:
           - "Correct stance selection (open vs. closed) on 80%+ of groundstrokes"
         resources:
           - title: "Top Tennis Training — Advanced Footwork for Competitive Players"
-            url: "https://www.youtube.com/watch?v=J9FfSEzzMRg"
+            url: "https://www.youtube.com/watch?v=FPNSAFcKN8w"
             type: "video"
         tips:
           - "Read your opponent's shoulders and hip rotation before they hit — this gives you a half-step head start in the correct direction"
@@ -112,7 +112,7 @@ nodes:
           - "0 points lost solely due to court position (not shot selection) in a set"
         resources:
           - title: "Feel Tennis — Pro Movement Analysis: Djokovic Court Coverage"
-            url: "https://www.youtube.com/watch?v=qTVZp4FRJHQ"
+            url: "https://www.youtube.com/watch?v=RvnK9GvnWd8"
             type: "video"
         tips:
           - "Control court geometry proactively — position yourself to take away your opponent's highest-percentage shot, forcing them into lower-percentage options"
@@ -134,10 +134,10 @@ nodes:
           - "Ball lands past the service line on 6/10 forehands"
         resources:
           - title: "Essential Tennis — Forehand Fundamentals Step by Step"
-            url: "https://www.youtube.com/watch?v=vgiHfjSdI9w"
+            url: "https://www.youtube.com/watch?v=2HvFxQaDTd0"
             type: "video"
           - title: "Feel Tennis — The Modern Forehand for Beginners"
-            url: "https://www.youtube.com/watch?v=0ByMHnLqPvY"
+            url: "https://www.youtube.com/watch?v=9KRYA9ZlYmM"
             type: "video"
         practice:
           - "15 min: Drop-and-hit drill — drop the ball yourself, hit forehands cross-court, count makes out of 20"
@@ -157,10 +157,10 @@ nodes:
           - "Topspin rate above 1,200 RPM achievable on command"
         resources:
           - title: "Top Tennis Training — Topspin Forehand Technique Breakdown"
-            url: "https://www.youtube.com/watch?v=3mW4CXMTkTU"
+            url: "https://www.youtube.com/watch?v=hmNLK5Xyi18"
             type: "video"
           - title: "Essential Tennis — Forehand Direction Control"
-            url: "https://www.youtube.com/watch?v=JLpmb8G2hHo"
+            url: "https://www.youtube.com/watch?v=wNrQppX-npE"
             type: "video"
         practice:
           - "15 min: Cross-court vs. down-the-line drill — alternate direction every 5 balls, track accuracy to each target"
@@ -180,7 +180,7 @@ nodes:
           - "Forces opponent behind baseline or wide on 4/10 well-struck forehands"
         resources:
           - title: "Top Tennis Training — Inside-Out Forehand Mastery"
-            url: "https://www.youtube.com/watch?v=SgUKJlMVi-s"
+            url: "https://www.youtube.com/watch?v=Xr4lVYmVG3U"
             type: "video"
         tips:
           - "Run around your backhand to hit inside-out forehands to your opponent's backhand corner — this is the most dominant rally pattern at the advanced level"
@@ -191,7 +191,7 @@ nodes:
           - "Opponent win percentage from forehand exchange ≤ 40%"
         resources:
           - title: "Feel Tennis — Forehand Analysis: What Makes a World-Class Forehand"
-            url: "https://www.youtube.com/watch?v=x5Y-CUuEdFk"
+            url: "https://www.youtube.com/watch?v=10F1YrGKcAg"
             type: "video"
         tips:
           - "At the expert level, adjust your contact point and swing path for every ball height — low balls get more lift, high balls get more drive, and short balls get attacked with a flatter trajectory"
@@ -212,10 +212,10 @@ nodes:
           - "Ball lands past the service line on 5/10 backhands"
         resources:
           - title: "Essential Tennis — Two-Handed Backhand for Beginners"
-            url: "https://www.youtube.com/watch?v=kSCUkmAqlpw"
+            url: "https://www.youtube.com/watch?v=cGhOBrA1B_Q"
             type: "video"
           - title: "Feel Tennis — One-Handed Backhand Fundamentals"
-            url: "https://www.youtube.com/watch?v=I0F7Dq2CgWs"
+            url: "https://www.youtube.com/watch?v=gU0ueKnfePY"
             type: "video"
         practice:
           - "15 min: Drop-and-hit backhand drill — drop the ball, hit backhands cross-court, count makes out of 20"
@@ -235,10 +235,10 @@ nodes:
           - "Slice backhand lands deep (within 1 meter of baseline) on 70%+ of attempts"
         resources:
           - title: "Top Tennis Training — Slice Backhand Technique"
-            url: "https://www.youtube.com/watch?v=7RQOQ5d_NE8"
+            url: "https://www.youtube.com/watch?v=D59s1GT1HEE"
             type: "video"
           - title: "Essential Tennis — Backhand Direction Control Drills"
-            url: "https://www.youtube.com/watch?v=Kbp_s_Iojvc"
+            url: "https://www.youtube.com/watch?v=Ulk_gXK9GrI"
             type: "video"
         practice:
           - "15 min: Cross-court vs. down-the-line backhand drill — alternate direction every 5 balls, track accuracy"
@@ -258,7 +258,7 @@ nodes:
           - "Running backhand (2+ steps outside singles sideline) lands in play on 65%+ of attempts"
         resources:
           - title: "Top Tennis Training — Advanced Two-Handed Backhand Power"
-            url: "https://www.youtube.com/watch?v=u4OdUMNJVzk"
+            url: "https://www.youtube.com/watch?v=Lz7JGJNfkUc"
             type: "video"
         tips:
           - "Practice the running backhand down-the-line in drills — it is the hardest shot in tennis to execute under pressure but the most effective when pulled off"
@@ -269,7 +269,7 @@ nodes:
           - "Loss of backhand rally (error + winner against) ≤ 45% of backhand exchanges"
         resources:
           - title: "Feel Tennis — Backhand Analysis: Turning Defense into Offense"
-            url: "https://www.youtube.com/watch?v=gfhjCUKLbIo"
+            url: "https://www.youtube.com/watch?v=B1TrFL0CSag"
             type: "video"
         tips:
           - "Turn your backhand into a weapon by taking the ball early on the rise — this takes time away from your opponent and turns a defensive position into an offensive one"
@@ -292,10 +292,10 @@ nodes:
           - "Second serve double-fault rate ≤ 20%"
         resources:
           - title: "Essential Tennis — Tennis Serve for Beginners (Step by Step)"
-            url: "https://www.youtube.com/watch?v=9S_U9v1pKGo"
+            url: "https://www.youtube.com/watch?v=FKtqaKjZVPs"
             type: "video"
           - title: "Feel Tennis — Continental Grip and Serve Toss"
-            url: "https://www.youtube.com/watch?v=YH2jFCsIJxo"
+            url: "https://www.youtube.com/watch?v=DkUByZ-7yvU"
             type: "video"
         practice:
           - "10 min: Toss drill — practice the toss without hitting; the ball should land 1 foot in front of and slightly to the right (for right-handers)"
@@ -315,10 +315,10 @@ nodes:
           - "Second serve double-fault rate ≤ 10%"
         resources:
           - title: "Top Tennis Training — Serve Placement and Targeting"
-            url: "https://www.youtube.com/watch?v=Z1DXQRQEQGE"
+            url: "https://www.youtube.com/watch?v=IiRGdagtOKE"
             type: "video"
           - title: "Essential Tennis — How to Develop a Reliable Second Serve"
-            url: "https://www.youtube.com/watch?v=7X0C3K22aLI"
+            url: "https://www.youtube.com/watch?v=20RZaDPUoOM"
             type: "video"
         practice:
           - "15 min: Target zone drill — place cones or towels at T, body, and wide positions, serve 10 to each zone"
@@ -338,7 +338,7 @@ nodes:
           - "Forces weak return (short ball or floating pop-up) on 3/10 serves"
         resources:
           - title: "Essential Tennis — Kick Serve Tutorial"
-            url: "https://www.youtube.com/watch?v=aZqJp0BTTPA"
+            url: "https://www.youtube.com/watch?v=JLKO3RK1lAI"
             type: "video"
         tips:
           - "The kick serve is the most important advanced serve to develop — it gives you a reliable, high-bouncing second serve that pushes opponents back and buys you time to set up"
@@ -350,7 +350,7 @@ nodes:
           - "Second serve direct winner or forced error rate ≥ 15%"
         resources:
           - title: "Feel Tennis — Serve Disguise and Pattern Play"
-            url: "https://www.youtube.com/watch?v=xWZJ2pFN7Xs"
+            url: "https://www.youtube.com/watch?v=ykfzZa28gMc"
             type: "video"
         tips:
           - "Turn your second serve into a weapon by developing a heavy kick serve — an aggressive second serve wins more points than a cautious one and puts pressure on the returner"
@@ -371,10 +371,10 @@ nodes:
           - "Reaches return position (2 steps behind baseline center) before opponent tosses ball on 8/10 points"
         resources:
           - title: "Essential Tennis — Return of Serve Basics"
-            url: "https://www.youtube.com/watch?v=jVfB51V5CmY"
+            url: "https://www.youtube.com/watch?v=n1DfuAWxkyE"
             type: "video"
           - title: "Top Tennis Training — Return Position and Timing"
-            url: "https://www.youtube.com/watch?v=jXLIB0TaXvA"
+            url: "https://www.youtube.com/watch?v=XxgZblN3L_w"
             type: "video"
         practice:
           - "10 min: Partner serves, you return cross-court — count makes out of 20"
@@ -394,10 +394,10 @@ nodes:
           - "Attacks short second serves (above net height contact point) on 70%+ of opportunities"
         resources:
           - title: "Essential Tennis — Aggressive Return Strategy"
-            url: "https://www.youtube.com/watch?v=K3bCd-3YRMU"
+            url: "https://www.youtube.com/watch?v=HXJTkvv40zQ"
             type: "video"
           - title: "Feel Tennis — Reading the Serve and Adjusting Your Return"
-            url: "https://www.youtube.com/watch?v=oHg7GMcahRE"
+            url: "https://www.youtube.com/watch?v=r3SWInoeolI"
             type: "video"
         practice:
           - "15 min: Directional return drill — partner serves, return to called target (cross-court or down-the-line), track accuracy"
@@ -417,7 +417,7 @@ nodes:
           - "Slice backhand return lands deep (within 1 meter of baseline) on 75%+ of wide-body serves"
         resources:
           - title: "Top Tennis Training — Aggressive Return Tactics for Advanced Players"
-            url: "https://www.youtube.com/watch?v=JRf2EPkQ_nM"
+            url: "https://www.youtube.com/watch?v=M0fs5W7rIrk"
             type: "video"
         tips:
           - "Use the slice backhand return on wide serves to your backhand — it gives you more reach and keeps the ball deep while you recover to center"
@@ -428,7 +428,7 @@ nodes:
           - "Return winner or forced error rate ≥ 20% on second serves"
         resources:
           - title: "Feel Tennis — Return of Serve Analysis: Pro-Level Patterns"
-            url: "https://www.youtube.com/watch?v=qE3phHYce1s"
+            url: "https://www.youtube.com/watch?v=r3SWInoeolI"
             type: "video"
         tips:
           - "Read the server's racquet face angle and body position at the trophy point — this reveals serve direction 0.2 seconds before contact, which is enough time to load the correct step"
@@ -451,10 +451,10 @@ nodes:
           - "Slice backhand lands shorter than topspin backhand (demonstrating different trajectory) on 7/10 attempts"
         resources:
           - title: "Essential Tennis — Understanding Topspin and Slice"
-            url: "https://www.youtube.com/watch?v=dMKpZOT_b-Y"
+            url: "https://www.youtube.com/watch?v=aSiguvqibjs"
             type: "video"
           - title: "Feel Tennis — How Spin Works in Tennis (Visual Guide)"
-            url: "https://www.youtube.com/watch?v=FTXvCNaWmi4"
+            url: "https://www.youtube.com/watch?v=5rTG-uxWmsg"
             type: "video"
         practice:
           - "10 min: Topspin vs. flat comparison — hit 10 forehands flat and 10 with topspin, observe the difference in trajectory and bounce"
@@ -474,10 +474,10 @@ nodes:
           - "Topspin lob clears net and lands in baseline zone on 6/10 attempts"
         resources:
           - title: "Top Tennis Training — Heavy Topspin Technique"
-            url: "https://www.youtube.com/watch?v=qLz6YBuHnwg"
+            url: "https://www.youtube.com/watch?v=YIITBgaZtzs"
             type: "video"
           - title: "Essential Tennis — Topspin Lob Tutorial"
-            url: "https://www.youtube.com/watch?v=rFXYRo9Bytw"
+            url: "https://www.youtube.com/watch?v=jK19-vUzz5Q"
             type: "video"
         practice:
           - "15 min: Heavy topspin drill — exaggerate the low-to-high swing path, aim for balls that bounce above shoulder height"
@@ -497,7 +497,7 @@ nodes:
           - "Topspin passing shot winner or forced error rate ≥ 35% when opponent is at net"
         resources:
           - title: "Top Tennis Training — Mastering the Kick Serve"
-            url: "https://www.youtube.com/watch?v=WqmJf82ruCA"
+            url: "https://www.youtube.com/watch?v=mQ82gQwkUtY"
             type: "video"
         tips:
           - "The kick serve is all about the toss — toss the ball over your head (not in front), and swing up and across to create the topspin that makes the ball jump high after bouncing"
@@ -508,7 +508,7 @@ nodes:
           - "Kick serve ace or forced short return rate ≥ 30% in match play"
         resources:
           - title: "Feel Tennis — Spin Disguise and Deception Techniques"
-            url: "https://www.youtube.com/watch?v=P4B7WaLcLqk"
+            url: "https://www.youtube.com/watch?v=Eqw3aBteeX4"
             type: "video"
         tips:
           - "At the expert level, spin disguise comes from using the same body position and backswing for topspin and slice — only the racquet angle and wrist position change at the last moment"
@@ -530,10 +530,10 @@ nodes:
           - "Uses continental grip on ≥70% of volleys"
         resources:
           - title: "Essential Tennis — Volley Basics for Beginners"
-            url: "https://www.youtube.com/watch?v=TYL1GcRBHBc"
+            url: "https://www.youtube.com/watch?v=3RVvlb8HJPg"
             type: "video"
           - title: "Feel Tennis — Continental Grip for Volleys"
-            url: "https://www.youtube.com/watch?v=FkhdpwUlibg"
+            url: "https://www.youtube.com/watch?v=WOZJ1dNFmfU"
             type: "video"
         practice:
           - "10 min: Volley feed drill — partner feeds 10 balls from mid-court, you volley from net position into the service box"
@@ -553,10 +553,10 @@ nodes:
           - "Low volley (below net height) returned in play on 75%+ of attempts"
         resources:
           - title: "Top Tennis Training — Approach Shot and First Volley Sequence"
-            url: "https://www.youtube.com/watch?v=XoxKMqvDRsA"
+            url: "https://www.youtube.com/watch?v=bDl2o_GsTo0"
             type: "video"
           - title: "Essential Tennis — Low Volley Technique"
-            url: "https://www.youtube.com/watch?v=gMnDyjG3CfI"
+            url: "https://www.youtube.com/watch?v=HqQlNcfnXUE"
             type: "video"
         practice:
           - "15 min: Approach-volley-putaway drill — hit approach shot off short ball, follow to net, volley, put away"
@@ -576,7 +576,7 @@ nodes:
           - "Poach results in winner or forced error on 40%+ of poach attempts in doubles"
         resources:
           - title: "Essential Tennis — Drop Volley and Angle Volley"
-            url: "https://www.youtube.com/watch?v=3v5Jd6QTRWM"
+            url: "https://www.youtube.com/watch?v=YtR76A_3lOs"
             type: "video"
         tips:
           - "Use the drop volley when your opponent is deep behind the baseline — the contrast between a deep first volley and a soft drop volley is devastating"
@@ -587,7 +587,7 @@ nodes:
           - "0 half-volley errors per set at net position"
         resources:
           - title: "Feel Tennis — Net Game Analysis: Federer's Volley Mastery"
-            url: "https://www.youtube.com/watch?v=JnlUhx1HLxo"
+            url: "https://www.youtube.com/watch?v=HeqjUS-X0rg"
             type: "video"
         tips:
           - "Train reaction volleys by having a partner hit drives directly at you from the baseline — this develops the reflexes needed to handle pace at the net in match play"
@@ -607,7 +607,7 @@ nodes:
           - "Contacts 6/10 balls above shoulder height and returns in play"
         resources:
           - title: "Essential Tennis — Overhead Smash for Beginners"
-            url: "https://www.youtube.com/watch?v=P7pZuRWNmlo"
+            url: "https://www.youtube.com/watch?v=O864qxrUnr4"
             type: "video"
         practice:
           - "10 min: Partner lobs 10 balls, you track and hit overheads, count makes in play"
@@ -623,7 +623,7 @@ nodes:
           - "Overhead directed to intended court half on 70%+ of attempts"
         resources:
           - title: "Top Tennis Training — Overhead Placement and Footwork"
-            url: "https://www.youtube.com/watch?v=1vFqNPbSVDA"
+            url: "https://www.youtube.com/watch?v=z6OU4nl92cw"
             type: "video"
         practice:
           - "10 min: Directional overhead drill — smash 10 balls aiming at the deuce side, 10 at the ad side"
@@ -640,7 +640,7 @@ nodes:
           - "Jump smash executed within 3 steps on deep retreating lob on 65%+ of opportunities"
         resources:
           - title: "Essential Tennis — Jump Smash and Scissor Kick Overhead"
-            url: "https://www.youtube.com/watch?v=xmv9rGmH9kI"
+            url: "https://www.youtube.com/watch?v=O864qxrUnr4"
             type: "video"
         tips:
           - "On deep lobs, use a scissor kick (jump and switch legs mid-air) to generate power while moving backward — this technique prevents you from falling backward off balance"
@@ -651,7 +651,7 @@ nodes:
           - "Overhead winner rate ≥ 70% across a full match"
         resources:
           - title: "Feel Tennis — Pro Overhead Analysis and Direction Disguise"
-            url: "https://www.youtube.com/watch?v=f7SFFQZ_Ksc"
+            url: "https://www.youtube.com/watch?v=PbpB6tLfVVQ"
             type: "video"
         tips:
           - "Disguise your overhead direction by using the same body position regardless of where you aim — your opponent should not be able to read the target until the ball is struck"
@@ -672,10 +672,10 @@ nodes:
           - "Can explain 3 basic tactical principles (safety margin, high percentage, center rally) without prompting"
         resources:
           - title: "Essential Tennis — 3 Simple Tennis Strategies That Win Matches"
-            url: "https://www.youtube.com/watch?v=CpIrKHC90Bs"
+            url: "https://www.youtube.com/watch?v=yYkhkcrFeZk"
             type: "video"
           - title: "Feel Tennis — Why You Should Hit Cross-Court"
-            url: "https://www.youtube.com/watch?v=FhGsF1oMEUM"
+            url: "https://www.youtube.com/watch?v=PTI1nYR9cRU"
             type: "video"
         practice:
           - "15 min: Cross-court rally game — play points where both players must hit cross-court only"
@@ -694,10 +694,10 @@ nodes:
           - "Approach shot landing zone (within 1 meter of baseline) before net advance on 75%+ of approaches"
         resources:
           - title: "Top Tennis Training — How to Find and Exploit Opponent Weaknesses"
-            url: "https://www.youtube.com/watch?v=UikJoxwBbJY"
+            url: "https://www.youtube.com/watch?v=wxYdqrEQhFY"
             type: "video"
           - title: "Essential Tennis — Constructing Points with Rally Patterns"
-            url: "https://www.youtube.com/watch?v=9KVYJ8GDFwY"
+            url: "https://www.youtube.com/watch?v=gT6g4QjDLBg"
             type: "video"
         practice:
           - "15 min: Weakness targeting drill — play a set where you must identify your opponent's weakness after the first 2 games and target it for the rest"
@@ -717,7 +717,7 @@ nodes:
           - "Break point opportunities created per service game: ≥ 1.5 average"
         resources:
           - title: "Essential Tennis — 3-Shot Pattern Play for Competitive Players"
-            url: "https://www.youtube.com/watch?v=8CJKxdW9aP4"
+            url: "https://www.youtube.com/watch?v=gT6g4QjDLBg"
             type: "video"
         tips:
           - "If your plan is not working after the first set, change something concrete — serve placement, rally direction, or net approach frequency; vague adjustments like 'play better' do not work"
@@ -729,7 +729,7 @@ nodes:
           - "Double break (two breaks of serve in a set) conversion rate ≥ 70%"
         resources:
           - title: "Feel Tennis — Match Management: How the Pros Control Tempo"
-            url: "https://www.youtube.com/watch?v=Y_xmkjEvz4A"
+            url: "https://www.youtube.com/watch?v=Pa1kZzK8-H8"
             type: "video"
         tips:
           - "Control the tempo deliberately — slow down between points when ahead (use your towel, walk slowly) and speed up when your opponent has momentum; tempo control is a legal and effective tactic"
@@ -751,10 +751,10 @@ nodes:
           - "Rallies after losing 3 consecutive points without withdrawing effort (observer-rated) on 8/10 occurrences"
         resources:
           - title: "Essential Tennis — Mental Toughness for Beginners"
-            url: "https://www.youtube.com/watch?v=tRIuMPkF__M"
+            url: "https://www.youtube.com/watch?v=0fiuzyNdsto"
             type: "video"
           - title: "Feel Tennis — How to Reset After Errors"
-            url: "https://www.youtube.com/watch?v=HjPRCslj_BI"
+            url: "https://www.youtube.com/watch?v=bG4r6mCstSQ"
             type: "video"
         practice:
           - "10 min: Play a practice set where after every error, you take a deep breath, bounce on your toes, and reset before the next point"
@@ -773,10 +773,10 @@ nodes:
           - "0 code-of-conduct violations per match"
         resources:
           - title: "Essential Tennis — Developing a Pre-Point Routine"
-            url: "https://www.youtube.com/watch?v=CvhXu4fxLIE"
+            url: "https://www.youtube.com/watch?v=ZBFnouz3dvs"
             type: "video"
           - title: "Top Tennis Training — Bouncing Back After Losing a Set"
-            url: "https://www.youtube.com/watch?v=QpYdX5_RzAo"
+            url: "https://www.youtube.com/watch?v=4nRJbne3v-M"
             type: "video"
         practice:
           - "Full match: Use your pre-point routine before EVERY serve for an entire match — track compliance"
@@ -796,7 +796,7 @@ nodes:
           - "Points won after an unforced error: ≥ 55% (resets and recovers)"
         resources:
           - title: "Essential Tennis — Performing Under Pressure on Big Points"
-            url: "https://www.youtube.com/watch?v=cW6HFZyGjlY"
+            url: "https://www.youtube.com/watch?v=kk3kRNYzsfc"
             type: "video"
         tips:
           - "After winning a big point, keep your composure — many players celebrate too early and lose focus on the next point; stay in your routine"
@@ -808,7 +808,7 @@ nodes:
           - "Match comeback rate (winning from one set and 3-5 down): measurable above zero in competitive matches"
         resources:
           - title: "Feel Tennis — Mental Warfare: Reading and Exploiting Opponent Psychology"
-            url: "https://www.youtube.com/watch?v=r5AJhDJdXUE"
+            url: "https://www.youtube.com/watch?v=fCuywh1JPJI"
             type: "video"
         tips:
           - "Watch for signs your opponent is mentally cracking — rushed serving, avoiding eye contact, negative body language — and apply maximum tactical pressure at those moments"
