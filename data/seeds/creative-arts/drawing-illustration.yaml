@@ -854,6 +854,12 @@ nodes:
           - "Full character turnaround (front, three-quarter, side, back) maintains consistent proportions within 3% — measured at 8+ comparison points across views"
           - "Draws a complex multi-figure composition from imagination (3+ interacting figures) with consistent anatomy, proportions, and perspective across all figures"
           - "Art school admission portfolio: 12-20 pieces including observational figure drawing from life, rated as competitive by an admissions-level reviewer"
+        resources:
+          - title: "Love Life Drawing — Portfolio-Level Figure Drawing"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        tips:
+          - "Draw from LIFE, not just photos — art school portfolios require observational drawing from life because it demonstrates genuine seeing ability"
     tags: ["figure", "anatomy", "observation"]
 
   # ── COLOR THEORY & APPLICATION ─────────────────────────────────────────────
@@ -884,6 +890,23 @@ nodes:
           - "Identifies warm and cool variants of each primary correctly in a color sorting exercise (e.g., warm red = cadmium, cool red = alizarin)"
           - "Mixes a target color (e.g., a specific green, a muted orange) from primaries within 2 attempts — match confirmed by placing the mix next to the target swatch"
           - "Converts a colored illustration to grayscale and confirms that the value structure is readable — colors chosen did not collapse to the same gray"
+        resources:
+          - title: "Proko — Color Theory for Artists"
+            url: "https://www.youtube.com/watch?v=V3WmrWUEIJo"
+            type: "video"
+          - title: "Love Life Drawing — Understanding Color Temperature"
+            url: "https://www.youtube.com/watch?v=iwRa5qTnr8o"
+            type: "video"
+        practice:
+          - "15 min: paint a 12-step color wheel from 3 primaries with even hue transitions"
+          - "10 min: sort a set of color swatches by warm vs. cool temperature"
+          - "10 min: mix a specific target color from primaries within 2 attempts"
+        projects:
+          - "Paint a 12-step color wheel from primaries with visually even transitions and no muddy mixtures"
+          - "Create a small illustration and convert it to grayscale to verify the value structure reads clearly"
+        tips:
+          - "Value does the heavy lifting that color refines — a painting with correct values and wrong colors still reads; correct colors with wrong values looks flat"
+          - "Test your color choices by converting to grayscale — if two areas collapse to the same gray, you need more value separation"
       - level: intermediate
         criteria: >
           Applies complementary, analogous, and triadic color harmonies to illustrations
@@ -898,6 +921,22 @@ nodes:
           - "Color temperature shift between foreground (warm) and background (cool) is visible and intentional — creates measurable sense of depth"
           - "Saturation hierarchy: focal point has the highest saturation in the image, periphery has lower saturation — confirmed by desaturating the image and checking value contrast at the focal point"
           - "Produces color studies of the same subject under 2 different lighting conditions (warm light/cool shadows, cool light/warm shadows) — temperature shift is correct in both"
+        resources:
+          - title: "Proko — Limited Palette Painting"
+            url: "https://www.youtube.com/watch?v=V3WmrWUEIJo"
+            type: "video"
+          - title: "Love Life Drawing — Color Harmony and Temperature"
+            url: "https://www.youtube.com/watch?v=iwRa5qTnr8o"
+            type: "video"
+        practice:
+          - "20 min: paint the same subject using a limited 4-color palette (3 primaries + white) — this forces you to learn color mixing"
+          - "15 min: practice color temperature shifts — paint the same subject under warm and cool lighting conditions"
+        projects:
+          - "Create a limited-palette illustration (4 colors + white) that viewers rate as harmonious"
+          - "Paint the same subject under 2 different lighting conditions showing correct warm/cool temperature shifts"
+        tips:
+          - "A limited palette (3-5 colors + white) produces more harmonious paintings than using every color available — restriction forces better mixing"
+          - "Warm light creates cool shadows; cool light creates warm shadows — this temperature shift is the key to convincing color"
       - level: advanced
         criteria: >
           Uses color for narrative and emotional effect — understands color psychology
@@ -913,6 +952,12 @@ nodes:
           - "Illustration's mood (e.g., 'ominous,' 'joyful,' 'nostalgic,' 'tense') correctly identified by 8/10 viewers based on color alone (desaturated or silhouetted version shown for comparison)"
           - "Demonstrates simultaneous contrast: same neutral color appears warm and cool depending on surrounding colors in a controlled exercise"
           - "Color script for a 5-image narrative sequence shows intentional emotional progression through color — warm to cool, saturated to muted, or other planned arc"
+        resources:
+          - title: "Proko — Advanced Color Application"
+            url: "https://www.youtube.com/watch?v=V3WmrWUEIJo"
+            type: "video"
+        tips:
+          - "Use saturation hierarchy to direct attention — desaturate backgrounds and periphery, saturate the focal point"
       - level: expert
         criteria: >
           Color sense is a defining element of personal style — portfolio color work is
@@ -927,6 +972,12 @@ nodes:
           - "Students produce a cohesive limited-palette illustration (4 colors + white) after one 2-hour teaching session"
           - "Original color palette used consistently across a series of 5+ illustrations — palette becomes associated with the artist's work"
           - "Portfolio includes 10+ color illustrations rated as publication-quality — meets entry-level concept art or editorial illustration color standards"
+        resources:
+          - title: "Love Life Drawing — Color as a Professional Skill"
+            url: "https://www.youtube.com/watch?v=iwRa5qTnr8o"
+            type: "video"
+        tips:
+          - "Distinctive color sense emerges from thousands of color studies — develop your palette through consistent practice, not by copying other artists' palettes"
     tags: ["color", "painting", "design"]
 
   # ── MATERIALS & TECHNIQUES ─────────────────────────────────────────────────
@@ -957,6 +1008,23 @@ nodes:
           - "Digital sketch completed using pressure-sensitive brush with line weight variation — thin lines for light areas, thick lines for shadow edges and foreground"
           - "Ink drawing with a fine-tip pen: clean lines with no visible wobble or scratching — completed a simple still life in ink without pencil underdrawing"
           - "Can name and demonstrate the difference between at least 3 drawing media (e.g., graphite is erasable and precise, charcoal is expressive and broad, ink is permanent and high-contrast)"
+        resources:
+          - title: "Proko — Drawing Materials for Beginners"
+            url: "https://www.youtube.com/watch?v=pMC0Cx3Uk84"
+            type: "video"
+          - title: "Drawabox — Recommended Tools and Materials"
+            url: "https://drawabox.com/lesson/0/2"
+            type: "article"
+        practice:
+          - "15 min: draw the same subject using 3 pencil grades (HB, 2B, 6B) — notice the value range each produces"
+          - "10 min: complete a simple still life in ink with a fine-tip pen — no pencil underdrawing, commit to confident marks"
+          - "10 min: open a digital drawing app (Procreate or Clip Studio Paint) and practice basic brush and eraser tools"
+        projects:
+          - "Draw the same still life in 3 different media (graphite, ink, digital) and compare the different marks and qualities each produces"
+          - "Complete a digital sketch using pressure-sensitive brush with line weight variation"
+        tips:
+          - "Start with good-quality but inexpensive materials — a decent HB, 2B, and 6B pencil set costs under $10 and is all you need to begin"
+          - "The medium you choose affects the final look fundamentally — graphite is precise, charcoal is atmospheric, ink is graphic; choose deliberately"
       - level: intermediate
         criteria: >
           Works competently in at least 2 traditional media (graphite and one of: charcoal,
@@ -972,6 +1040,23 @@ nodes:
           - "Digital illustration uses layers (minimum: line, flat color, shadow, highlight), masks, and blending modes to achieve a polished, non-flat result"
           - "Charcoal drawing demonstrates controlled edges: both hard edges (crisp, unblended) and soft edges (blended gradation) used intentionally in the same drawing"
           - "Ink wash study: 5+ distinct value steps achieved using dilution alone — even gradation without blotching"
+        resources:
+          - title: "Proko — Charcoal Drawing Techniques"
+            url: "https://www.youtube.com/watch?v=pMC0Cx3Uk84"
+            type: "video"
+          - title: "Love Life Drawing — Digital Drawing for Traditional Artists"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        practice:
+          - "20 min: create a charcoal drawing with both hard edges (crisp, unblended) and soft edges (blended gradation) in the same piece"
+          - "15 min: practice digital layers — create separate layers for line, flat color, shadow, and highlight"
+          - "15 min: create an ink wash study with 5+ value steps using dilution alone"
+        projects:
+          - "Complete finished pieces in 2 different traditional media rated as technically competent by an instructor"
+          - "Create a digital illustration using proper layer structure (line, color, shadow, highlight)"
+        tips:
+          - "Maintain a sketchbook with regular practice in at least 2 media — the sketchbook is your laboratory for experimentation"
+          - "Digital layers are your safety net — use them liberally; separate line work, color, and shading so you can adjust each independently"
       - level: advanced
         criteria: >
           Selects media deliberately to match the expressive needs of each project —
@@ -987,6 +1072,12 @@ nodes:
           - "Custom digital brush set created and used consistently across a series of 5+ illustrations — brushes produce a distinctive, recognizable texture"
           - "Selects appropriate medium for 4 out of 5 hypothetical project briefs and explains the choice (e.g., 'charcoal for this moody portrait because of its tonal range and atmospheric softness')"
           - "Portfolio includes finished pieces in 3+ media that all meet the same quality standard — no medium is noticeably weaker than others"
+        resources:
+          - title: "Proko — Mixed Media Workflows"
+            url: "https://www.youtube.com/watch?v=pMC0Cx3Uk84"
+            type: "video"
+        tips:
+          - "Select media deliberately for each project — charcoal for moody atmospheric pieces, ink for graphic high-contrast work, digital for color with revision flexibility"
       - level: expert
         criteria: >
           Technical mastery across multiple media is a competitive advantage and a
@@ -1001,6 +1092,12 @@ nodes:
           - "Custom brush set or workflow tutorial downloaded or used by 100+ other artists — demonstrates recognized expertise that others seek to learn"
           - "Portfolio of 10-20 pieces across multiple media maintains consistent quality and style — meets entry-level concept art or editorial illustration portfolio standards"
           - "Teaches a materials workshop covering 2+ media where students produce technically competent finished pieces by session end"
+        resources:
+          - title: "Love Life Drawing — Professional Materials Mastery"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        tips:
+          - "Technical mastery across media is a competitive advantage — the ability to work in traditional AND digital opens more professional opportunities"
     tags: ["materials", "digital", "traditional", "technique"]
 
   # ── STYLE DEVELOPMENT & PORTFOLIO (capstone) ───────────────────────────────
@@ -1031,6 +1128,26 @@ nodes:
           - "Incorporates 2+ specific critique notes into a revised drawing — the specific issues identified are measurably improved in the revision"
           - "Can articulate why 3 admired artists' work is effective using specific visual vocabulary (line weight, color temperature, compositional strategy, value structure) — not vague praise"
           - "Maintains a regular practice habit: minimum 3 drawing sessions per week documented in a sketchbook or digital folder"
+        resources:
+          - title: "Proko — How to Study Art Effectively"
+            url: "https://www.youtube.com/watch?v=wg-So3ElA8g"
+            type: "video"
+          - title: "Love Life Drawing — Finding Your Drawing Style"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+          - title: "Drawabox — The Homework System (50/50 Rule)"
+            url: "https://drawabox.com/lesson/0/3"
+            type: "article"
+        practice:
+          - "30 min: complete a master study — replicate the style of a chosen artist, focusing on their specific techniques"
+          - "15 min: incorporate 2+ specific critique notes into a revised drawing — address the exact issues identified"
+          - "10 min: articulate why 3 admired artists' work is effective using specific visual vocabulary"
+        projects:
+          - "Complete a master study that achieves recognizable stylistic similarity to the original artist"
+          - "Revise a drawing based on specific critique feedback with measurable improvement in the identified areas"
+        tips:
+          - "The Drawabox 50/50 rule: spend 50% of your time on structured exercises and 50% on drawing what you enjoy — this prevents burnout while ensuring progress"
+          - "Accept and apply critique rather than defending your choices — a revised drawing that addresses specific feedback always improves faster than starting over"
       - level: intermediate
         criteria: >
           Emerging personal preferences are visible across a body of work: recurring
@@ -1047,6 +1164,23 @@ nodes:
           - "Portfolio review identifies at least 3 consistent stylistic traits across the body of work (e.g., 'always uses warm palettes,' 'favors dynamic diagonal compositions,' 'distinctive thick-to-thin line quality')"
           - "Seeks and receives critique from 3+ different sources (instructor, peer group, online community) and documents specific changes made in response"
           - "Portfolio of 12-20 pieces curated: weakest pieces removed, work presented in consistent format, includes observational drawing from life — meets art school admission baseline"
+        resources:
+          - title: "Proko — Building a Portfolio"
+            url: "https://www.youtube.com/watch?v=wg-So3ElA8g"
+            type: "video"
+          - title: "Love Life Drawing — Portfolio Review and Critique"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        practice:
+          - "Weekly: create a series of 5+ thematically related pieces that feel like they belong together"
+          - "Monthly: seek critique from 3+ different sources (instructor, peer group, online community) and document changes made"
+          - "Quarterly: curate your portfolio — remove your weakest pieces and replace them with stronger new work"
+        projects:
+          - "Create a series of 5 related pieces with visual consistency rated as cohesive by peer reviewers"
+          - "Curate a portfolio of 12-20 pieces suitable for art school admission — includes observational drawing from life"
+        tips:
+          - "Seek critique proactively from diverse sources — your instructor sees things your friends do not, and online communities see things your instructor misses"
+          - "Curating a portfolio means removing weak pieces, not just adding strong ones — a portfolio with 10 excellent pieces beats 20 mixed-quality pieces"
       - level: advanced
         criteria: >
           Personal style is distinctive and intentional — work is recognizable without
@@ -1064,6 +1198,12 @@ nodes:
           - "Portfolio receives positive response (interview, callback, or commission) from 2+ professional opportunities — portfolio opens doors"
           - "Portfolio tailored for a specific market: 10-20 polished pieces with work relevant to that market (e.g., concept art portfolio includes character turnarounds, environment paintings, and prop sheets)"
           - "Original character designs: 3+ distinct characters with consistent design language, personality readable from silhouette, and clean turnaround sheets"
+        resources:
+          - title: "Proko — Developing Personal Style"
+            url: "https://www.youtube.com/watch?v=wg-So3ElA8g"
+            type: "video"
+        tips:
+          - "Personal style is distinctive and intentional — it should be recognizable without a signature; if 8/10 peers can identify your work, your style has arrived"
       - level: expert
         criteria: >
           Style is a professional brand — recognized in the illustration community.
@@ -1078,6 +1218,12 @@ nodes:
           - "Mentored artists cite specific stylistic guidance that measurably shaped their development — at least 2 mentees can point to concrete improvements resulting from guidance"
           - "Portfolio demonstrates artistic growth: work from 3+ years shows clear evolution while maintaining core identity — not stagnation and not random stylistic jumping"
           - "Professional portfolio of 15-20 pieces: cohesive specialization, consistent quality (no weak pieces in the set), immediately communicates the artist's market and strengths to art directors — rated hire-ready by 2+ industry professionals"
+        resources:
+          - title: "Love Life Drawing — Professional Portfolio Development"
+            url: "https://www.youtube.com/watch?v=rMwXeMcGIRg"
+            type: "video"
+        tips:
+          - "A professional portfolio demonstrates artistic growth over time — not stagnation and not random stylistic jumping; it should show evolution within a consistent identity"
     tags: ["style", "portfolio", "professional", "capstone"]
 
 relationships:
