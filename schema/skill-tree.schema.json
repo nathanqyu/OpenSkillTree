@@ -41,7 +41,7 @@
     },
     "Domain": {
       "type": "string",
-      "enum": ["Sports", "Technology", "Creative Arts", "Business", "Science"],
+      "enum": ["Sports", "Technology", "Creative Arts", "Business", "Science", "Soft Skills"],
       "description": "Top-level domain taxonomy (V1 fixed list). New domains require a GitHub Discussion tagged 'domain-proposal'."
     },
     "TreeMeta": {
