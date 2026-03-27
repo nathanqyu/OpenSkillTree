@@ -1,0 +1,1032 @@
+# OpenSkillTree — Seed Skill Tree: Dating
+#
+# Domain:  Business / Soft Skills / Dating
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference:
+#   beginner     = building self-awareness and basic social comfort
+#   intermediate = dating consistently with intention and emotional intelligence
+#   advanced     = navigating complex dynamics and building deep connections
+#   expert       = models healthy relating and can mentor others
+#
+# Teaching order based on attachment theory (Amir Levine), authentic attraction
+# (Mark Manson), behavioral science of dating (Logan Ury), relational psychology
+# (Esther Perel, Brené Brown, John Gottman), and communication research (NVC):
+#   Self-knowledge & readiness FIRST → social confidence → conversation skills →
+#   reading social cues → online dating strategy → planning dates →
+#   vulnerability & emotional connection → boundary setting & communication →
+#   navigating rejection → relationship transition.
+# Genuine connection and mutual respect are the foundation of every node.
+
+tree:
+  id: "business/dating"
+  title: "Dating"
+  description: >
+    A skill tree for building genuine romantic connections grounded in
+    self-awareness, emotional intelligence, and mutual respect. Covers the
+    full arc from understanding yourself and what you want, through meeting
+    people and building rapport, to deepening intimacy and transitioning
+    into committed partnership. This tree rejects manipulation and pickup
+    artistry in favor of authenticity, vulnerability, and healthy communication.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION (self-work comes FIRST) ─────────────────────────────────────
+  - id: "business/dating/self-knowledge-and-readiness"
+    title: "Self-Knowledge & Readiness"
+    description: >
+      Understanding your own attachment style, core values, relationship
+      patterns, and what you genuinely want from a partner. Every evidence-based
+      dating program begins here. Logan Ury's research shows that people who
+      clarify their values before dating make dramatically better partner
+      choices. Amir Levine's attachment framework helps you understand why
+      you behave the way you do in relationships. This node is about doing the
+      inner work that makes everything else possible.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies own attachment style, lists core values, and articulates what you want in a partner beyond surface traits."
+        metrics:
+          - "Completed an attachment style assessment and can explain your style to a friend"
+          - "Written list of 5+ core values ranked by importance with examples of each"
+        resources:
+          - title: "Attached: The New Science of Adult Attachment — Amir Levine & Rachel Heller"
+            url: "https://www.amazon.com/Attached-Science-Adult-Attachment-YouFind/dp/1585429139"
+            type: "book"
+          - title: "Logan Ury — How to Not Die Alone (TED Talk)"
+            url: "https://www.ted.com/talks/logan_ury_the_secret_to_making_a_relationship_last"
+            type: "video"
+        practice:
+          - "Take the attachment style quiz at personalitylab.org and journal for 20 minutes about how your style has shown up in past relationships or close friendships (30 minutes)"
+          - "Write a list of 10 values that matter most to you (honesty, adventure, family, etc.), then force-rank them from 1 to 10 — this reveals what you will and will not compromise on (20 minutes)"
+        projects:
+          - "Create a personal relationship history timeline: map your 3-5 most significant relationships or crushes, identify recurring patterns (what attracted you, what went wrong, what you tolerated), and write a 1-page reflection on what you have learned about yourself"
+        tips:
+          - "Attachment style is not destiny — it is a starting point for self-awareness. Roughly 50% of people are secure, 25% anxious, and 25% avoidant. Knowing your style helps you choose compatible partners."
+          - "Most people date based on chemistry alone. Chemistry is real but unreliable — it often fires strongest with people who trigger your attachment wounds, not people who are good for you."
+      - level: intermediate
+        criteria: "Understands how childhood and past relationships shaped current patterns. Can distinguish between genuine compatibility and anxious attachment. Actively working on personal growth areas."
+        metrics:
+          - "Journaled about relationship patterns for 30+ days with specific insights documented"
+          - "Identified 3+ specific growth areas and taken concrete action on at least one (therapy, reading, practice)"
+        resources:
+          - title: "How to Not Die Alone — Logan Ury"
+            url: "https://www.amazon.com/How-Not-Die-Alone-Surprising/dp/1982120630"
+            type: "book"
+          - title: "Esther Perel — The Secret to Desire in Long-Term Relationships (TED Talk)"
+            url: "https://www.ted.com/talks/esther_perel_the_secret_to_desire_in_a_long_term_relationship"
+            type: "video"
+        practice:
+          - "Write a letter to your younger self about one relationship pattern you now understand differently — what would you tell yourself and why (30 minutes)"
+          - "For the next 2 weeks, notice when you feel a strong pull toward someone: journal whether it feels like genuine interest or an attachment trigger, and what the difference feels like (ongoing)"
+        projects:
+          - "Complete Logan Ury's 'Relationship Audit': list every person you have dated or had a crush on, categorize what initially attracted you, and identify whether your picker has been selecting for chemistry or compatibility — then write 3 actionable changes to your approach"
+        tips:
+          - "If you always fall hard and fast, that intensity may be anxious attachment misfiring, not love. Real compatibility often feels calmer than you expect."
+      - level: advanced
+        criteria: "Deep self-awareness allows you to catch unhealthy patterns in real time. You choose partners based on values alignment, not just chemistry. You understand your own needs and can communicate them clearly."
+        metrics:
+          - "Can articulate your attachment triggers and have strategies for self-regulation in at least 3 common scenarios"
+          - "Friends or therapist confirm observable positive shifts in how you approach dating and relationships"
+        resources:
+          - title: "The School of Life — Why We Pick Difficult Partners"
+            url: "https://www.youtube.com/watch?v=-EvvPZFdjyk"
+            type: "video"
+          - title: "Hold Me Tight — Dr. Sue Johnson"
+            url: "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X"
+            type: "book"
+        practice:
+          - "Before and after each date, write a brief check-in: What am I hoping for? What am I afraid of? Did I show up authentically? What patterns did I notice? (10 minutes per date)"
+          - "Practice identifying in real time when you are reacting from a wound versus responding from your values — keep a tally for one week (ongoing)"
+        projects:
+          - "Design your own 'relationship vision document': a 2-page description of what your ideal partnership looks and feels like day-to-day — not a checklist of traits but a description of the dynamic, communication style, and shared life you want"
+        tips:
+          - "The goal is not to eliminate all insecure attachment — it is to become self-aware enough that your patterns do not drive your choices unconsciously."
+      - level: expert
+        criteria: "Models secure attachment in relationships. Can help friends identify their own patterns. Self-knowledge is integrated into daily life, not just dating contexts. Comfortable being alone and choosing partnership from abundance, not scarcity."
+        metrics:
+          - "Successfully mentored or supported 2+ friends through their own dating self-awareness journeys"
+          - "Maintained a reflective practice (journaling, therapy, or peer group) for 1+ year consistently"
+        resources:
+          - title: "The Course of Love — Alain de Botton"
+            url: "https://www.amazon.com/Course-Love-Novel-Alain-Botton/dp/1501134515"
+            type: "book"
+          - title: "The School of Life — What Is Love?"
+            url: "https://www.youtube.com/watch?v=fK2IJ43ppd0"
+            type: "video"
+        practice:
+          - "Lead a monthly relationship reflection circle with 3-5 friends where you discuss patterns, growth, and challenges in dating and relationships (monthly, 90 minutes)"
+          - "Revisit your relationship history timeline from beginner level and write an updated reflection — notice how your interpretation of past events has evolved (60 minutes)"
+        projects:
+          - "Create a personal 'dating philosophy' document that synthesizes everything you have learned about yourself, relationships, and love — share it with a trusted friend or therapist for feedback and refinement"
+        tips:
+          - "At this level, you understand that self-knowledge is never finished. The goal is not perfection but a lifelong practice of honest self-examination."
+          - "Being truly ready for a relationship means being genuinely okay without one. Desperation repels; wholeness attracts."
+    tags: ["foundation", "self-awareness", "attachment", "values"]
+
+  # ── SOCIAL SKILLS (how you show up in the world) ───────────────────────────
+  - id: "business/dating/social-confidence"
+    title: "Social Confidence & Approachability"
+    description: >
+      Being comfortable in your own skin when meeting new people. This is not
+      about faking confidence or performing extroversion — it is about reducing
+      social anxiety, projecting warmth, and making others feel at ease around
+      you. Research from Amy Cuddy shows that warmth is evaluated before
+      competence in every social interaction. Approachability is a skill that
+      can be practiced and developed regardless of personality type.
+    benchmarks:
+      - level: beginner
+        criteria: "Can initiate a friendly conversation with a stranger in a low-stakes setting. Maintains open body language and eye contact. Smiles naturally."
+        metrics:
+          - "Initiated conversation with 3+ new people per week for 4 consecutive weeks"
+          - "Can hold a casual 5-minute conversation with a stranger without significant anxiety"
+        resources:
+          - title: "Amy Cuddy — Your Body Language May Shape Who You Are (TED Talk)"
+            url: "https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
+            type: "video"
+          - title: "Models: Attract Women Through Honesty — Mark Manson"
+            url: "https://www.amazon.com/Models-Attract-Women-Through-Honesty/dp/1463750358"
+            type: "book"
+        practice:
+          - "Set a daily micro-challenge for one week: make eye contact and smile at 5 strangers per day — coffee shops, grocery stores, sidewalks (5 minutes/day)"
+          - "Start one conversation per day with someone you do not know — a barista, someone in line, a coworker you have never spoken to — with zero agenda beyond being friendly (ongoing)"
+        projects:
+          - "Complete a 30-day social comfort challenge: week 1 = smile and make eye contact, week 2 = say hello, week 3 = ask a question, week 4 = have a 2-minute conversation — track your comfort level daily on a 1-10 scale"
+        tips:
+          - "Confidence is not the absence of nervousness — it is the willingness to act despite it. Everyone feels awkward approaching strangers. The difference is that confident people do it anyway."
+          - "Warmth beats coolness every time. People are drawn to those who seem genuinely happy to meet them, not those who seem above it all."
+      - level: intermediate
+        criteria: "Comfortable in most social settings including parties, events, and group activities. Can approach someone you find attractive without freezing. Body language is naturally open and inviting."
+        metrics:
+          - "Attended 2+ new social events per month for 3 consecutive months and met new people at each"
+          - "Approached someone you found attractive at least once per week for 4 weeks, regardless of outcome"
+        resources:
+          - title: "The School of Life — How to Be Confident"
+            url: "https://www.youtube.com/watch?v=0Tk82hEHNnY"
+            type: "video"
+          - title: "Brené Brown — The Power of Vulnerability (TED Talk)"
+            url: "https://www.ted.com/talks/brene_brown_the_power_of_vulnerability"
+            type: "video"
+        practice:
+          - "Attend one new social activity per week where you know no one — a meetup, class, volunteer event, or community gathering — and aim to have at least one real conversation (weekly)"
+          - "Practice the '5-second rule': when you notice someone you would like to talk to, count to 5 and walk over before your brain can talk you out of it (ongoing)"
+        projects:
+          - "Join 2 recurring social groups (hobby class, sports league, volunteer org, etc.) and attend consistently for 2 months — document how your comfort level evolves and what you learn about building rapport with new people"
+        tips:
+          - "The secret to approachability: be the person who makes others feel comfortable. Ask about them, listen actively, and show genuine interest. People remember how you made them feel."
+      - level: advanced
+        criteria: "Naturally puts others at ease. Can read a room and adapt energy accordingly. Comfortable being the initiator in any social context. Attractive energy comes from genuine self-acceptance rather than performance."
+        metrics:
+          - "Friends describe you as someone who is easy to talk to and makes people feel welcome"
+          - "Can comfortably navigate high-pressure social situations (networking events, parties where you know no one, group dates) without significant anxiety"
+        resources:
+          - title: "The Charisma Myth — Olivia Fox Cabane"
+            url: "https://www.amazon.com/Charisma-Myth-Science-Personal-Magnetism/dp/1591845947"
+            type: "book"
+          - title: "Vanessa Van Edwards — The Science of People (YouTube Channel)"
+            url: "https://www.youtube.com/@Vvanedwards"
+            type: "video"
+        practice:
+          - "At your next 3 social events, set a private goal to make one person who seems uncomfortable feel included — notice how this shifts your own energy from self-consciousness to generosity (ongoing)"
+          - "Record yourself on a video call and watch it back with the sound off — observe your facial expressions, posture, and gestures, then identify one thing to adjust (30 minutes)"
+        projects:
+          - "Host a small gathering (dinner party, game night, or outing) where you intentionally invite people from different social circles who do not know each other — practice facilitating connections between them"
+        tips:
+          - "True social confidence is other-focused, not self-focused. When you stop worrying about how you are being perceived and start focusing on making others comfortable, anxiety drops naturally."
+      - level: expert
+        criteria: "Social confidence is effortless and authentic. You create positive social environments wherever you go. Others seek your company and feel energized after interacting with you. Can mentor others who struggle with social anxiety."
+        metrics:
+          - "Regularly invited to social gatherings and described by others as someone who elevates the energy of a group"
+          - "Successfully helped 2+ friends or acquaintances build their own social confidence through encouragement and practical advice"
+        resources:
+          - title: "Daring Greatly — Brené Brown"
+            url: "https://www.amazon.com/Daring-Greatly-Courage-Vulnerable-Transforms/dp/1592408419"
+            type: "book"
+          - title: "The School of Life — The Danger of Being Too Polite in Love"
+            url: "https://www.youtube.com/watch?v=PWLu5bVCY8A"
+            type: "video"
+        practice:
+          - "Mentor someone who struggles with social confidence: meet monthly to set goals, review progress, and share what you have learned (monthly, 60 minutes)"
+          - "Reflect on your social journey: write about where you started, what changed, and what specific practices made the biggest difference — share it with someone who needs to hear it (60 minutes)"
+        projects:
+          - "Organize a recurring social event (monthly dinner, weekly coffee meetup, activity group) designed to help people practice meeting new people in a low-pressure environment"
+        tips:
+          - "At the expert level, your confidence is quiet, not loud. You do not need to be the center of attention — you just need to be genuinely present."
+          - "The most magnetic quality is not looks, status, or humor — it is the ability to make someone feel like the most interesting person in the room."
+    tags: ["social-skills", "confidence", "body-language", "approachability"]
+
+  - id: "business/dating/conversation-skills"
+    title: "Conversation Skills"
+    description: >
+      The ability to have engaging, memorable conversations that build genuine
+      connection. This goes far beyond small talk — it includes asking great
+      questions, active listening, storytelling, appropriate humor, and the art
+      of creating conversational flow. Research shows that people who ask more
+      follow-up questions are perceived as more likable. The goal is not to
+      perform but to be genuinely curious about another person.
+    benchmarks:
+      - level: beginner
+        criteria: "Can sustain a conversation beyond small talk. Asks open-ended questions and listens actively. Avoids monologuing or interviewing."
+        metrics:
+          - "Can maintain a flowing conversation with someone new for 15+ minutes without awkward silences dominating"
+          - "Uses at least 3 open-ended follow-up questions per conversation rather than yes/no questions"
+        resources:
+          - title: "Celeste Headlee — 10 Ways to Have a Better Conversation (TED Talk)"
+            url: "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation"
+            type: "video"
+          - title: "The School of Life — How to Make Conversation With Anyone"
+            url: "https://www.youtube.com/watch?v=b-a1jXgAsQI"
+            type: "video"
+        practice:
+          - "In your next 5 conversations, practice the 'echo and expand' technique: repeat back the most interesting thing someone said and ask a follow-up question about it (ongoing)"
+          - "Replace 'What do you do?' with more interesting openers: 'What are you excited about right now?' or 'What is the best thing that happened to you this week?' — try 3 different openers and notice which ones spark the best conversations (1 week)"
+        projects:
+          - "Have 5 conversations with strangers or acquaintances this week using only open-ended questions — no yes/no questions allowed — and journal about which questions generated the most engaging responses"
+        tips:
+          - "The best conversationalists are the best listeners. If you are thinking about what to say next while someone is talking, you are not listening — you are waiting."
+          - "Conversations are not interviews. Share something about yourself after asking a question. The rhythm should be: ask, listen, relate, share, ask."
+      - level: intermediate
+        criteria: "Conversations feel natural and engaging. Can share personal stories that create connection. Comfortable with playful banter and light humor. Can steer conversations toward meaningful topics."
+        metrics:
+          - "Dates or new acquaintances frequently comment that the conversation was great or that time flew by"
+          - "Can transition smoothly from light topics to deeper ones within a single conversation"
+        resources:
+          - title: "The Art of Gathering — Priya Parker"
+            url: "https://www.amazon.com/Art-Gathering-How-Meet-Matters/dp/1594634939"
+            type: "book"
+          - title: "We Should Get Together — Kat Vellos"
+            url: "https://www.amazon.com/We-Should-Get-Together-Surprising/dp/1734379707"
+            type: "book"
+        practice:
+          - "Prepare 3 personal stories (a funny experience, a meaningful moment, and a lesson learned) and practice telling each one in under 2 minutes — test them in conversations this week and notice which ones land best (1 week)"
+          - "Practice conversational threading: in your next conversation, pick up on one detail from something someone says and use it to open an entirely new topic — aim for 3 natural topic transitions (ongoing)"
+        projects:
+          - "Host or attend a structured conversation event (like a 'question night' or conversation card game such as We're Not Really Strangers) and observe which types of questions create the deepest connections — write up your findings"
+        tips:
+          - "Humor is attractive but it must be authentic to you. Do not try to be funnier than you are. Observational humor and gentle self-deprecation work better than rehearsed jokes."
+      - level: advanced
+        criteria: "Creates memorable conversations that people think about afterward. Can navigate difficult or sensitive topics with grace. Balances depth with lightness. Conversations feel like mutual discovery."
+        metrics:
+          - "People regularly reach out to continue conversations or tell you that a conversation was meaningful to them"
+          - "Comfortable discussing topics like values, fears, dreams, and past experiences on a date without it feeling forced or premature"
+        resources:
+          - title: "The School of Life — Good Listeners vs Bad Listeners"
+            url: "https://www.youtube.com/watch?v=-BdbiZcNBXg"
+            type: "video"
+          - title: "Reclaiming Conversation — Sherry Turkle"
+            url: "https://www.amazon.com/Reclaiming-Conversation-Power-Talk-Digital/dp/0143109790"
+            type: "book"
+        practice:
+          - "On your next date, try asking one 'big' question naturally woven into conversation — for example, 'What is something you have changed your mind about in the last few years?' — and notice how depth shifts the dynamic (per date)"
+          - "Practice comfortable silence: in one conversation this week, when someone finishes a thought, pause for 3 full seconds before responding — notice how this changes the quality of dialogue (ongoing)"
+        projects:
+          - "Create a personal collection of 20 favorite conversation questions organized by depth level (light, medium, deep) and test them over 10 conversations — refine the list based on what actually creates connection versus what falls flat"
+        tips:
+          - "The best conversations on dates are not about impressing — they are about discovering. Replace the urge to demonstrate value with genuine curiosity about who this person is."
+      - level: expert
+        criteria: "Conversations are transformative experiences for both people. You create spaces where others feel safe to be honest and open. Can facilitate group conversations as skillfully as one-on-one. Others describe talking to you as a highlight."
+        metrics:
+          - "Can facilitate meaningful conversation among a group of strangers within 15 minutes"
+          - "Multiple people have told you that a conversation with you changed how they thought about something"
+        resources:
+          - title: "Esther Perel — Where Should We Begin? (Podcast)"
+            url: "https://www.estherperel.com/podcast"
+            type: "article"
+          - title: "Crucial Conversations — Kerry Patterson et al."
+            url: "https://www.amazon.com/Crucial-Conversations-Tools-Talking-Stakes/dp/1260474186"
+            type: "book"
+        practice:
+          - "Listen to 3 episodes of Esther Perel's 'Where Should We Begin?' podcast and journal about what makes her questioning style so effective — identify 3 techniques you can adapt (3 hours)"
+          - "At your next group gathering, practice drawing out the quietest person in the room with gentle, specific questions — notice how this changes the group dynamic (ongoing)"
+        projects:
+          - "Design and host a 'deep conversation dinner' for 6-8 people with structured rounds of progressively deeper questions — gather feedback afterward on what made people feel safe and engaged"
+        tips:
+          - "Masterful conversation is an act of generosity. You are not trying to be interesting — you are trying to be interested. When this is authentic, it is irresistible."
+          - "The highest form of conversation skill is the ability to create trust quickly. This comes from a combination of genuine curiosity, non-judgment, and willingness to be vulnerable yourself."
+    tags: ["conversation", "listening", "storytelling", "communication"]
+
+  - id: "business/dating/reading-social-cues"
+    title: "Reading Social Cues"
+    description: >
+      The ability to read body language, vocal tone, and contextual signals
+      to understand how someone feels — especially whether they are interested,
+      uncomfortable, or wanting to leave. This skill is essential for dating
+      ethically and effectively. It means knowing when to lean in and when to
+      back off, when someone is engaged and when they are being polite. Consent
+      and respect depend on this awareness.
+    benchmarks:
+      - level: beginner
+        criteria: "Can identify basic signals of interest (sustained eye contact, leaning in, open posture, laughing) and disinterest (looking away, closed posture, short answers, checking phone)."
+        metrics:
+          - "Can list 5+ body language signals of interest and 5+ signals of disinterest"
+          - "Correctly identified interest level in 3+ real-world social interactions and verified with a friend or the outcome"
+        resources:
+          - title: "Vanessa Van Edwards — Cues: Master the Secret Language of Charismatic Communication"
+            url: "https://www.amazon.com/Cues-Master-Language-Charismatic-Communication/dp/0593332199"
+            type: "book"
+          - title: "The School of Life — How to Stop Worrying Whether or Not They Like You"
+            url: "https://www.youtube.com/watch?v=CCl8yd9HgCE"
+            type: "video"
+        practice:
+          - "Spend 15 minutes people-watching at a cafe or public space: observe 5 pairs of people and note their body language — who is leaning in? Who has crossed arms? Who is mirroring? Write down your observations (15 minutes)"
+          - "During your next 3 conversations, consciously observe the other person's feet direction, eye contact patterns, and posture — after the conversation, write down what you noticed (ongoing)"
+        projects:
+          - "Create a personal 'social cue field guide': over 2 weeks, observe and document 20 specific body language signals you notice in real interactions, categorized as positive (interest/comfort) or negative (disinterest/discomfort)"
+        tips:
+          - "No single cue is reliable on its own. Look for clusters — if someone is making eye contact AND leaning in AND asking follow-up questions, that is a strong interest signal. One signal alone could mean anything."
+          - "The most important cue to read is discomfort. If someone looks uncomfortable, prioritize making them feel safe over pursuing your interest. This is both ethical and attractive."
+      - level: intermediate
+        criteria: "Can read nuanced social signals in real time during dates and social interactions. Understands the difference between politeness and genuine interest. Adjusts behavior based on signals received."
+        metrics:
+          - "Can accurately assess a date's interest level and comfort in real time, confirmed by post-date reflection or feedback"
+          - "Adjusted approach mid-conversation at least 3 times based on correctly reading cues (backing off when disinterest was detected, escalating when interest was clear)"
+        resources:
+          - title: "What Every BODY Is Saying — Joe Navarro"
+            url: "https://www.amazon.com/What-Every-BODY-Saying-Speed-Reading/dp/0061438294"
+            type: "book"
+          - title: "The School of Life — A Reason Not to Worry What Others Think"
+            url: "https://www.youtube.com/watch?v=X75Roe_davA"
+            type: "video"
+        practice:
+          - "After each date, write down 5 specific nonverbal signals you noticed and what you think they meant — then check your interpretation against the outcome (did they want a second date?) (per date)"
+          - "Watch a TV show with the sound off for 10 minutes and try to follow the emotional arc of a scene purely through body language — then rewatch with sound to check your reading (30 minutes)"
+        projects:
+          - "Over the course of 5 dates or social interactions, keep a detailed 'cue journal' tracking: (1) what signals you noticed, (2) how you interpreted them, (3) how you adjusted your behavior, (4) what actually happened — then review for patterns in your accuracy"
+        tips:
+          - "Politeness and interest look different. Politeness is: short answers, no follow-up questions, checked smiles, looking around the room. Interest is: leaning in, asking questions about you, sustained eye contact, genuine laughter."
+      - level: advanced
+        criteria: "Reads emotional undercurrents, not just surface signals. Can sense when someone is interested but nervous, guarded but warming up, or saying yes when they mean no. Uses this awareness to create safety."
+        metrics:
+          - "Can distinguish between nervousness and disinterest, and between shyness and disengagement, with consistent accuracy"
+          - "Partners or dates report feeling unusually understood and comfortable in your presence"
+        resources:
+          - title: "Emotional Intelligence — Daniel Goleman"
+            url: "https://www.amazon.com/Emotional-Intelligence-Matter-More-Than/dp/055338371X"
+            type: "book"
+          - title: "The Gottman Institute — Reading Your Partner's Bids for Connection"
+            url: "https://www.gottman.com/blog/want-to-improve-your-relationship-start-paying-attention-to-bids/"
+            type: "article"
+        practice:
+          - "In your next 3 dates or meaningful conversations, practice 'checking in' verbally when you sense something beneath the surface — for example, 'You seem like you might have more to say about that' or 'I want to make sure you are comfortable' (ongoing)"
+          - "Pay attention to what Gottman calls 'bids for connection' — small gestures, comments, or looks that signal someone wants engagement — and practice responding to them warmly and quickly (ongoing)"
+        projects:
+          - "Study 3 episodes of a relationship-focused podcast or show (Esther Perel's 'Where Should We Begin?' or similar) and analyze the nonverbal and verbal cues that indicate each person's real feelings versus what they are saying — write a 1-page analysis for each episode"
+        tips:
+          - "Advanced cue-reading is not about power — it is about care. When you notice someone is uncomfortable, the right move is always to create more safety, never to press harder."
+      - level: expert
+        criteria: "Social perception is highly refined and integrated into natural behavior. You create environments where people feel deeply seen and understood. Can teach others to read cues more effectively."
+        metrics:
+          - "Friends and dates consistently describe feeling 'seen' or 'understood' in your presence without you explaining why"
+          - "Successfully taught 2+ people to improve their own cue-reading through specific, actionable guidance"
+        resources:
+          - title: "Nonviolent Communication — Marshall B. Rosenberg"
+            url: "https://www.amazon.com/Nonviolent-Communication-Language-Life-Changing-Relationships/dp/189200528X"
+            type: "book"
+          - title: "The Gottman Institute — The Four Horsemen and Their Antidotes"
+            url: "https://www.gottman.com/blog/the-four-horsemen-recognizing-criticism-contempt-defensiveness-and-stonewalling/"
+            type: "article"
+        practice:
+          - "Mentor a friend on reading social cues: attend a social event together, then debrief afterward comparing observations — help them see what they missed and why it matters (monthly)"
+          - "Practice radical attunement: in your next deep conversation, focus entirely on the other person's emotional state rather than the content of their words — notice the gap between what is said and what is felt (ongoing)"
+        projects:
+          - "Create a 'social awareness workshop' for friends: design a 90-minute session with exercises (people-watching, role-play, video analysis) that helps 4-6 people improve their ability to read social cues in dating contexts"
+        tips:
+          - "The highest level of social perception is empathy — feeling with someone, not just reading them. This cannot be faked and develops through genuine care and practice."
+          - "Remember that everyone is doing their best to communicate, even when they are not doing it well. Expert cue-reading is about seeing the person behind the signal."
+    tags: ["body-language", "social-cues", "emotional-intelligence", "consent"]
+
+  # ── ONLINE DATING ──────────────────────────────────────────────────────────
+  - id: "business/dating/online-dating-strategy"
+    title: "Online Dating Strategy"
+    description: >
+      Navigating dating apps and websites effectively and authentically. This
+      covers profile creation, photo selection, writing bios, messaging
+      strategy, and app selection. Logan Ury's research at Hinge shows that
+      most people make avoidable mistakes in online dating — poor photos, generic
+      bios, and low-effort messages. This node focuses on presenting your
+      authentic self effectively, not on gaming algorithms or manipulating
+      matches.
+    benchmarks:
+      - level: beginner
+        criteria: "Has a complete dating profile with quality photos, an authentic bio, and is actively using 1-2 apps. Sends personalized first messages."
+        metrics:
+          - "Profile includes 5+ photos showing face clearly, at least one full-body photo, and at least one photo doing an activity you enjoy"
+          - "First messages reference something specific from the other person's profile at least 80% of the time"
+        resources:
+          - title: "How to Not Die Alone — Logan Ury (Chapters on Online Dating)"
+            url: "https://www.amazon.com/How-Not-Die-Alone-Surprising/dp/1982120630"
+            type: "book"
+          - title: "Photofeeler — Get Unbiased Photo Ratings"
+            url: "https://www.photofeeler.com/"
+            type: "tool"
+        practice:
+          - "Upload 10 potential profile photos to Photofeeler and get ratings on attractiveness, trustworthiness, and fun — use the top 5-6 rated photos (30 minutes)"
+          - "Write 3 different bio versions: one humorous, one sincere, one storytelling — ask 3 trusted friends (ideally your target demographic) which one best represents you and is most appealing (30 minutes)"
+        projects:
+          - "Complete a full dating profile audit: get feedback from 3 friends on your photos, bio, and prompts — implement their suggestions, then track your match rate for 2 weeks before and after the changes"
+        tips:
+          - "Your first photo is everything — it determines 90% of swipe decisions. Use a clear, well-lit headshot where you are genuinely smiling. No sunglasses, no group photos, no photos from 5 years ago."
+          - "Generic messages get ignored. 'Hey, how are you?' has a near-zero response rate. Reference something specific from their profile: 'I see you hiked the Inca Trail — how was the altitude?'"
+      - level: intermediate
+        criteria: "Profile consistently generates quality matches. Messages lead to real conversations. Can efficiently identify compatible people and move conversations offline within a reasonable timeframe."
+        metrics:
+          - "Match-to-conversation rate above 30% (of matches, 30%+ lead to actual back-and-forth messaging)"
+          - "Conversation-to-date rate above 25% (of real conversations, 25%+ lead to an in-person date)"
+        resources:
+          - title: "Hinge — The Dating App Designed to Be Deleted"
+            url: "https://hinge.co/en-us"
+            type: "tool"
+          - title: "Logan Ury — Hinge Director of Relationship Science (Articles)"
+            url: "https://hingeapp.zendesk.com/hc/en-us/categories/360002560174-Hinge-s-Guide-to-Dating"
+            type: "article"
+        practice:
+          - "For the next 2 weeks, aim to move conversations to an in-person date within 5-7 messages — suggest a specific place and time rather than an open-ended 'we should hang out sometime' (ongoing)"
+          - "Experiment with your app settings: try different distance ranges, age ranges, or apps for 2 weeks each and track which configuration produces the best quality matches for you (4 weeks)"
+        projects:
+          - "Run a 4-week online dating experiment: week 1-2 use your current approach, week 3-4 implement specific changes (better photos, revised bio, different messaging style) — track match rate, conversation rate, and date rate to measure improvement"
+        tips:
+          - "The goal of messaging is not to build a relationship over text — it is to establish enough interest and comfort to meet in person. Do not become a pen pal. Suggest a date within 5-10 messages."
+      - level: advanced
+        criteria: "Uses online dating as one tool among many. Profile authentically represents who you are and naturally filters for compatibility. Can quickly identify whether someone is a good match through messaging patterns."
+        metrics:
+          - "Can identify likely compatibility or incompatibility within 3-5 messages based on communication style, values signals, and effort level"
+          - "Dates from apps lead to genuine connections at a rate similar to or better than dates from meeting people in person"
+        resources:
+          - title: "Modern Romance — Aziz Ansari & Eric Klinenberg"
+            url: "https://www.amazon.com/Modern-Romance-Aziz-Ansari/dp/0143109251"
+            type: "book"
+          - title: "The School of Life — Why Online Dating Is So Unsatisfying"
+            url: "https://www.youtube.com/watch?v=cHFD2ycNsBs"
+            type: "video"
+        practice:
+          - "Review your last 10 app conversations that did NOT lead to a date — identify the common patterns (conversation fizzled, scheduling never happened, red flags ignored) and develop a specific strategy to address each pattern (30 minutes)"
+          - "Practice 'values-first filtering': before swiping, identify 3 non-negotiable values and look for evidence of them in profiles — track whether this changes the quality of your matches over 2 weeks (ongoing)"
+        projects:
+          - "Create a personal 'online dating playbook' documenting: your best-performing photos and why, your most effective bio structure, your go-to opening messages for different profile types, and your criteria for moving to an in-person date"
+        tips:
+          - "If online dating feels exhausting, you are probably doing too much of it. Set boundaries: limit swiping to 15 minutes per day, respond to messages in one batch, and take breaks when you need them."
+      - level: expert
+        criteria: "Can advise others on online dating strategy with nuanced, personalized guidance. Understands the psychology and design of dating apps. Online dating is integrated into a broader, balanced approach to meeting people."
+        metrics:
+          - "Successfully helped 3+ friends significantly improve their online dating profiles and results"
+          - "Maintains a healthy relationship with dating apps — uses them without dependency, takes breaks when needed, and does not let app metrics affect self-worth"
+        resources:
+          - title: "Dataclysm — Christian Rudder (OkCupid Founder)"
+            url: "https://www.amazon.com/Dataclysm-When-Think-Ones-Looking/dp/0385347391"
+            type: "book"
+          - title: "The Ezra Klein Show — How Dating Apps Changed Love"
+            url: "https://www.nytimes.com/column/ezra-klein-podcast"
+            type: "article"
+        practice:
+          - "Do a profile review session with 2 friends: give each person specific, actionable feedback on photos, bio, prompts, and messaging style — help them implement changes and check back in 2 weeks (2 hours)"
+          - "Reflect on your complete online dating journey: what worked, what did not, what you wish you had known from the start — write a guide you would give to a friend just starting out (60 minutes)"
+        projects:
+          - "Create a comprehensive 'online dating guide' for a friend who is new to apps: cover app selection, profile creation, messaging, safety, and transitioning to in-person dates — personalize it to their specific personality and goals"
+        tips:
+          - "Dating apps are a tool, not a lifestyle. The healthiest approach combines apps with meeting people through activities, mutual friends, and community. Do not put all your eggs in the algorithm basket."
+          - "At this level, you understand that the best dating profiles are not optimized for maximum matches — they are optimized for the right matches. Polarizing authenticity beats mass appeal."
+    tags: ["online-dating", "apps", "profile", "messaging"]
+
+  # ── DATE PLANNING ──────────────────────────────────────────────────────────
+  - id: "business/dating/planning-and-initiating-dates"
+    title: "Planning & Initiating Dates"
+    description: >
+      The art of asking someone out, planning dates that facilitate connection,
+      and managing logistics. A great date is not about spending money — it is
+      about creating an environment where two people can genuinely get to know
+      each other. Research shows that shared novel experiences create stronger
+      bonds than passive activities like dinner and a movie. This node covers
+      everything from the ask to the follow-up.
+    benchmarks:
+      - level: beginner
+        criteria: "Can ask someone out clearly and directly. Plans dates that go beyond 'dinner and drinks.' Handles logistics (time, place, confirmation) smoothly."
+        metrics:
+          - "Asked someone out at least 3 times (regardless of answer) using a specific plan rather than a vague 'we should hang out'"
+          - "Planned and executed 3+ dates with clear logistics (specific time, place, and activity communicated in advance)"
+        resources:
+          - title: "The School of Life — How to Seduce Someone on a Date"
+            url: "https://www.youtube.com/watch?v=v9OdeEzon_0"
+            type: "video"
+          - title: "How to Not Die Alone — Logan Ury (Chapter on First Dates)"
+            url: "https://www.amazon.com/How-Not-Die-Alone-Surprising/dp/1982120630"
+            type: "book"
+        practice:
+          - "Plan 3 different first date ideas that cost under $20 and involve an activity (walking tour, museum, farmers market, coffee and a park walk, cooking together) — have these ready so you never default to 'I do not know, what do you want to do?' (20 minutes)"
+          - "Practice asking someone out using a specific format: 'I would love to [specific activity] with you. How about [specific day and time]?' — rehearse this with a friend until it feels natural (15 minutes)"
+        projects:
+          - "Plan and execute 3 first dates over the next month, each with a different format (one activity-based, one food-based, one culture-based) — after each, journal about what the format contributed to or detracted from the connection"
+        tips:
+          - "Specificity is attractive. 'Would you like to check out the new exhibit at the art museum Saturday afternoon?' is vastly better than 'Want to hang out sometime?' The first shows effort and decisiveness; the second shows neither."
+          - "First dates should be low-commitment (60-90 minutes, easy to leave) but high-engagement (face-to-face, conducive to conversation). Coffee or a walk beats a movie every time."
+      - level: intermediate
+        criteria: "Tailors date plans to the other person's interests and personality. Creates dates that build anticipation. Smooth transitions between venues or activities. Follow-up after dates is timely and genuine."
+        metrics:
+          - "Dates receive positive feedback about the plan or activity at least 70% of the time"
+          - "Follows up within 24 hours after every date with a genuine, specific message about something you enjoyed"
+        resources:
+          - title: "The Adventure Challenge — Couples Edition"
+            url: "https://www.theadventurechallenge.com/"
+            type: "tool"
+          - title: "Psychology Today — The Science of the Perfect First Date"
+            url: "https://www.psychologytoday.com/us/blog/dating-and-mating/201709/the-ideal-first-date"
+            type: "article"
+        practice:
+          - "Before your next date, review the person's profile or previous conversations for clues about their interests — plan an activity that shows you were paying attention (per date)"
+          - "Plan a 'two-part date': start with an activity, then transition to a second location for drinks or food — this creates the psychological illusion of having spent more meaningful time together (per date)"
+        projects:
+          - "Create a 'date idea bank' of 20+ date ideas organized by: budget (free, $, $$), energy (chill, active, adventurous), setting (daytime, evening, outdoor, indoor), and stage (first date, early dating, established) — draw from this bank for all future dates"
+        tips:
+          - "A great follow-up text after a date is specific and warm: 'I really enjoyed hearing about your trip to Japan — the story about the ramen shop had me laughing. I would love to see you again.' Specific beats generic."
+      - level: advanced
+        criteria: "Dates feel like experiences, not just meetings. Can create meaningful moments through thoughtful planning. Comfortable improvising when plans change. Dates consistently advance the connection."
+        metrics:
+          - "Can plan a memorable date within 30 minutes for any budget level, tailored to a specific person"
+          - "Dates regularly include a 'moment' — a shared experience, insight, or laugh that both people reference afterward"
+        resources:
+          - title: "The Art of Gathering — Priya Parker"
+            url: "https://www.amazon.com/Art-Gathering-How-Meet-Matters/dp/1594634939"
+            type: "book"
+          - title: "The Gottman Institute — The Magic of Small Moments"
+            url: "https://www.gottman.com/blog/the-magic-of-small-moments/"
+            type: "article"
+        practice:
+          - "For your next date, incorporate one element of surprise or novelty — a hidden speakeasy, a detour to a scenic overlook, a small thoughtful gesture related to something they mentioned — and notice how novelty affects the connection (per date)"
+          - "Practice graceful improvisation: the next time a date plan falls through (restaurant closed, rain on a hike), treat it as an adventure rather than a failure — pivot to something spontaneous and notice how this builds a shared story (per date as needed)"
+        projects:
+          - "Plan an 'ideal date sequence' for someone you are seeing: map out the progression from first date to fifth date with each date building on the previous one — shared experiences, inside jokes, and deepening intimacy woven through the plan"
+        tips:
+          - "The best dates create shared memories and inside jokes. Months later, you want to be able to say 'remember when we...' and both smile. Plan for experiences, not just meals."
+      - level: expert
+        criteria: "Date planning is an expression of emotional intelligence and creativity. You intuitively create environments that bring out the best in both people. Can advise others on date planning with nuance."
+        metrics:
+          - "Partners describe your dates as some of the most thoughtful and memorable they have experienced"
+          - "Successfully helped 3+ friends plan dates that received enthusiastic positive feedback"
+        resources:
+          - title: "The Course of Love — Alain de Botton"
+            url: "https://www.amazon.com/Course-Love-Novel-Alain-Botton/dp/1501134515"
+            type: "book"
+          - title: "Eight Dates — John & Julie Gottman"
+            url: "https://www.amazon.com/Eight-Dates-Essential-Conversations-Lifetime/dp/1523504463"
+            type: "book"
+        practice:
+          - "Plan a date inspired by the Gottman 'Eight Dates' framework: choose one of their eight essential conversations (trust, conflict, sex, money, family, fun, growth, dreams) and design a date around exploring that topic together (per date)"
+          - "Help a friend plan a date by asking them 5 questions about the person they are seeing, then designing 3 tailored date options for them to choose from (60 minutes)"
+        projects:
+          - "Write a 'philosophy of great dates' based on everything you have learned — what makes dates work, what makes them fail, and what principles you follow — share it with someone who could benefit from it"
+        tips:
+          - "A masterful date planner understands that the goal is never to impress — it is to connect. The best dates feel easy, not produced."
+          - "At this level, even ordinary moments become special because of how present and intentional you are. You do not need a perfect plan — you need genuine presence."
+    tags: ["date-planning", "logistics", "creativity", "initiative"]
+
+  # ── EMOTIONAL DEPTH ────────────────────────────────────────────────────────
+  - id: "business/dating/vulnerability-and-emotional-connection"
+    title: "Vulnerability & Emotional Connection"
+    description: >
+      The courage to be genuinely seen by another person. Brené Brown's
+      research demonstrates that vulnerability is the birthplace of connection,
+      not a weakness to be hidden. This node covers the art of appropriate
+      self-disclosure, emotional availability, deepening intimacy over time,
+      and creating the safety for someone else to be vulnerable with you.
+      Without this skill, dating stays on the surface forever.
+    benchmarks:
+      - level: beginner
+        criteria: "Can share something personal and honest on a date beyond surface-level facts. Willing to admit when you do not know something or when you are nervous."
+        metrics:
+          - "Shared a genuine personal story (not just resume facts) on at least 3 dates"
+          - "Admitted a feeling honestly in a dating context at least once (e.g., 'I am a little nervous' or 'I am really enjoying this')"
+        resources:
+          - title: "Brené Brown — The Power of Vulnerability (TED Talk)"
+            url: "https://www.ted.com/talks/brene_brown_the_power_of_vulnerability"
+            type: "video"
+          - title: "Models: Attract Women Through Honesty — Mark Manson"
+            url: "https://www.amazon.com/Models-Attract-Women-Through-Honesty/dp/1463750358"
+            type: "book"
+        practice:
+          - "On your next date, share one thing that is genuinely true about you that you normally would not mention early — something real but not heavy (a quirky passion, a genuine insecurity, a meaningful experience) — and notice how the other person responds (per date)"
+          - "Practice naming your emotions in low-stakes settings: when a friend asks how you are, go beyond 'good' — say 'I am feeling a little anxious about a work presentation' or 'I am actually really excited about this new hobby' (1 week)"
+        projects:
+          - "Write down 5 things about yourself that you tend to hide in dating contexts (insecurities, unusual interests, past experiences) — for each one, write a version of how you could share it authentically without over-sharing, then test one on your next date"
+        tips:
+          - "Vulnerability is not the same as trauma-dumping. You do not need to share your deepest wounds on a first date. Start small: admit you are nervous, share a genuine enthusiasm, or say something honest about how the date is going."
+          - "Mark Manson's key insight: the most attractive thing you can do is be honest about who you are and what you want. Pretending to be someone you are not is exhausting and eventually collapses."
+      - level: intermediate
+        criteria: "Comfortable expressing emotions and needs in a dating context. Can create space for the other person to be vulnerable. Shares progressively deeper personal truths as trust builds."
+        metrics:
+          - "Dates or partners report feeling safe and comfortable being honest with you"
+          - "Can identify and name your own emotions accurately in real time during dates and difficult conversations"
+        resources:
+          - title: "Daring Greatly — Brené Brown"
+            url: "https://www.amazon.com/Daring-Greatly-Courage-Vulnerable-Transforms/dp/1592408419"
+            type: "book"
+          - title: "The School of Life — The Importance of Vulnerability"
+            url: "https://www.youtube.com/watch?v=PJsJ96yyVk8"
+            type: "video"
+        practice:
+          - "Practice 'reciprocal vulnerability': when someone shares something personal, respond with genuine acknowledgment and then share something of equal depth — notice how this creates a deepening spiral of trust (ongoing)"
+          - "Journal for 10 minutes before a date about what you are actually feeling and wanting — then make a point to express at least one of those truths during the date (per date)"
+        projects:
+          - "Over the course of 3-5 dates with the same person, intentionally deepen your sharing: track what you reveal at each stage and how the dynamic shifts as you become more honest — journal about the relationship between vulnerability and connection"
+        tips:
+          - "Creating safety for someone else's vulnerability is as important as being vulnerable yourself. When someone shares something personal, do not fix, minimize, or redirect — just listen and acknowledge."
+      - level: advanced
+        criteria: "Vulnerability is a strength you deploy consciously. Can navigate difficult emotional conversations without shutting down or overwhelming the other person. Deepens intimacy through consistent emotional availability."
+        metrics:
+          - "Can stay emotionally present during difficult conversations (disagreements, fears, past pain) without withdrawing or becoming defensive"
+          - "Partners describe the emotional depth of the connection as meaningful and rare"
+        resources:
+          - title: "Hold Me Tight — Dr. Sue Johnson"
+            url: "https://www.amazon.com/Hold-Me-Tight-Conversations-Lifetime/dp/031611300X"
+            type: "book"
+          - title: "The School of Life — The Charms of Unavailable People"
+            url: "https://www.youtube.com/watch?v=q8vlLU6yEXY"
+            type: "video"
+        practice:
+          - "The next time a difficult emotion comes up during a date or in early relationship (jealousy, fear, sadness), practice staying with it rather than deflecting — say 'I am feeling something and I want to be honest about it' and share what is happening (ongoing)"
+          - "Practice Sue Johnson's 'Hold Me Tight' conversation: identify a moment when you felt disconnected from someone you are dating and express the underlying vulnerability — 'When you did X, I felt Y because I need Z' (per significant conversation)"
+        projects:
+          - "Have a deliberate 'deeper conversation' with someone you are dating using 36 Questions to Fall in Love (Arthur Aron's research) or a similar structured vulnerability exercise — reflect afterward on how it changed the dynamic"
+        tips:
+          - "Emotional availability is not about being an open book at all times — it is about being reachable. When someone reaches toward you emotionally, they need to find someone home."
+      - level: expert
+        criteria: "Models healthy emotional intimacy. Can hold space for complex and difficult emotions. Vulnerability and strength are integrated, not in tension. Can guide others toward greater emotional openness."
+        metrics:
+          - "Relationships are characterized by deep emotional safety where both people can be fully themselves"
+          - "Successfully supported 2+ people in becoming more emotionally open and vulnerable in their own relationships"
+        resources:
+          - title: "Esther Perel — Mating in Captivity"
+            url: "https://www.amazon.com/Mating-Captivity-Unlocking-Erotic-Intelligence/dp/0060753641"
+            type: "book"
+          - title: "The School of Life — What True Love Really Is"
+            url: "https://www.youtube.com/watch?v=bw-_iPIcGIU"
+            type: "video"
+        practice:
+          - "Reflect on your own vulnerability journey: identify the 3 most transformative moments when being vulnerable changed a relationship for the better — write about what made each moment possible (60 minutes)"
+          - "Support a friend who struggles with emotional openness: share your own journey, normalize the discomfort, and help them identify one small step they could take this week (60 minutes)"
+        projects:
+          - "Create a 'vulnerability practice guide' based on your experience: what you have learned about when, how, and how much to share, how to create safety for others, and how vulnerability transforms relationships — share it with someone who needs it"
+        tips:
+          - "The deepest intimacy comes from being known — truly known — and loved anyway. This requires vulnerability from both people and cannot be manufactured or rushed."
+          - "At this level, you understand Brené Brown's core insight: vulnerability is not about winning or losing — it is about having the courage to show up when you cannot control the outcome."
+    tags: ["vulnerability", "emotional-intelligence", "intimacy", "authenticity"]
+
+  - id: "business/dating/boundary-setting-and-communication"
+    title: "Boundary Setting & Communication"
+    description: >
+      The ability to express your needs, respect others' limits, and
+      communicate directly in dating contexts. Healthy relationships are
+      impossible without clear boundaries. This includes saying no, expressing
+      what you want, navigating consent, communicating deal-breakers, and
+      having difficult conversations. Many people either avoid conflict
+      entirely (people-pleasing) or communicate aggressively — this node
+      develops the middle path of assertive, compassionate honesty.
+    benchmarks:
+      - level: beginner
+        criteria: "Can state a preference or need directly rather than hinting or people-pleasing. Respects when someone says no. Understands and practices enthusiastic consent."
+        metrics:
+          - "Stated a genuine preference on at least 3 dates (restaurant choice, activity preference, timeline for physical intimacy) rather than defaulting to 'whatever you want'"
+          - "Respected a boundary or 'no' gracefully at least twice without pushing back, sulking, or trying to change the person's mind"
+        resources:
+          - title: "Set Boundaries, Find Peace — Nedra Glennon Tawwab"
+            url: "https://www.amazon.com/Set-Boundaries-Find-Peace-Reclaiming/dp/0593192095"
+            type: "book"
+          - title: "The School of Life — How to Stop Being a People Pleaser"
+            url: "https://www.youtube.com/watch?v=8hYTPl7MkiA"
+            type: "video"
+        practice:
+          - "For one week, practice stating preferences directly in low-stakes situations: where to eat, what to watch, what time to meet — say 'I would prefer X' instead of 'I do not mind, whatever you want' (1 week)"
+          - "Write down 3 boundaries you have struggled to communicate in past dating situations (physical, emotional, time-related) and script how you would express each one clearly and kindly (20 minutes)"
+        projects:
+          - "Create a personal 'dating boundaries list': write down your non-negotiables (deal-breakers), your preferences (important but flexible), and your nice-to-haves — practice saying each non-negotiable out loud until it feels natural"
+        tips:
+          - "A boundary is not an ultimatum or a wall — it is information about what you need to feel safe and respected. 'I am not comfortable with X' is a complete sentence."
+          - "People-pleasing in dating leads to resentment. If you always say yes when you mean no, you are not being kind — you are being dishonest, and your resentment will eventually surface."
+      - level: intermediate
+        criteria: "Communicates needs and boundaries clearly in real time during dates and early relationships. Can have difficult conversations (exclusivity, pace, deal-breakers) without avoidance or aggression. Navigates consent conversations naturally."
+        metrics:
+          - "Successfully communicated a difficult boundary or need in a dating context at least 3 times (e.g., pace of physical intimacy, amount of texting, exclusivity expectations)"
+          - "Had at least one direct conversation about relationship expectations or deal-breakers without it becoming a conflict"
+        resources:
+          - title: "Nonviolent Communication — Marshall B. Rosenberg"
+            url: "https://www.amazon.com/Nonviolent-Communication-Language-Life-Changing-Relationships/dp/189200528X"
+            type: "book"
+          - title: "The Gottman Institute — How to Communicate Your Needs"
+            url: "https://www.gottman.com/blog/how-to-communicate-your-needs-in-a-relationship/"
+            type: "article"
+        practice:
+          - "Practice the NVC formula in your next difficult conversation: 'When [observation], I feel [emotion] because I need [need]. Would you be willing to [request]?' — rehearse with a friend first, then use it in a real dating conversation (ongoing)"
+          - "After your next 3 dates, check in with yourself: was there anything I did not say that I wished I had? If yes, find a way to communicate it within 24 hours, either in person or via a thoughtful message (ongoing)"
+        projects:
+          - "Have a deliberate 'expectations conversation' with someone you have been on 3+ dates with: discuss what you are each looking for, your communication preferences, and any deal-breakers — document how it went and what you learned about direct communication"
+        tips:
+          - "The NVC framework sounds formulaic at first but becomes natural with practice. The key insight: separate observations from judgments, feelings from thoughts, and needs from strategies."
+      - level: advanced
+        criteria: "Boundaries are communicated with warmth and confidence. Can navigate complex situations (mismatched expectations, declining physical escalation, ending things respectfully). Boundaries protect the relationship, not just you."
+        metrics:
+          - "Partners or dates describe your communication as clear, kind, and trustworthy"
+          - "Successfully navigated at least 2 complex boundary conversations (ending a relationship, addressing a pattern that bothers you, discussing mismatched pace) with both honesty and compassion"
+        resources:
+          - title: "Difficult Conversations — Douglas Stone, Bruce Patton, Sheila Heen"
+            url: "https://www.amazon.com/Difficult-Conversations-Discuss-What-Matters/dp/0143118447"
+            type: "book"
+          - title: "The Gottman Institute — The Gentle Startup"
+            url: "https://www.gottman.com/blog/softening-startup/"
+            type: "article"
+        practice:
+          - "Practice the 'gentle startup' from Gottman research: when raising a concern, start with 'I' statements and express appreciation before the issue — 'I love spending time with you. I have been feeling overwhelmed by daily texting and I need some alone time too.' (ongoing)"
+          - "Role-play a difficult dating conversation with a trusted friend: practice ending things kindly, asking for exclusivity, or addressing a behavior that crosses a line — get feedback on your tone and clarity (30 minutes)"
+        projects:
+          - "Reflect on the 3 hardest boundary conversations you have had in dating: for each, write what you said, what you wish you had said, and what the ideal version would sound like — use these as templates for future conversations"
+        tips:
+          - "The Gottman research shows that how you start a difficult conversation predicts how it ends 96% of the time. Start gently and you are far more likely to be heard."
+      - level: expert
+        criteria: "Boundary communication is an integrated life skill, not just a dating skill. You model healthy communication in all relationships. Can coach others through difficult conversations. Boundaries create trust and intimacy rather than distance."
+        metrics:
+          - "Relationships are characterized by clear, kind, direct communication where both people feel safe expressing needs"
+          - "Successfully coached 2+ friends through difficult boundary conversations in their own dating lives"
+        resources:
+          - title: "The Dance of Anger — Harriet Lerner"
+            url: "https://www.amazon.com/Dance-Anger-Changing-Patterns-Relationships/dp/0062319043"
+            type: "book"
+          - title: "Brené Brown — Braving the Wilderness"
+            url: "https://www.amazon.com/Braving-Wilderness-Quest-Belonging-Courage/dp/0812995848"
+            type: "book"
+        practice:
+          - "Help a friend prepare for a difficult conversation: listen to their situation, help them identify their core need, and practice different ways to express it — follow up afterward (60 minutes)"
+          - "Reflect on how your boundary-setting has evolved: journal about specific situations where your current skills would have changed past outcomes — celebrate the growth (30 minutes)"
+        projects:
+          - "Create a 'communication toolkit' for dating: a personal guide covering how to start difficult conversations, common scripts for boundary situations (ending things, asking for exclusivity, addressing discomfort), and principles for compassionate honesty"
+        tips:
+          - "The paradox of boundaries: clear boundaries create more intimacy, not less. When both people know where they stand, they can relax and be themselves."
+          - "At this level, you understand that boundary setting is an act of love — for yourself and for the other person. Clarity is kindness."
+    tags: ["boundaries", "communication", "consent", "assertiveness"]
+
+  # ── RESILIENCE ─────────────────────────────────────────────────────────────
+  - id: "business/dating/navigating-rejection-and-resilience"
+    title: "Navigating Rejection & Resilience"
+    description: >
+      Dating inevitably involves rejection — both giving and receiving it.
+      This node develops the emotional resilience to handle rejection without
+      it destroying your self-worth, the grace to reject others kindly, and
+      the ability to maintain optimism and motivation through the inherent
+      ups and downs of dating. Rejection is not evidence of your inadequacy —
+      it is information about compatibility.
+    benchmarks:
+      - level: beginner
+        criteria: "Can handle a 'no' without spiraling into self-criticism or lashing out. Understands that rejection is about compatibility, not personal worth. Can decline a second date kindly."
+        metrics:
+          - "Handled at least 3 rejections (unanswered messages, declined dates, no second date) without sending an angry or guilt-tripping response"
+          - "Kindly declined at least 1 date or second date with a direct, respectful message rather than ghosting"
+        resources:
+          - title: "Mark Manson — The Subtle Art of Not Giving a F*ck (Chapter on Rejection)"
+            url: "https://www.amazon.com/Subtle-Art-Not-Giving-Counterintuitive/dp/0062457713"
+            type: "book"
+          - title: "Jia Jiang — What I Learned From 100 Days of Rejection (TED Talk)"
+            url: "https://www.ted.com/talks/jia_jiang_what_i_learned_from_100_days_of_rejection"
+            type: "video"
+        practice:
+          - "Write down 3 rejections you have experienced in dating (or life) and reframe each one: what did you learn? What did it protect you from? What became possible because of it? (20 minutes)"
+          - "Practice declining gracefully: draft a kind, honest rejection message you could send to someone after a first date — something like 'I enjoyed meeting you, but I did not feel a romantic connection. I wish you the best.' Have it ready. (10 minutes)"
+        projects:
+          - "Complete a 2-week 'rejection exposure' challenge: put yourself in situations where you might be rejected (asking someone out, suggesting an activity, expressing a preference) at least once per day — journal about how your relationship with rejection shifts"
+        tips:
+          - "Rejection is not about you — it is about fit. When someone rejects you, they are saying 'we are not compatible,' not 'you are not enough.' These are very different things."
+          - "Ghosting is never kind. It feels easier in the moment but causes more pain than a clear, honest 'I did not feel a connection.' Be the person who respects others enough to be direct."
+      - level: intermediate
+        criteria: "Rejection does not significantly affect your self-worth or motivation to date. Can process disappointment quickly and move forward. Patterns of rejection are examined for useful feedback without over-personalizing."
+        metrics:
+          - "Recovery time from a rejection has decreased measurably — what used to take weeks now takes days or hours"
+          - "Can identify at least 3 patterns in your dating history that provide useful information (versus just painful memories)"
+        resources:
+          - title: "Rising Strong — Brené Brown"
+            url: "https://www.amazon.com/Rising-Strong-Ability-Transforms-Parent/dp/0812985818"
+            type: "book"
+          - title: "The School of Life — How to Cope With Rejection"
+            url: "https://www.youtube.com/watch?v=5motuzyLXIk"
+            type: "video"
+        practice:
+          - "Develop a personal 'rejection recovery ritual': a specific sequence you follow when you feel the sting of rejection — call a friend, go for a run, journal, remind yourself of your worth — practice it after your next rejection (ongoing)"
+          - "After each rejection or disappointment, write down: (1) what actually happened (facts only), (2) the story I am telling myself about what it means, (3) a more balanced interpretation — this separates reality from catastrophizing (per rejection)"
+        projects:
+          - "Review your last 5 dating experiences that did not work out: for each, write what you learned about yourself and what you want — then identify 1 actionable change you are making going forward based on these insights"
+        tips:
+          - "Brené Brown's 'story I am telling myself' technique is powerful: when you feel hurt, say 'the story I am telling myself is that I am not attractive enough' — naming the story helps you see it as a story, not a fact."
+      - level: advanced
+        criteria: "Rejection is genuinely processed as information, not injury. Can sit with disappointment without numbing or avoiding. Maintains a healthy dating life even after significant heartbreak. Can support others through rejection."
+        metrics:
+          - "Maintained consistent dating activity through a period of repeated rejection or a significant heartbreak without withdrawing completely or becoming cynical"
+          - "Friends come to you for support when they experience dating rejection because they trust your perspective"
+        resources:
+          - title: "Option B — Sheryl Sandberg & Adam Grant"
+            url: "https://www.amazon.com/Option-Adversity-Building-Resilience-Finding/dp/1524732680"
+            type: "book"
+          - title: "The School of Life — How to Get Over Someone"
+            url: "https://www.youtube.com/watch?v=tAsH_LXT9P0"
+            type: "video"
+        practice:
+          - "The next time you experience significant dating disappointment, practice 'sitting with it' for 24 hours: feel the feelings without acting on them (no angry texts, no immediately jumping on apps, no numbing with distractions) — just feel it and let it pass (24 hours)"
+          - "Write a compassionate letter to yourself as if you were writing to your best friend going through the same rejection — notice how your tone differs from your internal self-talk (20 minutes)"
+        projects:
+          - "Create a 'resilience portfolio': a collection of evidence that you are worthy of love — specific compliments you have received, moments of genuine connection, qualities you bring to relationships — keep it accessible for moments when rejection shakes your confidence"
+        tips:
+          - "Resilience is not about not feeling pain — it is about feeling it and choosing to remain open anyway. The brave choice after heartbreak is to keep your heart open, not to build walls."
+      - level: expert
+        criteria: "Rejection and heartbreak have been integrated into a mature, compassionate understanding of love and dating. You approach dating with both openness and equanimity. Can mentor others through their darkest dating moments."
+        metrics:
+          - "Your approach to dating reflects genuine wisdom earned through experience — you are neither naive nor cynical"
+          - "Successfully supported 2+ people through significant dating heartbreak with empathy, practical advice, and honest perspective"
+        resources:
+          - title: "When Things Fall Apart — Pema Chödrön"
+            url: "https://www.amazon.com/When-Things-Fall-Apart-Difficult/dp/1611803438"
+            type: "book"
+          - title: "Alain de Botton — Why You Will Marry the Wrong Person (NYT Essay)"
+            url: "https://www.nytimes.com/2016/05/29/opinion/sunday/why-you-will-marry-the-wrong-person.html"
+            type: "article"
+        practice:
+          - "Support a friend through a breakup or dating disappointment: be present, listen without fixing, and help them see the experience as part of their growth rather than evidence of their inadequacy (ongoing)"
+          - "Write a reflection on your relationship with rejection over time: how has it changed? What would you tell your younger self? What wisdom have you earned? (60 minutes)"
+        projects:
+          - "Write or record a 'letter to someone starting their dating journey' that honestly addresses the reality of rejection: it will happen, it will hurt, and it will also teach you more about love and yourself than success ever could"
+        tips:
+          - "Alain de Botton writes: 'The person who is best at relationships is not the one who has never been hurt — it is the one who has been hurt, learned from it, and remained open.' This is the expert level."
+          - "True resilience includes the ability to be happy for others who find love even when you have not yet. This generosity of spirit attracts the very love you are seeking."
+    tags: ["rejection", "resilience", "self-worth", "emotional-health"]
+
+  # ── RELATIONSHIP TRANSITION ────────────────────────────────────────────────
+  - id: "business/dating/relationship-transition"
+    title: "Relationship Transition"
+    description: >
+      The skills needed to move from dating into committed partnership. This
+      is where many people stumble — the transition from 'seeing each other'
+      to 'being together' requires explicit conversation, mutual vulnerability,
+      and the ability to navigate ambiguity. This node covers defining the
+      relationship, integrating lives, meeting friends and family, and building
+      a foundation for long-term partnership. It draws heavily on Gottman
+      research about what makes relationships succeed.
+    benchmarks:
+      - level: beginner
+        criteria: "Can recognize when a dating relationship is ready for a 'define the relationship' conversation. Willing to initiate that conversation rather than waiting indefinitely. Understands the difference between infatuation and genuine compatibility."
+        metrics:
+          - "Initiated or participated in at least 1 honest conversation about where a relationship is heading"
+          - "Can articulate 3+ differences between infatuation (chemistry-driven, idealized) and genuine compatibility (values-aligned, reality-based)"
+        resources:
+          - title: "How to Not Die Alone — Logan Ury (Chapter on Defining the Relationship)"
+            url: "https://www.amazon.com/How-Not-Die-Alone-Surprising/dp/1982120630"
+            type: "book"
+          - title: "The School of Life — How to Know When You've Found a Great Partner"
+            url: "https://www.youtube.com/watch?v=k7z215VLu9I"
+            type: "video"
+        practice:
+          - "Write out what 'being in a relationship' means to you specifically — what does it look like day-to-day? What changes from dating? What stays the same? — then share this with a friend and discuss (30 minutes)"
+          - "If you are currently seeing someone, practice raising the topic naturally: 'I am really enjoying getting to know you and I would love to talk about where we see this going' — rehearse until it does not feel scary (15 minutes)"
+        projects:
+          - "Create a 'relationship readiness checklist': a list of signals that indicate genuine compatibility (beyond chemistry) based on your research and experience — include values alignment, conflict style, life goals, and how you feel around this person when the excitement fades"
+        tips:
+          - "Logan Ury's research shows that waiting too long to define the relationship often kills it. Ambiguity breeds anxiety. Have the conversation when you feel it, not when it is 'safe.'"
+          - "Infatuation tells you the story you want to hear. Compatibility shows you the truth. Pay attention to how someone treats you on a bad day, not just a good one."
+      - level: intermediate
+        criteria: "Can navigate the transition from casual dating to exclusivity with direct communication. Handles the integration of lives (meeting friends, adjusting routines) with flexibility. Recognizes and addresses early relationship patterns."
+        metrics:
+          - "Successfully transitioned at least 1 dating relationship into an intentional partnership through clear communication"
+          - "Integrated a partner into at least 2 areas of your existing life (friend group, family, hobbies) without losing your individual identity"
+        resources:
+          - title: "The Seven Principles for Making Marriage Work — John Gottman"
+            url: "https://www.amazon.com/Seven-Principles-Making-Marriage-Work/dp/0553447718"
+            type: "book"
+          - title: "The Gottman Institute — Sound Relationship House Theory"
+            url: "https://www.gottman.com/blog/the-sound-relationship-house-build-love-maps/"
+            type: "article"
+        practice:
+          - "Use Gottman's 'Love Maps' concept: spend 30 minutes asking your partner questions you do not already know the answers to — their current stresses, dreams, small pleasures, fears — building a detailed map of their inner world (30 minutes)"
+          - "When integrating your partner into your social life, prepare both sides: tell your friends something genuine about your partner, and tell your partner something helpful about your friends — reduce anxiety by building bridges (per introduction)"
+        projects:
+          - "With a current or future partner, complete the Gottman 'Love Maps' questionnaire together and discuss areas where you knew each other well and areas where you were surprised — use this as a foundation for deeper understanding"
+        tips:
+          - "The biggest mistake in relationship transition: assuming that because you are now 'official,' you can stop doing the things that built the connection. Keep dating each other."
+      - level: advanced
+        criteria: "Can build a relationship foundation that supports long-term partnership. Navigates early conflicts constructively using Gottman principles. Maintains individual identity while building a shared life. Addresses potential issues proactively."
+        metrics:
+          - "Can identify and address the Gottman 'Four Horsemen' (criticism, contempt, defensiveness, stonewalling) in your own relationship behavior"
+          - "Built shared rituals, routines, or traditions with a partner that strengthen the bond"
+        resources:
+          - title: "Eight Dates — John & Julie Gottman"
+            url: "https://www.amazon.com/Eight-Dates-Essential-Conversations-Lifetime/dp/1523504463"
+            type: "book"
+          - title: "Mating in Captivity — Esther Perel"
+            url: "https://www.amazon.com/Mating-Captivity-Unlocking-Erotic-Intelligence/dp/0060753641"
+            type: "book"
+        practice:
+          - "Complete all 8 conversations from the Gottman 'Eight Dates' book with your partner: trust and commitment, conflict, sex, work and money, family, fun and adventure, growth and spirituality, dreams (8 dates over 2-3 months)"
+          - "Practice Gottman's repair attempts: the next time a conversation gets heated, try a deliberate de-escalation — 'I think we are getting off track, can we take a breath?' or 'I want to understand your perspective better' (ongoing)"
+        projects:
+          - "With your partner, design your 'relationship operating system': how you will handle conflict (rules of engagement), how you will maintain connection (weekly date night, daily check-ins), and how you will support each other's individual growth"
+        tips:
+          - "Esther Perel's insight: desire needs space. The transition from dating to relationship often kills attraction because closeness replaces mystery. Maintain some separateness — your own friends, hobbies, and identity."
+      - level: expert
+        criteria: "Has built or is building a deeply satisfying long-term partnership. Can articulate what makes relationships work from lived experience. Serves as a model and resource for friends navigating their own transitions."
+        metrics:
+          - "In a committed relationship characterized by mutual respect, growth, honest communication, and maintained attraction"
+          - "Successfully supported 2+ friends or couples through their own relationship transitions with nuanced, experience-based guidance"
+        resources:
+          - title: "The Course of Love — Alain de Botton"
+            url: "https://www.amazon.com/Course-Love-Novel-Alain-Botton/dp/1501134515"
+            type: "book"
+          - title: "The Gottman Institute — What Makes Relationships Work"
+            url: "https://www.gottman.com/blog/what-makes-relationships-work/"
+            type: "article"
+        practice:
+          - "Have a quarterly 'state of the relationship' conversation with your partner: what is going well, what needs attention, what you appreciate about each other, and what you want to build together next (quarterly, 60 minutes)"
+          - "Mentor a friend or couple navigating the transition from dating to partnership: share what you have learned about building a relationship that lasts, with specific and actionable guidance (ongoing)"
+        projects:
+          - "Write a reflection on your journey from dating to partnership: what surprised you, what was harder than expected, what was more rewarding than expected, and what advice you would give to someone 5 years behind you"
+        tips:
+          - "Alain de Botton writes that the beginning of a relationship is not the high point — it is the starting line. The real work, and the real rewards, come after the infatuation fades and you choose each other deliberately, every day."
+          - "The expert level is not about having a perfect relationship — it is about having a real one. One where both people keep growing, keep communicating, and keep choosing each other through difficulty and change."
+    tags: ["commitment", "partnership", "relationship-building", "long-term"]
+
+relationships:
+  # ── Foundation → Social Skills ─────────────────────────────────────────────
+  - source: "business/dating/self-knowledge-and-readiness"
+    target: "business/dating/social-confidence"
+    type: "enables"
+    note: "Self-awareness provides the foundation for authentic social confidence — you can only be genuinely confident when you know and accept who you are"
+
+  - source: "business/dating/self-knowledge-and-readiness"
+    target: "business/dating/online-dating-strategy"
+    type: "enables"
+    note: "Knowing your values and what you want informs profile creation, partner selection, and filtering on apps"
+
+  # ── Social Skills Chain ────────────────────────────────────────────────────
+  - source: "business/dating/social-confidence"
+    target: "business/dating/conversation-skills"
+    type: "requires"
+    note: "You need basic social comfort before you can focus on conversation quality — anxiety about approaching people blocks conversational flow"
+
+  - source: "business/dating/conversation-skills"
+    target: "business/dating/reading-social-cues"
+    type: "complementary"
+    note: "Great conversation requires reading the room — and reading cues makes conversations better. These skills develop together."
+
+  # ── Online & Offline Paths to Dates ────────────────────────────────────────
+  - source: "business/dating/social-confidence"
+    target: "business/dating/planning-and-initiating-dates"
+    type: "enables"
+    note: "Confidence to approach and ask someone out is a prerequisite for initiating dates in person"
+
+  - source: "business/dating/online-dating-strategy"
+    target: "business/dating/planning-and-initiating-dates"
+    type: "enables"
+    note: "Online dating creates matches that need to be converted into real dates — messaging leads to date planning"
+
+  - source: "business/dating/conversation-skills"
+    target: "business/dating/planning-and-initiating-dates"
+    type: "enables"
+    note: "Good conversation skills on dates make the dates themselves successful and lead to more dates"
+
+  # ── Deepening Connection ───────────────────────────────────────────────────
+  - source: "business/dating/reading-social-cues"
+    target: "business/dating/vulnerability-and-emotional-connection"
+    type: "enables"
+    note: "Reading cues tells you when it is safe to be vulnerable and when your partner needs you to be — social awareness enables emotional depth"
+
+  - source: "business/dating/planning-and-initiating-dates"
+    target: "business/dating/vulnerability-and-emotional-connection"
+    type: "enables"
+    note: "Well-planned dates create environments conducive to vulnerability and deeper connection"
+
+  - source: "business/dating/vulnerability-and-emotional-connection"
+    target: "business/dating/boundary-setting-and-communication"
+    type: "complementary"
+    note: "Vulnerability and boundaries are two sides of the same coin — you need both to build healthy intimacy"
+
+  # ── Resilience as Cross-Cutting ────────────────────────────────────────────
+  - source: "business/dating/self-knowledge-and-readiness"
+    target: "business/dating/navigating-rejection-and-resilience"
+    type: "enables"
+    note: "Self-worth grounded in self-knowledge makes rejection less devastating — you know your value independently of any single person's opinion"
+
+  - source: "business/dating/navigating-rejection-and-resilience"
+    target: "business/dating/social-confidence"
+    type: "enables"
+    note: "Resilience to rejection makes it easier to put yourself out there socially — you fear less when rejection cannot break you"
+
+  - source: "business/dating/navigating-rejection-and-resilience"
+    target: "business/dating/online-dating-strategy"
+    type: "enables"
+    note: "Online dating involves constant micro-rejections (unmatches, unanswered messages) — resilience prevents burnout"
+
+  # ── Transition to Relationship ─────────────────────────────────────────────
+  - source: "business/dating/vulnerability-and-emotional-connection"
+    target: "business/dating/relationship-transition"
+    type: "requires"
+    note: "Moving from dating to partnership requires deep emotional connection — without vulnerability, relationships stay shallow"
+
+  - source: "business/dating/boundary-setting-and-communication"
+    target: "business/dating/relationship-transition"
+    type: "requires"
+    note: "Defining the relationship and building a partnership requires clear, direct communication about needs and expectations"
+
+  - source: "business/dating/reading-social-cues"
+    target: "business/dating/boundary-setting-and-communication"
+    type: "enables"
+    note: "Reading cues helps you notice when a boundary is needed and when your communication is landing — awareness informs expression"

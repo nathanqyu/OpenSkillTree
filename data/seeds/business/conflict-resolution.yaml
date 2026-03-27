@@ -1,0 +1,909 @@
+# OpenSkillTree — Seed Skill Tree: Conflict Resolution
+#
+# Domain:  Business / Soft Skills / Conflict Resolution
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference:
+#   beginner     = can manage minor interpersonal disagreements
+#   intermediate = handles workplace conflicts and difficult conversations
+#   advanced     = mediates others' disputes and manages team conflict
+#   expert       = designs conflict resolution systems and trains others
+
+tree:
+  id: "business/conflict-resolution"
+  title: "Conflict Resolution"
+  description: >
+    A comprehensive skill tree for conflict resolution — the ability to navigate
+    disagreements, de-escalate tensions, and find mutually acceptable outcomes.
+    Covers self-awareness and emotional regulation, active listening, empathy and
+    perspective-taking, nonviolent communication, de-escalation techniques,
+    negotiation and compromise, mediation and facilitation, and repair and
+    reconciliation. These skills apply across personal relationships, workplace
+    teams, and organizational systems.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATIONAL SKILLS (personal awareness, learned first) ──────────────────
+  - id: "business/conflict-resolution/self-awareness-emotional-regulation"
+    title: "Self-Awareness & Emotional Regulation"
+    description: >
+      The ability to recognize your own emotional triggers, understand your
+      default conflict style, and manage your reactions under stress. This is
+      the foundational skill of conflict resolution: you cannot navigate another
+      person's emotions if you cannot manage your own. Without self-regulation,
+      every other conflict skill breaks down under pressure.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies personal emotional triggers and default conflict style (avoiding, accommodating, competing, compromising, collaborating)."
+        metrics:
+          - "Can name at least 5 personal triggers that escalate emotional reactions in conflict"
+          - "Completes a conflict style self-assessment and identifies primary and secondary styles"
+        resources:
+          - title: "TED Talk - Daniel Goleman: Why Aren't We More Compassionate?"
+            url: "https://www.ted.com/talks/daniel_goleman_why_aren_t_we_more_compassionate"
+            type: "video"
+          - title: "MindTools - Thomas-Kilmann Conflict Resolution Model"
+            url: "https://www.mindtools.com/ax3e5tv/the-thomas-kilmann-conflict-resolution-model"
+            type: "article"
+        practice:
+          - "Keep a conflict journal for 2 weeks: after each disagreement, note what happened, what you felt, and how you responded (5 minutes per entry)"
+          - "Take the Thomas-Kilmann Conflict Mode Instrument and reflect on how your style shows up at work and at home (30 minutes)"
+        projects:
+          - "Write a personal conflict profile: your top 5 triggers, your default style, your physical warning signs (tight chest, raised voice, withdrawal), and one regulation strategy for each trigger"
+        tips:
+          - "Your body signals conflict before your mind does. Learn your physical cues — clenched jaw, faster heartbeat, shallow breathing — and use them as an early-warning system."
+          - "There is no 'right' conflict style. Each of the five Thomas-Kilmann modes is appropriate in certain situations. The goal is flexibility, not always collaborating."
+      - level: intermediate
+        criteria: >
+          Uses specific regulation techniques (box breathing, cognitive reappraisal,
+          time-outs) to stay calm during difficult conversations. Can distinguish
+          between emotional reaction and rational assessment in real time.
+        metrics:
+          - "Successfully uses a regulation technique to de-escalate own emotional response in 70%+ of heated conversations"
+          - "Colleagues report that you remain calm under pressure in peer feedback"
+        resources:
+          - title: "Emotional Intelligence 2.0 by Travis Bradberry & Jean Greaves (Amazon)"
+            url: "https://www.amazon.com/Emotional-Intelligence-2-0-Travis-Bradberry/dp/0974320625"
+            type: "book"
+          - title: "Harvard Business Review - How to Control Your Emotions During a Difficult Conversation"
+            url: "https://hbr.org/2017/12/how-to-control-your-emotions-during-a-difficult-conversation"
+            type: "article"
+        practice:
+          - "Practice box breathing (4 seconds in, 4 hold, 4 out, 4 hold) for 5 minutes daily for 2 weeks, then use it before your next difficult conversation (ongoing)"
+          - "After your next conflict, write down your initial emotional reaction and then rewrite it as a neutral observation: 'I felt attacked' becomes 'They raised their voice and interrupted me' (10 minutes)"
+        projects:
+          - "Over 4 weeks, track every difficult conversation: record the trigger, the regulation technique you used, and the outcome. Identify which techniques work best for you and create a personal de-escalation protocol"
+        tips:
+          - "Cognitive reappraisal is the most powerful regulation tool: reframe 'they are attacking me' as 'they are frustrated and expressing it poorly.' The reframe changes your physiological response."
+      - level: advanced
+        criteria: >
+          Models emotional regulation for others in high-stakes situations. Coaches
+          team members on recognizing their triggers. Can maintain composure during
+          organizational crises and emotionally charged group dynamics.
+        metrics:
+          - "Maintains regulated presence during high-stakes meetings (360 feedback confirms composure under pressure)"
+          - "Has coached at least 3 colleagues on emotional regulation techniques with measurable improvement in their conflict handling"
+        resources:
+          - title: "Difficult Conversations: How to Discuss What Matters Most by Stone, Patton & Heen (Amazon)"
+            url: "https://www.amazon.com/Difficult-Conversations-Discuss-What-Matters/dp/0143118447"
+            type: "book"
+          - title: "LinkedIn Learning - Developing Your Emotional Intelligence"
+            url: "https://www.linkedin.com/learning/developing-your-emotional-intelligence"
+            type: "course"
+        practice:
+          - "In your next team meeting with visible tension, consciously model calm: slow your speaking pace, lower your volume, and name the emotional dynamic ('I can see this topic brings strong feelings — let us take a moment') (ongoing)"
+          - "Pair with a colleague for mutual coaching: debrief each other's difficult conversations weekly, focusing on what triggered you and what you would do differently (30 minutes per week)"
+        projects:
+          - "Design and deliver a 30-minute workshop on emotional triggers and regulation for your team, including a self-assessment exercise and practice scenario"
+        tips:
+          - "Advanced regulation is not about suppression. It is about creating space between stimulus and response. Viktor Frankl's insight applies directly: in that space lies your freedom to choose."
+      - level: expert
+        criteria: >
+          Designs organizational systems that support emotional safety in conflict
+          (norms, rituals, escalation paths). Trains others to become emotionally
+          intelligent conflict navigators. Recognized as a stabilizing presence
+          in organizational crises.
+        metrics:
+          - "Has implemented team or organizational norms for emotional safety that are adopted by 50+ people"
+          - "Trains or mentors at least 5 people per year on self-awareness and regulation skills"
+        resources:
+          - title: "Primal Leadership by Daniel Goleman, Richard Boyatzis & Annie McKee (Amazon)"
+            url: "https://www.amazon.com/Primal-Leadership-Unleashing-Emotional-Intelligence/dp/1422168034"
+            type: "book"
+          - title: "Harvard Business Review - What Makes a Leader? by Daniel Goleman"
+            url: "https://hbr.org/2004/01/what-makes-a-leader"
+            type: "article"
+        practice:
+          - "Audit your organization's current conflict escalation path: map where emotional breakdowns happen, identify systemic triggers, and propose structural changes (2 hours)"
+          - "Create a mentoring relationship with a senior leader, specifically focused on modeling emotional regulation during executive-level disagreements (ongoing)"
+        projects:
+          - "Design and implement a 'conflict norms' charter for your organization that includes emotional safety guidelines, agreed-upon de-escalation signals, and a structured escalation path — then measure adoption and impact over 6 months"
+        tips:
+          - "At the expert level, the highest leverage is not regulating your own emotions better — it is building environments where others can regulate theirs. Psychological safety is the system-level version of emotional regulation."
+    tags: ["foundation", "emotional-intelligence", "self-management"]
+
+  - id: "business/conflict-resolution/active-listening"
+    title: "Active Listening in Conflict"
+    description: >
+      The discipline of fully hearing the other party before responding —
+      suspending judgment, reflecting back what you heard, and confirming
+      understanding. In conflict, most people listen to rebut rather than to
+      understand. Active listening breaks this pattern and is the single most
+      powerful de-escalation tool available.
+    benchmarks:
+      - level: beginner
+        criteria: "Demonstrates basic active listening: maintains eye contact, avoids interrupting, and can paraphrase the other person's key point."
+        metrics:
+          - "Can accurately paraphrase the other person's position in 80%+ of practice conversations"
+          - "Reduces interruptions to fewer than 2 per 10-minute conversation"
+        resources:
+          - title: "MindTools - Active Listening"
+            url: "https://www.mindtools.com/az4wxv7/active-listening"
+            type: "article"
+          - title: "TED Talk - William Ury: The Power of Listening"
+            url: "https://www.youtube.com/watch?v=saXfavo1OQo"
+            type: "video"
+        practice:
+          - "In your next 3 conversations, practice the 'reflect and confirm' technique: after the other person finishes, say 'What I hear you saying is...' and ask 'Did I get that right?' (ongoing)"
+          - "Set a timer for 3 minutes and let a partner speak without interrupting, then summarize what they said. Repeat with roles reversed (15 minutes)"
+        projects:
+          - "Record (with permission) a practice conversation, then review the recording to count interruptions, note moments where you listened to respond vs. listened to understand, and identify 3 specific improvement areas"
+        tips:
+          - "The easiest way to stop interrupting: when you feel the urge to speak, take one full breath first. That 3-second pause is usually enough to let the other person finish."
+          - "Paraphrasing is not parroting. Do not repeat their exact words. Translate their point into your own words — that proves you actually understood it."
+      - level: intermediate
+        criteria: >
+          Listens for feelings and needs beneath the words, not just the content.
+          Uses open-ended questions to draw out the full story. Can listen
+          non-defensively when being criticized.
+        metrics:
+          - "Identifies the underlying emotion or need behind the other person's stated position in 70%+ of difficult conversations"
+          - "Uses at least 3 open-ended questions per difficult conversation to deepen understanding"
+        resources:
+          - title: "Crucial Conversations: Tools for Talking When Stakes Are High by Patterson et al. (Amazon)"
+            url: "https://www.amazon.com/Crucial-Conversations-Talking-Stakes-High/dp/1260474186"
+            type: "book"
+          - title: "Harvard Business Review - Listening Is an Overlooked Leadership Tool"
+            url: "https://hbr.org/2021/05/listening-is-an-overlooked-leadership-tool"
+            type: "article"
+        practice:
+          - "In your next disagreement, before responding to criticism, ask: 'Can you help me understand what is most important to you here?' Then listen without defending (ongoing)"
+          - "Practice 'looping': after someone shares something emotional, reflect back both the content AND the feeling: 'It sounds like you felt dismissed when your idea was not discussed' (ongoing)"
+        projects:
+          - "Conduct 5 structured listening sessions with colleagues on a contentious topic. In each, your only job is to ask questions and reflect — you may not share your own opinion. Write up what you learned about each person's perspective"
+        tips:
+          - "When someone criticizes you and you feel defensive, your listening quality drops to near zero. Practice the mantra: 'What if they are 10% right?' That question keeps your ears open."
+      - level: advanced
+        criteria: >
+          Listens effectively in multi-party conflicts, tracking multiple
+          perspectives simultaneously. Can hear the unspoken concerns and
+          surface them productively. Models deep listening for teams.
+        metrics:
+          - "In multi-party discussions, accurately summarizes all parties' positions and each party confirms the summary is correct"
+          - "Colleagues seek you out specifically for your listening ability during difficult situations"
+        resources:
+          - title: "The Lost Art of Listening by Michael P. Nichols (Amazon)"
+            url: "https://www.amazon.com/Lost-Art-Listening-Second-Relationships/dp/1593859864"
+            type: "book"
+          - title: "Coursera - Active Listening: Enhancing Communication Skills"
+            url: "https://www.coursera.org/learn/wharton-communication-skills"
+            type: "course"
+        practice:
+          - "In your next group meeting with disagreement, take notes on each person's position, underlying interest, and emotional state. After the meeting, check your notes with each person individually (ongoing)"
+          - "Practice 'listening for what is NOT being said': in your next 3 team conversations, identify one concern that nobody is voicing and surface it carefully: 'I notice nobody has mentioned X — is that a concern?' (ongoing)"
+        projects:
+          - "Facilitate a structured listening exercise for your team: each person takes 5 minutes to share their perspective on a real issue while the group practices pure listening. Then each listener writes a summary. Compare summaries and discuss gaps"
+        tips:
+          - "In group conflicts, the most important thing to listen for is the thing nobody is saying. The unspoken concern is usually the real obstacle to resolution."
+      - level: expert
+        criteria: >
+          Teaches active listening as a core organizational competency. Designs
+          listening-based processes (structured dialogues, listening circles,
+          empathy interviews). Recognized as a master listener who transforms
+          the quality of organizational conversation.
+        metrics:
+          - "Has trained 20+ people in active listening techniques with measurable skill improvement"
+          - "Has designed and implemented at least 2 listening-based processes adopted by teams or departments"
+        resources:
+          - title: "Co-Active Coaching by Kimsey-House, Kimsey-House, Sandahl & Whitworth (Amazon)"
+            url: "https://www.amazon.com/Co-Active-Coaching-Fourth-Changing-Business/dp/1473674980"
+            type: "book"
+          - title: "Harvard Business Review - The Discipline of Listening"
+            url: "https://hbr.org/2012/06/the-discipline-of-listening"
+            type: "article"
+        practice:
+          - "Design a 'listening circle' format for your organization: a structured process where team members share and listen without crosstalk, with a facilitator ensuring everyone is heard (2 hours to design, ongoing to facilitate)"
+          - "Mentor 2 emerging leaders specifically on their listening skills — observe them in meetings, give specific feedback, and track improvement over 3 months (ongoing)"
+        projects:
+          - "Create and deliver a multi-session listening skills training program for your organization, including assessments, practice exercises, and follow-up coaching. Measure improvement via pre/post 360 feedback on listening quality"
+        tips:
+          - "The ultimate test of mastery: can the people you train become better listeners than you? Designing systems that scale listening beyond your personal presence is the expert-level challenge."
+    tags: ["foundation", "communication", "empathy"]
+
+  - id: "business/conflict-resolution/perspective-taking-empathy"
+    title: "Perspective-Taking & Empathy"
+    description: >
+      The ability to genuinely understand the other party's viewpoint, feelings,
+      and interests — even when you disagree with their position. Perspective-taking
+      goes beyond listening: it requires cognitive effort to construct a model of
+      how the other person sees the situation. Empathy without agreement is the
+      key insight: you can fully understand someone's perspective and still hold
+      a different one.
+    benchmarks:
+      - level: beginner
+        criteria: "Can articulate the other person's perspective in their own terms, even in simple disagreements."
+        metrics:
+          - "In practice exercises, the other party confirms 'yes, that is how I see it' at least 70% of the time"
+          - "Can list at least 3 reasons why a reasonable person might hold the opposing view"
+        resources:
+          - title: "TED Talk - Sam Richards: A Radical Experiment in Empathy"
+            url: "https://www.ted.com/talks/sam_richards_a_radical_experiment_in_empathy"
+            type: "video"
+          - title: "Psychology Today - Cognitive vs Emotional Empathy"
+            url: "https://www.psychologytoday.com/us/blog/click-here-happiness/201901/what-is-empathy"
+            type: "article"
+        practice:
+          - "Pick a topic you feel strongly about. Write a 1-paragraph argument for the opposing position that a supporter of that view would agree with (15 minutes)"
+          - "In your next disagreement, before stating your position, say: 'Let me make sure I understand your side first' — then summarize their view until they say you got it right (ongoing)"
+        projects:
+          - "Choose a workplace or personal conflict you are currently in. Write two versions of the story: one from your perspective and one from the other person's. Share the other person's version with a neutral third party and ask if it reads as genuinely empathetic"
+        tips:
+          - "Empathy does not mean agreement. You can fully understand why someone holds a position and still disagree with it. Separating these two things is the core skill."
+          - "The hardest people to empathize with are the ones who remind you of your own flaws. Notice when your resistance to understanding someone feels disproportionate — that is a signal worth investigating."
+      - level: intermediate
+        criteria: >
+          Identifies the underlying interests, values, and fears driving the
+          other party's position. Distinguishes between positions (what they
+          say they want) and interests (why they want it).
+        metrics:
+          - "In 80%+ of workplace conflicts, can identify at least one underlying interest that differs from the stated position"
+          - "Regularly uses interest-based framing ('I think what matters most to you is...') in difficult conversations"
+        resources:
+          - title: "Getting to Yes: Negotiating Agreement Without Giving In by Fisher & Ury (Amazon)"
+            url: "https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757"
+            type: "book"
+          - title: "Harvard Business Review - How to Negotiate with Someone More Powerful than You"
+            url: "https://hbr.org/2014/06/how-to-negotiate-with-someone-more-powerful-than-you"
+            type: "article"
+        practice:
+          - "For your next 3 workplace disagreements, create an 'interests map': list each party's stated position, then underneath it write what you think their underlying interest, value, or fear might be (15 minutes each)"
+          - "Practice the 'perspective interview': ask a colleague to role-play the person you disagree with, then interview them to understand that person's worldview (30 minutes)"
+        projects:
+          - "Analyze a current team conflict by writing a detailed interests map for all parties. For each person, identify their stated position, underlying interest, core value at stake, and biggest fear. Share the map (anonymized if needed) with a mentor for feedback"
+        tips:
+          - "Positions are like tips of icebergs — interests are the mass underneath. When two positions seem incompatible, dig into interests. Compatible interests often hide behind incompatible positions."
+      - level: advanced
+        criteria: >
+          Takes perspectives across cultural, generational, and power differences.
+          Can hold multiple conflicting perspectives simultaneously without
+          losing one's own position. Helps others develop empathy for each other.
+        metrics:
+          - "Successfully bridges perspectives across cultural or hierarchical differences in at least 3 conflicts per year"
+          - "Facilitates perspective-sharing exercises that measurably improve team understanding (pre/post survey)"
+        resources:
+          - title: "The Anatomy of Peace by The Arbinger Institute (Amazon)"
+            url: "https://www.amazon.com/Anatomy-Peace-Resolving-Heart-Conflict/dp/1626564310"
+            type: "book"
+          - title: "Coursera - Intercultural Communication and Conflict Resolution"
+            url: "https://www.coursera.org/learn/intercultural-communication"
+            type: "course"
+        practice:
+          - "Before your next cross-cultural or cross-team negotiation, research the other party's cultural or organizational context. Write a brief on how their background might shape their perspective on the issue (1 hour)"
+          - "Facilitate a 'perspective swap' exercise: have two conflicting parties each argue the other's position for 5 minutes. Debrief what they learned (45 minutes)"
+        projects:
+          - "Design and facilitate a structured empathy exercise for two teams in conflict: each team presents the other team's perspective to the other team's satisfaction. Document the process, outcomes, and what shifted in the relationship"
+        tips:
+          - "Power differences make perspective-taking harder in both directions. The person with more power often cannot see how intimidating they are; the person with less power often cannot articulate their real concerns. Name the power dynamic explicitly."
+      - level: expert
+        criteria: >
+          Builds empathy into organizational culture and processes. Designs
+          systems (e.g., rotation programs, cross-functional immersion, customer
+          empathy rituals) that structurally create perspective-taking. Coaches
+          leaders on developing organizational empathy.
+        metrics:
+          - "Has implemented at least 2 structural empathy practices (rotation programs, immersion days, perspective-sharing rituals) adopted organization-wide"
+          - "Team empathy scores (measured via engagement or culture surveys) improve measurably in teams you work with"
+        resources:
+          - title: "Dare to Lead by Brene Brown (Amazon)"
+            url: "https://www.amazon.com/Dare-Lead-Brave-Conversations-Hearts/dp/0399592520"
+            type: "book"
+          - title: "Harvard Business Review - What Is Empathy? (Brene Brown animated)"
+            url: "https://hbr.org/2021/01/connect-with-empathy-but-lead-with-compassion"
+            type: "article"
+        practice:
+          - "Audit your organization's key decision-making processes for 'empathy gaps': where are decisions made without input from affected parties? Propose structural fixes (2 hours)"
+          - "Coach a senior leader through a conflict where their lack of perspective-taking is the core issue. Help them see the other side without telling them they are wrong (ongoing)"
+        projects:
+          - "Design and implement an organizational empathy program: cross-functional immersion days, customer ride-alongs, or structured perspective-sharing rituals. Measure impact on collaboration metrics and conflict frequency over 6 months"
+        tips:
+          - "Organizational empathy is not a feeling — it is a structure. The question is not 'do our people care?' but 'do our processes require them to encounter other perspectives before making decisions?'"
+    tags: ["foundation", "empathy", "interpersonal"]
+
+  # ── COMMUNICATION SKILLS (builds on foundation) ─────────────────────────────
+  - id: "business/conflict-resolution/nonviolent-communication"
+    title: "Nonviolent Communication"
+    description: >
+      Marshall Rosenberg's Nonviolent Communication (NVC) framework: a structured
+      approach to expressing needs and hearing others through four steps —
+      observation, feeling, need, and request. NVC replaces blame and judgment
+      with clarity about what happened, how it affected you, what you need, and
+      what you are asking for. The framework transforms 'you always...' into
+      'when I see... I feel... because I need... would you be willing to...'
+    benchmarks:
+      - level: beginner
+        criteria: "Can construct an I-statement using the NVC four-step framework: observation, feeling, need, request."
+        metrics:
+          - "Correctly distinguishes observation from evaluation in 80%+ of practice exercises"
+          - "Constructs grammatically and emotionally coherent NVC statements in practice scenarios"
+        resources:
+          - title: "Nonviolent Communication: A Language of Life by Marshall B. Rosenberg (Amazon)"
+            url: "https://www.amazon.com/Nonviolent-Communication-Language-Life-Changing-Relationships/dp/189200528X"
+            type: "book"
+          - title: "YouTube - Marshall Rosenberg NVC Workshop (San Francisco)"
+            url: "https://www.youtube.com/watch?v=l7TONauJGfc"
+            type: "video"
+        practice:
+          - "Rewrite 5 'you-statements' as NVC I-statements: turn 'You never listen to me' into 'When I see you looking at your phone while I am talking [observation], I feel frustrated [feeling] because I need to feel heard [need]. Would you be willing to put your phone down when we talk? [request]' (20 minutes)"
+          - "Practice distinguishing observations from evaluations: write 10 sentences and label each as observation ('You arrived at 9:15') or evaluation ('You are always late'). Rewrite the evaluations as observations (15 minutes)"
+        projects:
+          - "Identify a recurring conflict in your life. Write out the NVC four-step statement for your side, then attempt to guess the other person's observation, feeling, need, and request. Use both statements to prepare for a real conversation"
+        tips:
+          - "The hardest part of NVC is step 1: pure observation without evaluation. 'You interrupted me three times' is an observation. 'You are rude' is an evaluation. The difference determines whether the other person listens or defends."
+          - "Feelings are not thoughts. 'I feel like you do not care' is a thought disguised as a feeling. 'I feel hurt' is a feeling. NVC only works when feelings are actual emotions."
+      - level: intermediate
+        criteria: >
+          Uses NVC fluently in real-time conversations, not just in writing.
+          Can receive criticism and translate it into the other person's unmet
+          needs. Distinguishes strategies from needs.
+        metrics:
+          - "Uses NVC framing naturally in at least 50% of difficult conversations without pre-scripting"
+          - "Can identify the unmet need behind a complaint or criticism and reflect it back accurately"
+        resources:
+          - title: "NVC Academy - Practice Resources"
+            url: "https://www.nonviolentcommunication.com/"
+            type: "article"
+          - title: "LinkedIn Learning - Communicating with Empathy"
+            url: "https://www.linkedin.com/learning/communicating-with-empathy"
+            type: "course"
+        practice:
+          - "Form an NVC practice group with 2-3 colleagues. Meet weekly for 30 minutes: one person shares a real conflict, and the group helps them formulate the NVC four-step statement and role-plays the conversation (ongoing)"
+          - "When someone criticizes you this week, instead of defending, silently translate their words into NVC: 'What are they observing? What are they feeling? What do they need?' Then respond to the need, not the criticism (ongoing)"
+        projects:
+          - "Use NVC to navigate a real workplace conflict: prepare your four-step statement, have the conversation, and document what happened. Note where NVC worked, where it felt awkward, and what you would adjust. Share your reflection with your practice group"
+        tips:
+          - "NVC is not a script — it is a consciousness. Once you internalize the framework, you do not need to say 'when I observe... I feel... I need...' mechanically. The naturalness comes from genuinely thinking in observations, feelings, and needs."
+      - level: advanced
+        criteria: >
+          Teaches NVC to others. Uses NVC to facilitate group discussions where
+          multiple needs are in tension. Can translate hostile or aggressive
+          communication into needs language in real time.
+        metrics:
+          - "Has trained at least 10 people in NVC with demonstrated improvement in their conflict communication"
+          - "Successfully uses NVC to de-escalate at least 3 hostile or aggressive interactions per year"
+        resources:
+          - title: "Speak Peace in a World of Conflict by Marshall B. Rosenberg (Amazon)"
+            url: "https://www.amazon.com/Speak-Peace-World-Conflict-Generation/dp/1892005174"
+            type: "book"
+          - title: "Mediate Your Life - NVC Mediation Training"
+            url: "https://www.mediateyourlife.com/"
+            type: "course"
+        practice:
+          - "In your next heated group discussion, practice 'translating' hostile statements into needs language out loud: 'It sounds like what is important to you is...' without correcting or judging the speaker (ongoing)"
+          - "Design and deliver a 1-hour NVC introduction workshop for your team, including the four-step framework, practice exercises, and real scenario role-plays (2 hours preparation)"
+        projects:
+          - "Create an NVC training curriculum for your organization: 4 sessions covering observation, feeling, need, and request, with real workplace scenarios, practice exercises, and a feedback mechanism. Deliver it and measure impact"
+        tips:
+          - "The advanced skill is 'enemy image' work: when you see someone as the villain, NVC asks you to find their humanity. This does not mean they are right — it means they are human, with needs just like yours."
+      - level: expert
+        criteria: >
+          Integrates NVC into organizational communication norms. Designs
+          feedback systems, meeting structures, and conflict processes based on
+          NVC principles. Recognized as an expert practitioner who transforms
+          how groups communicate under pressure.
+        metrics:
+          - "Has embedded NVC-based communication norms into at least one organization's feedback or meeting processes"
+          - "Trains trainers: has developed at least 3 people capable of teaching NVC independently"
+        resources:
+          - title: "The Center for Nonviolent Communication - Resources and Training"
+            url: "https://www.cnvc.org/"
+            type: "article"
+          - title: "Harvard Business Review - The Key to Giving and Receiving Negative Feedback"
+            url: "https://hbr.org/2019/03/the-feedback-fallacy"
+            type: "article"
+        practice:
+          - "Redesign your organization's performance feedback template to incorporate NVC principles: observations (not judgments), impact (feelings and needs), and clear requests (not demands) (3 hours)"
+          - "Establish a monthly NVC practice community within your organization, with rotating facilitators and real case studies (ongoing)"
+        projects:
+          - "Implement an NVC-based conflict resolution process for your organization: define when and how NVC-structured conversations happen, train facilitators, create templates, and measure the impact on conflict resolution speed and satisfaction over 6 months"
+        tips:
+          - "The expert-level challenge is embedding NVC into systems without making it feel forced. The goal is not that everyone speaks in NVC formulas — it is that organizational norms naturally encourage observation over judgment, curiosity over blame."
+    tags: ["communication", "framework", "nvc"]
+
+  - id: "business/conflict-resolution/de-escalation"
+    title: "De-escalation Techniques"
+    description: >
+      The ability to lower the emotional temperature when a conflict is heating
+      up — calming yourself and the other person so that productive conversation
+      becomes possible. De-escalation is the bridge between emotional chaos and
+      rational problem-solving. Without it, even the best negotiation skills are
+      useless because nobody can think clearly when they are flooded with emotion.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes when a conversation is escalating and can apply basic de-escalation: lowering voice, slowing pace, acknowledging the other person's emotion."
+        metrics:
+          - "Identifies escalation signals (raised voices, personal attacks, shutting down) within 30 seconds of onset"
+          - "Successfully lowers the temperature using at least one technique in 60%+ of escalating conversations"
+        resources:
+          - title: "Psychology Today - 7 De-Escalation Techniques"
+            url: "https://www.psychologytoday.com/us/blog/creating-connection/202307/7-de-escalation-techniques-that-work"
+            type: "article"
+          - title: "TED Talk - Celeste Headlee: 10 Ways to Have a Better Conversation"
+            url: "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation"
+            type: "video"
+        practice:
+          - "Practice the 'soft start-up': in your next 3 difficult conversations, begin with curiosity ('Help me understand...') rather than confrontation ('Why did you...') and notice the difference in response (ongoing)"
+          - "With a practice partner, role-play an escalating argument. Practice these 3 moves: lower your voice, slow your speaking pace, and say 'I can see this is important to you.' Switch roles and repeat (30 minutes)"
+        projects:
+          - "Create a personal de-escalation toolkit: a one-page reference of your 5 go-to techniques (e.g., deep breath, lower voice, acknowledge emotion, ask a question, suggest a break) with specific phrases you will use for each. Practice until you can recall them under stress"
+        tips:
+          - "Volume is contagious. When someone raises their voice, your instinct is to match them. Instead, deliberately drop your volume. The contrast forces them to lower theirs to hear you."
+          - "Never say 'calm down.' It has never once in human history caused someone to calm down. Instead, acknowledge: 'I can see you are frustrated. I want to understand why.'"
+      - level: intermediate
+        criteria: >
+          De-escalates conversations with angry or hostile individuals. Uses
+          strategic pauses, validation, and reframing to shift the dynamic.
+          Knows when to take a break and how to re-engage productively.
+        metrics:
+          - "Successfully de-escalates 75%+ of heated conversations without the other party leaving or shutting down"
+          - "Uses strategic breaks effectively: calls for a pause, sets a specific time to reconvene, and the follow-up conversation is more productive"
+        resources:
+          - title: "Crucial Conversations: Tools for Talking When Stakes Are High by Patterson et al. (Amazon)"
+            url: "https://www.amazon.com/Crucial-Conversations-Talking-Stakes-High/dp/1260474186"
+            type: "book"
+          - title: "Harvard Business Review - Calming Your Brain During Conflict"
+            url: "https://hbr.org/2015/12/calming-your-brain-during-conflict"
+            type: "article"
+        practice:
+          - "Practice the 'strategic break' script: 'I think we both care about getting this right. Can we take 15 minutes and come back? I want to give your points the thought they deserve.' Use it in your next escalating conversation (ongoing)"
+          - "Role-play with a colleague: have them act increasingly hostile while you practice validation without agreement: 'I can see this matters deeply to you' and 'You have a right to feel that way' — without conceding your position (30 minutes)"
+        projects:
+          - "Over 4 weeks, document every escalation you witness or experience. For each, note: what triggered the escalation, what de-escalation technique was used (or could have been), and the outcome. Identify patterns and create a team playbook for common escalation triggers"
+        tips:
+          - "Validation is the most underused de-escalation tool. When someone feels heard, they physically calm down. You do not have to agree with them — just acknowledge their experience: 'That sounds really frustrating.'"
+      - level: advanced
+        criteria: >
+          De-escalates group conflicts and high-stakes situations. Can intervene
+          as a third party to calm two escalating individuals. Manages emotional
+          contagion in teams.
+        metrics:
+          - "Successfully intervenes to de-escalate conflicts between other people in at least 5 situations per year"
+          - "Team members report feeling safer and more willing to raise difficult topics when you are present"
+        resources:
+          - title: "Verbal Judo: The Gentle Art of Persuasion by George J. Thompson (Amazon)"
+            url: "https://www.amazon.com/Verbal-Judo-Gentle-Art-Persuasion/dp/0062107704"
+            type: "book"
+          - title: "LinkedIn Learning - De-Escalating Conversations for Customer Service"
+            url: "https://www.linkedin.com/learning/de-escalation-in-customer-service"
+            type: "course"
+        practice:
+          - "In your next group meeting where tension is rising, practice 'naming the dynamic' calmly: 'I notice we are starting to talk over each other. Can we slow down and take turns?' Observe how naming it changes the energy (ongoing)"
+          - "Practice third-party de-escalation: when two colleagues are in a heated exchange, step in with: 'It sounds like you both feel strongly. Can I help make sure each of you gets heard?' Then facilitate turn-taking (ongoing)"
+        projects:
+          - "Design a de-escalation protocol for your team: what are the signals that a conversation is escalating, who can call a 'time out,' what is the re-engagement process? Train the team on it and track usage and effectiveness over 3 months"
+        tips:
+          - "Emotional contagion in groups is real and fast. One angry person can hijack a meeting in 30 seconds. The de-escalation move is to break the contagion by changing the channel: shift to a whiteboard, call for a 2-minute silent reflection, or physically rearrange the room."
+      - level: expert
+        criteria: >
+          Designs organizational de-escalation systems (crisis communication
+          protocols, escalation matrices, cool-down norms). Trains first-line
+          managers and HR professionals in de-escalation. Can manage
+          organizational-level emotional crises (layoffs, reorgs, public
+          controversies).
+        metrics:
+          - "Has designed and implemented de-escalation protocols adopted by an entire department or organization"
+          - "Has trained 15+ managers or HR professionals in de-escalation techniques with measurable improvement"
+        resources:
+          - title: "The Third Side: Why We Fight and How We Can Stop by William Ury (Amazon)"
+            url: "https://www.amazon.com/Third-Side-Fight-How-Stop/dp/0140296344"
+            type: "book"
+          - title: "Harvard Program on Negotiation - De-Escalation Strategies"
+            url: "https://www.pon.harvard.edu/daily/conflict-resolution/"
+            type: "article"
+        practice:
+          - "Audit your organization's current crisis communication approach: how are layoffs announced? How are reorgs communicated? Identify the de-escalation gaps and propose improvements (3 hours)"
+          - "Create a 'de-escalation coaching' program for front-line managers: monthly case review sessions where managers bring real escalating situations and the group practices alternative approaches (ongoing)"
+        projects:
+          - "Design and implement a comprehensive organizational de-escalation system: escalation matrices, crisis communication templates, manager training curriculum, and a feedback loop for continuous improvement. Measure impact on employee satisfaction and conflict resolution time"
+        tips:
+          - "Organizational crises (layoffs, scandals, major changes) are de-escalation challenges at scale. The same principles apply: acknowledge emotions first, provide clear information, create space for questions, and follow up. Speed and transparency matter more than polish."
+    tags: ["communication", "crisis-management", "emotional-intelligence"]
+
+  # ── RESOLUTION SKILLS (applied practice, builds on communication) ────────────
+  - id: "business/conflict-resolution/negotiation-compromise"
+    title: "Negotiation & Compromise"
+    description: >
+      The ability to find mutually acceptable solutions through structured
+      dialogue — moving beyond positions to interests, generating creative
+      options, and reaching agreements that both parties can live with. This
+      skill draws on the Harvard Negotiation Project's interest-based approach
+      (Fisher & Ury) and applies it specifically to interpersonal and workplace
+      conflict rather than pure business deals.
+    benchmarks:
+      - level: beginner
+        criteria: "Can separate positions from interests and generate at least 3 options for mutual gain in a simple conflict."
+        metrics:
+          - "Identifies underlying interests (not just positions) in 70%+ of practice negotiations"
+          - "Generates at least 3 creative options beyond simple compromise in each negotiation exercise"
+        resources:
+          - title: "Getting to Yes: Negotiating Agreement Without Giving In by Fisher & Ury (Amazon)"
+            url: "https://www.amazon.com/Getting-Yes-Negotiating-Agreement-Without/dp/0143118757"
+            type: "book"
+          - title: "TED Talk - William Ury: The Walk from 'No' to 'Yes'"
+            url: "https://www.ted.com/talks/william_ury_the_walk_from_no_to_yes"
+            type: "video"
+        practice:
+          - "Pick a recent disagreement. Write down each party's stated position, then brainstorm 5 possible underlying interests for each side. Identify where interests overlap (20 minutes)"
+          - "Practice the 'expand the pie' technique: in your next negotiation, instead of splitting the difference, ask 'What if we...' and propose 3 options that give both parties more of what they care about (ongoing)"
+        projects:
+          - "Negotiate a real low-stakes issue (household chore division, team meeting schedule, project resource allocation) using interest-based negotiation. Document: starting positions, discovered interests, options generated, and final agreement"
+        tips:
+          - "Compromise is splitting the difference. Negotiation is finding a solution better than splitting the difference. Always try to expand the pie before dividing it."
+          - "Your BATNA (Best Alternative To a Negotiated Agreement) is your power. Before any negotiation, know your walkaway option. If you do not have one, you are not negotiating — you are begging."
+      - level: intermediate
+        criteria: >
+          Negotiates effectively in workplace conflicts involving resources,
+          priorities, and interpersonal tensions. Uses BATNA analysis, objective
+          criteria, and structured option generation. Can negotiate on behalf
+          of a team.
+        metrics:
+          - "Reaches agreements that both parties rate as fair (7+/10 satisfaction) in 75%+ of negotiations"
+          - "Uses objective criteria (market data, precedent, industry standards) to anchor negotiations rather than relying on power or persuasion"
+        resources:
+          - title: "Never Split the Difference by Chris Voss (Amazon)"
+            url: "https://www.amazon.com/Never-Split-Difference-Negotiating-Depended/dp/0062407805"
+            type: "book"
+          - title: "Coursera - Successful Negotiation: Essential Strategies and Skills (University of Michigan)"
+            url: "https://www.coursera.org/learn/negotiation-skills"
+            type: "course"
+        practice:
+          - "Before your next important negotiation, complete a preparation worksheet: your interests, their interests, your BATNA, their likely BATNA, 5 possible options, and 3 objective criteria you can use as anchors (30 minutes)"
+          - "Practice Chris Voss's 'calibrated questions' technique: replace demands with questions like 'How am I supposed to do that?' or 'What about this is important to you?' in your next 3 difficult conversations (ongoing)"
+        projects:
+          - "Lead a negotiation for your team on a real resource or priority conflict. Before the meeting, prepare a full negotiation brief (interests, BATNA, options, criteria). After the meeting, document what worked, what did not, and what you would do differently"
+        tips:
+          - "Chris Voss's key insight: the most powerful negotiation tool is not logic — it is making the other person feel understood. Tactical empathy ('It seems like you are concerned about...') opens doors that rational arguments cannot."
+      - level: advanced
+        criteria: >
+          Negotiates complex multi-party conflicts with competing interests.
+          Designs negotiation processes (sequencing, agenda-setting, caucuses)
+          to maximize the chance of agreement. Handles power imbalances and
+          bad-faith tactics.
+        metrics:
+          - "Successfully facilitates multi-party negotiations (3+ parties) to agreement in 70%+ of cases"
+          - "Identifies and neutralizes at least 3 common bad-faith tactics (anchoring, deadline pressure, good cop/bad cop) per year"
+        resources:
+          - title: "Getting Past No by William Ury (Amazon)"
+            url: "https://www.amazon.com/Getting-Past-No-Negotiating-Difficult/dp/0553371312"
+            type: "book"
+          - title: "Harvard Program on Negotiation - Free Resources"
+            url: "https://www.pon.harvard.edu/daily/negotiation-skills-daily/"
+            type: "article"
+        practice:
+          - "In your next multi-party negotiation, create a negotiation map: each party's interests, their BATNA, the coalitions that could form, and the sequence in which you will engage each party (1 hour preparation)"
+          - "Practice responding to hardball tactics: have a colleague use anchoring, deadline pressure, or personal attacks in a role-play while you practice staying calm and redirecting to interests (45 minutes)"
+        projects:
+          - "Design and lead a negotiation process for a real multi-stakeholder conflict: define the agenda, set ground rules, conduct individual pre-meetings (caucuses), facilitate the joint session, and document the agreement. Write a case study of what worked"
+        tips:
+          - "In multi-party negotiations, sequence matters. Meet individually with each party first to understand their interests and build trust. The joint session should have no surprises — only choices between options you have already pre-tested."
+      - level: expert
+        criteria: >
+          Designs negotiation frameworks and training programs for organizations.
+          Handles high-stakes negotiations (mergers, labor disputes, cross-
+          cultural deals). Publishes or teaches negotiation methodology.
+        metrics:
+          - "Has designed and delivered negotiation training adopted by an organization with 50+ people"
+          - "Has successfully managed at least 3 high-stakes negotiations (significant organizational impact)"
+        resources:
+          - title: "3-D Negotiation by David Lax & James Sebenius (Amazon)"
+            url: "https://www.amazon.com/3-D-Negotiation-Powerful-Tools-Change/dp/1591397995"
+            type: "book"
+          - title: "Harvard Program on Negotiation - Executive Education"
+            url: "https://www.pon.harvard.edu/courses-and-training/"
+            type: "course"
+        practice:
+          - "Analyze a high-profile negotiation failure (a public merger collapse, labor strike, or diplomatic breakdown). Identify where interest-based negotiation principles were violated and what could have been done differently (2 hours)"
+          - "Mentor 3 emerging negotiators through their real negotiations: help them prepare, observe where possible, and debrief afterward (ongoing)"
+        projects:
+          - "Create a comprehensive negotiation capability program for your organization: assessment of current negotiation skills, training curriculum, practice simulations, coaching structure, and measurement of improvement in deal outcomes and conflict resolution quality"
+        tips:
+          - "At the expert level, the biggest value is not your own negotiation ability — it is building an organization of skilled negotiators. The ROI of training 50 people to negotiate 20% better far exceeds any single deal you could close yourself."
+    tags: ["resolution", "negotiation", "strategy"]
+
+  - id: "business/conflict-resolution/mediation-facilitation"
+    title: "Mediation & Facilitation"
+    description: >
+      The ability to serve as a neutral third party who helps others resolve
+      their disputes — facilitating dialogue, ensuring both sides are heard,
+      and guiding the parties toward their own agreement. Mediation is distinct
+      from arbitration (where the third party decides) and from negotiation
+      (where you are a party). The mediator's power comes from process design
+      and impartiality, not from authority.
+    benchmarks:
+      - level: beginner
+        criteria: "Can facilitate a simple two-party conflict conversation using a structured process: opening, storytelling, issue identification, option generation, agreement."
+        metrics:
+          - "Both parties in a facilitated conversation report feeling heard (7+/10) in 70%+ of practice sessions"
+          - "Maintains neutrality throughout the mediation (neither party perceives bias)"
+        resources:
+          - title: "MindTools - Conflict Resolution: Mediation Skills"
+            url: "https://www.mindtools.com/ahiiqo9/resolving-conflict-rationally-and-effectively"
+            type: "article"
+          - title: "TED Talk - Dana Caspersen: Changing the Conversation about Conflict"
+            url: "https://www.youtube.com/watch?v=2l-AOBz69KU"
+            type: "video"
+        practice:
+          - "Practice the basic mediation structure with 2 colleagues in a role-play: each person has 3 minutes to share their perspective while the other listens, then you help them identify common ground and brainstorm solutions (30 minutes)"
+          - "Observe a real conflict between two people (with permission). Take notes on: what each person's underlying concern seems to be, where they agree without realizing it, and what question you would ask to move them forward (ongoing)"
+        projects:
+          - "Volunteer to mediate a low-stakes disagreement between two colleagues (seating assignment, meeting schedule, shared resource). Follow the structured process: opening statement, each party shares, identify issues, generate options, reach agreement. Document the process and outcome"
+        tips:
+          - "The mediator's job is not to solve the problem — it is to create the conditions for the parties to solve it themselves. If you find yourself suggesting solutions, you have left the mediator role."
+          - "Opening statements matter. Start with: 'I am here to help you both find a solution you can live with. I am not here to judge who is right. Ground rule: each person speaks without interruption.'"
+      - level: intermediate
+        criteria: >
+          Mediates real workplace conflicts with emotional charge. Manages
+          power imbalances between parties. Uses caucuses (private side meetings)
+          strategically. Writes durable agreements.
+        metrics:
+          - "Successfully mediates workplace conflicts to written agreement in 65%+ of cases"
+          - "Agreements hold (no re-escalation of same issue) for 6+ months in 80%+ of cases"
+        resources:
+          - title: "The Mediator's Handbook by Jennifer Beer & Caroline Packard (Amazon)"
+            url: "https://www.amazon.com/Mediators-Handbook-Revised-Expanded-fourth/dp/0865717222"
+            type: "book"
+          - title: "Coursera - Conflict Management Specialization (University of California, Irvine)"
+            url: "https://www.coursera.org/specializations/conflict-management"
+            type: "course"
+        practice:
+          - "Practice caucusing: in your next mediation, meet separately with each party for 10 minutes before bringing them together. Ask each: 'What do you most need the other person to understand?' Use this to bridge the gap in the joint session (ongoing)"
+          - "Write 3 sample mediation agreements for common workplace conflicts (role clarity, credit for work, communication style). Include: what each party agrees to do, how they will check in, and what happens if the agreement breaks down (1 hour)"
+        projects:
+          - "Mediate a real workplace conflict from start to finish: intake interviews, caucuses, joint session, and written agreement with follow-up checkpoints. Document your process, what worked, and lessons learned"
+        tips:
+          - "Caucuses are your secret weapon. When parties cannot speak honestly in front of each other, meet them separately. Ask: 'What are you not saying in the room?' The answer is usually the key to resolution."
+      - level: advanced
+        criteria: >
+          Facilitates complex multi-party disputes and team conflicts. Designs
+          custom mediation processes for specific organizational contexts. Handles
+          conflicts involving formal grievances, harassment concerns, and cross-
+          cultural dynamics.
+        metrics:
+          - "Successfully facilitates multi-party mediations (3+ parties) in at least 5 cases per year"
+          - "Parties report the process was fair (8+/10) even when they did not get everything they wanted"
+        resources:
+          - title: "The Promise of Mediation by Robert A. Baruch Bush & Joseph P. Folger (Amazon)"
+            url: "https://www.amazon.com/Promise-Mediation-Transformative-Approach-Conflict/dp/0787974838"
+            type: "book"
+          - title: "LinkedIn Learning - Coaching and Developing Employees"
+            url: "https://www.linkedin.com/learning/coaching-and-developing-employees"
+            type: "course"
+        practice:
+          - "Design a mediation process for a specific type of recurring conflict in your organization (e.g., cross-team priority disputes, manager-report tensions). Define intake criteria, process steps, escalation paths, and follow-up (2 hours)"
+          - "Facilitate a 'team health check' for a team in conflict: structured conversation where each team member shares what is working, what is not, and what they need from each other. Write up action items and facilitate follow-up (3 hours)"
+        projects:
+          - "Build and pilot a peer mediation program: recruit and train 5 colleagues in basic mediation skills, create a referral process, handle 10 cases over 3 months, and measure outcomes (satisfaction, resolution rate, recurrence)"
+        tips:
+          - "In multi-party facilitation, the biggest risk is coalition dynamics — two parties ganging up on a third. Prevent this by establishing explicit ground rules about speaking to the whole group and by using round-robin formats that ensure every voice is heard."
+      - level: expert
+        criteria: >
+          Designs and implements organizational conflict resolution systems
+          (ombudsman offices, peer mediation programs, conflict resolution
+          policies). Trains and certifies mediators. Handles the most complex
+          organizational disputes.
+        metrics:
+          - "Has designed and implemented a conflict resolution system adopted organization-wide"
+          - "Has trained and certified at least 10 mediators who can handle cases independently"
+        resources:
+          - title: "Designing Conflict Management Systems by Costantino & Merchant (Amazon)"
+            url: "https://www.amazon.com/Designing-Conflict-Management-Systems-Organizations/dp/0787901628"
+            type: "book"
+          - title: "Association for Conflict Resolution - Resources"
+            url: "https://acrnet.org/"
+            type: "article"
+        practice:
+          - "Audit your organization's current conflict resolution infrastructure: formal grievance processes, informal channels, manager capabilities, and gaps. Create a systems map showing how conflicts currently flow and where they get stuck (3 hours)"
+          - "Develop a mediator certification program: define competency standards, create assessment criteria, design the training curriculum, and establish ongoing supervision requirements (ongoing)"
+        projects:
+          - "Design and implement a comprehensive organizational conflict resolution system: intake process, triage criteria, mediator pool, escalation paths, tracking database, and outcome measurement. Pilot for 6 months and iterate based on data"
+        tips:
+          - "The best conflict resolution system is one where people resolve conflicts earlier and at lower levels of escalation. Design the system to make early resolution easy and accessible — the goal is not more mediations but fewer unresolved conflicts."
+    tags: ["resolution", "facilitation", "leadership"]
+
+  - id: "business/conflict-resolution/repair-reconciliation"
+    title: "Repair & Reconciliation"
+    description: >
+      The ability to restore relationships after conflict — rebuilding trust,
+      acknowledging harm, making amends, and creating conditions for a healthier
+      future relationship. Repair is often neglected because once the immediate
+      conflict is resolved, people want to move on. But unrepaired relationships
+      accumulate resentment that makes the next conflict harder. Repair is what
+      turns conflict from destructive to growth-producing.
+    benchmarks:
+      - level: beginner
+        criteria: "Can offer a genuine apology that acknowledges impact, takes responsibility, and proposes a change in behavior."
+        metrics:
+          - "Apologies include all three components (acknowledgment of impact, responsibility, commitment to change) in 80%+ of cases"
+          - "The other party accepts the apology as genuine (not defensive or minimizing) in 70%+ of cases"
+        resources:
+          - title: "MindTools - How to Apologize"
+            url: "https://www.mindtools.com/aeb5lqx/how-to-apologize"
+            type: "article"
+          - title: "TED Talk - Harriet Lerner: The Power of Apologizing"
+            url: "https://www.youtube.com/watch?v=gVGbDEAnDyo"
+            type: "video"
+        practice:
+          - "Write 3 apologies for past conflicts using this structure: 'I am sorry for [specific action]. I understand it made you feel [impact]. Going forward, I will [specific behavior change].' Review them for defensiveness or minimizing (20 minutes)"
+          - "Practice receiving an apology: have a partner offer you an apology and practice responding with grace — neither dismissing ('it is fine') nor punishing ('you should be sorry') — but acknowledging ('thank you for saying that, it means a lot') (15 minutes)"
+        projects:
+          - "Identify a relationship that was damaged by a past conflict. Craft a genuine repair conversation: what you want to acknowledge, what you are sorry for, and what you want to do differently. Have the conversation and document what happened"
+        tips:
+          - "The most common apology mistake: 'I am sorry you felt that way.' This is not an apology — it is blame disguised as empathy. A real apology focuses on your action, not their reaction: 'I am sorry I raised my voice.'"
+          - "Timing matters. Apologizing too quickly ('sorry sorry sorry') can feel dismissive. Wait until you genuinely understand the impact, then apologize from that understanding."
+      - level: intermediate
+        criteria: >
+          Initiates repair conversations proactively — does not wait for the
+          other person to bring it up. Can rebuild trust through consistent
+          follow-through over time. Distinguishes between forgiveness and
+          reconciliation.
+        metrics:
+          - "Initiates repair conversations within 48 hours of a conflict in 80%+ of cases"
+          - "Relationships that went through conflict-and-repair are rated as strong or stronger than before by both parties in 60%+ of cases"
+        resources:
+          - title: "Why Won't You Apologize? by Harriet Lerner (Amazon)"
+            url: "https://www.amazon.com/Why-Wont-You-Apologize-Healing/dp/1501129597"
+            type: "book"
+          - title: "Harvard Business Review - How to Repair a Damaged Professional Relationship"
+            url: "https://hbr.org/2021/09/how-to-repair-a-damaged-professional-relationship"
+            type: "article"
+        practice:
+          - "After your next conflict, schedule a repair conversation within 24 hours. Open with: 'I have been thinking about our conversation and I want to make sure we are okay. Can I share what I have been reflecting on?' (ongoing)"
+          - "Practice the 'trust rebuild' by making and keeping 5 small commitments to someone you have let down. Track your follow-through and notice how the relationship shifts over 4 weeks (ongoing)"
+        projects:
+          - "Choose a damaged work relationship that affects your team's productivity. Design a repair plan: the initial conversation (what to acknowledge and ask for), 3 trust-building actions you will take over the next month, and a check-in schedule. Execute the plan and document results"
+        tips:
+          - "Trust is rebuilt through consistent small actions over time, not through grand gestures. After a conflict, make specific promises and keep every single one. The pattern of reliability is what repairs trust."
+      - level: advanced
+        criteria: >
+          Facilitates repair between other people and teams. Designs reconciliation
+          processes for group conflicts. Can navigate situations where full
+          reconciliation is not possible and help parties find a workable
+          coexistence.
+        metrics:
+          - "Facilitates post-conflict repair conversations for other people in at least 5 cases per year"
+          - "Team relationships measurably improve after facilitated repair processes (tracked via team health surveys)"
+        resources:
+          - title: "The Book of Forgiving by Desmond Tutu & Mpho Tutu (Amazon)"
+            url: "https://www.amazon.com/Book-Forgiving-Fourfold-Path-Healing/dp/0062203576"
+            type: "book"
+          - title: "Coursera - Conflict Transformation (Emory University)"
+            url: "https://www.coursera.org/learn/conflict-transformation"
+            type: "course"
+        practice:
+          - "Facilitate a 'clearing the air' session for two colleagues who went through a conflict: structured conversation where each shares their experience, acknowledges their part, and states what they need going forward (1 hour)"
+          - "For a team that recently went through a difficult period (reorg, project failure, interpersonal conflict), design and lead a retrospective focused on repair: what happened, how it affected people, what the team needs to move forward (2 hours)"
+        projects:
+          - "Design a post-conflict team repair process: a structured 3-session program (session 1: acknowledge what happened; session 2: understand impact and take responsibility; session 3: commit to new norms). Pilot it with a real team and measure the impact on team health"
+        tips:
+          - "Not every relationship can or should be fully reconciled. Sometimes the goal is 'workable coexistence' — we may not be friends, but we can collaborate respectfully. Naming this as a legitimate outcome reduces pressure and paradoxically often leads to deeper repair."
+      - level: expert
+        criteria: >
+          Designs organizational repair and reconciliation systems. Leads
+          restorative justice processes. Helps organizations recover from
+          systemic breakdowns (toxic culture, widespread trust erosion, post-
+          crisis repair). Trains others in repair and reconciliation.
+        metrics:
+          - "Has led organizational-level repair processes (post-crisis, post-layoff, culture rebuilding) in at least 2 organizations"
+          - "Has trained at least 10 facilitators in repair and reconciliation techniques"
+        resources:
+          - title: "The Little Book of Restorative Justice by Howard Zehr (Amazon)"
+            url: "https://www.amazon.com/Little-Book-Restorative-Justice-Revised/dp/1561488232"
+            type: "book"
+          - title: "Harvard Business Review - How to Rebuild Trust After a Major Breach"
+            url: "https://hbr.org/2019/06/the-3-elements-of-trust"
+            type: "article"
+        practice:
+          - "Study a restorative justice case (school discipline, workplace misconduct, community conflict). Identify the key principles used: who was harmed, what are their needs, whose obligation is it to address them (2 hours)"
+          - "Design a post-crisis repair roadmap for a real or hypothetical organizational breakdown: immediate acknowledgment, listening tours, systemic changes, ongoing check-ins, and measurement of trust recovery (3 hours)"
+        projects:
+          - "Implement a restorative practice program in your organization: define when restorative processes are used (instead of or alongside punitive measures), train facilitators, pilot 10 cases, and measure outcomes (recurrence, satisfaction, relationship quality) compared to traditional approaches"
+        tips:
+          - "Organizational repair requires acknowledging systemic harm, not just individual apologies. After a toxic culture is exposed, saying 'that manager was a bad apple' is not repair. Repair means asking: 'What about our system allowed this to happen, and what are we changing?'"
+    tags: ["resolution", "trust", "relationship-building"]
+
+relationships:
+  # ── Foundation layer ──────────────────────────────────────────────────────────
+  - source: "business/conflict-resolution/self-awareness-emotional-regulation"
+    target: "business/conflict-resolution/active-listening"
+    type: "enables"
+    note: "You cannot listen to others effectively until you can manage your own emotional reactions — self-regulation enables active listening under stress"
+
+  - source: "business/conflict-resolution/self-awareness-emotional-regulation"
+    target: "business/conflict-resolution/de-escalation"
+    type: "enables"
+    note: "De-escalating others requires first being able to regulate your own emotional state"
+
+  - source: "business/conflict-resolution/active-listening"
+    target: "business/conflict-resolution/perspective-taking-empathy"
+    type: "enables"
+    note: "Hearing someone fully is the prerequisite for understanding their perspective — listening enables empathy"
+
+  # ── Foundation → Communication ────────────────────────────────────────────────
+  - source: "business/conflict-resolution/perspective-taking-empathy"
+    target: "business/conflict-resolution/nonviolent-communication"
+    type: "enables"
+    note: "Understanding the other person's needs is essential for NVC — empathy provides the raw material for needs-based communication"
+
+  - source: "business/conflict-resolution/active-listening"
+    target: "business/conflict-resolution/nonviolent-communication"
+    type: "enables"
+    note: "NVC requires hearing the other person's observations, feelings, and needs — active listening is the mechanism"
+
+  - source: "business/conflict-resolution/self-awareness-emotional-regulation"
+    target: "business/conflict-resolution/nonviolent-communication"
+    type: "enables"
+    note: "NVC requires identifying your own feelings and needs accurately, which depends on self-awareness"
+
+  # ── Communication → Resolution ────────────────────────────────────────────────
+  - source: "business/conflict-resolution/nonviolent-communication"
+    target: "business/conflict-resolution/negotiation-compromise"
+    type: "enables"
+    note: "NVC's focus on needs over positions directly supports interest-based negotiation"
+
+  - source: "business/conflict-resolution/de-escalation"
+    target: "business/conflict-resolution/negotiation-compromise"
+    type: "enables"
+    note: "Productive negotiation requires that emotional temperature is low enough for rational problem-solving"
+
+  - source: "business/conflict-resolution/perspective-taking-empathy"
+    target: "business/conflict-resolution/negotiation-compromise"
+    type: "enables"
+    note: "Understanding the other party's interests requires the ability to take their perspective"
+
+  # ── Resolution → Advanced resolution ──────────────────────────────────────────
+  - source: "business/conflict-resolution/active-listening"
+    target: "business/conflict-resolution/mediation-facilitation"
+    type: "requires"
+    note: "Mediation is fundamentally an advanced listening skill — the mediator must hear and reflect both parties accurately"
+
+  - source: "business/conflict-resolution/negotiation-compromise"
+    target: "business/conflict-resolution/mediation-facilitation"
+    type: "enables"
+    note: "Mediators guide parties through a negotiation process — understanding negotiation principles enables effective mediation"
+
+  - source: "business/conflict-resolution/de-escalation"
+    target: "business/conflict-resolution/mediation-facilitation"
+    type: "enables"
+    note: "Mediators must be able to de-escalate when parties become heated during the mediation process"
+
+  # ── Resolution → Repair ───────────────────────────────────────────────────────
+  - source: "business/conflict-resolution/perspective-taking-empathy"
+    target: "business/conflict-resolution/repair-reconciliation"
+    type: "requires"
+    note: "Genuine repair requires understanding the impact of the conflict from the other person's perspective"
+
+  - source: "business/conflict-resolution/nonviolent-communication"
+    target: "business/conflict-resolution/repair-reconciliation"
+    type: "enables"
+    note: "NVC provides the language for repair conversations — acknowledging impact without blame"
+
+  - source: "business/conflict-resolution/negotiation-compromise"
+    target: "business/conflict-resolution/repair-reconciliation"
+    type: "complementary"
+    note: "Negotiation resolves the substantive issue; repair addresses the relational damage — both are needed for full resolution"
+
+  - source: "business/conflict-resolution/mediation-facilitation"
+    target: "business/conflict-resolution/repair-reconciliation"
+    type: "complementary"
+    note: "Mediation resolves the dispute; repair rebuilds the relationship — facilitated repair is a natural extension of mediation"

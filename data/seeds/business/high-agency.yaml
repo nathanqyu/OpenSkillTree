@@ -1,0 +1,1328 @@
+# OpenSkillTree — Seed Skill Tree: High Agency
+#
+# Domain:  Business / Soft Skills / High Agency
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference:
+#   beginner     = recognizes the difference between reactive and proactive behavior
+#   intermediate = consistently takes initiative and solves problems independently
+#   advanced     = creates opportunities and drives outcomes in ambiguous environments
+#   expert       = models high agency at scale, builds cultures and systems of agency
+#
+# Progression arc:
+#   Internal foundation (ownership, bias toward action, resilience) →
+#   External capability (resourcefulness, communication, ambiguity tolerance) →
+#   Strategic leverage (risk-taking, influence, self-directed learning) →
+#   Systems mastery (creating leverage, compounding systems, culture building).
+
+tree:
+  id: "business/high-agency"
+  title: "High Agency"
+  description: >
+    A skill tree for developing high agency — the disposition and capability to
+    find a way to get what you want, without waiting for conditions to be perfect.
+    High-agency people do not accept the first "no," do not wait for permission,
+    and do not let the absence of a playbook stop them. This tree covers the
+    mindsets, habits, and tactical skills that separate people who make things
+    happen from people who let things happen to them.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  # ── INTERNAL FOUNDATION ───────────────────────────────────────────────────────
+  - id: "business/high-agency/ownership-mindset"
+    title: "Ownership Mindset"
+    description: >
+      The foundational belief that you are responsible for your outcomes — not your
+      manager, not the market, not luck. Ownership mindset means operating with an
+      internal locus of control: when something goes wrong, you ask "what could I
+      have done differently?" before pointing at external factors. This is the root
+      node of high agency because every other skill depends on the belief that your
+      actions matter.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes the difference between blaming circumstances and taking responsibility. Catches yourself making excuses and reframes toward action."
+        metrics:
+          - "Keeps a daily journal for 2 weeks noting at least 1 situation where you chose ownership over blame"
+          - "Can articulate the difference between internal and external locus of control in your own words"
+        resources:
+          - title: "Jocko Willink - Extreme Ownership (TED Talk)"
+            url: "https://www.youtube.com/watch?v=ljqra3BcqWM"
+            type: "video"
+          - title: "Paul Graham - How to Do Great Work"
+            url: "https://www.paulgraham.com/greatwork.html"
+            type: "article"
+        practice:
+          - "Every evening for 2 weeks, write down one thing that went wrong today and what YOU could have done differently — no external blame allowed (10 minutes)"
+          - "When you catch yourself saying 'I can't because...' rewrite the statement as 'I could if I...' — track how many rewrites you make per week (ongoing)"
+        projects:
+          - "Identify one stalled goal in your life where you have been waiting for external conditions to change, then write a 1-page action plan that depends only on things within your control"
+        tips:
+          - "Ownership is not the same as guilt. You are not saying everything is your fault — you are saying your response is always within your control."
+          - "Start small. Own the outcome of a single meeting or a single email thread. The habit compounds from there."
+      - level: intermediate
+        criteria: >
+          Consistently takes responsibility for team outcomes, not just personal tasks.
+          Volunteers for problems that have no clear owner. Does not wait for
+          permission to fix things that are obviously broken.
+        metrics:
+          - "Picks up at least 2 unowned problems per month without being asked"
+          - "Peers and manager independently describe you as 'someone who takes ownership' in feedback"
+        resources:
+          - title: "Extreme Ownership by Jocko Willink & Leif Babin"
+            url: "https://www.amazon.com/Extreme-Ownership-U-S-Navy-SEALs/dp/1250183863"
+            type: "book"
+          - title: "Sam Altman - How to Be Successful"
+            url: "https://blog.samaltman.com/how-to-be-successful"
+            type: "article"
+        practice:
+          - "At the start of each week, identify one problem at work that nobody owns and take a concrete first step toward solving it (30 minutes)"
+          - "After every project retrospective, write down what you personally would do differently — regardless of whether the issue was 'your fault' (15 minutes)"
+        projects:
+          - "Take ownership of a cross-functional problem that has been stuck for more than 2 weeks — coordinate stakeholders, propose a solution, and drive it to resolution"
+        tips:
+          - "The fastest way to build a reputation for ownership: when someone says 'someone should fix X,' be the person who replies 'I will fix X by Friday.'"
+      - level: advanced
+        criteria: >
+          Operates as a de facto owner of outcomes well beyond your job description.
+          Proactively identifies risks and mitigates them before they become problems.
+          Takes responsibility for failures publicly and redirects credit for successes
+          to the team.
+        metrics:
+          - "At least 1 instance per quarter where you prevented a significant problem by acting before it was assigned to anyone"
+          - "Team members voluntarily escalate ambiguous problems to you because they trust you will own them"
+        resources:
+          - title: "The Hard Thing About Hard Things by Ben Horowitz"
+            url: "https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205"
+            type: "book"
+          - title: "Keith Rabois - How to Operate (Lecture 14, How to Start a Startup)"
+            url: "https://www.youtube.com/watch?v=6fQHLK1aIBs"
+            type: "video"
+        practice:
+          - "Conduct a weekly 'pre-mortem' for your team's top initiative: list what could go wrong and assign yourself an action to prevent the most likely failure (30 minutes)"
+          - "After any team failure, write a 'blameless ownership memo' that identifies what you personally could have done to change the outcome — share it with your team (1 hour)"
+        projects:
+          - "Lead a turnaround: take ownership of a failing project or metric, diagnose root causes, propose and execute a recovery plan, and document lessons learned"
+        tips:
+          - "At the advanced level, the risk is burnout from owning too much. Ownership does not mean doing everything yourself — it means ensuring outcomes through others."
+      - level: expert
+        criteria: >
+          Builds a culture of ownership in teams and organizations. Designs incentive
+          structures, hiring criteria, and feedback systems that select for and
+          reinforce ownership behavior. When you leave a team, the ownership culture
+          persists.
+        metrics:
+          - "Teams you have led score measurably higher on ownership-related engagement metrics than org average"
+          - "At least 3 people you have mentored are independently recognized for ownership mindset"
+        resources:
+          - title: "Netflix Culture Deck - Freedom & Responsibility"
+            url: "https://jobs.netflix.com/culture"
+            type: "article"
+          - title: "Turn the Ship Around! by L. David Marquet"
+            url: "https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404"
+            type: "book"
+        practice:
+          - "Design interview questions that specifically test for ownership mindset — use behavioral 'tell me about a time' prompts and evaluate whether candidates default to agency or blame (1 hour)"
+          - "Run a quarterly retrospective focused exclusively on ownership: where did the team wait for permission vs. act, and what systemic changes would shift the default? (1 hour)"
+        projects:
+          - "Create and implement an 'ownership operating system' for your team: define ownership norms, decision rights, and escalation paths, then measure the change in unowned-problem resolution time over 6 months"
+        tips:
+          - "Culture is what happens when you are not in the room. Test your ownership culture by what happens when you go on vacation."
+    tags: ["mindset", "foundation", "leadership"]
+
+  - id: "business/high-agency/bias-toward-action"
+    title: "Bias Toward Action"
+    description: >
+      The habit of defaulting to action over deliberation. High-agency people
+      ship, then iterate — they do not wait for perfect information, perfect
+      conditions, or perfect plans. This is not recklessness; it is the
+      disciplined recognition that in most situations, the cost of inaction
+      exceeds the cost of a correctable mistake. Bias toward action turns
+      potential energy into kinetic energy.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes when you are overthinking or procrastinating. Can identify the minimum viable action to start moving on a stuck task."
+        metrics:
+          - "Reduces average time from 'idea' to 'first concrete action' by 50% over 4 weeks"
+          - "Completes at least 3 'just start' challenges — tasks you begin within 5 minutes of identifying them"
+        resources:
+          - title: "Paul Graham - Do Things That Don't Scale"
+            url: "https://www.paulgraham.com/ds.html"
+            type: "article"
+          - title: "Y Combinator - How to Get and Evaluate Startup Ideas"
+            url: "https://www.youtube.com/watch?v=Th8JoIan4dg"
+            type: "video"
+        practice:
+          - "Set a 'two-minute rule': if a task will take less than two minutes, do it immediately instead of adding it to a list — track how many you complete per day (ongoing)"
+          - "For any task you have been procrastinating on, set a 25-minute timer and work only on the first step — do not plan, just start (25 minutes)"
+        projects:
+          - "Pick an idea you have been thinking about for more than a week and ship a minimum viable version within 48 hours — document what you shipped and what you learned"
+        tips:
+          - "Perfectionism disguised as 'being thorough' is the most common enemy of action. Ask yourself: 'what is the worst realistic outcome if I start now with 60% confidence?'"
+          - "The goal is not to eliminate planning — it is to reduce the planning-to-action ratio. Plan for 10% of the time, act for 90%."
+      - level: intermediate
+        criteria: >
+          Consistently ships work in short iterations. Breaks large projects into
+          small, demonstrable increments. Defaults to 'let's try it and see'
+          over 'let's discuss it more.'
+        metrics:
+          - "Average cycle time from start to first deliverable is less than 1 week on 80%+ of projects"
+          - "Ships at least 2 iterations of any project before the first review meeting"
+        resources:
+          - title: "The Lean Startup by Eric Ries"
+            url: "https://www.amazon.com/Lean-Startup-Entrepreneurs-Continuous-Innovation/dp/0307887898"
+            type: "book"
+          - title: "Sam Altman - Startup Playbook"
+            url: "https://playbook.samaltman.com/"
+            type: "article"
+        practice:
+          - "For your next project, define the 'one-day version' — what could you ship if you only had one day? Build that first (1 day)"
+          - "Practice the 'OODA loop' (Observe, Orient, Decide, Act) on 3 decisions this week: limit deliberation to 15 minutes per decision (15 minutes each)"
+        projects:
+          - "Run a 'ship-it week': commit to shipping one small, complete thing every day for 5 consecutive days — a blog post, a prototype, a process improvement, a cold email, a solved problem"
+        tips:
+          - "When in doubt, ship. You can always iterate. The information you get from shipping is worth more than another week of planning."
+      - level: advanced
+        criteria: >
+          Creates urgency and momentum in teams. Unblocks others by making decisions
+          quickly and taking reversible actions without waiting for consensus.
+          Distinguishes between reversible and irreversible decisions and calibrates
+          speed accordingly.
+        metrics:
+          - "Team velocity increases measurably when you join a project"
+          - "Makes 90%+ of reversible decisions within 24 hours"
+          - "Distinguishes 'one-way door' from 'two-way door' decisions explicitly in communication"
+        resources:
+          - title: "Jeff Bezos - 2016 Letter to Shareholders (Day 1 / Two-Way Doors)"
+            url: "https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders"
+            type: "article"
+          - title: "Boyd: The Fighter Pilot Who Changed the Art of War (OODA Loop origins)"
+            url: "https://www.amazon.com/Boyd-Fighter-Pilot-Who-Changed/dp/0316796883"
+            type: "book"
+        practice:
+          - "Audit your last 10 decisions: classify each as reversible or irreversible, and note how long each took — identify which reversible decisions you overthought (30 minutes)"
+          - "When a team is stuck in deliberation, practice proposing a 'default action' with a reversal trigger: 'Let's do X unless we see Y within 2 weeks' (ongoing)"
+        projects:
+          - "Identify a team-level bottleneck caused by slow decision-making, implement a decision-speed protocol (e.g., 24-hour SLA for reversible decisions), and measure the impact on project throughput over 1 month"
+        tips:
+          - "Speed is a strategy. Most of your competitors are not faster or smarter — they are just less afraid to act on 70% information."
+      - level: expert
+        criteria: >
+          Designs organizations and systems that bias toward action by default.
+          Removes structural barriers to speed (approval chains, unnecessary
+          meetings, over-documentation). Creates 'permission to act' cultures where
+          the default is 'yes, go' rather than 'wait for approval.'
+        metrics:
+          - "Org-level cycle time (idea to shipped feature or initiative) decreases by 30%+ under your leadership"
+          - "Decision-making authority is explicitly delegated — fewer than 10% of decisions require your personal approval"
+        resources:
+          - title: "No Rules Rules by Reed Hastings & Erin Meyer"
+            url: "https://www.amazon.com/No-Rules-Netflix-Culture-Reinvention/dp/1984877860"
+            type: "book"
+          - title: "Paul Graham - Maker's Schedule, Manager's Schedule"
+            url: "https://www.paulgraham.com/makersschedule.html"
+            type: "article"
+        practice:
+          - "Audit your organization's approval processes: identify 3 that could be replaced with 'inform, don't ask' norms, and implement the change (2 hours)"
+          - "Eliminate one recurring meeting that exists only for status updates — replace it with an async update and measure whether anyone misses it (1 week experiment)"
+        projects:
+          - "Redesign your team's operating cadence to maximize action: define decision rights, eliminate unnecessary gates, implement 'bias toward action' as an explicit cultural value, and measure cycle time before and after over a quarter"
+        tips:
+          - "The biggest organizational drag on action is not bad people — it is good people trapped in bad processes. Fix the system before blaming the individuals."
+    tags: ["execution", "speed", "iteration"]
+
+  - id: "business/high-agency/resourcefulness"
+    title: "Resourcefulness & Problem-Solving"
+    description: >
+      The ability to find a way when there is no clear path. Resourceful people
+      do not stop at the first obstacle — they go around it, under it, or through
+      it. This skill combines creative problem-solving, scrappy execution, and the
+      refusal to accept "it can't be done" as a final answer. Resourcefulness is
+      what separates people who talk about problems from people who solve them.
+    benchmarks:
+      - level: beginner
+        criteria: "When stuck, generates at least 3 alternative approaches before asking for help. Googles before asking. Tries the obvious thing before declaring it impossible."
+        metrics:
+          - "For every question asked of a peer or manager, documents at least 3 things you already tried"
+          - "Resolves 70%+ of blockers independently within 24 hours"
+        resources:
+          - title: "Paul Graham - Relentlessly Resourceful"
+            url: "https://www.paulgraham.com/relres.html"
+            type: "article"
+          - title: "Y Combinator - How to Build a Product that Scales (Michael Seibel)"
+            url: "https://www.youtube.com/watch?v=r-98YRAF1dY"
+            type: "video"
+        practice:
+          - "Next time you are stuck, write down 5 possible solutions before acting on any of them — force divergent thinking before converging (15 minutes)"
+          - "Practice the '15-minute rule': spend exactly 15 minutes trying to solve any problem on your own before asking for help, and document what you tried (ongoing)"
+        projects:
+          - "Solve a real problem using only free tools and resources you find online — no budget, no existing playbook. Document your research process and the solution."
+        tips:
+          - "The question is never 'can this be done?' The question is 'how can this be done with the constraints I have?'"
+          - "Being resourceful does not mean being a lone wolf. It means exhausting your own options before leveraging other people's time."
+      - level: intermediate
+        criteria: >
+          Consistently finds creative workarounds to resource constraints. Can
+          accomplish goals with half the budget, half the time, or half the team
+          that others would require. Treats constraints as creative forcing functions.
+        metrics:
+          - "Delivers at least 2 projects per quarter with significantly fewer resources than initially estimated"
+          - "Builds a personal 'resource toolkit' of 20+ tools, contacts, and methods for solving common blockers"
+        resources:
+          - title: "Shoe Dog by Phil Knight"
+            url: "https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike/dp/1501135929"
+            type: "book"
+          - title: "Paul Graham - How to Get Startup Ideas"
+            url: "https://www.paulgraham.com/startupideas.html"
+            type: "article"
+        practice:
+          - "Take a current project and ask: 'how would I accomplish this with 10% of the current budget?' Write down 5 approaches (30 minutes)"
+          - "Build a 'resourcefulness rolodex': list 20 people you could call for help across different domains, and what each person is best at (1 hour, then maintain)"
+        projects:
+          - "Complete a meaningful project with a self-imposed extreme constraint: zero budget, 48-hour deadline, or using only tools that already exist. Document the creative workarounds you invented."
+        tips:
+          - "The most resourceful people are excellent at pattern matching: they recognize that a problem they face today is structurally similar to one they or someone else solved before."
+      - level: advanced
+        criteria: >
+          Creates novel solutions to problems others have given up on. Combines
+          resources from unexpected domains. Can navigate bureaucracies, find
+          decision-makers, and create paths where none existed. Known as the person
+          who 'always finds a way.'
+        metrics:
+          - "Solves at least 2 'impossible' problems per year — problems that others had declared unsolvable"
+          - "Maintains a cross-domain network of 50+ contacts who can help solve unusual problems"
+        resources:
+          - title: "Zero to One by Peter Thiel"
+            url: "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"
+            type: "book"
+          - title: "Charlie Munger - The Psychology of Human Misjudgment"
+            url: "https://www.youtube.com/watch?v=pqzcCfUglws"
+            type: "video"
+        practice:
+          - "Study one problem-solving approach from a completely different field each month (e.g., engineering, military strategy, biology) and apply it to a current business problem (2 hours)"
+          - "Practice 'inversion': for a current challenge, ask 'what would guarantee failure?' and then design the opposite (30 minutes)"
+        projects:
+          - "Take on a problem that at least 2 other people have tried and failed to solve. Diagnose why they failed, find a novel approach, and deliver a solution."
+        tips:
+          - "The most powerful resourcefulness technique: ask 'who has already solved this?' Almost every problem has been solved somewhere — your job is to find that person or precedent."
+      - level: expert
+        criteria: >
+          Builds organizations and teams that are systematically resourceful.
+          Creates processes for creative problem-solving, builds institutional
+          knowledge of workarounds, and hires for resourcefulness. The team solves
+          novel problems without escalation.
+        metrics:
+          - "Team escalation rate for 'stuck' problems decreases by 50%+ under your leadership"
+          - "Team develops at least 5 novel solutions per quarter that become reusable patterns for the organization"
+        resources:
+          - title: "The Almanack of Naval Ravikant by Eric Jorgenson"
+            url: "https://www.amazon.com/Almanack-Naval-Ravikant-Wealth-Happiness/dp/1544514212"
+            type: "book"
+          - title: "IDEO - Design Thinking (Tim Brown, TED Talk)"
+            url: "https://www.youtube.com/watch?v=UAinLaT42xY"
+            type: "video"
+        practice:
+          - "Implement a 'solution library' for your team: document every creative workaround and make it searchable. Review and update monthly (1 hour/month)"
+          - "Run quarterly 'resourcefulness workshops' where the team practices solving constrained problems together — build the muscle collectively (2 hours/quarter)"
+        projects:
+          - "Design and implement a 'resourcefulness playbook' for your organization: common blockers, proven workarounds, escalation paths, and a culture that rewards creative problem-solving over learned helplessness"
+        tips:
+          - "At scale, resourcefulness is a system, not a personality trait. Your job is to make resourcefulness the default organizational behavior, not a heroic individual act."
+    tags: ["problem-solving", "creativity", "execution"]
+
+  # ── EXTERNAL CAPABILITY ───────────────────────────────────────────────────────
+  - id: "business/high-agency/comfort-with-ambiguity"
+    title: "Comfort with Ambiguity"
+    description: >
+      The ability to act effectively without complete information, clear
+      instructions, or a proven playbook. Most valuable work happens at the
+      frontier where nobody has been before — where the requirements are vague,
+      the path is unclear, and the right answer is unknown. Comfort with ambiguity
+      means you can start moving in a direction, gather information as you go,
+      and course-correct without freezing.
+    benchmarks:
+      - level: beginner
+        criteria: "Can begin work on a task even when the requirements are incomplete. Asks clarifying questions without waiting for every detail to be specified."
+        metrics:
+          - "Starts working within 24 hours of receiving an ambiguous assignment, even if full details are unavailable"
+          - "Generates a list of 'known unknowns' and a plan to resolve them rather than waiting for answers passively"
+        resources:
+          - title: "Paul Graham - How to Do Great Work"
+            url: "https://www.paulgraham.com/greatwork.html"
+            type: "article"
+          - title: "Tim Ferriss - Fear-Setting (TED Talk)"
+            url: "https://www.youtube.com/watch?v=5J6jAC6XxAI"
+            type: "video"
+        practice:
+          - "Take an ambiguous task and write down: (1) what you know, (2) what you don't know, (3) what you can figure out in the next hour, (4) what you need from others. Act on #3 immediately (30 minutes)"
+          - "Practice making decisions with a 'confidence calibration' journal: before deciding, write your confidence level (e.g., 60%), then track accuracy over time (ongoing)"
+        projects:
+          - "Volunteer for a project where the scope is not fully defined. Navigate the ambiguity, define the scope yourself, and deliver a result. Write a reflection on what was hard and what you learned."
+        tips:
+          - "Ambiguity is not the same as chaos. The skill is not 'being comfortable with anything' — it is creating just enough structure to move forward without requiring all the structure."
+          - "When faced with ambiguity, the best first step is usually: talk to one person who might know something, and take one small action. Repeat."
+      - level: intermediate
+        criteria: >
+          Thrives in situations with competing priorities, shifting requirements,
+          and no single right answer. Develops provisional frameworks to make
+          decisions under uncertainty and updates them as information arrives.
+        metrics:
+          - "Operates effectively on projects where the goal shifts mid-stream — delivers value despite 2+ major pivots"
+          - "Creates a written decision framework for at least 1 ambiguous situation per month"
+        resources:
+          - title: "Thinking in Bets by Annie Duke"
+            url: "https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216371"
+            type: "book"
+          - title: "Farnam Street - Mental Models: The Best Way to Make Intelligent Decisions"
+            url: "https://fs.blog/mental-models/"
+            type: "article"
+        practice:
+          - "For your next ambiguous decision, map out 3 possible scenarios with rough probabilities and the best action for each — practice scenario planning (30 minutes)"
+          - "Keep a 'decision journal': for every significant decision, write your reasoning and confidence before the outcome, then review monthly (ongoing)"
+        projects:
+          - "Lead a project from 'zero to one' — define the problem, scope the solution, and deliver a first version in an area where no playbook exists"
+        tips:
+          - "The antidote to ambiguity paralysis: define the 'smallest reversible bet.' What is the cheapest, fastest action that will give you real information?"
+      - level: advanced
+        criteria: >
+          Navigates organizational and strategic ambiguity — unclear reporting
+          lines, undefined roles, shifting company strategy. Creates clarity for
+          others while operating with less clarity yourself. Comfortable being
+          wrong and correcting course publicly.
+        metrics:
+          - "Leads at least 1 initiative per year in a domain where you had zero prior expertise"
+          - "Team members report feeling less anxious about ambiguous situations because of your leadership"
+        resources:
+          - title: "The Black Swan by Nassim Nicholas Taleb"
+            url: "https://www.amazon.com/Black-Swan-Improbable-Robustness-Fragility/dp/081297381X"
+            type: "book"
+          - title: "Paul Graham - The Bus Ticket Theory of Genius"
+            url: "https://www.paulgraham.com/genius.html"
+            type: "article"
+        practice:
+          - "Intentionally take on a responsibility outside your expertise area. Document what you learn about navigating ambiguity when you cannot rely on domain knowledge (ongoing)"
+          - "Practice 'working in public with uncertainty': share your thinking process, including your uncertainties, with your team before reaching a conclusion (ongoing)"
+        projects:
+          - "Lead a strategic initiative from inception in a new or undefined area — build the team, define the metrics, and deliver results without a precedent to follow"
+        tips:
+          - "Advanced ambiguity tolerance is not about having all the answers — it is about being comfortable saying 'I don't know yet, here's how I'm going to find out' and having people trust that process."
+      - level: expert
+        criteria: >
+          Creates organizations that thrive in ambiguity. Hires for ambiguity
+          tolerance, designs roles and processes that reward exploration over
+          compliance, and builds teams that can navigate undefined problem spaces
+          without top-down direction.
+        metrics:
+          - "Teams you build can successfully operate in new markets, new product areas, or crisis situations with minimal top-down guidance"
+          - "Innovation output (new products, new markets, new approaches) is measurably higher in teams you lead vs. org average"
+        resources:
+          - title: "An Elegant Puzzle by Will Larson"
+            url: "https://www.amazon.com/Elegant-Puzzle-Systems-Engineering-Management/dp/1732265186"
+            type: "book"
+          - title: "Y Combinator - How to Manage (Startup School)"
+            url: "https://www.youtube.com/watch?v=uVhTvQXfibU"
+            type: "video"
+        practice:
+          - "Design an onboarding exercise for new hires that intentionally includes an ambiguous task — use it to both develop and assess ambiguity tolerance (2 hours)"
+          - "Review your team's processes quarterly: identify where excessive process exists to reduce ambiguity that people should instead learn to tolerate (1 hour)"
+        projects:
+          - "Build a team or function from scratch in an undefined area — no existing playbook, no established market, no clear precedent. Document the organizational principles that allowed the team to navigate the ambiguity."
+        tips:
+          - "Beware of over-structuring to reduce ambiguity. Some organizations add process to feel safe, but the process becomes the bottleneck. The goal is people who can think, not processes that think for them."
+    tags: ["mindset", "uncertainty", "decision-making"]
+
+  - id: "business/high-agency/proactive-communication"
+    title: "Proactive Communication"
+    description: >
+      The skill of reaching out first — asking for what you need, cold-emailing
+      the right person, surfacing problems early, and creating opportunities
+      through communication. Reactive communicators wait to be asked; proactive
+      communicators create conversations that would not otherwise happen. This
+      skill is the bridge between having agency internally and exercising it
+      in the world.
+    benchmarks:
+      - level: beginner
+        criteria: "Asks for what you need directly instead of hinting or waiting. Surfaces blockers to your manager within 24 hours instead of hoping they resolve themselves."
+        metrics:
+          - "Reports blockers within 24 hours of identifying them, with a proposed solution, on 90%+ of occasions"
+          - "Sends at least 2 cold outreach messages per month to people who could help with current goals"
+        resources:
+          - title: "Paul Graham - How to Do Great Work"
+            url: "https://www.paulgraham.com/greatwork.html"
+            type: "article"
+          - title: "Ramit Sethi - How to Grow Your Network"
+            url: "https://www.youtube.com/watch?v=Yb03mTqI2Io"
+            type: "video"
+        practice:
+          - "Write 3 cold emails to people you admire or want to learn from — keep them under 5 sentences, with a specific and easy-to-answer question (30 minutes)"
+          - "Practice the 'no-hint rule' for one week: every time you want something, ask for it directly in plain language. Track how many times you catch yourself hinting instead (ongoing)"
+        projects:
+          - "Reach out cold to 5 people you have never met who are working on problems you care about. Track response rate and what you learn from the conversations."
+        tips:
+          - "The biggest barrier to cold outreach is the fear of rejection. Remember: the worst outcome of a cold email is silence. The worst outcome of NOT sending it is a missed opportunity."
+          - "Every cold email should answer the recipient's unspoken question: 'why should I spend time on this?' Make the value to them obvious."
+      - level: intermediate
+        criteria: >
+          Communicates proactively up, down, and sideways. Provides status updates
+          before being asked. Raises risks and proposes mitigations before they
+          become crises. Creates alignment through communication rather than waiting
+          for meetings.
+        metrics:
+          - "Manager says they 'never feel out of the loop' on your projects"
+          - "Cross-functional partners proactively seek you out for collaboration because you communicate clearly and early"
+        resources:
+          - title: "The Minto Pyramid Principle by Barbara Minto"
+            url: "https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp/0273710516"
+            type: "book"
+          - title: "Lenny Rachitsky - How to Communicate as a PM"
+            url: "https://www.lennysnewsletter.com/p/how-to-communicate"
+            type: "article"
+        practice:
+          - "Send a weekly 'state of things' update to your manager and key stakeholders — 3 bullets: progress, risks, needs — before they ask (15 minutes/week)"
+          - "Before every meeting, send a 2-sentence pre-read stating your position and what you need from others. Track how much more productive the meetings become (10 minutes/meeting)"
+        projects:
+          - "Identify a misalignment between two teams and resolve it by proactively writing a shared document that maps both perspectives and proposes a path forward"
+        tips:
+          - "Proactive communication is not about sending more messages — it is about sending the right message before it is needed. One preemptive Slack message can prevent a 1-hour meeting."
+      - level: advanced
+        criteria: >
+          Creates communication channels and norms that did not exist before.
+          Reaches decision-makers directly, bypassing unnecessary intermediaries
+          when appropriate. Communicates difficult truths to senior leadership with
+          clarity and evidence.
+        metrics:
+          - "Builds and maintains relationships with at least 5 senior leaders outside your direct reporting line"
+          - "Successfully delivers difficult messages (project delays, bad news, strategic disagreements) to executives at least 2 times per year with positive relationship outcomes"
+        resources:
+          - title: "Radical Candor by Kim Scott"
+            url: "https://www.amazon.com/Radical-Candor-Revised-Kick-Ass-Humanity/dp/1250235375"
+            type: "book"
+          - title: "Y Combinator - How to Talk to Users (Startup School)"
+            url: "https://www.youtube.com/watch?v=z1iF1c8w5Lg"
+            type: "video"
+        practice:
+          - "Practice 'disagree and commit' communication: write a 1-page memo when you disagree with a decision, stating your case with evidence, then commit fully regardless of outcome (as needed)"
+          - "Build the habit of 'one level up' communication: for any important update, ask 'who else needs to know this?' and proactively inform them (ongoing)"
+        projects:
+          - "Identify a strategic risk that is known at your level but not visible to senior leadership. Write a clear, evidence-based briefing and present it to the relevant decision-maker."
+        tips:
+          - "The higher up you communicate, the more important it is to lead with the recommendation, then the evidence, then the caveats — not the reverse."
+      - level: expert
+        criteria: >
+          Designs communication systems for organizations. Creates cultures where
+          information flows freely, bad news travels fast, and people at every level
+          feel empowered to communicate proactively. Builds bridges between
+          functions, levels, and organizations.
+        metrics:
+          - "Information silos are measurably reduced: cross-functional teams report faster access to relevant information"
+          - "Bad news reaches decision-makers within hours rather than days across the organization"
+        resources:
+          - title: "High Output Management by Andy Grove"
+            url: "https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884"
+            type: "book"
+          - title: "Ben Horowitz - What the Most Successful People Do Before Breakfast"
+            url: "https://a16z.com/the-hard-thing-about-hard-things/"
+            type: "article"
+        practice:
+          - "Audit your organization's communication flows: map how long it takes for critical information to travel from the front line to decision-makers, and design improvements (half day)"
+          - "Institute 'skip-level 1:1s' or open office hours to create direct communication channels across organizational layers (ongoing)"
+        projects:
+          - "Design and implement a communication architecture for your organization: define what information flows where, at what cadence, in what format, and measure the impact on decision speed and quality"
+        tips:
+          - "The best communication systems are invisible. If people have to think about how to communicate, the system is too complicated."
+    tags: ["communication", "outreach", "influence"]
+
+  - id: "business/high-agency/strategic-risk-taking"
+    title: "Strategic Risk-Taking"
+    description: >
+      The discipline of making calculated bets — not reckless gambles, but
+      deliberate choices where the expected value is positive and the downside is
+      survivable. High-agency people seek out asymmetric opportunities where the
+      upside is large, the downside is bounded, and the probability of success
+      can be influenced by their own effort. This skill combines expected value
+      thinking, portfolio theory, and the emotional courage to act when the
+      outcome is uncertain.
+    benchmarks:
+      - level: beginner
+        criteria: "Can articulate the difference between reckless risk and calculated risk. Identifies at least one situation per month where taking a small risk would create disproportionate upside."
+        metrics:
+          - "Takes at least 1 calculated risk per month that you would previously have avoided"
+          - "Can explain the concept of expected value and apply it to a personal decision"
+        resources:
+          - title: "Sam Altman - How to Be Successful"
+            url: "https://blog.samaltman.com/how-to-be-successful"
+            type: "article"
+          - title: "Annie Duke - Thinking in Bets (Talks at Google)"
+            url: "https://www.youtube.com/watch?v=uYNsSeYjkp4"
+            type: "video"
+        practice:
+          - "List 5 risks you have been avoiding. For each, write the worst realistic outcome, the best realistic outcome, and the probability of each. Identify which risks have positive expected value (30 minutes)"
+          - "Practice 'small bets': each week, take one low-cost action that has a chance of a disproportionately good outcome — a cold email, a project pitch, a conversation (ongoing)"
+        projects:
+          - "Take one calculated risk this month that you have been putting off — apply to a stretch job, pitch an idea to leadership, launch a side project — and document the process and outcome"
+        tips:
+          - "The biggest risk is usually not the bet itself — it is the opportunity cost of NOT betting. What you lose by inaction is invisible but real."
+          - "Start with risks where the downside is embarrassment, not financial ruin. The muscle is the same, but the stakes are lower."
+      - level: intermediate
+        criteria: >
+          Evaluates risks using expected value frameworks. Builds a portfolio of
+          bets rather than single large gambles. Identifies and seeks out asymmetric
+          opportunities — situations where you can win big but lose small.
+        metrics:
+          - "Maintains a written 'bet portfolio' with at least 5 active calculated risks at any time"
+          - "At least 2 bets per year pay off with outcomes significantly exceeding initial expectations"
+        resources:
+          - title: "Thinking in Bets by Annie Duke"
+            url: "https://www.amazon.com/Thinking-Bets-Making-Smarter-Decisions/dp/0735216371"
+            type: "book"
+          - title: "The Almanack of Naval Ravikant by Eric Jorgenson"
+            url: "https://www.amazon.com/Almanack-Naval-Ravikant-Wealth-Happiness/dp/1544514212"
+            type: "book"
+        practice:
+          - "Create an 'asymmetry scanner': for each opportunity, explicitly write the maximum downside and maximum upside, then calculate the ratio. Only pursue bets where upside/downside ratio is 5:1 or better (ongoing)"
+          - "Review your last 10 'no' decisions: for each, calculate the expected value you left on the table. Were any of them positive-EV bets you declined out of fear? (1 hour)"
+        projects:
+          - "Build a personal 'bet portfolio' tracker: log every calculated risk you take, your pre-commitment assessment (probability, upside, downside), and the actual outcome. Review quarterly to calibrate your risk assessment."
+        tips:
+          - "Naval Ravikant's framework: 'seek wealth in activities with high accountability, specific knowledge, and leverage.' These are the highest-EV bets because others cannot easily replicate them."
+      - level: advanced
+        criteria: >
+          Makes and advocates for strategic bets at the organizational level.
+          Can size opportunities, model expected outcomes, and communicate risk/reward
+          to senior leadership. Comfortable placing career capital behind
+          high-conviction bets.
+        metrics:
+          - "Successfully advocates for at least 1 major strategic bet per year that is adopted by leadership"
+          - "Track record of strategic bets shows positive expected value over a 3-year portfolio"
+        resources:
+          - title: "Zero to One by Peter Thiel"
+            url: "https://www.amazon.com/Zero-One-Notes-Startups-Future/dp/0804139296"
+            type: "book"
+          - title: "Antifragile by Nassim Nicholas Taleb"
+            url: "https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680"
+            type: "book"
+        practice:
+          - "Write a 'conviction memo' for a strategic bet you believe in: state the thesis, the evidence, the expected value, and what would change your mind. Present it to a skeptical audience (2 hours)"
+          - "Study 3 historical strategic bets (business pivots, product launches, market entries) and reverse-engineer the decision framework the leader used (3 hours)"
+        projects:
+          - "Identify an asymmetric opportunity for your organization — a bet where the upside is 10x the downside — build the business case, get buy-in, and lead the execution"
+        tips:
+          - "The best strategic bets are ones where you have an information or effort advantage that others do not. 'What do I know or what can I do that makes this bet better for me than for a random person?'"
+      - level: expert
+        criteria: >
+          Designs organizational cultures and systems that support intelligent
+          risk-taking. Creates 'safe to fail' environments where people can make
+          bets without career risk. Builds portfolio thinking into strategic planning.
+        metrics:
+          - "Organization has an explicit framework for evaluating and funding strategic bets"
+          - "At least 20% of organizational effort is allocated to high-risk, high-reward initiatives"
+        resources:
+          - title: "The Innovator's Dilemma by Clayton Christensen"
+            url: "https://www.amazon.com/Innovators-Dilemma-Technologies-Management-Innovation/dp/1633691780"
+            type: "book"
+          - title: "Jeff Bezos - Regret Minimization Framework"
+            url: "https://www.youtube.com/watch?v=jwG_qR6XmDQ"
+            type: "video"
+        practice:
+          - "Create an 'innovation budget' for your team: allocate 10-20% of resources to experiments with uncertain outcomes and review results quarterly (ongoing)"
+          - "Implement 'pre-mortems' for major bets: before committing, ask 'it is 6 months from now and this failed — why?' Use the answers to improve the bet or create kill criteria (1 hour per bet)"
+        projects:
+          - "Design and implement a strategic betting framework for your organization: criteria for evaluating bets, portfolio allocation guidelines, kill criteria, and a review cadence that celebrates smart failures alongside successes"
+        tips:
+          - "Organizations that punish smart failures get fewer failures AND fewer breakthroughs. The goal is to increase the number of at-bats, not the batting average."
+    tags: ["strategy", "decision-making", "risk"]
+
+  # ── INFLUENCE & LEARNING ──────────────────────────────────────────────────────
+  - id: "business/high-agency/influencing-without-authority"
+    title: "Influencing Without Authority"
+    description: >
+      The ability to lead people who do not report to you — peers, stakeholders,
+      senior leaders, cross-functional partners. Most high-impact work requires
+      the cooperation of people over whom you have no formal power. This skill
+      combines persuasion, coalition-building, credibility development, and the
+      ability to align diverse interests toward a shared outcome.
+    benchmarks:
+      - level: beginner
+        criteria: "Can articulate why others should care about your proposal — frames requests in terms of the other person's interests and priorities."
+        metrics:
+          - "Gets buy-in from at least 1 cross-functional partner on a proposal without relying on managerial authority"
+          - "Presents ideas using 'what's in it for them' framing in 80%+ of requests"
+        resources:
+          - title: "How to Win Friends and Influence People - Dale Carnegie (Complete Summary)"
+            url: "https://www.youtube.com/watch?v=8SUiLkl42FQ"
+            type: "video"
+          - title: "Paul Graham - How to Convince Investors"
+            url: "https://www.paulgraham.com/convince.html"
+            type: "article"
+        practice:
+          - "Before your next request to a peer, write down their top 3 priorities and reframe your ask in terms of how it helps THEM (15 minutes)"
+          - "Practice active listening in 3 conversations this week: summarize what the other person said before responding, and ask if you got it right (ongoing)"
+        projects:
+          - "Identify a change you want to make that requires cooperation from someone outside your team. Persuade them using only influence — no authority, no escalation."
+        tips:
+          - "Influence starts with credibility, and credibility starts with listening. Nobody cares what you think until they believe you understand what THEY think."
+          - "The fastest way to build influence: do great work and make it visible. Nothing persuades like a track record."
+      - level: intermediate
+        criteria: >
+          Builds coalitions by identifying shared interests among multiple
+          stakeholders. Can negotiate compromises that create value for all parties.
+          Influences team-level decisions in cross-functional settings.
+        metrics:
+          - "Successfully builds a coalition of 3+ stakeholders to support a cross-functional initiative"
+          - "Resolves at least 2 cross-team disagreements per quarter through facilitation rather than escalation"
+        resources:
+          - title: "Influence: The Psychology of Persuasion by Robert Cialdini"
+            url: "https://www.amazon.com/Influence-Psychology-Persuasion-Robert-Cialdini/dp/006124189X"
+            type: "book"
+          - title: "Y Combinator - How to Work Together (Startup School)"
+            url: "https://www.youtube.com/watch?v=30a5yFBd7Fo"
+            type: "video"
+        practice:
+          - "Map the stakeholder landscape for your current initiative: who has power, who has interest, who is supportive, who is skeptical. Design a tailored approach for each (1 hour)"
+          - "Practice 'disagree and commit' in a real situation: advocate clearly for your position, then support the group decision wholeheartedly regardless of outcome (as needed)"
+        projects:
+          - "Lead a cross-functional initiative involving at least 3 teams where you have no authority over any of them. Deliver a result that all stakeholders agree was valuable."
+        tips:
+          - "The most powerful influence technique is 'skin in the game': volunteer to do the hard work yourself. People follow those who lead from the front."
+      - level: advanced
+        criteria: >
+          Influences organizational direction and strategic decisions from any
+          level. Builds a reputation as a trusted advisor to senior leaders.
+          Can shift entrenched opinions through a combination of evidence, framing,
+          and relationship capital.
+        metrics:
+          - "Influences at least 2 significant organizational decisions per year from outside the formal decision-making chain"
+          - "Senior leaders proactively seek your input on strategic questions"
+        resources:
+          - title: "The Hard Thing About Hard Things by Ben Horowitz"
+            url: "https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205"
+            type: "book"
+          - title: "Paul Graham - How to Disagree"
+            url: "https://www.paulgraham.com/disagree.html"
+            type: "article"
+        practice:
+          - "Write a 'strategic point of view' document on a topic that matters to your organization but is outside your direct responsibility. Share it with a senior leader and ask for feedback (3 hours)"
+          - "Practice the 'Steel Man' technique: before arguing against someone's position, articulate their strongest possible argument and confirm they agree with your characterization (ongoing)"
+        projects:
+          - "Identify a strategic decision where the current direction is wrong. Build the case, rally supporters, and successfully influence the decision — without having formal authority over it."
+        tips:
+          - "At the advanced level, influence is about reputation, not technique. The question is: 'when this person speaks, do people listen?' You build that through years of being right, being helpful, and being trustworthy."
+      - level: expert
+        criteria: >
+          Creates organizational cultures where influence flows based on expertise
+          and merit rather than title. Designs decision-making frameworks that
+          give the best ideas a path to the top regardless of who proposed them.
+          Mentors others in developing influence skills.
+        metrics:
+          - "Organization has explicit mechanisms for bottom-up influence (e.g., proposals from ICs reach leadership regularly)"
+          - "At least 5 people you have mentored are recognized for their ability to influence without authority"
+        resources:
+          - title: "Turn the Ship Around! by L. David Marquet"
+            url: "https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404"
+            type: "book"
+          - title: "Patrick Lencioni - The Advantage: Why Organizational Health Trumps Everything"
+            url: "https://www.youtube.com/watch?v=HxjFQ3y0M6I"
+            type: "video"
+        practice:
+          - "Audit your organization's decision-making: how many significant decisions were influenced by people without formal authority? If the answer is few, design and implement a mechanism to change this (half day)"
+          - "Create an 'influence coaching' program: pair junior employees with senior cross-functional leaders to build lateral influence skills (1 month to design, ongoing)"
+        projects:
+          - "Design and implement an organizational decision-making framework that explicitly values influence from all levels — a proposal process, a decision log, and a feedback loop that rewards good ideas regardless of source"
+        tips:
+          - "The ultimate test of influence culture: do good ideas win, or do ideas from powerful people win? Your job is to build the former."
+    tags: ["influence", "leadership", "persuasion"]
+
+  - id: "business/high-agency/self-directed-learning"
+    title: "Self-Directed Learning"
+    description: >
+      The ability to learn what you need, when you need it, without waiting for
+      someone to teach you. In a world that changes faster than any curriculum
+      can keep up, the most valuable skill is the meta-skill of learning itself.
+      Self-directed learners identify knowledge gaps, find resources, build
+      understanding rapidly, and apply new knowledge to real problems — all
+      without formal instruction.
+    benchmarks:
+      - level: beginner
+        criteria: "Can identify what you need to learn to solve a current problem. Finds and uses learning resources independently (books, courses, documentation, tutorials)."
+        metrics:
+          - "Learns at least 1 new skill or tool per quarter that you identified as needed for your work"
+          - "Completes at least 1 self-chosen learning resource (book, course, tutorial) per month"
+        resources:
+          - title: "Paul Graham - How to Do Great Work"
+            url: "https://www.paulgraham.com/greatwork.html"
+            type: "article"
+          - title: "Barbara Oakley - Learning How to Learn (Coursera)"
+            url: "https://www.coursera.org/learn/learning-how-to-learn"
+            type: "course"
+        practice:
+          - "Identify the top skill gap that is limiting your effectiveness right now. Find 3 resources to address it and spend 30 minutes learning per day for 2 weeks (30 minutes/day)"
+          - "Practice 'just-in-time learning': when you encounter something you don't know, spend 15 minutes learning about it immediately instead of bookmarking it for later (ongoing)"
+        projects:
+          - "Learn a new skill entirely through self-directed study — no formal class, no teacher — and build something with it within 30 days. Document your learning process."
+        tips:
+          - "The biggest mistake in self-directed learning: consuming without applying. Read for 20 minutes, then practice for 40 minutes. The ratio should always favor doing over reading."
+          - "Pick learning resources written by practitioners, not academics. Someone who has done the thing will teach you what actually matters."
+      - level: intermediate
+        criteria: >
+          Builds structured learning plans for complex topics. Knows how to
+          decompose a large skill into learnable sub-skills. Combines multiple
+          sources and methods (reading, doing, teaching, building) for faster learning.
+        metrics:
+          - "Creates a written learning plan for each major new skill, with milestones and a timeline"
+          - "Achieves functional competence in a new domain within 3 months of focused self-study"
+        resources:
+          - title: "Ultralearning by Scott Young"
+            url: "https://www.amazon.com/Ultralearning-Master-Outsmart-Competition-Accelerate/dp/006285268X"
+            type: "book"
+          - title: "Naval Ravikant - How to Get Rich (Not Lucky)"
+            url: "https://nav.al/rich"
+            type: "article"
+        practice:
+          - "Decompose a complex skill you want to learn into 5-7 sub-skills, then rank them by importance. Learn the most important one first (1 hour to plan, then ongoing)"
+          - "Practice 'learning by teaching': after studying a topic, explain it to someone else or write about it. Track what you cannot explain clearly — those are your actual gaps (ongoing)"
+        projects:
+          - "Execute a '30-day learning sprint': pick a skill outside your comfort zone, create a structured plan with daily milestones, and deliver a tangible output at the end"
+        tips:
+          - "The Pareto principle applies to learning: 20% of a skill's sub-components deliver 80% of the practical value. Identify and focus on the 20% first."
+      - level: advanced
+        criteria: >
+          Learns across domains and transfers mental models between fields. Can
+          quickly identify the 'kernel' of a new domain — the 20% of knowledge
+          that drives 80% of results. Builds a personal knowledge system that
+          compounds over time.
+        metrics:
+          - "Achieves proficiency in at least 1 new domain per year that is not adjacent to your primary expertise"
+          - "Maintains a personal knowledge management system (notes, wiki, etc.) that you actively reference and build upon"
+        resources:
+          - title: "Poor Charlie's Almanack by Charlie Munger"
+            url: "https://www.amazon.com/Poor-Charlies-Almanack-Essential-Charles/dp/1578645018"
+            type: "book"
+          - title: "Farnam Street - How to Read a Book (Mortimer Adler method)"
+            url: "https://fs.blog/how-to-read-a-book/"
+            type: "article"
+        practice:
+          - "Build a 'mental models library': each month, learn one mental model from a field outside your own (biology, physics, history, etc.) and apply it to a current problem (2 hours/month)"
+          - "Practice 'cross-domain transfer': when learning something new, explicitly ask 'what does this remind me of from another field?' and write down the analogies (ongoing)"
+        projects:
+          - "Write a detailed case study of how a mental model from one domain (e.g., compounding from finance, natural selection from biology) applies to a problem in your primary domain"
+        tips:
+          - "Charlie Munger's insight: 'The person who has only a hammer sees every problem as a nail.' The more domains you learn from, the better your problem-solving toolkit."
+      - level: expert
+        criteria: >
+          Builds learning organizations. Creates systems, incentives, and cultures
+          where self-directed learning is the norm. Develops other people's ability
+          to learn independently. Contributes back to the knowledge commons through
+          writing, teaching, or open-source contributions.
+        metrics:
+          - "Team members independently upskill without being told — at least 1 new skill per person per quarter"
+          - "Contributes to public knowledge (writing, speaking, open source) at least monthly"
+        resources:
+          - title: "The Fifth Discipline by Peter Senge"
+            url: "https://www.amazon.com/Fifth-Discipline-Practice-Learning-Organization/dp/0385517254"
+            type: "book"
+          - title: "Paul Graham - Write Like You Talk"
+            url: "https://www.paulgraham.com/talk.html"
+            type: "article"
+        practice:
+          - "Design a 'learning culture audit' for your team: assess how much time people spend learning, what they learn, and how they share knowledge. Identify gaps and create interventions (half day)"
+          - "Start a team learning ritual: weekly knowledge-sharing sessions where team members teach each other something new — model the behavior by presenting first (1 hour/week)"
+        projects:
+          - "Build and launch a knowledge-sharing system for your organization: a wiki, a reading group, a mentorship program, or an internal conference. Measure engagement and knowledge transfer outcomes over 6 months."
+        tips:
+          - "The best learning cultures are built by leaders who visibly learn in public. If your team sees you reading, asking questions, and admitting what you don't know, they will do the same."
+    tags: ["learning", "meta-skill", "knowledge"]
+
+  - id: "business/high-agency/resilience-and-recovery"
+    title: "Resilience & Recovery"
+    description: >
+      The ability to bounce back from failure, rejection, and setbacks without
+      losing momentum or conviction. High-agency people do not avoid failure —
+      they fail, learn, and try again faster than others. Resilience is not
+      about being unaffected by adversity; it is about recovering quickly and
+      extracting maximum learning from every setback.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes that failure is information, not identity. Can name a recent failure and articulate what you learned from it without excessive self-criticism or blame."
+        metrics:
+          - "Recovers from a setback (rejection, failed project, negative feedback) and takes productive action within 48 hours"
+          - "Keeps a 'failure log' for 1 month, recording at least 2 entries per week with lessons learned"
+        resources:
+          - title: "Angela Duckworth - Grit (TED Talk)"
+            url: "https://www.youtube.com/watch?v=H14bBuluwB8"
+            type: "video"
+          - title: "Paul Graham - The Hardest Lessons for Startups to Learn"
+            url: "https://www.paulgraham.com/startuplessons.html"
+            type: "article"
+        practice:
+          - "Start a 'failure journal': each week, write down at least 1 failure or rejection and what you learned from it. Focus on extracting actionable lessons, not self-pity (15 minutes/week)"
+          - "Practice 'rejection therapy': intentionally put yourself in a situation where you might be rejected once per week — ask for a discount, pitch an idea, request a meeting (ongoing)"
+        projects:
+          - "Interview 3 people you admire about their biggest professional failure. Document the patterns in how they recovered and what they learned."
+        tips:
+          - "The goal is not to feel nothing when you fail. The goal is to shorten the time between 'this hurts' and 'what do I do next?' Emotion is fine; paralysis is not."
+          - "If you are not failing regularly, you are not taking enough risks. Aim for a failure rate that feels slightly uncomfortable."
+      - level: intermediate
+        criteria: >
+          Maintains productivity and momentum during periods of adversity. Uses
+          structured reflection to extract lessons from failures. Does not let a
+          single failure cascade into a pattern of inaction.
+        metrics:
+          - "Maintains baseline productivity (within 80%) during the week following a significant setback"
+          - "Completes a structured 'after-action review' within 1 week of every significant failure"
+        resources:
+          - title: "Grit by Angela Duckworth"
+            url: "https://www.amazon.com/Grit-Passion-Perseverance-Angela-Duckworth/dp/1501111116"
+            type: "book"
+          - title: "Brene Brown - The Power of Vulnerability (TED Talk)"
+            url: "https://www.youtube.com/watch?v=iCvmsMzlF7o"
+            type: "video"
+        practice:
+          - "After any significant failure, complete a structured after-action review: (1) what happened, (2) why, (3) what I will do differently, (4) what I will do the same. Write it down within 48 hours (1 hour)"
+          - "Practice 'micro-resilience': when something small goes wrong during the day, consciously choose your next action within 5 minutes instead of ruminating (ongoing)"
+        projects:
+          - "Take on a challenging goal with a high likelihood of failure (a stretch sales target, a competitive application, a difficult project). Document your resilience process throughout — the setbacks, the recoveries, and the final outcome."
+        tips:
+          - "The most dangerous response to failure is not sadness — it is withdrawal. The person who stops trying after a failure loses by default. Keep showing up."
+      - level: advanced
+        criteria: >
+          Treats major failures as strategic inflection points. Can recover from
+          career-level setbacks (layoffs, failed ventures, public mistakes) and
+          emerge stronger. Models resilience for others and helps teams recover
+          from collective failures.
+        metrics:
+          - "Has recovered from at least 1 major professional setback (failed project, job loss, public failure) and can articulate how it made you stronger"
+          - "Team morale recovers faster from setbacks when you are present — measurable in engagement surveys or retrospective sentiment"
+        resources:
+          - title: "Shoe Dog by Phil Knight"
+            url: "https://www.amazon.com/Shoe-Dog-Memoir-Creator-Nike/dp/1501135929"
+            type: "book"
+          - title: "Ben Horowitz - Lead from the Front (Stanford eCorner)"
+            url: "https://www.youtube.com/watch?v=F2e3RqL4VWs"
+            type: "video"
+        practice:
+          - "Study 3 case studies of leaders who recovered from major failures (Steve Jobs' Apple exit, Howard Schultz's Starbucks return, etc.) and extract the common resilience patterns (3 hours)"
+          - "After a team failure, lead a 'resilience retrospective' that focuses on: what we learned, what we do differently, and what gives us confidence going forward — no blame, all forward motion (1 hour)"
+        projects:
+          - "Write a 'failure resume' — a document listing your biggest failures, what you learned, and how each one led to a better outcome. Share it publicly or with your team."
+        tips:
+          - "At the advanced level, your resilience becomes a team asset. How you respond to failure sets the tone for everyone around you. If you panic, they panic. If you regroup, they regroup."
+      - level: expert
+        criteria: >
+          Builds organizations that are antifragile — they get stronger from
+          stress and failure rather than weaker. Creates psychologically safe
+          environments where failure is surfaced quickly, learned from systematically,
+          and never punished when it results from smart risk-taking.
+        metrics:
+          - "Organization has a formal 'learn from failure' process that is consistently used and valued"
+          - "Failure-to-recovery time at the organizational level decreases by 30%+ under your leadership"
+        resources:
+          - title: "Antifragile by Nassim Nicholas Taleb"
+            url: "https://www.amazon.com/Antifragile-Things-That-Disorder-Incerto/dp/0812979680"
+            type: "book"
+          - title: "Amy Edmondson - Psychological Safety (TEDx)"
+            url: "https://www.youtube.com/watch?v=LhoLuui9gX8"
+            type: "video"
+        practice:
+          - "Institute 'failure Fridays' or equivalent: a regular forum where team members share failures and lessons learned, celebrated rather than punished (1 hour/month)"
+          - "Design a 'blameless post-mortem' template and make it mandatory for all significant failures. Review the quality of learning extracted quarterly (2 hours to design, ongoing)"
+        projects:
+          - "Build an 'antifragile operating system' for your organization: design systems that use failure as input (blameless post-mortems, rapid iteration cycles, experimentation budgets), measure organizational resilience over time, and demonstrate that the organization improves faster because of how it handles failure"
+        tips:
+          - "Antifragility is not about avoiding failure — it is about structuring the environment so that failures make the system stronger. Small, frequent failures with fast learning loops are vastly better than rare catastrophic failures."
+    tags: ["resilience", "mindset", "recovery"]
+
+  # ── SYSTEMS & LEVERAGE ────────────────────────────────────────────────────────
+  - id: "business/high-agency/creating-systems-and-leverage"
+    title: "Creating Systems & Leverage"
+    description: >
+      The capstone skill of high agency: building systems that compound your
+      impact beyond your personal effort. High-agency people do not just work
+      hard — they build machines that work while they sleep. This includes
+      automation, delegation, process design, and the strategic removal of
+      yourself as a bottleneck. The goal is to transition from linear output
+      (your hours times your effort) to exponential output (systems that multiply
+      your impact).
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies repetitive tasks in your workflow and creates simple systems to reduce manual effort. Documents processes so others can follow them."
+        metrics:
+          - "Automates or systematizes at least 2 repetitive tasks per quarter"
+          - "Creates written documentation for at least 3 processes that were previously only in your head"
+        resources:
+          - title: "Naval Ravikant - How to Get Rich (Leverage)"
+            url: "https://nav.al/rich"
+            type: "article"
+          - title: "The E-Myth Revisited by Michael Gerber"
+            url: "https://www.amazon.com/Myth-Revisited-Small-Businesses-About/dp/0887307280"
+            type: "book"
+        practice:
+          - "Track how you spend your time for 1 week. Identify the top 3 tasks that are repetitive, low-judgment, and could be systematized (1 hour to review)"
+          - "Pick your most repetitive task and create a simple checklist or template that would allow someone else to do it. Test it with a colleague (1 hour)"
+        projects:
+          - "Identify a process you do manually at least weekly, then create a system (checklist, template, simple automation, or delegation) that reduces the time by 50%. Measure the time saved over 1 month."
+        tips:
+          - "The test of a good system: could someone else run it without calling you? If the answer is no, it is not a system yet — it is still tribal knowledge."
+          - "Start with the boring stuff. Automating a 10-minute daily task saves 40+ hours per year."
+      - level: intermediate
+        criteria: >
+          Designs systems that create leverage — processes, tools, or teams that
+          multiply your output. Delegates effectively, building clear playbooks
+          and accountability structures. Thinks about work in terms of systems
+          rather than tasks.
+        metrics:
+          - "Personal output increases by 2x+ through systems and delegation without increasing hours worked"
+          - "At least 3 processes you created are run independently by others with less than 1 hour of your time per week"
+        resources:
+          - title: "The 4-Hour Workweek by Tim Ferriss"
+            url: "https://www.amazon.com/4-Hour-Workweek-Escape-Live-Anywhere/dp/0307465357"
+            type: "book"
+          - title: "Sam Altman - Productivity"
+            url: "https://blog.samaltman.com/productivity"
+            type: "article"
+        practice:
+          - "For each of your responsibilities, ask: 'can this be (1) eliminated, (2) automated, (3) delegated, or (4) do I need to do it personally?' Apply the framework to your full task list (1 hour)"
+          - "Practice delegation by writing a 'delegation brief' for one task: the outcome you want, the constraints, the decision rights, and when to escalate. Hand it off and resist the urge to micromanage (ongoing)"
+        projects:
+          - "Build a system that allows you to 'take a vacation' from one of your responsibilities — a playbook so complete that someone else runs it for 2 weeks without your involvement, and the output quality stays within 90%"
+        tips:
+          - "The leverage formula: code scales infinitely, media scales broadly, people scale linearly, your personal time does not scale at all. Invest your time in building things in the first three categories."
+      - level: advanced
+        criteria: >
+          Builds systems that compound — each system you create enables the
+          creation of more systems. Successfully removes yourself as a bottleneck
+          from multiple functions. Creates organizational infrastructure that
+          persists and improves after you leave.
+        metrics:
+          - "At least 2 systems you built continue to operate and improve without your involvement for 6+ months"
+          - "Your team's output-per-person is measurably higher than comparable teams, attributable to systems you designed"
+        resources:
+          - title: "High Output Management by Andy Grove"
+            url: "https://www.amazon.com/High-Output-Management-Andrew-Grove/dp/0679762884"
+            type: "book"
+          - title: "Keith Rabois - How to Operate (Lecture 14, How to Start a Startup)"
+            url: "https://www.youtube.com/watch?v=6fQHLK1aIBs"
+            type: "video"
+        practice:
+          - "Conduct a quarterly 'leverage audit': for each hour you spend, ask 'what is the output multiplier of this hour?' Ruthlessly reallocate time from low-leverage to high-leverage activities (2 hours)"
+          - "Identify where you are the bottleneck: what decisions, approvals, or tasks are waiting on you? Design a system or delegation path to eliminate each bottleneck (1 hour/month)"
+        projects:
+          - "Build a 'compounding system' — a process, tool, or team that not only runs without you but actively improves over time through built-in feedback loops. Examples: a hiring pipeline that gets better with each hire, a knowledge base that grows with each project."
+        tips:
+          - "Andy Grove's key insight: your output as a manager is the output of your organization. The highest-leverage activity is not doing work — it is building the systems that make everyone else more productive."
+      - level: expert
+        criteria: >
+          Architects organizations for maximum leverage. Designs systems of systems
+          — operating models, organizational structures, and cultural norms that
+          enable hundreds or thousands of people to act with high agency
+          simultaneously. Thinks in terms of decades and compounding.
+        metrics:
+          - "Organization operates effectively at 2-3x scale without proportional increase in coordination overhead"
+          - "Systems you designed are recognized as organizational competitive advantages"
+        resources:
+          - title: "The Almanack of Naval Ravikant by Eric Jorgenson"
+            url: "https://www.amazon.com/Almanack-Naval-Ravikant-Wealth-Happiness/dp/1544514212"
+            type: "book"
+          - title: "Scale by Geoffrey West"
+            url: "https://www.amazon.com/Scale-Universal-Innovation-Sustainability-Organisms/dp/0143110900"
+            type: "book"
+        practice:
+          - "Map your organization's 'leverage architecture': where does effort multiply, and where does it get absorbed by coordination costs? Identify the top 3 highest-leverage system improvements (half day)"
+          - "Design a 'system-building system': a process for how your organization identifies, builds, and iterates on its own operating systems. Make system-building itself systematic (4 hours)"
+        projects:
+          - "Design and implement an organizational operating model that enables scale: decision-making frameworks, communication architectures, knowledge management systems, and performance feedback loops — all designed to compound organizational capability over time"
+        tips:
+          - "The ultimate leverage is building an organization where every person is a high-agency individual operating within well-designed systems. The systems provide structure; the people provide judgment."
+    tags: ["systems", "leverage", "scale", "capstone"]
+
+  # ── ADDITIONAL SUPPORTING NODES ───────────────────────────────────────────────
+  - id: "business/high-agency/asking-forgiveness"
+    title: "Acting Without Permission"
+    description: >
+      The specific skill of knowing when to act first and inform later. High-agency
+      people do not wait for permission to do obviously good things. This is not
+      about recklessness — it is about having the judgment to distinguish between
+      decisions that require permission and decisions that require only forgiveness.
+      The default should be action, not approval-seeking.
+    benchmarks:
+      - level: beginner
+        criteria: "Can identify decisions that do not require permission. Acts on small, reversible improvements without asking for approval first."
+        metrics:
+          - "Takes at least 2 actions per month that improve something without being asked or approved"
+          - "Can articulate the criteria for when to act autonomously vs. when to seek approval"
+        resources:
+          - title: "Paul Graham - Do Things That Don't Scale"
+            url: "https://www.paulgraham.com/ds.html"
+            type: "article"
+          - title: "Grace Hopper on Letterman"
+            url: "https://www.youtube.com/watch?v=1-vcErOPofQ"
+            type: "video"
+        practice:
+          - "Identify 3 small improvements you could make today without anyone's permission — then do them. Examples: fix a typo, improve a process doc, clean up a shared workspace (30 minutes)"
+          - "Create a personal decision matrix: list 5 types of decisions and categorize each as 'act then inform,' 'ask then act,' or 'ask and wait.' Use it for 2 weeks and refine (30 minutes to create)"
+        projects:
+          - "Make 5 unauthorized improvements to your team's workflow over 2 weeks. Track which ones people notice and appreciate, and which ones nobody cares about. Learn to calibrate."
+        tips:
+          - "The rule of thumb: if the worst outcome of acting without permission is that someone asks you to undo it, just act."
+          - "Asking for permission can be a form of risk avoidance disguised as politeness. Check your motives."
+      - level: intermediate
+        criteria: >
+          Consistently acts on opportunities without waiting for formal approval.
+          Can judge the scale of decisions that require permission vs. those that
+          don't. Builds trust with managers by demonstrating good judgment in
+          autonomous action.
+        metrics:
+          - "Manager trusts you to make decisions autonomously — approval is sought for fewer than 20% of your day-to-day actions"
+          - "Zero instances per quarter where acting without permission caused a negative outcome"
+        resources:
+          - title: "Netflix Culture Deck - Freedom & Responsibility"
+            url: "https://jobs.netflix.com/culture"
+            type: "article"
+          - title: "Jeff Bezos - 2016 Letter to Shareholders (Day 1 / Two-Way Doors)"
+            url: "https://www.aboutamazon.com/news/company-news/2016-letter-to-shareholders"
+            type: "article"
+        practice:
+          - "For every decision you are tempted to escalate, ask: 'is this a one-way door or a two-way door?' If it is a two-way door, make the call yourself and inform afterward (ongoing)"
+          - "Practice the 'inform, don't ask' format: send a message saying 'I'm going to do X unless I hear otherwise by end of day' instead of 'can I do X?' — track the difference in speed (ongoing)"
+        projects:
+          - "Identify a stalled initiative that is waiting for someone's approval. Take the initiative yourself — act on it, then present the results rather than the proposal."
+        tips:
+          - "Trust is earned through a track record of good autonomous decisions. Start small to build the track record, then gradually increase the scale of your autonomous actions."
+      - level: advanced
+        criteria: >
+          Operates with significant autonomy even in risk-averse organizations.
+          Can navigate political environments and take bold action while managing
+          relationships. Knows how to 'ask forgiveness' gracefully when needed.
+        metrics:
+          - "Executes at least 2 high-impact initiatives per year that were not formally approved before execution"
+          - "Maintains positive relationships with stakeholders even when acting ahead of formal approval"
+        resources:
+          - title: "The Hard Thing About Hard Things by Ben Horowitz"
+            url: "https://www.amazon.com/Hard-Thing-About-Things-Building/dp/0062273205"
+            type: "book"
+          - title: "Paul Graham - Startup = Growth"
+            url: "https://www.paulgraham.com/growth.html"
+            type: "article"
+        practice:
+          - "Study 3 examples of people who acted without permission and it worked (e.g., skunkworks projects, unauthorized product experiments). Extract the common patterns in how they managed the political fallout (2 hours)"
+          - "Practice 'pre-emptive trust building': before taking a bold action, invest time in building the relationship with the person whose forgiveness you might need (ongoing)"
+        projects:
+          - "Identify a high-impact opportunity that is stuck in approval limbo. Execute a minimum viable version, demonstrate results, and use the evidence to get retroactive buy-in."
+        tips:
+          - "The best 'ask forgiveness' actions create results so obviously good that forgiveness is unnecessary. Aim for that."
+      - level: expert
+        criteria: >
+          Creates organizational norms where autonomous action is the default.
+          Defines clear decision rights so people know when to act and when to
+          escalate. Builds a 'bias toward action' culture where permission-seeking
+          is the exception, not the rule.
+        metrics:
+          - "Organization's decision-making speed is measurably faster than competitors because people act autonomously by default"
+          - "Decision rights are clearly documented — everyone knows what they can do without asking"
+        resources:
+          - title: "No Rules Rules by Reed Hastings & Erin Meyer"
+            url: "https://www.amazon.com/No-Rules-Netflix-Culture-Reinvention/dp/1984877860"
+            type: "book"
+          - title: "Turn the Ship Around! by L. David Marquet"
+            url: "https://www.amazon.com/Turn-Ship-Around-Turning-Followers/dp/1591846404"
+            type: "book"
+        practice:
+          - "Audit your organization's approval processes: list every approval that is required, assess which ones add value vs. which ones are legacy bureaucracy, and propose eliminating the wasteful ones (half day)"
+          - "Design a 'decision rights matrix' for your team: clearly specify what decisions each role can make autonomously, what requires consultation, and what requires approval (2 hours)"
+        projects:
+          - "Transform your organization's decision-making culture: implement a decision rights framework, remove unnecessary approvals, create 'inform not ask' norms, and measure the impact on speed and quality over 6 months"
+        tips:
+          - "The paradox of autonomy: the more clearly you define the boundaries, the more freely people act within them. Clear decision rights create more agency, not less."
+    tags: ["autonomy", "execution", "judgment"]
+
+  - id: "business/high-agency/creating-luck"
+    title: "Creating Luck & Opportunity"
+    description: >
+      The skill of positioning yourself where good things are likely to happen.
+      High-agency people do not wait for luck — they manufacture it through
+      deliberate actions: putting themselves in rooms where opportunities emerge,
+      building relationships before they need them, sharing their work publicly,
+      and saying yes to high-variance situations. This is the synthesis of many
+      high-agency skills applied to the problem of creating serendipity.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes that 'luck' is often the result of preparation meeting opportunity. Takes at least one action per week that increases your surface area for good things to happen."
+        metrics:
+          - "Attends at least 2 events, meetups, or conferences per quarter where you meet new people"
+          - "Shares your work or ideas publicly (blog, social media, presentations) at least once per month"
+        resources:
+          - title: "Sam Altman - How to Be Successful"
+            url: "https://blog.samaltman.com/how-to-be-successful"
+            type: "article"
+          - title: "The Almanack of Naval Ravikant by Eric Jorgenson"
+            url: "https://www.amazon.com/Almanack-Naval-Ravikant-Wealth-Happiness/dp/1544514212"
+            type: "book"
+        practice:
+          - "Make a list of 5 'luck-generating' activities — things that increase the probability of something good happening to you (e.g., going to events, publishing writing, reaching out to interesting people). Do 1 per week (ongoing)"
+          - "Start a 'serendipity journal': when something good happens, trace back the chain of actions that led to it. Look for patterns in how your past actions created the conditions for the opportunity (15 minutes/week)"
+        projects:
+          - "Run a 30-day 'increase your luck surface area' experiment: share your work publicly every day for 30 days (Twitter, blog, presentations) and track what opportunities emerge."
+        tips:
+          - "Naval's four types of luck: (1) blind luck, (2) luck from hustling, (3) luck from being prepared to see opportunities, (4) luck that finds you because of your unique reputation. Focus on building (3) and (4)."
+          - "The simplest luck-creating action: tell people what you are working on and what you are looking for. You cannot find opportunities if nobody knows you exist."
+      - level: intermediate
+        criteria: >
+          Systematically builds relationships and visibility in your domain. Creates
+          opportunities by connecting people, sharing knowledge, and being known
+          as someone who makes things happen. Has a 'luck system' — repeatable
+          actions that generate serendipity.
+        metrics:
+          - "At least 3 meaningful opportunities per year came from relationships or visibility you intentionally cultivated"
+          - "Maintains an active network of 30+ people you stay in touch with across multiple domains"
+        resources:
+          - title: "Never Eat Alone by Keith Ferrazzi"
+            url: "https://www.amazon.com/Never-Eat-Alone-Expanded-Updated/dp/0385346654"
+            type: "book"
+          - title: "Paul Graham - Cities and Ambition"
+            url: "https://www.paulgraham.com/cities.html"
+            type: "article"
+        practice:
+          - "Implement a 'weak ties maintenance system': reach out to 5 people in your extended network each week with something genuinely useful to them — an article, an introduction, a congratulations (30 minutes/week)"
+          - "Practice 'generosity networking': before every event or meeting, ask 'how can I help this person?' rather than 'what can this person do for me?' (ongoing)"
+        projects:
+          - "Create a 'personal board of advisors' — 5-7 people in different fields who you meet with quarterly. Define what each person helps you with and how you provide value to them."
+        tips:
+          - "The best networkers are not transactional — they are genuinely curious about people and generous with their help. Luck follows people who create value for others."
+      - level: advanced
+        criteria: >
+          Known in your industry or community as a connector and catalyst. Creates
+          opportunities not just for yourself but for others — and those people
+          reciprocate. Has a personal brand that attracts opportunities passively.
+        metrics:
+          - "At least 5 significant opportunities per year come to you without active seeking — people think of you first"
+          - "Regularly receives introductions, speaking invitations, or collaboration proposals based on your reputation"
+        resources:
+          - title: "Paul Graham - Superlinear Returns"
+            url: "https://www.paulgraham.com/superlinear.html"
+            type: "article"
+          - title: "Give and Take by Adam Grant"
+            url: "https://www.amazon.com/Give-Take-Helping-Others-Success/dp/0143124986"
+            type: "book"
+        practice:
+          - "Make 2 introductions per week between people in your network who should know each other but don't. Track how many of those connections create mutual value (30 minutes/week)"
+          - "Write and publish a 'state of the field' essay or analysis in your domain once per quarter. Use it as a signal of expertise that attracts like-minded people (4 hours/quarter)"
+        projects:
+          - "Build a community around a topic you care about — a dinner series, an online group, a conference, or a newsletter. Measure how the community creates opportunities for its members, including you."
+        tips:
+          - "At the advanced level, your reputation IS your luck. The question is not 'how do I find opportunities?' but 'what reputation do I need so that opportunities find me?'"
+      - level: expert
+        criteria: >
+          Creates environments and organizations that systematically generate
+          luck for many people — incubators, communities, marketplaces,
+          platforms. Designs systems where serendipity happens by default.
+        metrics:
+          - "Organization or community you built has generated measurable opportunities for 50+ people"
+          - "Known as a 'kingmaker' or 'ecosystem builder' in your domain"
+        resources:
+          - title: "Paul Graham - How Y Combinator Started"
+            url: "https://www.paulgraham.com/ycstart.html"
+            type: "article"
+          - title: "Reid Hoffman - The Startup of You"
+            url: "https://www.amazon.com/Start-up-You-Future-Yourself-Transform/dp/0307888908"
+            type: "book"
+        practice:
+          - "Design a 'serendipity engine': a repeatable event, process, or platform that brings together high-quality people and creates opportunities for all of them (ongoing)"
+          - "Mentor 3 people per year in the specific skill of creating their own luck — help them build networks, visibility, and opportunity-generating habits (ongoing)"
+        projects:
+          - "Build a platform, community, or organization that systematically creates opportunities for its members — then measure the density and quality of serendipitous connections it generates over 1 year"
+        tips:
+          - "The highest leverage form of luck creation is building a platform where other people's luck-creating activities benefit everyone in the network. This is the essence of ecosystem building."
+    tags: ["networking", "serendipity", "opportunity"]
+
+# ── RELATIONSHIPS ──────────────────────────────────────────────────────────────
+relationships:
+  # ── Foundation layer: ownership enables everything ─────────────────────────
+  - source: "business/high-agency/ownership-mindset"
+    target: "business/high-agency/bias-toward-action"
+    type: "requires"
+    note: "You cannot bias toward action if you do not believe your actions matter — ownership mindset is the prerequisite for a bias toward action"
+
+  - source: "business/high-agency/ownership-mindset"
+    target: "business/high-agency/resourcefulness"
+    type: "enables"
+    note: "Ownership mindset drives resourcefulness — when you own the outcome, you find a way"
+
+  - source: "business/high-agency/ownership-mindset"
+    target: "business/high-agency/resilience-and-recovery"
+    type: "enables"
+    note: "Ownership over your response to adversity is the foundation of resilience"
+
+  # ── Action and resourcefulness feed external skills ────────────────────────
+  - source: "business/high-agency/bias-toward-action"
+    target: "business/high-agency/comfort-with-ambiguity"
+    type: "enables"
+    note: "A bias toward action is how you develop comfort with ambiguity — you learn to act despite uncertainty"
+
+  - source: "business/high-agency/bias-toward-action"
+    target: "business/high-agency/asking-forgiveness"
+    type: "enables"
+    note: "A bias toward action is the engine that drives autonomous action — speed requires not waiting for permission"
+
+  - source: "business/high-agency/resourcefulness"
+    target: "business/high-agency/proactive-communication"
+    type: "enables"
+    note: "Resourceful people learn that proactive communication is one of the most powerful problem-solving tools"
+
+  - source: "business/high-agency/resourcefulness"
+    target: "business/high-agency/self-directed-learning"
+    type: "enables"
+    note: "Resourcefulness and self-directed learning share the same muscle: figuring things out without being told"
+
+  # ── External capability feeds strategic skills ─────────────────────────────
+  - source: "business/high-agency/comfort-with-ambiguity"
+    target: "business/high-agency/strategic-risk-taking"
+    type: "requires"
+    note: "Strategic risk-taking requires comfort with ambiguity — all bets involve uncertainty"
+
+  - source: "business/high-agency/proactive-communication"
+    target: "business/high-agency/influencing-without-authority"
+    type: "requires"
+    note: "Influence without authority depends on proactive communication — you must reach out first"
+
+  - source: "business/high-agency/proactive-communication"
+    target: "business/high-agency/creating-luck"
+    type: "enables"
+    note: "Creating luck requires putting yourself out there — proactive communication is the primary mechanism"
+
+  # ── Strategic skills feed systems and leverage ─────────────────────────────
+  - source: "business/high-agency/influencing-without-authority"
+    target: "business/high-agency/creating-systems-and-leverage"
+    type: "enables"
+    note: "Building systems at scale requires influencing people and teams over whom you have no direct authority"
+
+  - source: "business/high-agency/self-directed-learning"
+    target: "business/high-agency/creating-systems-and-leverage"
+    type: "enables"
+    note: "Building effective systems requires rapidly learning new domains — automation, delegation, process design"
+
+  - source: "business/high-agency/strategic-risk-taking"
+    target: "business/high-agency/creating-luck"
+    type: "enables"
+    note: "Creating luck requires making strategic bets — putting yourself in high-variance situations"
+
+  # ── Complementary relationships ────────────────────────────────────────────
+  - source: "business/high-agency/resilience-and-recovery"
+    target: "business/high-agency/strategic-risk-taking"
+    type: "complementary"
+    note: "Resilience makes risk-taking sustainable — you can afford bigger bets when you know you can recover from losses"
+
+  - source: "business/high-agency/bias-toward-action"
+    target: "business/high-agency/self-directed-learning"
+    type: "complementary"
+    note: "Action and learning form a virtuous cycle — action produces feedback, feedback drives learning, learning improves action"
+
+  - source: "business/high-agency/ownership-mindset"
+    target: "business/high-agency/asking-forgiveness"
+    type: "enables"
+    note: "Ownership mindset gives you the confidence to act without permission — when you own the outcome, you are willing to ask forgiveness rather than seek approval"
+
+  # ── Capstone convergence ───────────────────────────────────────────────────
+  - source: "business/high-agency/creating-systems-and-leverage"
+    target: "business/high-agency/creating-luck"
+    type: "enables"
+    note: "Systems and leverage enable luck creation at scale — building platforms and communities that generate serendipity for many people"

@@ -433,4 +433,189 @@ export const TREE_OVERVIEWS: Record<string, TreeOverview> = {
     ],
     timeToIntermediate: "6-12 months of consistent posting (3-5 posts per week)",
   },
+
+  "business/conflict-resolution": {
+    hook: "From avoiding tough conversations to resolving disputes with confidence",
+    beginnerProfile:
+      "A beginner recognizes when conflict is happening, can manage their emotional reactions in minor disagreements, and is learning to use I-statements instead of blame.",
+    expertProfile:
+      "An expert designs conflict resolution systems for organizations, mediates complex multi-party disputes, and builds cultures where healthy conflict drives better outcomes.",
+    examples: [
+      {
+        name: "William Ury",
+        level: "expert",
+        description:
+          "Co-author of Getting to Yes and co-founder of the Harvard Program on Negotiation. Has mediated conflicts from corporate boardrooms to international peace negotiations.",
+      },
+      {
+        name: "Marshall Rosenberg",
+        level: "expert",
+        description:
+          "Creator of Nonviolent Communication (NVC), a framework used worldwide for resolving conflicts through empathy, observation, and needs-based dialogue.",
+      },
+      {
+        name: "A new manager handling their first team disagreement",
+        level: "beginner",
+        description:
+          "Can stay calm during a heated conversation, listens to both sides, and attempts to find common ground. Still tends to avoid conflict rather than address it head-on.",
+      },
+    ],
+    whatYouWillLearn: [
+      "Self-awareness and emotional regulation under pressure",
+      "Active listening and perspective-taking in conflict",
+      "Nonviolent Communication (NVC) framework",
+      "De-escalation techniques for heated situations",
+      "Interest-based negotiation and compromise",
+      "Mediation, facilitation, and post-conflict repair",
+    ],
+    timeToIntermediate: "6-12 months of intentional practice in real conflicts",
+  },
+
+  "business/dating": {
+    hook: "From awkward first dates to building meaningful romantic connections",
+    beginnerProfile:
+      "A beginner understands their own attachment style and values, is building social confidence, and is learning to have engaging conversations with potential partners.",
+    expertProfile:
+      "An expert navigates the full spectrum of romantic connection — from meeting someone new to building lasting partnerships — with emotional intelligence, clear communication, and authentic vulnerability.",
+    examples: [
+      {
+        name: "Esther Perel",
+        level: "expert",
+        description:
+          "Psychotherapist and author of Mating in Captivity. Her work on desire, intimacy, and modern relationships has reshaped how millions think about romantic connection.",
+      },
+      {
+        name: "Logan Ury",
+        level: "expert",
+        description:
+          "Behavioral scientist and author of How to Not Die Alone. Director of Relationship Science at Hinge, applying research to help people make better dating decisions.",
+      },
+      {
+        name: "Someone re-entering the dating world",
+        level: "beginner",
+        description:
+          "Has reflected on what they want in a partner, set up a dating profile with intentional photos, and is going on first dates while learning to manage nerves and expectations.",
+      },
+    ],
+    whatYouWillLearn: [
+      "Self-knowledge: attachment styles, values, and relationship patterns",
+      "Social confidence and approachability",
+      "Conversation skills and reading social cues",
+      "Online dating strategy and profile optimization",
+      "Vulnerability, emotional connection, and boundary setting",
+      "Navigating rejection and transitioning to commitment",
+    ],
+    timeToIntermediate: "6-12 months of active, intentional dating",
+  },
+
+  "business/listening": {
+    hook: "From waiting to talk to truly hearing what others mean",
+    beginnerProfile:
+      "A beginner can put their phone away, maintain eye contact, and let someone finish speaking without interrupting — but is still formulating their response while the other person talks.",
+    expertProfile:
+      "An expert listens at multiple levels simultaneously — words, emotion, body language, and what is left unsaid — and creates environments where others feel deeply heard and understood.",
+    examples: [
+      {
+        name: "Oprah Winfrey",
+        level: "expert",
+        description:
+          "Widely regarded as one of the greatest interviewers of all time. Her ability to listen deeply and follow the emotional thread of a conversation draws out stories people have never told anyone.",
+      },
+      {
+        name: "Carl Rogers",
+        level: "expert",
+        description:
+          "Founder of person-centered therapy. Pioneered empathic listening as a therapeutic tool, demonstrating that feeling truly heard is itself transformative.",
+      },
+      {
+        name: "A professional taking a listening skills workshop",
+        level: "beginner",
+        description:
+          "Can paraphrase what someone said and ask follow-up questions. Still catches themselves planning their response mid-conversation but is becoming aware of the habit.",
+      },
+    ],
+    whatYouWillLearn: [
+      "Attention, presence, and silencing internal noise",
+      "Non-verbal listening cues and body language",
+      "Paraphrasing, reflecting, and asking powerful questions",
+      "Empathic listening — hearing emotion beneath words",
+      "Critical listening and evaluating arguments",
+      "Group facilitation and listening across differences",
+    ],
+    timeToIntermediate: "3-6 months of daily conscious practice",
+  },
+
+  "business/high-agency": {
+    hook: "From waiting for permission to making things happen",
+    beginnerProfile:
+      "A beginner recognizes the difference between reactive and proactive behavior, takes ownership of their own tasks, and is starting to solve problems without being told exactly how.",
+    expertProfile:
+      "An expert operates at the frontier of what is possible — creating opportunities where none exist, building systems that compound, and modeling a level of initiative that reshapes the organizations and communities around them.",
+    examples: [
+      {
+        name: "Elon Musk",
+        level: "expert",
+        description:
+          "Repeatedly entered industries with massive barriers (payments, space, electric vehicles, AI) and found ways to make things happen that experts said were impossible. The archetype of high agency.",
+      },
+      {
+        name: "Sheryl Sandberg",
+        level: "expert",
+        description:
+          "Took initiative to build her career from Treasury to Google to Facebook COO. Known for leaning in, creating opportunities, and building influence without waiting for permission.",
+      },
+      {
+        name: "A junior employee who ships without being asked",
+        level: "beginner",
+        description:
+          "Notices a broken process, proposes a fix, and implements it over a weekend. Sends cold emails to people they want to learn from. Defaults to action over asking for instructions.",
+      },
+    ],
+    whatYouWillLearn: [
+      "Ownership mindset and internal locus of control",
+      "Bias toward action and shipping over planning",
+      "Resourcefulness and creative problem-solving",
+      "Comfort with ambiguity and strategic risk-taking",
+      "Influencing without authority and proactive communication",
+      "Building compounding systems and creating leverage",
+    ],
+    timeToIntermediate: "6-12 months of deliberately choosing action over passivity",
+  },
+
+  "business/grit": {
+    hook: "From giving up when it gets hard to persevering through years of challenge",
+    beginnerProfile:
+      "A beginner understands that talent alone is not enough, has set a meaningful long-term goal, and is building their first sustained daily practice habit.",
+    expertProfile:
+      "An expert has maintained passionate commitment to a top-level goal for years, persevered through major setbacks that would stop most people, and builds environments that cultivate grit in others.",
+    examples: [
+      {
+        name: "Angela Duckworth",
+        level: "expert",
+        description:
+          "Psychologist who defined and popularized the science of grit. Her research at UPenn shows that perseverance and passion for long-term goals predicts success beyond talent or IQ.",
+      },
+      {
+        name: "David Goggins",
+        level: "expert",
+        description:
+          "Former Navy SEAL who went from 300 lbs and working as an exterminator to completing 60+ ultra-marathons and setting pull-up world records through sheer mental toughness and refusal to quit.",
+      },
+      {
+        name: "A first-year medical student in their hardest semester",
+        level: "beginner",
+        description:
+          "Studies 6 hours daily despite wanting to quit, has an accountability partner, and journals about setbacks. Scored in the top 20% of the Grit Scale after learning about deliberate practice.",
+      },
+    ],
+    whatYouWillLearn: [
+      "Goal setting and connecting daily action to long-term vision",
+      "Deliberate practice using Ericsson's framework",
+      "Growth mindset and learning from failure",
+      "Self-discipline, habits, and routine building",
+      "Mental toughness and discomfort tolerance",
+      "Patience, delayed gratification, and strategic adaptation",
+    ],
+    timeToIntermediate: "12-18 months of sustained effort toward a single goal",
+  },
 };
