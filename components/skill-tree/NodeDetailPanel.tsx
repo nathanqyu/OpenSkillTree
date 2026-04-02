@@ -296,27 +296,17 @@ function NodeLink({
 // ---------------------------------------------------------------------------
 
 function LevelAssessment({
-  treeId,
-  nodeId,
   benchmarks,
   currentLevel,
   onLevelChange,
 }: {
-  treeId: string;
-  nodeId: string;
   benchmarks: SkillBenchmark[];
   currentLevel: BenchmarkLevelValue | null;
   onLevelChange: (level: BenchmarkLevelValue | null) => void;
 }) {
   const availableLevels = getAvailableLevels(benchmarks);
-  const storageKey = `ost_lvl_${treeId}_${nodeId}`;
 
   const handleChange = (level: BenchmarkLevelValue | null) => {
-    try {
-      sessionStorage.setItem(storageKey, level ?? "null");
-    } catch {
-      // SSR / private browsing
-    }
     onLevelChange(level);
   };
 
@@ -555,31 +545,8 @@ export function NodeDetailPanel({
     levelMap[currentNodeId ?? ""] ?? null;
   const isRoot = node ? isRootNode(node.id, allEdges) : false;
 
-  // Load persisted level assessment on node change
-  useEffect(() => {
-    if (!currentNodeId) return;
-    try {
-      const savedLevel = sessionStorage.getItem(`ost_lvl_${treeId}_${currentNodeId}`);
-      if (savedLevel && savedLevel !== "null" && LEVEL_ORDER.includes(savedLevel as BenchmarkLevelValue)) {
-        onLevelChange(currentNodeId, savedLevel as BenchmarkLevelValue);
-        // Derive progress from level
-        const availableLevels = node ? getAvailableLevels(node.benchmarks) : [];
-        const status = deriveProgressStatus(savedLevel as BenchmarkLevelValue, availableLevels);
-        onProgressChange(currentNodeId, status);
-      }
-      // Also load legacy progress
-      const savedProgress = sessionStorage.getItem(`ost_level_${treeId}_${currentNodeId}`);
-      if (savedProgress && ["locked", "in_progress", "completed"].includes(savedProgress)) {
-        // Only apply legacy if no level-aware assessment exists
-        if (!savedLevel || savedLevel === "null") {
-          onProgressChange(currentNodeId, savedProgress as UserProgressStatus);
-        }
-      }
-    } catch {
-      // SSR / private browsing
-    }
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [currentNodeId, treeId]);
+  // Progress is now loaded centrally by SkillTreeClient from localStorage.
+  // No per-node sessionStorage loading needed.
 
   // Handle level change — also update progress map
   const handleLevelChange = useCallback(
@@ -710,8 +677,6 @@ export function NodeDetailPanel({
           {/* Level-aware self-assessment */}
           <div className="mt-3">
             <LevelAssessment
-              treeId={treeId}
-              nodeId={node.id}
               benchmarks={node.benchmarks}
               currentLevel={currentLevel}
               onLevelChange={handleLevelChange}

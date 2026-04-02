@@ -1,18 +1,9 @@
 import Link from "next/link";
 import type { TreeListItem } from "@/types/skill-tree";
-
-const DOMAIN_COLORS: Record<string, string> = {
-  Sports: "bg-green-100 text-green-800 dark:bg-green-900/30 dark:text-green-400",
-  Technology: "bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-400",
-  "Creative Arts": "bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-400",
-  Business: "bg-amber-100 text-amber-800 dark:bg-amber-900/30 dark:text-amber-400",
-  Science: "bg-cyan-100 text-cyan-800 dark:bg-cyan-900/30 dark:text-cyan-400",
-};
+import { DOMAIN_BADGE, DOMAIN_BADGE_FALLBACK } from "@/lib/design-tokens";
 
 export default function TreeCard({ tree }: { tree: TreeListItem }) {
-  const domainColor =
-    DOMAIN_COLORS[tree.domain] ??
-    "bg-zinc-100 text-zinc-700 dark:bg-zinc-800 dark:text-zinc-300";
+  const domainColor = DOMAIN_BADGE[tree.domain] ?? DOMAIN_BADGE_FALLBACK;
 
   const incomplete = !tree.hasBenchmarks;
 

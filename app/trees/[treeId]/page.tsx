@@ -178,8 +178,13 @@ export default async function TreePage({ params }: PageParams) {
         </div>
       )}
 
-      {/* Interactive graph + node detail panel */}
-      <SkillTreeClient treeId={tree.id} nodes={nodes} edges={edges} />
+      {/* Interactive roadmap + node detail panel */}
+      <SkillTreeClient
+        treeId={tree.id}
+        treeMeta={{ pathId: tree.pathId, title: tree.title, domain: tree.domain }}
+        nodes={nodes}
+        edges={edges}
+      />
     </div>
   );
 }

@@ -154,16 +154,27 @@ export default async function GalleryPage({
     counts[row.domain] = parseInt(row.count, 10);
   }
 
+  const totalSkills = trees.reduce((s, t) => s + t.nodeCount, 0);
+  const domainCount = Object.keys(counts).length || 5;
+
   return (
     <div>
-      <div className="mb-8">
-        <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-          Skill Trees
+      {/* Hero */}
+      <div className="mb-10 text-center">
+        <h1 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
+          Master any skill
         </h1>
-        <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-          The open standard for measuring human skills — explore what mastery
-          looks like in any domain.
+        <p className="mx-auto mt-3 max-w-md text-base text-zinc-500 dark:text-zinc-400">
+          See the path from beginner to expert. Track your progress. Know
+          exactly what to learn next.
         </p>
+        <div className="mt-4 flex items-center justify-center gap-4 text-sm text-zinc-400 dark:text-zinc-500">
+          <span>{trees.length} skill trees</span>
+          <span className="h-1 w-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+          <span>{totalSkills} skills</span>
+          <span className="h-1 w-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
+          <span>{domainCount} domains</span>
+        </div>
       </div>
 
       <SearchBar />
