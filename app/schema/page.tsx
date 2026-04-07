@@ -47,39 +47,6 @@ function Badge({
   );
 }
 
-function FieldRow({
-  field,
-  type,
-  required,
-  description,
-}: {
-  field: string;
-  type: string;
-  required: boolean;
-  description: string;
-}) {
-  return (
-    <tr className="border-b border-zinc-100 dark:border-zinc-800">
-      <td className="py-2.5 pr-4 align-top font-mono text-sm text-zinc-900 dark:text-zinc-100">
-        {field}
-      </td>
-      <td className="py-2.5 pr-4 align-top">
-        <Badge color="blue">{type}</Badge>
-      </td>
-      <td className="py-2.5 pr-4 align-top text-xs">
-        {required ? (
-          <Badge color="red">required</Badge>
-        ) : (
-          <Badge color="zinc">optional</Badge>
-        )}
-      </td>
-      <td className="py-2.5 align-top text-sm text-zinc-600 dark:text-zinc-400">
-        {description}
-      </td>
-    </tr>
-  );
-}
-
 // ---------------------------------------------------------------------------
 // Page
 // ---------------------------------------------------------------------------

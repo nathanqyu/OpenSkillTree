@@ -7,8 +7,8 @@ import { render, screen } from "@testing-library/react";
 import type { SkillNode, SkillEdge } from "@/types/skill-tree";
 
 // Mock reactflow before importing the component
-vi.mock("reactflow", () => {
-  const React = require("react");
+vi.mock("reactflow", async () => {
+  const React = await import("react");
   return {
     __esModule: true,
     default: ({ children }: { children?: React.ReactNode }) =>

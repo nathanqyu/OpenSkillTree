@@ -513,21 +513,27 @@ export function NodeDetailPanel({
   nodeId,
   allNodes,
   allEdges,
-  treeId: _treeId,
-  progressMap: _progressMap,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  treeId,
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  progressMap,
   levelMap,
   onProgressChange,
   onLevelChange,
   onGraphNavigate,
   onClose,
 }: NodeDetailPanelProps) {
-  const [navHistory, setNavHistory] = useState<string[]>([]);
+  const [navHistory, setNavHistory] = useState<string[]>(
+    nodeId ? [nodeId] : [],
+  );
   const [navIndex, setNavIndex] = useState(0);
   const [visible, setVisible] = useState(false);
   const [descExpanded, setDescExpanded] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
 
-  // Sync history when external node changes (graph click)
+  // Sync history when external node changes (graph click).
+  // This is intentional — we need to derive internal state from the nodeId prop.
+  /* eslint-disable react-hooks/set-state-in-effect */
   useEffect(() => {
     if (!nodeId) {
       setVisible(false);
@@ -538,6 +544,7 @@ export function NodeDetailPanel({
     setDescExpanded(false);
     setVisible(true);
   }, [nodeId]);
+  /* eslint-enable react-hooks/set-state-in-effect */
 
   const currentNodeId = navHistory[navIndex] ?? null;
   const node = allNodes.find((n) => n.id === currentNodeId) ?? null;
@@ -551,27 +558,21 @@ export function NodeDetailPanel({
   // No per-node sessionStorage loading needed.
 
   // Handle level change — also update progress map
-  const handleLevelChange = useCallback(
-    (level: BenchmarkLevelValue | null) => {
-      if (!currentNodeId || !node) return;
-      onLevelChange(currentNodeId, level);
-      const availableLevels = getAvailableLevels(node.benchmarks);
-      const status = deriveProgressStatus(level, availableLevels);
-      onProgressChange(currentNodeId, status);
-    },
-    [currentNodeId, node, onLevelChange, onProgressChange]
-  );
+  const handleLevelChange = (level: BenchmarkLevelValue | null) => {
+    if (!currentNodeId || !node) return;
+    onLevelChange(currentNodeId, level);
+    const availableLevels = getAvailableLevels(node.benchmarks);
+    const status = deriveProgressStatus(level, availableLevels);
+    onProgressChange(currentNodeId, status);
+  };
 
   // Navigate within panel
-  const handlePanelNavigate = useCallback(
-    (targetNodeId: string) => {
-      const newHistory = [...navHistory.slice(0, navIndex + 1), targetNodeId];
-      setNavHistory(newHistory);
-      setNavIndex(newHistory.length - 1);
-      onGraphNavigate(targetNodeId);
-    },
-    [navHistory, navIndex, onGraphNavigate]
-  );
+  const handlePanelNavigate = (targetNodeId: string) => {
+    const newHistory = [...navHistory.slice(0, navIndex + 1), targetNodeId];
+    setNavHistory(newHistory);
+    setNavIndex(newHistory.length - 1);
+    onGraphNavigate(targetNodeId);
+  };
 
   const canGoBack = navIndex > 0;
   const canGoForward = navIndex < navHistory.length - 1;

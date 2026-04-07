@@ -74,6 +74,7 @@ export function SkillTreeClient({
   const [progressMap, setProgressMap] = useState<EphemeralProgressMap>({});
   const [levelMap, setLevelMap] = useState<EphemeralLevelMap>({});
   const levelMapRef = useRef(levelMap);
+  // eslint-disable-next-line react-hooks/refs
   levelMapRef.current = levelMap;
 
   const { toasts, show: showToast } = useToast();

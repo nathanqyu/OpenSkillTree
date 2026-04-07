@@ -41,7 +41,7 @@ const mockNodes = [
   },
 ];
 
-const mockEdges: unknown[] = [];
+const mockEdges: object[] = [];
 
 describe("GET /api/trees/:treeId/export", () => {
   beforeEach(() => {

@@ -263,14 +263,17 @@ function SkillTreeGraphInner({
   const { setCenter } = useReactFlow();
 
   // Use a ref so the node onClick always calls the latest callback
-  // without needing to re-run layout or sync effects
+  // without needing to re-run layout or sync effects.
   const onNodeClickRef = useRef(onNodeClick);
+  // eslint-disable-next-line react-hooks/refs
   onNodeClickRef.current = onNodeClick;
 
   const selectedNodeIdRef = useRef(selectedNodeId);
+  // eslint-disable-next-line react-hooks/refs
   selectedNodeIdRef.current = selectedNodeId;
 
   const progressMapRef = useRef(progressMap);
+  // eslint-disable-next-line react-hooks/refs
   progressMapRef.current = progressMap;
 
   // Stable callback that delegates to the ref

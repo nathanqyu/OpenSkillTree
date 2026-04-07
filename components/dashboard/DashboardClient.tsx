@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { getAllProgress, type StoredTreeProgress } from "@/lib/progress-store";
 import { DOMAIN_BADGE, DOMAIN_BADGE_FALLBACK } from "@/lib/design-tokens";
@@ -73,11 +73,8 @@ function ProgressCard({ data }: { data: StoredTreeProgress }) {
 // ---------------------------------------------------------------------------
 
 export default function DashboardClient() {
-  const [progress, setProgress] = useState<StoredTreeProgress[]>([]);
-  const [loaded, setLoaded] = useState(false);
-
-  useEffect(() => {
-    const all = getAllProgress()
+  const [progress] = useState<StoredTreeProgress[]>(() =>
+    getAllProgress()
       .filter(
         (p) => Object.values(p.levels).some((l) => l !== null), // has activity
       )
@@ -85,12 +82,8 @@ export default function DashboardClient() {
         (a, b) =>
           new Date(b.lastActivity).getTime() -
           new Date(a.lastActivity).getTime(),
-      );
-    setProgress(all);
-    setLoaded(true);
-  }, []);
-
-  if (!loaded) return null;
+      ),
+  );
 
   const totalAssessed = progress.reduce(
     (s, p) => s + Object.values(p.levels).filter((l) => l !== null).length,
