@@ -28,7 +28,8 @@ export type SkillDomain =
   | "Technology"
   | "Creative Arts"
   | "Business"
-  | "Science";
+  | "Science"
+  | "Soft Skills";
 
 // ---------------------------------------------------------------------------
 // SkillTree
