@@ -25,7 +25,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               Schema
             </Link>
             <a
-              href="https://github.com/openskill-tree/openskill-tree"
+              href="https://github.com/nathanqyu/OpenSkillTree"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-zinc-900 dark:hover:text-zinc-50"

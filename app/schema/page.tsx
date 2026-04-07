@@ -70,7 +70,7 @@ export default function SchemaPage() {
           Everything you need to contribute a skill tree. Each file is a single
           YAML document validated against{" "}
           <a
-            href="https://github.com/openskill-tree/openskill-tree/blob/main/schema/skill-tree.schema.json"
+            href="https://github.com/nathanqyu/OpenSkillTree/blob/main/schema/skill-tree.schema.json"
             target="_blank"
             rel="noopener noreferrer"
             className="underline decoration-zinc-300 underline-offset-2 hover:text-zinc-900 dark:decoration-zinc-600 dark:hover:text-zinc-50"
@@ -790,7 +790,7 @@ pnpm ingest --force
               Ready to contribute? Read the full contribution guide.
             </p>
             <a
-              href="https://github.com/openskill-tree/openskill-tree/blob/main/CONTRIBUTING.md"
+              href="https://github.com/nathanqyu/OpenSkillTree/blob/main/CONTRIBUTING.md"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center gap-1.5 rounded-md bg-zinc-900 px-4 py-2 text-sm font-medium text-white hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"

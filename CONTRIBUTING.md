@@ -27,8 +27,8 @@ Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ```bash
 # Clone the repo
-git clone https://github.com/openskill-tree/openskill-tree.git
-cd openskill-tree
+git clone https://github.com/nathanqyu/OpenSkillTree.git
+cd OpenSkillTree
 
 # Install dependencies
 pnpm install
