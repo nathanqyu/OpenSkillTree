@@ -116,7 +116,7 @@ nodes:
             url: "https://www.amazon.com/Good-Great-Some-Companies-Others/dp/0066620996"
             type: "book"
           - title: "Angela Duckworth - Grit and Goal Hierarchies (Character Lab)"
-            url: "https://characterlab.org/tips-of-the-week/goal-hierarchy/"
+            url: "https://angeladuckworth.com/grit-scale/"
             type: "article"
         practice:
           - "Conduct an annual 'vision retreat' where you review the past year's decisions through the lens of your long-term vision and recalibrate for the next decade (half day)"
@@ -524,7 +524,7 @@ nodes:
             url: "https://selfdeterminationtheory.org/the-theory/"
             type: "article"
           - title: "Angela Duckworth - Character Lab Resources on Grit"
-            url: "https://characterlab.org/character-strengths/grit/"
+            url: "https://angeladuckworth.com/grit-scale/"
             type: "tool"
         practice:
           - "Audit your team or organization against self-determination theory: rate autonomy, competence, and relatedness on a 1-10 scale. Identify the weakest dimension and design one intervention to improve it (2 hours)"
@@ -559,7 +559,7 @@ nodes:
             url: "https://www.amazon.com/Cant-Hurt-Me-Master-Your/dp/1544512287"
             type: "book"
           - title: "Angela Duckworth - Grit and the Hard Thing Rule (Character Lab)"
-            url: "https://characterlab.org/tips-of-the-week/the-hard-thing-rule/"
+            url: "https://angeladuckworth.com/grit-book/"
             type: "article"
         practice:
           - "Implement Duckworth's 'Hard Thing Rule': choose one hard thing (an activity requiring daily deliberate practice) and commit to finishing the season or enrollment period before quitting. Start with a 30-day commitment (daily)"
