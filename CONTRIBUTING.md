@@ -1,10 +1,72 @@
 # Contributing to OpenSkillTree
 
-Community contributions are the growth engine of OpenSkillTree. This guide explains how domain experts — coaches, practitioners, certified instructors, and professionals — can contribute new skill trees.
+Community contributions are the growth engine of OpenSkillTree. Whether you're a domain expert contributing a skill tree or a developer improving the platform, this guide covers everything you need to get started.
+
+Please review our [Code of Conduct](CODE_OF_CONDUCT.md) before contributing.
 
 ---
 
-## Who Should Contribute
+## Table of Contents
+
+- [Development Setup](#development-setup)
+- [Contributing Skill Trees](#contributing-skill-trees)
+- [Contributing Code](#contributing-code)
+- [Bug Reports & Feature Requests](#bug-reports--feature-requests)
+
+---
+
+## Development Setup
+
+### Prerequisites
+
+- **Node.js** 20+
+- **pnpm** 9+ (`npm install -g pnpm`)
+- **PostgreSQL** 15+ (local or Docker)
+
+### Quick Start
+
+```bash
+# Clone the repo
+git clone https://github.com/openskill-tree/openskill-tree.git
+cd openskill-tree
+
+# Install dependencies
+pnpm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Edit .env.local with your PostgreSQL connection string:
+#   DATABASE_URL=postgresql://user:password@localhost:5432/openskill_tree
+
+# Create the database and run schema
+psql -d openskill_tree -f db/schema.sql
+
+# Ingest seed skill trees into the database
+pnpm ingest
+
+# Start the dev server
+pnpm dev
+```
+
+### Available Scripts
+
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start Next.js dev server |
+| `pnpm build` | Production build |
+| `pnpm lint` | Run ESLint |
+| `pnpm format` | Format code with Prettier |
+| `pnpm typecheck` | TypeScript type checking |
+| `pnpm test` | Run tests (Vitest) |
+| `pnpm validate` | Validate all YAML skill trees against the schema |
+| `pnpm ingest` | Ingest YAML files into the database |
+| `pnpm ingest:force` | Re-ingest all trees (drops existing data first) |
+
+---
+
+## Contributing Skill Trees
+
+### Who Should Contribute
 
 You are the right contributor if you:
 
@@ -213,20 +275,63 @@ nodes:
         criteria: "<Observable behavior at beginner level.>"
         metrics:
           - "<Quantitative threshold — e.g., '60%+ success rate'>"
+        resources:
+          - title: "<Resource title — be specific>"
+            url: "<Working URL — must be publicly accessible>"
+            type: "video"    # video | article | course | book | tool | exercise
+          - title: "<Another resource>"
+            url: "<URL>"
+            type: "article"
+        practice:
+          - "<Time>: <Drill description — e.g., '10 min: Shadow footwork drill, 10 reps'>"
+          - "<Time>: <Another drill>"
+        projects:
+          - "<Concrete deliverable — e.g., 'Build a calculator app using only vanilla JS'>"
+        tips:
+          - "<Common mistake to avoid — e.g., 'Don't skip the fundamentals'>"
       - level: intermediate
         criteria: "<Observable behavior at intermediate level.>"
         metrics:
           - "<Metric 1>"
           - "<Metric 2 (optional)>"
+        resources:
+          - title: "<Resource>"
+            url: "<URL>"
+            type: "video"
+        practice:
+          - "<Drill>"
+        projects:
+          - "<Project>"
+        tips:
+          - "<Tip>"
       - level: advanced
         criteria: "<Observable behavior at advanced level.>"
         metrics:
           - "<Metric 1>"
-          - "<Metric 2 (optional)>"
+        resources:
+          - title: "<Resource>"
+            url: "<URL>"
+            type: "article"
+        practice:
+          - "<Drill>"
+        projects:
+          - "<Project>"
+        tips:
+          - "<Tip>"
       - level: expert
         criteria: "<Observable behavior at expert level.>"
         metrics:
           - "<Metric — referenced to a real standard or competition context>"
+        resources:
+          - title: "<Resource>"
+            url: "<URL>"
+            type: "course"
+        practice:
+          - "<Drill>"
+        projects:
+          - "<Capstone project>"
+        tips:
+          - "<Expert-level insight>"
     tags: ["<tag1>", "<tag2>"]   # optional; searchable labels
 
   # Add 5–11 more nodes following the same pattern...
@@ -260,20 +365,32 @@ The pickleball tree (`data/seeds/sports/pickleball.yaml`) is the reference examp
 
 ## Validation
 
-Before submitting your PR, validate your YAML file to catch schema errors:
+Before submitting your PR, validate your YAML file against the JSON schema:
 
 ```bash
-npm run validate-seed data/seeds/<domain>/<tree-slug>.yaml
+# Validate all skill trees
+pnpm validate
+
+# Validate a specific file
+pnpm validate data/seeds/<domain>/<tree-slug>.yaml
 ```
 
-> **Note:** The schema validator script is under development. Until it is available, you can manually verify your file by:
-> 1. Checking indentation: the YAML must be valid — use a YAML linter (e.g., `yamllint`)
-> 2. Confirming all four benchmark levels (`beginner`, `intermediate`, `advanced`, `expert`) are present on every node
-> 3. Confirming every `metrics` array has at least one entry per level
-> 4. Confirming all `relationships` reference valid node IDs that exist in your `nodes` block
-> 5. Confirming the `tree.id`, all `node.id` values, and relationship `source`/`target` fields follow the `domain/tree-slug/node-slug` naming convention
+The validator checks:
+1. **YAML syntax** — valid indentation and structure
+2. **Schema compliance** — all required fields present, correct types, valid enums
+3. **Benchmark completeness** — all four levels (`beginner`, `intermediate`, `advanced`, `expert`) on every node
+4. **Metrics requirement** — at least one metric per benchmark level
+5. **ID format** — `domain/tree-slug/node-slug` naming convention
+6. **Relationship integrity** — all `source`/`target` IDs reference existing nodes
 
-A link to the formal schema documentation will be added here once published.
+You can also test ingestion locally:
+
+```bash
+pnpm ingest:force   # Re-ingests all trees into your local database
+pnpm dev            # View your tree at http://localhost:3000
+```
+
+The formal JSON schema is at `schema/skill-tree.schema.json`.
 
 ---
 
@@ -308,6 +425,66 @@ PRs will be accepted if they:
 - Have 6–12 well-differentiated nodes
 - Include relationships that accurately reflect the learning order in the domain
 - Describe *observable* behavior, not internal mental states
+
+---
+
+---
+
+## Contributing Code
+
+Not a domain expert? You can still contribute by improving the platform itself.
+
+### Architecture Overview
+
+- **Next.js 16** app with App Router (`app/`)
+- **PostgreSQL** database with full-text search (`db/schema.sql`)
+- **YAML seed files** are the source of truth (`data/seeds/`)
+- **React Flow + ELK.js** for graph visualization (`components/skill-tree/`)
+- **TypeScript** throughout — types in `types/skill-tree.ts`
+- **Vitest** for testing (`__tests__/`)
+
+### Code PR Standards
+
+1. **Branch naming**: `fix/description`, `feat/description`, or `refactor/description`
+2. **TypeScript**: no `any` types — use the interfaces in `types/skill-tree.ts`
+3. **Tests**: add tests for new features, update tests for changed behavior
+4. **Formatting**: run `pnpm format` before committing — CI will reject unformatted code
+5. **Type checking**: run `pnpm typecheck` — must pass cleanly
+6. **Commit messages**: conventional commits (`feat:`, `fix:`, `refactor:`, `docs:`, `test:`)
+
+### Good First Issues
+
+Look for issues labeled `good-first-issue` on GitHub. Common areas for first contributions:
+
+- Fixing broken resource URLs in skill trees
+- Adding missing benchmark levels to nodes
+- Improving accessibility (ARIA labels, keyboard navigation)
+- Writing tests for untested components
+- Documentation improvements
+
+---
+
+## Bug Reports & Feature Requests
+
+### Bug Reports
+
+Open a GitHub Issue with:
+
+1. **What happened** — clear description of the bug
+2. **Steps to reproduce** — numbered steps to trigger the issue
+3. **Expected vs actual** — what should have happened vs what did happen
+4. **Environment** — browser, OS, screen size if relevant
+5. **Screenshots** — if it's a visual bug, include a screenshot
+
+### Feature Requests
+
+Open a GitHub Issue with:
+
+1. **Problem** — what user need isn't being met?
+2. **Proposed solution** — how do you think it should work?
+3. **Alternatives considered** — what else could solve the problem?
+
+Label your issue with `bug` or `feature-request` accordingly.
 
 ---
 
