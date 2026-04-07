@@ -154,8 +154,6 @@ export default async function GalleryPage({
     counts[row.domain] = parseInt(row.count, 10);
   }
 
-  const totalSkills = trees.reduce((s, t) => s + t.nodeCount, 0);
-  const domainCount = Object.keys(counts).length || 5;
 
   return (
     <div>
@@ -168,13 +166,9 @@ export default async function GalleryPage({
           See the path from beginner to expert. Track your progress. Know
           exactly what to learn next.
         </p>
-        <div className="mt-4 flex items-center justify-center gap-4 text-sm text-zinc-400 dark:text-zinc-500">
-          <span>{trees.length} skill trees</span>
-          <span className="h-1 w-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-          <span>{totalSkills} skills</span>
-          <span className="h-1 w-1 rounded-full bg-zinc-300 dark:bg-zinc-700" />
-          <span>{domainCount} domains</span>
-        </div>
+        <p className="mt-4 text-sm text-zinc-400 dark:text-zinc-500">
+          {trees.length} skill trees
+        </p>
       </div>
 
       <SearchBar />

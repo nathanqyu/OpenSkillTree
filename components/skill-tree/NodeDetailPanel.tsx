@@ -524,6 +524,7 @@ export function NodeDetailPanel({
   const [navHistory, setNavHistory] = useState<string[]>([]);
   const [navIndex, setNavIndex] = useState(0);
   const [visible, setVisible] = useState(false);
+  const [descExpanded, setDescExpanded] = useState(false);
   const panelRef = useRef<HTMLDivElement>(null);
 
   // Sync history when external node changes (graph click)
@@ -534,6 +535,7 @@ export function NodeDetailPanel({
     }
     setNavHistory([nodeId]);
     setNavIndex(0);
+    setDescExpanded(false);
     setVisible(true);
   }, [nodeId]);
 
@@ -627,8 +629,8 @@ export function NodeDetailPanel({
         role="complementary"
         aria-label={`Skill detail: ${node.title}`}
       >
-        {/* Sticky header */}
-        <div className="shrink-0 border-b border-zinc-200 px-4 pt-4 pb-3 dark:border-zinc-800">
+        {/* Sticky header — capped so it never dominates the panel */}
+        <div className="shrink-0 max-h-[40vh] overflow-y-auto border-b border-zinc-200 px-4 pt-4 pb-3 dark:border-zinc-800">
           {/* Nav + close */}
           <div className="mb-2 flex items-center justify-between">
             <div className="flex items-center gap-1">
@@ -668,11 +670,6 @@ export function NodeDetailPanel({
           <h2 className="text-base font-bold leading-tight text-zinc-900 dark:text-zinc-50">
             {node.title}
           </h2>
-          {node.description && (
-            <p className="mt-1 text-sm leading-relaxed text-zinc-500 dark:text-zinc-400">
-              {node.description}
-            </p>
-          )}
 
           {/* Level-aware self-assessment */}
           <div className="mt-3">
@@ -686,6 +683,28 @@ export function NodeDetailPanel({
 
         {/* Scrollable body */}
         <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">
+          {/* Description — collapsible */}
+          {node.description && (
+            <div>
+              <p
+                className={[
+                  "text-sm leading-relaxed text-zinc-500 dark:text-zinc-400",
+                  descExpanded ? "" : "line-clamp-3",
+                ].join(" ")}
+              >
+                {node.description}
+              </p>
+              {node.description.length > 150 && (
+                <button
+                  onClick={() => setDescExpanded((v) => !v)}
+                  className="mt-1 text-xs font-medium text-zinc-400 hover:text-zinc-600 dark:text-zinc-500 dark:hover:text-zinc-300"
+                >
+                  {descExpanded ? "Show less" : "Show more"}
+                </button>
+              )}
+            </div>
+          )}
+
           {/* What to Do Next — the main action section */}
           <WhatToDoNext
             benchmarks={node.benchmarks}
