@@ -1,0 +1,1530 @@
+# OpenSkillTree — Seed Skill Tree: Meditation & Mindfulness
+#
+# Domain:  Science / Contemplative Practice / Meditation & Mindfulness
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Practice reference: cumulative hours and daily consistency
+# Benchmark levels loosely map to:
+#   beginner     ≈ 5–10 min daily for 2–4 weeks  (establishing habit, learning basics)
+#   intermediate ≈ 20+ min daily for 3+ months    (steady practice, deepening technique)
+#   advanced     ≈ 45+ min daily, retreat experience, 500+ lifetime hours
+#   expert       ≈ teacher-level, 1000+ hours, formal training in guiding others
+#
+# Teaching order based on standard secular meditation pedagogy (MBSR,
+# Headspace progression, Waking Up app curriculum, UCLA MARC):
+#   Breath awareness (anchor) → body scan (interoception) →
+#   focused attention / concentration → open monitoring / mindfulness →
+#   loving-kindness (metta) → walking meditation → stress reduction (MBSR) →
+#   neuroscience literacy → retreat practice → teaching & guiding.
+# Breath awareness is universally taught first as the foundational anchor.
+
+tree:
+  id: "science/meditation-mindfulness"
+  title: "Meditation & Mindfulness"
+  description: >
+    A complete skill map for meditation and mindfulness practice — the
+    systematic training of attention, awareness, and compassion. Covers
+    breath-based anchoring, body scanning, concentration (shamatha),
+    open monitoring (vipassana-style mindfulness), loving-kindness,
+    movement-based practice, evidence-based stress reduction, the
+    neuroscience of contemplative practice, intensive retreat training,
+    and the skills needed to teach and guide others. Draws on secular
+    curricula including MBSR, Headspace, Waking Up, and the UCLA
+    Mindful Awareness Research Center.
+  domain: "Science"
+  visibility: "public"
+
+nodes:
+  # -- FOUNDATION ----------------------------------------------------------------
+  - id: "science/meditation-mindfulness/breath-awareness"
+    title: "Breath Awareness"
+    description: >
+      The universal starting point for meditation. Breath awareness trains
+      the capacity to place attention on a single sensory anchor — the
+      physical sensations of breathing — and to notice when the mind
+      wanders and gently return. Every major tradition and secular program
+      (MBSR, Headspace, Waking Up, UCLA MARC) begins here.
+
+      Sub-skills covered: finding the breath (nostrils, chest, belly),
+      counting breaths (1-to-10 cycles), noting the pause between
+      inhale and exhale, recognizing mind-wandering without judgment,
+      the redirect (gentle return to the anchor), and establishing a
+      daily sit habit.
+
+      Drills to practice: (1) Timed sits — 5 min, then 10, then 15,
+      tracking consecutive days. (2) Breath counting — count exhales
+      1 to 10 and restart; note how far you get before losing count.
+      (3) Location experiment — spend one session noticing breath at
+      nostrils, next at belly, compare which is easier to track.
+      (4) Wandering tally — use a clicker or mental note each time
+      you notice the mind has wandered; the noticing IS the practice.
+    benchmarks:
+      - level: beginner
+        criteria: "Sits for 5-10 minutes with eyes closed. Can locate the breath at nostrils, chest, or belly. Notices when mind wanders and returns attention to the breath. Completes at least 10 sessions over 2 weeks. Understands that noticing distraction is success, not failure."
+        metrics:
+          - "Completes 10 guided breath-awareness sessions of 5-10 min within 2 weeks"
+          - "Counts breath cycles 1-to-10 and reaches 10 at least once per session"
+          - "Logs at least 10 sessions in a meditation app or journal within first 14 days"
+          - "Self-reports noticing mind-wandering and redirecting 3+ times per sit"
+        resources:
+          - title: "Headspace — Basics Course (10 sessions, free)"
+            url: "https://www.headspace.com/meditation/meditation-for-beginners"
+            type: "course"
+          - title: "UCLA MARC — Free Guided Meditations (Breathing Meditation)"
+            url: "https://www.uclahealth.org/programs/marc/free-guided-meditations/guided-meditations"
+            type: "video"
+          - title: "Sam Harris / Waking Up — Introductory Course"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Yoga With Adriene — Meditation for Beginners"
+            url: "https://www.youtube.com/watch?v=4pLUleLdwY4"
+            type: "video"
+        practice:
+          - "5 min daily: Sit quietly and count exhales 1 to 10; restart when you lose count or reach 10"
+          - "5 min daily: Follow a guided breath awareness meditation from UCLA MARC or Headspace"
+          - "2 min: After each session, journal one sentence about what you noticed (mind busy, calm, sleepy, etc.)"
+        projects:
+          - "Complete a 10-day beginner course on Headspace or Waking Up without skipping a day"
+          - "Build a 14-day streak of daily sits (any duration) tracked in an app or paper log"
+        tips:
+          - "The goal is NOT to stop thinking — the goal is to notice when you have drifted and come back; every return to the breath is a successful repetition"
+          - "If you cannot feel the breath, place one hand on your belly and feel the rise and fall — this makes the anchor more tangible"
+      - level: intermediate
+        criteria: "Sits for 20+ minutes without a guide. Maintains attention on the breath for multiple consecutive cycles before mind-wandering. Distinguishes subtle breath qualities (warmth, coolness, rhythm changes). Practices daily for 3+ months with minimal gaps."
+        metrics:
+          - "Sustains unguided breath-focused sits of 20 minutes 5+ days per week"
+          - "Counts 10 consecutive breath cycles without losing count on at least 3/5 attempts"
+          - "Maintains a daily practice streak of 60+ consecutive days"
+          - "Self-reports average of 1-2 major distractions per 20-minute sit (down from 5+)"
+          - "Cumulative logged practice reaches 30+ hours"
+        resources:
+          - title: "Tara Brach — Breath as Home Base (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Unguided Timer with Interval Bells"
+            url: "https://insighttimer.com/meditation-timer"
+            type: "tool"
+          - title: "Waking Up — The Fundamentals Course (28 sessions)"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Greater Good Science Center — Mindful Breathing Practice"
+            url: "https://ggia.berkeley.edu/practice/mindful_breathing"
+            type: "article"
+        practice:
+          - "20 min daily: Unguided sit using Insight Timer with a single bell at 10 min — track breath at nostrils for the full duration"
+          - "5 min: After each sit, note in a journal: approximate number of times mind wandered, dominant distraction type (planning, memory, sensation)"
+          - "Weekly: One 30-minute sit to push your duration edge"
+        projects:
+          - "Complete 90 consecutive days of daily practice (any duration 15 min+) and review your journal for patterns"
+          - "Sit for 30 minutes unguided and self-assess: how many breath cycles can you track before distraction?"
+        tips:
+          - "When you find your attention stable on the breath for several cycles, try narrowing focus to just the tip of the nostrils — this refines concentration further"
+          - "Posture matters more as sits get longer — sit upright with a straight spine, relaxed shoulders, and chin slightly tucked so you stay alert without tension"
+      - level: advanced
+        criteria: "Sits for 45+ minutes with sustained breath focus. Experiences periods of minimal mind-wandering (5+ minutes of continuous attention). Notices the space between breaths and subtle shifts in rhythm without controlling them. Has retreat experience (at least one multi-day silent retreat). 200+ cumulative hours."
+        metrics:
+          - "Completes 45-minute unguided breath-focused sits 4+ times per week"
+          - "Self-reports periods of 5+ minutes of unbroken breath attention in at least half of sessions"
+          - "Has completed at least one multi-day (3+ day) silent meditation retreat"
+          - "Cumulative logged practice reaches 200+ hours"
+          - "Can describe the difference between controlling the breath and observing it, and demonstrates passive observation in practice"
+        resources:
+          - title: "Tara Brach — Deepening Breath Meditation (guided talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Sam Harris / Waking Up — Advanced Lessons on Concentration"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Insight Timer — Long Unguided Sessions & Community Groups"
+            url: "https://insighttimer.com"
+            type: "tool"
+        practice:
+          - "45 min daily: Unguided sit with breath as sole object; notice when attention becomes effortless versus forced"
+          - "One session per week: 60-minute sit — observe the breath without any counting or labeling, just pure attention to sensation"
+          - "Retreat: attend at least one 3-to-7-day silent retreat emphasizing breath-based concentration (e.g., Goenka, IMS, Spirit Rock)"
+        projects:
+          - "Complete a 5-to-10-day silent meditation retreat and journal about shifts in breath attention over the course of the retreat"
+          - "Track 200 cumulative practice hours and write a reflection on how your relationship to the breath has changed since the first sit"
+        tips:
+          - "At this stage, the breath can become very subtle — if it seems to disappear, widen your attention to the whole body breathing rather than forcing focus on one spot"
+          - "Do not chase special states — treat calm, bliss, and restlessness all the same: notice them and return to the breath"
+      - level: expert
+        criteria: "Breath awareness is effortless and immediate — attention rests on the breath without deliberate placement. Can sustain hour-plus sits with near-continuous attention. Guides others in breath-based meditation. Has 500+ cumulative hours. Demonstrates equanimity during practice regardless of mental or physical discomfort."
+        metrics:
+          - "Sustains 60+ minute sits with self-reported near-continuous breath attention (fewer than 3 major distractions per hour)"
+          - "Cumulative logged practice exceeds 500 hours"
+          - "Has led or co-led at least 5 guided breath-awareness sessions for groups"
+          - "Can clearly articulate the progression from effortful to effortless attention and teach it to beginners"
+          - "Maintains daily practice of 45+ minutes for 1+ year without significant breaks"
+        resources:
+          - title: "UCLA MARC — Mindfulness Research & Teacher Training Resources"
+            url: "https://www.uclahealth.org/programs/marc"
+            type: "article"
+          - title: "Insight Timer — Teacher and Community Guide Tools"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "tool"
+          - title: "Tara Brach — Full Archive of Talks and Guided Meditations"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+        practice:
+          - "60 min daily: Unguided sit — breath is the home base but attention should settle without effortful placement"
+          - "Monthly: lead a 20-minute guided breath meditation for a small group and collect feedback"
+          - "Ongoing: mentor one beginner through their first 30 days of practice"
+        projects:
+          - "Design and lead a 4-week breath-awareness introduction course (weekly 30-min sessions) for beginners"
+          - "Write a personal practice guide documenting your breath-awareness progression from first sit to current practice"
+        tips:
+          - "Teaching breath awareness to others is the fastest way to deepen your own understanding — you will discover subtle aspects of the practice through the questions beginners ask"
+          - "At the expert level, the breath can become an always-available anchor even off the cushion — practice brief breath check-ins throughout the day to integrate formal and informal practice"
+    tags: ["foundation", "concentration", "measurable"]
+
+  # -- BODY SCAN -----------------------------------------------------------------
+  - id: "science/meditation-mindfulness/body-scan"
+    title: "Body Scan"
+    description: >
+      Systematic movement of attention through the body from head to toe
+      (or toe to head), noticing sensations without trying to change them.
+      The body scan builds interoceptive awareness — the ability to sense
+      internal bodily states — which is foundational to both mindfulness
+      and emotional regulation. It is a core practice in MBSR (Mindfulness-
+      Based Stress Reduction) and most secular mindfulness programs.
+
+      Sub-skills covered: sequential attention (moving through body regions
+      in order), noticing physical sensations (tingling, warmth, pressure,
+      numbness, pain), distinguishing sensation from interpretation (e.g.,
+      tightness in chest vs. anxiety), staying with difficult sensations
+      without reactivity, and progressive relaxation as a side effect
+      (not the goal) of non-reactive attention.
+
+      Drills to practice: (1) Guided 20-min body scan — follow a recording
+      from UCLA MARC or Headspace. (2) Speed scan — 5 min head-to-toe
+      rapid sweep. (3) Spot check — pick one body region (hands, feet,
+      face) and spend 5 min exploring just that area. (4) Lying vs.
+      sitting comparison — do the same scan in both postures and note
+      differences in sensation.
+    benchmarks:
+      - level: beginner
+        criteria: "Completes a guided body scan of 15-20 minutes without falling asleep. Moves attention sequentially through at least 5 body regions (feet, legs, torso, arms, head). Notices at least one distinct sensation per region. Understands the difference between relaxation and awareness."
+        metrics:
+          - "Completes 8 guided body scan sessions of 15-20 min within 3 weeks"
+          - "Reports noticing at least 1 distinct sensation per body region in post-session journal"
+          - "Stays awake through the full scan in at least 6 out of 8 sessions"
+          - "Can name 3+ types of physical sensations (tingling, warmth, pressure, tightness, numbness)"
+        resources:
+          - title: "UCLA MARC — Body Scan Guided Meditation (free)"
+            url: "https://www.uclahealth.org/programs/marc/free-guided-meditations/guided-meditations"
+            type: "video"
+          - title: "Headspace — Body Scan Basics"
+            url: "https://www.headspace.com/meditation/body-scan"
+            type: "course"
+          - title: "Yoga With Adriene — Body Scan Meditation"
+            url: "https://www.youtube.com/watch?v=ihwcw_ofuME"
+            type: "video"
+          - title: "Greater Good Science Center — Body Scan Meditation"
+            url: "https://ggia.berkeley.edu/practice/body_scan_meditation"
+            type: "article"
+        practice:
+          - "15 min daily: Follow a guided body scan recording (UCLA MARC or Headspace) lying down or seated"
+          - "5 min: After each scan, write one sentence per body region about what you noticed"
+          - "3 min: Quick standing body scan before meals — sweep attention from feet to head"
+        projects:
+          - "Complete 8 body scan sessions in 3 weeks and compile a sensation journal noting patterns"
+          - "Do one body scan lying down and one sitting up on the same day — note the differences"
+        tips:
+          - "If you keep falling asleep during body scans, try sitting upright or keeping your eyes slightly open — drowsiness is the most common beginner challenge"
+          - "There is no wrong sensation — numbness, nothing, blankness, and absence of feeling are all valid observations"
+      - level: intermediate
+        criteria: "Completes unguided body scans of 30+ minutes. Notices subtle sensations (pulse, micro-tensions, temperature gradients). Can slow down and linger in areas of discomfort without reactivity. Practices 3+ times per week for 3+ months."
+        metrics:
+          - "Sustains unguided body scans of 30 minutes 3+ times per week"
+          - "Reports noticing 3+ distinct sensations per body region (not just 'tense' or 'relaxed')"
+          - "Can stay with uncomfortable sensations (e.g., knee pain, back tension) for 2+ minutes without shifting position"
+          - "Cumulative body scan practice reaches 20+ hours"
+        resources:
+          - title: "Tara Brach — Body Scan: Arriving in Presence (guided)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Body Scan Meditations (curated collection)"
+            url: "https://insighttimer.com/meditation-topics/body-scan"
+            type: "video"
+          - title: "Greater Good Science Center — The Science of Interoception"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+        practice:
+          - "30 min 3x/week: Unguided body scan — move through the body in fine detail (individual fingers, sides of the face, internal organs)"
+          - "10 min: Spot-focus practice — pick one area of chronic tension and spend 10 minutes just observing it"
+          - "5 min daily: Quick body scan at the start of each meditation sit before switching to breath"
+        projects:
+          - "Map your body's typical sensation patterns: create a body outline and color-code regions by common sensations over a 2-week period"
+          - "Practice a 45-minute slow body scan and write a reflection comparing it to your first 15-minute scan"
+        tips:
+          - "Interoceptive awareness improves with repetition — the same body region will reveal increasingly subtle sensations the more you scan it"
+          - "When you encounter numbness or blankness in a region, stay there — numbness is not absence of sensation but a signal worth investigating"
+      - level: advanced
+        criteria: "Scans the entire body in fine detail — individual joints, internal organs, skin surface vs. deeper layers. Uses body scan as a doorway to insight — notices the impermanent, changing nature of all sensation. Integrates body awareness into daily life (notices tension arising in real-time during stress). Retreat experience with extended body-scan practice."
+        metrics:
+          - "Completes 45-minute body scans with fine-grained attention (30+ distinct body regions)"
+          - "Reports spontaneous body awareness off the cushion — notices stress-related tension within seconds of it arising"
+          - "Has completed a retreat that included extended body-scan practice (e.g., Goenka 10-day)"
+          - "Cumulative body scan practice reaches 100+ hours"
+        resources:
+          - title: "Waking Up — Body and Sensation Advanced Lessons"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Tara Brach — Radical Acceptance: Body-Based Awareness (talk)"
+            url: "https://www.tarabrach.com/radical-acceptance/"
+            type: "video"
+          - title: "UCLA MARC — Research on Interoception and Mindfulness"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+        practice:
+          - "45 min 4x/week: Full body scan moving through 30+ regions, noticing arising and passing of sensations"
+          - "Throughout the day: 3 micro body-scans (30 seconds each) triggered by routine events (phone ringing, sitting down, waiting)"
+          - "One extended 90-minute body scan per month to explore deep interoceptive territory"
+        projects:
+          - "Complete a 10-day Goenka Vipassana retreat or equivalent body-scan-intensive retreat"
+          - "Write a 1-page reflection on how body awareness has changed your relationship to stress or emotional reactivity"
+        tips:
+          - "At the advanced level, let go of the sequential scanning pattern sometimes — allow attention to move freely to wherever sensation is most vivid"
+          - "Notice how sensations arise and pass without your intervention — this direct observation of impermanence is the insight gateway"
+      - level: expert
+        criteria: "Body awareness is continuous — the practitioner can drop into full-body felt sense at any moment. Guides others in body scan practice. Understands and can explain the neuroscience of interoception. Has trained formally in MBSR or equivalent body-scan pedagogy. 500+ cumulative hours including body-scan-focused practice."
+        metrics:
+          - "Can guide a 30-minute body scan for a group from memory with clear, well-paced instructions"
+          - "Demonstrates continuous interoceptive awareness in daily life (verified by self-report and/or peer feedback)"
+          - "Cumulative practice (including body scan) exceeds 500 hours"
+          - "Has completed formal teacher training that includes body scan instruction (MBSR, MBCT, or equivalent)"
+        resources:
+          - title: "UCLA MARC — MBSR Teacher Training Information"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Tara Brach — Teaching Meditation: Body-Based Practices"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Greater Good Science Center — Mindfulness & the Body Research"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+        practice:
+          - "Daily: Integrate body scan into formal sits — start each session with a 5-min scan before primary technique"
+          - "Monthly: Lead a guided body scan for a group and collect participant feedback"
+          - "Quarterly: Review interoception research literature to stay current on the science"
+        projects:
+          - "Design and deliver a 4-week body scan course for beginners with progressive session lengths"
+          - "Compile a teaching guide for body scan meditation including common challenges and adaptations for different populations"
+        tips:
+          - "When teaching body scan, pacing is everything — leave long pauses between instructions; beginners need more silence than you think"
+          - "Different populations need different adaptations — trauma-sensitive body scan avoids directing attention to areas commonly associated with trauma and always offers choice"
+    tags: ["foundation", "interoception", "MBSR"]
+
+  # -- FOCUSED ATTENTION (CONCENTRATION) -----------------------------------------
+  - id: "science/meditation-mindfulness/focused-attention"
+    title: "Focused Attention (Concentration)"
+    description: >
+      The deliberate training of one-pointed concentration (shamatha in
+      the Buddhist tradition). Focused attention meditation uses a single
+      object — breath, a visual point, a mantra, or a candle flame — and
+      the practitioner returns to that object every time the mind wanders.
+      This builds the attentional stability that underlies all other
+      meditation practices.
+
+      Sub-skills covered: choosing and committing to an anchor object,
+      sustaining attention for increasing durations, recognizing subtle
+      vs. gross distractions, labeling distractions (thinking, planning,
+      remembering) to create distance, developing access concentration
+      (a stable baseline of attention), and working with the five
+      hindrances (desire, aversion, sloth, restlessness, doubt).
+
+      Drills to practice: (1) Single-point gaze (trataka) — stare at a
+      candle flame or dot on the wall for 5 min without looking away.
+      (2) Mantra repetition — silently repeat a single word or phrase
+      for 10 min, returning when the mind wanders. (3) Counting
+      meditation — count each exhale to 10, restart from 1 if you lose
+      track. (4) Progressive duration challenge — add 5 min per week.
+    benchmarks:
+      - level: beginner
+        criteria: "Chooses a single object of focus (breath, mantra, or visual point) and returns to it repeatedly during a 10-minute sit. Understands the difference between focused attention and mind-wandering. Can label a distraction (thinking, planning, hearing) before returning to the object."
+        metrics:
+          - "Completes 12 focused-attention sessions of 10 min in 3 weeks"
+          - "Reaches a count of 10 (breath counting) at least 2 times per 10-minute session"
+          - "Labels the type of distraction (thinking, planning, sensory) before returning to focus 50% of the time"
+          - "Reports maintaining focus on a single object for at least 30 consecutive seconds"
+        resources:
+          - title: "Headspace — Focus Course"
+            url: "https://www.headspace.com/meditation/focus"
+            type: "course"
+          - title: "Waking Up — Concentration Introductory Lessons"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "UCLA MARC — Guided Meditation: Focusing"
+            url: "https://www.uclahealth.org/programs/marc/free-guided-meditations/guided-meditations"
+            type: "video"
+        practice:
+          - "10 min daily: Choose one anchor (breath at nostrils, mantra, or candle flame) and keep returning to it every time you notice you have drifted"
+          - "5 min: Trataka (candle gazing) — stare at a flame without blinking as long as comfortable, then close eyes and hold the afterimage"
+          - "5 min: Label practice — each time you notice a distraction, silently whisper its type (thinking, hearing, feeling) before returning"
+        projects:
+          - "Complete a 3-week concentration challenge: week 1 at 10 min, week 2 at 12 min, week 3 at 15 min daily"
+          - "Try 3 different anchor objects (breath, mantra, candle) over 3 days and journal which held your attention best"
+        tips:
+          - "Concentration is a muscle — it gets stronger with repetition, not force; do not clench your jaw or tense your body trying to focus"
+          - "Label distractions gently (whisper 'thinking' internally) — this creates a micro-moment of metacognition that makes it easier to let go"
+      - level: intermediate
+        criteria: "Sustains focused attention for 20+ minutes on a single object. Experiences periods of 2-5 minutes of continuous attention. Recognizes the five hindrances (desire, aversion, sloth, restlessness, doubt) when they arise. Practices daily for 3+ months."
+        metrics:
+          - "Sustains 20-minute focused attention sessions 5+ days per week"
+          - "Self-reports periods of 2-5 minutes of unbroken focus in at least half of sessions"
+          - "Can name and recognize all 5 hindrances during practice"
+          - "Cumulative focused attention practice reaches 40+ hours"
+          - "Completes a full 10-count (breath counting) without losing track on 5/10 attempts"
+        resources:
+          - title: "Tara Brach — Working with the Hindrances (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Waking Up — Deepening Concentration Lessons"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Insight Timer — Concentration Meditation Collection"
+            url: "https://insighttimer.com/meditation-topics/concentration"
+            type: "video"
+          - title: "Greater Good Science Center — How Meditation Changes the Brain"
+            url: "https://greatergood.berkeley.edu/article/item/how_to_focus_a_wandering_mind"
+            type: "article"
+        practice:
+          - "20 min daily: Unguided single-object focus — stay with chosen anchor for full duration"
+          - "5 min: When a hindrance arises, name it (e.g., 'restlessness'), observe it for 30 seconds, then return to the object"
+          - "Weekly: One 30-minute sit to push concentration duration"
+        projects:
+          - "Keep a hindrance journal for 4 weeks — after each sit, note which hindrance was most prominent and what triggered it"
+          - "Build up to a 30-minute unbroken focused-attention sit and write a reflection on the experience"
+        tips:
+          - "Sloth and restlessness are the two most common intermediate hindrances — for sloth, try meditating with eyes slightly open; for restlessness, do 5 minutes of walking meditation first"
+          - "Access concentration (a stable, relaxed focus) is the goal — not laser-beam intensity; if you feel strain, you are trying too hard"
+      - level: advanced
+        criteria: "Sustains 45+ minutes of focused attention with minimal distraction. Experiences access concentration (sustained, effortless focus) regularly. Recognizes subtle distractions (mental images, background mental chatter) before they pull attention. Has retreat experience with concentration practice. 200+ hours."
+        metrics:
+          - "Completes 45-minute unguided concentration sits 4+ times per week"
+          - "Self-reports access concentration (stable, easeful attention) arising in at least 30% of sits"
+          - "Recognizes subtle distractions (background imagery, sub-verbal thoughts) before they become gross distractions"
+          - "Has completed at least one concentration-focused retreat (3+ days)"
+          - "Cumulative focused attention practice reaches 200+ hours"
+        resources:
+          - title: "Sam Harris / Waking Up — Advanced Concentration Practice"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Tara Brach — Concentration and the Jhanas (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Long-Duration Concentration Sessions"
+            url: "https://insighttimer.com"
+            type: "tool"
+        practice:
+          - "45 min daily: Single-object concentration — when access concentration arises, rest in it without manipulating"
+          - "10 min: After main sit, review the session mentally — where did attention become unstable? What preceded it?"
+          - "Retreat: attend a concentration-focused retreat (shamatha, jhana practice) of 5+ days"
+        projects:
+          - "Complete a 7-day concentration retreat and journal the progression of attentional stability across days"
+          - "Track access concentration frequency over 3 months: note in each session log whether stable focus arose and how long it lasted"
+        tips:
+          - "Access concentration often arises when you stop trying so hard — paradoxically, relaxing effort while maintaining intention is the key"
+          - "Do not chase pleasant states that arise during concentration — treat jhana factors (pleasure, ease, one-pointedness) as natural byproducts, not goals"
+      - level: expert
+        criteria: "Concentration is a reliable, on-demand skill — can enter access concentration within minutes. Understands and may have experienced jhana or jhana-adjacent states. Guides others in concentration practice. Has 500+ hours. Can teach the progressive stages of concentration and common pitfalls."
+        metrics:
+          - "Self-reports ability to enter access concentration within 5-10 minutes of sitting"
+          - "Sustains 60+ minute concentration sits regularly"
+          - "Cumulative practice exceeds 500 hours"
+          - "Has led concentration meditation sessions for groups on at least 5 occasions"
+          - "Can articulate the stages of concentration practice (from gross distraction to access concentration to absorption) and teach each stage"
+        resources:
+          - title: "UCLA MARC — Teacher Training in Meditation Instruction"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Insight Timer — Teaching and Leading Meditations"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "tool"
+          - title: "Greater Good Science Center — Attention and Meditation Research"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+        practice:
+          - "60 min daily: Concentration practice as primary technique, with periodic self-assessment of attentional quality"
+          - "Monthly: Guide a concentration meditation for a group and debrief with participants about their experience"
+          - "Ongoing: Study classical concentration texts (Visuddhimagga, Right Concentration by Leigh Brasington) to deepen theoretical understanding"
+        projects:
+          - "Develop a 6-week progressive concentration course with weekly session plans from beginner to intermediate level"
+          - "Write a personal map of your concentration practice milestones and turning points"
+        tips:
+          - "At the expert level, concentration and mindfulness merge — stable attention naturally reveals the moment-to-moment flow of experience"
+          - "When teaching concentration, emphasize the balance between effort and ease — most students either try too hard or are too lax"
+    tags: ["concentration", "shamatha", "attention"]
+
+  # -- OPEN MONITORING (MINDFULNESS) ---------------------------------------------
+  - id: "science/meditation-mindfulness/open-monitoring"
+    title: "Open Monitoring (Mindfulness)"
+    description: >
+      Open monitoring (also called choiceless awareness or vipassana-style
+      mindfulness) is the practice of observing whatever arises in
+      experience — thoughts, sensations, emotions, sounds — without
+      selecting any single object of focus. Unlike focused attention,
+      the practitioner maintains a broad, receptive awareness and notes
+      the arising and passing of all phenomena equally.
+
+      Sub-skills covered: panoramic awareness (attending to the full field
+      of experience), noting/labeling (silently tagging each experience:
+      thinking, hearing, feeling, seeing), equanimity (observing pleasant
+      and unpleasant experiences with equal interest), recognizing the
+      impermanent nature of all experience, and distinguishing between
+      awareness itself and the contents of awareness.
+
+      Drills to practice: (1) Noting practice — label each experience as
+      it arises (hearing, thinking, pressure, warmth) for 10 min.
+      (2) Sound meditation — sit with eyes closed and notice sounds
+      arising and passing without naming their source. (3) Thought
+      watching — observe thoughts as events in the mind, like clouds
+      passing through sky. (4) Emotion spotting — notice emotional tones
+      (pleasant, unpleasant, neutral) arising in each moment.
+    benchmarks:
+      - level: beginner
+        criteria: "Sits for 10-15 minutes observing whatever arises without choosing a single focus. Can label experiences using basic categories (thinking, hearing, feeling). Understands the difference between focused attention and open monitoring. Notices at least 3 different types of experience in a single session."
+        metrics:
+          - "Completes 10 guided open monitoring sessions of 10-15 min in 3 weeks"
+          - "Uses noting labels (thinking, hearing, feeling, seeing) at least 10 times per 10-minute session"
+          - "Reports noticing at least 3 different categories of experience per session"
+          - "Can explain the difference between focused attention and open monitoring in their own words"
+        resources:
+          - title: "Headspace — Noting Technique"
+            url: "https://www.headspace.com/meditation/techniques"
+            type: "course"
+          - title: "Waking Up — Open Awareness Lessons"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "UCLA MARC — Guided Meditation: Awareness of Sounds and Thoughts"
+            url: "https://www.uclahealth.org/programs/marc/free-guided-meditations/guided-meditations"
+            type: "video"
+          - title: "Tara Brach — Choiceless Awareness (guided meditation)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+        practice:
+          - "10 min daily: Sit with eyes closed and silently label whatever is most prominent (thinking, hearing, feeling, seeing) — one label per 3-5 seconds"
+          - "5 min: Sound meditation — notice sounds arising and passing without identifying their source"
+          - "5 min: After each session, journal the 3 most prominent experiences that arose"
+        projects:
+          - "Complete a 3-week open monitoring challenge alongside your concentration practice — compare the two in a journal"
+          - "Record the types of experience you noticed across 10 sessions and tally the most common category"
+        tips:
+          - "Open monitoring is harder than focused attention for most people — if you feel lost, anchor briefly on the breath for 30 seconds, then open awareness again"
+          - "The noting label should be light and quick — like a whispered tag, not an internal essay about what you are experiencing"
+      - level: intermediate
+        criteria: "Sustains open monitoring for 20+ minutes without collapsing into focused attention or getting lost in thought. Notes arising and passing of experiences with increasing precision. Begins noticing the gap between events. Recognizes emotional tone (pleasant, unpleasant, neutral) of experiences. Practices 3+ months."
+        metrics:
+          - "Sustains 20-minute open monitoring sessions 4+ days per week"
+          - "Uses fine-grained noting labels (e.g., 'planning' vs. just 'thinking', 'tightness' vs. just 'feeling') in 60%+ of notes"
+          - "Reports noticing emotional tone (pleasant/unpleasant/neutral) for at least 5 experiences per session"
+          - "Cumulative open monitoring practice reaches 30+ hours"
+        resources:
+          - title: "Sam Harris / Waking Up — Vipassana and Noting Techniques"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Tara Brach — RAIN: Open Awareness and Emotion (talk)"
+            url: "https://www.tarabrach.com/rain/"
+            type: "video"
+          - title: "Greater Good Science Center — Mindfulness Definition and Research"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness/definition"
+            type: "article"
+          - title: "Insight Timer — Vipassana and Noting Meditations"
+            url: "https://insighttimer.com/meditation-topics/vipassana"
+            type: "video"
+        practice:
+          - "20 min daily: Unguided open monitoring with fine-grained noting — use specific labels (planning, remembering, warmth, pressure, pleasure, irritation)"
+          - "5 min: Emotion-tone practice — for each experience, tag it pleasant, unpleasant, or neutral"
+          - "Weekly: One 30-minute session with no noting at all — just panoramic awareness"
+        projects:
+          - "Over 4 weeks, track which types of experience dominate your sits (thoughts vs. sensations vs. emotions vs. sounds) and look for patterns"
+          - "Practice noting in daily life for one week: set 5 random alarms per day and note what is happening in your experience when each alarm sounds"
+        tips:
+          - "If noting feels mechanical or distracting, try dropping the labels and just noticing — the labels are training wheels, not the practice itself"
+          - "The gap between experiences is as important as the experiences themselves — noticing space and silence is a sign of deepening practice"
+      - level: advanced
+        criteria: "Open monitoring is the primary practice. Notices the arising, persistence, and passing of all phenomena with equanimity. Recognizes thoughts as events rather than truth. Experiences moments of pure awareness without content. Has retreat experience with open-monitoring techniques. 200+ hours."
+        metrics:
+          - "Sustains 45-minute open monitoring sessions 4+ times per week"
+          - "Reports moments of choiceless awareness (awareness without a dominant object) in at least 30% of sessions"
+          - "Demonstrates equanimity by self-reporting equal interest in pleasant and unpleasant experiences during practice"
+          - "Has completed at least one vipassana or mindfulness-focused retreat (5+ days)"
+          - "Cumulative mindfulness practice reaches 200+ hours"
+        resources:
+          - title: "Waking Up — The Illusory Self and Open Awareness Lessons"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Tara Brach — Non-Dual Awareness and Letting Go (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Extended Vipassana Practice Sessions"
+            url: "https://insighttimer.com"
+            type: "tool"
+        practice:
+          - "45 min daily: Choiceless awareness — no anchor, no noting, just open receptive attention to whatever arises"
+          - "10 min: After main sit, reflect on equanimity — were there experiences you resisted or clung to?"
+          - "Retreat: attend a 7-to-10-day vipassana or mindfulness retreat"
+        projects:
+          - "Complete a 10-day vipassana retreat and journal the progression of awareness day by day"
+          - "Write a personal reflection on the difference between thinking about experience and directly knowing experience"
+        tips:
+          - "At the advanced level, begin investigating the nature of the observer — who is aware? This question points toward non-dual awareness"
+          - "Equanimity does not mean indifference — it means meeting every experience with clear, caring attention regardless of its emotional tone"
+      - level: expert
+        criteria: "Open monitoring is effortless and continuous — awareness encompasses the full field of experience naturally. Can guide others in mindfulness and noting practices. Understands the neuroscience of open monitoring vs. focused attention. Has 500+ hours. May have stable non-dual awareness."
+        metrics:
+          - "Maintains open monitoring for 60+ minutes with minimal collapse into focused attention or mind-wandering"
+          - "Cumulative practice exceeds 500 hours"
+          - "Has led guided mindfulness / open monitoring sessions on at least 5 occasions"
+          - "Can explain the difference between focused attention and open monitoring meditation to a beginner with clarity"
+          - "Reports that mindful awareness increasingly persists off the cushion throughout daily activities"
+        resources:
+          - title: "UCLA MARC — Mindfulness Research Publications"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Sam Harris / Waking Up — Conversations on Consciousness and Awareness"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Greater Good Science Center — Mindfulness Research Summaries"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+        practice:
+          - "60 min daily: Open monitoring as primary practice — awareness rests naturally without effort"
+          - "Monthly: Lead a guided open monitoring session for a group"
+          - "Ongoing: Integrate open monitoring into daily activities — eating, walking, conversations"
+        projects:
+          - "Design a 4-week mindfulness course that progresses from noting to choiceless awareness"
+          - "Mentor 2-3 intermediate practitioners through the transition from focused attention to open monitoring"
+        tips:
+          - "Teaching open monitoring reveals how much of the practice is beyond words — develop skill in using metaphors (sky and clouds, river and banks, mirror and reflections) to point students toward direct experience"
+          - "Non-dual awareness is not a special state to achieve but the recognition of what is already the case — awareness is already open, already present"
+    tags: ["mindfulness", "vipassana", "awareness"]
+
+  # -- LOVING-KINDNESS (METTA) ---------------------------------------------------
+  - id: "science/meditation-mindfulness/loving-kindness"
+    title: "Loving-Kindness (Metta)"
+    description: >
+      Loving-kindness meditation (metta bhavana) systematically cultivates
+      feelings of warmth, care, and goodwill toward self and others. The
+      practitioner silently repeats phrases (May I be happy, May I be
+      healthy, May I be safe, May I live with ease) while directing
+      attention to a felt sense of warmth. The circle of recipients
+      expands from self to loved ones, neutral people, difficult people,
+      and finally all beings.
+
+      Sub-skills covered: generating the felt sense of warmth/care,
+      self-compassion (directing kindness toward oneself), using phrases
+      vs. imagery vs. felt sense as the vehicle, working with resistance
+      (difficulty generating warmth toward self or difficult people),
+      expanding the circle of compassion progressively, and integrating
+      metta with daily interactions.
+
+      Research shows metta meditation increases positive emotions, reduces
+      self-criticism, and enhances social connection (Fredrickson et al.,
+      2008; Hofmann et al., 2011; Klimecki et al., 2013).
+    benchmarks:
+      - level: beginner
+        criteria: "Completes guided loving-kindness sessions of 10-15 minutes. Uses metta phrases (May I/you be happy, healthy, safe, at ease) for self and at least one other person. Can generate a felt sense of warmth or care, even briefly. Understands the structure (self, loved one, neutral, difficult, all beings)."
+        metrics:
+          - "Completes 10 guided metta sessions of 10-15 min within 3 weeks"
+          - "Uses phrases for at least 2 recipients per session (self + one other)"
+          - "Reports experiencing a felt sense of warmth or care in at least 5 of 10 sessions"
+          - "Can recite the standard metta phrases and explain the 5-category expansion from memory"
+        resources:
+          - title: "Headspace — Kindness & Compassion Course"
+            url: "https://www.headspace.com/meditation/compassion"
+            type: "course"
+          - title: "Tara Brach — Loving-Kindness Meditation (guided)"
+            url: "https://www.tarabrach.com/meditation-loving-kindness/"
+            type: "video"
+          - title: "UCLA MARC — Loving-Kindness Guided Meditation"
+            url: "https://www.uclahealth.org/programs/marc/free-guided-meditations/guided-meditations"
+            type: "video"
+          - title: "Greater Good Science Center — Loving-Kindness Meditation"
+            url: "https://ggia.berkeley.edu/practice/loving_kindness_meditation"
+            type: "article"
+        practice:
+          - "10 min daily: Follow a guided metta meditation — start with self-directed phrases, then expand to a loved one"
+          - "5 min: Before bed, silently send metta phrases to 3 specific people you interacted with today"
+          - "2 min: Start each session by recalling a moment when you felt genuinely cared for — use that feeling as fuel"
+        projects:
+          - "Complete 10 metta sessions and journal the emotional tone of each — note any resistance or warmth"
+          - "Choose one difficult person in your life and include them in metta practice for 7 consecutive days — note what shifts"
+        tips:
+          - "If you cannot generate warmth for yourself, start with a beloved pet, a child, or someone who naturally evokes tenderness — then redirect that warmth toward yourself"
+          - "The phrases are just vehicles — if the words feel hollow, try visualizing the person smiling or imagine a warm light surrounding them"
+      - level: intermediate
+        criteria: "Practices metta for 20+ minutes including all five categories (self, loved one, neutral, difficult, all beings). Generates a felt sense of warmth reliably. Works skillfully with resistance toward self or difficult people. Practices 3+ times per week for 3+ months."
+        metrics:
+          - "Sustains 20-minute metta sessions covering all 5 categories 3+ times per week"
+          - "Reports generating a felt sense of warmth or care in 80%+ of sessions"
+          - "Successfully directs metta to a difficult person for at least 2 minutes per session without aversion dominating"
+          - "Cumulative metta practice reaches 20+ hours"
+        resources:
+          - title: "Tara Brach — Forgiveness and Loving-Kindness (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Loving-Kindness Meditation Collection"
+            url: "https://insighttimer.com/meditation-topics/loving-kindness"
+            type: "video"
+          - title: "Greater Good Science Center — Why Practice Loving-Kindness"
+            url: "https://greatergood.berkeley.edu/article/item/how_to_practice_loving_kindness_meditation"
+            type: "article"
+          - title: "Waking Up — Compassion and Metta Practices"
+            url: "https://www.wakingup.com/"
+            type: "course"
+        practice:
+          - "20 min 3x/week: Full metta sequence — 4 min self, 4 min loved one, 4 min neutral person, 4 min difficult person, 4 min all beings"
+          - "5 min daily: Quick metta for one person you will interact with today, sent before the interaction"
+          - "Weekly: Choose a new difficult person each week to practice with — notice patterns in resistance"
+        projects:
+          - "Complete a 30-day metta challenge: daily practice with all 5 categories, journaling shifts in how you relate to difficult people"
+          - "Ask 3 people in your life if they have noticed any change in your interactions over the past month of practice"
+        tips:
+          - "Resistance toward difficult people is not failure — the resistance itself is valuable material; notice where it lives in the body and how it changes over sessions"
+          - "Self-compassion is often the hardest category — if it remains difficult, consider that you are someone's loved one; direct metta to yourself as that person would"
+      - level: advanced
+        criteria: "Metta arises spontaneously in daily life — warmth and care for strangers and difficult people occurs naturally. Practices 45+ minutes. Integrates metta with insight practice (seeing the shared wish for happiness in all beings). Retreat experience including metta. 100+ cumulative hours."
+        metrics:
+          - "Sustains 45-minute metta sessions that include extended time with difficult people and all beings"
+          - "Reports spontaneous metta arising off the cushion in at least 3 situations per week"
+          - "Has completed a metta-focused retreat or retreat segment (3+ days)"
+          - "Cumulative metta practice reaches 100+ hours"
+        resources:
+          - title: "Tara Brach — Radical Compassion: Expanding the Heart (talk)"
+            url: "https://www.tarabrach.com/radical-compassion/"
+            type: "video"
+          - title: "Waking Up — Advanced Compassion Practices"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Insight Timer — Extended Metta Retreats Online"
+            url: "https://insighttimer.com"
+            type: "tool"
+        practice:
+          - "45 min 3x/week: Extended metta — spend 10+ minutes on each category, lingering with the felt sense rather than rushing the phrases"
+          - "Daily: Choose one interaction per day to approach with conscious metta intention — before a meeting, while in line, during a difficult conversation"
+          - "Retreat: attend a metta-focused retreat of 5+ days"
+        projects:
+          - "Complete a metta retreat and write a reflection on how compassion practice changed during extended silent practice"
+          - "Design a one-month metta practice plan for an intermediate practitioner"
+        tips:
+          - "At the advanced level, the phrases can fall away — metta becomes a felt sense that suffuses awareness rather than a verbal exercise"
+          - "Combining metta with open monitoring is powerful: maintain broad awareness while allowing warmth to permeate everything you notice"
+      - level: expert
+        criteria: "Loving-kindness is a stable quality of mind — care and warmth are the default orientation. Guides others in metta practice. Can work skillfully with participants who have resistance to self-compassion. 300+ cumulative hours. Understands the research on compassion meditation."
+        metrics:
+          - "Reports that warmth and care are the baseline orientation in daily interactions (verified by self-report and peer feedback)"
+          - "Cumulative metta practice exceeds 300 hours"
+          - "Has led guided metta sessions for groups on at least 10 occasions"
+          - "Can adapt metta instructions for people with trauma, self-criticism, or difficulty with specific categories"
+        resources:
+          - title: "UCLA MARC — Compassion and Loving-Kindness Research"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Greater Good Science Center — The Science of Compassion"
+            url: "https://greatergood.berkeley.edu/topic/compassion"
+            type: "article"
+          - title: "Tara Brach — Teaching Metta and Compassion Practices"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+        practice:
+          - "Daily: Metta as an undercurrent in all formal practice — regardless of technique, warmth is present"
+          - "Monthly: Lead a metta session and debrief with participants about their experience, especially resistance"
+          - "Ongoing: Study compassion research literature and adapt teaching to new findings"
+        projects:
+          - "Design and deliver a 6-week loving-kindness course for beginners with adaptations for self-critical participants"
+          - "Write a teaching guide for metta meditation including common resistance patterns and skillful responses"
+        tips:
+          - "The most important moment in teaching metta is when a participant says 'I cannot do this for myself' — this is the exact place where the practice begins to transform"
+          - "Compassion fatigue is real — for expert practitioners, metta must include self; you cannot pour from an empty cup"
+    tags: ["compassion", "metta", "emotional"]
+
+  # -- WALKING MEDITATION --------------------------------------------------------
+  - id: "science/meditation-mindfulness/walking-meditation"
+    title: "Walking Meditation"
+    description: >
+      Meditation in motion — bringing mindful attention to the physical
+      act of walking. Walking meditation is a complement to seated
+      practice, training the same qualities of presence and awareness in
+      a more embodied, active context. It is especially valuable for
+      practitioners who find sitting difficult, and is a standard
+      component of meditation retreats (alternating with seated sits).
+
+      Sub-skills covered: slow deliberate walking (lifting, moving,
+      placing each foot), speed variations (very slow formal walking,
+      moderate pace, normal-speed mindful walking), coordinating
+      attention with movement phases, integrating awareness of
+      surroundings (sounds, air, ground texture), and transitioning
+      between walking and sitting meditation.
+
+      Drills to practice: (1) 10-step path — walk 10 steps slowly,
+      pause, turn, repeat for 10 min. (2) Foot-phase noting — silently
+      label lifting, moving, placing for each step. (3) Speed ladder —
+      5 min very slow, 5 min moderate, 5 min normal pace, noting the
+      change in attention quality. (4) Outdoor mindful walk — walk in
+      nature at normal speed with open awareness.
+    benchmarks:
+      - level: beginner
+        criteria: "Walks mindfully for 10 minutes on a short path. Can feel the lifting, moving, and placing of each foot. Maintains attention on walking for at least 30 seconds before mind-wandering. Understands the purpose of walking meditation as a complement to sitting."
+        metrics:
+          - "Completes 8 walking meditation sessions of 10 min in 3 weeks"
+          - "Successfully labels foot phases (lifting, moving, placing) for 10 consecutive steps at slow pace"
+          - "Maintains walking-focused attention for at least 30 seconds before distraction"
+          - "Reports feeling at least 2 distinct physical sensations in the feet during walking (pressure, warmth, contact)"
+        resources:
+          - title: "Headspace — Walking Meditation"
+            url: "https://www.headspace.com/meditation/walking-meditation"
+            type: "course"
+          - title: "UCLA MARC — Mindful Walking (guided audio)"
+            url: "https://www.uclahealth.org/programs/marc/free-guided-meditations/guided-meditations"
+            type: "video"
+          - title: "Yoga With Adriene — Walking Meditation"
+            url: "https://www.youtube.com/watch?v=XSvjbEOmvJI"
+            type: "video"
+          - title: "Greater Good Science Center — Walking Meditation Practice"
+            url: "https://ggia.berkeley.edu/practice/walking_meditation"
+            type: "article"
+        practice:
+          - "10 min daily: Walk slowly on a 10-step path — lift, move, place each foot with full attention; pause, turn, repeat"
+          - "5 min: Outdoor walk at normal pace — focus only on the sensations of feet contacting the ground"
+          - "5 min: Speed experiment — walk 2 min very slow, 2 min moderate, 1 min normal; note how attention changes"
+        projects:
+          - "Complete 8 walking meditation sessions and journal the difference in mental state between walking and sitting practice"
+          - "Do a 20-minute outdoor mindful walk in nature and write a reflection on sensory observations"
+        tips:
+          - "If slow walking feels awkward, do it indoors where no one is watching — many beginners abandon walking practice because they feel self-conscious"
+          - "You do not need a special path — a hallway, a room, or any 10-15 foot stretch of floor works perfectly"
+      - level: intermediate
+        criteria: "Walks mindfully for 20+ minutes at various speeds. Maintains continuous awareness of walking sensations for several minutes. Integrates environmental awareness (sounds, temperature, light) while keeping walking as the primary anchor. Practices on retreat (alternating with sitting)."
+        metrics:
+          - "Sustains walking meditation for 20+ minutes 3+ times per week"
+          - "Maintains foot-focused attention for 2+ minutes of continuous walking without distraction"
+          - "Successfully alternates between walking and sitting meditation on a retreat schedule (45-min sit, 20-min walk, repeat)"
+          - "Cumulative walking meditation practice reaches 15+ hours"
+        resources:
+          - title: "Tara Brach — Walking Meditation: Embodied Awareness (guided)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Walking Meditation Collection"
+            url: "https://insighttimer.com/meditation-topics/walking"
+            type: "video"
+          - title: "Waking Up — Movement and Awareness Practices"
+            url: "https://www.wakingup.com/"
+            type: "course"
+        practice:
+          - "20 min 3x/week: Walking meditation at moderate pace — feet as anchor, but include sounds and air temperature in awareness"
+          - "Retreat practice: alternate 45-min sit with 20-min walk for at least 3 hours on a weekend day"
+          - "Daily: one commute segment (5-10 min) walked mindfully at normal speed"
+        projects:
+          - "Complete a half-day mini-retreat alternating sitting and walking meditation (3 hours) and journal the experience"
+          - "Compare indoor formal walking to outdoor nature walking over 2 weeks — note differences in attention quality"
+        tips:
+          - "Walking meditation is not just a break from sitting — it trains the same muscles of awareness in a context closer to daily life"
+          - "On retreat, the walk between sitting sessions is where insights from the cushion often integrate — do not skip it"
+      - level: advanced
+        criteria: "Walking meditation is a full practice in itself — can sustain 45+ minutes of continuous mindful walking. Notices extremely subtle sensations (weight transfer, balance micro-adjustments, ground texture through shoes). Can practice in any environment (crowded streets, nature, indoors). Integrates walking with open monitoring. Retreat experience."
+        metrics:
+          - "Sustains 45-minute walking meditation sessions with continuous bodily awareness"
+          - "Notices subtle balance and proprioceptive sensations during walking"
+          - "Can practice mindful walking in varied environments (crowded, quiet, indoor, outdoor) without loss of focus"
+          - "Has integrated walking meditation into multiple retreats"
+          - "Cumulative walking meditation practice reaches 50+ hours"
+        resources:
+          - title: "Waking Up — Advanced Embodied Awareness Practices"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Insight Timer — Extended Walking Meditation Sessions"
+            url: "https://insighttimer.com"
+            type: "tool"
+          - title: "Tara Brach — Embodied Presence in Movement (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+        practice:
+          - "45 min 2x/week: Extended walking meditation as a standalone practice — vary speed throughout"
+          - "Daily: 10-15 min of mindful walking integrated into commute or errands"
+          - "Monthly: walking meditation in a challenging environment (crowded, noisy) to test stability of attention"
+        projects:
+          - "Complete a walking-only meditation day (6+ hours alternating speeds and environments)"
+          - "Lead a 20-minute walking meditation for a small group and get feedback"
+        tips:
+          - "At the advanced level, experiment with very slow walking as a concentration practice — one step per exhale, one step per inhale"
+          - "Walking meditation in nature can open into profound receptive awareness — let the walking anchor you while the environment becomes the content of open monitoring"
+      - level: expert
+        criteria: "Mindful walking is continuous and natural — awareness of body in motion is the default state. Guides others in walking meditation. Can adapt instructions for different mobility levels and environments. 100+ cumulative walking practice hours."
+        metrics:
+          - "Reports that mindful walking is a natural state — body awareness during movement is automatic"
+          - "Cumulative walking meditation practice exceeds 100 hours"
+          - "Has led walking meditation for groups on at least 5 occasions"
+          - "Can adapt walking meditation for people with mobility limitations (seated, wheelchair, minimal movement)"
+        resources:
+          - title: "UCLA MARC — Mindful Movement Teacher Resources"
+            url: "https://www.uclahealth.org/programs/marc"
+            type: "article"
+          - title: "Greater Good Science Center — Mindful Movement Research"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+          - title: "Insight Timer — Teaching Meditation Practices"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "tool"
+        practice:
+          - "Daily: Walking with continuous awareness as a natural expression of practice"
+          - "Monthly: Lead a walking meditation session for a group in an outdoor setting"
+          - "Ongoing: Develop adaptations for different populations (seniors, people with injuries, office workers)"
+        projects:
+          - "Create a walking meditation guide with adaptations for 3 populations (beginners, people with limited mobility, outdoor groups)"
+          - "Lead a half-day walking meditation workshop combining instruction, practice, and group discussion"
+        tips:
+          - "When teaching walking meditation, walk alongside students rather than giving instructions from the front — modeling the practice is more powerful than describing it"
+          - "Adaptations for limited mobility: focus on any available movement (hand gestures, head turning, breathing while still) — the practice is about awareness of movement, not walking specifically"
+    tags: ["movement", "embodied", "retreat"]
+
+  # -- MINDFUL STRESS REDUCTION (MBSR) ------------------------------------------
+  - id: "science/meditation-mindfulness/stress-reduction"
+    title: "Mindful Stress Reduction"
+    description: >
+      Applying mindfulness practices specifically to stress management,
+      emotional regulation, and well-being. This node covers the
+      integration of breath awareness, body scan, and mindfulness
+      techniques into a coherent stress reduction framework, following
+      the approach pioneered by Jon Kabat-Zinn in Mindfulness-Based
+      Stress Reduction (MBSR). Includes informal mindfulness practices
+      (mindful eating, mindful listening), the stress-response cycle,
+      and building a sustainable daily practice.
+
+      Sub-skills covered: recognizing stress signals in the body,
+      STOP practice (Stop, Take a breath, Observe, Proceed), mindful
+      eating, mindful listening, three-minute breathing space, responding
+      vs. reacting to stressors, building a personal daily practice
+      routine, and understanding the evidence base for mindfulness
+      and health.
+    benchmarks:
+      - level: beginner
+        criteria: "Practices the STOP technique (Stop, Take a breath, Observe, Proceed) in at least one stressful situation per day. Can identify personal stress signals in the body (tight shoulders, clenched jaw, racing heart). Completes a mindful eating exercise. Understands the basic MBSR framework."
+        metrics:
+          - "Uses the STOP technique at least 5 times in the first 2 weeks"
+          - "Identifies 3+ personal stress signals in the body from a body-awareness journal"
+          - "Completes 3 mindful eating exercises (eating one item with full attention for 5+ minutes)"
+          - "Can explain the difference between reacting and responding to stress in their own words"
+        resources:
+          - title: "Headspace — Stress Course"
+            url: "https://www.headspace.com/meditation/stress"
+            type: "course"
+          - title: "UCLA MARC — MBSR Information and Free Resources"
+            url: "https://www.uclahealth.org/programs/marc"
+            type: "article"
+          - title: "Greater Good Science Center — Mindful Eating Practice"
+            url: "https://ggia.berkeley.edu/practice/raisin_meditation"
+            type: "article"
+          - title: "Yoga With Adriene — Meditation for Stress Relief"
+            url: "https://www.youtube.com/watch?v=COp7BR_Dvps"
+            type: "video"
+        practice:
+          - "Daily: Use the STOP technique at least once during a stressful moment — set a reminder if needed"
+          - "3x/week: Eat one meal or snack mindfully — notice texture, taste, temperature, chewing, swallowing"
+          - "5 min daily: Three-minute breathing space (1 min awareness of current state, 1 min breath focus, 1 min body awareness)"
+        projects:
+          - "Keep a stress-signal journal for 2 weeks: note the situation, the body signal, and whether you used STOP or reacted automatically"
+          - "Complete one full mindful meal (20+ minutes, no screens, full sensory attention) and journal the experience"
+        tips:
+          - "The STOP practice is the single most portable mindfulness tool — it can be used anywhere in under 30 seconds and prevents reactive behavior"
+          - "Stress signals in the body often precede conscious awareness of stress — learning to read them gives you an early warning system"
+      - level: intermediate
+        criteria: "Has completed or is enrolled in an 8-week MBSR course or equivalent. Maintains a daily 20+ minute formal practice combined with informal practices throughout the day. Uses mindfulness to de-escalate stress in real-time. Recognizes habitual stress-response patterns."
+        metrics:
+          - "Completed an 8-week MBSR course or equivalent mindfulness program"
+          - "Maintains daily 20-minute formal practice plus 3+ informal practices per day"
+          - "Reports successfully using mindfulness to de-escalate a stressful situation at least 2x/week"
+          - "Can describe 3 personal habitual stress-response patterns and their triggers"
+          - "Cumulative practice reaches 50+ hours"
+        resources:
+          - title: "UCLA MARC — MBSR Course Information"
+            url: "https://www.uclahealth.org/programs/marc/classes-events/maps-classes"
+            type: "course"
+          - title: "Tara Brach — RAIN for Difficult Emotions (talk)"
+            url: "https://www.tarabrach.com/rain/"
+            type: "video"
+          - title: "Greater Good Science Center — The Science of Mindfulness and Stress"
+            url: "https://greatergood.berkeley.edu/article/item/five_ways_mindfulness_meditation_is_good_for_your_health"
+            type: "article"
+          - title: "Insight Timer — MBSR-Inspired Courses"
+            url: "https://insighttimer.com/meditation-topics/mbsr"
+            type: "course"
+        practice:
+          - "20 min daily: Formal practice (body scan, breath awareness, or sitting meditation — rotate through the week)"
+          - "Throughout the day: 3+ informal practices (mindful transitions, STOP at red lights, mindful listening in conversations)"
+          - "Weekly: Review stress journal and identify one habitual pattern to work with this week"
+        projects:
+          - "Complete a full 8-week MBSR course with all home practice assignments"
+          - "Track informal mindfulness moments for 4 weeks — aim for 3+ per day and note which are most impactful"
+        tips:
+          - "The real practice of MBSR happens between sessions — informal mindfulness (eating, walking, listening) is where behavior change occurs"
+          - "RAIN (Recognize, Allow, Investigate, Nurture) is Tara Brach's powerful adaptation of MBSR principles for working with difficult emotions"
+      - level: advanced
+        criteria: "Mindfulness is integrated into daily life — formal and informal practice are seamless. Uses mindfulness proactively (not just reactively) to maintain baseline well-being. Understands the research evidence for MBSR across clinical populations. Can design a personal 8-week mindfulness program. Has retreat experience."
+        metrics:
+          - "Reports that mindful awareness is the default mode in 50%+ of daily activities"
+          - "Uses mindfulness proactively (morning practice, pre-meeting centering, evening wind-down) not just in response to stress"
+          - "Can cite 5+ research findings on mindfulness and health/well-being"
+          - "Has completed at least one silent retreat incorporating MBSR practices"
+          - "Cumulative practice reaches 200+ hours"
+        resources:
+          - title: "UCLA MARC — Research on Mindfulness-Based Stress Reduction"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Tara Brach — Integrating Mindfulness into Life (talk archive)"
+            url: "https://www.tarabrach.com/talks-audio-video/"
+            type: "video"
+          - title: "Greater Good Science Center — Mindfulness Research Digest"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+        practice:
+          - "Daily: Seamless integration of formal (30+ min) and informal (continuous) mindfulness"
+          - "Quarterly: Review and adjust personal practice routine based on current life stressors"
+          - "Retreat: attend at least one silent retreat per year focused on deepening mindfulness practice"
+        projects:
+          - "Design a personal 8-week mindfulness program tailored to your life circumstances and stressors"
+          - "Write a summary of 5 key research findings on mindfulness and well-being, with citations, to share with skeptical friends or colleagues"
+        tips:
+          - "At the advanced level, stress does not disappear — your relationship to it transforms; stress becomes information rather than a threat"
+          - "Proactive mindfulness (morning routine, pre-event centering) is far more effective than reactive mindfulness alone"
+      - level: expert
+        criteria: "Can teach MBSR or equivalent programs. Designs mindfulness interventions for specific populations (workplace, clinical, educational). Deeply understands the research literature. Has formal teacher training in MBSR, MBCT, or equivalent. 500+ cumulative hours."
+        metrics:
+          - "Completed formal teacher training in MBSR, MBCT, or equivalent"
+          - "Has taught at least one full 8-week mindfulness program to a group"
+          - "Cumulative practice exceeds 500 hours"
+          - "Can design mindfulness interventions for specific populations with appropriate adaptations"
+          - "Stays current with mindfulness research — reads at least 5 peer-reviewed papers per year"
+        resources:
+          - title: "UCLA MARC — MBSR Teacher Training Program"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Greater Good Science Center — Science of Happiness Course (includes mindfulness module)"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "course"
+          - title: "Tara Brach — Teacher Training and Resources"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "course"
+        practice:
+          - "Daily: Personal practice of 45+ minutes integrating multiple techniques"
+          - "Ongoing: Teach mindfulness programs and refine teaching based on participant feedback"
+          - "Annual: Attend a teacher retreat or continuing education program"
+        projects:
+          - "Complete MBSR or MBCT teacher training certification"
+          - "Design and deliver a population-specific mindfulness program (e.g., workplace, healthcare workers, students)"
+        tips:
+          - "The best MBSR teachers have a deep personal practice — teaching from experience rather than script is what makes mindfulness instruction authentic"
+          - "Trauma-informed adaptations are essential — learn to offer invitations rather than instructions, provide choice, and create safe environments"
+    tags: ["MBSR", "stress", "applied"]
+
+  # -- MEDITATION & NEUROSCIENCE -------------------------------------------------
+  - id: "science/meditation-mindfulness/neuroscience"
+    title: "Meditation & Neuroscience"
+    description: >
+      Understanding the scientific evidence for meditation's effects on
+      the brain, body, and behavior. This node covers the neuroscience
+      of attention and awareness, research on structural and functional
+      brain changes from meditation, the physiology of the stress
+      response and how mindfulness modulates it, and critical evaluation
+      of meditation research (distinguishing strong findings from hype).
+
+      Sub-skills covered: reading and interpreting meditation research
+      papers, understanding key brain regions involved in meditation
+      (prefrontal cortex, anterior cingulate, insula, default mode
+      network, amygdala), the neuroscience of attention (focused vs.
+      open monitoring neural signatures), the biology of the stress
+      response (HPA axis, cortisol, sympathetic/parasympathetic balance),
+      and evidence-based claims vs. meditation myths.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the basic claim that meditation changes the brain. Can name 3 research-supported benefits of meditation (stress reduction, attention improvement, emotional regulation). Knows the difference between anecdote and evidence. Has read or watched at least 2 introductory resources on meditation science."
+        metrics:
+          - "Can name 3 evidence-based benefits of meditation and cite the type of evidence (e.g., RCTs, brain imaging)"
+          - "Has read or watched at least 2 introductory resources on meditation neuroscience"
+          - "Can explain in simple terms what the default mode network is and how meditation affects it"
+          - "Distinguishes between 'meditation makes you calmer' (anecdote) and 'MBSR reduces cortisol in RCTs' (evidence)"
+        resources:
+          - title: "Greater Good Science Center — The State of Mindfulness Science"
+            url: "https://greatergood.berkeley.edu/article/item/the_state_of_mindfulness_science"
+            type: "article"
+          - title: "Headspace — The Science of Meditation"
+            url: "https://www.headspace.com/science"
+            type: "article"
+          - title: "UCLA MARC — Research Overview"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Waking Up — Science Conversations (podcast episodes)"
+            url: "https://www.wakingup.com/"
+            type: "video"
+        practice:
+          - "Read one introductory article on meditation neuroscience per week for 4 weeks"
+          - "Watch one video or lecture on meditation research (e.g., Richie Davidson TED talk)"
+          - "After each resource, write 3 bullet points summarizing what you learned"
+        projects:
+          - "Create a one-page summary of 5 evidence-based benefits of meditation with source citations"
+          - "Explain meditation neuroscience to a skeptical friend and note their questions — use those to guide further learning"
+        tips:
+          - "Be skeptical of meditation science headlines — many studies have small samples, no control group, or only measure self-report; look for randomized controlled trials"
+          - "The strongest evidence is for stress reduction (cortisol, blood pressure), attention improvement (sustained attention tasks), and emotional regulation (amygdala reactivity)"
+      - level: intermediate
+        criteria: "Reads and understands meditation research papers at an introductory level. Knows the key brain areas involved in meditation (PFC, ACC, insula, amygdala, DMN). Can explain focused attention vs. open monitoring in neuroscientific terms. Understands the HPA axis and stress physiology. Can evaluate research quality (sample size, control conditions, effect sizes)."
+        metrics:
+          - "Has read at least 5 peer-reviewed papers or research summaries on meditation neuroscience"
+          - "Can name and explain the role of 5 brain regions/networks in meditation"
+          - "Can evaluate a meditation study's quality (identifies limitations like small N, no active control, self-report only)"
+          - "Explains the HPA axis and cortisol response and how meditation modulates it"
+        resources:
+          - title: "Greater Good Science Center — Neuroscience of Mindfulness"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+          - title: "UCLA MARC — Mindfulness Research Center Publications"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Waking Up — Conversations with Neuroscientists"
+            url: "https://www.wakingup.com/"
+            type: "video"
+        practice:
+          - "Read one research paper or detailed research summary per month on meditation neuroscience"
+          - "After each paper, write a brief evaluation: What did they find? How strong is the evidence? What are the limitations?"
+          - "Follow one meditation researcher (e.g., Richie Davidson, Judson Brewer, Sara Lazar) and read their latest publications"
+        projects:
+          - "Write a 2-page literature review covering meditation's effects on attention, stress, and emotional regulation"
+          - "Present meditation neuroscience findings to a small group (journal club, friends, meditation group) and facilitate discussion"
+        tips:
+          - "The default mode network (DMN) is the single most important concept in meditation neuroscience — its reduced activity during meditation correlates with reduced mind-wandering and self-referential thought"
+          - "Most meditation studies are correlational, not causal — long-term meditators differ from non-meditators, but we cannot always say meditation caused the difference"
+      - level: advanced
+        criteria: "Reads primary research fluently. Understands the limitations of current meditation neuroscience (replication crisis, active control problems, self-selection bias). Can explain the neural signatures of different meditation styles. Integrates scientific understanding with personal practice. Can present findings to both scientific and lay audiences."
+        metrics:
+          - "Has read 15+ peer-reviewed papers on meditation neuroscience"
+          - "Can describe the neural signatures of focused attention, open monitoring, and loving-kindness meditation"
+          - "Can critique a meditation study's methodology in writing (identifying confounds, alternative explanations, generalizability limits)"
+          - "Has presented meditation neuroscience findings to at least one audience"
+        resources:
+          - title: "UCLA MARC — Advanced Research and Publications"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Greater Good Science Center — Research and Reports"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+          - title: "Waking Up — Deep Dives into Consciousness Science"
+            url: "https://www.wakingup.com/"
+            type: "video"
+        practice:
+          - "Monthly: Read 1-2 new peer-reviewed papers on meditation and write a brief summary"
+          - "Quarterly: Present a meditation research finding to your meditation group or study group"
+          - "Ongoing: Integrate neuroscience insights into your personal practice (e.g., understanding what is happening in your brain during concentration)"
+        projects:
+          - "Write a critical review of one popular meditation science book (e.g., Altered Traits by Goleman & Davidson) identifying both strengths and overstated claims"
+          - "Create a presentation on meditation neuroscience suitable for a general audience"
+        tips:
+          - "The best meditation neuroscience integrates first-person practice with third-person science — your own experience is data, not just the fMRI results"
+          - "Be especially critical of claims about meditation curing diseases or replacing medical treatment — the evidence does not support these claims"
+      - level: expert
+        criteria: "Deep expertise in meditation neuroscience — can review papers, design studies, and communicate findings to diverse audiences. Understands the intersection of contemplative practice and cognitive neuroscience. Can bridge scientific and experiential perspectives. May contribute to research."
+        metrics:
+          - "Has read 30+ peer-reviewed papers on meditation neuroscience"
+          - "Can design a meditation research study with appropriate controls, measures, and hypotheses"
+          - "Has contributed to meditation research (as researcher, participant in advanced studies, or science communicator)"
+          - "Can explain meditation neuroscience at both lay and professional scientific levels"
+        resources:
+          - title: "UCLA MARC — Researcher Resources and Collaboration"
+            url: "https://www.uclahealth.org/programs/uclamindful/about-us/research/maps-research"
+            type: "article"
+          - title: "Greater Good Science Center — Educator and Researcher Resources"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+          - title: "Waking Up — Expert Conversations on Mind Science"
+            url: "https://www.wakingup.com/"
+            type: "video"
+        practice:
+          - "Ongoing: Stay current with meditation neuroscience literature — read at least 10 papers per year"
+          - "Ongoing: Bridge research and practice communities — present at both meditation centers and academic settings"
+          - "Annual: Attend a conference or symposium on contemplative science (e.g., ISCS, Mind & Life)"
+        projects:
+          - "Contribute to a meditation research project as researcher, consultant, or experienced practitioner-participant"
+          - "Write an accessible article on meditation neuroscience for a lay audience and publish it (blog, newsletter, magazine)"
+        tips:
+          - "The field of contemplative neuroscience is young and evolving — maintain intellectual humility about what we know and what remains uncertain"
+          - "The most valuable contribution an expert meditator can make to science is honest, detailed first-person reporting of meditative experience — this bridges the explanatory gap between brain data and lived experience"
+    tags: ["neuroscience", "research", "evidence-based"]
+
+  # -- ADVANCED RETREAT PRACTICE -------------------------------------------------
+  - id: "science/meditation-mindfulness/retreat-practice"
+    title: "Advanced Retreat Practice"
+    description: >
+      Extended silent meditation practice in a retreat setting — the
+      traditional context for deepening all meditation skills. Retreats
+      involve continuous practice (sitting, walking, eating, resting) in
+      silence for multiple days, typically with teacher guidance. This
+      node covers preparation, the retreat arc (settling, deepening,
+      challenge, insight), working with intense mental and physical
+      experiences, and integrating retreat insights into daily life.
+
+      Sub-skills covered: preparing for retreat (logistics, mental
+      readiness, setting intention), maintaining practice in silence
+      (noble silence, no devices, minimal social contact), working with
+      the retreat arc (initial restlessness, mid-retreat depth, potential
+      difficult experiences), sitting with pain and discomfort for
+      extended periods, processing intense emotional material, and
+      post-retreat integration (re-entry, maintaining practice momentum).
+    benchmarks:
+      - level: beginner
+        criteria: "Has attended at least one weekend or 3-day silent retreat. Can sit for 30+ minutes without moving. Maintains noble silence for the retreat duration. Has a personal daily practice of at least 15 minutes that predates the retreat."
+        metrics:
+          - "Has completed at least one organized silent retreat of 2-3 days"
+          - "Sits for 30+ minutes without adjusting posture during retreat sits"
+          - "Maintains noble silence for the full retreat duration without breaking"
+          - "Has a minimum of 3 months of daily practice before attending first retreat"
+          - "Cumulative practice reaches 50+ hours before first retreat"
+        resources:
+          - title: "Insight Timer — Retreat Preparation Guide"
+            url: "https://insighttimer.com/meditation-topics/retreat"
+            type: "article"
+          - title: "Tara Brach — Preparing for Your First Retreat (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Headspace — What to Expect at a Meditation Retreat"
+            url: "https://www.headspace.com/meditation/techniques"
+            type: "article"
+          - title: "UCLA MARC — Residential Retreat Programs"
+            url: "https://www.uclahealth.org/programs/marc/classes-events/maps-classes"
+            type: "article"
+        practice:
+          - "Before retreat: build up to 30-minute daily sits for at least 2 weeks"
+          - "Before retreat: practice one half-day silent period at home (4 hours, no phone, no talking)"
+          - "On retreat: follow the schedule fully — attend every sit, every walk, every meal in silence"
+        projects:
+          - "Complete a 3-day silent retreat and write a daily journal entry (after the retreat) about the experience of each day"
+          - "After the retreat, maintain the retreat schedule for one additional day at home as a re-entry practice"
+        tips:
+          - "Your first retreat will likely be harder than expected — restlessness, boredom, and strong emotions are normal and are the material of the practice"
+          - "Pack simple, comfortable clothing and bring earplugs for sleeping in shared rooms — logistics matter more than you think"
+      - level: intermediate
+        criteria: "Has completed at least one 7-to-10-day silent retreat. Can sit for 45+ minutes. Works skillfully with physical pain and emotional material that arises during extended practice. Maintains practice at home at a retreat-informed level (30+ min daily). Has a relationship with a meditation teacher."
+        metrics:
+          - "Has completed at least one 7-to-10-day silent retreat"
+          - "Sits for 45+ minutes during retreat without requesting to leave the hall"
+          - "Reports working with at least one episode of intense emotion or physical pain during retreat using mindfulness techniques"
+          - "Maintains 30+ minute daily practice for 3+ months after the retreat"
+          - "Has an ongoing relationship with a meditation teacher (in-person, online, or through a center)"
+          - "Cumulative practice reaches 150+ hours"
+        resources:
+          - title: "Insight Timer — Long Retreat Support and Community"
+            url: "https://insighttimer.com"
+            type: "tool"
+          - title: "Tara Brach — Working with Difficult Emotions on Retreat (talk)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Waking Up — Retreat Guidance and Teacher Support"
+            url: "https://www.wakingup.com/"
+            type: "course"
+        practice:
+          - "Daily: 30-45 min formal practice informed by retreat experience"
+          - "Quarterly: Attend a weekend retreat to refresh and deepen practice"
+          - "Ongoing: Meet with a meditation teacher at least monthly for practice guidance"
+        projects:
+          - "Complete a 10-day silent retreat (e.g., Goenka, IMS, Spirit Rock, Zen center) and write a detailed reflection on the retreat arc"
+          - "Design a post-retreat integration plan: daily practice schedule, weekly commitments, and monthly check-ins for 3 months"
+        tips:
+          - "The days after a retreat are as important as the retreat itself — have a re-entry plan that includes reduced social obligations, maintained practice, and gentle return to daily life"
+          - "If intense psychological material arises on retreat (trauma, grief, fear), speak with the teacher immediately — this is what they are there for"
+      - level: advanced
+        criteria: "Has completed multiple long retreats (3+ retreats of 7+ days). Can sit for 60+ minutes. Has experienced and navigated challenging meditation territory (intense emotions, altered perceptions, dark night phenomena). Integrates retreat insights into daily life. Considering or engaged in teacher training. 500+ cumulative hours."
+        metrics:
+          - "Has completed 3+ retreats of 7+ days each"
+          - "Sits for 60+ minutes during retreat without difficulty"
+          - "Has navigated at least one challenging meditation experience (with teacher support) and maintained practice"
+          - "Cumulative practice reaches 500+ hours"
+          - "Reports meaningful integration of retreat insights into daily relationships and work"
+        resources:
+          - title: "Waking Up — Advanced Retreat Conversations"
+            url: "https://www.wakingup.com/"
+            type: "course"
+          - title: "Tara Brach — Advanced Practice and Integration (talk archive)"
+            url: "https://www.tarabrach.com/talks-audio-video/"
+            type: "video"
+          - title: "Insight Timer — Advanced Practitioner Community"
+            url: "https://insighttimer.com"
+            type: "tool"
+        practice:
+          - "Daily: 45-60 min formal practice as non-negotiable"
+          - "Annually: at least one 7-to-10-day silent retreat"
+          - "Ongoing: regular meetings with a teacher to discuss practice challenges and insights"
+        projects:
+          - "Complete a month-long (30-day) retreat or equivalent intensive practice period"
+          - "Write a comprehensive reflection on how retreat practice has transformed your relationship to mind, stress, and daily life"
+        tips:
+          - "Challenging meditation experiences (dark night, dissolution of self, intense fear or grief) are recognized territory — they are not signs of failure but of deepening practice; always work with a qualified teacher during these periods"
+          - "The integration phase is where retreat insights become wisdom — actively bring retreat awareness to your most challenging daily situations"
+      - level: expert
+        criteria: "Retreat practice is a lifelong commitment. Has completed 1000+ hours of practice including multiple long retreats. Serves as a retreat leader or assistant teacher. Can support other practitioners through challenging retreat experiences. Considered an advanced or senior practitioner in a practice community."
+        metrics:
+          - "Cumulative practice exceeds 1000 hours including multiple long retreats"
+          - "Has served as retreat support (manager, assistant teacher, or mentor) on at least 2 retreats"
+          - "Can recognize and appropriately respond to challenging meditation experiences in other practitioners"
+          - "Is recognized as an advanced practitioner by a qualified teacher or practice community"
+        resources:
+          - title: "UCLA MARC — Advanced Teacher Training and Retreat Leadership"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Tara Brach — Meditation Teacher Training Program"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "course"
+          - title: "Insight Timer — Community Leadership Resources"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "tool"
+        practice:
+          - "Daily: 60+ min formal practice"
+          - "Annually: serve on at least one retreat as support staff, assistant teacher, or mentor"
+          - "Ongoing: supervise or mentor intermediate practitioners preparing for long retreats"
+        projects:
+          - "Serve as assistant teacher or retreat manager for a 7-to-10-day silent retreat"
+          - "Develop a retreat preparation guide for your practice community"
+        tips:
+          - "The transition from retreat participant to retreat supporter is one of the most important steps in a practitioner's development — you learn as much from supporting others as from your own sits"
+          - "Senior practitioners must maintain their own practice and teacher relationships — teaching and supporting others can become a subtle avoidance of one's own deepening work"
+    tags: ["retreat", "intensive", "advanced"]
+
+  # -- TEACHING & GUIDING OTHERS -------------------------------------------------
+  - id: "science/meditation-mindfulness/teaching"
+    title: "Teaching & Guiding Others"
+    description: >
+      The skills needed to guide others in meditation practice —
+      leading groups, giving clear instructions, adapting to different
+      populations, handling participant challenges, and developing as
+      a meditation teacher. Teaching meditation requires both deep
+      personal practice and specific pedagogical skills.
+
+      Sub-skills covered: voice pacing and silence in guided meditation,
+      structuring a meditation session (opening, instruction, practice,
+      closing), adapting language for different audiences (secular,
+      clinical, spiritual), trauma-informed teaching, working with
+      participant questions and resistance, designing multi-week
+      programs, giving feedback on practice, and maintaining personal
+      practice while teaching.
+    benchmarks:
+      - level: beginner
+        criteria: "Has led at least 3 informal guided meditations for friends or family. Can guide a basic 10-minute breath awareness session from memory. Understands the difference between teaching from script and teaching from experience. Has 100+ hours of personal practice."
+        metrics:
+          - "Has guided at least 3 informal meditation sessions for 1-5 people"
+          - "Guides a 10-minute breath awareness session with clear, well-paced instructions without reading from a script"
+          - "Receives positive feedback from at least 2 participants"
+          - "Personal practice exceeds 100 cumulative hours"
+        resources:
+          - title: "Tara Brach — How to Lead a Meditation (guidance)"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "video"
+          - title: "Insight Timer — Become a Meditation Teacher Guide"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "article"
+          - title: "UCLA MARC — Mindfulness Facilitation Training"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Headspace — How to Lead Meditation at Work"
+            url: "https://www.headspace.com/work"
+            type: "article"
+        practice:
+          - "Monthly: Guide a 10-minute meditation for a small group (friends, family, colleagues)"
+          - "Weekly: Practice guiding a meditation alone, speaking aloud as if a group were present, and record yourself"
+          - "After each session: ask participants for one thing that worked and one suggestion for improvement"
+        projects:
+          - "Lead 5 guided meditations for different small groups and collect written feedback from each"
+          - "Record yourself guiding a 10-minute meditation, listen back, and note 3 areas for improvement"
+        tips:
+          - "The most common beginner teaching mistake is talking too much — leave long silences between instructions; silence IS the practice"
+          - "Speak from your own experience, not from a script — 'I find it helpful to...' is more authentic than 'You should...'"
+      - level: intermediate
+        criteria: "Leads regular guided meditations for a group (weekly or bi-weekly). Can guide multiple techniques (breath, body scan, metta, open monitoring). Adapts language for the audience. Has begun formal teacher training or a mentorship. Personal practice exceeds 200 hours."
+        metrics:
+          - "Leads guided meditation sessions at least 2x/month for a group of 5+ people"
+          - "Can guide 4+ different meditation techniques (breath, body scan, metta, walking, open monitoring)"
+          - "Adapts language appropriately for different audiences (secular workplace vs. meditation center)"
+          - "Is enrolled in or has completed a meditation teacher training program"
+          - "Personal practice exceeds 200 cumulative hours"
+        resources:
+          - title: "UCLA MARC — Mindful Awareness Practices (MAP) Facilitator Training"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Tara Brach — Meditation Teacher Training Program Information"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "course"
+          - title: "Greater Good Science Center — Teaching Mindfulness Resources"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+          - title: "Insight Timer — Teacher Community and Publishing Tools"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "tool"
+        practice:
+          - "2x/month: Lead a 20-30 minute guided meditation for a group, varying the technique each time"
+          - "After each session: debrief with a mentor or senior teacher about what went well and what to improve"
+          - "Weekly: Study how experienced teachers guide sessions (listen to Tara Brach, Sam Harris, MARC recordings) and note their pacing, language, and silence use"
+        projects:
+          - "Design and lead a 4-week meditation introduction course (one session per week) for a workplace or community group"
+          - "Complete a formal meditation teacher training program (UCLA MARC, Tara Brach, or equivalent)"
+        tips:
+          - "Record every session you lead and listen back within 24 hours — you will hear pacing issues and verbal habits you cannot notice in the moment"
+          - "Trauma-informed language is essential from the start: always offer invitations ('you might try...') rather than commands ('now close your eyes')"
+      - level: advanced
+        criteria: "Teaches meditation regularly and confidently. Designs multi-week programs for specific populations. Handles participant challenges (emotional reactions, resistance, physical pain, sleepiness) skillfully. Has completed formal teacher training. Personal practice exceeds 500 hours. Has a teaching mentor or supervision."
+        metrics:
+          - "Teaches meditation regularly (weekly or more) for groups of 10+ people"
+          - "Has designed and delivered at least 2 multi-week programs"
+          - "Has handled 5+ participant challenges (crying, panic, resistance, strong emotion) during or after sessions"
+          - "Has completed formal teacher training certification"
+          - "Personal practice exceeds 500 cumulative hours"
+          - "Receives regular teaching supervision from a senior teacher"
+        resources:
+          - title: "UCLA MARC — Advanced Teacher Training and Supervision"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Tara Brach — Advanced Teacher Training Resources"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "course"
+          - title: "Greater Good Science Center — Educator Resources for Mindfulness"
+            url: "https://greatergood.berkeley.edu/topic/mindfulness"
+            type: "article"
+        practice:
+          - "Weekly: Lead meditation sessions for at least one regular group"
+          - "Monthly: Teaching supervision with a senior teacher"
+          - "Ongoing: Maintain personal practice of 45+ min daily — teaching requires a deep well of personal experience"
+        projects:
+          - "Design and deliver a meditation program for a specific population (workplace burnout, healthcare workers, students, grieving families)"
+          - "Develop a trauma-informed adaptation of your teaching approach with input from a mental health professional"
+        tips:
+          - "The hardest skill for an advanced teacher to develop is knowing when NOT to teach — sometimes a participant needs therapy, not meditation, and the teacher's job is to recognize the boundary and refer appropriately"
+          - "Your personal practice must stay ahead of your teaching — if you stop growing as a practitioner, your teaching will plateau"
+      - level: expert
+        criteria: "Established meditation teacher with a regular teaching practice, supervision experience, and contribution to the broader meditation community. Trains other teachers. Deep personal practice of 1000+ hours. Recognized in a tradition or training program. Can teach across contexts (clinical, corporate, retreat, community)."
+        metrics:
+          - "Has taught meditation for 3+ years regularly"
+          - "Has supervised or mentored at least 5 newer teachers"
+          - "Personal practice exceeds 1000 cumulative hours"
+          - "Teaches across at least 3 contexts (e.g., retreat, workplace, clinical, community, online)"
+          - "Is recognized as a qualified teacher by a training program or meditation community"
+        resources:
+          - title: "UCLA MARC — Teacher Certification and Community"
+            url: "https://www.uclahealth.org/programs/marc/facilitating-mindfulness/continuing-mindfulness-teacher-education"
+            type: "course"
+          - title: "Tara Brach — Senior Teacher Network"
+            url: "https://www.tarabrach.com/guided-meditations/"
+            type: "course"
+          - title: "Insight Timer — Publishing and Building a Teaching Practice"
+            url: "https://insighttimer.com/meditation-teachers"
+            type: "tool"
+        practice:
+          - "Daily: Personal practice of 60+ min — non-negotiable regardless of teaching schedule"
+          - "Ongoing: Mentor newer teachers through their first year of teaching"
+          - "Annual: Attend a teacher retreat to deepen practice and connect with peers"
+        projects:
+          - "Mentor 3 new meditation teachers from their first guided session through their first multi-week program"
+          - "Publish guided meditations on a platform (Insight Timer, podcast, YouTube) to reach a wider audience"
+        tips:
+          - "The expert teacher's greatest asset is authenticity — students can sense when a teacher is speaking from deep personal experience versus intellectual knowledge"
+          - "Maintain beginner's mind about teaching — even after 1000+ hours, approach each session as if it were your first; the group in front of you is always new"
+    tags: ["teaching", "leadership", "pedagogy"]
+
+relationships:
+  # -- Foundation layer ----------------------------------------------------------
+  - source: "science/meditation-mindfulness/breath-awareness"
+    target: "science/meditation-mindfulness/body-scan"
+    type: "enables"
+    note: "Breath awareness establishes the basic attention skills needed for body scan — if you can track breath, you can track sensation"
+
+  - source: "science/meditation-mindfulness/breath-awareness"
+    target: "science/meditation-mindfulness/focused-attention"
+    type: "enables"
+    note: "Breath awareness is the simplest form of focused attention — it directly develops the concentration needed for advanced single-point focus"
+
+  - source: "science/meditation-mindfulness/breath-awareness"
+    target: "science/meditation-mindfulness/walking-meditation"
+    type: "enables"
+    note: "Basic attention training from breath awareness transfers to tracking physical sensations during walking"
+
+  # -- Concentration → Mindfulness progression -----------------------------------
+  - source: "science/meditation-mindfulness/focused-attention"
+    target: "science/meditation-mindfulness/open-monitoring"
+    type: "enables"
+    note: "Stable focused attention is prerequisite for open monitoring — you must be able to sustain attention before you can open it to the full field of experience"
+
+  - source: "science/meditation-mindfulness/body-scan"
+    target: "science/meditation-mindfulness/open-monitoring"
+    type: "enables"
+    note: "Body scan develops the interoceptive and sensory awareness that becomes the content of open monitoring practice"
+
+  # -- Heart practices -----------------------------------------------------------
+  - source: "science/meditation-mindfulness/breath-awareness"
+    target: "science/meditation-mindfulness/loving-kindness"
+    type: "enables"
+    note: "Basic attention stability from breath awareness supports metta practice — you need focus to sustain the phrases and the felt sense"
+
+  - source: "science/meditation-mindfulness/open-monitoring"
+    target: "science/meditation-mindfulness/loving-kindness"
+    type: "complementary"
+    note: "Open monitoring and metta complement each other — awareness practice deepens compassion, and compassion practice opens awareness"
+
+  # -- Applied mindfulness -------------------------------------------------------
+  - source: "science/meditation-mindfulness/body-scan"
+    target: "science/meditation-mindfulness/stress-reduction"
+    type: "requires"
+    note: "Body scan is a core MBSR practice — recognizing stress in the body requires interoceptive skill"
+
+  - source: "science/meditation-mindfulness/breath-awareness"
+    target: "science/meditation-mindfulness/stress-reduction"
+    type: "requires"
+    note: "Breath awareness is the foundation of MBSR — the three-minute breathing space and STOP technique are built on it"
+
+  - source: "science/meditation-mindfulness/open-monitoring"
+    target: "science/meditation-mindfulness/stress-reduction"
+    type: "enables"
+    note: "Mindful awareness of thoughts and emotions (open monitoring) is the mechanism by which MBSR changes the stress response"
+
+  # -- Knowledge layer -----------------------------------------------------------
+  - source: "science/meditation-mindfulness/stress-reduction"
+    target: "science/meditation-mindfulness/neuroscience"
+    type: "enables"
+    note: "Personal experience with MBSR provides the experiential foundation for understanding meditation neuroscience research"
+
+  - source: "science/meditation-mindfulness/focused-attention"
+    target: "science/meditation-mindfulness/neuroscience"
+    type: "complementary"
+    note: "Understanding the neuroscience of attention enhances concentration practice, and concentration practice provides first-person data for neuroscience"
+
+  # -- Intensive practice --------------------------------------------------------
+  - source: "science/meditation-mindfulness/focused-attention"
+    target: "science/meditation-mindfulness/retreat-practice"
+    type: "requires"
+    note: "Extended retreat sits require a stable concentration foundation — you cannot sit for 60+ minutes without focused attention skills"
+
+  - source: "science/meditation-mindfulness/open-monitoring"
+    target: "science/meditation-mindfulness/retreat-practice"
+    type: "requires"
+    note: "Retreat practice depends on open monitoring to work with the wide range of experiences that arise during intensive practice"
+
+  - source: "science/meditation-mindfulness/body-scan"
+    target: "science/meditation-mindfulness/retreat-practice"
+    type: "enables"
+    note: "Body awareness from body scan practice enables working with physical pain and discomfort during long retreat sits"
+
+  # -- Teaching ------------------------------------------------------------------
+  - source: "science/meditation-mindfulness/retreat-practice"
+    target: "science/meditation-mindfulness/teaching"
+    type: "requires"
+    note: "Deep personal retreat experience is required before teaching — you must have navigated the territory yourself before guiding others through it"
+
+  - source: "science/meditation-mindfulness/stress-reduction"
+    target: "science/meditation-mindfulness/teaching"
+    type: "enables"
+    note: "Understanding applied mindfulness (MBSR framework) provides the pedagogical structure for teaching meditation to secular audiences"
+
+  - source: "science/meditation-mindfulness/neuroscience"
+    target: "science/meditation-mindfulness/teaching"
+    type: "complementary"
+    note: "Neuroscience literacy helps teachers answer student questions and communicate meditation's benefits with credibility"
+
+  - source: "science/meditation-mindfulness/loving-kindness"
+    target: "science/meditation-mindfulness/teaching"
+    type: "enables"
+    note: "Compassion practice develops the warmth and patience essential for guiding others, especially through difficult meditation experiences"

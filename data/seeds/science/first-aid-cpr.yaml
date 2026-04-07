@@ -1,0 +1,1482 @@
+# OpenSkillTree — Seed Skill Tree: First Aid & CPR
+#
+# Domain:  Science / Health / First Aid & CPR
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Certification reference: American Heart Association (AHA) & American Red Cross
+# Benchmark levels loosely map to:
+#   beginner     ≈ Basic awareness (untrained bystander who has read/watched guides)
+#   intermediate ≈ AHA/Red Cross certified (Heartsaver, First Aid/CPR/AED)
+#   advanced     ≈ Wilderness First Responder (WFR) / STOP THE BLEED certified
+#   expert       ≈ EMT-Basic / First Aid Instructor / BLS Instructor
+#
+# Teaching order based on standard first-aid pedagogy (AHA, Red Cross, NOLS WM):
+#   Scene safety & calling 911 → CPR → AED → choking response →
+#   wound care & bleeding control → fractures & sprains →
+#   burns & environmental emergencies → allergic reactions & anaphylaxis →
+#   wilderness/remote first aid → instructor certification.
+# Scene assessment is universally taught FIRST. CPR is the single most
+# life-saving skill for bystanders and the foundation of all emergency response.
+
+tree:
+  id: "science/first-aid-cpr"
+  title: "First Aid & CPR"
+  description: >
+    A complete skill map for first aid and CPR — the essential emergency
+    response skills that save lives every day. Covers scene assessment,
+    cardiopulmonary resuscitation for all age groups, automated external
+    defibrillator use, choking response, wound and bleeding management,
+    musculoskeletal injuries, environmental emergencies, anaphylaxis, wilderness
+    medicine, and the path to becoming a certified instructor. These skills are
+    relevant to every person regardless of profession.
+  domain: "Science"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/scene-assessment"
+    title: "Scene Assessment & Calling 911"
+    description: >
+      The absolute first step in any emergency. Before touching a patient or
+      starting any intervention, you must ensure the scene is safe, identify the
+      number of victims, determine the mechanism of injury or nature of illness,
+      and activate Emergency Medical Services (EMS). This node covers the
+      systematic approach every first aider must follow.
+
+      Sub-skills covered: scene safety scan (hazards: traffic, fire, electrical,
+      chemical, violent persons), body substance isolation (BSI) / personal
+      protective equipment (PPE — gloves, mask, eye protection), mechanism of
+      injury (MOI) assessment, nature of illness (NOI) assessment, number of
+      patients and triage basics, activating EMS (calling 911 / local emergency
+      number), providing effective information to dispatchers (location, number
+      of victims, condition, hazards), consent rules (expressed consent, implied
+      consent for unconscious patients, minor consent), Good Samaritan law
+      awareness, and initial patient assessment (responsiveness check using
+      shout-tap-shout, AVPU scale — Alert, Voice, Pain, Unresponsive).
+
+      Practice scenarios: (1) Walk through a mock scene and identify 5 hazards
+      before approaching. (2) Role-play a 911 call providing structured
+      information. (3) Practice donning gloves and checking responsiveness on
+      a training mannequin. (4) Triage drill with 3 simulated patients.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows to check scene safety before approaching any patient. Can call 911 and provide location, number of victims, and basic condition. Understands not to move a patient unless the scene is unsafe. Knows to wear gloves if available. Can check responsiveness using shout-tap-shout method."
+        metrics:
+          - "Identifies 4/5 hazards in a mock scene assessment within 30 seconds"
+          - "Provides dispatcher with location, victim count, and chief complaint in a role-play 911 call under 60 seconds"
+          - "Correctly demonstrates shout-tap-shout responsiveness check on 5/5 attempts"
+          - "Correctly explains when implied consent applies vs. expressed consent"
+          - "Dons exam gloves properly in under 15 seconds"
+        resources:
+          - title: "American Red Cross — First Aid Steps"
+            url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/first-aid.html"
+            type: "article"
+          - title: "Mayo Clinic — First Aid Basics"
+            url: "https://www.mayoclinic.org/first-aid"
+            type: "article"
+          - title: "ProCPR — Scene Safety and Assessment"
+            url: "https://www.youtube.com/watch?v=gksBJMKxPCo"
+            type: "video"
+          - title: "American Heart Association — First Aid Resources"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-first-aid-training"
+            type: "article"
+        practice:
+          - "10 min: Walk through your home/office and identify potential emergency hazards (electrical, trip/fall, chemical under sink)"
+          - "10 min: Role-play a 911 call with a friend — practice giving structured info: location, victim count, what happened, current condition"
+          - "5 min: Practice donning and removing exam gloves properly without contaminating your hands (10 reps)"
+        projects:
+          - "Complete a scene assessment checklist for 3 different mock scenarios (car accident, kitchen injury, workplace collapse) and identify all hazards, PPE needed, and EMS activation steps"
+          - "Create a family emergency contact card with local emergency numbers, poison control (1-800-222-1222), and nearest hospital address"
+        tips:
+          - "The number one mistake bystanders make is rushing to help without checking if the scene is safe — you cannot help anyone if you become a victim yourself"
+          - "When calling 911, do not hang up until the dispatcher tells you to — they may need to give you instructions for CPR or other interventions"
+      - level: intermediate
+        criteria: "Performs a systematic primary assessment (Airway, Breathing, Circulation — ABCs). Uses AVPU scale to document level of consciousness. Gathers SAMPLE history (Signs/Symptoms, Allergies, Medications, Past history, Last oral intake, Events). Directs bystanders effectively to call 911, get AED, and control traffic."
+        metrics:
+          - "Completes primary assessment (ABCs) in correct order within 60 seconds on a simulated patient"
+          - "Correctly assigns AVPU level for 5/5 patient scenarios"
+          - "Gathers complete SAMPLE history in under 3 minutes during role-play"
+          - "Effectively delegates tasks to 3 bystanders in a multi-victim drill"
+          - "Passes AHA Heartsaver First Aid written exam with score of 84% or higher"
+        resources:
+          - title: "American Heart Association — Heartsaver First Aid Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-first-aid"
+            type: "course"
+          - title: "American Red Cross — First Aid/CPR/AED Certification"
+            url: "https://www.redcross.org/take-a-class/first-aid/first-aid-training/first-aid-classes"
+            type: "course"
+          - title: "ProCPR — Patient Assessment for First Aiders"
+            url: "https://www.youtube.com/watch?v=cODxe1lfPBo"
+            type: "video"
+        practice:
+          - "15 min: Practice primary assessment (ABCs) on a family member acting as patient — time yourself and aim for under 60 seconds"
+          - "10 min: SAMPLE history drill — have a partner present symptoms and you gather the full SAMPLE history"
+          - "10 min: Bystander delegation drill — practice pointing at specific people and giving clear, direct commands"
+        projects:
+          - "Obtain AHA Heartsaver First Aid or Red Cross First Aid certification"
+          - "Run a mock emergency scenario with 3 friends acting as bystanders and 1 as patient — practice delegating tasks and performing primary assessment"
+        tips:
+          - "Point directly at a specific person when delegating — saying 'you in the red shirt, call 911' is far more effective than shouting 'someone call 911' to a crowd"
+          - "SAMPLE history can reveal life-threatening information — a patient's allergy to a medication or their use of blood thinners changes your entire approach"
+      - level: advanced
+        criteria: "Performs rapid trauma assessment and detailed physical exam. Uses DCAP-BTLS mnemonic (Deformities, Contusions, Abrasions, Punctures, Burns, Tenderness, Lacerations, Swelling) for systematic body check. Can perform START triage for multi-casualty incidents. Documents findings for EMS handoff."
+        metrics:
+          - "Completes rapid trauma assessment (head-to-toe DCAP-BTLS) in under 3 minutes"
+          - "Correctly triages 5 simulated patients using START method with 100% accuracy"
+          - "Provides structured EMS handoff (age, sex, chief complaint, vitals, interventions, SAMPLE) in under 2 minutes"
+          - "Identifies mechanism of injury and predicts likely injuries in 4/5 scenarios"
+        resources:
+          - title: "NOLS Wilderness Medicine — Patient Assessment System"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "Stop the Bleed — Find a Course"
+            url: "https://www.stopthebleed.org/get-trained/"
+            type: "course"
+          - title: "ProCPR — Rapid Trauma Assessment"
+            url: "https://www.youtube.com/watch?v=pc3K0oenBac"
+            type: "video"
+        practice:
+          - "20 min: Head-to-toe DCAP-BTLS practice on a partner — verbalize every finding as you go"
+          - "15 min: START triage tabletop exercise with 8-10 patient cards of varying severity"
+          - "10 min: EMS handoff role-play — practice delivering a concise structured report to a partner acting as a paramedic"
+        projects:
+          - "Complete a STOP THE BLEED certification course"
+          - "Organize a tabletop mass-casualty triage exercise with your first-aid team or community group using 10 patient scenario cards"
+        tips:
+          - "DCAP-BTLS is your hands-on checklist — systematically palpate every body region and verbalize findings so you do not skip anything under stress"
+          - "In multi-casualty incidents, the hardest part of triage is walking past critically injured patients who cannot be saved — START triage exists to maximize lives saved with limited resources"
+      - level: expert
+        criteria: "Can design and lead scene assessment training for groups. Understands incident command system (ICS) basics for mass-casualty events. Teaches consent law, Good Samaritan protections, and HIPAA considerations. Evaluates and provides feedback on others' scene assessment performance."
+        metrics:
+          - "Designs and delivers a 30-minute scene assessment training session rated 4.5/5 or higher by participants"
+          - "Correctly explains ICS roles (Incident Commander, Triage Officer, Treatment Officer, Transport Officer) and when to use them"
+          - "Evaluates 5 students' scene assessments and provides specific, actionable feedback on each"
+          - "Passes AHA BLS Instructor or Red Cross Instructor candidate exam"
+        resources:
+          - title: "AHA — BLS Instructor Essentials Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+          - title: "FEMA — IS-100 Introduction to Incident Command System"
+            url: "https://training.fema.gov/is/courseoverview.aspx?code=IS-100.c"
+            type: "course"
+          - title: "Red Cross — Instructor Certification"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+        practice:
+          - "30 min: Design a scene assessment lesson plan with objectives, demonstration, and practice scenarios"
+          - "20 min: Evaluate video recordings of first-aid students performing scene assessments and write feedback notes"
+          - "15 min: Study ICS-100 course materials and complete the online exam"
+        projects:
+          - "Complete FEMA IS-100 (Introduction to Incident Command System) online course"
+          - "Deliver a scene assessment training to at least 10 participants and collect evaluation scores"
+        tips:
+          - "Great instructors create realistic stress in training — use moulage (simulated wounds), loud noises, and time pressure so students learn to perform scene assessment under real-world conditions"
+    tags: ["foundation", "safety", "beginner-friendly"]
+
+  # ── CPR ─────────────────────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/cpr"
+    title: "CPR (Adult, Child & Infant)"
+    description: >
+      Cardiopulmonary resuscitation is the single most important bystander
+      intervention for cardiac arrest. Effective CPR doubles or triples
+      survival rates. This node covers hands-only CPR, conventional CPR with
+      rescue breaths, and the differences in technique for adults, children,
+      and infants.
+
+      Sub-skills covered: recognizing cardiac arrest (unresponsive, no normal
+      breathing, no pulse), hands-only CPR (compression-only for untrained
+      bystanders), conventional CPR (30:2 compression-to-ventilation ratio),
+      high-quality chest compressions (rate 100-120/min, depth 2-2.4 inches for
+      adults, 2 inches for children, 1.5 inches for infants), full chest recoil
+      between compressions, minimizing interruptions (less than 10 seconds),
+      rescue breathing with pocket mask or bag-valve mask, two-rescuer CPR and
+      switching every 2 minutes, infant CPR (2-finger or 2-thumb encircling
+      technique), and team-based resuscitation dynamics.
+
+      Key numbers: compression rate 100-120/min (push to the beat of "Stayin'
+      Alive"), compression depth at least 2 inches (5 cm) for adults, 30:2
+      ratio for single rescuer, 15:2 ratio for 2-rescuer infant/child CPR.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes cardiac arrest (unresponsive, not breathing normally). Calls 911 and begins hands-only CPR. Pushes hard and fast in center of chest at 100-120 compressions per minute. Understands that any CPR is better than no CPR."
+        metrics:
+          - "Recognizes cardiac arrest and initiates CPR within 30 seconds on a simulated patient"
+          - "Maintains compression rate of 100-120/min for 2 continuous minutes on a mannequin"
+          - "Achieves compression depth of at least 2 inches on 80% of compressions (mannequin feedback)"
+          - "Allows full chest recoil on 80% of compressions"
+          - "Can explain when to use hands-only CPR vs. conventional CPR with rescue breaths"
+        resources:
+          - title: "American Heart Association — Hands-Only CPR"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/hands-only-cpr"
+            type: "article"
+          - title: "American Red Cross — Learn CPR"
+            url: "https://www.redcross.org/take-a-class/cpr"
+            type: "course"
+          - title: "ProCPR — How to Perform CPR"
+            url: "https://www.youtube.com/watch?v=hizBdM1Ob68"
+            type: "video"
+          - title: "Mayo Clinic — CPR: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-cpr/basics/art-20056600"
+            type: "article"
+        practice:
+          - "10 min: Practice chest compressions on a pillow or mannequin to the beat of 'Stayin Alive' (103 BPM) — aim for 100-120/min"
+          - "5 min: Practice finding the correct hand position — heel of one hand on center of chest, other hand on top, fingers interlaced"
+          - "2 min continuous: Do 2 full minutes of uninterrupted compressions to build endurance — this is physically demanding"
+        projects:
+          - "Take a free hands-only CPR training at a local fire station or community center"
+          - "Teach 3 family members or friends the basics of hands-only CPR (recognize, call, push hard and fast)"
+        tips:
+          - "Do not be afraid of hurting the patient — a patient in cardiac arrest is clinically dead, and broken ribs (which sometimes happen during CPR) heal, but death does not"
+          - "Push to the beat of 'Stayin Alive' by the Bee Gees — it is exactly 103 BPM, right in the 100-120 target range"
+      - level: intermediate
+        criteria: "Performs conventional CPR with rescue breaths at 30:2 ratio for adults. Adjusts technique for children (one or two hands based on size) and infants (two-finger technique). Opens airway with head-tilt chin-lift. Uses a pocket mask for ventilation. Switches with a partner every 2 minutes with minimal interruption."
+        metrics:
+          - "Delivers 30:2 CPR cycles with compression fraction above 80% (less than 10 seconds pause for ventilations)"
+          - "Achieves adequate chest rise on 8/10 rescue breaths using a pocket mask"
+          - "Correctly demonstrates infant 2-finger CPR with 1.5-inch compression depth"
+          - "Switches roles with partner in under 5 seconds during 2-rescuer CPR drill"
+          - "Passes AHA Heartsaver CPR/AED skills test or Red Cross Adult and Pediatric CPR certification"
+        resources:
+          - title: "AHA — Heartsaver CPR AED Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-cpr-aed"
+            type: "course"
+          - title: "ProCPR — Infant CPR Demonstration"
+            url: "https://www.youtube.com/watch?v=bSCIxtER3Ek"
+            type: "video"
+          - title: "Red Cross — CPR/AED for Adults, Children and Infants"
+            url: "https://www.redcross.org/take-a-class/cpr/cpr-training"
+            type: "course"
+        practice:
+          - "15 min: Full 30:2 CPR cycles on an adult mannequin — 5 cycles (about 2 minutes) then switch with a partner"
+          - "10 min: Infant CPR practice on an infant mannequin — 2-finger technique, 1.5-inch depth, 30:2 ratio"
+          - "10 min: Two-rescuer CPR drill — practice switching every 2 minutes with less than 5 seconds interruption"
+        projects:
+          - "Obtain AHA Heartsaver CPR/AED or Red Cross CPR/AED certification (valid 2 years)"
+          - "Practice CPR on mannequins for all 3 age groups (adult, child, infant) and log compression rate and depth using a feedback mannequin"
+        tips:
+          - "Compression fraction is the percentage of time you are actually compressing — aim for above 80% by minimizing pauses for breaths, pulse checks, and switching"
+          - "For infants, use the 2-thumb encircling technique if you have two rescuers — it generates better perfusion pressure than the 2-finger method"
+      - level: advanced
+        criteria: "Performs high-performance team CPR. Manages advanced airway (bag-valve mask with proper technique). Understands continuous compressions with advanced airway (1 breath every 6 seconds). Recognizes reversible causes of arrest (Hs and Ts). Can perform CPR in challenging environments (confined space, moving vehicle, water rescue)."
+        metrics:
+          - "Leads a 5-person CPR team through 10 minutes of resuscitation with compression fraction above 85%"
+          - "Delivers effective BVM ventilations with visible chest rise on 9/10 breaths"
+          - "Correctly identifies at least 4 of the Hs and Ts (reversible causes) when quizzed"
+          - "Maintains effective CPR quality during a simulated confined-space scenario"
+          - "Passes AHA BLS Provider exam with score of 84% or higher"
+        resources:
+          - title: "AHA — BLS Provider Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls"
+            type: "course"
+          - title: "NOLS Wilderness Medicine — CPR in Remote Settings"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "ProCPR — High Performance Team CPR"
+            url: "https://www.youtube.com/watch?v=eA_jGoBUGPU"
+            type: "video"
+        practice:
+          - "20 min: High-performance team CPR drill with assigned roles (compressor, ventilator, timer/coach, AED operator, recorder)"
+          - "10 min: BVM ventilation practice — focus on E-C clamp grip and achieving visible chest rise without over-ventilating"
+          - "15 min: Megacode simulation — full cardiac arrest scenario including CPR, AED, and reversible cause identification"
+        projects:
+          - "Obtain AHA BLS Provider certification"
+          - "Lead a mock code simulation with 4-5 team members, rotating roles, and debrief with specific quality metrics (compression rate, depth, fraction)"
+        tips:
+          - "The Hs and Ts are the reversible causes of cardiac arrest: Hypovolemia, Hypoxia, Hydrogen ion (acidosis), Hypo/Hyperkalemia, Hypothermia, Tension pneumothorax, Tamponade, Toxins, Thrombosis (pulmonary and coronary) — memorize them"
+          - "In team CPR, the coach/timer role is critical — they call out 2-minute switches, monitor compression quality, and keep the team organized"
+      - level: expert
+        criteria: "Can teach CPR to lay rescuers and healthcare professionals. Designs CPR training curricula. Uses feedback devices (mannequins with real-time metrics) to measure and improve student performance. Stays current with AHA Guidelines updates (published every 5 years). Mentors new CPR instructors."
+        metrics:
+          - "Holds active AHA BLS Instructor or Red Cross CPR Instructor certification"
+          - "Trains at least 50 students per year with first-attempt pass rates above 90%"
+          - "Students achieve average compression fraction above 80% during skills testing"
+          - "Can explain the key changes from the most recent AHA Guidelines update and their evidence basis"
+        resources:
+          - title: "AHA — BLS Instructor Essentials"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+          - title: "Red Cross — Become a CPR Instructor"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "AHA — CPR & ECC Guidelines"
+            url: "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+            type: "article"
+        practice:
+          - "30 min: Design a 4-hour CPR class lesson plan with demonstrations, mannequin practice, and skills testing"
+          - "20 min: Practice giving corrective feedback on compression quality using a feedback mannequin's real-time data"
+          - "15 min: Review the latest AHA Guidelines update and identify 3 key changes from the previous edition"
+        projects:
+          - "Obtain AHA BLS Instructor or Red Cross CPR Instructor certification"
+          - "Teach a full CPR certification class to at least 8 students and achieve 100% first-attempt pass rate"
+        tips:
+          - "The best CPR instructors use feedback mannequins that display real-time compression rate and depth — objective data drives improvement far more than verbal coaching alone"
+    tags: ["core", "life-saving", "certification"]
+
+  # ── AED ─────────────────────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/aed"
+    title: "AED (Automated External Defibrillator)"
+    description: >
+      An AED analyzes heart rhythm and delivers a shock to restore normal
+      rhythm in sudden cardiac arrest caused by ventricular fibrillation or
+      pulseless ventricular tachycardia. Early defibrillation is the single
+      most important factor in surviving cardiac arrest outside a hospital —
+      for every minute without defibrillation, survival decreases by 7-10%.
+
+      Sub-skills covered: recognizing when an AED is needed (cardiac arrest,
+      not just any emergency), locating AEDs in public spaces (airports,
+      schools, gyms, offices), powering on the unit and following voice prompts,
+      correct pad placement (right clavicle, left lateral chest wall), special
+      considerations (hairy chest — shave or use second set of pads, wet
+      patient — dry the chest, medication patches — remove before placing pads,
+      implanted pacemaker/defibrillator — place pad at least 1 inch away),
+      pediatric pads and dose attenuator for children under 8 or 55 lbs,
+      integrating AED use with CPR (minimize interruptions), clearing the
+      patient before shock delivery, and resuming CPR immediately after shock.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows what an AED is and that it should be used on someone in cardiac arrest. Can locate AEDs in familiar buildings. Powers on AED and follows voice prompts. Understands to continue CPR while AED is being retrieved."
+        metrics:
+          - "Locates the nearest AED in their workplace, gym, or school within 60 seconds"
+          - "Powers on a training AED and follows prompts to analyze and shock within 90 seconds"
+          - "Correctly places AED pads on an adult mannequin on first attempt"
+          - "Verbalizes 'clear' and visually confirms no one is touching patient before shock delivery"
+          - "Resumes CPR within 5 seconds after AED delivers shock"
+        resources:
+          - title: "American Heart Association — AED Overview"
+            url: "https://cpr.heart.org/en/resources/what-is-an-aed"
+            type: "article"
+          - title: "ProCPR — How to Use an AED"
+            url: "https://www.youtube.com/watch?v=UFvL7wTFzl0"
+            type: "video"
+          - title: "Red Cross — AED Training"
+            url: "https://www.redcross.org/take-a-class/aed/aed-training"
+            type: "course"
+          - title: "Mayo Clinic — Automated External Defibrillators"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-automated-external-defibrillators/basics/art-20056448"
+            type: "article"
+        practice:
+          - "5 min: Locate every AED in your workplace or school — note their locations and check if they have pediatric pads"
+          - "10 min: Practice the full AED sequence on a training unit — power on, place pads, clear, shock, resume CPR"
+          - "5 min: Practice integrating AED with CPR — do compressions while partner sets up AED, pause only for analysis and shock"
+        projects:
+          - "Map all AED locations in your workplace or community building and share the map with colleagues"
+          - "Complete the AED portion of an AHA Heartsaver or Red Cross CPR/AED certification course"
+        tips:
+          - "AEDs are designed to be used by untrained bystanders — they give voice prompts for every step. Do not be intimidated by the device; it will not shock a patient who does not need it"
+          - "The most common AED mistake is delay — send someone to get the AED the moment you recognize cardiac arrest, do not wait"
+      - level: intermediate
+        criteria: "Handles special AED situations: hairy chest, wet patient, medication patches, implanted devices. Uses pediatric pads for children under 8. Integrates AED seamlessly into 2-rescuer CPR with minimal compression interruptions. Troubleshoots common AED issues (low battery, poor contact, motion artifact)."
+        metrics:
+          - "Correctly manages 4/4 special situations (hairy chest, wet patient, medication patch, pacemaker) in scenario testing"
+          - "Applies pediatric pads correctly (anterior-posterior placement) on a child mannequin"
+          - "AED analysis-to-shock time under 15 seconds with minimal CPR interruption"
+          - "Identifies and resolves 'check pads' error on training AED within 10 seconds"
+          - "Passes AHA Heartsaver CPR/AED or Red Cross CPR/AED skills test"
+        resources:
+          - title: "AHA — Heartsaver CPR AED Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-cpr-aed"
+            type: "course"
+          - title: "ProCPR — AED Special Situations"
+            url: "https://www.youtube.com/watch?v=_bJGx8FBGOE"
+            type: "video"
+          - title: "St John Ambulance — Using a Defibrillator"
+            url: "https://www.sja.org.uk/first-aid-advice/how-to-use-a-defibrillator/"
+            type: "article"
+        practice:
+          - "10 min: Special situations drill — practice shaving pad area, drying chest, removing medication patch, and adjusting pad placement for pacemaker"
+          - "10 min: Pediatric AED drill — practice anterior-posterior pad placement on an infant/child mannequin"
+          - "15 min: Full integration drill — 2-rescuer CPR with AED, practice minimizing pause for analysis and shock"
+        projects:
+          - "Obtain AHA or Red Cross CPR/AED certification"
+          - "Inspect 3 real AEDs in public locations — check expiration dates on pads and battery, report any issues to the building manager"
+        tips:
+          - "If an AED says 'no shock advised' it means the rhythm is not shockable — this does NOT mean the patient is fine. Continue CPR immediately"
+          - "For children under 8, use pediatric pads if available. If not, use adult pads placed anterior-posterior (one on front of chest, one on back) to avoid pads touching each other"
+      - level: advanced
+        criteria: "Understands cardiac rhythms that AEDs treat (ventricular fibrillation, pulseless ventricular tachycardia) vs. non-shockable rhythms (asystole, PEA). Can maintain and inspect AED equipment. Integrates AED into high-performance team resuscitation. Understands AED program management for organizations."
+        metrics:
+          - "Correctly identifies shockable vs. non-shockable rhythms on 5/5 ECG strips"
+          - "Performs a complete AED readiness inspection (battery level, pad expiration, accessories) in under 3 minutes"
+          - "Integrates AED into team CPR with total hands-off time under 10 seconds per cycle"
+          - "Creates an AED maintenance schedule and inspection checklist for an organization"
+        resources:
+          - title: "AHA — HeartSaver AED Program Management"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver"
+            type: "article"
+          - title: "ProCPR — Cardiac Arrest Rhythms Explained"
+            url: "https://www.youtube.com/watch?v=Ae-bETxNOjg"
+            type: "video"
+          - title: "Red Cross — AED Program Management"
+            url: "https://www.redcross.org/take-a-class/aed"
+            type: "article"
+        practice:
+          - "15 min: Rhythm identification practice — review 10 ECG strip examples and identify shockable vs. non-shockable"
+          - "10 min: AED inspection drill — check battery indicator, pad expiration, accessories, and document findings"
+          - "20 min: High-performance team resuscitation with AED — practice pit-crew model with 5 rescuers"
+        projects:
+          - "Develop an AED program for your workplace or organization including device locations, maintenance schedule, and response protocol"
+          - "Complete AHA BLS Provider certification which includes advanced AED integration"
+        tips:
+          - "An AED program is only as good as its maintenance — expired pads or dead batteries make the device useless. Assign monthly inspection responsibility and use a checklist"
+      - level: expert
+        criteria: "Teaches AED use to lay rescuers and healthcare providers. Can evaluate and recommend AED equipment for organizations. Understands the evidence base for early defibrillation and public access defibrillation (PAD) programs. Advocates for AED placement in communities."
+        metrics:
+          - "Holds active AHA or Red Cross instructor certification covering AED"
+          - "Has trained at least 30 students in AED use with 95%+ first-attempt pass rate"
+          - "Has designed or contributed to an organizational PAD program"
+          - "Can cite survival statistics for early vs. delayed defibrillation from current literature"
+        resources:
+          - title: "AHA — Public Access Defibrillation Programs"
+            url: "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+            type: "article"
+          - title: "Red Cross — Become an Instructor"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "AHA — BLS Instructor Essentials"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+        practice:
+          - "30 min: Develop a presentation on the evidence for public access defibrillation programs with survival data"
+          - "20 min: Evaluate 3 different AED models on cost, features, ease of use, and maintenance requirements"
+          - "15 min: Practice coaching a student through their first AED use — focus on clear, calm verbal guidance"
+        projects:
+          - "Advocate for and help implement an AED program in a school, community center, or house of worship that does not currently have one"
+          - "Teach an AED skills session to at least 10 people and collect feedback"
+        tips:
+          - "Public access defibrillation saves lives — research shows that communities with PAD programs have significantly higher cardiac arrest survival rates. Be an advocate for AED placement"
+    tags: ["core", "life-saving", "technology"]
+
+  # ── CHOKING ─────────────────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/choking"
+    title: "Choking Response (Heimlich Maneuver)"
+    description: >
+      Choking is a leading cause of accidental death, especially in children
+      under 5 and adults over 65. The ability to recognize and respond to an
+      obstructed airway is a fundamental first-aid skill. This node covers
+      mild vs. severe obstruction, abdominal thrusts (Heimlich maneuver) for
+      adults and children, back blows and chest thrusts for infants, and
+      managing an unconscious choking victim.
+
+      Sub-skills covered: recognizing mild obstruction (can cough, speak,
+      breathe) vs. severe obstruction (cannot cough, speak, or breathe —
+      universal choking sign of hands at throat), encouraging coughing for mild
+      obstruction, abdominal thrusts for conscious adults and children over 1
+      year (fist above navel, below xiphoid process, inward and upward thrusts),
+      chest thrusts for pregnant or obese patients, back blows and chest thrusts
+      for infants under 1 (5 back blows + 5 chest thrusts, alternate), managing
+      the unconscious choking victim (lower to ground, begin CPR, check mouth
+      before breaths), and self-administered abdominal thrusts using a chair
+      back or countertop.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes the universal choking sign. Distinguishes mild from severe obstruction. Performs abdominal thrusts on a conscious adult. Knows to call 911 if thrusts do not relieve obstruction. Can perform self-Heimlich using a chair."
+        metrics:
+          - "Correctly identifies mild vs. severe obstruction in 5/5 scenario descriptions"
+          - "Performs abdominal thrusts with correct hand position (above navel, below xiphoid) on a mannequin"
+          - "Delivers thrusts with sufficient force to produce visible compression on a training mannequin"
+          - "Demonstrates self-administered Heimlich over a chair back"
+          - "Correctly describes when NOT to intervene (mild obstruction — encourage coughing)"
+        resources:
+          - title: "American Red Cross — Choking First Aid"
+            url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/choking.html"
+            type: "article"
+          - title: "Mayo Clinic — Choking: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-choking/basics/art-20056637"
+            type: "article"
+          - title: "ProCPR — How to Help a Choking Adult"
+            url: "https://www.youtube.com/watch?v=7CgtIgSyAiU"
+            type: "video"
+        practice:
+          - "10 min: Practice abdominal thrust hand position on a partner (gentle pressure only) — fist with thumb side against abdomen, above navel, below xiphoid"
+          - "5 min: Practice self-Heimlich over a sturdy chair back — 5 reps to build muscle memory"
+          - "5 min: Scenario quiz — partner describes 5 choking situations and you state the correct intervention"
+        projects:
+          - "Teach 3 family members the choking response for adults including the universal choking sign and abdominal thrusts"
+          - "Identify the 5 most common choking hazards in your home (hot dogs, grapes, hard candy, popcorn, meat) and share with household members"
+        tips:
+          - "If the person can cough forcefully, do NOT perform abdominal thrusts — a strong cough generates more airway pressure than any thrust. Encourage them to keep coughing"
+          - "For the self-Heimlich, lean your upper abdomen over the back of a sturdy chair and thrust downward — this can save your life when you are alone"
+      - level: intermediate
+        criteria: "Performs back blows and chest thrusts for choking infants. Adapts technique for pregnant or obese patients (chest thrusts instead of abdominal). Manages the transition from conscious to unconscious choking victim (begins CPR, looks in mouth before breaths). Handles choking emergencies confidently in real time."
+        metrics:
+          - "Correctly demonstrates infant choking sequence (5 back blows + 5 chest thrusts) on an infant mannequin"
+          - "Demonstrates chest thrust technique for a simulated pregnant choking victim"
+          - "Transitions smoothly from conscious choking response to CPR when victim becomes unconscious — completes transition in under 15 seconds"
+          - "Correctly performs mouth check before rescue breaths during unconscious choking CPR"
+          - "Passes AHA or Red Cross choking skills test"
+        resources:
+          - title: "AHA — Heartsaver First Aid CPR AED"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-first-aid-cpr-aed"
+            type: "course"
+          - title: "ProCPR — Infant Choking Response"
+            url: "https://www.youtube.com/watch?v=pEogk0-Mix0"
+            type: "video"
+          - title: "St John Ambulance — Choking (Baby)"
+            url: "https://www.sja.org.uk/get-advice/first-aid-advice/choking/baby-choking/"
+            type: "article"
+        practice:
+          - "10 min: Infant choking drill on mannequin — 5 back blows (between shoulder blades with heel of hand) alternating with 5 chest thrusts, repeated 3 times"
+          - "10 min: Unconscious choking transition drill — start with abdominal thrusts, victim goes unconscious, lower to ground, begin CPR with mouth checks"
+          - "5 min: Chest thrust practice for pregnant/obese victim — correct hand position on center of breastbone"
+        projects:
+          - "Obtain formal choking response certification as part of AHA Heartsaver or Red Cross First Aid course"
+          - "Run a family drill: each household member practices the choking response for their age group with you coaching"
+        tips:
+          - "For infants, support the head and jaw with one hand, face down on your forearm, and deliver firm back blows between the shoulder blades — gravity helps dislodge the object"
+          - "When an adult choking victim loses consciousness, the muscles relax and the object may partially dislodge — always look in the mouth before giving rescue breaths during CPR"
+      - level: advanced
+        criteria: "Manages complex choking scenarios: multiple victims, wheelchair-bound patients, water-related aspiration. Understands post-choking monitoring (risk of aspiration pneumonia, laryngeal edema). Can perform finger sweep only when object is visible. Recognizes when choking mimics other conditions (anaphylaxis, asthma, stroke)."
+        metrics:
+          - "Correctly differentiates choking from anaphylaxis, asthma, and stroke in 4/4 scenario quizzes"
+          - "Adapts choking response for a simulated wheelchair-bound patient"
+          - "Lists 3 post-choking complications and their warning signs"
+          - "Correctly decides when to perform vs. when to avoid a finger sweep in 5/5 scenarios"
+        resources:
+          - title: "NOLS Wilderness Medicine — Airway Management in Remote Settings"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "Mayo Clinic — Aspiration Pneumonia"
+            url: "https://www.mayoclinic.org/diseases-conditions/pneumonia/symptoms-causes/syc-20354204"
+            type: "article"
+          - title: "ProCPR — Advanced Airway Obstruction"
+            url: "https://www.youtube.com/watch?v=h7TnaCYaxSc"
+            type: "video"
+        practice:
+          - "15 min: Differential diagnosis drill — partner presents 6 scenarios of difficulty breathing and you identify choking vs. anaphylaxis vs. asthma vs. other"
+          - "10 min: Adapted choking response practice — seated patient, patient on the ground, large patient"
+          - "10 min: Post-choking monitoring scenario — practice assessing a patient after successful obstruction relief"
+        projects:
+          - "Create a decision flowchart for responding to a patient with sudden difficulty breathing that differentiates choking, anaphylaxis, asthma attack, and other causes"
+          - "Complete the airway management module of a Wilderness First Responder course"
+        tips:
+          - "Never perform a blind finger sweep — you may push the object deeper. Only sweep if you can SEE the object in the mouth"
+      - level: expert
+        criteria: "Teaches choking response to all age groups. Designs choking prevention programs for schools, nursing homes, and restaurants. Evaluates students' technique and provides corrective feedback. Understands epidemiology of choking and evidence-based prevention strategies."
+        metrics:
+          - "Delivers choking response training to at least 20 participants with 95%+ skills pass rate"
+          - "Designs a choking prevention program for a specific at-risk population (pediatric or geriatric)"
+          - "Evaluates 5 students' choking technique and provides specific corrective feedback on hand position, force, and timing"
+        resources:
+          - title: "AHA — BLS Instructor Essentials"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+          - title: "Red Cross — Instructor Certification"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "American Academy of Pediatrics — Choking Prevention"
+            url: "https://www.healthychildren.org/English/health-issues/injuries-emergencies/Pages/Choking-Prevention.aspx"
+            type: "article"
+        practice:
+          - "25 min: Design and deliver a choking response lesson covering adults, children, and infants with demonstration and return demonstration"
+          - "15 min: Develop age-appropriate choking prevention materials for a preschool or senior living facility"
+        projects:
+          - "Deliver choking response training at a school, senior center, or restaurant and collect participant feedback"
+          - "Create a choking hazard assessment tool for childcare facilities based on AAP guidelines"
+        tips:
+          - "Restaurants and nursing homes have the highest rates of fatal choking in adults — training staff in these settings saves lives disproportionately"
+    tags: ["core", "life-saving", "airway"]
+
+  # ── WOUND CARE ──────────────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/wound-care"
+    title: "Wound Care & Bleeding Control"
+    description: >
+      Controlling bleeding is the most common first-aid skill used in daily
+      life — from minor cuts to life-threatening hemorrhage. Uncontrolled
+      bleeding is the leading cause of preventable death in trauma. This node
+      covers direct pressure, wound packing, tourniquet use, and basic wound
+      care for cuts, scrapes, punctures, and amputations.
+
+      Sub-skills covered: assessing bleeding severity (arterial — bright red
+      spurting, venous — dark red steady flow, capillary — slow ooze), direct
+      pressure with a clean dressing, elevation of injured limb, pressure
+      bandaging (roller gauze, elastic bandage), wound packing for deep wounds
+      (junctional areas — neck, armpit, groin), commercial tourniquet application
+      (CAT, SOFT-T, SAM XT — 2-3 inches above wound, tighten until bleeding
+      stops, note time), improvised tourniquet as last resort, hemostatic
+      agents (QuikClot, Celox), basic wound cleaning (irrigate with clean water,
+      remove debris), wound closure considerations (butterfly strips, when to
+      seek sutures), tetanus awareness, and signs of infection (redness,
+      warmth, swelling, pus, red streaks, fever).
+    benchmarks:
+      - level: beginner
+        criteria: "Controls minor bleeding with direct pressure and a clean dressing. Cleans a simple wound with water. Applies an adhesive bandage or roller gauze properly. Recognizes when bleeding requires 911 (arterial bleeding, blood soaking through dressings, amputation). Knows basic signs of infection."
+        metrics:
+          - "Applies direct pressure and controls simulated minor bleeding within 30 seconds"
+          - "Correctly cleans a simulated wound by irrigating with clean water and removing visible debris"
+          - "Applies a roller gauze bandage that stays in place and maintains pressure during 5 minutes of movement"
+          - "Identifies 4/5 signs of wound infection when quizzed"
+          - "Correctly identifies 3/3 scenarios requiring 911 (arterial bleed, uncontrolled hemorrhage, amputation)"
+        resources:
+          - title: "American Red Cross — Bleeding First Aid"
+            url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/bleeding.html"
+            type: "article"
+          - title: "Mayo Clinic — Severe Bleeding: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-severe-bleeding/basics/art-20056661"
+            type: "article"
+          - title: "ProCPR — Wound Care and Bleeding Control Basics"
+            url: "https://www.youtube.com/watch?v=NrEtenz-sRQ"
+            type: "video"
+          - title: "Stop the Bleed — Learn the Basics"
+            url: "https://www.stopthebleed.org/training"
+            type: "article"
+        practice:
+          - "10 min: Practice applying direct pressure with gauze to a simulated wound (use ketchup or red food coloring on a practice pad)"
+          - "10 min: Roller gauze application drill — wrap a limb wound with figure-eight technique, check that it is firm but not circulation-cutting"
+          - "5 min: Wound cleaning practice — irrigate a simulated dirty wound with a squeeze bottle of water"
+        projects:
+          - "Assemble a basic first-aid kit with: gloves, gauze pads, roller gauze, adhesive tape, adhesive bandages, antiseptic wipes, and scissors"
+          - "Practice wound care on 5 different simulated injuries (paper cut, scrape, small laceration, puncture, abrasion) and document your steps"
+        tips:
+          - "Direct pressure is the single most effective bleeding control technique for most wounds — press firmly with a clean dressing and do not keep lifting it to check. Hold for at least 10 minutes"
+          - "Do not use hydrogen peroxide or alcohol on wounds — they damage healthy tissue. Use clean running water or saline to irrigate"
+      - level: intermediate
+        criteria: "Controls moderate to severe bleeding with pressure bandaging. Applies a commercial tourniquet correctly. Understands wound packing for deep junctional wounds. Knows when to use butterfly strips vs. when to refer for sutures. Recognizes signs of shock from blood loss."
+        metrics:
+          - "Applies a CAT tourniquet correctly (placement, tightening, windlass, time noted) in under 60 seconds"
+          - "Packs a simulated deep wound with gauze within 2 minutes"
+          - "Correctly identifies signs of hypovolemic shock (pale skin, rapid pulse, confusion, cool extremities) in a scenario"
+          - "Applies a pressure bandage that controls simulated venous bleeding without cutting off circulation"
+          - "Passes Stop the Bleed certification skills test"
+        resources:
+          - title: "Stop the Bleed — Find a Course"
+            url: "https://www.stopthebleed.org/get-trained/"
+            type: "course"
+          - title: "ProCPR — Tourniquet Application"
+            url: "https://www.youtube.com/watch?v=lnhEOcVaNcc"
+            type: "video"
+          - title: "Red Cross — First Aid/CPR/AED Course"
+            url: "https://www.redcross.org/take-a-class/first-aid/first-aid-training/first-aid-classes"
+            type: "course"
+          - title: "Mayo Clinic — Shock: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-shock/basics/art-20056620"
+            type: "article"
+        practice:
+          - "15 min: Tourniquet application drill — practice CAT tourniquet on your own thigh and a partner's arm, aiming for under 60 seconds"
+          - "10 min: Wound packing drill — pack a simulated deep groin or axillary wound with roller gauze, applying pressure as you pack"
+          - "10 min: Shock recognition scenario — partner simulates signs of shock and you identify and respond (lay flat, elevate legs, keep warm)"
+        projects:
+          - "Complete a Stop the Bleed certification course"
+          - "Practice applying a tourniquet 20 times (10 on each limb) and track your time — goal is under 30 seconds by the end"
+        tips:
+          - "Tourniquets save lives and do not cause limb loss when applied for less than 2 hours — do not hesitate to use one for life-threatening limb bleeding"
+          - "When packing a wound, push gauze deep into the wound cavity and apply firm pressure — superficial packing does not control deep bleeding"
+      - level: advanced
+        criteria: "Applies hemostatic agents (QuikClot, Celox). Manages complex wounds: impaled objects (stabilize, do not remove), amputations (control bleeding, preserve part), avulsions (replace flap, pressure bandage). Performs wound assessment for underlying structure damage (tendon, nerve, vessel). Manages bleeding in remote/wilderness settings where evacuation is delayed."
+        metrics:
+          - "Correctly applies hemostatic gauze to a junctional wound in a simulated scenario"
+          - "Stabilizes an impaled object without removing it using bulky dressings"
+          - "Manages a simulated amputation: controls bleeding, wraps amputated part (moist gauze, sealed bag, on ice), and prepares for transport"
+          - "Assesses a simulated laceration for tendon and nerve involvement using distal motor/sensory testing"
+        resources:
+          - title: "NOLS Wilderness Medicine — Wound Management"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "Stop the Bleed — Advanced Hemorrhage Control"
+            url: "https://www.stopthebleed.org/training"
+            type: "course"
+          - title: "ProCPR — Managing Impaled Objects"
+            url: "https://www.youtube.com/watch?v=Z2sdpMnkJBY"
+            type: "video"
+        practice:
+          - "15 min: Hemostatic gauze application practice — pack a deep wound with hemostatic gauze and apply 3 minutes of direct pressure"
+          - "15 min: Impaled object stabilization drill — secure a simulated impaled object with roller gauze and bulky dressings"
+          - "10 min: Distal neurovascular check practice — assess circulation (pulse, capillary refill), sensation, and motor function distal to a simulated injury"
+        projects:
+          - "Complete NOLS Wilderness First Responder wound management module or equivalent"
+          - "Assemble a hemorrhage control kit with: CAT tourniquet, hemostatic gauze, Israeli bandage, chest seal, compressed gauze, trauma shears"
+        tips:
+          - "Never remove an impaled object in the field — it may be tamponading a vessel. Stabilize it with bulky dressings on both sides and transport"
+      - level: expert
+        criteria: "Teaches bleeding control and wound care to lay rescuers and professionals. Designs hemorrhage control training programs. Understands the evidence base for tourniquets, hemostatic agents, and wound packing. Can evaluate and recommend equipment for stop-the-bleed kits."
+        metrics:
+          - "Holds Stop the Bleed instructor certification or equivalent"
+          - "Trains at least 30 students per year in hemorrhage control with 90%+ skills pass rate"
+          - "Designs a stop-the-bleed program for an organization including kit placement, training schedule, and competency verification"
+          - "Can cite current evidence supporting tourniquet use and hemostatic agent effectiveness"
+        resources:
+          - title: "Stop the Bleed — Become an Instructor"
+            url: "https://www.stopthebleed.org/get-trained/"
+            type: "course"
+          - title: "AHA — BLS Instructor"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+          - title: "Journal of Trauma — Tourniquet Evidence Review"
+            url: "https://www.stopthebleed.org/about"
+            type: "article"
+        practice:
+          - "30 min: Design and deliver a 90-minute Stop the Bleed class with lecture, demonstration, and hands-on practice"
+          - "20 min: Evaluate 5 students applying tourniquets and provide corrective feedback on placement, tightness, and time"
+        projects:
+          - "Obtain Stop the Bleed instructor certification"
+          - "Implement a stop-the-bleed program at your workplace or community organization with kits and quarterly training"
+        tips:
+          - "The Hartford Consensus and Stop the Bleed campaign were created because hemorrhage is the leading cause of preventable death in trauma — teaching bystanders to control bleeding saves as many lives as bystander CPR"
+    tags: ["core", "trauma", "practical"]
+
+  # ── FRACTURES & SPRAINS ─────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/fractures-sprains"
+    title: "Fractures & Sprains"
+    description: >
+      Musculoskeletal injuries are among the most common reasons people seek
+      emergency care. Proper first-aid management prevents further injury,
+      reduces pain, and can be critical when evacuation is delayed. This node
+      covers recognizing fractures vs. sprains vs. dislocations, splinting
+      techniques, and the RICE protocol.
+
+      Sub-skills covered: recognizing fractures (deformity, swelling, point
+      tenderness, crepitus, loss of function, open vs. closed), recognizing
+      sprains and strains (mechanism, swelling, pain with movement, instability),
+      recognizing dislocations (deformity, locked joint, severe pain), RICE
+      protocol (Rest, Ice, Compression, Elevation), splinting principles
+      (immobilize joint above and below fracture, pad bony prominences, check
+      distal pulse/sensation/movement before and after), types of splints
+      (rigid — SAM splint, board splint; soft — pillow splint, sling and
+      swathe; traction — for femur fractures), sling and swathe for upper
+      extremity, buddy taping for finger/toe fractures, and signs of
+      compartment syndrome (pain out of proportion, pain with passive stretch,
+      tight/swollen compartment).
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes signs of a possible fracture (deformity, swelling, pain, inability to bear weight). Applies RICE protocol for sprains. Immobilizes an injured limb in the position found. Knows when to call 911 (open fracture, deformity, loss of circulation, spine/pelvis/femur)."
+        metrics:
+          - "Correctly differentiates fracture from sprain in 4/5 scenario descriptions"
+          - "Applies RICE protocol to a simulated ankle sprain within 5 minutes"
+          - "Immobilizes a simulated forearm injury using a magazine or newspaper as improvised splint"
+          - "Correctly identifies 3 situations requiring 911 for musculoskeletal injuries"
+          - "Applies a sling for an arm injury that properly supports the limb and is comfortable"
+        resources:
+          - title: "Mayo Clinic — Fractures: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-fractures/basics/art-20056641"
+            type: "article"
+          - title: "American Red Cross — Sprains and Strains"
+            url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/muscle-bone-joint-injury.html"
+            type: "article"
+          - title: "ProCPR — Splinting Basics"
+            url: "https://www.youtube.com/watch?v=1Yzp1hYSuts"
+            type: "video"
+          - title: "St John Ambulance — Broken Bones"
+            url: "https://www.sja.org.uk/first-aid-advice/fractures-and-broken-bones/"
+            type: "article"
+        practice:
+          - "10 min: RICE protocol practice — apply ice (wrapped in cloth), compression wrap, and elevate a simulated sprained ankle"
+          - "10 min: Improvised splinting — use a magazine, rolled newspaper, or pillow to splint a simulated forearm fracture"
+          - "5 min: Sling practice — tie a triangular bandage sling for an arm injury"
+        projects:
+          - "Practice splinting 3 different injuries (forearm, lower leg, finger) using only household items and time yourself"
+          - "Add a triangular bandage, elastic bandage, instant cold pack, and SAM splint to your first-aid kit"
+        tips:
+          - "When in doubt, splint it — you cannot make a fracture worse by immobilizing it, but you can make it worse by moving an unstable fracture"
+          - "Always check circulation distal to the injury (pulse, sensation, skin color) before and after splinting — a splint that cuts off blood flow must be loosened"
+      - level: intermediate
+        criteria: "Applies SAM splints and rigid splints to upper and lower extremities. Performs distal neurovascular checks (circulation, sensation, movement) before and after splinting. Applies sling and swathe for clavicle and shoulder injuries. Buddy-tapes finger and toe fractures. Recognizes open fractures and covers exposed bone without pushing it back in."
+        metrics:
+          - "Correctly applies a SAM splint to a simulated wrist fracture with proper padding and immobilization of joint above and below"
+          - "Performs and documents distal neurovascular checks (pulse, sensation, motor) before and after splinting on 5/5 practice sessions"
+          - "Applies sling and swathe for a simulated clavicle fracture that immobilizes the arm against the body"
+          - "Correctly manages a simulated open fracture (controls bleeding, covers with moist sterile dressing, splints without pushing bone back)"
+          - "Passes splinting skills test in AHA or Red Cross First Aid course"
+        resources:
+          - title: "Red Cross — First Aid Certification Course"
+            url: "https://www.redcross.org/take-a-class/first-aid/first-aid-training/first-aid-classes"
+            type: "course"
+          - title: "ProCPR — SAM Splint Application"
+            url: "https://www.youtube.com/watch?v=03DOSA-aNSI"
+            type: "video"
+          - title: "Mayo Clinic — Sprains: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-sprains/basics/art-20056622"
+            type: "article"
+        practice:
+          - "15 min: SAM splint application drill — mold and apply to wrist, forearm, and ankle injuries with padding and distal checks"
+          - "10 min: Sling and swathe practice — apply triangular bandage sling, then secure arm to body with swathe (second triangular bandage or elastic wrap)"
+          - "10 min: Open fracture management — control bleeding, apply moist dressing around exposed bone, splint in position found"
+        projects:
+          - "Obtain first-aid certification that includes splinting skills (Red Cross or equivalent)"
+          - "Practice SAM splint application on every major joint (wrist, elbow, ankle, knee) and photograph each for reference"
+        tips:
+          - "Never straighten a deformed limb — splint it in the position found unless there is no distal pulse, in which case gentle traction to restore circulation may be needed"
+      - level: advanced
+        criteria: "Manages femur fractures with traction splints. Recognizes and responds to compartment syndrome signs. Performs spinal motion restriction for suspected spine injuries. Manages pelvic fractures with circumferential wrapping. Can manage musculoskeletal injuries in remote settings where evacuation may take hours or days."
+        metrics:
+          - "Applies a commercial or improvised traction splint for a simulated femur fracture"
+          - "Identifies signs of compartment syndrome in 3/3 scenario descriptions and describes appropriate escalation"
+          - "Correctly applies a cervical collar and log-rolls a patient with suspected spine injury using 3 assistants"
+          - "Wraps a simulated pelvic fracture with a sheet or SAM pelvic sling"
+        resources:
+          - title: "NOLS Wilderness Medicine — Musculoskeletal Injuries"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "ProCPR — Traction Splint Application"
+            url: "https://www.youtube.com/watch?v=8Yqfj-h-0JI"
+            type: "video"
+          - title: "St John Ambulance — Spinal Injury"
+            url: "https://www.sja.org.uk/get-advice/first-aid-advice/bones-and-muscle-injuries/spinal-injury/"
+            type: "article"
+        practice:
+          - "20 min: Traction splint application drill with a partner — practice both commercial and improvised (trekking poles, clothing) versions"
+          - "15 min: Spinal motion restriction practice — manual stabilization, cervical collar sizing and application, and 4-person log roll"
+          - "10 min: Pelvic wrap drill — practice circumferential pelvic wrapping with a bedsheet at the level of the greater trochanters"
+        projects:
+          - "Complete the musculoskeletal module of a Wilderness First Responder course"
+          - "Create a quick-reference card for field splinting techniques covering all major long bones and joints"
+        tips:
+          - "Compartment syndrome is a surgical emergency — if you see pain out of proportion, pain with passive stretch of the muscles in the compartment, or a tense swollen extremity, this patient needs a surgeon, not just a splint"
+      - level: expert
+        criteria: "Teaches splinting and musculoskeletal injury management. Designs training scenarios for various fracture types. Understands the evidence for traction splints, pelvic binders, and spinal motion restriction. Mentors students in clinical decision-making for orthopedic emergencies."
+        metrics:
+          - "Delivers musculoskeletal injury management training to at least 15 students with 90%+ skills pass rate"
+          - "Designs 5 realistic splinting scenarios with different injury patterns and appropriate assessment criteria"
+          - "Can explain the current evidence and guidelines for spinal motion restriction vs. immobilization"
+          - "Evaluates students' splinting technique and provides corrective feedback on padding, immobilization, and distal checks"
+        resources:
+          - title: "NOLS Wilderness Medicine — Instructor Resources"
+            url: "https://www.nols.edu/en/wilderness-medicine/"
+            type: "course"
+          - title: "Red Cross — Become an Instructor"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "AHA — Emergency Cardiovascular Care Resources"
+            url: "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+            type: "article"
+        practice:
+          - "30 min: Design a 2-hour splinting skills workshop with stations for upper extremity, lower extremity, and spinal injuries"
+          - "20 min: Evaluate 5 students performing splinting and document specific feedback"
+        projects:
+          - "Deliver a musculoskeletal injury management class to at least 10 students with hands-on skills testing"
+          - "Write a training scenario guide for 5 different fracture patterns with expected findings and management steps"
+        tips:
+          - "The best orthopedic first-aid instructors create realistic moulage and scenarios — a well-made simulated open fracture creates more learning than 10 PowerPoint slides about open fractures"
+    tags: ["musculoskeletal", "practical", "splinting"]
+
+  # ── BURNS & ENVIRONMENTAL ───────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/burns-environmental"
+    title: "Burns & Heat/Cold Emergencies"
+    description: >
+      Burns and environmental emergencies (heat stroke, hypothermia, frostbite)
+      are common and can be life-threatening. Proper first-aid management in
+      the first minutes dramatically affects outcomes. This node covers burn
+      assessment and treatment, heat-related illness, cold-related illness,
+      and lightning injuries.
+
+      Sub-skills covered: burn depth classification (superficial — red and
+      painful; partial thickness — blisters and pain; full thickness — white/
+      charred and painless), burn size estimation (Rule of Nines, palm method),
+      burn first aid (cool with running water 10-20 minutes, cover with clean
+      dressing, do NOT apply butter/ice/ointments), chemical burn decontamination
+      (brush off dry chemicals, flush with water 20+ minutes), electrical burn
+      assessment (entry/exit wounds, cardiac monitoring needed), heat cramps
+      (muscle cramps, hydration), heat exhaustion (heavy sweating, weakness,
+      nausea, cool pale skin), heat stroke (hot dry or wet skin, altered mental
+      status, temperature above 104F — MEDICAL EMERGENCY), hypothermia staging
+      (mild: shivering, 90-95F; moderate: shivering stops, confusion, 82-90F;
+      severe: unconscious, below 82F), frostbite (superficial vs. deep), and
+      active rewarming techniques.
+    benchmarks:
+      - level: beginner
+        criteria: "Classifies burns by depth (superficial, partial thickness, full thickness). Cools a burn with running water for 10-20 minutes. Covers burn with clean dressing. Knows NOT to apply ice, butter, or ointments. Recognizes heat stroke as a 911 emergency (hot skin, altered mental status)."
+        metrics:
+          - "Correctly classifies burn depth in 4/5 photo or description scenarios"
+          - "Demonstrates correct burn cooling technique (running water 10-20 min, not ice) in a simulated scenario"
+          - "Identifies when a burn requires 911 (full thickness, large area, face/hands/feet/genitals, circumferential, chemical, electrical)"
+          - "Correctly differentiates heat exhaustion from heat stroke in 3/3 scenarios"
+          - "Lists 3 things you should NOT apply to a burn (ice, butter, toothpaste, ointments)"
+        resources:
+          - title: "Mayo Clinic — Burns: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-burns/basics/art-20056649"
+            type: "article"
+          - title: "American Red Cross — Burns"
+            url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/burn.html"
+            type: "article"
+          - title: "ProCPR — Burn First Aid"
+            url: "https://www.youtube.com/watch?v=EaJmzB8YgS0"
+            type: "video"
+          - title: "St John Ambulance — Burns and Scalds"
+            url: "https://www.sja.org.uk/get-advice/first-aid-advice/burns-and-scalds/"
+            type: "article"
+        practice:
+          - "10 min: Burn classification quiz — review 10 burn images or descriptions and classify by depth"
+          - "5 min: Practice burn cooling — simulate a forearm burn and run cool (not cold) water over it for the full 10-20 minutes to understand how long that actually is"
+          - "5 min: Heat illness recognition drill — partner describes 5 scenarios and you identify heat cramps vs. heat exhaustion vs. heat stroke"
+        projects:
+          - "Create a burn first-aid reference card with do's and don'ts, posted in your kitchen"
+          - "Check your home for burn hazards (hot water heater above 120F, accessible stove, chemicals without labels) and address at least 2"
+        tips:
+          - "Cool the burn with running water for 10 to 20 minutes — research shows this is the single most effective first-aid treatment for burns and the window of benefit is up to 3 hours after injury"
+          - "Never pop blisters from a partial-thickness burn — the blister is a natural sterile dressing that protects against infection"
+      - level: intermediate
+        criteria: "Estimates burn size using Rule of Nines and palm method. Manages chemical burns (brush dry chemicals, flush with water 20+ minutes). Recognizes electrical burn dangers (cardiac arrhythmia, internal injuries). Manages heat exhaustion (cool, hydrate, rest) and initiates aggressive cooling for heat stroke. Recognizes and manages mild hypothermia (remove wet clothing, insulate, warm drinks)."
+        metrics:
+          - "Correctly estimates burn total body surface area within 5% using Rule of Nines on 3/3 scenarios"
+          - "Demonstrates chemical burn decontamination (PPE, brush dry chemical, 20+ min water flush)"
+          - "Initiates appropriate cooling measures for a simulated heat stroke patient within 2 minutes"
+          - "Correctly manages a simulated mild hypothermia patient (remove wet clothes, insulate, warm fluids, prevent further heat loss)"
+          - "Passes burn and environmental emergency section of Red Cross or AHA First Aid certification"
+        resources:
+          - title: "AHA — Heartsaver First Aid Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-first-aid"
+            type: "course"
+          - title: "Mayo Clinic — Heat Stroke: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-heatstroke/basics/art-20056655"
+            type: "article"
+          - title: "Mayo Clinic — Hypothermia: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-hypothermia/basics/art-20056624"
+            type: "article"
+          - title: "ProCPR — Environmental Emergencies"
+            url: "https://www.youtube.com/watch?v=TVdoJp47pBo"
+            type: "video"
+        practice:
+          - "10 min: Rule of Nines practice — draw the zones on a body diagram and estimate burn size for 5 different scenarios"
+          - "10 min: Chemical burn decontamination drill — simulate PPE donning, dry chemical removal, and 20-minute water flush protocol"
+          - "15 min: Heat stroke cooling drill — practice rapid cooling techniques (ice packs to neck, armpits, groin; cold water dousing; fan)"
+        projects:
+          - "Obtain first-aid certification that covers burns and environmental emergencies"
+          - "Create a heat illness prevention plan for your outdoor sports team or workplace including hydration schedules, rest breaks, and warning signs"
+        tips:
+          - "For heat stroke, cool first, transport second — every minute of delay in cooling reduces survival. Use whatever is available: ice water immersion is ideal, but dousing with cold water and fanning is effective too"
+      - level: advanced
+        criteria: "Manages complex burns (inhalation injury signs, circumferential burns, large-area burns). Performs field rewarming for moderate-to-severe hypothermia (hypothermia wrap, heat sources). Manages deep frostbite (field rewarming only if no risk of refreezing). Understands lightning injury assessment and management. Can manage burn and environmental patients in remote settings."
+        metrics:
+          - "Identifies signs of inhalation injury (singed nasal hair, soot in mouth, hoarse voice, stridor) in a scenario"
+          - "Constructs a hypothermia wrap using available materials (sleeping bag, tarp, hot water bottles) for a simulated patient"
+          - "Correctly manages a simulated deep frostbite case (protect from further injury, rewarm in 98-102F water ONLY if no refreezing risk)"
+          - "Describes the unique assessment priorities for a lightning strike victim (cardiac arrest, burns, blast injury, spinal injury)"
+        resources:
+          - title: "NOLS Wilderness Medicine — Environmental Emergencies"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "Mayo Clinic — Frostbite: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-frostbite/basics/art-20056653"
+            type: "article"
+          - title: "St John Ambulance — Hypothermia"
+            url: "https://www.sja.org.uk/get-advice/first-aid-advice/effects-of-heat-and-cold/hypothermia/"
+            type: "article"
+        practice:
+          - "20 min: Hypothermia wrap construction practice using sleeping bag, tarp, and improvised heat sources (hot water bottles, chemical heat packs)"
+          - "15 min: Frostbite management scenario — assess, protect, and prepare for controlled rewarming in a water bath"
+          - "10 min: Inhalation injury recognition drill — partner describes burn patient findings and you identify signs suggesting airway involvement"
+        projects:
+          - "Complete the environmental emergency module of a Wilderness First Responder course"
+          - "Develop a cold-weather expedition medical plan covering hypothermia prevention, recognition, and field management"
+        tips:
+          - "Never rewarm frostbitten tissue if there is any chance it will refreeze — refreezing causes dramatically worse tissue damage than the initial frostbite"
+      - level: expert
+        criteria: "Teaches burn care and environmental emergency management. Designs training programs for outdoor organizations and workplaces. Understands the evidence base for burn cooling, heat stroke management, and hypothermia rewarming. Contributes to organizational safety policies for extreme environments."
+        metrics:
+          - "Delivers burns and environmental emergency training to at least 15 students with 90%+ pass rate"
+          - "Designs a workplace heat illness prevention program compliant with OSHA guidelines"
+          - "Can explain the evidence for 10-20 minute burn cooling and cold water immersion for heat stroke"
+          - "Creates and runs a complex environmental emergency simulation scenario"
+        resources:
+          - title: "NOLS Wilderness Medicine — Instructor Development"
+            url: "https://www.nols.edu/en/wilderness-medicine/"
+            type: "course"
+          - title: "Red Cross — Instructor Certification"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "AHA — First Aid Guidelines"
+            url: "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+            type: "article"
+        practice:
+          - "30 min: Design a burns and environmental emergency workshop with stations for burn assessment, heat stroke cooling, and hypothermia wrap"
+          - "20 min: Develop a heat illness prevention policy for an outdoor event or workplace"
+        projects:
+          - "Deliver burns and environmental emergency training to an outdoor recreation group or workplace safety team"
+          - "Create or review the extreme temperature safety policy for your organization"
+        tips:
+          - "Outdoor organizations that teach proactive prevention (hydration plans, layering systems, acclimatization schedules) have dramatically lower rates of environmental emergencies than those that only teach reactive treatment"
+    tags: ["environmental", "burns", "practical"]
+
+  # ── ALLERGIC REACTIONS ──────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/allergic-reactions"
+    title: "Allergic Reactions & Anaphylaxis"
+    description: >
+      Anaphylaxis is a severe, life-threatening allergic reaction that can
+      kill within minutes if untreated. Epinephrine auto-injectors (EpiPens)
+      are the first-line treatment and can be administered by bystanders. This
+      node covers recognizing allergic reactions from mild to life-threatening,
+      administering epinephrine, and post-anaphylaxis management.
+
+      Sub-skills covered: recognizing mild allergic reactions (localized hives,
+      itching, mild swelling), recognizing anaphylaxis (involvement of 2+ body
+      systems — skin: hives/flushing; respiratory: wheezing/stridor/throat
+      tightness; cardiovascular: hypotension/tachycardia/dizziness; GI: nausea/
+      vomiting/cramping), common triggers (foods: peanuts, tree nuts, shellfish,
+      milk, eggs; insect stings: bee, wasp, hornet; medications: penicillin,
+      NSAIDs; latex), epinephrine auto-injector use (EpiPen, Auvi-Q, generic —
+      remove safety cap, press firmly against outer mid-thigh, hold for 10
+      seconds, can be given through clothing), positioning the patient (sitting
+      upright if breathing difficulty, lying flat with legs elevated if low
+      blood pressure, recovery position if vomiting), calling 911 (always —
+      even after epinephrine, biphasic reactions can occur), second dose of
+      epinephrine if no improvement in 5-15 minutes, and antihistamines
+      (diphenhydramine/Benadryl) as adjunct only — never as replacement for
+      epinephrine in anaphylaxis.
+    benchmarks:
+      - level: beginner
+        criteria: "Recognizes signs of a severe allergic reaction (hives, swelling, breathing difficulty, dizziness). Knows to call 911 immediately for anaphylaxis. Can help a patient use their own prescribed epinephrine auto-injector. Understands that epinephrine is the only treatment for anaphylaxis — antihistamines are not sufficient."
+        metrics:
+          - "Identifies anaphylaxis vs. mild allergic reaction in 4/5 scenario descriptions"
+          - "Demonstrates correct EpiPen use (remove cap, press to thigh, hold 10 seconds) on a training device"
+          - "Correctly states the 4 body systems involved in anaphylaxis (skin, respiratory, cardiovascular, GI) and gives an example symptom for each"
+          - "Knows to call 911 even after giving epinephrine"
+          - "Correctly states that antihistamines do NOT treat anaphylaxis"
+        resources:
+          - title: "Mayo Clinic — Anaphylaxis: First Aid"
+            url: "https://www.mayoclinic.org/first-aid/first-aid-anaphylaxis/basics/art-20056608"
+            type: "article"
+          - title: "American Red Cross — Allergic Reactions"
+            url: "https://www.redcross.org/get-help/how-to-prepare-for-emergencies/types-of-emergencies/allergic-reaction.html"
+            type: "article"
+          - title: "ProCPR — How to Use an EpiPen"
+            url: "https://www.youtube.com/watch?v=GJiAHF_kHCM"
+            type: "video"
+          - title: "St John Ambulance — Anaphylaxis"
+            url: "https://www.sja.org.uk/first-aid-advice/anaphylaxis/"
+            type: "article"
+        practice:
+          - "10 min: EpiPen trainer practice — remove safety cap, press to outer mid-thigh, hold for 10 seconds, repeat 5 times"
+          - "5 min: Anaphylaxis recognition quiz — partner describes 5 allergic reaction scenarios and you identify mild vs. severe"
+          - "5 min: Patient positioning practice — sitting upright for respiratory distress, lying flat with legs elevated for hypotension"
+        projects:
+          - "Ask 5 people you regularly spend time with whether they have known allergies and where they keep their epinephrine auto-injector if prescribed"
+          - "Practice using an EpiPen trainer until you can complete the sequence correctly in under 10 seconds"
+        tips:
+          - "Do not hesitate to give epinephrine — the risk of NOT giving it to someone in anaphylaxis is death. The risk of giving it unnecessarily is a fast heartbeat and jitteriness that resolves in minutes"
+          - "Anaphylaxis can progress from mild symptoms to cardiac arrest in minutes — call 911 and give epinephrine at the first sign of multi-system involvement"
+      - level: intermediate
+        criteria: "Administers epinephrine auto-injector independently (not just helping patient). Knows when to give a second dose (5-15 minutes if no improvement). Understands biphasic anaphylaxis (second reaction hours later). Manages anaphylaxis in special populations (infants, pregnant women, patients on beta-blockers). Documents and reports the episode to EMS."
+        metrics:
+          - "Correctly administers EpiPen to a mannequin leg including site selection, injection technique, and 10-second hold"
+          - "Correctly identifies when a second dose is indicated in 3/3 scenario descriptions"
+          - "Explains biphasic anaphylaxis and why hospital observation is needed even after symptoms resolve"
+          - "Provides a structured handoff to EMS including trigger, time of onset, symptoms, epinephrine dose and time, response"
+          - "Passes allergy/anaphylaxis section of AHA or Red Cross First Aid certification"
+        resources:
+          - title: "AHA — Heartsaver First Aid CPR AED"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/heartsaver/heartsaver-first-aid-cpr-aed"
+            type: "course"
+          - title: "ProCPR — Anaphylaxis Management"
+            url: "https://www.youtube.com/watch?v=OJNFEqsBJpQ"
+            type: "video"
+          - title: "Mayo Clinic — Epinephrine Auto-Injector"
+            url: "https://www.mayoclinic.org/drugs-supplements/epinephrine-injection-route/proper-use/drg-20072421"
+            type: "article"
+        practice:
+          - "15 min: Full anaphylaxis scenario drill — recognize symptoms, call 911, administer epinephrine, position patient, monitor, decide on second dose"
+          - "10 min: EMS handoff practice — deliver a structured report on a simulated anaphylaxis patient"
+          - "5 min: Second dose decision drill — partner presents 5 post-epinephrine scenarios and you decide whether a second dose is indicated"
+        projects:
+          - "Obtain first-aid certification that includes anaphylaxis management"
+          - "Create an allergy action plan template for your workplace or school that includes trigger identification, symptom recognition, and step-by-step response"
+        tips:
+          - "Patients on beta-blockers may not respond to the first dose of epinephrine and may need a second dose sooner — beta-blockers block the receptors that epinephrine acts on"
+          - "Biphasic anaphylaxis occurs in up to 20% of cases — symptoms resolve then return hours later. This is why EVERY anaphylaxis patient must go to the hospital even if they feel better after epinephrine"
+      - level: advanced
+        criteria: "Manages anaphylaxis in remote settings where evacuation is delayed. Understands intramuscular epinephrine dosing (0.3mg adult, 0.15mg child). Can draw up epinephrine from a vial if auto-injectors unavailable. Recognizes anaphylaxis mimics (vasovagal syncope, panic attack, asthma, angioedema without anaphylaxis). Manages refractory anaphylaxis (repeated doses, positioning, IV fluids if trained)."
+        metrics:
+          - "Correctly differentiates anaphylaxis from vasovagal syncope and panic attack in 4/4 scenarios"
+          - "States correct epinephrine IM dosing for adult and pediatric patients"
+          - "Manages a simulated remote anaphylaxis scenario including repeated dosing, monitoring, and evacuation planning"
+          - "Demonstrates correct technique for drawing up epinephrine from a multi-dose vial (if within scope of training)"
+        resources:
+          - title: "NOLS Wilderness Medicine — Anaphylaxis in Remote Settings"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "Mayo Clinic — Anaphylaxis Diagnosis and Treatment"
+            url: "https://www.mayoclinic.org/diseases-conditions/anaphylaxis/diagnosis-treatment/drc-20351474"
+            type: "article"
+          - title: "ProCPR — Advanced Allergy Management"
+            url: "https://www.youtube.com/watch?v=3p8Q_qe4AQQ"
+            type: "video"
+        practice:
+          - "15 min: Differential diagnosis drill — partner presents 6 scenarios of acute symptoms (rash, breathing difficulty, fainting) and you differentiate anaphylaxis from mimics"
+          - "15 min: Remote anaphylaxis scenario — manage a patient in a simulated backcountry setting with limited supplies and delayed evacuation"
+          - "10 min: Epinephrine dosing quiz — correctly state doses for adult, child (15-30kg), and infant for both auto-injector and vial"
+        projects:
+          - "Complete the anaphylaxis module of a Wilderness First Responder course"
+          - "Develop a remote anaphylaxis management protocol for a backcountry trip including medication supply, monitoring plan, and evacuation triggers"
+        tips:
+          - "In remote settings, carry multiple doses of epinephrine — a single auto-injector may not be enough for refractory anaphylaxis hours from definitive care"
+      - level: expert
+        criteria: "Teaches anaphylaxis recognition and management to lay rescuers and healthcare providers. Designs allergy emergency response plans for schools and organizations. Understands the immunology of anaphylaxis and the pharmacology of epinephrine. Advocates for epinephrine access policies."
+        metrics:
+          - "Delivers anaphylaxis training to at least 20 participants with 95%+ recognition accuracy on post-test"
+          - "Designs an organizational anaphylaxis response plan that includes staff training, epinephrine stock, and practice drills"
+          - "Can explain the mechanism of anaphylaxis (IgE-mediated mast cell degranulation) and how epinephrine counteracts it at a teaching level"
+          - "Advocates for stock epinephrine policies in schools or public venues"
+        resources:
+          - title: "AHA — BLS Instructor Essentials"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+          - title: "Red Cross — Become an Instructor"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "American Academy of Allergy, Asthma & Immunology — Anaphylaxis"
+            url: "https://www.aaaai.org/conditions-treatments/allergies/anaphylaxis"
+            type: "article"
+        practice:
+          - "30 min: Design a 1-hour anaphylaxis awareness and EpiPen training session for school teachers or coaches"
+          - "20 min: Review your organization's current anaphylaxis policy and identify gaps"
+        projects:
+          - "Deliver anaphylaxis training to staff at a school, camp, or childcare center"
+          - "Help a school or organization develop or update their anaphylaxis emergency response plan"
+        tips:
+          - "Stock epinephrine laws allow schools and public venues to keep epinephrine on hand for anyone experiencing anaphylaxis — not just those with prescriptions. Advocate for these programs in your community"
+    tags: ["medical", "life-saving", "allergy"]
+
+  # ── WILDERNESS FIRST AID ────────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/wilderness-remote"
+    title: "Wilderness & Remote First Aid"
+    description: >
+      Wilderness first aid addresses the unique challenges of providing medical
+      care far from hospitals and EMS. When help is hours or days away, the
+      first aider must make extended care decisions, improvise equipment, and
+      manage evacuation. This node covers the wilderness medicine mindset,
+      extended patient care, improvised techniques, and evacuation decision-making.
+
+      Sub-skills covered: wilderness vs. urban first aid (delayed definitive
+      care, improvisation, extended monitoring), the NOLS/WMA patient assessment
+      system (scene size-up, primary survey, secondary survey, vital signs
+      monitoring every 15-30 minutes), clearing the spine in the field (NOLS
+      criteria: reliable patient, no distracting injuries, no midline tenderness,
+      no neurological deficits), wound management in the field (irrigation with
+      disinfected water, closure for low-infection-risk wounds, daily dressing
+      changes), long bone and joint splinting with improvised materials (trekking
+      poles, sleeping pads, clothing), managing shock with limited resources,
+      treating altitude illness (AMS, HACE, HAPE — descent is definitive
+      treatment), managing water-related emergencies (near-drowning, hypothermia),
+      backcountry medication protocols (ibuprofen, diphenhydramine, epinephrine,
+      oral rehydration), and evacuation decision-making (walk out, assisted
+      carry, helicopter, when to call for help).
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the difference between urban and wilderness first aid (time, resources, communication). Carries and knows how to use a basic backcountry first-aid kit. Can perform basic wilderness wound care (irrigation, bandaging). Knows when to turn back or call for rescue (altered mental status, inability to walk, worsening condition)."
+        metrics:
+          - "Lists 3 key differences between urban and wilderness first-aid situations"
+          - "Assembles a wilderness first-aid kit appropriate for a day hike"
+          - "Irrigates and bandages a simulated wound using only kit contents"
+          - "Correctly identifies 3/3 scenarios where evacuation is needed vs. can continue"
+          - "Explains how to call for help in a remote area (cell phone, satellite communicator, signal for help)"
+        resources:
+          - title: "NOLS Wilderness Medicine — About Wilderness First Aid"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-aid-WFA/"
+            type: "course"
+          - title: "American Red Cross — Wilderness First Aid"
+            url: "https://www.redcross.org/take-a-class/first-aid/wilderness-first-aid"
+            type: "course"
+          - title: "ProCPR — Wilderness First Aid Basics"
+            url: "https://www.youtube.com/watch?v=JnhFEUYFzig"
+            type: "video"
+          - title: "Mayo Clinic — Wilderness Safety Tips"
+            url: "https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/hiking/art-20546893"
+            type: "article"
+        practice:
+          - "15 min: Pack a wilderness first-aid kit for a day hike — include wound care supplies, medications, emergency blanket, and communication device"
+          - "10 min: Practice wound irrigation using a plastic bag with a pinhole as an improvised irrigation syringe"
+          - "5 min: Scenario quiz — partner describes 5 backcountry situations and you decide: continue, monitor, or evacuate"
+        projects:
+          - "Take a NOLS Wilderness First Aid (WFA) or Red Cross Wilderness First Aid 2-day course"
+          - "Go on 3 day hikes carrying your first-aid kit and practice identifying potential hazards on the trail"
+        tips:
+          - "The biggest difference between wilderness and urban first aid is time — in the city, EMS arrives in 5-10 minutes. In the backcountry, help may be 6-24 hours away. This changes every decision you make"
+      - level: intermediate
+        criteria: "Performs the full NOLS/WMA patient assessment system including vital signs monitoring. Improvises splints from available materials (trekking poles, sleeping pads, pack frames). Manages wounds for extended field care (irrigation, closure decisions, infection monitoring). Clears the C-spine using field criteria. Makes evacuation decisions based on patient condition and resources."
+        metrics:
+          - "Performs a complete wilderness patient assessment (scene size-up through vital signs) in under 10 minutes"
+          - "Takes and records a full set of vital signs (level of consciousness, respiratory rate, pulse rate and quality, skin signs, pupils, blood pressure by palpation) every 15 minutes for 1 hour"
+          - "Improvises a functional lower-leg splint using only a sleeping pad, trekking poles, and tape/cordage"
+          - "Correctly applies NOLS spine-clearing criteria to 4/4 scenario patients"
+          - "Passes NOLS Wilderness First Aid or equivalent certification exam"
+        resources:
+          - title: "NOLS Wilderness First Aid Course"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-aid-WFA/"
+            type: "course"
+          - title: "Red Cross — Wilderness and Remote First Aid"
+            url: "https://www.redcross.org/take-a-class/first-aid/wilderness-first-aid"
+            type: "course"
+          - title: "ProCPR — Wilderness Splinting Techniques"
+            url: "https://www.youtube.com/watch?v=cC0QnFoNqCk"
+            type: "video"
+        practice:
+          - "20 min: Full wilderness patient assessment drill — scene size-up, primary survey, secondary survey, vital signs, SAMPLE history"
+          - "15 min: Improvised splinting challenge — create effective splints for forearm, lower leg, and ankle using only outdoor gear"
+          - "15 min: Vital signs monitoring practice — take and record vitals every 15 minutes for 1 hour on a simulated patient"
+        projects:
+          - "Obtain NOLS Wilderness First Aid or Red Cross Wilderness First Aid certification"
+          - "Plan a backpacking trip medical kit and response plan including evacuation routes, communication plan, and nearest hospital"
+        tips:
+          - "In wilderness settings, your most important tool is a written patient assessment — recording vital signs every 15 minutes creates a trend that tells you whether the patient is getting better or worse, which drives your evacuation decision"
+      - level: advanced
+        criteria: "Manages patients for extended periods (12-72 hours) in remote settings. Treats altitude illness (AMS, HACE, HAPE) including medication administration and descent decisions. Manages near-drowning and submersion incidents. Performs advanced wound management (debridement, closure, infection treatment). Leads evacuation including litter carries. Holds Wilderness First Responder (WFR) certification."
+        metrics:
+          - "Manages a simulated patient for 4+ hours with documented vital signs trending and treatment adjustments"
+          - "Correctly identifies and initiates treatment for AMS, HACE, and HAPE in scenario testing"
+          - "Leads a team of 6 in a 30-minute litter carry evacuation over rough terrain"
+          - "Performs wound closure (butterfly strips or wound closure strips) on a simulated laceration with appropriate wound selection criteria"
+          - "Holds current NOLS Wilderness First Responder (WFR) or equivalent certification"
+        resources:
+          - title: "NOLS Wilderness First Responder Course"
+            url: "https://www.nols.edu/en/coursefinder/courses/wilderness-first-responder-WFR/"
+            type: "course"
+          - title: "NOLS Wilderness Medicine — Altitude Illness"
+            url: "https://www.nols.edu/en/wilderness-medicine/"
+            type: "article"
+          - title: "ProCPR — Extended Patient Care"
+            url: "https://www.youtube.com/watch?v=4vqOp9Hbvvk"
+            type: "video"
+        practice:
+          - "Full day: Participate in a mock wilderness rescue scenario — patient assessment, treatment, monitoring for 2+ hours, and litter evacuation"
+          - "20 min: Altitude illness scenario drill — differentiate AMS, HACE, and HAPE and initiate appropriate treatment"
+          - "30 min: Litter carry practice with a team of 6 — practice handoffs, terrain negotiation, and patient monitoring during transport"
+        projects:
+          - "Complete NOLS Wilderness First Responder (80-hour) certification"
+          - "Serve as the medical lead for a multi-day backcountry trip and prepare a comprehensive medical plan"
+        tips:
+          - "The golden rule of altitude illness: any neurological symptoms at altitude (severe headache, confusion, ataxia) must be assumed to be HACE until proven otherwise — descend immediately"
+      - level: expert
+        criteria: "Teaches wilderness medicine at the WFA or WFR level. Designs wilderness medicine curricula and simulation scenarios. Leads wilderness rescue operations. Contributes to wilderness medicine protocols and guidelines. Holds Wilderness EMT (WEMT) or equivalent advanced certification."
+        metrics:
+          - "Holds NOLS Wilderness Medicine Instructor certification or equivalent"
+          - "Has instructed at least 3 complete WFA or WFR courses"
+          - "Designs realistic multi-patient wilderness simulation scenarios with moulage and environmental factors"
+          - "Leads or participates in actual wilderness search-and-rescue operations"
+        resources:
+          - title: "NOLS Wilderness Medicine — Instructor Course"
+            url: "https://www.nols.edu/en/wilderness-medicine/"
+            type: "course"
+          - title: "Wilderness Medical Society — Practice Guidelines"
+            url: "https://wms.org/research/practice-guidelines/"
+            type: "article"
+          - title: "NASAR — Search and Rescue"
+            url: "https://www.nasar.org/"
+            type: "article"
+        practice:
+          - "Full day: Design and run a multi-patient wilderness simulation scenario with moulage, environmental stressors, and limited supplies"
+          - "30 min: Debrief a wilderness medicine simulation — identify learning points and areas for improvement for each student"
+        projects:
+          - "Obtain NOLS Wilderness Medicine Instructor certification"
+          - "Join a local search-and-rescue team and participate in training exercises and operations"
+        tips:
+          - "The best wilderness medicine instructors create training environments that are as close to real as possible — cold, dark, wet, loud, confusing. Skills that work in a comfortable classroom may fail in the field"
+    tags: ["wilderness", "advanced", "expedition"]
+
+  # ── INSTRUCTOR CERTIFICATION ────────────────────────────────────────────────
+  - id: "science/first-aid-cpr/instructor-certification"
+    title: "First Aid Instructor Certification"
+    description: >
+      The capstone of first-aid education: becoming a certified instructor who
+      can teach, evaluate, and certify others. This node covers the pedagogy
+      of skills-based training, instructor certification pathways through AHA
+      and Red Cross, program management, quality assurance, and community
+      impact through teaching.
+
+      Sub-skills covered: adult learning principles (tell, show, do, review),
+      skills-based training methodology (demonstration, practice with feedback,
+      skills testing), AHA Instructor Essentials course requirements, Red Cross
+      instructor candidate training, course setup and equipment management
+      (mannequins, AED trainers, supplies), skills testing and remediation,
+      providing effective feedback (positive first, specific, actionable),
+      managing difficult students, course administration (rosters, cards,
+      reporting), quality assurance (monitoring pass rates, student feedback,
+      instructor updates), Training Center administration for AHA, and
+      building community training programs.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the pathway to becoming a first-aid instructor. Has completed provider-level certifications (BLS, First Aid, CPR/AED). Has observed at least one certification class taught by an experienced instructor. Understands adult learning principles at a basic level."
+        metrics:
+          - "Holds current AHA BLS Provider and Heartsaver First Aid CPR AED certifications (or Red Cross equivalents)"
+          - "Has observed at least 2 complete certification classes and documented observations"
+          - "Can describe the tell-show-do-review teaching method and give an example for CPR instruction"
+          - "Lists the requirements for AHA BLS Instructor or Red Cross Instructor candidacy"
+        resources:
+          - title: "AHA — How to Become an Instructor"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "article"
+          - title: "Red Cross — Become an Instructor"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "ProCPR — What It Takes to Become a CPR Instructor"
+            url: "https://www.youtube.com/watch?v=wJr3aMJpkRs"
+            type: "video"
+        practice:
+          - "Observe 2 complete certification classes and take notes on teaching techniques, student engagement, and skills testing"
+          - "Read the AHA Instructor Essentials or Red Cross Instructor Manual overview chapters"
+          - "Practice explaining CPR steps to a friend using the tell-show-do method"
+        projects:
+          - "Obtain all prerequisite provider-level certifications (BLS, First Aid, CPR/AED)"
+          - "Shadow an experienced instructor for 3 classes and document what techniques were most effective"
+        tips:
+          - "Start shadowing instructors early — most instructor certification programs require a recommendation from an experienced instructor, and teaching is a skill that benefits enormously from observation before you try it yourself"
+      - level: intermediate
+        criteria: "Completes instructor candidate course (AHA Instructor Essentials or Red Cross Instructor training). Passes written and skills exams. Teaches under supervision of a Training Center Faculty or experienced instructor. Receives positive evaluations from mentor. Issues first certification cards."
+        metrics:
+          - "Completes AHA Instructor Essentials online module and in-person training or Red Cross Instructor course"
+          - "Passes instructor candidate written exam with score of 84% or higher"
+          - "Teaches at least 2 classes under mentor supervision with positive evaluations"
+          - "Successfully tests and certifies at least 10 students"
+          - "Receives mentor sign-off to teach independently"
+        resources:
+          - title: "AHA — Instructor Essentials Course"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits/healthcare-professional/bls-instructor"
+            type: "course"
+          - title: "Red Cross — Instructor Certification Process"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "AHA — Instructor Network Resources"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits"
+            type: "article"
+        practice:
+          - "Teach a full class section (e.g., adult CPR) under mentor observation and receive feedback"
+          - "Practice skills testing — evaluate 5 students on CPR and provide pass/remediation decisions with specific feedback"
+          - "Set up and tear down a full classroom including mannequin disinfection, AED trainers, and supplies"
+        projects:
+          - "Complete AHA BLS Instructor or Red Cross CPR/First Aid Instructor certification"
+          - "Teach 2 complete certification classes under supervision and collect student feedback"
+        tips:
+          - "Your first few classes will feel overwhelming — have your lesson plan written out step by step, and lean on the course videos to carry the content while you focus on student engagement and skills practice"
+      - level: advanced
+        criteria: "Teaches independently across multiple course types (BLS, Heartsaver, First Aid). Mentors new instructor candidates. Manages course logistics including scheduling, equipment maintenance, and card issuance. Maintains high student pass rates and satisfaction scores. Stays current with guideline updates and implements them in teaching."
+        metrics:
+          - "Teaches at least 12 classes per year across 2+ course types"
+          - "Maintains first-attempt pass rate above 90% across all courses"
+          - "Mentors at least 2 new instructor candidates to certification"
+          - "Student satisfaction scores average 4.5/5 or higher"
+          - "Implements guideline updates within 3 months of publication"
+        resources:
+          - title: "AHA — Training Center Resources"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits"
+            type: "article"
+          - title: "Red Cross — Instructor Resources"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+          - title: "AHA — Guidelines Update"
+            url: "https://cpr.heart.org/en/resuscitation-science/cpr-and-ecc-guidelines"
+            type: "article"
+        practice:
+          - "Mentor a new instructor candidate through their first 2 supervised classes — provide written feedback after each"
+          - "Review the latest AHA or Red Cross guideline updates and update your lesson plans accordingly"
+          - "Conduct a classroom equipment inventory and maintenance check — replace expired supplies, disinfect mannequins, test AED trainers"
+        projects:
+          - "Mentor 2 instructor candidates from application to independent teaching status"
+          - "Develop a training schedule for your organization or Training Center for the next 6 months"
+        tips:
+          - "The best instructors never stop being students — take a refresher course from another instructor at least once a year to see how others teach and pick up new techniques"
+      - level: expert
+        criteria: "Serves as Training Center Faculty (TCF) or equivalent leadership role. Evaluates and certifies new instructors. Designs training programs for organizations and communities. Conducts quality assurance reviews. Contributes to resuscitation education at the regional or national level. Drives community CPR training initiatives."
+        metrics:
+          - "Holds Training Center Faculty (TCF) or Regional Faculty designation"
+          - "Has evaluated and certified at least 10 new instructors"
+          - "Manages a Training Center or training program with at least 5 active instructors"
+          - "Trains at least 200 students per year (directly or through instructors supervised)"
+          - "Conducts at least 2 quality assurance reviews of instructors per year"
+        resources:
+          - title: "AHA — Training Center Faculty Role"
+            url: "https://cpr.heart.org/en/cpr-courses-and-kits"
+            type: "article"
+          - title: "AHA — Resuscitation Education Science"
+            url: "https://cpr.heart.org/en/resuscitation-science"
+            type: "article"
+          - title: "Red Cross — Advanced Instructor Development"
+            url: "https://www.redcross.org/take-a-class/become-an-instructor"
+            type: "course"
+        practice:
+          - "Conduct a quality assurance review of an instructor's class — observe, evaluate skills testing accuracy, and provide written feedback"
+          - "Design a community CPR training initiative targeting underserved populations"
+          - "Write a Training Center annual report including classes taught, students certified, instructor development, and quality metrics"
+        projects:
+          - "Achieve Training Center Faculty designation with AHA or equivalent advanced instructor role"
+          - "Launch a community CPR training program that certifies at least 100 people in its first year"
+        tips:
+          - "The ultimate goal of instructor certification is community impact — every person you train becomes a potential lifesaver. The true measure of success is not how many cards you issue, but how many lives are saved because someone you trained was there when it mattered"
+    tags: ["teaching", "leadership", "certification"]
+
+relationships:
+  # ── Foundation layer ────────────────────────────────────────────────────────
+  - source: "science/first-aid-cpr/scene-assessment"
+    target: "science/first-aid-cpr/cpr"
+    type: "enables"
+    note: "Scene safety and recognizing an emergency are prerequisites to initiating CPR"
+
+  - source: "science/first-aid-cpr/scene-assessment"
+    target: "science/first-aid-cpr/choking"
+    type: "enables"
+    note: "Recognizing an emergency and ensuring scene safety come before any intervention"
+
+  - source: "science/first-aid-cpr/scene-assessment"
+    target: "science/first-aid-cpr/wound-care"
+    type: "enables"
+    note: "Scene assessment and BSI/PPE are required before managing any bleeding"
+
+  - source: "science/first-aid-cpr/scene-assessment"
+    target: "science/first-aid-cpr/allergic-reactions"
+    type: "enables"
+    note: "Recognizing an emergency and calling 911 are the first steps in anaphylaxis response"
+
+  # ── Core life-saving skills ─────────────────────────────────────────────────
+  - source: "science/first-aid-cpr/cpr"
+    target: "science/first-aid-cpr/aed"
+    type: "enables"
+    note: "AED is integrated with CPR — you must know CPR to use an AED effectively"
+
+  - source: "science/first-aid-cpr/cpr"
+    target: "science/first-aid-cpr/choking"
+    type: "complementary"
+    note: "CPR is needed when a choking victim becomes unconscious — the skills are closely linked"
+
+  # ── Trauma and medical skills ───────────────────────────────────────────────
+  - source: "science/first-aid-cpr/wound-care"
+    target: "science/first-aid-cpr/fractures-sprains"
+    type: "enables"
+    note: "Bleeding control and wound management are often needed alongside musculoskeletal injury care"
+
+  - source: "science/first-aid-cpr/scene-assessment"
+    target: "science/first-aid-cpr/burns-environmental"
+    type: "enables"
+    note: "Scene safety is critical for burn and environmental emergencies (fire, chemical, electrical hazards)"
+
+  - source: "science/first-aid-cpr/scene-assessment"
+    target: "science/first-aid-cpr/fractures-sprains"
+    type: "enables"
+    note: "Patient assessment skills are needed to evaluate musculoskeletal injuries"
+
+  # ── Advanced and wilderness ─────────────────────────────────────────────────
+  - source: "science/first-aid-cpr/cpr"
+    target: "science/first-aid-cpr/wilderness-remote"
+    type: "requires"
+    note: "Wilderness first aid requires solid CPR skills as a foundation"
+
+  - source: "science/first-aid-cpr/wound-care"
+    target: "science/first-aid-cpr/wilderness-remote"
+    type: "requires"
+    note: "Extended wound management is a core wilderness first-aid skill"
+
+  - source: "science/first-aid-cpr/fractures-sprains"
+    target: "science/first-aid-cpr/wilderness-remote"
+    type: "requires"
+    note: "Improvised splinting and musculoskeletal management are essential in remote settings"
+
+  - source: "science/first-aid-cpr/burns-environmental"
+    target: "science/first-aid-cpr/wilderness-remote"
+    type: "requires"
+    note: "Environmental emergencies (hypothermia, altitude illness, heat stroke) are primary wilderness concerns"
+
+  - source: "science/first-aid-cpr/allergic-reactions"
+    target: "science/first-aid-cpr/wilderness-remote"
+    type: "complementary"
+    note: "Anaphylaxis in remote settings requires extended management and carries higher risk"
+
+  # ── Instructor certification capstone ───────────────────────────────────────
+  - source: "science/first-aid-cpr/cpr"
+    target: "science/first-aid-cpr/instructor-certification"
+    type: "requires"
+    note: "Must hold provider-level CPR certification before becoming an instructor"
+
+  - source: "science/first-aid-cpr/aed"
+    target: "science/first-aid-cpr/instructor-certification"
+    type: "requires"
+    note: "AED competency is required for instructor certification"
+
+  - source: "science/first-aid-cpr/wilderness-remote"
+    target: "science/first-aid-cpr/instructor-certification"
+    type: "complementary"
+    note: "Wilderness medicine experience enhances instructor breadth but is not strictly required"

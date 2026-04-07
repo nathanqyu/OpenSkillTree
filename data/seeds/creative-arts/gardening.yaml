@@ -1,0 +1,1520 @@
+# OpenSkillTree — Seed Skill Tree: Gardening
+#
+# Domain:  Creative Arts / Horticulture / Gardening
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: Master Gardener certification, RHS qualifications
+#   beginner     = Grows first successful crop; learns basic soil and watering
+#   intermediate = Maintains a productive garden through a full growing season
+#   advanced     = Year-round production; designs gardens for others
+#   expert       = Master Gardener certified; teaches; mentors community gardens
+#
+# Teaching order based on university extension curricula and Master Gardener programs:
+#   Soil science & composting -> seed starting & propagation -> vegetable gardening ->
+#   herb gardening -> flower & ornamental gardening -> watering & irrigation ->
+#   pest & disease management -> pruning & plant maintenance -> season extension ->
+#   garden design & landscape planning.
+# This sequence mirrors the Extension Master Gardener training: understand the
+# growing medium first, then learn to start plants, then apply those skills to
+# edibles, ornamentals, and finally design and year-round planning.
+
+tree:
+  id: "creative-arts/gardening"
+  title: "Gardening"
+  description: >
+    A complete skill map for gardening — the practice and art of cultivating plants
+    for food, beauty, and ecological health. Covers soil science, seed starting,
+    vegetable and herb production, ornamental gardening, irrigation, pest management,
+    pruning, season extension, and garden design. Progresses from planting a first
+    seed to designing productive landscapes and mentoring community gardens.
+  domain: "Creative Arts"
+  visibility: "public"
+
+nodes:
+  # -- SOIL SCIENCE & COMPOSTING (foundation of all gardening) --------------------
+  - id: "creative-arts/gardening/soil-composting"
+    title: "Soil Science & Composting"
+    description: >
+      The foundation of every garden is the soil. This node covers understanding
+      soil texture (sand, silt, clay), soil structure, organic matter content,
+      pH, and nutrient availability (NPK — nitrogen, phosphorus, potassium).
+      Includes learning to read a soil test report, amending soil based on results,
+      and building a composting system to recycle organic waste into rich humus.
+
+      Sub-skills covered: soil texture identification (ribbon test, jar test),
+      reading and interpreting soil test results, adjusting pH with lime or sulfur,
+      understanding cation exchange capacity (CEC), building and maintaining a
+      compost pile (greens-to-browns ratio of roughly 1:3 by volume), hot composting
+      vs. cold composting, vermicomposting with red wigglers, using cover crops
+      as green manure, and applying compost and mulch for moisture retention and
+      weed suppression.
+
+      Drills to practice: (1) Jar test — fill a mason jar with garden soil and
+      water, shake vigorously, let settle for 24 hours, and measure the sand,
+      silt, and clay layers to determine soil texture. (2) pH test — use a home
+      pH test kit on three different spots in your garden. (3) Compost pile
+      monitoring — check internal temperature with a compost thermometer weekly,
+      aiming for 130-160 F in a hot pile. (4) Soil amendment calculation — given
+      a soil test report, calculate the pounds of lime or fertilizer needed per
+      100 square feet.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies soil type by feel (ribbon test). Performs a basic soil pH test. Knows the three primary macronutrients (NPK) and what each supports (N=leaves, P=roots/flowers, K=overall vigor). Starts a simple compost pile or bin with correct greens-to-browns layering. Understands that soil is alive — contains billions of microorganisms per teaspoon."
+        metrics:
+          - "Correctly identifies soil texture (sandy, loamy, or clay) via ribbon test on 3 different soil samples"
+          - "Soil pH test performed and result recorded within 0.5 units of a lab test for the same sample"
+          - "Compost pile built with roughly 1:3 greens-to-browns ratio by volume and reaching 100+ F within 2 weeks"
+          - "Can name the 3 primary macronutrients (NPK) and explain the role of each when quizzed"
+          - "At least 1 soil test (home kit or extension lab) completed and results recorded for the garden area"
+        resources:
+          - title: "Epic Gardening — Understanding Your Soil (The Basics)"
+            url: "https://www.youtube.com/watch?v=zx71LGr0Wuo"
+            type: "video"
+          - title: "University of Minnesota Extension — Soil Testing"
+            url: "https://extension.umn.edu/yard-and-garden"
+            type: "article"
+          - title: "Old Farmer's Almanac — How to Compost"
+            url: "https://www.almanac.com/composting-101"
+            type: "article"
+          - title: "RHS — Soil Types and How to Improve Them"
+            url: "https://www.rhs.org.uk/soil-composts-mulches/soil-types"
+            type: "article"
+        practice:
+          - "Perform the jar test on your garden soil: fill a quart mason jar 1/3 with soil, add water, shake, and measure layers after 24 hours"
+          - "Test soil pH in 3 different spots using a home test kit and record results"
+          - "Start a compost bin: layer 3 inches of browns (leaves, cardboard) then 1 inch of greens (kitchen scraps, grass clippings), repeat"
+        projects:
+          - "Complete a soil jar test and correctly classify your soil as sandy, loamy, or clay based on the sand/silt/clay percentages"
+          - "Build a functional compost pile or bin that reaches 100+ F within 2 weeks of construction"
+        tips:
+          - "Do not skip the soil test — it costs $15-25 through your local extension office and saves you hundreds in wasted fertilizer"
+          - "The ribbon test is quick: take moist soil, squeeze it between thumb and finger, and push it out into a ribbon — clay makes a long ribbon, sand crumbles immediately, loam falls apart at 1-2 inches"
+      - level: intermediate
+        criteria: "Reads and interprets a full extension lab soil test report (pH, NPK, organic matter %, CEC, micronutrients). Calculates amendment quantities from test recommendations. Maintains a hot compost pile that reaches 130-160 F and produces finished compost in 2-3 months. Understands the role of soil biology — mycorrhizal fungi, beneficial bacteria, and earthworms. Applies mulch strategically for moisture retention and weed suppression."
+        metrics:
+          - "Interprets a lab soil test and correctly calculates amendment quantities (lime, fertilizer) for a 100 sq ft bed"
+          - "Hot compost pile maintains 130-160 F for 3+ consecutive days and produces finished compost within 3 months"
+          - "Organic matter content of garden beds increased by at least 1% over one growing season (verified by soil test)"
+          - "Mulch applied at 2-4 inch depth on all garden beds, with no mulch touching plant stems"
+          - "Can explain the carbon-to-nitrogen ratio concept and why a 25-30:1 C:N ratio is ideal for composting"
+        resources:
+          - title: "Epic Gardening — How to Read a Soil Test"
+            url: "https://www.youtube.com/watch?v=VNSmvMU-Hy8"
+            type: "video"
+          - title: "Oregon State Extension — Soil Health Guide"
+            url: "https://extension.oregonstate.edu/gardening/soil-compost"
+            type: "article"
+          - title: "Gardener's Supply Company — Composting Guide"
+            url: "https://www.rhs.org.uk/soil-composts-mulches/composting"
+            type: "article"
+          - title: "RHS — Making Compost"
+            url: "https://www.rhs.org.uk/soil-composts-mulches/composting"
+            type: "article"
+        practice:
+          - "Monitor compost pile temperature weekly with a compost thermometer; turn the pile when temperature drops below 110 F"
+          - "Practice calculating amendment rates: given a soil test that says pH is 5.5 and target is 6.5, calculate pounds of lime per 100 sq ft"
+          - "Apply 3 inches of mulch to a garden bed and observe moisture retention over 1 week vs. an unmulched bed"
+        projects:
+          - "Send a soil sample to your local extension lab, receive results, interpret the report, and amend one garden bed according to recommendations"
+          - "Produce finished compost from a hot pile in under 3 months, verified by the squeeze test (dark, crumbly, earthy smell)"
+        tips:
+          - "Turn your hot compost pile when the internal temperature drops below 110 F — this reintroduces oxygen and restarts microbial activity"
+          - "Never add lime and nitrogen fertilizer at the same time — the lime causes nitrogen to volatilize as ammonia gas; wait 2 weeks between applications"
+      - level: advanced
+        criteria: "Designs soil management plans for multiple garden zones (raised beds, in-ground, containers) with different crop needs. Uses cover crops for nitrogen fixation and soil structure improvement. Implements no-till or minimal-till practices. Creates specialized compost (fungal-dominant for perennials, bacterial-dominant for annuals). Manages soil biology intentionally — inoculates with mycorrhizae, brews compost tea."
+        metrics:
+          - "Soil management plan written for 3+ distinct garden zones with different amendment schedules based on crop needs"
+          - "Cover crop established in at least 2 beds during off-season, terminated and incorporated before spring planting"
+          - "Compost tea brewed and applied at least 4 times during the growing season with measurable plant growth improvement"
+          - "Soil organic matter above 5% in primary growing beds (verified by lab test)"
+          - "Zero synthetic fertilizer needed — all nutrient needs met through compost, cover crops, and organic amendments"
+        resources:
+          - title: "Epic Gardening — Cover Crops for the Home Garden"
+            url: "https://www.youtube.com/watch?v=GVaQkofSmt0"
+            type: "video"
+          - title: "Penn State Extension — Cover Crops for Home Gardens"
+            url: "https://extension.psu.edu/lawn-and-garden"
+            type: "article"
+          - title: "USDA NRCS — Soil Health"
+            url: "https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/soil-health"
+            type: "article"
+        practice:
+          - "Plant a fall cover crop mix (crimson clover + winter rye) in 2 empty beds and monitor growth through winter"
+          - "Brew a batch of actively aerated compost tea: 5 gallons water, 2 cups compost, 1 tablespoon molasses, aerate for 24 hours"
+          - "Implement no-till bed preparation: lay 6 inches of compost on top of existing soil without turning it over"
+        projects:
+          - "Create a written soil management plan for your entire garden with zone-specific amendment schedules and cover crop rotations"
+          - "Achieve 5%+ organic matter in your primary growing beds verified by a lab soil test"
+        tips:
+          - "Fungal-dominant compost (woody materials, slow decomposition) benefits perennials and trees; bacterial-dominant compost (green materials, fast hot composting) benefits annual vegetables"
+          - "Never leave soil bare — cover it with mulch, cover crops, or plantings at all times to prevent erosion and feed soil biology"
+      - level: expert
+        criteria: "Teaches soil science workshops for community gardens and extension programs. Diagnoses complex soil problems (compaction, salinity, contamination) and prescribes remediation. Designs soil-building programs for degraded or urban sites. Publishes or presents on soil management. Mentors others in regenerative soil practices."
+        metrics:
+          - "Taught 3+ soil science workshops or classes with documented positive feedback from participants"
+          - "Successfully remediated 2+ problem soils (compacted, saline, or low-organic-matter) with measurable improvement in lab tests"
+          - "Mentored 5+ gardeners in soil management with each achieving at least intermediate-level soil health metrics"
+          - "Soil health scores (Cornell Comprehensive Assessment of Soil Health or equivalent) in the top quartile for region"
+          - "Published or presented 1+ articles or talks on soil management at a gardening conference, extension event, or community forum"
+        resources:
+          - title: "Cornell Soil Health — Comprehensive Assessment of Soil Health"
+            url: "https://soilhealth.cals.cornell.edu/"
+            type: "article"
+          - title: "Extension Master Gardener Program — Teaching Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "USDA Web Soil Survey"
+            url: "https://websoilsurvey.nrcs.usda.gov/"
+            type: "tool"
+        practice:
+          - "Prepare and deliver a 30-minute soil science presentation for a local garden club or community garden"
+          - "Diagnose a soil problem in a fellow gardener's plot using observation, soil tests, and plant symptom analysis"
+        projects:
+          - "Design and implement a soil remediation plan for a degraded or contaminated urban garden site"
+          - "Teach a multi-session soil science workshop series for beginning gardeners through your local extension program"
+        tips:
+          - "When teaching soil science, start with the jar test — it is the single most engaging hands-on activity for beginners and immediately makes soil tangible"
+          - "Keep a soil journal for every bed: record amendments, test results, and crop performance year over year — patterns emerge over 3-5 years that transform your soil management"
+    tags: ["foundation", "science", "measurable"]
+
+  # -- SEED STARTING & PROPAGATION -----------------------------------------------
+  - id: "creative-arts/gardening/seed-starting"
+    title: "Seed Starting & Propagation"
+    description: >
+      The skills needed to grow plants from seeds, cuttings, and divisions rather
+      than buying transplants. Covers seed biology (germination requirements: moisture,
+      temperature, light/darkness), reading seed packets, indoor seed starting under
+      lights, hardening off transplants, direct sowing, and vegetative propagation
+      methods (stem cuttings, root division, layering).
+
+      Sub-skills covered: reading seed packet information (days to maturity, spacing,
+      depth, germination temperature), calculating seed starting dates from last frost
+      date, using seed starting mix vs. potting soil, bottom watering, providing
+      adequate light (16 hours/day from grow lights or a south-facing window), thinning
+      seedlings, hardening off over 7-10 days, stem cutting propagation (softwood,
+      semi-hardwood, hardwood), root division of perennials, and seed saving basics.
+    benchmarks:
+      - level: beginner
+        criteria: "Reads a seed packet and understands the information (depth, spacing, days to maturity, germination temperature). Starts seeds indoors under lights or on a windowsill with proper seed starting mix. Achieves 50%+ germination rate on easy crops (tomatoes, basil, lettuce, zinnias). Transplants seedlings outdoors after hardening off. Direct-sows easy crops (beans, peas, radishes) at correct depth and spacing."
+        metrics:
+          - "50%+ germination rate on at least 3 different easy-to-start varieties"
+          - "Seedlings started indoors survive transplanting outdoors with less than 20% mortality after hardening off"
+          - "Seed starting dates calculated correctly from local last frost date for 5+ crops"
+          - "Direct-sown seeds planted at correct depth (within 0.25 inches of packet recommendation) and spacing"
+          - "At least 10 seedlings successfully grown from seed to transplant size in one season"
+        resources:
+          - title: "Epic Gardening — Seed Starting for Beginners"
+            url: "https://www.youtube.com/watch?v=ex3JkM13fOw"
+            type: "video"
+          - title: "Old Farmer's Almanac — Starting Seeds Indoors"
+            url: "https://www.almanac.com/starting-seeds-indoors"
+            type: "article"
+          - title: "University of Maryland Extension — Starting Seeds Indoors"
+            url: "https://extension.umd.edu/resource/starting-seeds-indoors"
+            type: "article"
+          - title: "Garden Answer — How I Start Seeds Indoors"
+            url: "https://www.youtube.com/watch?v=sLGaR1dCQ2E"
+            type: "video"
+        practice:
+          - "Start 3 varieties of easy crops (e.g., tomatoes, basil, lettuce) indoors 6-8 weeks before last frost date"
+          - "Practice reading seed packets: for each packet, write down depth, spacing, days to maturity, and ideal germination temperature"
+          - "Direct-sow a row of radishes or beans at correct depth and spacing according to packet instructions"
+        projects:
+          - "Grow 10+ seedlings from seed to transplant size under grow lights, achieving 50%+ germination rate"
+          - "Harden off and transplant indoor-started seedlings outdoors with less than 20% transplant mortality"
+        tips:
+          - "The number one killer of indoor seedlings is overwatering — bottom-water by placing trays in a shallow dish of water and letting the soil wick moisture up from below"
+          - "If seedlings are tall and leggy with thin stems, they need more light — move grow lights to 2-4 inches above the seedlings or increase to 16 hours per day"
+      - level: intermediate
+        criteria: "Achieves 75%+ germination rates across a wide range of crops including difficult varieties (peppers, eggplant, parsley). Uses heat mats for warm-season crops. Understands stratification and scarification for seeds that require it. Propagates perennials by division. Takes successful softwood stem cuttings from herbs and easy perennials. Manages a seed starting schedule for succession planting."
+        metrics:
+          - "75%+ germination rate on 8+ varieties including 2+ difficult crops (peppers, eggplant, or parsley)"
+          - "Succession planting schedule written and executed with 3+ plantings of at least 1 crop (lettuce, radish, or beans) at 2-3 week intervals"
+          - "5+ softwood stem cuttings successfully rooted from herbs (basil, mint, rosemary)"
+          - "3+ perennial plants successfully divided and transplanted with all divisions surviving"
+          - "Seedling damping-off rate below 5% across all indoor starts"
+        resources:
+          - title: "Epic Gardening — Advanced Seed Starting Tips"
+            url: "https://www.youtube.com/watch?v=hI_6X2HFEJY"
+            type: "video"
+          - title: "Savvy Gardening — Succession Planting Guide"
+            url: "https://savvygardening.com/succession-planting/"
+            type: "article"
+          - title: "RHS — How to Take Softwood Cuttings"
+            url: "https://www.rhs.org.uk/propagation/softwood-cuttings"
+            type: "article"
+          - title: "Penn State Extension — Plant Propagation by Stem Cuttings"
+            url: "https://extension.psu.edu/lawn-and-garden"
+            type: "article"
+        practice:
+          - "Start peppers or eggplant on a heat mat at 80-85 F and track germination rate vs. a control batch without a heat mat"
+          - "Take 10 softwood cuttings from basil or mint: cut 4-inch stem tips, remove lower leaves, dip in rooting hormone, place in moist perlite"
+          - "Create a succession planting calendar for 3 fast-maturing crops with plantings every 2-3 weeks"
+        projects:
+          - "Achieve 75%+ germination on 8+ varieties including at least 2 difficult crops, documented with a germination log"
+          - "Execute a full succession planting schedule for one season with 3+ plantings of at least one crop"
+        tips:
+          - "Use a heat mat for warm-season crops (tomatoes, peppers, eggplant) — soil temperature of 75-85 F dramatically improves germination speed and rate"
+          - "Prevent damping-off disease by ensuring good air circulation (small fan on low), avoiding overwatering, and using sterile seed starting mix"
+      - level: advanced
+        criteria: "Propagates plants by all major methods: seed, stem cuttings (softwood, semi-hardwood, hardwood), root cuttings, layering, grafting, and division. Saves seeds from open-pollinated varieties maintaining genetic purity. Breeds or selects plant varieties for local adaptation. Manages a greenhouse or indoor propagation setup with automated lighting and watering. Achieves 90%+ germination rates on easy crops."
+        metrics:
+          - "90%+ germination rate on easy crops and 75%+ on difficult crops across 15+ varieties"
+          - "Seeds saved from 5+ open-pollinated varieties with documented isolation or hand-pollination to maintain purity"
+          - "Plants propagated by 4+ different methods (seed, stem cutting, division, layering) in a single season"
+          - "Greenhouse or indoor propagation space manages 100+ seedlings simultaneously with organized scheduling"
+          - "Grafted 5+ tomato or fruit tree plants successfully with 80%+ graft take rate"
+        resources:
+          - title: "Seed Savers Exchange — Seed Saving Guide"
+            url: "https://www.seedsavers.org/learn"
+            type: "article"
+          - title: "RHS — Grafting"
+            url: "https://www.rhs.org.uk/propagation/softwood-cuttings"
+            type: "article"
+          - title: "NC State Extension — Plant Propagation"
+            url: "https://content.ces.ncsu.edu/extension-gardener-handbook"
+            type: "article"
+        practice:
+          - "Graft 5 tomato plants onto disease-resistant rootstock using a tube grafting method"
+          - "Save seeds from 3 open-pollinated tomato varieties: ferment to remove gel, dry on screens, and store in paper envelopes"
+          - "Propagate a woody shrub by layering: select a low branch, wound the underside, pin it to the ground, and cover with soil"
+        projects:
+          - "Build and manage a seed starting operation producing 100+ transplants for your garden and to share with neighbors"
+          - "Save seeds from 5+ open-pollinated varieties with proper isolation techniques and achieve 80%+ viability the following year"
+        tips:
+          - "When saving tomato seeds, ferment them for 2-3 days in their own gel and water — this kills seed-borne diseases and removes the germination-inhibiting gel coating"
+          - "Label everything obsessively — it is impossible to identify unlabeled seedlings once they are 2 weeks old"
+      - level: expert
+        criteria: "Teaches propagation workshops. Manages a community seed library. Conducts variety trials and publishes results. Mentors gardeners in seed saving and propagation. Develops locally adapted varieties through selective breeding over multiple seasons."
+        metrics:
+          - "Taught 3+ propagation workshops or classes with positive participant evaluations"
+          - "Managed a seed library or seed swap with 50+ varieties and 20+ participants"
+          - "Conducted and documented 2+ variety trials comparing performance of 5+ cultivars for local conditions"
+          - "Mentored 5+ gardeners in propagation with each successfully propagating plants independently"
+          - "Developed or selected 1+ locally adapted variety through 3+ generations of selection"
+        resources:
+          - title: "Extension Master Gardener — Volunteer Teaching Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "Organic Seed Alliance — Seed Saving Resources"
+            url: "https://seedalliance.org/publications/"
+            type: "article"
+          - title: "Gardener's Supply — Seed Starting Guide"
+            url: "https://www.almanac.com/content/starting-seeds-indoors"
+            type: "article"
+        practice:
+          - "Organize a community seed swap event with labeling standards, germination testing, and variety descriptions"
+          - "Design and execute a side-by-side variety trial for 5+ tomato or pepper varieties"
+        projects:
+          - "Establish and maintain a community seed library with 50+ varieties and documented seed saving protocols"
+          - "Teach a multi-session propagation workshop series covering seed starting, cuttings, division, and grafting"
+        tips:
+          - "Variety trials require at least 3 replicates of each variety to produce meaningful data — randomize plot placement to control for microclimate variation"
+          - "A community seed library thrives on engagement, not perfection — start small with 10 easy-to-save varieties and grow from there"
+    tags: ["foundation", "hands-on", "measurable"]
+
+  # -- VEGETABLE GARDENING -------------------------------------------------------
+  - id: "creative-arts/gardening/vegetable-gardening"
+    title: "Vegetable Gardening"
+    description: >
+      Growing food crops from planting to harvest. Covers garden bed preparation
+      (raised beds, in-ground, containers), crop selection based on climate zone
+      and season, planting schedules, spacing, companion planting, crop rotation,
+      fertilizing, and harvesting at peak ripeness. The core skill for anyone who
+      wants to grow their own food.
+
+      Sub-skills covered: understanding USDA hardiness zones and first/last frost
+      dates, planning a garden layout on paper, building or preparing raised beds,
+      cool-season vs. warm-season crop calendars, succession planting for
+      continuous harvest, basic companion planting (tomatoes/basil, corn/beans/squash),
+      crop rotation principles (avoid planting the same family in the same spot
+      for 3-4 years), side-dressing and foliar feeding, recognizing harvest
+      readiness indicators, and post-harvest handling.
+    benchmarks:
+      - level: beginner
+        criteria: "Grows 3+ vegetable varieties from transplant or direct seed to harvest. Knows their USDA zone and frost dates. Prepares a basic garden bed (raised or in-ground). Plants at correct spacing. Harvests at least one crop at appropriate ripeness. Understands cool-season vs. warm-season crop categories."
+        metrics:
+          - "3+ vegetable varieties grown from planting to harvest in one season"
+          - "USDA hardiness zone and local frost dates correctly identified and recorded"
+          - "Garden bed prepared with amended soil and plants spaced within 2 inches of recommended spacing"
+          - "At least 5 lbs of food harvested from the garden in the first season"
+          - "Can classify 10 common vegetables as cool-season or warm-season correctly"
+        resources:
+          - title: "Epic Gardening — Beginner's Guide to Vegetable Gardening"
+            url: "https://www.youtube.com/watch?v=s_TLaB6MoPA"
+            type: "video"
+          - title: "Old Farmer's Almanac — Vegetable Gardening for Beginners"
+            url: "https://www.almanac.com/vegetable-gardening-for-beginners"
+            type: "article"
+          - title: "University of Illinois Extension — First Vegetable Garden"
+            url: "https://extension.illinois.edu/veggies"
+            type: "article"
+          - title: "Garden Answer — Raised Bed Gardening Basics"
+            url: "https://www.youtube.com/watch?v=3-3QoPqmkFo"
+            type: "video"
+        practice:
+          - "Sketch a garden plan on paper showing bed locations, what you will plant, and spacing for each crop"
+          - "Plant at least 3 easy vegetables (tomatoes, lettuce, beans or zucchini) and track growth weekly in a garden journal"
+          - "Look up your USDA zone and local average last frost date and write them in your garden journal"
+        projects:
+          - "Grow 3+ vegetable varieties from planting to harvest and record total harvest weight"
+          - "Build or prepare one raised bed (at least 4x8 feet) filled with quality soil and plant a spring or summer crop"
+        tips:
+          - "Start small — a single 4x8 raised bed can produce a surprising amount of food and is much more manageable than a large plot"
+          - "Tomatoes, zucchini, lettuce, green beans, and herbs are the most forgiving first crops — start with these before attempting melons, corn, or artichokes"
+      - level: intermediate
+        criteria: "Manages a productive garden with 10+ vegetable varieties across cool and warm seasons. Implements crop rotation on a 3-4 year cycle. Practices succession planting for continuous harvest. Uses companion planting principles. Side-dresses heavy feeders mid-season. Harvests 50+ lbs of food per season from a home garden."
+        metrics:
+          - "10+ vegetable varieties grown successfully across spring, summer, and fall plantings"
+          - "Crop rotation plan documented and followed for all beds over 2+ years"
+          - "Succession plantings of at least 2 crops (e.g., lettuce and beans) maintaining continuous harvest for 8+ weeks"
+          - "50+ lbs of food harvested per season from the home garden"
+          - "Garden journal maintained with planting dates, harvest dates, varieties, and yields for all crops"
+        resources:
+          - title: "Epic Gardening — Crop Rotation Explained"
+            url: "https://www.youtube.com/watch?v=NqVrG0Rjfho"
+            type: "video"
+          - title: "Savvy Gardening — Companion Planting Guide"
+            url: "https://www.almanac.com/companion-planting-guide-vegetables"
+            type: "article"
+          - title: "Old Farmer's Almanac — Crop Rotation"
+            url: "https://www.almanac.com/crop-rotation-101-tips-vegetable-garden"
+            type: "article"
+          - title: "Gardener's Supply — Raised Bed Gardening"
+            url: "https://www.almanac.com/raised-garden-beds"
+            type: "article"
+        practice:
+          - "Create a crop rotation map for your garden beds showing what plant family goes where for the next 4 years"
+          - "Implement succession planting: sow a new row of lettuce every 2 weeks from early spring through fall"
+          - "Side-dress tomatoes and peppers with compost or organic fertilizer when first fruits set"
+        projects:
+          - "Maintain a productive garden producing 50+ lbs of food across spring, summer, and fall crops"
+          - "Document a full year of gardening in a journal with planting dates, varieties, harvest weights, and lessons learned"
+        tips:
+          - "Crop rotation is about plant families, not individual crops — tomatoes, peppers, and eggplant are all Solanaceae, so rotating tomatoes with peppers does not count as rotation"
+          - "Track your harvest weight with a kitchen scale — most gardeners are surprised to learn they are growing more than they realize"
+      - level: advanced
+        criteria: "Year-round food production using season extension techniques. Grows 25+ varieties including challenging crops (melons, sweet potatoes, artichokes). Produces 200+ lbs of food per year from a home garden. Designs vegetable gardens for others based on their space, climate, and preferences. Preserves surplus through canning, freezing, or fermentation."
+        metrics:
+          - "25+ vegetable varieties grown successfully in one calendar year"
+          - "200+ lbs of food harvested per year (tracked with a harvest log)"
+          - "Food produced in 10+ months of the year using season extension techniques"
+          - "Designed and planned a vegetable garden for at least 2 other households"
+          - "Surplus preserved by 2+ methods (canning, freezing, fermenting, dehydrating) totaling 20+ lbs"
+        resources:
+          - title: "Epic Gardening — Year-Round Vegetable Gardening"
+            url: "https://www.youtube.com/watch?v=s_TLaB6MoPA"
+            type: "video"
+          - title: "Savvy Gardening — Growing Year-Round"
+            url: "https://www.fourseasonfarm.com/"
+            type: "article"
+          - title: "NC State Extension — Vegetable Gardening"
+            url: "https://content.ces.ncsu.edu/extension-gardener-handbook"
+            type: "article"
+        practice:
+          - "Grow a challenging crop you have never tried before (sweet potatoes, artichokes, or melons) and document the process"
+          - "Design a vegetable garden plan for a friend or neighbor based on their available space, sun exposure, and food preferences"
+          - "Preserve 10+ lbs of surplus harvest by canning, freezing, or fermenting"
+        projects:
+          - "Produce 200+ lbs of food from your garden in one year, verified by a harvest log"
+          - "Design a complete vegetable garden for another household including bed layout, variety selection, and planting schedule"
+        tips:
+          - "The jump to year-round production requires thinking in seasons, not just summer — plan your fall and winter crops in June and July"
+          - "A kitchen scale next to the back door makes harvest tracking effortless — weigh everything as you bring it in"
+      - level: expert
+        criteria: "Master Gardener certified or equivalent. Manages community garden programs. Teaches vegetable gardening classes. Conducts variety trials and publishes results. Mentors beginning gardeners from first seed to sustained production. Designs market garden or CSA production plans."
+        metrics:
+          - "Master Gardener certification obtained or equivalent advanced horticulture credential"
+          - "Taught 5+ vegetable gardening classes or workshops with documented positive feedback"
+          - "Mentored 10+ beginning gardeners from initial planting through their first full harvest season"
+          - "Community garden program managed with 20+ participating plots"
+          - "Variety trial results published or presented at a gardening conference or extension event"
+        resources:
+          - title: "Extension Master Gardener Program"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "USDA Community Garden Resources"
+            url: "https://www.nal.usda.gov/"
+            type: "article"
+          - title: "Old Farmer's Almanac — Growing Guides"
+            url: "https://www.almanac.com/gardening/growing-guides"
+            type: "article"
+        practice:
+          - "Prepare and deliver a 1-hour vegetable gardening workshop for beginning gardeners at a local library, school, or community center"
+          - "Conduct a variety trial comparing 5+ tomato cultivars for yield, disease resistance, and flavor"
+        projects:
+          - "Obtain Master Gardener certification through your state extension program (typically 40-50 hours of training + volunteer hours)"
+          - "Launch or manage a community garden with at least 10 participating gardeners"
+        tips:
+          - "The best way to teach vegetable gardening is to garden alongside the learner — abstract classroom instruction does not stick; hands in soil does"
+          - "Community gardens succeed or fail based on clear governance — establish plot rules, maintenance expectations, and communication channels before the first seed goes in the ground"
+    tags: ["core", "food-production", "measurable"]
+
+  # -- HERB GARDENING ------------------------------------------------------------
+  - id: "creative-arts/gardening/herb-gardening"
+    title: "Herb Gardening"
+    description: >
+      Growing culinary, medicinal, and aromatic herbs. Covers herb selection for
+      your climate, container vs. in-ground growing, harvesting techniques that
+      promote continued growth, drying and preserving herbs, and understanding
+      the difference between annual herbs (basil, cilantro, dill) and perennial
+      herbs (rosemary, thyme, oregano, sage, mint).
+
+      Sub-skills covered: selecting herbs for sun exposure (most need 6+ hours),
+      understanding moisture needs (Mediterranean herbs like rosemary and thyme
+      prefer drier soil; basil and mint prefer consistent moisture), pinching and
+      harvesting to promote bushy growth, preventing bolting in heat-sensitive
+      herbs (cilantro, basil), drying herbs (hanging, dehydrator, oven), making
+      herb-infused oils and vinegars, and growing herbs in containers on patios
+      and windowsills.
+    benchmarks:
+      - level: beginner
+        criteria: "Grows 5+ herb varieties successfully (at least 3 culinary herbs). Knows the difference between annual and perennial herbs. Harvests herbs correctly (cutting above a leaf node to promote branching). Keeps a basil plant alive and productive for at least 2 months. Grows herbs in containers or in-ground."
+        metrics:
+          - "5+ herb varieties grown to harvest size in one season"
+          - "Basil plant kept productive for 2+ months through regular pinching (no flowering allowed)"
+          - "Correctly classifies 10 common herbs as annual or perennial when quizzed"
+          - "Herbs harvested by cutting above a leaf node (not ripping or cutting at soil level) on 90%+ of harvests"
+          - "At least 3 different culinary herbs used in cooking from the home garden"
+        resources:
+          - title: "Epic Gardening — Complete Herb Growing Guide"
+            url: "https://www.youtube.com/watch?v=bRaFnhVOm1E"
+            type: "video"
+          - title: "Old Farmer's Almanac — Herb Growing Guide"
+            url: "https://www.almanac.com/plants/herbs"
+            type: "article"
+          - title: "RHS — Growing Herbs"
+            url: "https://www.rhs.org.uk/herbs"
+            type: "article"
+          - title: "Gardener's Supply — Herb Gardening Guide"
+            url: "https://www.rhs.org.uk/herbs"
+            type: "article"
+        practice:
+          - "Plant a kitchen herb container with basil, parsley, and chives; place in a sunny spot and water consistently"
+          - "Practice pinching basil: every time a stem has 3 sets of leaves, pinch off the top set to encourage branching"
+          - "Harvest each herb by cutting just above a leaf node and observe the new growth that sprouts from that node"
+        projects:
+          - "Grow 5+ herb varieties and use at least 3 of them in cooking over the course of the season"
+          - "Keep a basil plant productive for 2+ months by regular pinching before it can flower"
+        tips:
+          - "Pinch basil flower buds off immediately — once basil flowers, the leaves become bitter and the plant stops producing new foliage"
+          - "Rosemary, thyme, and oregano are Mediterranean herbs that prefer well-drained, somewhat dry soil — do not overwater them"
+      - level: intermediate
+        criteria: "Grows 10+ herb varieties including perennials that overwinter. Prevents bolting in cilantro and basil through succession planting and variety selection. Dries and preserves herbs for year-round use. Manages a dedicated herb garden or herb spiral. Propagates herbs from cuttings (rosemary, basil, mint)."
+        metrics:
+          - "10+ herb varieties grown including 3+ perennials that successfully overwinter"
+          - "Herbs preserved by 2+ methods (drying, freezing in oil, making herb butter) totaling enough for 3+ months of off-season use"
+          - "Cilantro maintained for 6+ weeks without bolting through slow-bolt variety selection and shade management"
+          - "5+ herb plants propagated from cuttings with 70%+ success rate"
+          - "Dedicated herb garden area or herb spiral designed and planted with logical groupings by water and sun needs"
+        resources:
+          - title: "Epic Gardening — How to Dry and Preserve Herbs"
+            url: "https://www.youtube.com/watch?v=jjXjPO5FDg4"
+            type: "video"
+          - title: "Savvy Gardening — Growing Herbs Indoors"
+            url: "https://www.rhs.org.uk/herbs"
+            type: "article"
+          - title: "RHS — Harvesting and Preserving Herbs"
+            url: "https://www.rhs.org.uk/herbs"
+            type: "article"
+        practice:
+          - "Dry a batch of herbs using 3 methods: air drying (hanging), oven (170 F for 1-2 hours), and freezing in olive oil in ice cube trays"
+          - "Propagate rosemary from cuttings: take 10 four-inch cuttings, strip lower leaves, dip in rooting hormone, plant in moist perlite"
+          - "Design an herb spiral on paper grouping plants by water needs: dry-loving herbs at top, moisture-loving at bottom"
+        projects:
+          - "Preserve enough herbs by drying and freezing to supply your kitchen for 3+ months of off-season use"
+          - "Build and plant an herb spiral or dedicated herb bed organized by sun and water requirements"
+        tips:
+          - "Harvest herbs in the morning after dew has dried but before the heat of the day — essential oils are most concentrated at this time"
+          - "Freeze herbs in olive oil in ice cube trays for the best flavor preservation — dried herbs lose volatile oils that freezing retains"
+      - level: advanced
+        criteria: "Grows 20+ herb varieties including medicinal and less common culinary herbs (lemongrass, epazote, shiso). Designs herb gardens for others. Grows herbs year-round using indoor growing or season extension. Creates herb products (teas, tinctures, salves, infused oils). Teaches herb growing workshops."
+        metrics:
+          - "20+ herb varieties grown including 5+ less common or medicinal herbs"
+          - "Herbs grown year-round with indoor or greenhouse production maintaining fresh herbs in every month"
+          - "3+ herb-derived products created (herbal tea blends, infused oils, herb salves, or tinctures)"
+          - "Herb garden designed and installed for 2+ other households or community spaces"
+          - "1+ herb growing workshop taught with positive participant feedback"
+        resources:
+          - title: "Garden Answer — Herb Garden Design Ideas"
+            url: "https://www.youtube.com/watch?v=L3PvL6M1bFY"
+            type: "video"
+          - title: "Penn State Extension — Herb Gardening"
+            url: "https://extension.psu.edu/lawn-and-garden"
+            type: "article"
+          - title: "Old Farmer's Almanac — Herb Chart"
+            url: "https://www.almanac.com/content/herb-chart-planting-growing-and-harvesting"
+            type: "article"
+        practice:
+          - "Grow 3 less common herbs you have never tried (e.g., lemongrass, lovage, shiso) and document their cultural requirements"
+          - "Create a custom herbal tea blend from garden-grown herbs: dry, blend, package, and taste-test"
+          - "Set up indoor herb growing under lights for winter production of basil, parsley, and cilantro"
+        projects:
+          - "Design and install an herb garden for a community space, school, or another gardener"
+          - "Create 3+ herb products from your garden harvest (tea blends, infused oils, herb butter, etc.)"
+        tips:
+          - "Lemongrass is easy to start from a grocery store stalk — place the base in water until roots form, then plant in a warm, sunny spot"
+          - "When designing herb gardens for others, always ask what they cook most often — a cook who makes Italian food needs different herbs than one who cooks Thai"
+      - level: expert
+        criteria: "Recognized as an herb garden authority. Teaches comprehensive herb workshops. Manages herb garden programs for botanical gardens, community spaces, or educational institutions. Writes or speaks about herb cultivation. Mentors herb growers from beginner to self-sufficiency."
+        metrics:
+          - "Taught 5+ herb workshops or classes at garden clubs, extension programs, or community centers"
+          - "Managed an herb garden program for an institution or community space for 2+ growing seasons"
+          - "Mentored 5+ gardeners in herb growing from beginner to productive, self-sufficient herb gardens"
+          - "Published or presented 1+ articles or talks on herb cultivation"
+          - "Identified as a go-to herb resource by local gardening community (invited to speak, consulted on plant selection)"
+        resources:
+          - title: "Herb Society of America — Resources"
+            url: "https://www.herbsociety.org/"
+            type: "article"
+          - title: "Extension Master Gardener — Teaching Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "RHS — Herb Growing Advice"
+            url: "https://www.rhs.org.uk/herbs"
+            type: "article"
+        practice:
+          - "Prepare and deliver a workshop on growing and using culinary herbs for a garden club or community center"
+          - "Create a written herb growing guide tailored to your local climate, covering variety selection, planting dates, and preservation"
+        projects:
+          - "Manage an institutional herb garden (botanical garden, school, community center) for a full growing season"
+          - "Teach a multi-session herb growing course covering planting, propagation, harvest, and preservation"
+        tips:
+          - "The most effective herb workshops include a hands-on tasting component — people remember flavors better than lectures"
+          - "Pair herb workshops with a culinary component (make pesto, brew tea) to keep engagement high"
+    tags: ["culinary", "hands-on", "measurable"]
+
+  # -- FLOWER & ORNAMENTAL GARDENING ---------------------------------------------
+  - id: "creative-arts/gardening/flower-ornamental"
+    title: "Flower & Ornamental Gardening"
+    description: >
+      Growing flowering plants and ornamentals for beauty, pollinator habitat,
+      and cut flowers. Covers annuals, perennials, bulbs, shrubs, and ornamental
+      grasses. Includes understanding bloom time, color theory in the garden,
+      planting for continuous color (succession of bloom), cut flower growing
+      and arranging, and creating pollinator-friendly gardens.
+
+      Sub-skills covered: selecting plants for sun/shade conditions, understanding
+      bloom seasons and planning for continuous color April through October,
+      planting spring and fall bulbs, deadheading to extend bloom, dividing
+      perennials, growing cut flowers (zinnias, dahlias, sunflowers, cosmos),
+      basic cut flower conditioning and arranging, and selecting native plants
+      for pollinator habitat.
+    benchmarks:
+      - level: beginner
+        criteria: "Grows 5+ flowering varieties from seed or transplant. Understands the difference between annuals and perennials. Plants bulbs at correct depth and orientation. Deadheads spent blooms to extend flowering. Creates a basic flower bed or container arrangement with attention to height placement (tall in back, short in front)."
+        metrics:
+          - "5+ flowering varieties grown to bloom in one season"
+          - "Bulbs planted at correct depth (generally 3x the bulb height) and right-side up"
+          - "Deadheading performed weekly on blooming annuals, extending bloom period by 2+ weeks vs. non-deadheaded plants"
+          - "Flower bed or container arrangement planted with 3+ heights (tall, medium, short) in logical placement"
+          - "Correctly classifies 10 common flowers as annual or perennial when quizzed"
+        resources:
+          - title: "Garden Answer — Flower Gardening for Beginners"
+            url: "https://www.youtube.com/watch?v=hLBPVXxM85A"
+            type: "video"
+          - title: "Old Farmer's Almanac — Flower Growing Guides"
+            url: "https://www.almanac.com/plants/flowers"
+            type: "article"
+          - title: "RHS — Choosing Plants for Your Garden"
+            url: "https://www.rhs.org.uk/plants/types"
+            type: "article"
+          - title: "Gardener's Supply — Flower Gardening"
+            url: "https://www.rhs.org.uk/plants/types"
+            type: "article"
+        practice:
+          - "Plant 5 easy-to-grow annuals from seed: zinnias, cosmos, marigolds, sunflowers, and nasturtiums"
+          - "Plant spring bulbs (tulips, daffodils) in fall at 3x bulb height depth with pointed end up"
+          - "Deadhead spent blooms on one flower variety weekly and compare bloom duration to a non-deadheaded control plant"
+        projects:
+          - "Create a flower bed or large container with 5+ flowering varieties arranged by height"
+          - "Grow a bouquet garden and cut at least 5 homegrown flower arrangements over the season"
+        tips:
+          - "Zinnias are the perfect beginner cut flower — they germinate in days, bloom in weeks, and the more you cut them the more they bloom"
+          - "When planting bulbs, if you cannot tell which end is up, plant them on their side — the sprout will find its way up"
+      - level: intermediate
+        criteria: "Designs a perennial garden with 3-season bloom. Grows 15+ flowering varieties. Successfully overwinters tender bulbs (dahlias, cannas, gladiolus). Creates a cutting garden with weekly bouquet production. Plans color combinations using complementary and analogous color schemes. Attracts and supports pollinators with intentional plant selection."
+        metrics:
+          - "Perennial garden plan with documented bloom sequence covering at least 3 seasons (spring, summer, fall)"
+          - "15+ flowering varieties grown including 5+ perennials that return for 2+ years"
+          - "Tender bulbs (dahlias, cannas, or gladiolus) successfully overwintered and replanted with 80%+ survival"
+          - "Cut flower bouquets produced weekly for 8+ weeks during peak season"
+          - "5+ pollinator species (bees, butterflies, hummingbirds) observed visiting the garden during peak bloom"
+        resources:
+          - title: "Garden Answer — Dahlia Growing Guide"
+            url: "https://www.youtube.com/watch?v=IpZt_xEDVnE"
+            type: "video"
+          - title: "Savvy Gardening — Perennial Garden Design"
+            url: "https://www.rhs.org.uk/garden-design"
+            type: "article"
+          - title: "RHS — Perennials"
+            url: "https://www.rhs.org.uk/plants/types/perennials"
+            type: "article"
+          - title: "Xerces Society — Pollinator-Friendly Planting Guides"
+            url: "https://www.xerces.org/pollinator-conservation/plant-lists"
+            type: "article"
+        practice:
+          - "Create a bloom calendar: list every flowering plant in your garden with its bloom period and color, then identify gaps"
+          - "Dig dahlia tubers after first frost, cure for 2 days, pack in peat moss, and store at 40-50 F"
+          - "Design a pollinator border with 3+ native wildflower species that bloom in sequence from spring through fall"
+        projects:
+          - "Design and plant a 3-season perennial border with documented bloom from April through October"
+          - "Produce cut flower bouquets weekly for 8+ weeks from a dedicated cutting garden"
+        tips:
+          - "Plan your perennial garden on paper before buying a single plant — use a bloom calendar to ensure something is flowering every 2 weeks from spring to frost"
+          - "Dahlias are the queen of the cutting garden but are frost-tender — dig tubers after the first hard frost, brush off soil, and store in a cool dark place at 40-50 F"
+      - level: advanced
+        criteria: "Designs complete ornamental landscapes with year-round interest (structure, texture, seasonal color). Grows 30+ flowering varieties including specialty plants (orchids, roses, alpine plants). Creates professional-quality floral arrangements. Designs and installs pollinator and native plant gardens. Understands advanced color theory, repetition, rhythm, and focal points in garden design."
+        metrics:
+          - "30+ flowering varieties grown across annuals, perennials, bulbs, and shrubs"
+          - "Ornamental garden designed with 4-season interest (spring bloom, summer color, fall foliage, winter structure)"
+          - "Professional-quality floral arrangements created for 3+ events or gifts"
+          - "Native plant or pollinator garden designed and installed with 10+ regionally native species"
+          - "2+ ornamental gardens designed for other households or community spaces"
+        resources:
+          - title: "Garden Answer — Garden Design Tours"
+            url: "https://www.youtube.com/@gardenanswer"
+            type: "video"
+          - title: "RHS — Garden Design"
+            url: "https://www.rhs.org.uk/garden-design"
+            type: "article"
+          - title: "NC State Extension — Ornamental Gardening"
+            url: "https://content.ces.ncsu.edu/extension-gardener-handbook"
+            type: "article"
+        practice:
+          - "Design an ornamental bed on paper showing plant placement, mature sizes, bloom times, and color relationships"
+          - "Create a professional-quality floral arrangement using 5+ flower varieties, foliage, and proper conditioning techniques"
+          - "Research and select 10+ native plants for your region that support pollinators and provide 4-season interest"
+        projects:
+          - "Design and install a 4-season ornamental garden with documented spring, summer, fall, and winter interest"
+          - "Design and plant a native pollinator garden with 10+ regionally appropriate native species"
+        tips:
+          - "Year-round interest requires thinking beyond flowers — ornamental grasses for winter movement, evergreen structure, colored bark, and seed heads all add off-season beauty"
+          - "Repetition is the most powerful design tool — repeat the same plant or color at regular intervals to create rhythm and unity in a garden bed"
+      - level: expert
+        criteria: "Recognized ornamental gardening authority. Designs gardens for public display (botanical gardens, garden tours). Judges flower shows. Teaches ornamental gardening and floral design. Mentors gardeners in plant selection and garden design. Published or featured garden."
+        metrics:
+          - "Garden featured on a garden tour, in a publication, or at a botanical garden display"
+          - "Judged or exhibited at 2+ flower or garden shows"
+          - "Taught 5+ ornamental gardening or floral design workshops"
+          - "Mentored 5+ gardeners in ornamental design with each creating their own 3-season garden"
+          - "Published or presented 1+ articles or talks on ornamental gardening or garden design"
+        resources:
+          - title: "American Horticultural Society"
+            url: "https://ahsgardening.org/"
+            type: "article"
+          - title: "RHS — Shows and Events"
+            url: "https://www.rhs.org.uk/shows-events"
+            type: "article"
+          - title: "Garden Conservancy — Open Days"
+            url: "https://www.gardenconservancy.org/open-days"
+            type: "article"
+        practice:
+          - "Open your garden for a local garden tour and prepare documentation of plant names, design choices, and maintenance practices"
+          - "Prepare a flower show entry following the show schedule categories and judging criteria"
+        projects:
+          - "Enter and exhibit at a regional flower or garden show"
+          - "Teach a multi-session ornamental gardening course covering design principles, plant selection, and seasonal interest"
+        tips:
+          - "Garden tours are the most powerful learning tool in ornamental gardening — visit 10 open gardens and you will internalize more design principles than any book can teach"
+          - "When designing for public display, every plant must earn its place three ways: flower, foliage, and form — a plant that only looks good for 2 weeks of bloom is not worth the space"
+    tags: ["ornamental", "design", "creative"]
+
+  # -- WATERING & IRRIGATION ------------------------------------------------------
+  - id: "creative-arts/gardening/watering-irrigation"
+    title: "Watering & Irrigation"
+    description: >
+      Understanding plant water needs and delivering water efficiently. The most
+      common cause of plant death in home gardens is improper watering — either
+      too much or too little. Covers hand watering techniques, reading plant
+      stress signals, drip irrigation, soaker hoses, sprinkler systems, rain
+      barrels, and water conservation strategies.
+
+      Sub-skills covered: understanding when to water (morning is best, check
+      soil moisture at 1-inch depth before watering), deep watering vs. shallow
+      frequent watering, recognizing overwatering symptoms (yellowing lower
+      leaves, root rot) vs. underwatering symptoms (wilting, crispy leaf edges),
+      installing drip irrigation with timers, calculating water needs based on
+      soil type and weather, mulching for moisture retention, and rainwater
+      harvesting.
+    benchmarks:
+      - level: beginner
+        criteria: "Checks soil moisture before watering (finger test at 1-inch depth). Waters at the base of plants (not on foliage). Understands that deep infrequent watering is better than shallow frequent watering. Recognizes basic overwatering vs. underwatering symptoms. Waters in the morning. Keeps container plants alive through a full season."
+        metrics:
+          - "Soil moisture checked before watering on 90%+ of watering sessions (finger test at 1-inch depth)"
+          - "Plants watered at the base (not overhead) on 90%+ of watering sessions"
+          - "Container plants maintained alive through a full growing season with zero drought-kill losses"
+          - "Correctly identifies overwatering vs. underwatering symptoms on 3 different plant examples"
+          - "Watering performed before 10 AM on 80%+ of watering days"
+        resources:
+          - title: "Epic Gardening — How to Water Your Garden (The Right Way)"
+            url: "https://www.youtube.com/watch?v=c5EhB5gqp7Y"
+            type: "video"
+          - title: "Old Farmer's Almanac — Watering Your Garden"
+            url: "https://www.almanac.com/watering-garden-tips"
+            type: "article"
+          - title: "University of Florida Extension — Watering Your Garden"
+            url: "https://gardeningsolutions.ifas.ufl.edu/care/watering/"
+            type: "article"
+        practice:
+          - "Before every watering session, stick your finger 1 inch into the soil — only water if it is dry at that depth"
+          - "Water your garden at the base of plants using a watering can or hose with a breaker nozzle, avoiding wetting foliage"
+          - "Observe 3 plants showing stress symptoms and diagnose whether each is overwatered or underwatered"
+        projects:
+          - "Maintain all container and garden plants through a full growing season with zero drought-kill losses"
+          - "Document watering frequency and method for 2 weeks, then adjust based on observations of plant health"
+        tips:
+          - "The finger test is the most reliable watering guide — stick your finger 1 inch into the soil; if it is dry, water deeply; if it is moist, wait"
+          - "Overhead watering in the evening leaves foliage wet overnight, which promotes fungal diseases — always water at the base of plants in the morning"
+      - level: intermediate
+        criteria: "Installs and manages a basic drip irrigation or soaker hose system. Uses a timer for automated watering. Adjusts watering schedule based on weather, season, and plant growth stage. Mulches all beds for moisture conservation. Understands water needs by plant type (new transplants need more frequent water than established plants). Reduces water use by 20%+ vs. hand watering through efficient delivery."
+        metrics:
+          - "Drip irrigation or soaker hose system installed covering at least 100 sq ft of garden beds"
+          - "Timer set and adjusted seasonally (more frequent in summer, less in spring/fall)"
+          - "Water use reduced by 20%+ compared to hand watering (measured by water meter or timer run times)"
+          - "All garden beds mulched with 2-4 inches of organic mulch for moisture retention"
+          - "Zero overwatering incidents (no root rot, no consistently waterlogged soil) across all beds in one season"
+        resources:
+          - title: "Epic Gardening — Drip Irrigation Setup for Beginners"
+            url: "https://www.youtube.com/watch?v=P2PafcTeyUU"
+            type: "video"
+          - title: "Gardener's Supply — Drip Irrigation"
+            url: "https://www.rhs.org.uk/garden-jobs/watering"
+            type: "article"
+          - title: "RHS — Watering"
+            url: "https://www.rhs.org.uk/garden-jobs/watering"
+            type: "article"
+          - title: "Old Farmer's Almanac — Mulching Guide"
+            url: "https://www.almanac.com/how-to-mulch-your-garden"
+            type: "article"
+        practice:
+          - "Install a drip irrigation line in one raised bed: lay mainline tubing, add emitters at each plant, connect to a hose bib timer"
+          - "Apply 3 inches of mulch to all garden beds and monitor soil moisture over 2 weeks to see the difference"
+          - "Adjust your watering timer schedule monthly based on temperature and rainfall"
+        projects:
+          - "Install a drip irrigation system in your primary garden beds with a timer for automated watering"
+          - "Track water use over one month and document the reduction compared to your previous hand-watering approach"
+        tips:
+          - "Drip irrigation is the single best upgrade for a home garden — it saves water, reduces disease, and frees you from the daily watering chore"
+          - "Run drip irrigation lines under mulch to minimize evaporation — the mulch plus drip combination can reduce water use by 50% vs. overhead sprinklers"
+      - level: advanced
+        criteria: "Designs and installs complete irrigation systems for multi-zone gardens. Implements rainwater harvesting (rain barrels, cisterns). Uses soil moisture sensors for precision watering. Understands ET (evapotranspiration) rates and calculates crop water needs. Designs irrigation for others. Manages water resources sustainably in drought-prone conditions."
+        metrics:
+          - "Multi-zone irrigation system designed and installed with separate zones for high-water and low-water plants"
+          - "Rainwater harvesting system installed capturing 500+ gallons per year"
+          - "Soil moisture sensors deployed in 2+ zones with automated adjustment of watering based on readings"
+          - "Water budget calculated for garden based on ET rates and crop water needs"
+          - "Irrigation system designed and installed for 2+ other gardens or community spaces"
+        resources:
+          - title: "Gardener's Supply — Rainwater Harvesting"
+            url: "https://www.epa.gov/watersense"
+            type: "article"
+          - title: "Texas A&M Extension — Irrigation for Home Gardens"
+            url: "https://agrilifeextension.tamu.edu/browse/water/"
+            type: "article"
+          - title: "RHS — Saving Water in the Garden"
+            url: "https://www.rhs.org.uk/garden-jobs/watering"
+            type: "article"
+        practice:
+          - "Install a rain barrel on a downspout and calculate the capture volume based on roof area and average rainfall"
+          - "Set up a soil moisture sensor in one garden zone and track readings over 2 weeks to calibrate your watering schedule"
+          - "Calculate the weekly water needs for your garden using ET rate data from your local extension or weather service"
+        projects:
+          - "Design and install a rainwater harvesting system capturing and using 500+ gallons per year for garden irrigation"
+          - "Design a multi-zone irrigation system for a garden with separate schedules for vegetables, perennials, and containers"
+        tips:
+          - "A 1,000 sq ft roof in an area receiving 30 inches of rain per year can capture over 18,000 gallons — even a small rain barrel captures meaningful water"
+          - "Soil moisture sensors connected to your irrigation timer eliminate guesswork — they are inexpensive ($30-50) and pay for themselves in water savings within one season"
+      - level: expert
+        criteria: "Designs irrigation systems professionally. Teaches water management workshops. Implements and advocates for water-wise gardening practices at the community level. Consults on water conservation for gardens and landscapes. Publishes or presents on irrigation and water management."
+        metrics:
+          - "Designed irrigation systems for 5+ gardens or community spaces with documented water savings"
+          - "Taught 3+ water management or irrigation workshops"
+          - "Community water conservation program implemented or advocated at municipal or neighborhood level"
+          - "Water use in own garden below 50% of regional average for comparable garden size (measured and documented)"
+          - "Published or presented 1+ articles or talks on garden water management"
+        resources:
+          - title: "Irrigation Association — Resources"
+            url: "https://www.irrigation.org/"
+            type: "article"
+          - title: "Extension Master Gardener — Water Conservation Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "EPA WaterSense — Outdoor Water Use"
+            url: "https://www.epa.gov/watersense"
+            type: "article"
+        practice:
+          - "Audit a neighbor's garden irrigation for efficiency and provide recommendations for reducing water waste"
+          - "Prepare and deliver a water-wise gardening workshop for a local garden club"
+        projects:
+          - "Implement a community-level water conservation program for a neighborhood garden or HOA landscape"
+          - "Teach a water management workshop series covering soil moisture, irrigation design, and rainwater harvesting"
+        tips:
+          - "The most impactful water conservation teaching focuses on soil health first — a soil with 5% organic matter holds 4x more water than one with 1%, making irrigation far less critical"
+          - "Demonstrate the difference between drip and overhead irrigation with a side-by-side water use measurement — seeing the numbers changes behavior"
+    tags: ["maintenance", "infrastructure", "measurable"]
+
+  # -- PEST & DISEASE MANAGEMENT --------------------------------------------------
+  - id: "creative-arts/gardening/pest-disease"
+    title: "Pest & Disease Management"
+    description: >
+      Identifying, preventing, and managing garden pests and plant diseases
+      using Integrated Pest Management (IPM) principles. IPM prioritizes
+      prevention, monitoring, and the least-toxic control methods. Covers
+      common insect pests (aphids, caterpillars, slugs, Japanese beetles),
+      beneficial insects (ladybugs, lacewings, parasitic wasps), common
+      diseases (powdery mildew, blight, root rot), cultural controls
+      (spacing, sanitation, resistant varieties), biological controls,
+      and organic vs. chemical intervention as a last resort.
+
+      Sub-skills covered: scouting and monitoring (weekly walk-through looking
+      at undersides of leaves), identifying beneficial vs. harmful insects,
+      understanding the IPM pyramid (prevention > cultural > biological >
+      chemical), using row covers and netting for physical exclusion,
+      recognizing common disease symptoms (fungal spots, wilting, mildew),
+      applying organic controls (neem oil, Bt, diatomaceous earth, horticultural
+      soap) safely and effectively, and knowing when to remove a diseased plant
+      to prevent spread.
+    benchmarks:
+      - level: beginner
+        criteria: "Identifies 5+ common garden pests by sight. Identifies 3+ beneficial insects (ladybugs, lacewings, bees). Scouts the garden weekly checking undersides of leaves. Recognizes common disease symptoms (powdery mildew, yellowing leaves, leaf spots). Uses basic cultural controls: proper spacing, watering at the base, and removing diseased plant material."
+        metrics:
+          - "Correctly identifies 5+ common garden pests (aphids, caterpillars, slugs, whiteflies, Japanese beetles) by sight or from photos"
+          - "Correctly identifies 3+ beneficial insects (ladybug, lacewing, honey bee, parasitic wasp) and explains their role"
+          - "Garden scouted weekly for pests and disease with observations recorded in a garden journal"
+          - "Recognizes powdery mildew, leaf spots, and wilting as disease symptoms (not nutrient deficiency) on 3+ occasions"
+          - "Diseased plant material removed and disposed of (not composted) on 90%+ of occasions"
+        resources:
+          - title: "Epic Gardening — Common Garden Pests and How to Deal With Them"
+            url: "https://www.youtube.com/watch?v=aTXGxJFmmAs"
+            type: "video"
+          - title: "Old Farmer's Almanac — Garden Pest Guide"
+            url: "https://www.almanac.com/pest"
+            type: "article"
+          - title: "University of California IPM — Home Garden Pest Management"
+            url: "https://ipm.ucanr.edu/"
+            type: "article"
+          - title: "RHS — Pest and Disease Identifier"
+            url: "https://www.rhs.org.uk/problems"
+            type: "article"
+        practice:
+          - "Scout your garden weekly: walk through slowly, turn over 10 leaves per bed, and record any pests or disease symptoms in your journal"
+          - "Make a pest identification flashcard set with photos of 10 common pests and 5 beneficial insects"
+          - "Remove any diseased leaves or plant material you find during scouting and dispose of it in the trash (not the compost)"
+        projects:
+          - "Create a pest and beneficial insect identification guide for your garden with photos and notes from your weekly scouting"
+          - "Scout your garden weekly for one full month and document all pest and disease observations"
+        tips:
+          - "Most pest problems can be spotted early if you check the undersides of leaves weekly — this is where aphids, whiteflies, and caterpillar eggs are found"
+          - "Do not kill every bug you see — learn to recognize beneficial insects first; a ladybug larva eats 400+ aphids in its lifetime"
+      - level: intermediate
+        criteria: "Implements Integrated Pest Management (IPM) as a framework. Uses row covers and physical barriers for pest exclusion. Applies organic controls (neem oil, Bt, insecticidal soap) correctly and safely. Attracts beneficial insects with companion plantings. Diagnoses common diseases and applies cultural or organic treatments. Understands disease triangle (host, pathogen, environment) and modifies conditions to prevent disease."
+        metrics:
+          - "IPM principles applied as primary pest management strategy with chemical intervention used as last resort on 90%+ of pest events"
+          - "Row covers or netting used successfully to exclude pests from 2+ crop types (e.g., brassicas from cabbage worms, berries from birds)"
+          - "Organic pest control products applied correctly (right product, right timing, right concentration) on 5+ occasions"
+          - "Beneficial insect habitat established with 3+ companion plants (yarrow, dill, sweet alyssum) attracting visible beneficials"
+          - "2+ plant diseases correctly diagnosed and treated with cultural or organic methods before plants are lost"
+        resources:
+          - title: "Epic Gardening — IPM for Home Gardeners"
+            url: "https://www.youtube.com/watch?v=cT3Km5bFHYM"
+            type: "video"
+          - title: "University of California IPM — IPM for the Home Gardener"
+            url: "https://ipm.ucanr.edu/"
+            type: "article"
+          - title: "Savvy Gardening — Companion Planting for Pest Control"
+            url: "https://www.almanac.com/companion-planting-guide-vegetables"
+            type: "article"
+          - title: "RHS — Integrated Pest Management"
+            url: "https://www.rhs.org.uk/problems"
+            type: "article"
+        practice:
+          - "Install row covers over brassica plants at transplanting time and monitor for cabbage worm damage vs. uncovered controls"
+          - "Plant sweet alyssum, dill, and yarrow near vegetable beds and observe beneficial insect visits over 4 weeks"
+          - "Mix and apply neem oil spray following label directions on a plant with aphid infestation and monitor results over 1 week"
+        projects:
+          - "Implement a full IPM program for your garden: prevention, monitoring, physical barriers, biological controls, and organic sprays as needed"
+          - "Establish a beneficial insect habitat strip with 3+ companion plants and document beneficial insect visits"
+        tips:
+          - "The IPM pyramid: prevention (resistant varieties, clean tools, proper spacing) > cultural controls (crop rotation, sanitation) > biological controls (beneficial insects) > organic sprays > synthetic chemicals as absolute last resort"
+          - "Neem oil works best as a preventive spray applied in the evening when bees are not active — it disrupts insect feeding and reproduction but does not kill on contact"
+      - level: advanced
+        criteria: "Diagnoses complex pest and disease interactions. Manages garden with near-zero synthetic pesticide use. Establishes self-sustaining beneficial insect populations. Identifies disease pathogens (fungal, bacterial, viral) and prescribes appropriate treatments. Uses cover cropping and biodiversity as primary disease prevention strategies. Consults for other gardeners on pest and disease problems."
+        metrics:
+          - "Garden managed with zero synthetic pesticide applications for 2+ consecutive seasons"
+          - "Self-sustaining beneficial insect populations established (visible predator-prey cycles) in the garden"
+          - "5+ complex pest or disease problems correctly diagnosed and resolved for other gardeners"
+          - "Disease incidence reduced year-over-year through proactive cultural and biological management (documented in garden journal)"
+          - "Biodiversity index of garden increased through intentional companion planting and habitat features"
+        resources:
+          - title: "Cornell IPM — Diagnostic Tools"
+            url: "https://nysipm.cornell.edu/"
+            type: "article"
+          - title: "University of California IPM — Advanced Pest Management"
+            url: "https://ipm.ucanr.edu/"
+            type: "article"
+          - title: "Xerces Society — Beneficial Insects in the Garden"
+            url: "https://www.xerces.org/pollinator-conservation/plant-lists"
+            type: "article"
+        practice:
+          - "Diagnose a complex pest or disease problem for a fellow gardener using symptom analysis, environmental assessment, and pest identification"
+          - "Conduct a garden biodiversity audit: count the number of plant species, insect species, and habitat features in your garden"
+          - "Implement a cover cropping strategy specifically for disease suppression (e.g., mustard family cover crops for biofumigation)"
+        projects:
+          - "Manage your garden for 2+ consecutive seasons with zero synthetic pesticide use and document pest management outcomes"
+          - "Consult on pest and disease problems for 5+ other gardeners with documented successful outcomes"
+        tips:
+          - "A diverse garden is a resilient garden — monocultures attract specialist pests; mixed plantings confuse them and harbor predators"
+          - "Keep detailed pest and disease records year over year — patterns emerge that allow you to anticipate problems before they arrive"
+      - level: expert
+        criteria: "Recognized IPM authority in the local gardening community. Teaches pest and disease management workshops. Mentors gardeners in IPM practices. Publishes or presents on garden pest management. Partners with extension services on pest monitoring and education programs."
+        metrics:
+          - "Taught 5+ pest and disease management workshops with documented positive outcomes"
+          - "Mentored 10+ gardeners in IPM with each successfully reducing pesticide use by 50%+ in their gardens"
+          - "Partnered with local extension service on pest monitoring, reporting, or education program"
+          - "Published or presented 1+ articles or talks on garden pest management"
+          - "Identified as a go-to pest and disease diagnostic resource by local gardening community"
+        resources:
+          - title: "Extension Master Gardener — IPM Teaching Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "Cooperative Extension System — Plant Diagnostic Labs"
+            url: "https://www.extension.org/"
+            type: "article"
+          - title: "UC IPM — Master Gardener Resources"
+            url: "https://ipm.ucanr.edu/training/"
+            type: "article"
+        practice:
+          - "Prepare and deliver a workshop on identifying common garden pests using live specimens and magnifying lenses"
+          - "Partner with your county extension office to participate in a pest monitoring or citizen science program"
+        projects:
+          - "Teach a comprehensive IPM workshop series for beginning gardeners"
+          - "Develop a regional pest and disease identification guide for your local Master Gardener program"
+        tips:
+          - "The most effective IPM workshops use live specimens — bring in aphid-infested leaves, caterpillars, and beneficial insects in jars for hands-on identification"
+          - "Partner with your local extension entomologist — they are eager for community partners who can help with pest monitoring and education"
+    tags: ["management", "science", "measurable"]
+
+  # -- PRUNING & PLANT MAINTENANCE ------------------------------------------------
+  - id: "creative-arts/gardening/pruning-maintenance"
+    title: "Pruning & Plant Maintenance"
+    description: >
+      Keeping plants healthy and productive through pruning, training, staking,
+      and general garden maintenance. Covers pruning fundamentals (when, where,
+      and why to cut), training plants on supports (trellising tomatoes, training
+      fruit trees), weeding strategies, and seasonal garden maintenance tasks.
+
+      Sub-skills covered: understanding pruning terminology (heading cut, thinning
+      cut, node, internode, leader, lateral, scaffold branch), timing pruning for
+      different plant types (prune spring-blooming shrubs after they bloom, summer
+      bloomers in late winter), pruning roses, pruning fruit trees (open center
+      vs. central leader), tomato pruning (removing suckers for indeterminate
+      varieties), staking and trellising, weeding strategies (mulch, hand pulling,
+      hoeing), and seasonal maintenance checklists (spring cleanup, fall garden
+      put-to-bed).
+    benchmarks:
+      - level: beginner
+        criteria: "Uses clean, sharp tools (bypass pruners, loppers). Makes cuts at the correct location (just above a node or branch collar). Prunes dead, damaged, and diseased wood (the 3 D's). Stakes or cages tomatoes. Weeds regularly (at least weekly during growing season). Performs basic spring and fall garden cleanup."
+        metrics:
+          - "Pruning tools cleaned and sharpened at least once per season"
+          - "Pruning cuts made at correct location (above a node, at branch collar) on 90%+ of cuts"
+          - "Dead, damaged, and diseased wood removed from all garden plants within 1 week of identification"
+          - "Tomatoes staked or caged at planting time with supports remaining functional through the season"
+          - "Weeding performed weekly during growing season with no weeds going to seed in garden beds"
+        resources:
+          - title: "Garden Answer — Pruning Basics for Beginners"
+            url: "https://www.youtube.com/watch?v=7opnPBaP_w0"
+            type: "video"
+          - title: "Old Farmer's Almanac — Pruning Guide"
+            url: "https://www.almanac.com/pruning-guide"
+            type: "article"
+          - title: "RHS — Pruning"
+            url: "https://www.rhs.org.uk/pruning"
+            type: "article"
+          - title: "University of Missouri Extension — Pruning"
+            url: "https://extension.missouri.edu/programs/master-gardener"
+            type: "article"
+        practice:
+          - "Practice making heading cuts and thinning cuts on a shrub: heading cuts above an outward-facing bud, thinning cuts at the branch collar"
+          - "Walk through the garden and identify all dead, damaged, and diseased wood; remove it with clean, sharp pruners"
+          - "Install tomato cages or stakes at planting time and tie stems to supports as plants grow"
+        projects:
+          - "Prune 3+ shrubs or small trees, removing all dead, damaged, and diseased wood with correct cut placement"
+          - "Maintain a weed-free garden for 4 consecutive weeks through weekly weeding and mulching"
+        tips:
+          - "The 3 D's of pruning: always remove Dead, Damaged, and Diseased wood first — this is never wrong regardless of timing or plant species"
+          - "Clean your pruners with rubbing alcohol between plants to prevent spreading disease — especially after cutting diseased wood"
+      - level: intermediate
+        criteria: "Prunes shrubs and small trees for shape, airflow, and productivity. Knows pruning timing for different plant types (spring bloomers, summer bloomers, fruit trees). Prunes tomato suckers on indeterminate varieties. Trains vining crops on trellises. Uses mulch as primary weed suppression. Performs seasonal maintenance on schedule."
+        metrics:
+          - "Shrubs pruned at correct timing (spring bloomers pruned after bloom, summer bloomers in late winter) for 5+ species"
+          - "Tomato suckers removed weekly on indeterminate varieties with plants maintaining single or double leader"
+          - "Vining crops (cucumbers, peas, beans) trained on trellises with regular tying and directing"
+          - "Mulch applied at 2-4 inch depth in all beds reducing weeding time by 50%+ vs. unmulched beds"
+          - "Seasonal maintenance checklist completed in spring (cleanup, soil prep) and fall (garden put-to-bed, mulch, tool maintenance)"
+        resources:
+          - title: "Epic Gardening — How to Prune Tomatoes"
+            url: "https://www.youtube.com/watch?v=9w-jwBuG1aE"
+            type: "video"
+          - title: "Savvy Gardening — Trellising Vegetables"
+            url: "https://www.almanac.com/content/vertical-gardening"
+            type: "article"
+          - title: "RHS — Pruning Shrubs"
+            url: "https://www.rhs.org.uk/pruning"
+            type: "article"
+          - title: "Old Farmer's Almanac — Fall Garden Checklist"
+            url: "https://www.almanac.com/fall-garden-checklist"
+            type: "article"
+        practice:
+          - "Create a pruning calendar for your garden listing every shrub and tree with its correct pruning window"
+          - "Remove tomato suckers weekly: identify suckers (shoots growing from leaf axils), pinch off when small"
+          - "Build and install a trellis for cucumbers or beans and train plants onto it as they grow"
+        projects:
+          - "Prune 5+ shrubs or trees at the correct time of year with documented before-and-after photos"
+          - "Complete a full fall garden put-to-bed: remove spent plants, add compost, apply mulch, clean and oil tools"
+        tips:
+          - "The easiest rule for pruning timing: if it blooms before June, prune right after it blooms (buds form on old wood); if it blooms after June, prune in late winter (buds form on new wood)"
+          - "Tomato suckers below the first flower cluster should always be removed — they divert energy from fruit production without contributing flowers"
+      - level: advanced
+        criteria: "Prunes fruit trees for maximum production using established systems (open center, central leader, espalier). Rejuvenates overgrown shrubs and trees. Trains espalier fruit trees. Prunes grapes and berries for optimal yield. Manages a comprehensive annual maintenance calendar for a diverse garden. Teaches pruning to others."
+        metrics:
+          - "Fruit trees pruned using a specific training system (open center, central leader, or espalier) with documented improved yield"
+          - "2+ overgrown shrubs or trees successfully rejuvenated over 2-3 year renovation pruning plan"
+          - "Espalier fruit tree trained on a flat plane with regular pruning maintaining the form for 2+ years"
+          - "Berry bushes (blueberries, raspberries) pruned annually with documented yield improvement"
+          - "Comprehensive annual maintenance calendar created and followed for the full garden"
+        resources:
+          - title: "RHS — Pruning Fruit Trees"
+            url: "https://www.rhs.org.uk/pruning"
+            type: "article"
+          - title: "Oregon State Extension — Pruning and Training Fruit Trees"
+            url: "https://extension.oregonstate.edu/gardening/techniques"
+            type: "article"
+          - title: "Garden Answer — Pruning Roses and Shrubs"
+            url: "https://www.youtube.com/watch?v=TaJAKIluWGY"
+            type: "video"
+        practice:
+          - "Prune an apple or pear tree to an open center or central leader form following a pruning guide"
+          - "Start an espalier project: plant a fruit tree against a wall or fence and begin training branches to horizontal wires"
+          - "Develop a 3-year renovation pruning plan for an overgrown shrub: remove 1/3 of the oldest stems each year"
+        projects:
+          - "Train a fruit tree in an espalier form on a wall or fence and maintain it for 2+ years"
+          - "Rejuvenate an overgrown shrub or tree over a 2-3 year renovation plan with documented before-and-after results"
+        tips:
+          - "Renovation pruning overgrown shrubs is best done in 3 stages over 3 years: remove 1/3 of the oldest thickest stems each year — this avoids the shock of hard pruning while completely renewing the plant"
+          - "An espalier fruit tree produces the same amount of fruit as a full-size tree in a fraction of the space — it is the ultimate technique for small gardens"
+      - level: expert
+        criteria: "Certified arborist or equivalent pruning authority. Teaches pruning workshops and demonstrations. Consults on tree care and maintenance for others. Manages pruning programs for orchards, botanical gardens, or community spaces. Published or recognized expert in plant training and maintenance."
+        metrics:
+          - "ISA Certified Arborist or equivalent credential obtained, or recognized as pruning authority by local community"
+          - "Taught 5+ pruning workshops with hands-on demonstrations"
+          - "Consulted on tree care and pruning for 10+ gardens, orchards, or community spaces"
+          - "Managed pruning program for an orchard, botanical garden, or institutional landscape for 2+ years"
+          - "Published or presented 1+ articles or talks on pruning techniques or tree care"
+        resources:
+          - title: "International Society of Arboriculture"
+            url: "https://www.isa-arbor.com/"
+            type: "article"
+          - title: "Extension Master Gardener — Tree Care Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "RHS — Tree Care"
+            url: "https://www.rhs.org.uk/plants/types/trees"
+            type: "article"
+        practice:
+          - "Lead a hands-on pruning demonstration at a local orchard, garden, or community space"
+          - "Assess and develop a pruning plan for a neglected orchard or institutional landscape"
+        projects:
+          - "Teach a multi-session pruning workshop covering basics, fruit trees, ornamental shrubs, and renovation pruning"
+          - "Manage a pruning program for a community orchard or botanical garden for a full year"
+        tips:
+          - "Hands-on pruning workshops are best held in late winter when plants are dormant and branching structure is visible — attendees can see exactly what they are cutting and why"
+          - "Bring bad examples to workshops: show photos of flush cuts, stub cuts, and topping damage — people learn faster from mistakes than from correct examples"
+    tags: ["maintenance", "hands-on", "measurable"]
+
+  # -- SEASON EXTENSION (Cold Frames / Greenhouses) --------------------------------
+  - id: "creative-arts/gardening/season-extension"
+    title: "Season Extension (Cold Frames & Greenhouses)"
+    description: >
+      Techniques for extending the growing season beyond the natural frost-free
+      period. Covers cold frames, row covers, hoop houses, unheated greenhouses,
+      and heated greenhouses. Enables earlier spring planting, later fall harvests,
+      and in some cases year-round growing.
+
+      Sub-skills covered: understanding microclimates and how to create them,
+      building and using cold frames (hardened off transplants, overwintering
+      cold-hardy crops), selecting and using row cover fabrics (lightweight for
+      pest exclusion, heavyweight for frost protection), building hoop houses
+      from PVC or EMT conduit, managing greenhouse ventilation and temperature,
+      and calculating heating costs for heated greenhouse growing.
+    benchmarks:
+      - level: beginner
+        criteria: "Uses row covers or cloches to protect plants from light frost. Extends the season by 2-4 weeks in spring or fall. Understands the concept of microclimates (south-facing wall, raised bed, cold air drainage). Builds or uses a simple cold frame. Knows the difference between a hard freeze and a light frost."
+        metrics:
+          - "Row covers or cloches deployed to protect plants on 3+ frost nights saving plants from damage"
+          - "Growing season extended by 2+ weeks in spring or fall using any season extension technique"
+          - "Cold frame built or purchased and used to harden off transplants or extend fall harvest"
+          - "Can explain the difference between a light frost (28-32 F) and a hard freeze (below 28 F) and which crops survive each"
+          - "At least 1 crop harvested after the first fall frost using row cover or cold frame protection"
+        resources:
+          - title: "Epic Gardening — Season Extension for Beginners"
+            url: "https://www.youtube.com/watch?v=hUFOMSMHNAc"
+            type: "video"
+          - title: "Old Farmer's Almanac — Cold Frames and Season Extension"
+            url: "https://www.almanac.com/building-cold-frames"
+            type: "article"
+          - title: "Gardener's Supply — Season Extension"
+            url: "https://extension.umn.edu/planting-and-growing-guides/extending-growing-season"
+            type: "article"
+          - title: "University of Minnesota Extension — Season Extension"
+            url: "https://extension.umn.edu/planting-and-growing-guides/extending-growing-season"
+            type: "article"
+        practice:
+          - "Cover a bed of lettuce or kale with row cover fabric before a forecasted frost and check for frost damage the next morning"
+          - "Build a simple cold frame from a wooden frame and an old window: place against a south-facing wall"
+          - "Monitor temperatures inside and outside a cold frame or row cover for 1 week to see the temperature difference"
+        projects:
+          - "Extend your fall harvest by 2+ weeks using row covers or a cold frame on cold-hardy crops (lettuce, spinach, kale)"
+          - "Build a functional cold frame and use it to harden off spring transplants or overwinter cold-hardy greens"
+        tips:
+          - "A cold frame is just a bottomless box with a transparent lid — it can be as simple as a wood frame with an old window on top, placed against a south-facing wall"
+          - "Heavyweight row cover (1.5 oz/sq yd) provides 6-8 degrees of frost protection — enough to extend the season by a month in most climates"
+      - level: intermediate
+        criteria: "Builds and manages a hoop house or caterpillar tunnel. Extends the growing season by 6-8 weeks (both spring and fall). Overwinters cold-hardy crops (spinach, mâche, carrots) under protection for winter harvest. Manages ventilation in enclosed structures to prevent overheating. Uses soil thermometers to time spring planting under protection."
+        metrics:
+          - "Hoop house or caterpillar tunnel built and operational covering at least 50 sq ft of growing space"
+          - "Growing season extended by 6+ weeks total (3+ weeks earlier in spring, 3+ weeks later in fall)"
+          - "Cold-hardy crops overwintered under cover and harvested in at least 2 winter months (December-February in northern hemisphere)"
+          - "Ventilation managed to keep daytime temperature under 85 F inside structures on sunny days"
+          - "Soil temperature monitored and used to time spring planting under cover (planting when soil reaches target temp for each crop)"
+        resources:
+          - title: "Epic Gardening — How to Build a Hoop House"
+            url: "https://www.youtube.com/watch?v=SHr2yMKsvi4"
+            type: "video"
+          - title: "Savvy Gardening — Hoop House Gardening"
+            url: "https://www.johnnyseeds.com/growers-library/"
+            type: "article"
+          - title: "Johnny's Selected Seeds — Caterpillar Tunnel Guide"
+            url: "https://www.johnnyseeds.com/growers-library/"
+            type: "article"
+          - title: "Old Farmer's Almanac — Winter Gardening"
+            url: "https://www.almanac.com/winter-gardening"
+            type: "article"
+        practice:
+          - "Build a hoop house from PVC or EMT conduit and greenhouse plastic over one garden bed"
+          - "Plant a fall crop of spinach, mâche, and carrots under cover in September and track how late into winter they survive"
+          - "Monitor temperature inside your hoop house at noon and adjust ventilation to keep below 85 F"
+        projects:
+          - "Build a hoop house or caterpillar tunnel and use it to extend the season by 6+ weeks total"
+          - "Overwinter cold-hardy crops and harvest greens in at least 2 winter months"
+        tips:
+          - "Ventilation is the most common hoop house mistake — on a sunny 40 F day, the inside of an unvented hoop house can exceed 100 F and cook your plants"
+          - "The key crops for winter harvest under cover are cold-hardy greens: spinach, mâche, claytonia, and kale — they actually taste sweeter after frost exposure"
+      - level: advanced
+        criteria: "Manages an unheated or minimally heated greenhouse for year-round production. Produces food or flowers in all 12 months using season extension techniques. Designs season extension systems for other gardeners. Uses succession planting within protected structures. Integrates thermal mass (water barrels) for passive heating."
+        metrics:
+          - "Food or flowers produced in all 12 months of the year using season extension techniques"
+          - "Greenhouse or protected growing space managed year-round with documented monthly harvests"
+          - "Thermal mass (water barrels, stone) used for passive solar heating extending frost protection by 5+ degrees F"
+          - "Season extension system designed for 2+ other gardens or community spaces"
+          - "Succession planting executed within protected structures for continuous production"
+        resources:
+          - title: "Eliot Coleman — Four Season Harvest (Author's website)"
+            url: "https://www.fourseasonfarm.com/"
+            type: "article"
+          - title: "Gardener's Supply — Greenhouse Growing Guide"
+            url: "https://www.almanac.com/content/greenhouse-gardening-for-beginners"
+            type: "article"
+          - title: "Penn State Extension — High Tunnel Production"
+            url: "https://extension.psu.edu/high-tunnel-production"
+            type: "article"
+        practice:
+          - "Place 5-gallon water jugs painted black inside your cold frame or hoop house to absorb daytime heat and release it at night"
+          - "Plan a year-round planting schedule for a greenhouse with specific crops for each month"
+          - "Design a season extension plan for a fellow gardener based on their climate, budget, and goals"
+        projects:
+          - "Achieve 12-month food production using a combination of outdoor, cold frame, hoop house, and/or greenhouse growing"
+          - "Design and install a season extension system for another gardener or community garden"
+        tips:
+          - "Five-gallon jugs filled with water and painted black are the cheapest thermal mass — place them along the north wall of a hoop house to absorb daytime heat and radiate it back at night"
+          - "Year-round production is about planning, not technology — Eliot Coleman grows salad greens through Maine winters in unheated structures by choosing the right varieties and planting dates"
+      - level: expert
+        criteria: "Designs and manages commercial-scale season extension systems. Teaches season extension workshops. Publishes or presents on protected growing techniques. Consults on greenhouse and hoop house design. Mentors gardeners and farmers in year-round production."
+        metrics:
+          - "Designed or managed season extension systems at commercial or institutional scale"
+          - "Taught 3+ season extension workshops covering cold frames, hoop houses, and greenhouse management"
+          - "Consulted on greenhouse or hoop house design for 5+ gardens, farms, or institutions"
+          - "Published or presented 1+ articles or talks on season extension techniques"
+          - "Mentored 5+ gardeners in season extension with each achieving extended harvest beyond their frost-free period"
+        resources:
+          - title: "ATTRA — Season Extension Techniques for Market Gardeners"
+            url: "https://attra.ncat.org/publication/season-extension-techniques-for-market-gardeners/"
+            type: "article"
+          - title: "Extension Master Gardener — Season Extension Resources"
+            url: "https://mastergardener.extension.org/"
+            type: "article"
+          - title: "Johnny's Selected Seeds — Growing Resources"
+            url: "https://www.johnnyseeds.com/growers-library/"
+            type: "article"
+        practice:
+          - "Consult with a local farm or community garden on their season extension needs and recommend appropriate structures"
+          - "Lead a hands-on hoop house building workshop for a garden group"
+        projects:
+          - "Teach a comprehensive season extension workshop series covering all methods from row covers to greenhouses"
+          - "Design a season extension system for a community garden or small farm enabling 10+ months of production"
+        tips:
+          - "The most impactful season extension teaching is a winter garden tour — when people see fresh lettuce growing under snow-covered hoop houses in January, they immediately want to build one"
+          - "Start teaching with cold frames, not greenhouses — the low cost and immediate results build confidence and understanding before investing in larger structures"
+    tags: ["infrastructure", "year-round", "measurable"]
+
+  # -- GARDEN DESIGN & LANDSCAPE PLANNING -----------------------------------------
+  - id: "creative-arts/gardening/garden-design"
+    title: "Garden Design & Landscape Planning"
+    description: >
+      Planning and designing gardens as complete, functional landscapes. Integrates
+      all other gardening skills into a cohesive plan. Covers site analysis (sun,
+      soil, water, existing features), design principles (unity, balance, proportion,
+      rhythm, focalization), functional zones (food production, recreation, wildlife
+      habitat, utility), hardscape elements (paths, patios, fences, raised beds),
+      and long-term planning for perennial and tree establishment.
+
+      Sub-skills covered: conducting a site analysis (sun mapping, soil testing,
+      water drainage observation, wind patterns), drawing a base map and site
+      plan, understanding design principles (scale, proportion, balance, rhythm,
+      repetition, focal points), selecting plants for function and aesthetics,
+      planning for mature plant size (the most common design mistake), creating
+      functional zones, integrating hardscape and softscape, phased installation
+      planning, and budgeting for garden projects.
+    benchmarks:
+      - level: beginner
+        criteria: "Draws a basic garden plan on paper showing existing features, sun exposure, and planned plantings. Observes and records sun patterns in the garden (full sun, partial shade, full shade areas). Plans bed layout with attention to access, water sources, and aesthetics. Understands the concept of planting for mature size. Creates a simple garden bed with intentional plant placement."
+        metrics:
+          - "Garden plan drawn on paper showing property boundaries, structures, existing plants, sun zones, and planned beds"
+          - "Sun mapping completed for the garden over the course of 1 day (record sun/shade at 8 AM, noon, and 4 PM)"
+          - "Plants selected with awareness of mature size (no 20-foot shrubs planted in 4-foot spaces)"
+          - "Garden bed created with intentional placement: taller plants in back (or center of island bed), shorter in front"
+          - "Access paths planned to reach all garden areas without stepping on planting beds"
+        resources:
+          - title: "Garden Answer — Garden Design for Beginners"
+            url: "https://www.youtube.com/watch?v=A3_EPxe8yg4"
+            type: "video"
+          - title: "Old Farmer's Almanac — Garden Planning Guide"
+            url: "https://www.almanac.com/vegetable-garden-planner"
+            type: "article"
+          - title: "RHS — How to Design a Garden"
+            url: "https://www.rhs.org.uk/garden-design"
+            type: "article"
+          - title: "University of Illinois Extension — Home Landscaping"
+            url: "https://extension.illinois.edu/landscaping"
+            type: "article"
+        practice:
+          - "Draw a base map of your garden area to scale on graph paper showing the house, fences, trees, and existing beds"
+          - "Sun map your garden: on a sunny day, mark which areas are in full sun, partial shade, and full shade at morning, noon, and afternoon"
+          - "Select 5 plants for a new bed and verify that their mature sizes fit the available space"
+        projects:
+          - "Create a to-scale garden plan on paper showing existing features, sun zones, and planned plantings for the next season"
+          - "Design and plant a new garden bed with plants arranged by height, color, and mature size"
+        tips:
+          - "The most common garden design mistake is planting too close together — always plan for the MATURE size of plants, not their nursery pot size"
+          - "Sun mapping is non-negotiable — a plant labeled 'full sun' will fail in shade no matter how good the soil is; map your sun first, then select plants"
+      - level: intermediate
+        criteria: "Designs a complete garden plan with distinct functional zones (food, flowers, relaxation, utility). Applies basic design principles (repetition, rhythm, balance, focal points). Creates a phased installation plan over multiple seasons. Integrates hardscape elements (paths, raised beds, seating areas). Plans for 3-season interest with bloom succession and foliage texture. Uses garden design software or apps."
+        metrics:
+          - "Complete garden design with 3+ functional zones drawn to scale with plant lists and spacing"
+          - "Design principles applied: at least 2 instances each of repetition, focal points, and balanced massing in the plan"
+          - "Phased installation plan written covering 2-3 seasons with priorities and budget for each phase"
+          - "Hardscape elements (paths, raised beds, or seating) integrated into the garden plan"
+          - "3-season bloom plan documented with specific plants providing interest in spring, summer, and fall"
+        resources:
+          - title: "RHS — Garden Design Principles"
+            url: "https://www.rhs.org.uk/garden-design"
+            type: "article"
+          - title: "Savvy Gardening — Designing Vegetable Gardens"
+            url: "https://savvygardening.com/vegetable-garden-design/"
+            type: "article"
+          - title: "Garden Answer — Landscape Design Tours"
+            url: "https://www.youtube.com/@gardenanswer"
+            type: "video"
+          - title: "Old Farmer's Almanac — Garden Planner Tool"
+            url: "https://gardenplanner.almanac.com/"
+            type: "tool"
+        practice:
+          - "Redesign one area of your garden on paper with intentional use of 3 design principles (repetition, focal point, balance)"
+          - "Create a phased installation plan for a new garden area: Phase 1 (hardscape, trees), Phase 2 (shrubs, perennials), Phase 3 (annuals, groundcovers)"
+          - "Visit 3 well-designed gardens (public gardens, garden tours, or botanical gardens) and note design elements you want to adapt"
+        projects:
+          - "Create a complete garden master plan for your property with functional zones, plant lists, and a 3-year phased installation timeline"
+          - "Design and install a hardscape element (path, patio, or raised bed system) integrated with plantings"
+        tips:
+          - "Design your garden in 3 phases: first install hardscape and trees (the bones), then shrubs and perennials (the structure), then annuals and groundcovers (the finishing layer)"
+          - "Repetition is the simplest design trick with the biggest impact — repeat the same plant or color at regular intervals to create visual flow and unity"
+      - level: advanced
+        criteria: "Designs complete residential landscapes for others with professional-quality plans. Conducts thorough site analysis (soils, microclimate, drainage, utilities, views). Designs for ecological function (stormwater management, wildlife habitat, native plant communities). Creates designs with 4-season interest including winter structure. Manages design projects from concept through installation supervision."
+        metrics:
+          - "3+ residential garden designs completed for other households with professional-quality plan drawings"
+          - "Thorough site analysis conducted for each design including soil tests, sun mapping, drainage patterns, and microclimate assessment"
+          - "Designs include ecological function elements (rain gardens, pollinator habitat, native plant areas) in 90%+ of projects"
+          - "4-season interest planned with documented winter structure elements (evergreens, bark, persistent seed heads)"
+          - "1+ design project managed from concept through installation with client satisfaction documented"
+        resources:
+          - title: "RHS — Level 2 Certificate in Practical Horticulture"
+            url: "https://www.rhs.org.uk/education-learning/qualifications-and-training"
+            type: "article"
+          - title: "American Society of Landscape Architects — Resources"
+            url: "https://www.asla.org/"
+            type: "article"
+          - title: "Penn State Extension — Landscape Design"
+            url: "https://extension.psu.edu/lawn-and-garden"
+            type: "article"
+        practice:
+          - "Conduct a full site analysis for a neighbor's property: map sun, test soil, observe drainage, note views and screening needs"
+          - "Design a rain garden for stormwater management using native plants appropriate for your region"
+          - "Create a professional-quality garden plan with scaled drawing, plant legend, and installation notes"
+        projects:
+          - "Design a complete residential landscape for another household from site analysis through professional plan"
+          - "Design and oversee the installation of a garden that includes ecological function (rain garden, pollinator habitat, or native plant area)"
+        tips:
+          - "The best garden designs solve problems — start by listing the problems (poor drainage, no privacy, too much maintenance, no wildlife) and design solutions before choosing plants"
+          - "Always design for the view from the most-used window in the house — this is the view the homeowner sees most often and should be the most beautiful part of the garden"
+      - level: expert
+        criteria: "Professional landscape designer or recognized garden design authority. Designs public gardens, community spaces, or display gardens. Teaches garden design courses. Publishes or speaks on garden design. Mentors aspiring garden designers. Creates designs that are featured or awarded."
+        metrics:
+          - "Professional landscape design credential obtained (RHS diploma, landscape design certification, or equivalent)"
+          - "Public garden, community space, or display garden designed and installed"
+          - "Taught 5+ garden design courses or workshops"
+          - "Design work featured in a publication, garden tour, or design award"
+          - "Mentored 3+ aspiring garden designers from concept skills through completed projects"
+        resources:
+          - title: "Association of Professional Landscape Designers"
+            url: "https://www.apld.org/"
+            type: "article"
+          - title: "RHS — Education and Qualifications"
+            url: "https://www.rhs.org.uk/education-learning"
+            type: "article"
+          - title: "Garden Design Magazine"
+            url: "https://www.gardendesign.com/"
+            type: "article"
+        practice:
+          - "Submit a garden design to a local garden tour or design competition"
+          - "Prepare and teach a garden design workshop covering site analysis, design principles, and plant selection"
+        projects:
+          - "Design a public or community garden from concept through installation"
+          - "Teach a multi-session garden design course covering site analysis, design principles, plant selection, and plan drawing"
+        tips:
+          - "The gap between amateur and professional garden design is the site analysis — professionals spend 50%+ of their time understanding the site before drawing a single line"
+          - "Build a portfolio of before-and-after photos from every project — this is more persuasive than any credential"
+    tags: ["design", "planning", "creative"]
+
+relationships:
+  # -- Soil science is the foundation for everything --------------------------------
+  - source: "creative-arts/gardening/soil-composting"
+    target: "creative-arts/gardening/seed-starting"
+    type: "enables"
+    note: "Understanding soil and growing media is prerequisite for successful seed starting"
+
+  - source: "creative-arts/gardening/soil-composting"
+    target: "creative-arts/gardening/vegetable-gardening"
+    type: "enables"
+    note: "Healthy soil is the foundation of productive vegetable gardening"
+
+  - source: "creative-arts/gardening/soil-composting"
+    target: "creative-arts/gardening/herb-gardening"
+    type: "enables"
+    note: "Understanding soil drainage and fertility is essential for herb growing"
+
+  - source: "creative-arts/gardening/soil-composting"
+    target: "creative-arts/gardening/flower-ornamental"
+    type: "enables"
+    note: "Soil preparation and amendment knowledge is needed for ornamental plantings"
+
+  # -- Seed starting enables crop production ----------------------------------------
+  - source: "creative-arts/gardening/seed-starting"
+    target: "creative-arts/gardening/vegetable-gardening"
+    type: "enables"
+    note: "Growing from seed opens up far more variety choices and saves significant cost"
+
+  - source: "creative-arts/gardening/seed-starting"
+    target: "creative-arts/gardening/herb-gardening"
+    type: "enables"
+    note: "Many herbs are easily grown from seed; propagation skills enable expanding herb collections"
+
+  - source: "creative-arts/gardening/seed-starting"
+    target: "creative-arts/gardening/flower-ornamental"
+    type: "enables"
+    note: "Starting flowers from seed enables large-scale planting at low cost"
+
+  # -- Watering supports all growing activities -------------------------------------
+  - source: "creative-arts/gardening/watering-irrigation"
+    target: "creative-arts/gardening/vegetable-gardening"
+    type: "requires"
+    note: "Consistent, proper watering is non-negotiable for food production"
+
+  - source: "creative-arts/gardening/watering-irrigation"
+    target: "creative-arts/gardening/herb-gardening"
+    type: "complementary"
+    note: "Understanding water needs (Mediterranean herbs vs. moisture lovers) improves herb growing success"
+
+  - source: "creative-arts/gardening/watering-irrigation"
+    target: "creative-arts/gardening/flower-ornamental"
+    type: "complementary"
+    note: "Proper irrigation is critical for establishing and maintaining ornamental plantings"
+
+  # -- Pest and disease management is needed once you are growing -------------------
+  - source: "creative-arts/gardening/vegetable-gardening"
+    target: "creative-arts/gardening/pest-disease"
+    type: "enables"
+    note: "Pest and disease management becomes essential as soon as you are growing crops"
+
+  - source: "creative-arts/gardening/flower-ornamental"
+    target: "creative-arts/gardening/pest-disease"
+    type: "complementary"
+    note: "Ornamental gardens face many pest and disease challenges requiring IPM knowledge"
+
+  # -- Pruning follows from having plants to maintain --------------------------------
+  - source: "creative-arts/gardening/vegetable-gardening"
+    target: "creative-arts/gardening/pruning-maintenance"
+    type: "enables"
+    note: "Tomato pruning, staking, and garden maintenance are integral to productive vegetable gardening"
+
+  - source: "creative-arts/gardening/flower-ornamental"
+    target: "creative-arts/gardening/pruning-maintenance"
+    type: "enables"
+    note: "Deadheading, dividing perennials, and pruning shrubs are core ornamental maintenance skills"
+
+  # -- Season extension builds on core growing skills --------------------------------
+  - source: "creative-arts/gardening/vegetable-gardening"
+    target: "creative-arts/gardening/season-extension"
+    type: "requires"
+    note: "You must know how to grow crops before extending their season with structures"
+
+  - source: "creative-arts/gardening/soil-composting"
+    target: "creative-arts/gardening/season-extension"
+    type: "complementary"
+    note: "Soil management within cold frames and greenhouses requires understanding soil temperature and health"
+
+  # -- Garden design integrates all other skills -------------------------------------
+  - source: "creative-arts/gardening/vegetable-gardening"
+    target: "creative-arts/gardening/garden-design"
+    type: "enables"
+    note: "Food production knowledge informs kitchen garden and edible landscape design"
+
+  - source: "creative-arts/gardening/flower-ornamental"
+    target: "creative-arts/gardening/garden-design"
+    type: "enables"
+    note: "Ornamental plant knowledge is essential for aesthetic garden design"
+
+  - source: "creative-arts/gardening/watering-irrigation"
+    target: "creative-arts/gardening/garden-design"
+    type: "complementary"
+    note: "Irrigation planning must be integrated into garden design from the start"
+
+  - source: "creative-arts/gardening/season-extension"
+    target: "creative-arts/gardening/garden-design"
+    type: "complementary"
+    note: "Season extension structures are major design elements that must be planned into the landscape"
+
+  - source: "creative-arts/gardening/pruning-maintenance"
+    target: "creative-arts/gardening/garden-design"
+    type: "complementary"
+    note: "Understanding maintenance requirements informs design decisions — a beautiful garden that is unmaintainable is a failed design"

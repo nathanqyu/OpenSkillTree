@@ -1,0 +1,1386 @@
+# OpenSkillTree — Seed Skill Tree: Spanish Language
+#
+# Domain:  Creative Arts / Languages / Spanish
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Rating reference: CEFR (Common European Framework of Reference for Languages)
+# Benchmark levels loosely map to:
+#   beginner     ≈ A1–A2  (basic phrases, simple interactions, survival Spanish)
+#   intermediate ≈ B1     (independent user, can handle most travel situations)
+#   advanced     ≈ B2     (can interact fluently with native speakers)
+#   expert       ≈ C1–C2  (proficient/mastery, near-native command)
+#
+# Teaching order based on Instituto Cervantes Plan Curricular, ACTFL proficiency
+# guidelines, and widely used curricula (Duolingo, Language Transfer, SpanishDict):
+#   Pronunciation & phonetics → core vocabulary & phrases →
+#   grammar fundamentals (present tense, ser/estar, gender/number) →
+#   reading comprehension → listening comprehension →
+#   conversational Spanish → writing in Spanish →
+#   past tenses & advanced grammar → cultural fluency →
+#   professional/academic Spanish.
+
+tree:
+  id: "creative-arts/spanish"
+  title: "Spanish"
+  description: >
+    A complete skill map for learning Spanish — the world's fourth most spoken
+    language with over 500 million native speakers across 20+ countries. Covers
+    pronunciation, vocabulary, grammar, reading, listening, conversation, writing,
+    advanced grammar, cultural fluency, and professional use needed to progress
+    from absolute beginner to near-native proficiency.
+  domain: "Creative Arts"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
+  - id: "creative-arts/spanish/pronunciation"
+    title: "Pronunciation & Phonetics"
+    description: >
+      The foundation of all Spanish language skills. Spanish has a highly
+      phonetic writing system — words are pronounced the way they are spelled,
+      making it one of the most accessible languages for English speakers once
+      the sound system is mastered. This node covers the Spanish alphabet,
+      vowel sounds (a, e, i, o, u are pure and consistent), consonant
+      differences from English (rr trill, j as /x/, ll, ñ), syllable stress
+      rules and written accents, diphthongs, and linking between words in
+      natural speech.
+
+      Sub-skills covered: the five pure vowel sounds, consonant pairs that
+      differ from English (b/v, d, g in intervocalic position), the alveolar
+      tap r vs. the trilled rr, the ñ sound, h as silent, j and g before
+      e/i, syllable division rules, stress rules (words ending in vowel/n/s
+      stress penultimate syllable, otherwise final), written accent marks
+      (tildes), and natural speech rhythm (syllable-timed vs. stress-timed).
+
+      Drills to practice: (1) Minimal pair drills — pero/perro, caro/carro,
+      para/parra. (2) Vowel isolation — sustain each pure vowel for 5 seconds.
+      (3) Tongue trill exercises — start with "butter" tap, progress to
+      sustained trill. (4) Read aloud practice with recording and playback.
+      (5) Shadowing native speakers — play audio and speak simultaneously.
+    benchmarks:
+      - level: beginner
+        criteria: "Produces all five Spanish vowel sounds consistently. Pronounces most consonants intelligibly. Reads simple words aloud with correct stress. Understands that Spanish spelling is phonetic. Can distinguish between single r and double rr when hearing them."
+        metrics:
+          - "Correctly pronounces 8/10 common words read aloud (judged by native speaker or app)"
+          - "Produces all 5 pure vowel sounds without diphthongization on 9/10 attempts"
+          - "Applies default stress rules correctly on 7/10 unfamiliar words"
+          - "Scores 70%+ on a minimal pair listening quiz (pero/perro, casa/caza)"
+          - "Records and self-evaluates 10 sentences with intelligible pronunciation"
+        resources:
+          - title: "SpanishDict — Spanish Pronunciation Guide"
+            url: "https://www.spanishdict.com/guide/spanish-alphabet-pronunciation"
+            type: "article"
+          - title: "Language Transfer — Complete Spanish, Lesson 1 (Free Audio Course)"
+            url: "https://www.youtube.com/watch?v=cLf-tBDHhKE"
+            type: "video"
+          - title: "Dreaming Spanish — Spanish Sounds for Beginners"
+            url: "https://www.youtube.com/watch?v=OlSBRTx0dHs"
+            type: "video"
+          - title: "StudySpanish.com — Pronunciation Tutorial"
+            url: "https://studyspanish.com/pronunciation"
+            type: "article"
+        practice:
+          - "10 min: Vowel isolation drill — sustain each of the 5 pure vowels (a, e, i, o, u) for 5 seconds, repeat 3 times each"
+          - "10 min: Read aloud 20 common words from SpanishDict, record yourself, and compare to the site audio"
+          - "5 min: Minimal pair practice — listen to and repeat pero/perro, caro/carro, coro/corro, focusing on the r/rr distinction"
+        projects:
+          - "Record yourself reading a 10-sentence beginner passage aloud and have a native speaker rate intelligibility on a 1-5 scale (target: 3+)"
+          - "Complete the SpanishDict pronunciation module and score 70%+ on the quiz"
+        tips:
+          - "Spanish vowels are SHORT and PURE — never add the glide that English speakers add (do not say 'oh-oo' for o, just a clean 'o')"
+          - "If you cannot trill the rr yet, start by rapidly saying 'butter butter butter' to train the tongue tap, then speed it up"
+      - level: intermediate
+        criteria: "Consistent trilled rr production. Correct intonation patterns for questions vs. statements. Proper linking between words in connected speech. Applies stress rules and written accents correctly when reading aloud. Regional accent awareness (Latin American vs. Castilian basics)."
+        metrics:
+          - "Produces trilled rr in 8/10 words containing rr"
+          - "Reads a B1-level paragraph aloud with correct stress and intonation on 85%+ of words"
+          - "Correctly places written accents on 8/10 words in a dictation exercise"
+          - "Links words naturally in connected speech (e.g., los amigos as 'lo-sa-mi-gos') 7/10 times"
+          - "Identifies whether a speaker is from Spain or Latin America 7/10 times in a listening exercise"
+        resources:
+          - title: "SpanishDict — Accent Marks and Stress Rules"
+            url: "https://www.spanishdict.com/guide/spanish-accent-marks"
+            type: "article"
+          - title: "Dreaming Spanish — Intermediate Pronunciation Tips"
+            url: "https://www.youtube.com/watch?v=Xyf1MXYB6yM"
+            type: "video"
+          - title: "Coffee Break Spanish — Pronunciation Deep Dive (Season 1)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+        practice:
+          - "10 min: Shadowing exercise — play a Dreaming Spanish intermediate video and speak along simultaneously, matching rhythm and intonation"
+          - "10 min: Dictation practice — listen to Coffee Break Spanish clips, write what you hear, check accents"
+          - "5 min: Tongue trill sustained practice — hold the rr trill for 3+ seconds, then embed in words (perro, arriba, correr)"
+        projects:
+          - "Record a 2-minute monologue about your daily routine and have a native speaker evaluate fluency, stress, and intonation"
+          - "Complete a 20-word dictation exercise with 85%+ accuracy on accent placement"
+        tips:
+          - "Intonation in Spanish questions RISES at the end — practice yes/no questions with exaggerated rising pitch, then bring it back to natural"
+          - "Learn to link words across boundaries: 'es un amigo' sounds like 'e-su-na-mi-go' in natural speech"
+      - level: advanced
+        criteria: "Near-native pronunciation in connected speech. Comfortable with multiple regional accents (Mexican, Rioplatense, Caribbean, Castilian). Controls speech rate and emphasis for rhetorical effect. Minimal foreign accent detectable."
+        metrics:
+          - "Native speakers rate pronunciation 4/5 or higher on intelligibility and naturalness"
+          - "Reads a B2-level news article aloud with fewer than 3 pronunciation errors per paragraph"
+          - "Comprehends and imitates 3+ distinct regional accents with recognizable features"
+          - "Delivers a 3-minute prepared speech with appropriate pausing, emphasis, and intonation"
+        resources:
+          - title: "Dreaming Spanish — Advanced Listening and Pronunciation"
+            url: "https://www.dreamingspanish.com/"
+            type: "article"
+          - title: "SpanishDict — Regional Spanish Pronunciation Differences"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Instituto Cervantes — Spanish Phonetics Resources"
+            url: "https://cvc.cervantes.es/ensenanza/biblioteca_ele/"
+            type: "article"
+        practice:
+          - "15 min: Shadow a native speaker podcast at full speed, matching rhythm, reductions, and linking"
+          - "10 min: Record yourself reading a news article, compare to a native newsreader, note differences"
+          - "5 min: Practice one regional accent feature per session (e.g., Argentinian sh for ll, Caribbean dropped final s)"
+        projects:
+          - "Give a 5-minute presentation in Spanish on a topic of your choice and receive feedback from 2+ native speakers"
+          - "Record imitations of 3 different regional accents and have native speakers identify the region"
+        tips:
+          - "At this level, focus on RHYTHM more than individual sounds — Spanish is syllable-timed, meaning each syllable gets roughly equal duration"
+      - level: expert
+        criteria: "Indistinguishable from an educated native speaker in most contexts. Full command of prosody, rhythm, and register-appropriate pronunciation. Can code-switch between formal and informal registers. Teaches pronunciation to others."
+        metrics:
+          - "Passes a blind native speaker test — 3/5 native listeners cannot identify speaker as non-native"
+          - "Delivers a 10-minute formal presentation with zero pronunciation errors noted by an evaluator"
+          - "Accurately produces pronunciation features of 5+ regional dialects on demand"
+          - "Successfully teaches a pronunciation concept to a beginner and the learner shows measurable improvement"
+        resources:
+          - title: "Instituto Cervantes — DELE C2 Oral Exam Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SpanishDict — Advanced Phonetics and Phonology"
+            url: "https://www.spanishdict.com/guide/spanish-alphabet-pronunciation"
+            type: "article"
+        tips:
+          - "At expert level, the last traces of accent are often in prosody and vowel reduction under stress — record long stretches of natural conversation and analyze where you diverge from native patterns"
+    tags: ["foundation", "phonetics", "oral-skills"]
+
+  - id: "creative-arts/spanish/vocabulary"
+    title: "Core Vocabulary & Phrases"
+    description: >
+      Building a working vocabulary is essential for all other Spanish skills.
+      This node covers high-frequency words, survival phrases, numbers, colors,
+      days/months, family terms, food vocabulary, travel expressions, and
+      formulaic expressions (greetings, farewells, polite requests). Research
+      shows that the most frequent 1,000 words cover roughly 85% of everyday
+      speech, and 3,000 words cover about 95%.
+
+      Sub-skills covered: greetings and farewells, numbers 0-1000+, telling
+      time, days of the week, months and seasons, colors, family members,
+      body parts, food and restaurant vocabulary, directions and transportation,
+      shopping phrases, weather expressions, classroom/study vocabulary,
+      cognates and false cognates (embarazada does not mean embarrassed),
+      and idiomatic expressions.
+
+      Drills to practice: (1) Flashcard review with spaced repetition (Anki or
+      Quizlet). (2) Label objects in your home in Spanish. (3) Daily vocabulary
+      journal — write 5 new words with example sentences. (4) Word association
+      games. (5) Cognate identification in English texts.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows 300-500 high-frequency words. Can greet, introduce self, order food, ask for directions, and handle basic transactions. Recognizes common cognates. Numbers 0-100."
+        metrics:
+          - "Scores 80%+ on a 100-word frequency list quiz (SpanishDict top 100)"
+          - "Correctly uses 10+ survival phrases in a role-play scenario (greetings, ordering, asking directions)"
+          - "Identifies 15/20 common Spanish-English cognates correctly"
+          - "Counts and uses numbers 0-100 with no errors in a timed drill"
+          - "Labels 20+ common household objects in Spanish from memory"
+        resources:
+          - title: "SpanishDict — 100 Most Common Spanish Words"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Language Transfer — Complete Spanish (Vocabulary in Context)"
+            url: "https://www.youtube.com/watch?v=cLf-tBDHhKE"
+            type: "video"
+          - title: "StudySpanish.com — Basic Vocabulary Lessons"
+            url: "https://studyspanish.com/"
+            type: "article"
+          - title: "Coffee Break Spanish — Season 1 (Beginner Vocabulary)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+        practice:
+          - "15 min: Spaced repetition flashcard review — study 20 new words and review 30 previously learned words"
+          - "10 min: Label 10 objects in your room or office in Spanish using sticky notes"
+          - "5 min: Practice a restaurant ordering dialogue — waiter/customer role-play with a partner or by writing it out"
+        projects:
+          - "Create a personal phrasebook of 50 essential phrases you would need for a trip to a Spanish-speaking country"
+          - "Score 80%+ on the SpanishDict vocabulary quiz for the top 100 words"
+        tips:
+          - "Learn words in PHRASES, not isolation — 'tengo hambre' (I am hungry) is more useful than memorizing 'hambre' alone"
+          - "Beware of false cognates: 'embarazada' means pregnant, 'actualmente' means currently, 'sensible' means sensitive"
+      - level: intermediate
+        criteria: "Active vocabulary of 1,500-2,500 words. Can discuss daily routines, hobbies, work, health, and travel in detail. Uses synonyms and basic collocations. Understands most words in B1-level texts without a dictionary."
+        metrics:
+          - "Scores 75%+ on a B1-level vocabulary assessment (1,500-word range)"
+          - "Produces 3+ synonyms for 10 common verbs (e.g., decir: hablar, contar, expresar)"
+          - "Reads a B1 newspaper article and understands 90%+ of vocabulary without a dictionary"
+          - "Uses 10+ common collocations correctly in writing (tomar una decision, hacer ejercicio)"
+          - "Completes a 5-minute monologue about daily routine using 50+ unique vocabulary words"
+        resources:
+          - title: "SpanishDict — Intermediate Vocabulary Builder"
+            url: "https://www.spanishdict.com/"
+            type: "article"
+          - title: "Dreaming Spanish — Intermediate Comprehensible Input"
+            url: "https://www.youtube.com/c/DreamingSpanish"
+            type: "video"
+          - title: "Coffee Break Spanish — Season 2 (Intermediate)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+          - title: "Conjuguemos — Vocabulary Practice Activities"
+            url: "https://conjuguemos.com/"
+            type: "tool"
+        practice:
+          - "15 min: Read a short news article on BBC Mundo or similar, highlight unknown words, add to flashcard deck"
+          - "10 min: Write a paragraph about your day using at least 10 new vocabulary words from this week"
+          - "10 min: Listen to a Coffee Break Spanish episode, pause after each segment, and summarize key vocabulary"
+        projects:
+          - "Keep a vocabulary journal for 30 days — add 5 new words per day with example sentences, review weekly"
+          - "Read 3 B1-level articles and create a personal word list of 50 new words with definitions and example sentences"
+        tips:
+          - "Group vocabulary by THEME rather than alphabetically — learn all kitchen words together, all office words together; this creates mental clusters that aid recall"
+      - level: advanced
+        criteria: "Active vocabulary of 4,000-6,000 words. Comfortable with idiomatic expressions, slang, proverbs, and register-specific vocabulary. Can discuss abstract topics (politics, philosophy, science) with precision. Uses nuanced word choices."
+        metrics:
+          - "Scores 75%+ on a B2/C1-level vocabulary assessment"
+          - "Uses 20+ idiomatic expressions correctly in conversation (estar en las nubes, no tener pelos en la lengua)"
+          - "Reads a B2-level literary text and understands 95%+ of vocabulary"
+          - "Writes a 500-word opinion essay using varied and precise vocabulary with fewer than 5 word-choice errors"
+          - "Explains 10 Spanish proverbs with correct meaning and appropriate usage context"
+        resources:
+          - title: "SpanishDict — Advanced Vocabulary and Idioms"
+            url: "https://www.spanishdict.com/guide/spanish-idioms"
+            type: "article"
+          - title: "Dreaming Spanish — Advanced Content"
+            url: "https://www.dreamingspanish.com/"
+            type: "article"
+          - title: "Instituto Cervantes — Vocabulary Resources for B2-C1"
+            url: "https://cvc.cervantes.es/ensenanza/biblioteca_ele/"
+            type: "article"
+        practice:
+          - "15 min: Read an opinion column from El Pais or BBC Mundo, note 5 advanced vocabulary items, use each in a new sentence"
+          - "10 min: Practice explaining 3 idiomatic expressions to a partner, using context and examples"
+          - "10 min: Write a short opinion paragraph on a current event using advanced vocabulary and varied register"
+        projects:
+          - "Compile a personal idiom dictionary of 50 expressions with meanings, example sentences, and usage notes"
+          - "Write a 500-word essay on an abstract topic (justice, technology, identity) and have a native speaker evaluate word choice"
+        tips:
+          - "At this level, learn vocabulary through EXTENSIVE READING of native materials — novels, newspapers, podcasts — rather than flashcards alone"
+      - level: expert
+        criteria: "Near-native lexical range of 8,000+ words. Commands specialized vocabulary across multiple domains (legal, medical, literary, technical). Understands and uses regionalism, slang, double meanings, and wordplay. Can adapt register instantly (formal academic to casual colloquial)."
+        metrics:
+          - "Scores 85%+ on a C1/C2-level vocabulary assessment"
+          - "Uses domain-specific terminology correctly in 3+ professional fields"
+          - "Identifies and explains 15+ regionalisms from different Spanish-speaking countries"
+          - "Completes a C2-level cloze test with 80%+ accuracy"
+          - "Writes a 1,000-word academic or literary text with vocabulary rated as native-like by an evaluator"
+        resources:
+          - title: "Instituto Cervantes — DELE C1/C2 Vocabulary Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "Real Academia Espanola — Dictionary and Language Resources"
+            url: "https://www.rae.es/"
+            type: "article"
+        tips:
+          - "Read across GENRES — alternate between fiction, academic papers, journalism, and legal/medical texts to build vocabulary breadth that matches a native speaker's range"
+    tags: ["foundation", "vocabulary", "communication"]
+
+  # ── GRAMMAR ─────────────────────────────────────────────────────────────────
+  - id: "creative-arts/spanish/grammar-fundamentals"
+    title: "Grammar Fundamentals"
+    description: >
+      The structural backbone of Spanish communication. This node covers the
+      present tense conjugation system, the critical ser/estar distinction,
+      grammatical gender and number agreement, articles (definite and
+      indefinite), basic sentence structure (SVO), negation, question
+      formation, possessive and demonstrative adjectives, common prepositions,
+      and the verb gustar construction.
+
+      Sub-skills covered: present tense conjugation of regular -ar, -er, -ir
+      verbs, common irregular present tense verbs (ser, estar, ir, tener,
+      hacer, poder, querer, saber, conocer), the ser vs. estar distinction
+      (identity/characteristic vs. state/location), masculine/feminine noun
+      rules, singular/plural formation, definite articles (el, la, los, las),
+      indefinite articles (un, una, unos, unas), adjective agreement and
+      placement, negation with no, question words (que, quien, donde, cuando,
+      como, por que, cuanto), possessives (mi, tu, su, nuestro), demonstratives
+      (este, ese, aquel), prepositions (a, de, en, con, por, para), and the
+      verb gustar and similar verbs (encantar, importar, molestar).
+
+      Drills to practice: (1) Conjugation tables — write out full conjugations
+      from memory. (2) Ser vs. estar sentence sorting. (3) Gender agreement
+      fill-in-the-blank exercises. (4) Sentence transformation drills (positive
+      to negative, statement to question). (5) Gustar construction practice.
+    benchmarks:
+      - level: beginner
+        criteria: "Conjugates regular -ar, -er, -ir verbs in present tense. Distinguishes basic ser vs. estar uses. Assigns correct gender to common nouns. Forms simple affirmative and negative sentences. Uses definite and indefinite articles correctly."
+        metrics:
+          - "Conjugates 10 regular verbs across all 6 persons with 80%+ accuracy"
+          - "Correctly chooses ser or estar in 8/10 basic sentences (profession, location, emotion, origin)"
+          - "Assigns correct gender article to 15/20 common nouns"
+          - "Forms grammatically correct simple sentences (subject-verb-object) 8/10 times"
+          - "Converts 8/10 affirmative sentences to negative form correctly"
+        resources:
+          - title: "SpanishDict — Present Tense Conjugation Guide"
+            url: "https://www.spanishdict.com/guide/spanish-present-tense-forms"
+            type: "article"
+          - title: "StudySpanish.com — Ser vs. Estar"
+            url: "https://studyspanish.com/grammar/lessons/serest1"
+            type: "article"
+          - title: "Conjuguemos — Verb Conjugation Practice"
+            url: "https://conjuguemos.com/"
+            type: "tool"
+          - title: "Language Transfer — Complete Spanish (Grammar Explanations)"
+            url: "https://www.youtube.com/watch?v=cLf-tBDHhKE"
+            type: "video"
+          - title: "SpanishDict — Gender of Nouns"
+            url: "https://www.spanishdict.com/guide/masculine-and-feminine-nouns"
+            type: "article"
+        practice:
+          - "10 min: Conjugation drill on Conjuguemos — practice 3 regular -ar verbs across all persons"
+          - "10 min: Ser vs. estar sorting exercise — sort 20 sentences into the correct verb"
+          - "5 min: Article and gender practice — assign el/la to 20 nouns, check answers"
+        projects:
+          - "Write 20 sentences about yourself and your family using present tense, ser, estar, and correct article agreement"
+          - "Complete a Conjuguemos quiz on regular present tense verbs and score 80%+"
+        tips:
+          - "For ser vs. estar, use the DOCTOR/PLACE mnemonic — ser for Description, Occupation, Characteristic, Time, Origin, Relation; estar for Position, Location, Action, Condition, Emotion"
+          - "Most nouns ending in -o are masculine and most ending in -a are feminine, but memorize the exceptions early (el dia, el mapa, la mano)"
+      - level: intermediate
+        criteria: "Conjugates common irregular verbs confidently. Uses ser/estar correctly in nuanced contexts (adjectives that change meaning). Commands all question words. Uses gustar-type constructions. Applies adjective agreement consistently. Uses por vs. para with basic accuracy."
+        metrics:
+          - "Conjugates 15 irregular present tense verbs with 85%+ accuracy"
+          - "Correctly uses ser/estar with adjectives that change meaning (e.g., ser aburrido vs. estar aburrido) 7/10 times"
+          - "Uses gustar, encantar, importar correctly in 8/10 sentences"
+          - "Chooses correctly between por and para 7/10 times in context"
+          - "Writes a 100-word paragraph with fewer than 5 grammar errors"
+        resources:
+          - title: "SpanishDict — Irregular Present Tense Verbs"
+            url: "https://www.spanishdict.com/guide/spanish-irregular-present-tense"
+            type: "article"
+          - title: "StudySpanish.com — Por vs. Para"
+            url: "https://studyspanish.com/grammar/lessons/porpara1"
+            type: "article"
+          - title: "SpanishDict — Gustar and Similar Verbs"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Conjuguemos — Irregular Verb Drills"
+            url: "https://conjuguemos.com/"
+            type: "tool"
+        practice:
+          - "10 min: Irregular verb conjugation speed drill on Conjuguemos — aim for 90%+ accuracy in 5 minutes"
+          - "10 min: Por vs. para fill-in-the-blank exercise — 20 sentences"
+          - "10 min: Write 10 sentences using gustar-type verbs with different subjects and indirect objects"
+        projects:
+          - "Write a 200-word email to a friend describing your week using present tense irregulars, por/para, and gustar constructions"
+          - "Take a B1 grammar diagnostic test and score 75%+"
+        tips:
+          - "For por vs. para, remember: PARA points FORWARD (purpose, destination, deadline, recipient); POR looks BACK (cause, exchange, duration, means)"
+      - level: advanced
+        criteria: "Uses subjunctive mood in present tense confidently. Commands reflexive verbs and pronoun placement. Uses relative pronouns and complex sentence structures. Handles indirect/direct object pronoun combinations. Understands and applies the personal 'a'."
+        metrics:
+          - "Uses present subjunctive correctly in 8/10 contexts (doubt, emotion, desire, impersonal expressions)"
+          - "Places direct and indirect object pronouns correctly in 9/10 sentences, including double-pronoun combinations"
+          - "Constructs complex sentences with relative clauses (que, quien, donde, el cual) 8/10 times"
+          - "Writes a 300-word essay with fewer than 5 grammar errors total"
+          - "Correctly uses the personal 'a' in 9/10 applicable contexts"
+        resources:
+          - title: "SpanishDict — Introduction to the Subjunctive"
+            url: "https://www.spanishdict.com/guide/spanish-subjunctive"
+            type: "article"
+          - title: "StudySpanish.com — Object Pronouns"
+            url: "https://studyspanish.com/grammar/lessons/iopronouns"
+            type: "article"
+          - title: "SpanishDict — Relative Pronouns"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+        practice:
+          - "10 min: Subjunctive trigger practice — given a sentence starter (quiero que, es importante que, dudo que), complete with correct subjunctive form"
+          - "10 min: Double object pronoun drills — rewrite 15 sentences replacing nouns with pronoun combinations"
+          - "10 min: Complex sentence construction — combine simple sentence pairs into one using relative pronouns"
+        projects:
+          - "Write a 300-word persuasive paragraph using the subjunctive mood at least 8 times"
+          - "Score 80%+ on a B2-level grammar assessment covering subjunctive, pronouns, and complex structures"
+        tips:
+          - "The subjunctive is triggered by WEIRDO: Wishes, Emotions, Impersonal expressions, Recommendations, Doubt/Denial, Ojala — learn the trigger categories, not individual sentences"
+      - level: expert
+        criteria: "Full command of all grammatical structures including literary tenses. Uses nuanced subjunctive distinctions (imperfect subjunctive, pluperfect subjunctive, conditional perfect). Produces grammatically flawless prose in formal and informal registers."
+        metrics:
+          - "Writes a 500-word formal essay with zero grammar errors as judged by a native speaker"
+          - "Uses all subjunctive tenses (present, imperfect, pluperfect) correctly in context"
+          - "Passes a C1/C2 grammar assessment with 85%+ accuracy"
+          - "Produces conditional sentences across all 3 types (real, hypothetical, contrary-to-fact) correctly 9/10 times"
+        resources:
+          - title: "Instituto Cervantes — DELE C1/C2 Grammar Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SpanishDict — Advanced Grammar Topics"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+        tips:
+          - "At the expert level, grammar accuracy comes from massive exposure to native text — read widely and notice patterns rather than memorizing more rules"
+    tags: ["foundation", "grammar", "structure"]
+
+  # ── COMPREHENSION ───────────────────────────────────────────────────────────
+  - id: "creative-arts/spanish/reading"
+    title: "Reading Comprehension"
+    description: >
+      The ability to understand written Spanish across a range of text types.
+      Reading reinforces vocabulary and grammar while building cultural
+      knowledge. This node covers decoding strategies, graded readers,
+      authentic texts (news, literature, social media), academic reading,
+      and critical analysis of Spanish-language texts.
+
+      Sub-skills covered: word recognition and decoding, using context clues
+      to infer meaning, reading for gist vs. reading for detail, understanding
+      text structure (narrative, expository, argumentative), recognizing
+      discourse markers (sin embargo, por lo tanto, en primer lugar),
+      reading speed development, literary analysis basics, and academic
+      reading strategies.
+
+      Drills to practice: (1) Graded reader sessions — read for 15 minutes
+      daily at your level. (2) News article summaries — read and summarize
+      in 3 sentences. (3) Unknown word estimation — read a page, count unknown
+      words, target 95%+ comprehension. (4) Speed reading passages with
+      comprehension checks. (5) Close reading of literary passages.
+    benchmarks:
+      - level: beginner
+        criteria: "Reads simple sentences and short paragraphs. Understands basic signs, menus, and forms. Can follow simple written instructions. Recognizes cognates in context. Reads graded A1-A2 texts with 80%+ comprehension."
+        metrics:
+          - "Answers 8/10 comprehension questions correctly on an A1-A2 graded reader passage"
+          - "Reads a simple restaurant menu and correctly identifies 15/20 items"
+          - "Follows a 5-step written recipe or set of instructions without errors"
+          - "Reads 50 words per minute with 80%+ comprehension on A1 material"
+          - "Identifies the main idea of 8/10 short paragraphs (3-5 sentences each)"
+        resources:
+          - title: "Dreaming Spanish — Reading Practice for Beginners"
+            url: "https://www.dreamingspanish.com/"
+            type: "article"
+          - title: "SpanishDict — Reading Passages for Beginners"
+            url: "https://www.spanishdict.com/"
+            type: "article"
+          - title: "StudySpanish.com — Reading Exercises"
+            url: "https://studyspanish.com/"
+            type: "article"
+        practice:
+          - "15 min: Read a graded reader chapter (A1-A2 level), underline unknown words, look up after finishing"
+          - "10 min: Read 5 short SpanishDict stories, answer comprehension questions"
+          - "5 min: Speed reading drill — read a short passage, cover it, write down the main idea"
+        projects:
+          - "Read one complete A1/A2 graded reader book (50-80 pages) and write a 5-sentence summary in Spanish"
+          - "Read 10 real restaurant menus from Spanish-speaking countries and create a vocabulary list of 30 food terms"
+        tips:
+          - "Do NOT look up every unknown word — try to guess from context first, only check if a word appears 3+ times or blocks comprehension"
+          - "Start with graded readers matched to your level (95% comprehension rate = ideal difficulty)"
+      - level: intermediate
+        criteria: "Reads B1-level authentic texts (simple news articles, blog posts, emails). Understands main ideas and supporting details. Infers meaning of unfamiliar words from context. Reads at 100+ words per minute with comprehension."
+        metrics:
+          - "Answers 8/10 comprehension questions on a B1-level news article"
+          - "Reads 100+ words per minute on B1 material with 85%+ comprehension"
+          - "Correctly infers meaning of 6/10 unknown words from context without a dictionary"
+          - "Summarizes a 500-word article in 3-5 sentences capturing all main points"
+          - "Identifies the author's opinion or tone in 7/10 opinion pieces"
+        resources:
+          - title: "SpanishDict — Intermediate Reading"
+            url: "https://www.spanishdict.com/"
+            type: "article"
+          - title: "Dreaming Spanish — Intermediate Reading and Comprehension"
+            url: "https://www.youtube.com/c/DreamingSpanish"
+            type: "video"
+          - title: "Coffee Break Spanish — Reading Comprehension Segments"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+        practice:
+          - "20 min: Read a news article from a Spanish news source, write a 3-sentence summary without looking back"
+          - "10 min: Context clue practice — read a passage with 5 blanked-out words, predict the words, then check"
+          - "10 min: Timed reading — read a 300-word passage in under 3 minutes, then answer 5 comprehension questions"
+        projects:
+          - "Read one B1-level novel and write a 200-word book review in Spanish"
+          - "Follow a Spanish-language blog for 4 weeks, reading 3 posts per week, and summarize key themes"
+        tips:
+          - "Build reading stamina gradually — start with 10 minutes of sustained reading, add 5 minutes each week until you can read for 30+ minutes without stopping"
+      - level: advanced
+        criteria: "Reads B2-level texts fluently including literary fiction, academic articles, and opinion editorials. Understands implicit meaning, irony, and cultural references. Reads at 150+ words per minute. Analyzes argument structure."
+        metrics:
+          - "Reads 150+ words per minute on B2 material with 90%+ comprehension"
+          - "Identifies implicit meaning, irony, or sarcasm in 7/10 passages"
+          - "Analyzes the argument structure of an editorial, identifying thesis, evidence, and conclusion"
+          - "Reads a chapter of a Spanish novel and discusses themes, character development, and style"
+          - "Comprehends 95%+ of vocabulary in B2-level academic texts"
+        resources:
+          - title: "Instituto Cervantes — Reading Resources for B2"
+            url: "https://cvc.cervantes.es/ensenanza/biblioteca_ele/"
+            type: "article"
+          - title: "SpanishDict — Advanced Reading Passages"
+            url: "https://www.spanishdict.com/"
+            type: "article"
+        practice:
+          - "20 min: Read a chapter of a Spanish novel, noting literary devices and cultural references"
+          - "15 min: Read an opinion editorial, outline the argument structure (thesis, evidence, counterargument, conclusion)"
+          - "10 min: Speed reading drill with a B2 passage — target 150+ wpm with comprehension quiz"
+        projects:
+          - "Read a complete Spanish novel (Garcia Marquez, Allende, or similar) and write a 500-word literary analysis"
+          - "Read 10 opinion editorials from different Spanish newspapers and compare argumentative styles"
+        tips:
+          - "Start reading literature from MULTIPLE countries — Mexican, Argentine, Spanish, Colombian, and Chilean authors all reflect different cultural references and vocabulary"
+      - level: expert
+        criteria: "Reads any Spanish text with full comprehension including academic papers, legal documents, classical literature, and technical manuals. Reads at 200+ words per minute. Performs critical literary and rhetorical analysis. Comfortable with archaic and formal registers."
+        metrics:
+          - "Reads 200+ words per minute on C1/C2 material with 95%+ comprehension"
+          - "Reads and summarizes an academic paper in a specialized field with accuracy"
+          - "Analyzes classical Spanish literature (Cervantes, Borges) identifying stylistic and thematic elements"
+          - "Comprehends legal or technical documents without specialized dictionary assistance"
+        resources:
+          - title: "Biblioteca Virtual Miguel de Cervantes — Spanish Literature"
+            url: "https://www.cervantesvirtual.com/"
+            type: "article"
+          - title: "Instituto Cervantes — DELE C2 Reading Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+        tips:
+          - "At this level, read EVERYTHING in Spanish — switch your phone, browser, and social media to Spanish to maximize daily exposure"
+    tags: ["comprehension", "reading", "literacy"]
+
+  - id: "creative-arts/spanish/listening"
+    title: "Listening Comprehension"
+    description: >
+      Understanding spoken Spanish at natural speed is one of the most
+      challenging skills to develop. Spanish is spoken at approximately 7.82
+      syllables per second (one of the fastest spoken languages), and features
+      significant regional variation. This node covers listening for gist,
+      detailed listening, understanding different accents and speeds,
+      comprehending media (podcasts, films, news), and academic/professional
+      listening.
+
+      Sub-skills covered: phoneme discrimination, word boundary recognition
+      in connected speech, listening for gist vs. detail, note-taking while
+      listening, understanding speech at various speeds (slow, normal, fast),
+      comprehending different accents (Castilian, Mexican, Caribbean,
+      Rioplatense, Andean), understanding media (films, TV, podcasts, radio),
+      lecture comprehension, and telephone/video call listening.
+
+      Drills to practice: (1) Comprehensible input — watch Dreaming Spanish
+      at your level daily. (2) Dictation exercises. (3) Podcast listening
+      with comprehension checks. (4) Movie watching with/without subtitles.
+      (5) Speed variation practice — listen at 0.75x, 1x, 1.25x.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands slow, clearly spoken phrases about familiar topics. Follows simple instructions spoken aloud. Recognizes familiar words in natural speech. Comprehends basic greetings and polite exchanges. Can follow along with beginner-level comprehensible input."
+        metrics:
+          - "Answers 7/10 comprehension questions on an A1-A2 audio clip (slow, clear speech)"
+          - "Completes a 10-word beginner dictation with 70%+ accuracy"
+          - "Follows 5-step spoken instructions without repetition"
+          - "Watches 30 minutes of Dreaming Spanish super-beginner content with 80%+ comprehension"
+          - "Identifies topic of conversation in 7/10 short natural dialogues"
+        resources:
+          - title: "Dreaming Spanish — Superbeginner Playlist"
+            url: "https://www.youtube.com/c/DreamingSpanish"
+            type: "video"
+          - title: "Coffee Break Spanish — Season 1 (Beginner Listening)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+          - title: "Language Transfer — Complete Spanish (Audio Course)"
+            url: "https://www.youtube.com/watch?v=cLf-tBDHhKE"
+            type: "video"
+          - title: "SpanishDict — Listening Practice"
+            url: "https://www.spanishdict.com/"
+            type: "tool"
+        practice:
+          - "20 min: Watch Dreaming Spanish superbeginner or beginner videos — do not pause, do not use subtitles"
+          - "10 min: Listen to a Coffee Break Spanish episode, pause after each exchange, repeat what you heard"
+          - "5 min: Dictation — listen to 5 simple sentences spoken slowly, write them down, check accuracy"
+        projects:
+          - "Log 20 hours of comprehensible input listening (Dreaming Spanish or equivalent) over 4 weeks"
+          - "Complete 10 beginner dictation exercises with 70%+ accuracy"
+        tips:
+          - "Do NOT try to understand every word — train your brain to catch the GIST first; comprehension of individual words comes with more hours of input"
+          - "Dreaming Spanish recommends 50 hours of superbeginner content before moving up — trust the process"
+      - level: intermediate
+        criteria: "Understands the main points of clear standard speech on familiar topics (work, school, leisure). Follows TV/radio programs on current affairs when speech is relatively slow and clear. Understands most of a podcast designed for learners."
+        metrics:
+          - "Answers 8/10 comprehension questions on a B1-level podcast segment"
+          - "Completes a 30-word dictation at normal speed with 80%+ accuracy"
+          - "Watches a 10-minute news segment and summarizes 3 main points correctly"
+          - "Follows a conversation between 2 native speakers on a familiar topic with 75%+ comprehension"
+          - "Accumulates 200+ hours of total Spanish listening input"
+        resources:
+          - title: "Dreaming Spanish — Intermediate Playlist"
+            url: "https://www.dreamingspanish.com/"
+            type: "article"
+          - title: "Coffee Break Spanish — Season 3 (Intermediate)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+          - title: "SpanishDict — Intermediate Listening Exercises"
+            url: "https://www.spanishdict.com/"
+            type: "tool"
+        practice:
+          - "20 min: Watch a Dreaming Spanish intermediate video without subtitles, summarize in 3 sentences"
+          - "10 min: Listen to a Spanish news podcast, take notes on key points"
+          - "10 min: Dictation at normal speed — transcribe a 1-minute audio clip, compare to transcript"
+        projects:
+          - "Watch a Spanish-language TV series (10 episodes) without English subtitles and write a summary of each episode"
+          - "Accumulate 200 hours of Spanish listening input and track comprehension improvement over time"
+        tips:
+          - "Switch between Spanish subtitles and no subtitles — use Spanish subtitles as training wheels, then remove them once you can follow 80%+ of the content"
+      - level: advanced
+        criteria: "Understands extended speech on abstract and complex topics. Follows most TV shows, films, and documentaries without subtitles. Understands different regional accents. Can take notes during a lecture or presentation in Spanish."
+        metrics:
+          - "Watches a Spanish film without subtitles and answers detailed comprehension questions with 85%+ accuracy"
+          - "Takes notes during a 20-minute Spanish lecture and captures 80%+ of key points"
+          - "Understands 3+ regional accents (e.g., Mexican, Argentine, Spanish) in natural conversation"
+          - "Follows a fast-paced debate or panel discussion and identifies each speaker's main argument"
+          - "Accumulates 500+ hours of total Spanish listening input"
+        resources:
+          - title: "Dreaming Spanish — Advanced Content"
+            url: "https://www.dreamingspanish.com/"
+            type: "article"
+          - title: "Instituto Cervantes — DELE B2 Listening Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+        practice:
+          - "30 min: Watch a Spanish documentary without subtitles, write a detailed summary afterward"
+          - "15 min: Listen to a fast-paced podcast or radio debate, identify each speaker's position"
+          - "10 min: Accent exposure — listen to speakers from 3 different countries, note pronunciation differences"
+        projects:
+          - "Watch 5 Spanish-language films from different countries (Spain, Mexico, Argentina, Colombia, Chile) and analyze accent/cultural differences"
+          - "Attend a live Spanish-language lecture or webinar and submit notes capturing all key points"
+        tips:
+          - "At this level, listen to CHALLENGING content — if you understand everything easily, the material is too easy to drive improvement"
+      - level: expert
+        criteria: "Understands any spoken Spanish including rapid colloquial speech, regional dialects, academic lectures, and media with background noise. No difficulty with speed, accent, or topic. Can simultaneously listen and take detailed notes."
+        metrics:
+          - "Comprehends rapid colloquial speech between native speakers with 95%+ accuracy"
+          - "Transcribes a 2-minute audio clip of natural speech with 95%+ accuracy"
+          - "Understands humor, wordplay, and cultural references in comedy performances"
+          - "Accumulates 1,000+ hours of total Spanish listening input"
+        resources:
+          - title: "Instituto Cervantes — DELE C1/C2 Listening Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "Dreaming Spanish — Native-Level Content"
+            url: "https://www.dreamingspanish.com/"
+            type: "article"
+        tips:
+          - "Dreaming Spanish recommends 1,500 hours for full native-like listening comprehension — keep consuming content daily even at expert level"
+    tags: ["comprehension", "listening", "input"]
+
+  # ── PRODUCTION ──────────────────────────────────────────────────────────────
+  - id: "creative-arts/spanish/conversation"
+    title: "Conversational Spanish"
+    description: >
+      The ability to speak Spanish in real-time interactions. Conversation
+      requires integrating pronunciation, vocabulary, grammar, and cultural
+      knowledge simultaneously under time pressure. This node covers
+      basic social interactions, transactional exchanges, discussion and
+      debate, narration, and professional/academic speaking.
+
+      Sub-skills covered: greetings and social formulas, asking and answering
+      questions, making requests and suggestions, expressing opinions and
+      preferences, agreeing and disagreeing politely, narrating events,
+      describing people/places/things, handling misunderstandings and
+      repair strategies (could you repeat that, what does X mean), turn-taking
+      in conversation, formal vs. informal register (tu vs. usted),
+      and circumlocution (describing a word you do not know).
+
+      Drills to practice: (1) Role-play scenarios (restaurant, hotel, doctor,
+      shopping). (2) Conversation exchange with native speakers (Tandem,
+      HelloTalk, or in-person). (3) Timed monologue practice — speak for
+      1 minute on a random topic. (4) Debate practice on simple topics.
+      (5) Storytelling — narrate a personal experience.
+    benchmarks:
+      - level: beginner
+        criteria: "Can handle basic social interactions (greetings, introductions, farewells). Orders food, asks for directions, and makes simple purchases. Uses tu and usted appropriately in obvious contexts. Speaks in short, simple sentences with frequent pauses."
+        metrics:
+          - "Completes 5 basic role-play scenarios (greeting, ordering, directions, shopping, introduction) successfully"
+          - "Sustains a basic conversation on a familiar topic for 2+ minutes"
+          - "Responds appropriately to 8/10 common questions (name, origin, age, work, family)"
+          - "Uses circumlocution to describe 5/10 unknown words (the thing you use to...)"
+          - "Speaks 40+ words per minute in a timed monologue"
+        resources:
+          - title: "SpanishDict — Conversational Phrases"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Coffee Break Spanish — Conversation Practice (Season 1)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+          - title: "Language Transfer — Complete Spanish (Building Conversations)"
+            url: "https://www.youtube.com/watch?v=cLf-tBDHhKE"
+            type: "video"
+          - title: "StudySpanish.com — Conversational Phrases"
+            url: "https://studyspanish.com/"
+            type: "article"
+        practice:
+          - "10 min: Role-play a restaurant scenario — practice ordering, asking about dishes, and paying"
+          - "10 min: Record a 1-minute monologue about your daily routine, listen back, note errors"
+          - "10 min: Practice 10 common question-answer pairs (origin, occupation, family, hobbies, etc.)"
+        projects:
+          - "Have 5 real conversations with native speakers (in person or online) lasting at least 5 minutes each"
+          - "Record yourself completing 3 different role-play scenarios and self-evaluate fluency"
+        tips:
+          - "Do not wait until your grammar is perfect to start speaking — making errors and being corrected is the fastest path to conversational fluency"
+          - "Learn CIRCUMLOCUTION early: if you do not know the word for 'blender,' say 'the machine in the kitchen that mixes fruit for drinks'"
+      - level: intermediate
+        criteria: "Sustains conversation on familiar topics for 10+ minutes. Expresses and defends opinions. Narrates past events and discusses future plans. Handles most travel and social situations. Uses filler words and discourse markers naturally (bueno, pues, o sea, es decir)."
+        metrics:
+          - "Sustains a conversation on a familiar topic for 10+ minutes without prolonged silences"
+          - "Expresses and supports an opinion on a simple topic with 3+ supporting points"
+          - "Narrates a past event in logical sequence with 80%+ grammatical accuracy"
+          - "Uses 5+ discourse markers naturally in conversation (bueno, pues, entonces, es decir, o sea)"
+          - "Speaks 80+ words per minute in a timed monologue"
+        resources:
+          - title: "SpanishDict — Expressing Opinions in Spanish"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Coffee Break Spanish — Season 3 (Intermediate Conversation)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+          - title: "Dreaming Spanish — Intermediate Speaking Tips"
+            url: "https://www.youtube.com/c/DreamingSpanish"
+            type: "video"
+        practice:
+          - "15 min: Conversation exchange with a native speaker on a topic of the day (hobbies, travel, current events)"
+          - "10 min: Timed monologue — speak for 2 minutes on a random topic, focus on fluency over accuracy"
+          - "10 min: Debate practice — argue for and against a simple proposition (e.g., city vs. country life)"
+        projects:
+          - "Participate in 10 conversation exchanges with native speakers (30+ minutes each) over 4 weeks"
+          - "Record a 5-minute monologue telling a personal story and submit for native speaker feedback"
+        tips:
+          - "Learn filler words and discourse markers — they buy you thinking time and make your speech sound natural: 'bueno...' 'pues...' 'a ver...' 'es que...'"
+      - level: advanced
+        criteria: "Speaks fluently on abstract and complex topics. Participates in debates and formal discussions. Adapts register to context (formal/informal). Handles unexpected situations and misunderstandings. Rarely searches for words."
+        metrics:
+          - "Speaks fluently for 15+ minutes on an abstract topic (justice, technology, art) with minimal hesitation"
+          - "Participates in a 20-minute debate defending a position with structured arguments"
+          - "Switches between formal and informal register appropriately within a single conversation"
+          - "Speaks 120+ words per minute with 90%+ grammatical accuracy"
+          - "Handles a simulated job interview in Spanish with positive evaluator feedback"
+        resources:
+          - title: "Instituto Cervantes — DELE B2 Oral Exam Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SpanishDict — Formal vs. Informal Spanish"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+        practice:
+          - "20 min: Deep conversation with a native speaker on an abstract topic — prepare 3 discussion questions in advance"
+          - "15 min: Mock interview practice — answer 10 common job interview questions in Spanish"
+          - "10 min: Impromptu speaking — draw a random topic card and speak for 3 minutes with zero preparation"
+        projects:
+          - "Give a 10-minute presentation on a complex topic to a Spanish-speaking audience and receive structured feedback"
+          - "Complete a mock DELE B2 oral exam with a tutor and score at the passing threshold"
+        tips:
+          - "Record your conversations (with permission) and review them — you will notice errors and patterns you were not aware of in real time"
+      - level: expert
+        criteria: "Near-native conversational fluency. Commands humor, irony, and nuance. Negotiates, persuades, and mediates in Spanish. Can present at conferences, lead meetings, and teach in Spanish. Comfortable in any social or professional context."
+        metrics:
+          - "Native speakers rate conversational fluency 4.5/5 or higher"
+          - "Delivers a 20-minute conference-style presentation with Q&A entirely in Spanish"
+          - "Successfully mediates a disagreement between two parties in Spanish"
+          - "Uses humor, irony, and cultural references appropriately in conversation"
+          - "Passes DELE C1 or C2 oral exam"
+        resources:
+          - title: "Instituto Cervantes — DELE C1/C2 Oral Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+        tips:
+          - "At expert level, the goal is to be INTERESTING in Spanish, not just correct — develop your personality, humor, and rhetorical style in the language"
+    tags: ["production", "speaking", "communication"]
+
+  - id: "creative-arts/spanish/writing"
+    title: "Writing in Spanish"
+    description: >
+      Producing clear, structured written Spanish for personal, academic,
+      and professional purposes. Writing allows careful attention to grammar,
+      vocabulary choice, and style that speaking does not. This node covers
+      basic writing (messages, forms), personal writing (emails, journal
+      entries), formal writing (essays, reports), creative writing (stories,
+      poetry), and academic/professional writing.
+
+      Sub-skills covered: spelling and accent placement, punctuation
+      (inverted question/exclamation marks, comma usage), paragraph structure,
+      cohesion and coherence (discourse markers in writing), formal letter
+      and email conventions, essay structure (introduction, body, conclusion),
+      narrative writing, descriptive writing, argumentative writing,
+      summarizing, and register-appropriate style.
+
+      Drills to practice: (1) Daily journal entry in Spanish. (2) Email
+      writing practice (formal and informal). (3) Summary writing from
+      reading passages. (4) Peer review exchanges. (5) Timed essay practice.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes simple sentences and short paragraphs. Fills out forms with personal information. Writes basic messages and social media posts. Uses correct spelling for common words. Places accent marks on high-frequency words."
+        metrics:
+          - "Writes 10 grammatically correct simple sentences on familiar topics"
+          - "Fills out a personal information form (name, address, age, occupation) with zero errors"
+          - "Writes a 50-word message to a friend with fewer than 5 errors"
+          - "Spells 40/50 common words correctly in a dictation"
+          - "Places accent marks correctly on 8/10 high-frequency accented words (esta/esta, como/como, que/que)"
+        resources:
+          - title: "SpanishDict — Writing in Spanish"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "StudySpanish.com — Writing Exercises"
+            url: "https://studyspanish.com/grammar"
+            type: "article"
+          - title: "SpanishDict — Spanish Accent Marks Guide"
+            url: "https://www.spanishdict.com/guide/spanish-accent-marks"
+            type: "article"
+        practice:
+          - "10 min: Write a daily journal entry of 5-10 sentences about your day"
+          - "10 min: Write a short message or social media post in Spanish on a topic of your choice"
+          - "5 min: Spelling practice — write 20 common words from memory, check against a reference"
+        projects:
+          - "Maintain a daily Spanish journal for 30 days, writing at least 5 sentences per entry"
+          - "Write 5 short informal messages (birthday wish, dinner invitation, thank-you note, directions, recommendation)"
+        tips:
+          - "Remember that Spanish uses inverted punctuation marks at the beginning of questions and exclamations: Hola vs. Hola!"
+      - level: intermediate
+        criteria: "Writes coherent paragraphs and short essays (150-250 words). Uses connectors and transition words. Writes formal and informal emails. Describes events, experiences, and opinions in writing. Paragraphs have topic sentences and logical flow."
+        metrics:
+          - "Writes a 200-word essay with clear introduction, body, and conclusion"
+          - "Uses 8+ discourse markers correctly in a piece of writing (sin embargo, ademas, por lo tanto, en primer lugar)"
+          - "Writes a formal email following Spanish conventions (Estimado/a, Le saluda atentamente) with fewer than 3 errors"
+          - "Peer reviewer rates coherence and organization 4/5 or higher"
+          - "Completes a B1 writing task in 30 minutes with 80%+ accuracy"
+        resources:
+          - title: "SpanishDict — Formal Email Writing Guide"
+            url: "https://www.spanishdict.com/guide/how-to-write-a-letter-in-spanish"
+            type: "article"
+          - title: "Instituto Cervantes — Writing Resources for B1"
+            url: "https://cvc.cervantes.es/ensenanza/biblioteca_ele/"
+            type: "article"
+          - title: "Coffee Break Spanish — Writing Tips"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+        practice:
+          - "15 min: Write a 150-word essay on a given prompt (opinion, description, or narration)"
+          - "10 min: Write a formal email requesting information or making a complaint"
+          - "10 min: Rewrite an informal message in formal register and vice versa"
+        projects:
+          - "Write 10 formal emails covering different scenarios (job inquiry, complaint, request, thank-you, reservation)"
+          - "Write a 250-word opinion essay and submit for correction by a native speaker"
+        tips:
+          - "Learn the formal letter/email conventions early — Spanish has specific opening and closing formulas that differ significantly from English"
+      - level: advanced
+        criteria: "Writes well-structured essays and reports (400-600 words). Produces argumentative, narrative, and expository texts. Adapts style and register to audience. Uses complex sentences with subordinate clauses. Minimal grammatical errors."
+        metrics:
+          - "Writes a 500-word argumentative essay with clear thesis, supporting evidence, and conclusion"
+          - "Uses 5+ complex sentence structures (subordinate clauses, relative clauses, conditional sentences) correctly"
+          - "Receives fewer than 5 errors marked per 500 words by a native speaker reviewer"
+          - "Writes in 3+ different text types (essay, report, formal letter, narrative) with appropriate style"
+          - "Completes a B2 writing exam task within the time limit with a passing score"
+        resources:
+          - title: "Instituto Cervantes — DELE B2 Writing Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SpanishDict — Advanced Writing and Essay Structure"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+        practice:
+          - "20 min: Timed essay practice — write a 400-word essay in 40 minutes on a given topic"
+          - "15 min: Rewrite a paragraph in 3 different registers (colloquial, standard, formal/academic)"
+          - "10 min: Peer review — exchange essays with a learning partner and provide detailed feedback"
+        projects:
+          - "Write a 600-word research summary on a topic of your choice with proper citation and academic register"
+          - "Produce a portfolio of 5 writing samples across different genres (opinion essay, personal narrative, formal report, creative piece, professional email)"
+        tips:
+          - "Read your writing ALOUD — this helps catch awkward phrasing, missing articles, and agreement errors that your eyes skip over"
+      - level: expert
+        criteria: "Produces polished, publication-ready prose in any genre. Writes academic papers, professional reports, creative fiction, and journalistic pieces. Commands rhetorical devices and sophisticated style. Native-like written expression."
+        metrics:
+          - "Writes a 1,000-word academic essay rated as native-level quality by a university instructor"
+          - "Produces a creative short story of 1,500+ words with effective narrative technique"
+          - "Passes the DELE C1/C2 writing exam with a distinguished score"
+          - "Publishes or submits a piece of writing in Spanish to a real publication, blog, or journal"
+        resources:
+          - title: "Instituto Cervantes — DELE C1/C2 Writing Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "Real Academia Espanola — Style and Usage Guide"
+            url: "https://www.rae.es/"
+            type: "article"
+        tips:
+          - "Read the Real Academia Espanola's style recommendations — expert-level writing in Spanish follows specific conventions for punctuation, capitalization, and style that differ from English norms"
+    tags: ["production", "writing", "literacy"]
+
+  # ── ADVANCED GRAMMAR ────────────────────────────────────────────────────────
+  - id: "creative-arts/spanish/past-tenses"
+    title: "Past Tenses & Advanced Grammar"
+    description: >
+      Moving beyond the present tense is essential for narrating, describing
+      past experiences, and expressing hypothetical situations. This node
+      covers the preterite vs. imperfect distinction (one of the most
+      challenging aspects for English speakers), the present perfect,
+      the pluperfect, the future and conditional tenses, the subjunctive
+      mood across tenses, and advanced structures like si clauses.
+
+      Sub-skills covered: preterite tense (completed actions), imperfect
+      tense (ongoing/habitual past), preterite vs. imperfect usage in
+      narration, present perfect (haber + past participle), pluperfect
+      (habia + past participle), future tense (both ir a + infinitive and
+      synthetic future), conditional tense, present subjunctive review,
+      imperfect subjunctive, si clauses (if-then sentences across all types),
+      passive voice and se constructions, and advanced tense sequencing
+      in complex narratives.
+
+      Drills to practice: (1) Preterite vs. imperfect sentence sorting.
+      (2) Narration exercises — retell a story using both tenses. (3) Si
+      clause chain drills. (4) Timeline exercises — place events on a
+      timeline and choose the correct tense. (5) Translation exercises
+      focusing on tense selection.
+    benchmarks:
+      - level: beginner
+        criteria: "Conjugates regular verbs in preterite tense. Recognizes the imperfect tense when hearing/reading it. Understands the basic difference between preterite and imperfect (completed vs. ongoing). Uses ir a + infinitive for future."
+        metrics:
+          - "Conjugates 10 regular verbs in preterite across all persons with 80%+ accuracy"
+          - "Correctly identifies whether a sentence is preterite or imperfect 7/10 times"
+          - "Narrates a simple past event in 5+ sentences using preterite"
+          - "Uses ir a + infinitive to express 5 future plans correctly"
+          - "Conjugates 5 common irregular preterite verbs (ir, ser, hacer, tener, estar) with 70%+ accuracy"
+        resources:
+          - title: "SpanishDict — Preterite Tense Guide"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "SpanishDict — Imperfect Tense Guide"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Conjuguemos — Preterite Practice Drills"
+            url: "https://conjuguemos.com/"
+            type: "tool"
+          - title: "StudySpanish.com — Preterite vs. Imperfect"
+            url: "https://studyspanish.com/grammar/lessons/pretvsimperf"
+            type: "article"
+        practice:
+          - "10 min: Conjugation drill — write out full preterite conjugations for 5 regular and 5 irregular verbs"
+          - "10 min: Sentence sorting — classify 20 sentences as preterite or imperfect and explain why"
+          - "10 min: Write a 10-sentence paragraph about what you did yesterday using preterite"
+        projects:
+          - "Write a 150-word narrative of a memorable day using preterite for actions and imperfect for descriptions"
+          - "Score 80%+ on a Conjuguemos preterite conjugation quiz"
+        tips:
+          - "Think of preterite as a CAMERA SNAPSHOT (single completed event) and imperfect as a VIDEO CAMERA (ongoing scene, background, habitual action)"
+      - level: intermediate
+        criteria: "Uses preterite and imperfect together in narration. Commands the present perfect. Uses the conditional tense. Begins using the imperfect subjunctive in common expressions. Handles all regular and common irregular conjugations."
+        metrics:
+          - "Writes a 200-word narrative correctly alternating preterite and imperfect with 85%+ accuracy"
+          - "Uses present perfect (he/has/ha + participio) correctly in 8/10 contexts"
+          - "Conjugates conditional tense for 10 common verbs with 85%+ accuracy"
+          - "Uses imperfect subjunctive in 5+ common expressions (quisiera, si tuviera, como si fuera)"
+          - "Completes a B1 tense assessment with 75%+ accuracy"
+        resources:
+          - title: "SpanishDict — Preterite vs. Imperfect Guide"
+            url: "https://www.spanishdict.com/guide/spanish-preterite-vs-imperfect"
+            type: "article"
+          - title: "SpanishDict — Present Perfect Guide"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Conjuguemos — Mixed Tense Practice"
+            url: "https://conjuguemos.com/"
+            type: "tool"
+          - title: "StudySpanish.com — Conditional Tense"
+            url: "https://studyspanish.com/grammar/lessons/conditional"
+            type: "article"
+        practice:
+          - "15 min: Narration exercise — retell a fairy tale or movie plot using both preterite and imperfect"
+          - "10 min: Present perfect drill — convert 15 preterite sentences to present perfect form"
+          - "10 min: Conditional practice — complete 10 sentences expressing wishes, polite requests, and hypothetical outcomes"
+        projects:
+          - "Write a 300-word autobiography covering childhood to present using preterite, imperfect, and present perfect appropriately"
+          - "Record a 3-minute oral narration of a personal story and have a tutor evaluate tense usage"
+        tips:
+          - "In narration, imperfect SETS THE SCENE (era una noche oscura, habia mucha gente) and preterite ADVANCES THE PLOT (de repente, sono el telefono)"
+      - level: advanced
+        criteria: "Full command of all indicative and subjunctive tenses. Uses si clauses across all types fluently. Commands passive constructions and se impersonal/passive. Uses pluperfect and future perfect. Tense sequencing in complex narratives is accurate."
+        metrics:
+          - "Produces all 3 types of si clauses correctly 9/10 times"
+          - "Uses pluperfect and future perfect correctly in 8/10 contexts"
+          - "Writes a 400-word narrative using 5+ different tenses appropriately"
+          - "Transforms 10 active sentences to passive (both ser + participio and se constructions) correctly"
+          - "Passes a B2/C1 grammar assessment on tenses with 80%+ accuracy"
+        resources:
+          - title: "SpanishDict — Si Clauses (If-Then Sentences)"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "SpanishDict — Imperfect Subjunctive"
+            url: "https://www.spanishdict.com/guide/spanish-imperfect-subjunctive"
+            type: "article"
+          - title: "Instituto Cervantes — Advanced Grammar Resources"
+            url: "https://cvc.cervantes.es/ensenanza/biblioteca_ele/"
+            type: "article"
+        practice:
+          - "15 min: Si clause chain drill — given a condition, write the result, then use that result as a new condition"
+          - "10 min: Tense timeline exercise — place 10 events on a timeline and write each in the correct tense"
+          - "10 min: Passive voice conversion — rewrite 10 sentences from active to passive using both methods"
+        projects:
+          - "Write a 500-word short story that uses at least 7 different tenses correctly"
+          - "Create a grammar reference sheet for si clauses with examples of all 3 types and edge cases"
+        tips:
+          - "Si clauses follow predictable patterns: Si + present/present (real), Si + imperfect subjunctive/conditional (hypothetical), Si + pluperfect subjunctive/conditional perfect (contrary to fact) — drill these patterns until automatic"
+      - level: expert
+        criteria: "Flawless tense usage in all contexts including literary tenses (future subjunctive, used in legal Spanish). Nuanced control of aspect and mood. Can explain grammatical choices and teach tense system to learners."
+        metrics:
+          - "Uses all tenses including rare forms (future subjunctive, pluperfect subjunctive in -se form) correctly"
+          - "Writes a 1,000-word literary or academic text with zero tense errors"
+          - "Explains the tense/mood system to an intermediate learner with clear, accurate examples"
+          - "Passes DELE C2 grammar section with 85%+ accuracy"
+        resources:
+          - title: "Instituto Cervantes — DELE C2 Grammar Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "Real Academia Espanola — Grammar Reference"
+            url: "https://www.rae.es/"
+            type: "article"
+        tips:
+          - "The future subjunctive survives mainly in legal Spanish and proverbs (donde fueres, haz lo que vieres) — reading legal texts is the best way to encounter it naturally"
+    tags: ["grammar", "tenses", "narration"]
+
+  # ── CULTURAL & PROFESSIONAL ─────────────────────────────────────────────────
+  - id: "creative-arts/spanish/culture"
+    title: "Cultural Fluency"
+    description: >
+      Language cannot be separated from culture. This node covers the cultural
+      knowledge and pragmatic competence needed to communicate effectively
+      and appropriately in Spanish-speaking contexts. Topics include social
+      norms and etiquette, regional cultural differences across the
+      Spanish-speaking world, historical and literary references, humor
+      and wordplay, media literacy, and intercultural communication skills.
+
+      Sub-skills covered: greetings and physical contact norms (handshake,
+      cheek kiss, abrazo), formal/informal register (tuteo vs. voseo vs.
+      usted), time concepts and punctuality norms, family and social
+      structures, food culture and meal times, holidays and celebrations
+      (Dia de los Muertos, Semana Santa, Feria, Carnaval), music and dance
+      traditions, literature and cinema, media landscapes (major newspapers,
+      TV, social media trends), humor styles, taboo topics, and intercultural
+      sensitivity.
+
+      Drills to practice: (1) Cultural comparison exercises — compare one
+      cultural practice across 3 countries. (2) Watch films from different
+      countries. (3) Read about current events in Spanish-speaking countries.
+      (4) Cook traditional recipes from different regions. (5) Attend
+      cultural events or festivals.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows basic greetings customs (cheek kiss, handshake contexts). Understands tu vs. usted usage. Aware of major Spanish-speaking countries and their locations. Knows basic holiday names. Understands that 'Spanish' varies significantly across countries."
+        metrics:
+          - "Names 10+ Spanish-speaking countries and locates them on a map"
+          - "Correctly identifies when to use tu vs. usted in 8/10 scenarios"
+          - "Describes 3 major cultural holidays (Dia de los Muertos, Semana Santa, Las Fallas) with basic accuracy"
+          - "Identifies 5 cultural differences between English-speaking and Spanish-speaking norms (greetings, meal times, personal space)"
+          - "Names 3 famous cultural figures from the Spanish-speaking world (artists, writers, musicians)"
+        resources:
+          - title: "SpanishDict — Tu vs. Usted Guide"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Coffee Break Spanish — Cultural Notes"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+          - title: "Dreaming Spanish — Culture Videos"
+            url: "https://www.youtube.com/c/DreamingSpanish"
+            type: "video"
+        practice:
+          - "10 min: Research one Spanish-speaking country — capital, population, one unique cultural fact"
+          - "10 min: Watch a Dreaming Spanish culture video and note 3 cultural differences from your own experience"
+          - "5 min: Practice tu/usted scenarios — decide which form to use with: a friend, a boss, a grandparent, a child, a stranger"
+        projects:
+          - "Create a cultural profile of 5 different Spanish-speaking countries covering greetings, food, holidays, and one unique tradition"
+          - "Watch a film from a Spanish-speaking country and write 5 observations about cultural practices shown"
+        tips:
+          - "The Spanish-speaking world is NOT monolithic — a gesture, word, or custom that is normal in Mexico may be offensive in Argentina and unknown in Spain; always learn culture in context"
+      - level: intermediate
+        criteria: "Understands regional cultural differences (Latin America vs. Spain, country-specific norms). Recognizes cultural references in conversation. Navigates social situations appropriately (dining, meeting people, workplace). Follows current events in 2-3 countries."
+        metrics:
+          - "Explains 5 cultural differences between Spain and Latin American countries with specific examples"
+          - "Navigates a simulated dinner party scenario following appropriate cultural norms (toast, meal order, conversation topics)"
+          - "Identifies cultural references in 7/10 B1-level text passages"
+          - "Discusses current events in 2+ Spanish-speaking countries with basic informed opinions"
+          - "Knows and explains the meaning of 5+ common sayings or cultural expressions (e.g., 'sobremesa', 'mañana' culture)"
+        resources:
+          - title: "SpanishDict — Cultural Guides"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "Instituto Cervantes — Spanish Culture Resources"
+            url: "https://cvc.cervantes.es/ensenanza/biblioteca_ele/"
+            type: "article"
+          - title: "Coffee Break Spanish — Season 4 (Culture Deep Dives)"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+        practice:
+          - "15 min: Read a news article about a current event in a Spanish-speaking country and discuss it in Spanish"
+          - "10 min: Cultural comparison — compare a single custom (meal times, greetings, holidays) across 3 countries"
+          - "10 min: Watch a short cultural segment from a Spanish-language show and identify 3 cultural elements"
+        projects:
+          - "Follow news from 3 different Spanish-speaking countries for 4 weeks and write a weekly cultural comparison"
+          - "Attend a cultural event (festival, film screening, cooking class) and write a 200-word reflection in Spanish"
+        tips:
+          - "Spend time understanding 'sobremesa' — the after-meal conversation that can last hours; it reflects how Spanish-speaking cultures prioritize social connection over efficiency"
+      - level: advanced
+        criteria: "Deep understanding of historical and literary context across the Spanish-speaking world. Uses culturally appropriate humor. Navigates formal and informal social hierarchies. Understands political and social dynamics in multiple countries."
+        metrics:
+          - "Discusses the historical context of 3+ major events in Spanish-speaking history (Conquest, Independence movements, Civil War)"
+          - "Uses culturally appropriate humor in conversation without causing offense"
+          - "Navigates a formal business dinner or professional networking event in a Spanish-speaking context"
+          - "Reads and discusses literary works from 3+ different countries with cultural context"
+          - "Demonstrates awareness of regional sensitivities and taboo topics in 5+ countries"
+        resources:
+          - title: "Instituto Cervantes — History and Culture"
+            url: "https://cvc.cervantes.es/"
+            type: "article"
+          - title: "Biblioteca Virtual Miguel de Cervantes"
+            url: "https://www.cervantesvirtual.com/"
+            type: "article"
+        practice:
+          - "20 min: Read a historical essay about a Spanish-speaking country and discuss in a conversation exchange"
+          - "15 min: Watch a comedy segment from a Spanish-speaking country and analyze what makes it funny culturally"
+          - "10 min: Role-play a formal professional scenario (business meeting, networking event) with cultural considerations"
+        projects:
+          - "Write a 500-word comparative essay on a cultural theme (machismo, colonialism, immigration) across 3 countries"
+          - "Present a 10-minute talk on the culture of a Spanish-speaking country to a learning group"
+        tips:
+          - "Humor is the last cultural barrier — it requires deep knowledge of shared references, double meanings, and social dynamics; study standup comedy from different countries"
+      - level: expert
+        criteria: "Fully bicultural competence. Understands implicit cultural codes, power dynamics, and unspoken rules. Can serve as a cultural mediator or interpreter. Deep knowledge of literature, film, music, politics, and social movements across the Spanish-speaking world."
+        metrics:
+          - "Serves as a cultural mediator between English and Spanish-speaking groups in a professional context"
+          - "Discusses contemporary social movements in 5+ countries with nuanced, informed perspectives"
+          - "Identifies and explains implicit cultural codes in business, social, and academic settings"
+          - "Passes DELE C2 sociolinguistic and cultural knowledge components"
+        resources:
+          - title: "Instituto Cervantes — DELE C2 Cultural Competence"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+        tips:
+          - "True cultural fluency means knowing what NOT to say as much as what to say — understand the unspoken rules, power dynamics, and sensitivities that native speakers absorb from childhood"
+    tags: ["culture", "pragmatics", "intercultural"]
+
+  - id: "creative-arts/spanish/professional"
+    title: "Professional & Academic Spanish"
+    description: >
+      Using Spanish in professional, academic, and formal contexts. This node
+      covers business Spanish (meetings, presentations, negotiations),
+      academic Spanish (research papers, university lectures, scholarly
+      discussion), medical/legal/technical Spanish basics, formal
+      correspondence, and professional certification (DELE, SIELE).
+
+      Sub-skills covered: professional email and letter writing, meeting
+      facilitation and participation vocabulary, presentation skills in
+      Spanish, negotiation language, academic writing conventions, citation
+      and referencing in Spanish, professional telephone and video call
+      etiquette, job application materials (CV, cover letter, interview),
+      domain-specific terminology (business, medical, legal, technical),
+      and exam preparation (DELE B2, C1, C2, SIELE).
+
+      Drills to practice: (1) Business email writing. (2) Mock job interviews.
+      (3) Presentation practice. (4) Academic paper summary writing.
+      (5) DELE/SIELE practice exams.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes a basic professional email in Spanish. Introduces self in a professional context. Understands basic workplace vocabulary (meeting, project, deadline). Creates a simple CV in Spanish."
+        metrics:
+          - "Writes a professional self-introduction email with correct formal conventions"
+          - "Uses 20+ workplace vocabulary terms correctly (reunion, plazo, informe, presupuesto, equipo)"
+          - "Creates a basic CV in Spanish following the format common in Spanish-speaking countries"
+          - "Handles a basic phone call (scheduling, confirming, canceling) in a professional register"
+          - "Understands the main points of a simple business email"
+        resources:
+          - title: "SpanishDict — Business Spanish Vocabulary"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+          - title: "SpanishDict — How to Write a Letter in Spanish"
+            url: "https://www.spanishdict.com/guide/how-to-write-a-letter-in-spanish"
+            type: "article"
+          - title: "StudySpanish.com — Business Vocabulary"
+            url: "https://studyspanish.com/"
+            type: "article"
+        practice:
+          - "10 min: Write a formal email introducing yourself to a new colleague"
+          - "10 min: Practice professional phone call vocabulary — role-play scheduling a meeting"
+          - "10 min: Create or update your CV in Spanish following the European format"
+        projects:
+          - "Write a complete professional CV and cover letter in Spanish"
+          - "Role-play 3 professional scenarios (phone call, email exchange, in-person introduction) and record them"
+        tips:
+          - "CVs in Spanish-speaking countries often include a photo, date of birth, and nationality — research the specific country's conventions before applying"
+      - level: intermediate
+        criteria: "Participates in meetings in Spanish. Gives short presentations. Writes professional reports and proposals. Handles business correspondence. Understands academic lecture content in a familiar field. Prepares for DELE B2."
+        metrics:
+          - "Participates actively in a 30-minute business meeting, contributing ideas and asking questions"
+          - "Delivers a 5-minute professional presentation with clear structure and visual aids"
+          - "Writes a 1-page business report or proposal with appropriate format and language"
+          - "Scores 70%+ on a DELE B2 practice exam across all sections"
+          - "Takes notes during an academic lecture in Spanish and captures 75%+ of key points"
+        resources:
+          - title: "Instituto Cervantes — DELE B2 Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SpanishDict — Formal Writing Guide"
+            url: "https://www.spanishdict.com/guide/how-to-write-a-letter-in-spanish"
+            type: "article"
+          - title: "Coffee Break Spanish — Business Spanish Episodes"
+            url: "https://coffeebreaklanguages.com/coffeebreakspanish/"
+            type: "video"
+        practice:
+          - "20 min: Prepare and deliver a 5-minute presentation on a business topic in Spanish"
+          - "15 min: Mock meeting — participate in a simulated business meeting discussing a project plan"
+          - "15 min: DELE B2 practice — complete one section of a practice exam under timed conditions"
+        projects:
+          - "Deliver a 10-minute presentation to a Spanish-speaking audience on a professional topic"
+          - "Take a complete DELE B2 practice exam and create an improvement plan based on results"
+        tips:
+          - "In professional Spanish, use the conditional tense for politeness (podria, seria posible, me gustaria) rather than direct commands"
+      - level: advanced
+        criteria: "Leads meetings and negotiations in Spanish. Writes academic papers following Spanish-language conventions. Gives polished conference presentations. Reads and produces technical documents. Passes DELE C1."
+        metrics:
+          - "Leads a 45-minute business meeting or negotiation entirely in Spanish"
+          - "Writes a 2,000-word academic paper following Spanish citation conventions"
+          - "Delivers a 20-minute conference presentation with Q&A in Spanish"
+          - "Passes DELE C1 exam with a score of 80%+"
+          - "Reads and summarizes technical documents in a specialized field"
+        resources:
+          - title: "Instituto Cervantes — DELE C1 Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SpanishDict — Academic Writing Resources"
+            url: "https://www.spanishdict.com/guide"
+            type: "article"
+        practice:
+          - "30 min: Write a section of an academic paper in Spanish with proper citations and academic register"
+          - "20 min: Lead a simulated negotiation or meeting with 3+ participants"
+          - "15 min: DELE C1 practice — complete one section under exam conditions"
+        projects:
+          - "Write and submit an academic paper or professional report in Spanish for real-world feedback"
+          - "Pass the DELE C1 exam"
+        tips:
+          - "Academic Spanish has different conventions than English — for example, longer sentences and paragraphs are normal and valued; do not apply English brevity norms to Spanish academic writing"
+      - level: expert
+        criteria: "Fully professional in Spanish. Can work, teach, publish, and conduct all professional activities entirely in Spanish. Specialized vocabulary in 2+ professional domains. Passes DELE C2 or works professionally in Spanish."
+        metrics:
+          - "Works professionally in Spanish for 6+ months (meetings, emails, reports, presentations)"
+          - "Publishes academic or professional work in Spanish in a peer-reviewed or professional venue"
+          - "Passes DELE C2 exam or SIELE with maximum certification level"
+          - "Translates professional documents between English and Spanish with 95%+ accuracy"
+          - "Trains or teaches a professional skill to Spanish-speaking colleagues"
+        resources:
+          - title: "Instituto Cervantes — DELE C2 Preparation"
+            url: "https://examenes.cervantes.es/es/dele/preparar-prueba"
+            type: "article"
+          - title: "SIELE — International Spanish Language Evaluation"
+            url: "https://siele.org/"
+            type: "article"
+        tips:
+          - "At the expert professional level, your goal is to be as effective in Spanish as in your native language — seek out professional challenges (leading workshops, publishing, teaching) that push your professional register to native-level"
+    tags: ["professional", "academic", "certification"]
+
+# ── RELATIONSHIPS ────────────────────────────────────────────────────────────
+relationships:
+  # ── Foundation layer ──────────────────────────────────────────────────────
+  - source: "creative-arts/spanish/pronunciation"
+    target: "creative-arts/spanish/vocabulary"
+    type: "enables"
+    note: "Correct pronunciation enables effective vocabulary acquisition — words learned with correct sounds are retained better and recognized in speech"
+
+  - source: "creative-arts/spanish/pronunciation"
+    target: "creative-arts/spanish/listening"
+    type: "enables"
+    note: "Understanding Spanish sounds is prerequisite to distinguishing words in connected speech"
+
+  - source: "creative-arts/spanish/vocabulary"
+    target: "creative-arts/spanish/grammar-fundamentals"
+    type: "enables"
+    note: "A base vocabulary of common words is needed before grammar patterns become meaningful"
+
+  # ── Grammar enables production and comprehension ─────────────────────────
+  - source: "creative-arts/spanish/grammar-fundamentals"
+    target: "creative-arts/spanish/reading"
+    type: "enables"
+    note: "Understanding sentence structure is required to comprehend written texts beyond isolated words"
+
+  - source: "creative-arts/spanish/grammar-fundamentals"
+    target: "creative-arts/spanish/conversation"
+    type: "enables"
+    note: "Basic grammar is needed to form sentences in real-time conversation"
+
+  - source: "creative-arts/spanish/grammar-fundamentals"
+    target: "creative-arts/spanish/writing"
+    type: "enables"
+    note: "Grammar accuracy is essential for producing coherent written Spanish"
+
+  - source: "creative-arts/spanish/grammar-fundamentals"
+    target: "creative-arts/spanish/past-tenses"
+    type: "requires"
+    note: "Present tense fundamentals must be mastered before tackling past tenses and advanced grammar"
+
+  # ── Comprehension feeds production ───────────────────────────────────────
+  - source: "creative-arts/spanish/listening"
+    target: "creative-arts/spanish/conversation"
+    type: "requires"
+    note: "You must understand what others say before you can respond — listening is prerequisite to conversation"
+
+  - source: "creative-arts/spanish/reading"
+    target: "creative-arts/spanish/writing"
+    type: "enables"
+    note: "Extensive reading exposure builds the mental models for written Spanish that writing depends on"
+
+  - source: "creative-arts/spanish/vocabulary"
+    target: "creative-arts/spanish/reading"
+    type: "enables"
+    note: "Core vocabulary enables reading comprehension — 95% word coverage is needed for comfortable reading"
+
+  - source: "creative-arts/spanish/vocabulary"
+    target: "creative-arts/spanish/listening"
+    type: "enables"
+    note: "Knowing vocabulary is necessary to recognize words in spoken Spanish"
+
+  # ── Advanced grammar builds on production skills ─────────────────────────
+  - source: "creative-arts/spanish/past-tenses"
+    target: "creative-arts/spanish/conversation"
+    type: "enables"
+    note: "Past tenses are essential for narrating experiences in conversation"
+
+  - source: "creative-arts/spanish/past-tenses"
+    target: "creative-arts/spanish/writing"
+    type: "enables"
+    note: "Advanced grammar including past tenses enables sophisticated written expression"
+
+  # ── Cultural and professional layer ──────────────────────────────────────
+  - source: "creative-arts/spanish/conversation"
+    target: "creative-arts/spanish/culture"
+    type: "enables"
+    note: "Conversational ability enables cultural immersion through real interactions with native speakers"
+
+  - source: "creative-arts/spanish/vocabulary"
+    target: "creative-arts/spanish/culture"
+    type: "enables"
+    note: "Cultural vocabulary (holidays, customs, food terms) is part of cultural literacy"
+
+  - source: "creative-arts/spanish/culture"
+    target: "creative-arts/spanish/professional"
+    type: "enables"
+    note: "Cultural competence is essential for professional effectiveness in Spanish-speaking contexts"
+
+  - source: "creative-arts/spanish/writing"
+    target: "creative-arts/spanish/professional"
+    type: "requires"
+    note: "Professional Spanish requires strong writing skills for emails, reports, and formal correspondence"
+
+  - source: "creative-arts/spanish/conversation"
+    target: "creative-arts/spanish/professional"
+    type: "requires"
+    note: "Professional Spanish requires conversational fluency for meetings, presentations, and negotiations"
+
+  - source: "creative-arts/spanish/past-tenses"
+    target: "creative-arts/spanish/professional"
+    type: "requires"
+    note: "Full command of tenses is necessary for professional and academic communication"
+
+  # ── Pronunciation feeds all oral skills ──────────────────────────────────
+  - source: "creative-arts/spanish/pronunciation"
+    target: "creative-arts/spanish/conversation"
+    type: "enables"
+    note: "Clear pronunciation is fundamental to being understood in conversation"

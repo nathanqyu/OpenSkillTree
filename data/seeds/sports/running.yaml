@@ -1,0 +1,1356 @@
+# OpenSkillTree — Seed Skill Tree: Running
+#
+# Domain:  Sports / Endurance / Running
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Rating reference: Race performance benchmarks
+# Benchmark levels loosely map to:
+#   beginner     = Completes a 5K (any pace), runs 3x/week consistently
+#   intermediate = Sub-25:00 5K, completes a half marathon, 20-30 mpw
+#   advanced     = Boston-qualifying marathon, sub-19:00 5K, 40-60 mpw
+#   expert       = Sub-elite times (sub-2:45 marathon, sub-16:00 5K), 60-90 mpw
+#
+# Teaching order based on standard coaching progression:
+#   Running form & cadence (foundation) -> base building (aerobic fitness) ->
+#   long runs & endurance -> hill training -> speed work (intervals/tempo) ->
+#   race strategy & pacing -> recovery & injury prevention, nutrition &
+#   hydration, strength training for runners -> mental toughness.
+# Every coach teaches form and aerobic base before intensity work.
+
+tree:
+  id: "sports/running"
+  title: "Running"
+  description: >
+    A complete skill map for running — one of the most accessible and rewarding
+    endurance sports. Covers the foundational mechanics, aerobic development,
+    speed training, race preparation, and supporting skills needed to progress
+    from a beginner completing their first 5K to a competitive sub-elite racer.
+    Applicable to road running, trail running, and track events from the 5K
+    through the marathon distance.
+  domain: "Sports"
+  visibility: "public"
+
+nodes:
+  # -- FOUNDATION ---------------------------------------------------------------
+  - id: "sports/running/form-and-cadence"
+    title: "Running Form & Cadence"
+    description: >
+      The foundation of all running performance and injury prevention. Proper
+      running form — posture, foot strike, arm swing, and cadence — determines
+      efficiency, speed potential, and long-term durability. This is where every
+      runner starts, whether a complete beginner or a veteran correcting bad
+      habits.
+
+      Sub-skills covered: upright posture with slight forward lean from the
+      ankles (not the waist), midfoot or forefoot strike under the center of
+      mass, compact arm swing (elbows at roughly 90 degrees, hands relaxed,
+      no crossing the midline), cadence awareness and optimization (targeting
+      170-180 steps per minute at easy pace), hip extension and glute activation,
+      relaxed shoulders and jaw, and breathing rhythm coordination.
+
+      Drills to practice: (1) High knees — 3 sets of 20 meters, focusing on
+      driving the knee up while maintaining upright posture. (2) Butt kicks —
+      3 sets of 20 meters, emphasizing quick turnover and hamstring activation.
+      (3) A-skips and B-skips — 3 sets of 30 meters each, building neuromuscular
+      coordination for the running gait cycle. (4) Cadence counting drill — run
+      for 1 minute, count right foot strikes, multiply by 2 to get steps per
+      minute. (5) Strides — 4-6 x 100 meters at controlled fast pace after
+      easy runs, focusing on smooth, tall form.
+    benchmarks:
+      - level: beginner
+        criteria: "Runs with upright posture without excessive forward lean from the waist. Lands with foot under the body rather than overstriding. Arms swing forward and back without crossing the midline. Maintains a consistent cadence above 160 spm. Can run for 20-30 minutes continuously without form collapse."
+        metrics:
+          - "Cadence measured at 160+ steps per minute during easy running (metronome or watch)"
+          - "Video analysis shows foot landing under or slightly ahead of center of mass on 7/10 strides"
+          - "Completes a 30-minute continuous run with recognizable upright posture maintained throughout"
+          - "Arms stay below shoulder height with elbows at approximately 90 degrees on 8/10 strides (video check)"
+          - "No visible overstriding (heel does not land significantly ahead of knee) on slow-motion video"
+        resources:
+          - title: "The Run Experience — Proper Running Form (Complete Guide)"
+            url: "https://www.youtube.com/watch?v=brFHyOtTwH4"
+            type: "video"
+          - title: "Strength Running — How to Run with Proper Form"
+            url: "https://www.youtube.com/watch?v=brFHyOtTwH4"
+            type: "article"
+          - title: "Runner's World — The Basics of Good Running Form"
+            url: "https://www.runnersworld.com/beginner/a20811257/proper-running-form-0/"
+            type: "article"
+        practice:
+          - "10 min: High knees and butt kicks — 3 sets of 20 meters each before every run as a warm-up drill"
+          - "5 min: Cadence counting drill — run for 1 minute at easy pace, count right foot strikes, multiply by 2, aim for 160+ spm"
+          - "15 min: Easy run with form focus — pick one cue per run (posture, arms, or foot strike) and hold attention on it for the full run"
+        projects:
+          - "Film yourself running from the side for 30 seconds at easy pace and identify 3 form corrections to work on"
+          - "Complete 4 consecutive weeks of running 3 times per week with a form-focused warm-up drill before each run"
+        tips:
+          - "Don't try to fix everything at once — pick one form cue per week (posture, arms, cadence, foot strike) and focus on just that until it becomes automatic"
+          - "Run tall — imagine a string pulling you up from the crown of your head, with a slight lean coming from the ankles, not from bending at the waist"
+      - level: intermediate
+        criteria: "Cadence consistently in the 170-180 spm range at easy pace. Midfoot strike is natural and consistent. Arm swing is compact and efficient. Form holds during the last 20% of a tempo run or long run. Can perform running drills (A-skips, B-skips, high knees) with proper coordination."
+        metrics:
+          - "Cadence averages 170-180 spm during easy runs across a 4-week training block (GPS watch data)"
+          - "Maintains form at mile 10+ of a long run with no visible deterioration on video analysis"
+          - "Completes A-skip and B-skip drills with correct coordination (opposite arm-leg timing) for 30 meters without breakdown"
+          - "Vertical oscillation under 10 cm at easy pace (measured by GPS watch or running power meter)"
+          - "Ground contact time under 260 ms at easy pace (measured by running dynamics sensor)"
+        resources:
+          - title: "Strength Running — Running Drills to Improve Form and Speed"
+            url: "https://www.youtube.com/watch?v=Ym5EByMJJvk"
+            type: "article"
+          - title: "Global Triathlon Network — Running Technique: 5 Ways to Run Faster"
+            url: "https://www.youtube.com/watch?v=ePmEJmtjOOo"
+            type: "video"
+          - title: "Runner's World — What Is the Ideal Running Cadence?"
+            url: "https://www.runnersworld.com/training/a20828280/running-cadence/"
+            type: "article"
+        practice:
+          - "15 min: Running drill circuit before every run — A-skips, B-skips, high knees, butt kicks, carioca, 2 x 30 meters each"
+          - "5 min: Strides after easy runs — 4-6 x 100 meters at controlled fast pace, focusing on tall posture and quick turnover"
+          - "20 min: Cadence-locked run — set a metronome to 175 spm and match foot strikes to the beat for the full duration"
+        projects:
+          - "Achieve an average cadence of 175 spm across all easy runs for an entire month (log with GPS watch)"
+          - "Record video of yourself at mile 1 and mile 10 of a long run and compare form — goal is minimal visible deterioration"
+        tips:
+          - "Strides are the single best form drill — 4-6 x 100m accelerations after easy runs teach your body what efficient fast running feels like without the fatigue cost of a workout"
+          - "Vertical oscillation is wasted energy — if you are bouncing up and down, focus on pushing backward (driving hip extension) rather than upward"
+      - level: advanced
+        criteria: "Form is automatic and efficient at all paces from easy jog to 5K race effort. Cadence naturally increases with pace (175 easy, 185+ at tempo, 190+ at race pace). Ground contact time is low and symmetric. Economy is visibly excellent — smooth, quiet foot strikes, no wasted lateral or vertical motion. Can hold form under significant fatigue in the last miles of a marathon-effort long run."
+        metrics:
+          - "Cadence scales appropriately with pace: 175+ easy, 185+ tempo, 190+ at 5K pace (watch data across workouts)"
+          - "Vertical oscillation under 8 cm at easy pace, under 7 cm at tempo pace"
+          - "Ground contact time under 230 ms at easy pace, under 210 ms at tempo pace"
+          - "Left-right ground contact balance within 49-51% (symmetry check via running dynamics)"
+          - "Running economy: VO2 at a given pace is in the top 20th percentile for age/sex (lab test or estimated from race performance)"
+        resources:
+          - title: "The Run Experience — Advanced Running Form Drills"
+            url: "https://www.youtube.com/watch?v=K2Yg8THHoBQ"
+            type: "video"
+          - title: "Strength Running — Running Economy: The Secret to Faster Racing"
+            url: "https://marathonhandbook.com/running-economy/"
+            type: "article"
+          - title: "Runner's World — How Eliud Kipchoge Runs So Fast"
+            url: "https://marathonhandbook.com/eliud-kipchoge/"
+            type: "article"
+        practice:
+          - "10 min: Form-focused strides at the END of hard workouts — 4 x 100m with perfect form when fatigued, building the ability to hold form under stress"
+          - "20 min: Hill sprints for power and form — 8 x 10-second all-out hill sprints with full recovery, focusing on aggressive hip extension and arm drive"
+          - "Track your running dynamics (vertical oscillation, ground contact time, cadence) weekly and log trends"
+        projects:
+          - "Maintain sub-230 ms ground contact time and sub-8 cm vertical oscillation throughout an entire 16-mile long run (running dynamics data)"
+          - "Complete a gait analysis with a running coach or physical therapist and address all identified asymmetries"
+        tips:
+          - "At the advanced level, small form improvements yield outsized results — a 2-3% improvement in running economy translates directly to faster race times without any additional fitness"
+          - "Film yourself racing, not just training — form under race-level fatigue reveals your true weaknesses"
+      - level: expert
+        criteria: "World-class running economy. Form is indistinguishable between mile 1 and mile 24 of a marathon. Cadence, ground contact time, and vertical oscillation are optimized to individual biomechanics through years of deliberate practice. Can run sub-5:00 mile pace with visually effortless form. Stride characteristics match published data for sub-elite and elite runners."
+        metrics:
+          - "Cadence at marathon pace: 185-195 spm with less than 3% drift over 26.2 miles"
+          - "Ground contact time under 200 ms at marathon pace, under 175 ms at 5K pace"
+          - "Vertical oscillation under 6.5 cm at marathon pace"
+          - "Running economy in the top 5th percentile for age and sex (VO2 lab test at threshold pace)"
+          - "Stride length and frequency match target race pace within 2% across an entire race (post-race GPS analysis)"
+        resources:
+          - title: "Strength Running — The Science of Running Economy"
+            url: "https://marathonhandbook.com/running-economy/"
+            type: "article"
+          - title: "Runner's World — Biomechanics of Elite Runners"
+            url: "https://marathonhandbook.com/running-form-tips/"
+            type: "article"
+        tips:
+          - "At the expert level, form optimization is a game of millimeters — work with a biomechanist and use motion capture to identify micro-inefficiencies invisible to the naked eye"
+    tags: ["foundation", "technique", "measurable"]
+
+  # -- AEROBIC BASE -------------------------------------------------------------
+  - id: "sports/running/base-building"
+    title: "Base Building (Aerobic Fitness)"
+    description: >
+      The aerobic engine is the single most important determinant of distance
+      running performance. Base building means accumulating consistent easy
+      mileage at conversational pace (Zone 2, roughly 60-75% of max heart rate)
+      to develop mitochondrial density, capillary networks, fat oxidation,
+      and musculoskeletal durability. This is the 80% of training that makes
+      the other 20% (speed work) possible.
+
+      Sub-skills covered: pacing discipline (running easy enough on easy days),
+      heart rate zone awareness, the 10% weekly mileage increase rule,
+      run-walk method for beginners (Galloway method), building weekly long
+      runs, consistent training frequency (4-6 days per week), recovery run
+      purpose and execution, and building from 0 to 30+ miles per week safely.
+
+      Key principle: 80/20 rule — approximately 80% of weekly mileage should
+      be at easy/conversational pace, with only 20% at moderate or hard effort.
+      Violating this is the most common mistake in distance running.
+    benchmarks:
+      - level: beginner
+        criteria: "Runs 3-4 times per week consistently for 8+ weeks. Completes a 5K distance (run or run-walk). Understands and uses the conversational pace test — can speak in full sentences during easy runs. Weekly mileage reaches 10-15 miles. Follows the 10% rule for mileage increases."
+        metrics:
+          - "Completes a 5K distance without stopping (or using planned walk breaks a la Galloway method)"
+          - "Runs 3-4 days per week for 8 consecutive weeks without missing more than 2 scheduled runs"
+          - "Easy run heart rate stays in Zone 2 (60-75% max HR) for 80%+ of run duration"
+          - "Weekly mileage reaches 12-15 miles by end of an 8-week base building block"
+          - "Passes the talk test on every easy run — can speak a full sentence without gasping"
+        resources:
+          - title: "Hal Higdon — Novice 5K Training Program"
+            url: "https://www.halhigdon.com/training-programs/5k-training/novice-5k/"
+            type: "article"
+          - title: "Jeff Galloway — Run Walk Run Method"
+            url: "https://www.jeffgalloway.com/training/run-walk/"
+            type: "article"
+          - title: "Runner's World — The Complete Beginner's Guide to Running"
+            url: "https://www.runnersworld.com/beginner/a20811257/proper-running-form-0/"
+            type: "article"
+          - title: "The Run Experience — How to Start Running (Couch to 5K Guide)"
+            url: "https://www.youtube.com/watch?v=mhAJknX_5V4"
+            type: "video"
+        practice:
+          - "30 min: Easy run at conversational pace — if you cannot speak in full sentences, slow down immediately"
+          - "20 min: Run-walk intervals for beginners — run 3 minutes, walk 1 minute, repeat for the full session"
+          - "Log every run in a training journal or app (Strava, Garmin Connect) including distance, time, and perceived effort"
+        projects:
+          - "Complete a Couch-to-5K or Hal Higdon Novice 5K training plan from start to finish"
+          - "Build from your starting weekly mileage to 15 miles per week over 8 weeks using the 10% rule"
+        tips:
+          - "The number one beginner mistake is running too fast on easy days — slow down until you can hold a conversation, even if it feels embarrassingly slow"
+          - "Consistency beats intensity — three 3-mile easy runs per week for 12 weeks builds more fitness than sporadic hard efforts with missed days"
+      - level: intermediate
+        criteria: "Runs 5-6 times per week consistently. Weekly mileage in the 25-35 mile range. Completes a half marathon distance. Understands heart rate zones and trains primarily in Zone 2. Has completed at least one 12-16 week structured training plan. Recovery runs are genuinely easy (not medium effort). Follows the 80/20 polarized training principle."
+        metrics:
+          - "Completes a half marathon (13.1 miles) in under 2:15:00"
+          - "Weekly mileage averages 25-35 miles over a 12-week training block"
+          - "80%+ of weekly mileage is at easy pace / Zone 2 heart rate (training log analysis)"
+          - "Runs 5-6 days per week for 12+ consecutive weeks"
+          - "Easy run pace is at least 90 seconds per mile slower than 5K race pace"
+          - "Aerobic decoupling under 5% on 90-minute easy runs (heart rate drift relative to pace)"
+        resources:
+          - title: "Hal Higdon — Novice Half Marathon Training Program"
+            url: "https://www.halhigdon.com/training-programs/half-marathon-training/novice-1-half-marathon/"
+            type: "article"
+          - title: "Strength Running — How to Build Your Aerobic Base"
+            url: "https://marathonhandbook.com/aerobic-base-training/"
+            type: "article"
+          - title: "Runner's World — Why Running Slow Makes You Fast"
+            url: "https://marathonhandbook.com/speed-training-for-runners/"
+            type: "article"
+          - title: "The Run Experience — Half Marathon Training Tips"
+            url: "https://www.youtube.com/watch?v=7yvJynG1Jnc"
+            type: "video"
+        practice:
+          - "45-60 min: Easy aerobic run in Zone 2 — monitor heart rate and slow down if it drifts above 75% max HR"
+          - "30 min: Recovery run the day after a hard workout — very easy pace, purely for blood flow"
+          - "Weekly long run: build to 10-13 miles at easy pace, increasing by 1 mile every 2 weeks"
+        projects:
+          - "Complete a structured 12-week half marathon training plan (Hal Higdon Novice 1 or similar)"
+          - "Maintain a 12-week training log showing 80%+ of mileage at Zone 2 heart rate"
+        tips:
+          - "Your easy pace should feel almost too slow — if a non-runner could not jog alongside you and chat, you are running too fast for an easy day"
+          - "Aerobic decoupling (heart rate rising while pace stays the same) on long runs tells you your aerobic base is not yet strong enough — keep building easy mileage"
+      - level: advanced
+        criteria: "Weekly mileage in the 40-60 mile range sustained over months. Completes a marathon. Aerobic system is highly developed — easy run pace is fast relative to effort. Can run for 2+ hours at easy pace without significant fatigue. Training is periodized across mesocycles (base, build, peak, taper). Understands and applies the Lydiard base-building philosophy."
+        metrics:
+          - "Weekly mileage averages 45-60 miles over a 16-week marathon training block"
+          - "Completes a marathon in a Boston-qualifying time for age and gender"
+          - "Aerobic decoupling under 3% on 2-hour easy runs"
+          - "Easy run pace is under 8:30/mile while heart rate stays in Zone 2"
+          - "Maintains 50+ mile weeks for 8+ consecutive weeks without injury"
+          - "MAF test (aerobic pace at 180-minus-age heart rate) improves by 15+ seconds per mile over a 12-week base phase"
+        resources:
+          - title: "Hal Higdon — Advanced Marathon Training Program"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-1-marathon/"
+            type: "article"
+          - title: "Strength Running — Periodization for Distance Runners"
+            url: "https://marathonhandbook.com/periodization-for-runners/"
+            type: "article"
+          - title: "Runner's World — How to Train for a Boston Qualifier"
+            url: "https://marathonhandbook.com/eliud-kipchoge/"
+            type: "article"
+        practice:
+          - "60-75 min: Aerobic threshold run — steady effort just below the point where breathing becomes labored, building the ceiling of Zone 2"
+          - "90-120 min: Weekly long run at easy pace with the last 20-30 minutes at marathon pace (progression long run)"
+          - "Monthly MAF test: run 5 miles at fixed heart rate (180 minus age) and track pace improvement over months"
+        projects:
+          - "Build to and sustain 50+ miles per week for 8 consecutive weeks during a marathon base phase"
+          - "Improve MAF test pace by at least 15 seconds per mile over a 12-week base building block"
+        tips:
+          - "The advanced runner's biggest risk is skipping the base phase to jump into speed work — a 6-8 week base block before every training cycle pays dividends in the workouts that follow"
+          - "Doubles (two runs in one day) are the safest way to add mileage — a 4-mile morning run and a 6-mile afternoon run stress the body less than one 10-mile run"
+      - level: expert
+        criteria: "Weekly mileage in the 70-100+ mile range sustained across training cycles. Aerobic engine is the primary competitive advantage. Can run marathon pace at a remarkably low percentage of VO2max due to years of aerobic development. Training volume is periodized across annual macrocycles. Easy pace would be a strong recreational runner's tempo pace."
+        metrics:
+          - "Weekly mileage averages 70-90+ miles during peak training blocks"
+          - "Completes a marathon under 2:45 (men) or 3:05 (women)"
+          - "Easy run pace under 7:15/mile while heart rate stays in Zone 2"
+          - "VO2max estimated at 60+ ml/kg/min (men) or 55+ ml/kg/min (women)"
+          - "Can sustain 80+ mile weeks for 6+ consecutive weeks without breakdown"
+          - "Aerobic decoupling under 2% on 2.5-hour easy runs"
+        resources:
+          - title: "Hal Higdon — Advanced 2 Marathon Training Program"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-2-marathon/"
+            type: "article"
+          - title: "Strength Running — High Mileage Training for Competitive Runners"
+            url: "https://marathonhandbook.com/high-mileage-training/"
+            type: "article"
+        tips:
+          - "At 70+ miles per week, the limiting factor is not fitness but durability — invest in sleep, nutrition, and soft tissue work as seriously as you invest in the miles themselves"
+    tags: ["aerobic", "endurance", "foundational"]
+
+  # -- LONG RUNS & ENDURANCE ----------------------------------------------------
+  - id: "sports/running/long-runs"
+    title: "Long Runs & Endurance"
+    description: >
+      The weekly long run is the cornerstone workout for any distance runner
+      training for the half marathon or marathon. It builds muscular endurance,
+      teaches the body to burn fat as fuel, develops mental resilience for
+      sustained effort, and practices race-day logistics (hydration, fueling,
+      pacing). The long run is where you learn what race day will feel like.
+
+      Sub-skills covered: pacing the long run (starting easy, not racing it),
+      progressive long runs (finishing faster than you start), marathon-pace
+      long runs, time-on-feet for ultra preparation, fueling and hydrating
+      during the long run, choosing terrain and routes, running with a group
+      for long-run motivation, and the art of the negative split.
+
+      Key principle: The long run should be 20-30% of weekly mileage. Running
+      it too fast is the most common training mistake — it creates fatigue
+      that compromises the rest of the training week.
+    benchmarks:
+      - level: beginner
+        criteria: "Completes a continuous run of 5-6 miles. Paces the long run at conversational effort (not racing it). Carries or has access to water on runs over 45 minutes. Finishes the long run feeling tired but not destroyed — could have run 1-2 more miles."
+        metrics:
+          - "Completes a 5-6 mile continuous run at conversational pace"
+          - "Long run pace is at least 60-90 seconds per mile slower than 5K race pace"
+          - "Heart rate stays below 75% of max HR for 80%+ of the long run"
+          - "Long run distance is 25-30% of total weekly mileage (not more)"
+          - "Finishes the long run within 10% of starting pace (no significant slowdown)"
+        resources:
+          - title: "Hal Higdon — The Long Run"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/novice-1-marathon/"
+            type: "article"
+          - title: "Runner's World — How to Master the Long Run"
+            url: "https://marathonhandbook.com/the-long-run/"
+            type: "article"
+          - title: "The Run Experience — How to Run Longer Without Getting Tired"
+            url: "https://www.youtube.com/watch?v=ld02BVXR_v4"
+            type: "video"
+        practice:
+          - "45-60 min: Long run at easy conversational pace — start slower than you think you should"
+          - "Practice carrying a handheld water bottle or wearing a hydration vest on runs over 45 minutes"
+          - "Run a new route each week for your long run to keep it mentally engaging"
+        projects:
+          - "Build your long run from 3 miles to 6 miles over 6 weeks, adding no more than 1 mile every 2 weeks"
+          - "Complete 4 consecutive weekly long runs where you finish within 10% of your starting pace (even splits)"
+        tips:
+          - "Start your long run at least 30 seconds per mile slower than your normal easy pace — the goal is to finish feeling strong, not to set a distance PR every week"
+          - "Run the first mile of every long run embarrassingly slow — this is the single best habit to build for long-run success"
+      - level: intermediate
+        criteria: "Completes long runs of 10-14 miles consistently. Practices fueling during runs over 90 minutes (gels, chews, or real food). Can execute a negative split long run (second half faster than first). Runs at steady effort regardless of terrain changes. Long run is a planned, structured part of the weekly schedule."
+        metrics:
+          - "Completes a 13-14 mile long run at easy pace without bonking or significant slowdown"
+          - "Negative splits the long run (second half 10-20 seconds per mile faster) on 3 out of 4 long runs in a month"
+          - "Takes in 30-60 grams of carbohydrates per hour on runs over 90 minutes"
+          - "Long run average heart rate stays in Zone 2 with less than 5% cardiac drift"
+          - "Completes 10 consecutive weekly long runs without missing any (consistency metric)"
+        resources:
+          - title: "Hal Higdon — Intermediate Half Marathon Training"
+            url: "https://www.halhigdon.com/training-programs/half-marathon-training/intermediate-2-half-marathon/"
+            type: "article"
+          - title: "Strength Running — Long Run Fueling Strategy"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "Runner's World — How to Fuel Your Long Runs"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "Global Triathlon Network — How to Fuel for Long Runs"
+            url: "https://www.youtube.com/watch?v=re3Fey_5pKI"
+            type: "video"
+        practice:
+          - "90-120 min: Long run with negative split — run the first half at easy effort, the second half 10-20 seconds per mile faster"
+          - "Practice your race-day fueling plan on every long run over 90 minutes — test gels, chews, and hydration to find what your stomach tolerates"
+          - "Long run with marathon-pace finish: run 10 miles easy, then the last 2-3 miles at goal marathon pace"
+        projects:
+          - "Complete a 14-mile long run with a negative split and proper fueling"
+          - "Test 3 different fueling products (gels, chews, drink mix) on long runs and identify which works best for your stomach"
+        tips:
+          - "Never try a new fuel or food on race day — practice everything on long runs first, including the exact products and timing you plan to use in the race"
+          - "The negative split long run teaches you pacing discipline and is the best race-day simulation you can do"
+      - level: advanced
+        criteria: "Completes 18-22 mile long runs in marathon training. Executes various long run formats: easy long run, marathon-pace long run, progressive long run, and long run with workout embedded. Fueling strategy is dialed in and practiced. Can handle back-to-back long effort days (e.g., Saturday long run, Sunday moderate run). Finishes 20-milers feeling in control."
+        metrics:
+          - "Completes a 20-22 mile long run at easy pace with the last 6-8 miles at marathon pace"
+          - "Marathon-pace segments during long runs are within 5 seconds per mile of goal pace"
+          - "Takes in 60-90 grams of carbohydrates per hour during long runs over 2 hours"
+          - "Completes back-to-back weekend runs totaling 25+ miles (e.g., 18 Saturday + 8 Sunday)"
+          - "Heart rate stays controlled (under lactate threshold) even during marathon-pace finishes in long runs"
+        resources:
+          - title: "Hal Higdon — Advanced Marathon Training"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-1-marathon/"
+            type: "article"
+          - title: "Strength Running — The Marathon Long Run"
+            url: "https://marathonhandbook.com/the-long-run/"
+            type: "article"
+          - title: "The Run Experience — How to Run 20 Miles"
+            url: "https://www.youtube.com/watch?v=8qT0V99XWKM"
+            type: "video"
+        practice:
+          - "2.5-3 hours: Marathon-pace long run — 14 miles easy + 6-8 miles at goal marathon pace"
+          - "Progressive long run: start at easy pace and drop 10 seconds per mile every 3 miles, finishing the last 3 miles at tempo effort"
+          - "Back-to-back weekend: 18-mile long run Saturday, 8-mile easy run Sunday to practice running on tired legs"
+        projects:
+          - "Complete 3 long runs of 20+ miles during a 16-week marathon training block, each with a different structure (easy, progressive, MP finish)"
+          - "Dial in a fueling plan that delivers 60+ grams of carbs per hour and test it on at least 4 long runs before race day"
+        tips:
+          - "The 20-miler is not a race preview — it is a training stimulus. Run it controlled and save the race effort for race day. You should finish feeling like you could have done more."
+          - "Marathon-pace finishes in long runs are the most race-specific workout you can do — they simulate running goal pace on tired legs"
+      - level: expert
+        criteria: "Long runs are precision training tools, not just distance accumulation. Executes 22-24 mile long runs with embedded workouts (tempo segments, marathon pace, fast finishes) at specific paces and heart rates. Fueling is optimized and practiced to the minute. Can run 2:30-3:00 hours at easy pace and finish feeling strong. Long runs simulate exact race-day conditions including terrain, time of day, and fueling schedule."
+        metrics:
+          - "Completes 22-24 mile long runs with embedded marathon-pace and tempo segments, hitting all target paces within 3 seconds per mile"
+          - "Fueling intake of 80-100 grams of carbohydrates per hour during long runs over 2.5 hours without GI distress"
+          - "Long run average pace at easy effort is under 7:30/mile (men) or under 8:30/mile (women)"
+          - "Completes race-simulation long runs on the actual race course with identical start time, fuel, and gear"
+          - "Heart rate response to marathon-pace segments in long runs matches predicted race-day cardiac output within 3%"
+        resources:
+          - title: "Strength Running — Elite Long Run Strategies"
+            url: "https://marathonhandbook.com/the-long-run/"
+            type: "article"
+          - title: "Hal Higdon — Advanced 2 Marathon"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-2-marathon/"
+            type: "article"
+        tips:
+          - "At the expert level, every long run has a specific purpose written into the training plan — there is no such thing as 'just getting the miles in' at this stage"
+    tags: ["endurance", "marathon", "long-distance"]
+
+  # -- HILL TRAINING ------------------------------------------------------------
+  - id: "sports/running/hill-training"
+    title: "Hill Training"
+    description: >
+      Hill training is speed work in disguise. Running uphill builds strength,
+      power, and running economy without the injury risk of flat-ground
+      speed work. Running downhill trains eccentric muscle control, turnover
+      speed, and confidence at faster paces. Every serious training plan
+      includes hill work as a bridge between base building and track workouts.
+
+      Sub-skills covered: uphill running form (forward lean, shortened stride,
+      driving arms), downhill running form (controlled lean, quick turnover,
+      avoiding braking), hill repeats (short and long), hill sprints for
+      neuromuscular power, rolling hills as sustained aerobic effort, and
+      race-specific hill training for hilly courses.
+
+      Arthur Lydiard called hill training "the bridge between base training
+      and track training." It is a strength phase that prepares the body for
+      the impact of faster running.
+    benchmarks:
+      - level: beginner
+        criteria: "Can run up a moderate hill without stopping. Maintains effort-based pacing on hills (slows pace to keep effort steady). Does not overstride going downhill. Completes a run on a hilly route without walking the uphills. Understands that hills should feel hard but controlled."
+        metrics:
+          - "Completes a 3-mile run on a hilly route (100+ feet of elevation gain) without walking"
+          - "Heart rate on uphills stays within 10 bpm of heart rate on flats at the same perceived effort"
+          - "Maintains upright posture on uphills — no excessive forward bend at the waist (video check)"
+          - "Downhill pace is controlled with no visible braking (overstriding with heel far ahead of body)"
+          - "Completes 4 x 30-second hill repeats on a moderate grade (4-6%) with jog-down recovery"
+        resources:
+          - title: "Runner's World — A Beginner's Guide to Hill Running"
+            url: "https://marathonhandbook.com/hill-running/"
+            type: "article"
+          - title: "The Run Experience — How to Run Hills (Uphill and Downhill)"
+            url: "https://www.youtube.com/watch?v=yrJhDruGHHs"
+            type: "video"
+          - title: "Strength Running — Hill Running for Beginners"
+            url: "https://marathonhandbook.com/hill-running/"
+            type: "article"
+        practice:
+          - "30 min: Run a hilly route at effort-based pace — keep the effort the same on uphills (pace will slow) and controlled on downhills"
+          - "15 min: Hill repeats — 4-6 x 30 seconds uphill at hard effort, jog down to recover, repeat"
+          - "Practice uphill arm drive — exaggerate arm swing on uphills to build the habit of using arms for power"
+        projects:
+          - "Complete a 5K on a hilly course and maintain even effort (not even pace) throughout"
+          - "Complete 6 sessions of hill repeats (4-6 x 30 sec) over 6 weeks"
+        tips:
+          - "Don't try to maintain your flat-ground pace on uphills — slow down and keep the effort steady; the pace will come back on the downhill"
+          - "Shorten your stride going uphill and increase your cadence — think quick, choppy steps rather than long, bounding strides"
+      - level: intermediate
+        criteria: "Runs hill repeats as a structured workout (6-10 x 60-90 seconds). Uses short hill sprints (8-12 seconds) for power development. Maintains form on both uphills and downhills during hard efforts. Runs rolling hill routes as aerobic workouts. Can race a hilly course without losing significant time on the climbs."
+        metrics:
+          - "Completes 8 x 90-second hill repeats on a 5-7% grade with consistent effort across all reps (last rep within 5 seconds of first)"
+          - "Completes 8 x 10-second hill sprints at maximum effort with full recovery"
+          - "Runs a hilly 10K course within 3% of equivalent flat 10K time"
+          - "Downhill running pace is 15-20 seconds per mile faster than flat pace at the same effort without loss of control"
+          - "Completes a rolling hills run of 8+ miles with 500+ feet of elevation gain at steady effort"
+        resources:
+          - title: "Strength Running — Hill Sprints: The One Workout Every Runner Should Do"
+            url: "https://marathonhandbook.com/hill-sprints/"
+            type: "article"
+          - title: "Runner's World — Hill Repeat Workouts for Every Runner"
+            url: "https://marathonhandbook.com/hill-running/"
+            type: "article"
+          - title: "Global Triathlon Network — Hill Running Technique"
+            url: "https://www.youtube.com/watch?v=BnCjSEO0Cig"
+            type: "video"
+        practice:
+          - "Hill repeats: 8 x 90 seconds hard uphill on a 5-7% grade, jog down to start, 2-minute standing recovery between reps"
+          - "Hill sprints: 8 x 10 seconds ALL OUT uphill on a steep grade (8-10%), walk down, full 2-3 minute recovery"
+          - "Rolling hills run: 8-10 miles on a hilly route, focusing on maintaining steady effort regardless of terrain"
+        projects:
+          - "Complete an 8-week hill training phase with hill repeats or sprints once per week"
+          - "Race a hilly 10K and achieve a time within 3% of your flat-course 10K PR"
+        tips:
+          - "Hill sprints are the safest form of speed work — 8-12 seconds is not long enough to accumulate significant fatigue, but the neuromuscular stimulus is enormous"
+          - "On downhills, lean slightly forward from the ankles and let gravity do the work — resist the urge to brake with your quads by overstriding"
+      - level: advanced
+        criteria: "Uses hills as race-specific training — long hill repeats for marathon climbs, short steep sprints for power, downhill repeats for eccentric strength. Can attack hills in races rather than just survive them. Trains on race-course-specific terrain. Hill work is periodized into the training cycle as a distinct phase."
+        metrics:
+          - "Completes 6 x 3-minute hill repeats at threshold effort on a 5-7% grade"
+          - "Runs a hilly marathon course within 2% of equivalent flat marathon time"
+          - "Downhill repeat workout: 6 x 400m downhill on a 3-4% grade at 5K pace without quad breakdown"
+          - "Gains time on competitors during uphill segments in races (splits show relative advantage on climbs)"
+          - "Completes a 15-mile long run with 1500+ feet of elevation gain at steady marathon effort"
+        resources:
+          - title: "Strength Running — Advanced Hill Training for Competitive Runners"
+            url: "https://marathonhandbook.com/hill-running/"
+            type: "article"
+          - title: "Runner's World — How to Use Hills to Get Faster"
+            url: "https://marathonhandbook.com/hill-running/"
+            type: "article"
+        practice:
+          - "Long hill repeats: 6 x 3 minutes at threshold effort on a 5-7% grade, jog down recovery"
+          - "Downhill repeats: 6 x 400m at 5K pace on a moderate downhill (3-4%), focusing on controlled turnover and not braking"
+          - "Race-specific hill simulation: find a hill similar to the biggest climb on your goal race course and practice running it at race effort"
+        projects:
+          - "Complete a hilly marathon or half marathon and achieve negative splits on the second-half hills"
+          - "Incorporate a 6-week hill phase between base building and speed work in your next training cycle"
+        tips:
+          - "The advanced runner attacks hills in races — surge slightly on the uphill to break competitors, then maintain pace on the downhill to extend the gap"
+      - level: expert
+        criteria: "Hills are a tactical weapon in racing. Can surge on uphills and recover on downhills without losing pace. Trains specifically for the elevation profile of goal races. Downhill running economy is elite-level — runs fast downhill with minimal braking force and low quad cost. Hill training is integrated year-round, not just in a phase."
+        metrics:
+          - "Splits on uphill segments of races are faster relative to competitors (positive split differential on climbs)"
+          - "Downhill running economy: maintains race pace on 3-5% downhill grades with ground contact time under 190 ms"
+          - "Completes mountain-specific long runs with 2000+ feet of elevation gain at controlled effort"
+          - "Hill repeat paces match equivalent flat paces adjusted for grade (VDOT grade-adjusted calculator within 2%)"
+          - "No significant quad fatigue or DOMS from downhill running in races up to marathon distance"
+        resources:
+          - title: "Strength Running — Mountain Running and Elevation Training"
+            url: "https://marathonhandbook.com/hill-running/"
+            type: "article"
+        tips:
+          - "At the expert level, study the elevation profile of your goal race obsessively — know where every hill is, how steep it is, and exactly what pace and effort you will run each segment"
+    tags: ["strength", "power", "terrain"]
+
+  # -- SPEED WORK ---------------------------------------------------------------
+  - id: "sports/running/speed-work"
+    title: "Speed Work (Intervals & Tempo)"
+    description: >
+      Speed work — intervals, tempo runs, fartleks, and repetitions — is the
+      20% of training that sharpens the aerobic engine built in base training.
+      It raises VO2max, improves lactate threshold, teaches the body to run
+      faster at a lower physiological cost, and develops the neuromuscular
+      speed needed for racing. Speed work should only be introduced after a
+      solid aerobic base is established.
+
+      Sub-skills covered: interval training (400m, 800m, 1000m, 1200m, 1600m
+      repeats at 5K-10K pace), tempo runs (20-40 minutes at lactate threshold
+      pace — comfortably hard), fartlek (unstructured speed play mixing fast
+      and easy running), repetitions (200m-400m at mile pace for neuromuscular
+      speed), cruise intervals (Jack Daniels' threshold intervals with short
+      rest), and progression runs (starting easy and finishing at tempo pace).
+
+      Jack Daniels' Running Formula paces guide all interval work:
+      Easy (E), Marathon (M), Threshold (T), Interval (I), Repetition (R).
+    benchmarks:
+      - level: beginner
+        criteria: "Completes structured speed work once per week. Can run a fartlek with alternating fast and easy segments. Understands the difference between tempo, interval, and easy paces. Runs 4-6 x 400m with jog recovery. Does not run speed work on consecutive days. Warms up before and cools down after every speed session."
+        metrics:
+          - "Completes 4 x 400m at a pace 30-45 seconds per mile faster than easy pace with 90-second jog recovery"
+          - "Runs a 20-minute tempo run at a pace where speaking is possible in short phrases but not full sentences"
+          - "Completes a 30-minute fartlek with 6 x 1-minute pickups at hard effort and 2-minute easy jogs between"
+          - "5K race time improves from starting point after 8 weeks of once-weekly speed sessions"
+          - "Always completes a 10-minute warm-up jog and dynamic stretches before speed work"
+        resources:
+          - title: "Hal Higdon — Speed Training for Beginners"
+            url: "https://www.halhigdon.com/training-programs/5k-training/intermediate-5k/"
+            type: "article"
+          - title: "Runner's World — A Beginner's Guide to Speed Work"
+            url: "https://marathonhandbook.com/interval-training-for-runners/"
+            type: "article"
+          - title: "The Run Experience — Interval Training for Beginners"
+            url: "https://www.youtube.com/watch?v=K4_MiS2FyOA"
+            type: "video"
+          - title: "Strength Running — Fartlek Workouts for Runners"
+            url: "https://marathonhandbook.com/fartlek-training/"
+            type: "article"
+        practice:
+          - "Warm-up: 10-minute easy jog + dynamic stretches (leg swings, high knees, butt kicks) before every speed session"
+          - "Fartlek: 30 minutes total — 6 x 1-minute hard effort with 2-minute easy jog recovery between"
+          - "400m repeats: 4-6 x 400m at hard effort (not all-out) with 90-second jog recovery"
+        projects:
+          - "Complete 8 weeks of once-weekly speed sessions (alternating fartleks and 400m repeats) and retest your 5K time"
+          - "Run a 20-minute tempo run at a pace you can sustain but cannot comfortably chat at"
+        tips:
+          - "Speed work should feel hard but controlled — if you are sprinting all-out and gasping, you are running too fast for intervals; save that effort for the last rep"
+          - "Never skip the warm-up — running fast on cold muscles is the fastest path to a pulled hamstring or calf strain"
+      - level: intermediate
+        criteria: "Runs 2 quality sessions per week (one interval, one tempo or fartlek). Uses Jack Daniels VDOT paces to set interval and tempo targets. Completes longer interval sets (6-8 x 800m or 4-5 x 1000m). Tempo runs are 25-35 minutes at threshold pace. Recovers properly between hard sessions (at least 48 hours). Understands the physiological purpose of each workout type."
+        metrics:
+          - "Completes 6 x 800m at target I-pace (Daniels VDOT) with 2-minute jog recovery, all reps within 3 seconds of target"
+          - "Runs a 30-minute continuous tempo at T-pace (Daniels VDOT) within 5 seconds per mile of target"
+          - "5K time: sub-25:00 (men) or sub-28:00 (women)"
+          - "10K time: sub-52:00 (men) or sub-58:00 (women)"
+          - "Completes 2 quality sessions per week for 10+ consecutive weeks without injury"
+          - "Tempo pace heart rate is 85-88% of max HR (lactate threshold zone)"
+        resources:
+          - title: "Strength Running — Tempo Run Guide"
+            url: "https://marathonhandbook.com/tempo-run/"
+            type: "article"
+          - title: "Runner's World — How to Run Intervals"
+            url: "https://marathonhandbook.com/interval-training-for-runners/"
+            type: "article"
+          - title: "Hal Higdon — Intermediate 10K Training"
+            url: "https://www.halhigdon.com/training-programs/10k-training/intermediate-10k/"
+            type: "article"
+          - title: "The Run Experience — How to Run a Tempo Run"
+            url: "https://www.youtube.com/watch?v=r7e7d3OdJCU"
+            type: "video"
+        practice:
+          - "800m repeats: 6-8 x 800m at VDOT I-pace with 2-minute jog recovery — focus on consistent pacing across all reps"
+          - "Tempo run: 30 minutes continuous at threshold pace (comfortably hard — can speak in short phrases only)"
+          - "Cruise intervals: 4 x 1 mile at T-pace with 1-minute jog rest (Jack Daniels protocol)"
+        projects:
+          - "Complete a 12-week training plan with 2 quality sessions per week and run a sub-25:00 5K (or equivalent PR)"
+          - "Log all interval paces and compare to VDOT targets — hit target pace on 80%+ of reps across a training cycle"
+        tips:
+          - "Tempo pace should feel comfortably hard — you could sustain it for about 60 minutes in a race, but not while chatting with a training partner"
+          - "The recovery jog between intervals matters — jog slowly enough that your heart rate drops to 65-70% of max before starting the next rep"
+      - level: advanced
+        criteria: "Training is fully structured using Jack Daniels or similar periodized system. Runs VO2max intervals (3-5 minutes at I-pace), threshold cruise intervals, and repetitions at R-pace. Completes complex workouts (e.g., 2 x [4 x 800m at I-pace with 200m jog] with 5 min between sets). Speed work is periodized — moves from general to race-specific as goal race approaches. Can execute workouts at precise target paces."
+        metrics:
+          - "Completes 5 x 1000m at I-pace with 3-minute recovery, all within 2 seconds of target"
+          - "Tempo runs of 40 minutes at T-pace with less than 3% heart rate drift"
+          - "5K time: sub-19:00 (men) or sub-22:00 (women)"
+          - "Half marathon time: sub-1:30 (men) or sub-1:42 (women)"
+          - "VO2max estimated at 55+ ml/kg/min (men) or 50+ ml/kg/min (women) from race performance"
+          - "Completes mixed-pace workouts (e.g., 4 x [400R + 800I + 400R] with prescribed recoveries) hitting all paces"
+        resources:
+          - title: "Strength Running — VO2max Intervals for Competitive Runners"
+            url: "https://marathonhandbook.com/running-economy/"
+            type: "article"
+          - title: "Runner's World — Advanced Interval Training"
+            url: "https://marathonhandbook.com/interval-training-for-runners/"
+            type: "article"
+          - title: "Hal Higdon — Advanced 5K Training"
+            url: "https://www.halhigdon.com/training-programs/5k-training/advanced-5k/"
+            type: "article"
+        practice:
+          - "VO2max intervals: 5 x 1000m at I-pace with 3-minute jog recovery — these are hard but not all-out; you should be able to complete the last rep at the same pace as the first"
+          - "Threshold cruise intervals: 5 x 1 mile at T-pace with 1-minute jog rest"
+          - "Repetitions: 8 x 200m at R-pace (mile race pace) with 200m jog recovery — fast and smooth, not straining"
+        projects:
+          - "Execute a 16-week periodized training plan that progresses from base to speed to race-specific phases and race a PR at your goal distance"
+          - "Complete a time trial at a distance you have not raced and compare the result to your VDOT-predicted time — aim for within 1%"
+        tips:
+          - "Advanced speed work is about precision, not suffering — hitting your target paces consistently is far more important than running extra reps or going faster than prescribed"
+          - "If you cannot complete the last rep at the same pace as the first, the workout was too fast — dial back 2-3 seconds per rep next time"
+      - level: expert
+        criteria: "Workouts are fully customized to individual physiology and goal race. Interval sessions are at the edge of physiological capacity with precise recovery management. Can complete elite-level workout volumes (e.g., 8 x 1000m at sub-3:00 with short rest). Speed work is integrated with race-day pacing strategy. Understands and applies the dose-response curve — knows exactly how much speed work yields peak performance without overtraining."
+        metrics:
+          - "5K time: sub-16:00 (men) or sub-18:30 (women)"
+          - "Marathon time: sub-2:45 (men) or sub-3:05 (women)"
+          - "Completes 8 x 1000m at I-pace with 2-minute recovery, all reps within 1.5 seconds of target"
+          - "Threshold pace can be sustained for 55-60 minutes in a race setting"
+          - "VO2max estimated at 65+ ml/kg/min (men) or 58+ ml/kg/min (women)"
+          - "Session RPE management: quality workouts average RPE 8/10, never exceeding 9.5/10 until peak race week"
+        resources:
+          - title: "Strength Running — Training Like an Elite Runner"
+            url: "https://marathonhandbook.com/high-mileage-training/"
+            type: "article"
+          - title: "Hal Higdon — Advanced Training Resources"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-2-marathon/"
+            type: "article"
+        tips:
+          - "At the expert level, the difference between a breakthrough performance and overtraining is measured in one or two extra reps — know when to stop and trust the plan"
+    tags: ["speed", "intervals", "tempo", "VO2max"]
+
+  # -- RACE STRATEGY & PACING ---------------------------------------------------
+  - id: "sports/running/race-strategy"
+    title: "Race Strategy & Pacing"
+    description: >
+      Fitness wins training; strategy wins races. Race strategy and pacing
+      encompasses knowing your target splits, executing a pacing plan under
+      the adrenaline and excitement of race day, managing the first mile,
+      positioning in the field, adjusting for weather and course conditions,
+      fueling and hydrating on the course, and the mental game of racing
+      versus running.
+
+      Sub-skills covered: setting a realistic goal pace based on training
+      (VDOT equivalence tables), the art of the negative split, first-mile
+      discipline (do not go out too fast), reading the course (tangents,
+      hills, wind), race-day nutrition and hydration timing, taper strategy,
+      using a pace group or pacer, race-day logistics (sleep, travel, gear
+      check, warm-up), and adjusting the plan when things go wrong.
+
+      The number one race-day mistake is going out too fast in the first mile.
+      This is true from the 5K to the ultramarathon.
+    benchmarks:
+      - level: beginner
+        criteria: "Completes a race (5K or 10K) with a pacing plan. Knows their goal pace before the start line. Resists the urge to sprint the first quarter mile. Finishes the race feeling like the effort was well-distributed — not walking the last mile after going out too fast. Uses a GPS watch or mile markers to check pace."
+        metrics:
+          - "First mile of a 5K race is within 15 seconds per mile of average race pace (not too fast)"
+          - "Finishes a 5K or 10K without walking"
+          - "Pace variance across miles is under 30 seconds per mile from fastest to slowest"
+          - "Arrives at the start line with a written pacing plan (target splits for each mile or kilometer)"
+          - "Executes a pre-race warm-up of at least 10 minutes of easy jogging and dynamic stretches"
+        resources:
+          - title: "Hal Higdon — Race Day Tips"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/marathon-guide/"
+            type: "article"
+          - title: "Runner's World — How to Pace Your First Race"
+            url: "https://marathonhandbook.com/race-day-tips/"
+            type: "article"
+          - title: "The Run Experience — 5K Race Day Strategy"
+            url: "https://www.youtube.com/watch?v=wEf09JHnaFE"
+            type: "video"
+          - title: "Strength Running — How to Race a 5K"
+            url: "https://marathonhandbook.com/how-to-run-a-5k/"
+            type: "article"
+        practice:
+          - "Pre-race rehearsal: write out your target splits for each mile of your goal race, tape it to your wrist or program it into your watch"
+          - "Practice running the first mile of a race-pace workout deliberately 10-15 seconds SLOWER than target pace, then settling in"
+          - "Simulate race conditions: do a time trial at a local track or park at your goal race distance and pace"
+        projects:
+          - "Race a 5K with a pacing plan and achieve even splits (all miles within 15 seconds of each other)"
+          - "Complete a race-simulation time trial 2 weeks before your goal race at 90% effort to practice pacing and logistics"
+        tips:
+          - "The first mile of a race always feels easy because of adrenaline — check your watch early and force yourself to slow down if you are ahead of pace"
+          - "Write your target pace on your hand or wrist — in the excitement of race day, you will forget your plan unless it is physically visible"
+      - level: intermediate
+        criteria: "Races with a negative split strategy (second half faster than first). Understands and applies VDOT equivalence to predict race times at different distances. Can pace a half marathon within 10 seconds per mile of target throughout. Adjusts pace for hills, wind, and heat. Uses a taper period before goal races."
+        metrics:
+          - "Negative splits a half marathon (second half at least 30 seconds faster overall than first half)"
+          - "Half marathon pace variance across miles is under 15 seconds per mile"
+          - "Race time is within 2% of VDOT-predicted equivalent from a recent shorter-distance race"
+          - "Completes a 10-14 day taper before a goal race with a performance improvement over previous untapered effort"
+          - "Adjusts target pace for conditions (adds 10-20 seconds per mile for heat over 65F, adjusts for elevation and wind)"
+        resources:
+          - title: "Strength Running — How to Taper for a Race"
+            url: "https://marathonhandbook.com/how-to-taper-for-a-marathon/"
+            type: "article"
+          - title: "Runner's World — The Art of the Negative Split"
+            url: "https://marathonhandbook.com/speed-training-for-runners/"
+            type: "article"
+          - title: "Hal Higdon — Half Marathon Race Strategies"
+            url: "https://www.halhigdon.com/training-programs/half-marathon-training/intermediate-2-half-marathon/"
+            type: "article"
+          - title: "The Run Experience — How to Pace a Half Marathon"
+            url: "https://www.youtube.com/watch?v=ow8Gm20sjBk"
+            type: "video"
+        practice:
+          - "Taper simulation: reduce training volume by 40% in the 10 days before a goal race while maintaining intensity"
+          - "Marathon-pace dress rehearsal: run 8 miles at goal marathon pace 3 weeks before race day, wearing race-day shoes, shorts, and testing race-day fuel"
+          - "Course study: review the elevation profile and identify where to push, where to hold back, and where to fuel"
+        projects:
+          - "Negative split a half marathon with the second half at least 30 seconds faster overall"
+          - "Predict your half marathon time using VDOT from a recent 10K, then race and hit within 2% of the prediction"
+        tips:
+          - "The taper makes most runners feel anxious and sluggish — this is normal and expected. Trust the training. The fitness is in the bank."
+          - "Negative splitting a half marathon requires running the first 3 miles approximately 10 seconds per mile slower than goal pace — most runners are unable to make themselves do this, which is exactly why it works so well"
+      - level: advanced
+        criteria: "Executes a precise marathon pacing plan with mile-by-mile targets. Runs tangents to minimize distance. Adjusts strategy mid-race based on how the body feels (effort-based rather than purely pace-based pacing). Fuels on a precise schedule during the race. Can manage the marathon 'wall' (miles 18-22) through pacing discipline and fueling. Uses the taper to arrive at the start line feeling fresh and sharp."
+        metrics:
+          - "Marathon pace variance is under 10 seconds per mile from mile 2 through mile 22"
+          - "Marathon splits show a negative split or dead-even pacing strategy executed successfully"
+          - "GPS distance for a marathon reads 26.2-26.5 miles (running tangents efficiently)"
+          - "Fueling plan executed perfectly: takes in planned nutrition at every aid station on schedule"
+          - "Boston-qualifying marathon time achieved through pacing discipline (not fitness alone)"
+        resources:
+          - title: "Hal Higdon — Marathon Race Strategy"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-1-marathon/"
+            type: "article"
+          - title: "Strength Running — Marathon Pacing Strategies"
+            url: "https://marathonhandbook.com/the-long-run/"
+            type: "article"
+          - title: "Runner's World — How to Run Tangents"
+            url: "https://marathonhandbook.com/race-day-tips/"
+            type: "article"
+        practice:
+          - "Create a mile-by-mile pacing chart for your goal marathon including adjustments for every hill on the course"
+          - "Practice fueling at race pace during long runs — take gels at exactly the same intervals you will use on race day"
+          - "Run a half marathon at exact marathon goal pace as a dress rehearsal 4-5 weeks before the marathon"
+        projects:
+          - "Execute a Boston-qualifying marathon with less than 10 seconds per mile variance across miles 2-22"
+          - "Create and successfully execute a complete race plan that includes pacing, fueling, hydration, and contingency strategies"
+        tips:
+          - "The marathon is two races: the first 20 miles and the last 10K. Pacing discipline in miles 1-20 determines whether miles 20-26 are a triumphant push or a death march."
+          - "Running tangents can save 0.2-0.4 miles over a marathon — that is 1-2 minutes at BQ pace, often the difference between qualifying and missing the cutoff"
+      - level: expert
+        criteria: "Races are executed with surgical precision. Pacing is adjusted in real-time using heart rate, perceived effort, and split data. Can race tactically in competitive fields — surging, sitting behind a pack, and kicking at the right moment. Every aspect of race day is planned and rehearsed: logistics, warm-up, fueling, hydration, gear, and contingency plans. Post-race analysis of splits and metrics informs future race strategy."
+        metrics:
+          - "Marathon pace variance under 5 seconds per mile across the entire race"
+          - "Races within 30 seconds of predicted finish time based on training data (VDOT or critical velocity model)"
+          - "Sub-2:45 marathon (men) or sub-3:05 marathon (women)"
+          - "Executes a race-day surge or negative split in the final 10K that passes competitors"
+          - "Post-race GPS data shows near-perfect tangents (total distance 26.2-26.35 miles)"
+        resources:
+          - title: "Strength Running — Elite Race Execution"
+            url: "https://marathonhandbook.com/how-to-run-a-5k/"
+            type: "article"
+          - title: "Hal Higdon — Advanced Racing Strategies"
+            url: "https://www.halhigdon.com/training-programs/marathon-training/advanced-2-marathon/"
+            type: "article"
+        tips:
+          - "At the expert level, you race by effort and internal cues, not by the watch — the watch confirms what your body already knows"
+    tags: ["racing", "pacing", "tactics", "taper"]
+
+  # -- RECOVERY & INJURY PREVENTION ---------------------------------------------
+  - id: "sports/running/recovery"
+    title: "Recovery & Injury Prevention"
+    description: >
+      Recovery is where fitness actually happens. Training provides the stimulus;
+      rest and recovery provide the adaptation. Injury prevention is not a
+      separate activity from training — it IS training. The majority of running
+      injuries are overuse injuries caused by doing too much, too fast, too soon,
+      or by neglecting mobility, strength, and sleep.
+
+      Sub-skills covered: the importance of rest days and easy days, sleep
+      hygiene for athletes, foam rolling and self-myofascial release, dynamic
+      warm-up and cool-down routines, recognizing warning signs of overtraining
+      (elevated resting heart rate, persistent fatigue, mood changes, declining
+      performance), common running injuries and their prevention (IT band
+      syndrome, plantar fasciitis, shin splints, runner's knee, Achilles
+      tendinopathy), when to see a doctor versus when to self-manage, and
+      the role of mobility work, stretching, and cross-training.
+    benchmarks:
+      - level: beginner
+        criteria: "Takes at least 1-2 full rest days per week. Performs a dynamic warm-up before runs and a cool-down after. Recognizes the difference between normal training soreness and pain that signals injury. Owns a foam roller and uses it regularly. Sleeps 7+ hours per night consistently."
+        metrics:
+          - "Takes 2-3 rest days per week during the first 3 months of running"
+          - "Completes a 5-minute dynamic warm-up before every run (logged in training journal)"
+          - "Foam rolls major muscle groups (quads, hamstrings, calves, IT band) for 5 minutes at least 3 times per week"
+          - "Sleeps an average of 7+ hours per night across a training week (tracked by watch or sleep app)"
+          - "Zero overuse injuries requiring more than 3 days off in the first 6 months of running (injury-free metric)"
+        resources:
+          - title: "Runner's World — How to Avoid Running Injuries"
+            url: "https://marathonhandbook.com/running-injury-prevention/"
+            type: "article"
+          - title: "Strength Running — Injury Prevention for Runners"
+            url: "https://marathonhandbook.com/running-injury-prevention/"
+            type: "article"
+          - title: "The Run Experience — Foam Rolling Routine for Runners"
+            url: "https://www.youtube.com/watch?v=TF1GNfG1Jx4"
+            type: "video"
+          - title: "Runner's World — Dynamic Warm-Up Routine"
+            url: "https://marathonhandbook.com/running-warm-up/"
+            type: "article"
+        practice:
+          - "5 min pre-run: Dynamic warm-up — leg swings (10 each direction), walking lunges (10), high knees (20m), butt kicks (20m)"
+          - "5 min post-run: Cool-down walk + static stretching — hold each stretch for 30 seconds (calves, quads, hamstrings, hip flexors)"
+          - "10 min: Foam rolling session — spend 60 seconds on each major muscle group (quads, hamstrings, calves, glutes, IT band)"
+        projects:
+          - "Complete 8 consecutive weeks of running with a pre-run warm-up and post-run cool-down on every single session"
+          - "Establish a sleep routine that consistently delivers 7+ hours per night for 4 consecutive weeks"
+        tips:
+          - "If something hurts during a run and gets worse as you continue, stop immediately — running through pain turns a minor issue into a major injury"
+          - "Rest days are not wasted days — they are the days your body actually gets stronger from the training you did"
+      - level: intermediate
+        criteria: "Monitors resting heart rate and heart rate variability (HRV) to track recovery status. Can identify early signs of overtraining. Uses cross-training (cycling, swimming, elliptical) on easy days or for active recovery. Has a regular mobility routine addressing personal tight spots. Understands the difference between acute injury and chronic overuse injury."
+        metrics:
+          - "Resting heart rate tracked daily with less than 5 bpm variance week to week (stable recovery)"
+          - "Uses HRV data to modify training intensity on at least 2 occasions per month (adjusting a hard day to easy based on low HRV)"
+          - "Cross-trains 1-2 times per week for 30+ minutes (cycling, swimming, or pool running)"
+          - "Completes a 15-minute mobility routine at least 3 times per week (hip flexors, ankles, thoracic spine)"
+          - "Injury-free streak of 6+ months while running 25-35 miles per week"
+        resources:
+          - title: "Strength Running — How to Use HRV for Training"
+            url: "https://marathonhandbook.com/running-injury-prevention/"
+            type: "article"
+          - title: "Runner's World — Cross-Training for Runners"
+            url: "https://marathonhandbook.com/running-warm-up/"
+            type: "article"
+          - title: "The Run Experience — Mobility Routine for Runners"
+            url: "https://www.youtube.com/watch?v=t3xrb0VT4bU"
+            type: "video"
+        practice:
+          - "Daily: Check resting heart rate and HRV upon waking — if resting HR is 5+ bpm above baseline or HRV is notably low, swap the planned hard workout for an easy day"
+          - "15 min: Mobility routine — pigeon pose, couch stretch, ankle circles, thoracic spine rotations, 90/90 hip switches"
+          - "30 min: Cross-training session — cycling or pool running at easy effort for active recovery"
+        projects:
+          - "Track resting heart rate and HRV daily for 12 weeks and identify patterns between recovery metrics and training performance"
+          - "Maintain a 6-month injury-free streak while running 25-35 miles per week"
+        tips:
+          - "HRV is the single best objective measure of recovery — a consistently low HRV reading is your body telling you to back off before injury forces you to"
+          - "Cross-training gives you aerobic stimulus without the impact — pool running in particular closely mimics the running motion while your joints get a day off"
+      - level: advanced
+        criteria: "Recovery is systematized and periodized into the training plan. Manages training load using metrics (acute:chronic workload ratio, training stress balance). Can self-diagnose common running injuries and apply appropriate first-line treatment. Uses recovery tools (compression, massage, cold therapy) strategically. Has a relationship with a sports physical therapist for regular maintenance."
+        metrics:
+          - "Acute-to-chronic workload ratio stays between 0.8-1.3 across all training weeks (tracked in training software)"
+          - "Sees a sports physical therapist or massage therapist at least monthly during heavy training"
+          - "Injury-free streak of 12+ months while running 40-60 miles per week"
+          - "Training stress balance (form/fitness) tracked and peaked appropriately before goal races"
+          - "Uses periodized recovery weeks (reduced volume by 30-40%) every 3-4 weeks"
+        resources:
+          - title: "Strength Running — Training Load Management"
+            url: "https://marathonhandbook.com/periodization-for-runners/"
+            type: "article"
+          - title: "Runner's World — When to See a Doctor for Running Injuries"
+            url: "https://marathonhandbook.com/running-injury-prevention/"
+            type: "article"
+        practice:
+          - "Weekly: Review acute-to-chronic workload ratio and adjust the upcoming week if the ratio exceeds 1.3"
+          - "Every 3-4 weeks: Schedule a recovery week with 30-40% volume reduction while maintaining some intensity"
+          - "Monthly: Sports massage or physical therapy session focused on identified problem areas"
+        projects:
+          - "Maintain training load data for an entire 16-week marathon block and keep acute:chronic ratio in the 0.8-1.3 safe zone throughout"
+          - "Complete a full marathon training cycle (16+ weeks) without any injury requiring more than 2 days off"
+        tips:
+          - "The recovery week is not optional — it is the most important week in the training cycle because it allows your body to absorb and adapt to the previous 3 weeks of training"
+      - level: expert
+        criteria: "Recovery is an elite-level discipline. Every aspect is optimized: sleep, nutrition timing, hydration, soft tissue work, training load management, and psychological recovery. Can train through minor niggles without them becoming injuries through precise load management. Understands individual recovery capacity and adjusts training volume accordingly. Returns from setbacks faster than average due to systematized prehab and rehabilitation protocols."
+        metrics:
+          - "Injury-free training for 18+ months at 60-90 miles per week"
+          - "Sleep consistently 8+ hours with sleep quality score above 85% (tracked by wearable)"
+          - "Acute-to-chronic workload ratio never exceeds 1.2 even during peak training weeks"
+          - "Returns to full training within 2 weeks of any minor setback (compared to average 4-6 week return)"
+          - "Resting heart rate and HRV trends show consistent improvement or maintenance across multi-year training"
+        resources:
+          - title: "Strength Running — Elite Recovery Protocols"
+            url: "https://marathonhandbook.com/running-injury-prevention/"
+            type: "article"
+        tips:
+          - "At the expert level, sleep is the single most powerful recovery tool — prioritize 8-9 hours of sleep above every supplement, gadget, and recovery modality combined"
+    tags: ["recovery", "injury-prevention", "longevity"]
+
+  # -- NUTRITION & HYDRATION ----------------------------------------------------
+  - id: "sports/running/nutrition"
+    title: "Nutrition & Hydration"
+    description: >
+      Nutrition fuels the training, and hydration maintains the engine. For
+      distance runners, getting nutrition and hydration right is the difference
+      between bonking at mile 20 and running a strong finish. This covers daily
+      nutrition for training, pre-run and post-run fueling, race-day nutrition
+      strategy, hydration planning, and understanding how the body uses
+      carbohydrates, fat, and protein during running.
+
+      Sub-skills covered: daily caloric needs for runners, carbohydrate
+      periodization (matching carb intake to training load), pre-run meal
+      timing and composition, post-run recovery nutrition (the 30-minute
+      window), race-day fueling (gels, chews, drink mix), hydration planning
+      (sweat rate testing, electrolyte needs), carb-loading for marathons,
+      and avoiding common nutritional mistakes (under-fueling, relative
+      energy deficiency in sport / RED-S).
+    benchmarks:
+      - level: beginner
+        criteria: "Eats a meal or snack 1-2 hours before running. Stays hydrated throughout the day (urine is pale yellow). Does not skip meals on training days. Eats a recovery snack within 30-60 minutes after hard runs. Understands that runners need more carbohydrates than sedentary people."
+        metrics:
+          - "Eats a pre-run meal or snack 1-2 hours before running on 80%+ of training days"
+          - "Urine color is consistently pale yellow (hydration check) across a training week"
+          - "Consumes a recovery snack or meal with both carbohydrates and protein within 60 minutes after every hard run"
+          - "Does not experience bonking, dizziness, or nausea during runs under 60 minutes (adequate fueling indicator)"
+          - "Drinks at least 64 ounces of water per day on training days"
+        resources:
+          - title: "Runner's World — Nutrition for Runners: A Complete Guide"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "Strength Running — Running Nutrition 101"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "The Run Experience — What to Eat Before a Run"
+            url: "https://www.youtube.com/watch?v=bthEVpCeJfA"
+            type: "video"
+        practice:
+          - "Pre-run: Eat a simple carb-focused snack (banana, toast with honey, energy bar) 60-90 minutes before running"
+          - "Post-run: Within 30 minutes of finishing, eat or drink something with a 3:1 or 4:1 carb-to-protein ratio (chocolate milk, smoothie, toast with peanut butter)"
+          - "Hydration check: check urine color before your run — if it is dark yellow, drink 16 oz of water and wait 30 minutes before running"
+        projects:
+          - "Track your pre-run meals and post-run recovery nutrition for 4 weeks and identify what foods work best for your stomach"
+          - "Eliminate bonking on runs under 60 minutes by dialing in your pre-run nutrition routine"
+        tips:
+          - "The simplest pre-run fuel is a banana and a glass of water 60 minutes before you run — it works for almost everyone and is easy to digest"
+          - "If you are losing weight unintentionally while training, you are not eating enough — under-fueling leads to injury, illness, and poor performance"
+      - level: intermediate
+        criteria: "Fuels during runs over 75-90 minutes with gels, chews, or drink mix. Knows personal sweat rate (ounces lost per hour). Practices race-day nutrition on training runs. Eats a diet that supports training load with adequate carbohydrates, protein, and healthy fats. Understands the concept of carb-loading for races over 90 minutes."
+        metrics:
+          - "Takes in 30-60 grams of carbohydrates per hour during runs over 90 minutes"
+          - "Knows personal sweat rate within 4 oz/hour accuracy (calculated from pre/post-run weigh-ins)"
+          - "Replaces 80%+ of fluid lost through sweat during long runs (post-run weight loss under 2% of body weight)"
+          - "Has tested and identified 2-3 fueling products that are well-tolerated during running"
+          - "Carb-loads (increasing carb intake to 8-10 g/kg bodyweight) for 2-3 days before races over 90 minutes"
+        resources:
+          - title: "Strength Running — How to Fuel During Long Runs"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "Runner's World — How to Calculate Your Sweat Rate"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "Global Triathlon Network — Sports Nutrition for Endurance Athletes"
+            url: "https://www.youtube.com/watch?v=re3Fey_5pKI"
+            type: "video"
+          - title: "The Run Experience — How to Use Running Gels"
+            url: "https://www.youtube.com/watch?v=gD78FgOUeiI"
+            type: "video"
+        practice:
+          - "Sweat rate test: weigh yourself before and after a 1-hour run (no drinking during), convert the weight difference to ounces — that is your hourly sweat rate"
+          - "Long run fueling practice: take a gel or chews every 30-45 minutes during runs over 90 minutes and log how your stomach responds"
+          - "Carb-loading practice: 3 days before a long run, increase carbohydrate intake to 8-10 g/kg bodyweight and note energy levels on the run"
+        projects:
+          - "Calculate your personal sweat rate and create a hydration plan that replaces 80%+ of fluid lost per hour"
+          - "Successfully fuel a half marathon with a tested nutrition plan, taking in 30-60 grams of carbs per hour with no GI issues"
+        tips:
+          - "Train your gut — the ability to absorb carbohydrates during exercise is trainable; start with small amounts (20g/hour) and gradually increase over weeks"
+          - "Weigh yourself before and after a long run to learn your sweat rate — every pound lost is approximately 16 ounces of fluid you need to replace"
+      - level: advanced
+        criteria: "Nutrition is periodized to match training load (higher carb on hard/long days, moderate on easy days). Fuels aggressively during races (60-90 grams of carbohydrates per hour for marathons). Has a complete race-day nutrition plan tested in training. Understands and avoids RED-S. Uses strategic caffeine timing for race performance. Recovery nutrition is optimized with protein timing and anti-inflammatory foods."
+        metrics:
+          - "Takes in 60-90 grams of carbohydrates per hour during marathons without GI distress"
+          - "Daily carbohydrate intake matches training load: 5-7 g/kg on easy days, 8-10 g/kg on hard/long days"
+          - "Daily protein intake is 1.4-1.8 g/kg bodyweight distributed across 4-5 meals"
+          - "Race-day caffeine intake timed 30-60 minutes before start (3-6 mg/kg bodyweight)"
+          - "Body weight remains stable (within 2%) across a 16-week training cycle (no unintended weight loss or gain)"
+        resources:
+          - title: "Strength Running — Advanced Nutrition for Competitive Runners"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+          - title: "Runner's World — Carb Loading Done Right"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+        practice:
+          - "Track daily carbohydrate intake for a full training week and compare to targets (5-7 g/kg easy days, 8-10 g/kg hard days)"
+          - "Race-day rehearsal: on your longest training run, execute your exact race-day nutrition plan — same products, same timing, same pre-race meal"
+          - "Caffeine trial: test 3-6 mg/kg caffeine 30-60 minutes before a tempo run and note its effect on effort and performance"
+        projects:
+          - "Execute a marathon with 60+ grams of carbs per hour using a pre-tested fueling plan and finish without bonking"
+          - "Periodize your carbohydrate intake across a 4-week training block and track energy levels and workout quality"
+        tips:
+          - "60-90 grams of carbs per hour in a marathon sounds like a lot — but the runners who fuel aggressively are the ones who run strong miles 20-26"
+          - "Caffeine is the single most proven legal performance enhancer for endurance athletes — 3-6 mg/kg taken 30-60 minutes before a race improves performance by 1-3%"
+      - level: expert
+        criteria: "Nutrition is a precision tool. Carbohydrate intake during racing pushes the physiological limit (90-120 grams per hour using glucose + fructose transporters). Every calorie and ounce of fluid is planned and rehearsed. Understands individual macronutrient needs and adjusts across mesocycles. Works with a sports dietitian for personalized planning. Micronutrient status (iron, vitamin D, calcium) is monitored through blood work."
+        metrics:
+          - "Takes in 90-120 grams of carbohydrates per hour during marathons using dual-source (glucose + fructose) products"
+          - "Blood work twice per year monitoring ferritin (above 30 ng/mL for runners), vitamin D (above 40 ng/mL), and other key markers"
+          - "Race-day nutrition plan has been tested on 6+ long runs with zero GI issues"
+          - "Body composition stable at optimal race weight across the competitive season"
+          - "Post-race recovery nutrition initiated within 15 minutes of finishing with precise macro targets"
+        resources:
+          - title: "Strength Running — Elite Sports Nutrition"
+            url: "https://marathonhandbook.com/running-nutrition/"
+            type: "article"
+        tips:
+          - "At the expert level, get blood work done twice per year — low ferritin (iron) is one of the most common and under-diagnosed causes of unexplained fatigue and declining performance in competitive runners"
+    tags: ["nutrition", "hydration", "fueling", "health"]
+
+  # -- STRENGTH TRAINING FOR RUNNERS --------------------------------------------
+  - id: "sports/running/strength-training"
+    title: "Strength Training for Runners"
+    description: >
+      Strength training is no longer optional for serious runners. Research
+      consistently shows that heavy resistance training improves running economy
+      by 2-8%, delays fatigue, and reduces injury risk. The goal is not to build
+      bulk but to build force production, structural resilience, and
+      neuromuscular coordination that transfers directly to faster, more
+      durable running.
+
+      Sub-skills covered: bodyweight exercises for runners (lunges, squats,
+      single-leg deadlifts, planks, bridges), heavy compound lifts (squats,
+      deadlifts, step-ups, Romanian deadlifts), plyometrics (box jumps,
+      bounding, depth jumps), core stability (anti-rotation, anti-extension,
+      anti-lateral flexion), hip and glute activation (clamshells, banded
+      walks, hip thrusts), and periodizing strength work with running training
+      (heavy in base phase, maintenance in race phase).
+    benchmarks:
+      - level: beginner
+        criteria: "Performs a bodyweight strength routine 2 times per week. Includes squats, lunges, single-leg exercises, and core work. Can hold a plank for 60 seconds. Can perform 10 bodyweight squats with good form (knees tracking over toes, depth below parallel). Understands that strength training prevents injuries and improves running economy."
+        metrics:
+          - "Completes a 20-minute bodyweight strength routine 2 times per week for 8 consecutive weeks"
+          - "Holds a front plank for 60 seconds with good form (no sagging or piking)"
+          - "Performs 10 single-leg squats to a bench or chair on each leg (pistol squat progression)"
+          - "Completes 15 bodyweight squats below parallel with knees tracking over toes"
+          - "Performs 10 single-leg glute bridges per side with hips level (no rotation)"
+        resources:
+          - title: "Strength Running — Strength Training for Runners"
+            url: "https://marathonhandbook.com/strength-training-for-runners/"
+            type: "article"
+          - title: "Runner's World — Strength Training Exercises for Runners"
+            url: "https://www.runnersworld.com/training/a20865656/strength-training-for-runners/"
+            type: "article"
+          - title: "The Run Experience — 15-Minute Strength Workout for Runners"
+            url: "https://www.youtube.com/watch?v=iiOHfVJ1WLg"
+            type: "video"
+        practice:
+          - "20 min: Bodyweight strength circuit — 3 rounds of: 15 squats, 10 lunges per leg, 10 single-leg glute bridges per side, 30-second plank, 10 calf raises"
+          - "10 min: Core routine — 3 rounds of: 30-second plank, 30-second side plank each side, 10 dead bugs, 10 bird dogs"
+          - "5 min: Hip activation — banded clamshells (15 per side), banded lateral walks (10 steps each direction)"
+        projects:
+          - "Complete 8 weeks of 2x/week bodyweight strength training alongside your running plan"
+          - "Progress from a 30-second plank to a 60-second plank over 6 weeks"
+        tips:
+          - "The best time to do runner-specific strength training is after an easy run or on a separate day — never do heavy strength work the day before a hard running workout"
+          - "Single-leg exercises (lunges, single-leg deadlifts, step-ups) are more running-specific than bilateral exercises because running is a single-leg sport"
+      - level: intermediate
+        criteria: "Lifts weights 2-3 times per week with compound movements (squats, deadlifts, step-ups). Works with moderate to heavy loads (not just bodyweight). Includes plyometric exercises (box jumps, jump squats). Core routine includes anti-rotation and anti-extension exercises. Can back squat bodyweight for 5 reps."
+        metrics:
+          - "Back squat: bodyweight for 5 reps (1x bodyweight 5RM)"
+          - "Single-leg Romanian deadlift: 40% bodyweight dumbbell for 8 reps per leg with balance maintained"
+          - "Box jump: lands softly on a 20-inch box for 5 reps (men) or 16-inch box (women)"
+          - "Completes 3 strength sessions per week for 12 consecutive weeks alongside 25-35 miles per week of running"
+          - "Pallof press: holds 3 x 10-second anti-rotation hold at a challenging resistance band tension"
+        resources:
+          - title: "Strength Running — Heavy Lifting for Distance Runners"
+            url: "https://marathonhandbook.com/strength-training-for-runners/"
+            type: "article"
+          - title: "Runner's World — Why Runners Should Lift Heavy"
+            url: "https://www.runnersworld.com/training/a20865656/strength-training-for-runners/"
+            type: "article"
+          - title: "The Run Experience — Plyometrics for Runners"
+            url: "https://www.youtube.com/watch?v=rUkBxjCKy_s"
+            type: "video"
+        practice:
+          - "45 min: Strength session — back squat 3x5, Romanian deadlift 3x8, step-ups 3x10 per leg, Pallof press 3x10, plank 3x30s"
+          - "15 min: Plyometric circuit — 3 rounds of: 5 box jumps, 8 jump squats, 10 bounding steps"
+          - "10 min: Hip and glute activation — banded walks, clamshells, fire hydrants as a warm-up before every strength session"
+        projects:
+          - "Achieve a bodyweight back squat for 5 reps within a 12-week strength building phase"
+          - "Complete a 12-week concurrent training block (running + lifting) and demonstrate that running performance improves or maintains"
+        tips:
+          - "Heavy lifting (3-5 reps at 80-85% of 1RM) improves running economy more than high-rep, light-weight work — do not be afraid of heavy weights"
+          - "Plyometrics teach your muscles and tendons to store and release elastic energy — this directly translates to improved running economy and reduced ground contact time"
+      - level: advanced
+        criteria: "Strength training is periodized alongside running: heavy lifting in base phase (3x/week), moderate in build phase (2x/week), maintenance in race phase (1-2x/week, reduced volume). Includes heavy compound lifts, plyometrics, and running-specific single-leg power exercises. Can back squat 1.5x bodyweight. Uses force plates or jump testing to track neuromuscular performance."
+        metrics:
+          - "Back squat: 1.5x bodyweight for 3 reps"
+          - "Single-leg hop distance: 80%+ of double-leg broad jump distance (symmetry metric)"
+          - "Reactive strength index (RSI) from drop jump test: 1.5+ (tracked quarterly)"
+          - "Strength training periodized across 16-week marathon cycle with measurable reduction in volume during taper"
+          - "Running economy improves by 2-5% over a 12-week strength training block (measured by pace at fixed heart rate)"
+        resources:
+          - title: "Strength Running — Periodized Strength Training for Marathon Runners"
+            url: "https://marathonhandbook.com/strength-training-for-runners/"
+            type: "article"
+          - title: "Runner's World — Strength Periodization for Runners"
+            url: "https://www.runnersworld.com/training/a20865656/strength-training-for-runners/"
+            type: "article"
+        practice:
+          - "Base phase (3x/week): Squat 4x4 at 85% 1RM, deadlift 3x5, step-ups 3x8 per leg, plyos 3x5 box jumps"
+          - "Race phase (1-2x/week): Squat 2x3 at 80% 1RM, single-leg RDL 2x6, maintenance plyo 2x5 jumps — reduced volume, maintained intensity"
+          - "Track reactive strength index (RSI) quarterly using a drop jump test to measure neuromuscular power"
+        projects:
+          - "Complete a full marathon training cycle with periodized strength training and demonstrate a PR or running economy improvement"
+          - "Achieve a 1.5x bodyweight back squat while maintaining or improving running performance"
+        tips:
+          - "In the 2 weeks before a goal race, reduce strength volume by 60% but keep intensity the same — you want to maintain neuromuscular activation without creating fatigue"
+      - level: expert
+        criteria: "Strength training is fully integrated into the annual training plan as a non-negotiable component. Lifting is heavy year-round with volume adjustments for training phase. Plyometric training is advanced (depth jumps, single-leg bounds). Force production and power metrics are tracked longitudinally. Can back squat 1.75x bodyweight. Strength work is a measurable contributor to running economy and injury resilience."
+        metrics:
+          - "Back squat: 1.75x bodyweight for 3 reps"
+          - "Reactive strength index (RSI): 2.0+"
+          - "Running economy improvement of 5-8% attributable to strength training over 2+ years (longitudinal data)"
+          - "Zero strength-related running injuries across 2+ years of concurrent high-mileage and heavy-lifting training"
+          - "Single-leg force production symmetry within 5% (force plate measurement)"
+        resources:
+          - title: "Strength Running — Elite Concurrent Training"
+            url: "https://marathonhandbook.com/strength-training-for-runners/"
+            type: "article"
+        tips:
+          - "At the expert level, strength training is not something you do in addition to running — it IS part of running training, and skipping it has the same consequence as skipping a key workout"
+    tags: ["strength", "gym", "injury-prevention", "economy"]
+
+  # -- MENTAL TOUGHNESS ---------------------------------------------------------
+  - id: "sports/running/mental-toughness"
+    title: "Mental Toughness"
+    description: >
+      Running is as much a mental sport as a physical one. The ability to push
+      through discomfort, maintain focus during long efforts, manage race-day
+      anxiety, recover from bad races, and sustain motivation over years of
+      training separates good runners from great ones. Mental toughness is a
+      skill that can be trained, not just an innate trait.
+
+      Sub-skills covered: managing discomfort during hard efforts (pain is
+      information, not a stop sign), positive self-talk and mantras, process
+      goals versus outcome goals, visualization and mental rehearsal, managing
+      pre-race anxiety, breaking long races into segments (mile by mile, aid
+      station to aid station), dealing with setbacks (injuries, bad races,
+      missed goals), building intrinsic motivation, and mindfulness and
+      meditation for runners.
+
+      The marathon is often described as a 20-mile warm-up for a 10K race —
+      everything after mile 20 is a mental challenge as much as a physical one.
+    benchmarks:
+      - level: beginner
+        criteria: "Has a go-to mantra or positive self-talk phrase for hard moments. Can distinguish between pain (injury signal) and discomfort (training stimulus). Sets process goals (run 3 times this week) alongside outcome goals (run a 5K). Does not quit a run because it feels hard — pushes through normal discomfort. Finishes races without giving up even when it hurts."
+        metrics:
+          - "Uses a personal mantra or self-talk phrase during at least 3 hard runs or race moments per month"
+          - "Completes every planned workout for 4 consecutive weeks without skipping any due to mental resistance (barring injury)"
+          - "Finishes a 5K race without walking even when experiencing discomfort in the final mile"
+          - "Sets and achieves at least 1 process goal per week (e.g., complete all scheduled runs, do strength work 2x)"
+          - "Can articulate the difference between injury pain (sharp, sudden, gets worse) and training discomfort (dull, manageable, fades after the run)"
+        resources:
+          - title: "Runner's World — Mental Tips for Running Your Best"
+            url: "https://marathonhandbook.com/running-warm-up/"
+            type: "article"
+          - title: "The Run Experience — Mental Toughness for Runners"
+            url: "https://www.youtube.com/watch?v=kRJvx5mB3jU"
+            type: "video"
+          - title: "Strength Running — How to Build Mental Toughness"
+            url: "https://marathonhandbook.com/how-to-run-a-5k/"
+            type: "article"
+        practice:
+          - "Before each run, set one process intention (e.g., maintain cadence above 170, hold form for the full run, stay positive when it gets hard)"
+          - "During hard efforts, use a mantra — repeat a short phrase (e.g., 'strong and steady', 'I was built for this', 'one more mile') when discomfort peaks"
+          - "After every run, write down one thing you did well mentally — build a log of positive mental habits"
+        projects:
+          - "Complete 4 consecutive weeks of training with 100% workout adherence (no skipped sessions due to mental resistance)"
+          - "Race a 5K and practice your mantra in the final mile — write down how it affected your effort and finish"
+        tips:
+          - "Your brain will always tell you to stop before your body needs to — the discomfort of a hard run is temporary and manageable; learn to sit with it rather than react to it"
+          - "Process goals (things you can control) build confidence. Outcome goals (things you cannot fully control) create anxiety. Focus on process."
+      - level: intermediate
+        criteria: "Practices visualization before races (mentally rehearsing the course, pacing, and tough moments). Can manage pre-race nerves and channel anxiety into performance energy. Uses segmenting (breaking a long race into smaller chunks) to manage effort over distance. Bounces back from bad races without losing motivation. Has a pre-race mental routine."
+        metrics:
+          - "Completes a 10-minute visualization session before every goal race for at least 4 races"
+          - "Pre-race anxiety does not negatively affect first-mile pacing (first mile is within 10 seconds of plan despite nerves)"
+          - "Uses segmenting in races over 10K (focuses on the next mile or aid station, not the total distance remaining)"
+          - "Returns to full training within 1 week after a disappointing race (does not spiral into extended layoff)"
+          - "Rates mental toughness as a training priority and practices it deliberately at least once per week"
+        resources:
+          - title: "Runner's World — How to Use Visualization for Race Day"
+            url: "https://marathonhandbook.com/running-warm-up/"
+            type: "article"
+          - title: "Strength Running — Race Day Mental Strategies"
+            url: "https://marathonhandbook.com/how-to-run-a-5k/"
+            type: "article"
+          - title: "The Run Experience — Overcoming Race Day Anxiety"
+            url: "https://www.youtube.com/watch?v=1AZBm0pIj-4"
+            type: "video"
+        practice:
+          - "10 min: Pre-race visualization — close your eyes and mentally run the entire race course, including the hard parts, seeing yourself executing your plan and finishing strong"
+          - "During long runs, practice segmenting — instead of thinking about the total distance, focus only on getting to the next mile marker or landmark"
+          - "After a bad race or workout, write a debrief: what happened, what you learned, and what you will do differently next time"
+        projects:
+          - "Visualize your goal race at least 5 times in the 2 weeks before race day and write down how it affects your confidence"
+          - "Bounce back from a bad race by completing a strong workout within 10 days and writing a constructive debrief"
+        tips:
+          - "Pre-race nerves are a sign that you care about your performance — reframe anxiety as excitement and channel that energy into a strong start"
+          - "In a long race, never think about how far you still have to go — only think about the mile you are in right now"
+      - level: advanced
+        criteria: "Can push through the marathon 'wall' (miles 18-22) through mental strategies. Uses association (tuning into body signals) and dissociation (distraction techniques) strategically. Has a resilience practice for dealing with injuries and setbacks. Maintains motivation across multi-year training blocks. Can race at maximum effort and tolerate high levels of physiological discomfort."
+        metrics:
+          - "Maintains pace through marathon miles 18-22 (does not slow more than 10 seconds per mile compared to miles 8-16)"
+          - "Completes a VO2max interval session at RPE 9/10 without cutting the workout short"
+          - "Trains consistently through a setback (injury, life stress) and returns to pre-setback fitness within 6 weeks"
+          - "Has maintained a training streak of 12+ months without a motivation-related layoff"
+          - "Races a 5K or 10K at a pace that produces significant discomfort and does not back off in the final kilometer"
+        resources:
+          - title: "Strength Running — Breaking Through the Marathon Wall"
+            url: "https://marathonhandbook.com/the-long-run/"
+            type: "article"
+          - title: "Runner's World — The Psychology of Endurance"
+            url: "https://marathonhandbook.com/speed-training-for-runners/"
+            type: "article"
+        practice:
+          - "In hard workouts, practice switching between association (monitoring breathing, cadence, form) and dissociation (counting, music, mantras) to find what helps you push through"
+          - "Monthly mental toughness workout: choose one session per month where you commit to hitting every split no matter how it feels — this is deliberate practice for race day"
+          - "Journaling: after every hard workout or race, write about the mental challenges you faced and how you handled them"
+        projects:
+          - "Run a marathon and maintain pace through the wall (miles 18-22) using pre-practiced mental strategies"
+          - "Maintain a 12-month unbroken training streak (defined as completing at least 80% of planned workouts per week)"
+        tips:
+          - "The wall is not purely physical — it is a mental crisis triggered by fatigue. Runners who have practiced pushing through discomfort in training handle the wall far better than those who have not."
+      - level: expert
+        criteria: "Mental toughness is a trained skill at the same level as physical fitness. Can access a flow state during racing. Has a meditation or mindfulness practice that supports training and recovery. Competes at the highest level available and performs at or near physical potential on race day. Views setbacks as data, not failures. Has sustained elite-level training and racing motivation for 5+ years."
+        metrics:
+          - "Race performance is within 1% of predicted capability based on training data (executing at full potential)"
+          - "Reports accessing flow state during races at least 2 times per competitive season"
+          - "Completes a meditation or mindfulness practice of 10+ minutes at least 4 times per week"
+          - "Has sustained competitive racing and training for 5+ consecutive years without burnout"
+          - "Rebounds from a major setback (injury, DNF, missed goal) and sets a new PR within 12 months"
+        resources:
+          - title: "Strength Running — The Mindset of Elite Runners"
+            url: "https://marathonhandbook.com/how-to-run-a-5k/"
+            type: "article"
+        tips:
+          - "At the expert level, the body and mind are one system — meditation, visualization, and mental rehearsal are as important as the miles in your legs"
+    tags: ["mental", "psychology", "resilience", "mindset"]
+
+relationships:
+  # -- Foundation layer ----------------------------------------------------------
+  - source: "sports/running/form-and-cadence"
+    target: "sports/running/base-building"
+    type: "enables"
+    note: "Good form is required before accumulating volume — running with poor form at high mileage leads to injury"
+
+  - source: "sports/running/form-and-cadence"
+    target: "sports/running/hill-training"
+    type: "enables"
+    note: "Uphill and downhill form are extensions of flat-ground running mechanics"
+
+  - source: "sports/running/form-and-cadence"
+    target: "sports/running/speed-work"
+    type: "enables"
+    note: "Efficient form is a prerequisite for running fast — poor form at high speeds causes injury"
+
+  # -- Aerobic base feeds everything --------------------------------------------
+  - source: "sports/running/base-building"
+    target: "sports/running/long-runs"
+    type: "enables"
+    note: "The weekly long run is built on top of a consistent aerobic base — you must be running regularly before extending distance"
+
+  - source: "sports/running/base-building"
+    target: "sports/running/speed-work"
+    type: "requires"
+    note: "Speed work should only be introduced after a solid aerobic base — without it, intervals cause injury and limited improvement"
+
+  - source: "sports/running/base-building"
+    target: "sports/running/hill-training"
+    type: "enables"
+    note: "Hill training requires aerobic fitness and musculoskeletal durability built during base building"
+
+  # -- Hill training bridges base and speed -------------------------------------
+  - source: "sports/running/hill-training"
+    target: "sports/running/speed-work"
+    type: "enables"
+    note: "Hill training builds the strength and power foundation that makes flat-ground speed work safer and more effective"
+
+  # -- Endurance and speed feed race strategy ------------------------------------
+  - source: "sports/running/long-runs"
+    target: "sports/running/race-strategy"
+    type: "requires"
+    note: "Race strategy for distances over 10K requires experience with long runs — you cannot pace a marathon without having practiced the distance"
+
+  - source: "sports/running/speed-work"
+    target: "sports/running/race-strategy"
+    type: "requires"
+    note: "Knowing your tempo, interval, and race paces is essential for setting realistic race-day targets"
+
+  # -- Supporting skills --------------------------------------------------------
+  - source: "sports/running/base-building"
+    target: "sports/running/recovery"
+    type: "enables"
+    note: "As training load increases, recovery practices become essential — beginners at low mileage need less structured recovery"
+
+  - source: "sports/running/base-building"
+    target: "sports/running/nutrition"
+    type: "enables"
+    note: "Fueling requirements scale with training volume — nutrition strategy becomes critical as mileage increases"
+
+  - source: "sports/running/form-and-cadence"
+    target: "sports/running/strength-training"
+    type: "complementary"
+    note: "Strength training reinforces good running form by building the muscles that maintain posture, hip stability, and foot strike mechanics"
+
+  - source: "sports/running/recovery"
+    target: "sports/running/strength-training"
+    type: "complementary"
+    note: "Strength training is a primary injury prevention tool — the two skills work together to keep the runner healthy"
+
+  # -- Mental toughness is the capstone -----------------------------------------
+  - source: "sports/running/long-runs"
+    target: "sports/running/mental-toughness"
+    type: "enables"
+    note: "Long runs are the primary training ground for mental toughness — sustained effort over hours builds mental resilience"
+
+  - source: "sports/running/race-strategy"
+    target: "sports/running/mental-toughness"
+    type: "enables"
+    note: "Executing a race plan under pressure requires mental toughness — strategy without mental discipline falls apart on race day"
+
+  - source: "sports/running/speed-work"
+    target: "sports/running/mental-toughness"
+    type: "enables"
+    note: "Hard interval sessions teach the runner to push through discomfort — this is deliberate mental toughness training"

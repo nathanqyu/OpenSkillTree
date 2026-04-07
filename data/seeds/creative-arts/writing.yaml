@@ -1,0 +1,1446 @@
+# OpenSkillTree — Seed Skill Tree: Writing
+#
+# Domain:  Creative Arts / Writing
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark reference: Writing output and publication milestones
+# Benchmark levels loosely map to:
+#   beginner     = writes coherent 500-word essays, understands grammar fundamentals
+#   intermediate = publishes blog posts, writes professionally, freelance-ready
+#   advanced     = published in magazines, anthologies, or books; consistent bylines
+#   expert       = recognized / award-winning writing, mentor-level craft mastery
+#
+# Teaching order based on standard writing pedagogy:
+#   Grammar & mechanics -> sentence craft & style -> paragraph & essay structure ->
+#   persuasive writing -> creative writing & fiction -> editing & revision ->
+#   research & nonfiction -> blogging & online writing -> technical writing ->
+#   publishing & portfolio.
+# Foundational mechanics must precede stylistic and creative work.
+
+tree:
+  id: "creative-arts/writing"
+  title: "Writing"
+  description: >
+    A complete skill map for writing — covering grammar and mechanics, prose
+    style, essay structure, persuasion, creative fiction, editing and revision,
+    research-based nonfiction, blogging and online writing, technical writing,
+    and publishing. Progresses from first coherent paragraphs to recognized,
+    award-winning work across multiple formats.
+  domain: "Creative Arts"
+  visibility: "public"
+
+nodes:
+  # -- FOUNDATION ---------------------------------------------------------------
+  - id: "creative-arts/writing/grammar-mechanics"
+    title: "Grammar & Mechanics"
+    description: >
+      The bedrock of all written communication. Covers parts of speech,
+      subject-verb agreement, pronoun reference, tense consistency, comma rules,
+      semicolons, colons, apostrophes, quotation marks, capitalization, and
+      spelling. Without clean mechanics, no other writing skill can be
+      evaluated fairly.
+
+      Sub-skills covered: identifying and correcting sentence fragments and
+      run-on sentences, parallel structure, modifier placement (dangling and
+      misplaced modifiers), active vs. passive voice recognition, punctuation
+      in compound and complex sentences, and common usage errors (its/it's,
+      their/there/they're, affect/effect, who/whom).
+
+      Drills to practice: (1) Daily grammar exercises — complete 10 error-
+      correction sentences per day. (2) Dictation practice — listen to a
+      paragraph and transcribe it with correct punctuation. (3) Comma splice
+      scavenger hunt — find and fix all comma splices in a sample essay.
+      (4) Passive-to-active conversion — rewrite 10 passive sentences in
+      active voice. (5) Peer editing — swap a paragraph with a partner and
+      mark every mechanical error you find.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes complete sentences free of fragments and run-ons. Uses correct subject-verb agreement. Applies basic comma rules (lists, introductory phrases, compound sentences). Spells common words correctly. Distinguishes its/it's, their/there/they're, and your/you're consistently."
+        metrics:
+          - "Scores 80%+ on a 50-question grammar diagnostic (e.g., Purdue OWL exercises)"
+          - "Writes a 500-word essay with fewer than 5 mechanical errors"
+          - "Correctly punctuates 8/10 compound and complex sentences in a drill"
+          - "Identifies and fixes 7/10 sentence fragments and run-ons in an error-correction exercise"
+          - "Uses active voice in at least 70% of sentences in a writing sample"
+        resources:
+          - title: "Purdue OWL — General Writing Introduction"
+            url: "https://owl.purdue.edu/owl/general_writing/index.html"
+            type: "article"
+          - title: "Purdue OWL — Sentence Fragments"
+            url: "https://owl.purdue.edu/owl/general_writing/mechanics/sentence_fragments.html"
+            type: "article"
+          - title: "Grammarly Blog — Grammar Basics"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+          - title: "Khan Academy — Grammar Course"
+            url: "https://www.khanacademy.org/humanities/grammar"
+            type: "course"
+        practice:
+          - "15 min: Complete 10 error-correction sentences from Purdue OWL exercises"
+          - "10 min: Rewrite 5 passive-voice sentences in active voice"
+          - "10 min: Dictation drill — listen to a short passage and transcribe with correct punctuation"
+        projects:
+          - "Write a 500-word personal narrative and self-edit until it contains zero fragments, run-ons, or agreement errors"
+          - "Complete the Purdue OWL comma exercise set with 90%+ accuracy"
+        tips:
+          - "Read your writing aloud — your ear catches errors your eye misses, especially run-on sentences and awkward agreement"
+          - "When in doubt about a comma, ask: does removing it change meaning or create ambiguity? If not, leave it out"
+      - level: intermediate
+        criteria: "Uses semicolons, colons, and dashes correctly. Maintains tense consistency across multi-paragraph writing. Handles parallel structure in lists and compound predicates. Identifies and corrects dangling and misplaced modifiers. Avoids common usage errors (affect/effect, who/whom, less/fewer) consistently."
+        metrics:
+          - "Scores 90%+ on an advanced grammar diagnostic covering semicolons, colons, and parallelism"
+          - "Writes a 1,500-word essay with fewer than 3 mechanical errors"
+          - "Correctly uses semicolons and colons in 9/10 practice sentences"
+          - "Maintains consistent tense across a 5-paragraph essay with zero tense shifts"
+          - "Identifies 9/10 dangling modifiers in an error-correction exercise"
+        resources:
+          - title: "Purdue OWL — Punctuation"
+            url: "https://owl.purdue.edu/owl/general_writing/punctuation/index.html"
+            type: "article"
+          - title: "Grammarly Blog — Semicolon Usage"
+            url: "https://www.grammarly.com/blog/grammar/semicolon/"
+            type: "article"
+          - title: "Purdue OWL — Parallel Structure"
+            url: "https://owl.purdue.edu/owl/general_writing/mechanics/parallel_structure.html"
+            type: "article"
+        practice:
+          - "15 min: Rewrite 10 sentences to fix parallelism errors"
+          - "10 min: Combine simple sentences using semicolons and colons where appropriate"
+          - "10 min: Edit a sample essay for tense consistency — mark and correct every unintended shift"
+        projects:
+          - "Write a 1,500-word argumentative essay and verify zero mechanical errors through self-editing and a grammar checker"
+          - "Create a style sheet of your 10 most common grammar mistakes and track elimination over 4 weeks"
+        tips:
+          - "Semicolons connect two independent clauses that are closely related — if you can replace it with a period, you can use a semicolon"
+          - "For parallel structure, list items must match in form: all nouns, all gerunds, or all infinitives — never mix"
+      - level: advanced
+        criteria: "Understands and deliberately breaks grammar rules for stylistic effect (sentence fragments for emphasis, intentional passive voice). Masters complex punctuation in nested structures. Handles grammar in specialized contexts (dialogue punctuation, academic citation formatting, legal or technical phrasing). Edits others' work for mechanics with near-perfect accuracy."
+        metrics:
+          - "Edits a 3,000-word manuscript and catches 95%+ of planted mechanical errors (20+ errors planted)"
+          - "Correctly punctuates 10/10 complex sentences involving nested clauses, appositives, and dialogue"
+          - "Writes a 3,000-word piece with zero unintentional mechanical errors"
+          - "Scores 95%+ on an advanced grammar exam covering all major rule categories"
+        resources:
+          - title: "Purdue OWL — Research and Citation Resources"
+            url: "https://owl.purdue.edu/owl/research_and_citation/resources.html"
+            type: "article"
+          - title: "Chicago Manual of Style Online — Grammar and Usage"
+            url: "https://www.chicagomanualofstyle.org/home.html"
+            type: "article"
+          - title: "Grammarly Blog — Writing Techniques"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "20 min: Edit a 1,000-word sample manuscript for mechanics — aim to catch every planted error"
+          - "15 min: Punctuate 10 complex nested sentences involving dialogue, appositives, and subordinate clauses"
+          - "10 min: Rewrite 5 sentences breaking a grammar rule intentionally for rhetorical effect, then annotate why"
+        projects:
+          - "Copy-edit a peer's 3,000-word essay for mechanics and produce an annotated error report"
+          - "Write a 2,000-word piece that intentionally uses 5+ grammatical rule-breaks for stylistic effect, with footnotes explaining each choice"
+        tips:
+          - "Master the rules before you break them — an intentional fragment reads as style; an accidental one reads as incompetence"
+          - "When editing others' work, read backward sentence by sentence to isolate mechanics from meaning"
+      - level: expert
+        criteria: "Functions as a professional copy editor or proofreader. Navigates multiple style guides (AP, Chicago, MLA, APA) fluently. Identifies and articulates nuanced grammar distinctions (subjunctive mood, correlative conjunctions, restrictive vs. nonrestrictive clauses). Teaches grammar effectively to others."
+        metrics:
+          - "Passes a professional copy-editing test (e.g., EFA or Editors Canada sample) with 98%+ accuracy"
+          - "Edits a 10,000-word manuscript in under 4 hours with 99%+ error detection rate"
+          - "Switches fluently between AP, Chicago, and APA styles in the same editing session"
+          - "Leads a grammar workshop and receives 4.5+/5.0 average participant rating"
+        resources:
+          - title: "Editorial Freelancers Association — Copyediting Resources"
+            url: "https://www.the-efa.org/rates/"
+            type: "article"
+          - title: "Purdue OWL — APA, MLA, and Chicago Style Guides"
+            url: "https://owl.purdue.edu/owl/research_and_citation/index.html"
+            type: "article"
+          - title: "Grammarly Blog — What Is a Copy Editor?"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "30 min: Edit a chapter-length manuscript (5,000+ words) under timed conditions, switching between AP and Chicago style"
+          - "20 min: Prepare a 10-question grammar quiz for peers covering subjunctive mood, restrictive clauses, and correlative conjunctions"
+        projects:
+          - "Complete a professional copy-editing sample test and score at a professional-hire level"
+          - "Create and deliver a 1-hour grammar workshop covering 5 advanced topics, collecting participant feedback"
+        tips:
+          - "Build your own style reference card for each guide you work with — the differences between AP and Chicago on serial commas, title case, and number formatting will trip you up without a quick reference"
+    tags: ["foundation", "mechanics", "measurable"]
+
+  # -- SENTENCE CRAFT & STYLE --------------------------------------------------
+  - id: "creative-arts/writing/sentence-craft"
+    title: "Sentence Craft & Style"
+    description: >
+      Moving beyond correctness to beauty and impact. Covers sentence variety
+      (simple, compound, complex, compound-complex), rhythm and cadence,
+      concrete vs. abstract diction, eliminating wordiness, figurative language
+      (metaphor, simile, personification, synecdoche), tone and register control,
+      and developing a distinctive voice.
+
+      Sub-skills covered: varying sentence length for pacing, front-loading
+      important information, using strong verbs instead of adverb-verb
+      combinations, controlling formality level, writing with sensory detail,
+      balancing Latinate and Anglo-Saxon diction, and reading like a writer
+      (analyzing sentences in published work).
+
+      Drills to practice: (1) Sentence combining — take 5 short choppy sentences
+      and combine them into 2 fluid sentences. (2) Word replacement drill —
+      replace every adverb-verb pair with a single strong verb. (3) Imitation
+      exercise — copy the sentence structure of a favorite author for 10
+      sentences. (4) Readability scoring — run a passage through a readability
+      tool and revise to hit a target grade level. (5) 50-word story — tell a
+      complete story in exactly 50 words to practice economy.
+    benchmarks:
+      - level: beginner
+        criteria: "Varies sentence length within a paragraph (mix of short and long). Eliminates obvious wordiness (there is/it is constructions, redundant pairs). Uses concrete nouns and strong verbs more often than abstractions and weak verbs. Writes with a consistent tone across a 500-word piece."
+        metrics:
+          - "Average sentence length variation of at least 5 words between shortest and longest sentences in a paragraph"
+          - "Reduces word count of a 500-word draft by 10%+ through wordiness elimination alone"
+          - "Uses 'to be' verbs (is, was, were, are) in fewer than 30% of sentences"
+          - "Writes a 500-word piece where a peer reader correctly identifies the intended tone (formal, casual, humorous, etc.)"
+          - "Completes 5 sentence-combining exercises merging choppy sentences into fluid prose"
+        resources:
+          - title: "Purdue OWL — Sentence Variety"
+            url: "https://owl.purdue.edu/owl/general_writing/mechanics/sentence_fragments.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Improve Your Writing Style"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture 1: Introduction to Creative Writing"
+            url: "https://www.youtube.com/watch?v=-6HOdHEeosc"
+            type: "video"
+          - title: "Reedsy Blog — Show, Don't Tell"
+            url: "https://blog.reedsy.com/show-dont-tell/"
+            type: "article"
+        practice:
+          - "15 min: Take a paragraph you wrote and rewrite every 'to be' verb with a strong action verb"
+          - "10 min: Sentence combining — merge 5 sets of choppy sentences into fluid compound-complex sentences"
+          - "10 min: Write a 50-word story — complete narrative arc in exactly 50 words"
+        projects:
+          - "Revise a 500-word essay to reduce word count by 15% while preserving all meaning"
+          - "Write the same event (e.g., a rainstorm) in 3 different tones: formal, casual, and lyrical"
+        tips:
+          - "Cut 'very' and 'really' from your vocabulary — find the precise word instead: not 'very tired' but 'exhausted,' not 'really big' but 'massive'"
+          - "Short sentences punch. Long sentences flow and build rhythm. Alternate them deliberately."
+      - level: intermediate
+        criteria: "Uses figurative language (metaphor, simile) naturally without cliche. Controls pacing through sentence length — short sentences for tension, long for reflection. Matches diction to audience and purpose. Writes a recognizable personal voice across multiple pieces."
+        metrics:
+          - "Uses 3+ original (non-cliche) metaphors or similes per 1,000 words"
+          - "Readability score matches intended audience within 1 grade level (measured via Hemingway Editor or similar)"
+          - "A blind reader identifies 3 pieces as written by the same author based on voice alone"
+          - "Writes a 1,000-word piece with sentence lengths ranging from 3 to 35+ words intentionally"
+          - "Peer readers rate prose style 4+/5 on clarity and engagement"
+        resources:
+          - title: "Purdue OWL — Conciseness"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture 3: Worldbuilding and Style"
+            url: "https://www.youtube.com/watch?v=jXAcA_y3l6M"
+            type: "video"
+          - title: "Reedsy Blog — Voice in Writing"
+            url: "https://blog.reedsy.com/narrative-voice/"
+            type: "article"
+          - title: "Grammarly Blog — Figurative Language"
+            url: "https://www.grammarly.com/blog/rhetorical-devices/figurative-language/"
+            type: "article"
+        practice:
+          - "15 min: Imitation exercise — pick a paragraph from a favorite author and write 5 sentences mimicking their structure"
+          - "10 min: Cliche replacement — find 5 cliches in a draft and replace each with an original image"
+          - "10 min: Pacing exercise — write a 200-word action scene using only sentences under 10 words, then a 200-word reflective scene with sentences averaging 25+ words"
+        projects:
+          - "Write a 2,000-word personal essay and have 3 readers independently describe your voice in one sentence — aim for consistency"
+          - "Run 3 different pieces through the Hemingway Editor and revise each to hit a different target grade level (6th, 10th, college)"
+        tips:
+          - "Read your prose aloud and listen for rhythm — if you stumble, the reader will too; rewrite until it flows off the tongue"
+          - "Figurative language works best when the tenor and vehicle come from different sensory domains — a sound described as a color, an emotion described as a texture"
+      - level: advanced
+        criteria: "Shifts voice deliberately across genres (literary fiction, journalism, academic, marketing copy). Uses advanced rhetorical devices (anaphora, chiasmus, polysyndeton, asyndeton). Prose consistently praised by editors and peers for style. Analyzes and articulates why specific sentences work in published literature."
+        metrics:
+          - "Writes convincingly in 4+ distinct voices/registers in a portfolio exercise"
+          - "Uses 5+ advanced rhetorical devices naturally in a single 2,000-word piece"
+          - "Receives 'no style revisions needed' feedback from a professional editor on a 3,000-word piece"
+          - "Delivers a craft analysis of sentence-level technique in 3 published works (500+ words each)"
+        resources:
+          - title: "Reedsy Blog — Writing Styles and Techniques"
+            url: "https://blog.reedsy.com/writing-style/"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture on Prose and Style"
+            url: "https://www.youtube.com/watch?v=P0L5sJwOVKA"
+            type: "video"
+          - title: "Purdue OWL — Rhetorical Situation"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situation/index.html"
+            type: "article"
+        practice:
+          - "20 min: Write the same 200-word scene in 4 different voices — literary, journalistic, academic, and marketing"
+          - "15 min: Craft analysis — take a published paragraph and annotate every sentence-level technique (rhythm, diction, imagery, syntax)"
+          - "10 min: Rewrite a flat paragraph using 3 specific rhetorical devices (e.g., anaphora, polysyndeton, chiasmus)"
+        projects:
+          - "Build a portfolio of 4 writing samples in 4 distinct genres/voices, each 1,000+ words"
+          - "Write a 2,000-word craft essay analyzing sentence-level technique in a favorite author's work"
+        tips:
+          - "Study advertising copy — copywriters are masters of rhythm, economy, and impact at the sentence level because every word costs money"
+          - "The best prose is invisible — when style draws attention to itself rather than serving the content, it has become a problem"
+      - level: expert
+        criteria: "Recognized for a distinctive, influential prose style. Other writers study and imitate your sentence craft. Publishes craft essays or teaches style at a high level. Edits others' prose for style with transformative results."
+        metrics:
+          - "Published prose cited in craft discussions, writing courses, or 'best of' anthologies"
+          - "Style-edits a manuscript and the author reports transformative improvement in prose quality"
+          - "Teaches a style workshop or writes a craft essay that receives 4.8+/5.0 participant/reader rating"
+          - "Maintains a consistent, recognizable voice across 50,000+ words of published work"
+        resources:
+          - title: "Reedsy Blog — Famous Authors' Writing Styles"
+            url: "https://blog.reedsy.com/writing-style/"
+            type: "article"
+          - title: "Purdue OWL — Style Overview"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/conciseness/index.html"
+            type: "article"
+        practice:
+          - "30 min: Style-edit a peer's 2,000-word manuscript — rewrite weak sentences, annotate choices, and discuss"
+          - "20 min: Write a 500-word craft analysis of a single paragraph from a Pulitzer-winning work"
+        projects:
+          - "Publish a craft essay on prose style (1,500+ words) in a writing journal or blog with editorial acceptance"
+          - "Lead a style workshop for 10+ writers with structured exercises and post-session feedback collection"
+        tips:
+          - "Your style is not your tricks — it emerges from what you notice, what you value, and how you think; cultivate those, and style follows"
+    tags: ["style", "craft", "voice"]
+
+  # -- PARAGRAPH & ESSAY STRUCTURE -----------------------------------------------
+  - id: "creative-arts/writing/paragraph-essay-structure"
+    title: "Paragraph & Essay Structure"
+    description: >
+      Organizing ideas into coherent paragraphs and complete essays. Covers
+      topic sentences, supporting evidence, transitions, the five-paragraph
+      essay as a scaffold, thesis statements, introductions and conclusions,
+      outlining methods (linear, mind-map, reverse outlining), logical flow,
+      and structural patterns (chronological, compare-contrast, problem-solution,
+      cause-effect).
+
+      Sub-skills covered: writing clear topic sentences, using transitions
+      (however, moreover, consequently, in contrast), paragraph unity (one idea
+      per paragraph), essay-level coherence, hook writing for introductions,
+      thesis statement construction (arguable, specific, supportable), and
+      conclusion strategies beyond mere summary.
+
+      Drills to practice: (1) Reverse outlining — take a published essay and
+      create an outline from it to see its structure. (2) Topic sentence first —
+      write 5 topic sentences, then build paragraphs around each. (3) Transition
+      drill — connect 10 pairs of sentences using appropriate transitions.
+      (4) Thesis workshop — write 5 thesis statements and test each for
+      arguability, specificity, and scope.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes paragraphs with clear topic sentences and supporting details. Uses basic transitions between paragraphs. Constructs a 5-paragraph essay with introduction, body, and conclusion. Writes a thesis statement that is arguable and specific."
+        metrics:
+          - "Every paragraph in a 5-paragraph essay begins with an identifiable topic sentence"
+          - "Uses at least 3 different transition words/phrases across body paragraphs"
+          - "Thesis statement passes the 'so what?' test — a peer confirms it is arguable, not just factual"
+          - "Writes a coherent 500-word 5-paragraph essay in under 60 minutes"
+          - "Introduction includes a hook, context, and thesis in that order"
+        resources:
+          - title: "Purdue OWL — Essay Writing"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/index.html"
+            type: "article"
+          - title: "Purdue OWL — Developing a Thesis Statement"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/thesis_statement_tips.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Write a Thesis Statement"
+            url: "https://www.grammarly.com/blog/academic-writing/thesis-statement/"
+            type: "article"
+          - title: "Khan Academy — Writing Skills"
+            url: "https://www.khanacademy.org/humanities/grammar#the-writing-process"
+            type: "course"
+        practice:
+          - "15 min: Write 5 topic sentences on a chosen theme, then expand one into a full paragraph"
+          - "10 min: Transition drill — connect 10 pairs of unrelated sentences using transitions (however, moreover, consequently)"
+          - "10 min: Reverse outline a published op-ed — extract the thesis and topic sentence of each paragraph"
+        projects:
+          - "Write a 5-paragraph essay on a topic of your choice with a clear thesis, topic sentences, transitions, and a conclusion that goes beyond summary"
+          - "Reverse outline 3 published essays and compare their structural patterns"
+        tips:
+          - "Your thesis should be something someone could disagree with — if everyone would agree, it is not a thesis, it is a fact"
+          - "End each paragraph with a sentence that points toward the next paragraph — this creates flow without relying on clunky transition phrases"
+      - level: intermediate
+        criteria: "Moves beyond 5-paragraph structure to variable-length essays. Uses multiple organizational patterns (compare-contrast, problem-solution, cause-effect). Creates smooth transitions at paragraph and section levels. Writes introductions that hook and conclusions that resonate. Outlines before drafting."
+        metrics:
+          - "Writes a 2,000-word essay with 3+ structural sections beyond the 5-paragraph model"
+          - "A peer reader follows the argument without re-reading — rates logical flow 4+/5"
+          - "Uses at least 2 different organizational patterns in a single essay"
+          - "Creates a detailed outline before writing and follows it with fewer than 2 structural deviations"
+          - "Introduction hook engages 4/5 peer readers (surveyed)"
+        resources:
+          - title: "Purdue OWL — Paragraphs and Paragraphing"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/paragraphs_and_paragraphing/index.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Write an Outline"
+            url: "https://www.grammarly.com/blog/writing-tips/how-to-write-outline/"
+            type: "article"
+          - title: "Reedsy Blog — Story Structure Templates"
+            url: "https://blog.reedsy.com/guide/story-structure/"
+            type: "article"
+        practice:
+          - "20 min: Outline a 2,000-word essay using both a linear outline and a mind map, then compare which reveals better structure"
+          - "15 min: Write 3 different hooks for the same essay topic (anecdote, question, striking statistic)"
+          - "10 min: Rewrite a conclusion that merely summarizes into one that calls to action, poses a question, or offers a broader implication"
+        projects:
+          - "Write a 2,500-word compare-contrast essay with a clear structural framework and section headings"
+          - "Take a peer's disorganized draft and produce a reverse outline, then suggest a reorganization plan"
+        tips:
+          - "If you cannot summarize each paragraph in one sentence, the paragraph is doing too much — split it"
+          - "Strong conclusions do not introduce new evidence — they reframe the argument at a higher level of abstraction"
+      - level: advanced
+        criteria: "Structures long-form writing (5,000-10,000+ words) with chapters or major sections. Uses non-linear structures when appropriate (in medias res, braided essays, frame narratives). Adapts structure to genre conventions (academic papers, feature journalism, personal essays, white papers). Structure itself serves the argument or narrative."
+        metrics:
+          - "Writes a 5,000+ word piece with clear macro-structure rated 'excellent' by an editor"
+          - "Successfully uses a non-linear structure (braided essay, frame narrative) in a 3,000+ word piece"
+          - "Adapts the same argument into 3 different structural formats (academic paper, op-ed, personal essay)"
+          - "Receives editorial feedback noting structure as a strength on 3+ submissions"
+        resources:
+          - title: "Purdue OWL — Types of Outlines and Samples"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/developing_an_outline/types_of_outlines.html"
+            type: "article"
+          - title: "Reedsy Blog — How to Write a Book Outline"
+            url: "https://blog.reedsy.com/how-to-write-a-book-outline/"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture on Story Structure"
+            url: "https://www.youtube.com/watch?v=W1afbpM80b0"
+            type: "video"
+        practice:
+          - "30 min: Outline a 10,000-word piece using a chapter-level structure map with thesis, sub-arguments, and evidence mapped per section"
+          - "20 min: Rewrite the opening 500 words of an essay using in medias res structure instead of chronological"
+          - "15 min: Adapt a 1,000-word argument into three structural formats (academic, op-ed, personal essay)"
+        projects:
+          - "Write a 5,000-word braided essay interweaving 2-3 narrative threads with a unifying theme"
+          - "Structure and draft a 10,000-word report or long-form feature with chapter-level organization"
+        tips:
+          - "Outline at the sentence level for short pieces and at the paragraph level for long ones — the resolution of your outline should match the scale of the work"
+          - "Non-linear structure must earn its complexity — if chronological order serves the reader better, use it"
+      - level: expert
+        criteria: "Structures book-length work (50,000+ words) with coherent architecture across chapters. Innovates with form (essay-in-fragments, hermit crab essays, hybrid forms). Recognized by editors for structural mastery. Teaches essay or book structure at a high level."
+        metrics:
+          - "Completes a book-length manuscript (50,000+ words) with structure praised by an agent or editor"
+          - "Publishes a formally innovative essay or chapter in a recognized literary venue"
+          - "Teaches a structure-focused writing workshop rated 4.5+/5.0 by participants"
+          - "Structural choices in published work are cited or discussed in craft reviews"
+        resources:
+          - title: "Reedsy Blog — How to Structure a Novel"
+            url: "https://blog.reedsy.com/how-to-write-a-novel/"
+            type: "article"
+          - title: "Purdue OWL — Writing a Research Paper"
+            url: "https://owl.purdue.edu/owl/general_writing/common_writing_assignments/research_papers/index.html"
+            type: "article"
+        practice:
+          - "45 min: Map the chapter-level structure of a published book in your genre — identify turning points, pacing, and thematic progression"
+          - "30 min: Draft a structural outline for a book proposal with chapter summaries and narrative arc"
+        projects:
+          - "Complete the structural outline and first 3 chapters (15,000+ words) of a book manuscript"
+          - "Write and publish a formally experimental essay (hermit crab, braided, or hybrid form) in a literary journal"
+        tips:
+          - "A book's table of contents is a promise to the reader — make it one worth keeping"
+    tags: ["structure", "organization", "academic"]
+
+  # -- PERSUASIVE WRITING -------------------------------------------------------
+  - id: "creative-arts/writing/persuasive-writing"
+    title: "Persuasive Writing"
+    description: >
+      The art and craft of writing to convince. Covers argumentation,
+      rhetorical appeals (ethos, pathos, logos), evidence integration (quotes,
+      statistics, anecdotes, expert testimony), counterargument and rebuttal,
+      logical fallacy recognition and avoidance, persuasive essay structures
+      (classical oration, Rogerian argument, Toulmin model), and applied
+      persuasion (op-eds, grant proposals, cover letters, pitches).
+
+      Sub-skills covered: claim construction, warrant identification,
+      evidence evaluation (credibility, relevance, sufficiency), audience
+      analysis, concession and refutation, emotional appeal without
+      manipulation, call-to-action writing, and ethical persuasion.
+
+      Drills to practice: (1) Claim-evidence-warrant exercise — write 10
+      claims each supported by evidence and an explicit warrant. (2) Steel-man
+      drill — write the strongest version of an argument you disagree with.
+      (3) Fallacy identification — spot the fallacy in 10 sample arguments.
+      (4) Audience pivot — rewrite the same argument for 3 different audiences.
+    benchmarks:
+      - level: beginner
+        criteria: "Constructs a clear claim supported by evidence. Identifies the three rhetorical appeals (ethos, pathos, logos) in sample texts. Writes a basic persuasive essay with thesis, evidence, and conclusion. Recognizes at least 5 common logical fallacies (ad hominem, straw man, false dilemma, slippery slope, appeal to authority)."
+        metrics:
+          - "Writes a 500-word persuasive essay with a clear claim, 3+ pieces of evidence, and a conclusion"
+          - "Correctly identifies ethos, pathos, and logos in 8/10 sample passages"
+          - "Identifies 5/7 logical fallacies in a practice exercise"
+          - "Peer reader rates argument as 'convincing' or 'somewhat convincing' on 4/5 attempts"
+          - "Each body paragraph contains at least one piece of concrete evidence (statistic, quote, or example)"
+        resources:
+          - title: "Purdue OWL — Argumentative Essays"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/essay_writing/argumentative_essays.html"
+            type: "article"
+          - title: "Purdue OWL — Logical Fallacies"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/logic_in_argumentative_writing/fallacies.html"
+            type: "article"
+          - title: "Grammarly Blog — Persuasive Writing"
+            url: "https://www.grammarly.com/blog/writing-tips/persuasive-writing/"
+            type: "article"
+          - title: "Khan Academy — Rhetorical Appeals"
+            url: "https://www.khanacademy.org/humanities/grammar#the-writing-process"
+            type: "course"
+        practice:
+          - "15 min: Write 5 claim-evidence-warrant triads on a current topic"
+          - "10 min: Identify the rhetorical appeal (ethos, pathos, or logos) in 10 sample sentences"
+          - "10 min: Spot the fallacy in 10 sample arguments and name each one"
+        projects:
+          - "Write a 750-word persuasive letter to a local newspaper on an issue you care about"
+          - "Complete a logical fallacy identification exercise with 80%+ accuracy on 20 items"
+        tips:
+          - "Lead with your strongest evidence, not your weakest — first impressions anchor the reader's perception of your argument"
+          - "Every piece of evidence needs a warrant: explain WHY the evidence supports your claim, do not assume the connection is obvious"
+      - level: intermediate
+        criteria: "Addresses counterarguments with concession and rebuttal. Uses the Toulmin model (claim, grounds, warrant, backing, qualifier, rebuttal) consciously. Adapts persuasive strategy to different audiences. Integrates sources smoothly with signal phrases and proper attribution. Writes op-eds and persuasive letters that meet publication standards."
+        metrics:
+          - "Addresses at least 2 counterarguments with specific rebuttals in a 1,500-word essay"
+          - "Correctly maps a published argument onto the Toulmin model with all 6 components"
+          - "Rewrites the same argument for 3 different audiences with appropriate shifts in evidence and tone"
+          - "Submits an op-ed to a publication and receives acceptance or constructive editorial feedback"
+          - "Uses 5+ properly attributed sources in a persuasive essay with smooth signal phrases"
+        resources:
+          - title: "Purdue OWL — Toulmin Argument"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/toulmin_argument.html"
+            type: "article"
+          - title: "Purdue OWL — Establishing Arguments"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/establishing_arguments/index.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Write an Op-Ed"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "20 min: Steel-man an argument you disagree with — write 500 words presenting the strongest version of the opposing view"
+          - "15 min: Map a published op-ed onto the Toulmin model identifying claim, grounds, warrant, backing, qualifier, and rebuttal"
+          - "10 min: Rewrite a 300-word argument for 3 audiences (college students, retirees, policymakers)"
+        projects:
+          - "Write and submit a 750-word op-ed to a local or online publication"
+          - "Write a 2,000-word Rogerian argument on a polarizing topic, giving fair treatment to both sides"
+        tips:
+          - "The steel-man (strongest version of the opposing argument) is more persuasive than the straw man — readers trust you more when you engage the real counterargument"
+          - "Qualifiers (most, often, likely) are not weakness — they are precision and make your claims harder to dismiss"
+      - level: advanced
+        criteria: "Writes persuasive content in professional contexts (grant proposals, business cases, policy briefs). Employs advanced rhetorical strategies (Rogerian, Kairos, narrative persuasion). Builds complex arguments across 3,000+ words with layered evidence. Persuasion published or accepted in competitive venues."
+        metrics:
+          - "Writes a successful grant proposal or business case that secures funding or approval"
+          - "Publishes persuasive writing in a venue with an acceptance rate below 30%"
+          - "Builds a 3,000-word argument with 10+ sources synthesized into a cohesive case"
+          - "Receives 'highly persuasive' rating from 4/5 expert reviewers on a submitted piece"
+        resources:
+          - title: "Purdue OWL — Grant Writing"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/grant_writing/index.html"
+            type: "article"
+          - title: "Reedsy Blog — How to Write a Query Letter"
+            url: "https://blog.reedsy.com/how-to-write-a-query-letter/"
+            type: "article"
+          - title: "Purdue OWL — Rogerian Argument"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/historical_perspectives_on_argumentation/rogerian_argument.html"
+            type: "article"
+        practice:
+          - "30 min: Draft a 1-page executive summary for a grant proposal or business case with clear problem, solution, evidence, and ask"
+          - "20 min: Analyze the rhetorical strategy of a published policy brief — identify appeals, evidence types, and structural choices"
+        projects:
+          - "Write a complete grant proposal or business case (3,000+ words) and submit it for review"
+          - "Publish a persuasive essay or op-ed in a venue with editorial review"
+        tips:
+          - "In professional persuasion, credibility (ethos) is built by acknowledging limitations — never oversell; understate and overdeliver"
+      - level: expert
+        criteria: "Persuasion shapes public opinion or organizational decisions at scale. Recognized as an authority in argumentative writing. Teaches persuasive writing or rhetoric at a high level. Writes persuasion that influences policy, public discourse, or industry standards."
+        metrics:
+          - "Persuasive writing directly cited in a policy change, organizational decision, or public discourse"
+          - "Teaches rhetoric or persuasive writing to 50+ students with 4.5+/5.0 ratings"
+          - "Publishes in top-tier venues (national newspapers, major journals, or equivalent) consistently"
+          - "5+ pieces of published persuasive writing with measurable impact (policy citations, viral reach, or institutional adoption)"
+        resources:
+          - title: "Purdue OWL — Rhetorical Situation"
+            url: "https://owl.purdue.edu/owl/general_writing/academic_writing/rhetorical_situation/index.html"
+            type: "article"
+          - title: "Reedsy Blog — Writing a Book Proposal"
+            url: "https://blog.reedsy.com/learning/courses/publishing/how-to-write-a-book-proposal/"
+            type: "course"
+        practice:
+          - "30 min: Analyze 3 historically influential pieces of persuasive writing for rhetorical strategy — annotate and compare"
+          - "20 min: Draft a persuasive pitch memo for an idea that requires buy-in from multiple stakeholders"
+        projects:
+          - "Publish a sustained series (3+ pieces) of persuasive writing on a single issue in a recognized venue"
+          - "Develop and teach a persuasive writing module covering rhetoric, evidence, and structure"
+        tips:
+          - "The most persuasive writing does not feel like persuasion — it feels like an inevitable conclusion the reader reaches on their own"
+    tags: ["argumentation", "rhetoric", "professional"]
+
+  # -- CREATIVE WRITING & FICTION -----------------------------------------------
+  - id: "creative-arts/writing/creative-fiction"
+    title: "Creative Writing & Fiction"
+    description: >
+      Storytelling and imaginative writing across forms. Covers character
+      development (motivation, arc, dialogue, interiority), plot structure
+      (three-act, hero's journey, Fichtean curve, Kishotenketsu), setting and
+      worldbuilding, point of view (first, second, third limited, omniscient),
+      conflict types (person vs. person, self, society, nature, technology),
+      dialogue craft, scene construction, pacing, and revision specific to
+      fiction.
+
+      Sub-skills covered: showing vs. telling, writing vivid sensory scenes,
+      subtext in dialogue, flashback and time manipulation, unreliable
+      narrators, character voice differentiation, tension and suspense
+      building, and short story structure (in medias res, twist endings,
+      epiphany/Joycean revelation).
+
+      Drills to practice: (1) Character interview — write a 500-word Q&A with
+      a fictional character. (2) Scene in 3 POVs — write the same scene in
+      first, third limited, and omniscient. (3) Dialogue-only scene — convey
+      a full scene using only dialogue, no tags or description. (4) Flash
+      fiction — write a complete story in under 1,000 words.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes a complete short story (1,000-3,000 words) with beginning, middle, and end. Creates characters with clear motivations and at least one dimension of internal conflict. Uses a consistent point of view throughout. Shows rather than tells in at least some scenes. Writes dialogue that sounds distinct from narration."
+        metrics:
+          - "Completes a 1,500-word short story with a clear protagonist, conflict, and resolution"
+          - "A peer reader can identify the protagonist's motivation without being told directly"
+          - "Maintains consistent POV with zero unintentional shifts across the story"
+          - "Includes at least 3 'show don't tell' sensory details per 500 words"
+          - "Dialogue is present in at least 20% of the story and each character's speech is distinguishable"
+        resources:
+          - title: "Brandon Sanderson — Lecture 2: Plot and Character"
+            url: "https://www.youtube.com/watch?v=jrIogch5DBU"
+            type: "video"
+          - title: "Reedsy Blog — How to Write a Short Story"
+            url: "https://blog.reedsy.com/how-to-write-a-short-story/"
+            type: "article"
+          - title: "Reedsy Blog — Character Development Guide"
+            url: "https://blog.reedsy.com/guide/character-development/"
+            type: "article"
+          - title: "Purdue OWL — Writing a Short Story"
+            url: "https://owl.purdue.edu/owl/general_writing/index.html"
+            type: "article"
+        practice:
+          - "20 min: Character interview — write a 500-word Q&A with a fictional character exploring motivation, fears, and desires"
+          - "15 min: Write the same scene in 3 different POVs (first person, third limited, omniscient)"
+          - "15 min: Flash fiction — write a complete story in under 500 words"
+        projects:
+          - "Write and workshop a 2,000-word short story in a writing group, incorporating feedback into a second draft"
+          - "Complete 5 flash fiction pieces (under 1,000 words each) experimenting with different conflict types"
+        tips:
+          - "Your character's desire drives the plot — ask 'what does my character want?' and 'what prevents them from getting it?' before writing a single scene"
+          - "Dialogue should do double duty: advance the plot AND reveal character — if it does neither, cut it"
+      - level: intermediate
+        criteria: "Writes polished short stories (3,000-7,000 words) with subtext, layered characters, and earned endings. Uses dialogue with subtext — characters say one thing and mean another. Controls pacing through scene and summary. Experiments with structure (non-linear, frame stories, braided narratives). Submits work to literary magazines."
+        metrics:
+          - "Completes 5+ polished short stories of 3,000-7,000 words each"
+          - "Receives personalized rejection notes (not form rejections) from literary magazines"
+          - "A peer reader identifies subtext in dialogue in 3+ scenes per story"
+          - "Uses both scene (moment-by-moment) and summary (compressed time) intentionally in each story"
+          - "Experiments with at least 2 different narrative structures across the portfolio"
+        resources:
+          - title: "Brandon Sanderson — Lecture on Worldbuilding"
+            url: "https://www.youtube.com/watch?v=ATNvOk5rIJA"
+            type: "video"
+          - title: "Reedsy Blog — Writing Dialogue"
+            url: "https://blog.reedsy.com/how-to-write-dialogue/"
+            type: "article"
+          - title: "Reedsy Blog — Plot Structure Guide"
+            url: "https://blog.reedsy.com/guide/story-structure/"
+            type: "article"
+          - title: "Reedsy Blog — Submissions to Literary Magazines"
+            url: "https://blog.reedsy.com/literary-magazines/"
+            type: "article"
+        practice:
+          - "30 min: Write a dialogue-only scene (no tags, no description) that conveys character, conflict, and subtext"
+          - "20 min: Take a scene you have written and rewrite it — first as pure summary, then as a full moment-by-moment scene — compare pacing"
+          - "15 min: Write a scene with an unreliable narrator — include at least 3 clues that the narrator is not trustworthy"
+        projects:
+          - "Submit 3 short stories to literary magazines via Submittable and track responses"
+          - "Write a 5,000-word story using a non-linear structure (flashbacks, parallel timelines, or reverse chronology)"
+        tips:
+          - "The best dialogue reveals what characters are trying to hide — subtext is the gap between what is said and what is meant"
+          - "Personalized rejections are a milestone — they mean an editor read your full story and cared enough to respond; keep submitting"
+      - level: advanced
+        criteria: "Publishes fiction in recognized literary magazines or anthologies. Writes novel-length work (50,000+ words) with sustained narrative architecture. Creates complex characters with contradictions and growth arcs. Uses advanced techniques (unreliable narrator, metafiction, magical realism) with confidence. Workshops and mentors other writers."
+        metrics:
+          - "Publishes 3+ short stories in paying literary magazines or anthologies"
+          - "Completes a novel manuscript of 50,000+ words with coherent plot and character arcs"
+          - "Receives positive editorial feedback or acceptance from an agent on a novel query"
+          - "Mentors 3+ emerging fiction writers with documented improvement in their work"
+        resources:
+          - title: "Brandon Sanderson — Full BYU Lecture Series (Creative Writing 2020)"
+            url: "https://www.youtube.com/watch?v=-6HOdHEeosc&list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ"
+            type: "video"
+          - title: "Reedsy Blog — How to Get a Literary Agent"
+            url: "https://blog.reedsy.com/literary-agents/"
+            type: "article"
+          - title: "Reedsy Blog — How to Write a Novel"
+            url: "https://blog.reedsy.com/how-to-write-a-novel/"
+            type: "article"
+        practice:
+          - "60 min: Write 1,000 words of novel manuscript daily (target 50,000 words in 50 days)"
+          - "30 min: Workshop a peer's chapter — provide line-level and structural feedback"
+          - "20 min: Write a scene using an advanced technique (metafiction, magical realism, or second-person POV)"
+        projects:
+          - "Complete a novel first draft (50,000+ words) and revise through at least 2 full drafts"
+          - "Submit a novel query letter and first 3 chapters to 10 literary agents"
+        tips:
+          - "A novel is a marathon, not a sprint — set a daily word count goal (500-1,000 words) and protect that time ruthlessly"
+          - "Your first draft is you telling yourself the story; revision is you telling the reader — expect to cut 10-20% of a first draft"
+      - level: expert
+        criteria: "Publishes a novel or story collection with a recognized press. Wins or is shortlisted for fiction prizes. Recognized as a significant voice in literary or genre fiction. Teaches creative writing at the MFA or workshop level. Work reviewed in major publications."
+        metrics:
+          - "Publishes a novel or story collection with a recognized press (advance or royalty contract)"
+          - "Wins or is shortlisted for a fiction prize (Pushcart, O. Henry, National Book Award, genre equivalents)"
+          - "Work reviewed in 3+ major publications or review outlets"
+          - "Teaches creative fiction at the workshop or MFA level with 4.5+/5.0 student ratings"
+        resources:
+          - title: "Reedsy Blog — Traditional Publishing Guide"
+            url: "https://blog.reedsy.com/how-to-get-a-book-published/"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture on the Publishing Industry"
+            url: "https://www.youtube.com/watch?v=s9X4kfgnSbw"
+            type: "video"
+        practice:
+          - "60 min: Daily writing practice — 1,000+ words of new fiction or deep revision of existing work"
+          - "30 min: Read and annotate craft in a recently published story collection — study technique at the sentence and structure level"
+        projects:
+          - "Complete and publish a novel or story collection through the traditional publishing pipeline (agent, editor, press)"
+          - "Develop and teach a semester-length creative writing course with syllabus, exercises, and workshop structure"
+        tips:
+          - "At the expert level, your job is not just to write but to contribute to the conversation of literature — read widely, engage with other writers, and push the form forward"
+    tags: ["creative", "fiction", "storytelling"]
+
+  # -- EDITING & REVISION -------------------------------------------------------
+  - id: "creative-arts/writing/editing-revision"
+    title: "Editing & Revision"
+    description: >
+      Transforming rough drafts into polished work. Covers self-editing
+      strategies, revision layers (structural, paragraph, sentence, word-level),
+      developmental editing (big-picture story/argument), line editing (prose
+      quality), copy editing (grammar, consistency, style guide adherence),
+      proofreading (final error catch), giving and receiving feedback, and
+      the psychology of revision (killing your darlings, overcoming attachment).
+
+      Sub-skills covered: reading your own work with fresh eyes (cooling
+      period), reverse outlining for structural revision, reading aloud for
+      rhythm, search-and-destroy for personal tics (overused words, filler
+      phrases), tracking changes and editorial markup, editorial letter
+      writing, and workshop etiquette (Liz Lerman Critical Response Process).
+
+      Drills to practice: (1) Cooling period test — write a draft, wait 48
+      hours, then revise and count changes. (2) Search-and-destroy — use
+      Ctrl+F to find and evaluate every instance of your 5 most overused words.
+      (3) Reverse outline — outline your own completed draft to check structure.
+      (4) Read aloud — record yourself reading your draft and note every
+      stumble. (5) Cut 10% — take a finished piece and cut exactly 10% of
+      the word count.
+    benchmarks:
+      - level: beginner
+        criteria: "Revises a draft at least once before calling it finished. Catches and fixes surface errors (spelling, grammar, punctuation) in self-editing. Uses a cooling period between drafting and revising. Identifies the difference between revision (changing content and structure) and editing (polishing prose and fixing errors). Accepts feedback without defensiveness."
+        metrics:
+          - "Produces a revised second draft that differs from the first draft by at least 15% of sentences"
+          - "Self-edit catches 70%+ of surface errors (compared to a grammar checker baseline)"
+          - "Waits at least 24 hours between completing a draft and beginning revision"
+          - "Provides at least 3 specific, actionable feedback comments on a peer's 500-word draft"
+          - "Incorporates at least 2 pieces of peer feedback into a revised draft"
+        resources:
+          - title: "Purdue OWL — Proofreading"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/index.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Edit Your Own Writing"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+          - title: "Reedsy Blog — Self-Editing Tips"
+            url: "https://blog.reedsy.com/how-to-edit-a-book/"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture on Revision"
+            url: "https://www.youtube.com/watch?v=kLDdS-kB8S0"
+            type: "video"
+        practice:
+          - "15 min: Read your latest draft aloud and mark every place you stumble or lose the thread"
+          - "10 min: Search-and-destroy — use Ctrl+F for your 5 most overused words and evaluate each instance"
+          - "10 min: Reverse outline your own draft — write one sentence per paragraph to check structural logic"
+        projects:
+          - "Take a completed 1,000-word essay through 3 revision passes (structural, paragraph, sentence-level) and document changes at each stage"
+          - "Workshop a peer's essay and write 5 specific, actionable feedback comments with suggested revisions"
+        tips:
+          - "Never revise the same day you write — your brain fills in what it expects to see rather than what is actually on the page"
+          - "Revision is not punishment for a bad first draft — it is where writing actually happens; the first draft is just raw material"
+      - level: intermediate
+        criteria: "Revises in distinct passes (structure, then paragraphs, then sentences, then proofreading). Uses reverse outlining to diagnose structural problems. Cuts word count by 10-20% in revision without losing meaning. Gives substantive feedback that addresses structure and argument, not just surface errors. Tracks and eliminates personal writing tics."
+        metrics:
+          - "Reduces word count by 15%+ in revision while maintaining all key arguments/narrative elements"
+          - "Peer rates feedback as 'very helpful' (4+/5) on 8/10 feedback exchanges"
+          - "Identifies and reduces top 5 personal writing tics by 50%+ between first and final draft (measured by Ctrl+F count)"
+          - "Completes a 4-pass revision process (structure, paragraph, sentence, proofread) on a 2,000-word piece"
+          - "Reverse outline reveals zero structural redundancies in revised draft"
+        resources:
+          - title: "Reedsy Blog — Developmental Editing Guide"
+            url: "https://blog.reedsy.com/developmental-editing/"
+            type: "article"
+          - title: "Purdue OWL — Steps for Revising Your Paper"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/proofreading/steps_for_revising.html"
+            type: "article"
+          - title: "Grammarly Blog — Revision vs. Editing"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "30 min: Take a finished 2,000-word piece and cut exactly 10% of the word count — every sentence must earn its place"
+          - "20 min: Reverse outline your own essay, then reorganize any paragraphs that are out of logical order"
+          - "15 min: Write an editorial letter for a peer's 3,000-word story (big-picture structural feedback in 500 words)"
+        projects:
+          - "Revise a 3,000-word piece through 4 documented passes (structural, paragraph, sentence, proofread) with a changelog"
+          - "Write a developmental edit letter (1,000+ words) for a peer's 5,000-word manuscript addressing structure, character, and argument"
+        tips:
+          - "Print your draft and edit on paper — the medium shift forces your brain to see the text differently"
+          - "Kill your darlings means cutting your favorite sentence if it does not serve the piece — save it in a separate file for comfort, but cut it"
+      - level: advanced
+        criteria: "Performs professional-level developmental editing on others' manuscripts. Writes comprehensive editorial letters addressing structure, narrative arc, argument logic, and prose quality. Self-revises through 3+ full drafts with documented improvement. Edits for publication with consistent acceptance. Facilitates writing workshops using structured critique methods."
+        metrics:
+          - "Writes developmental edit letters that authors rate 'transformative' (4.5+/5.0) on 5+ manuscripts"
+          - "Self-revises a manuscript through 3+ full drafts with measurable improvement documented by beta readers"
+          - "Edited pieces accepted for publication at a rate of 50%+ of submissions"
+          - "Facilitates 10+ workshop sessions using structured critique methods (e.g., Liz Lerman Critical Response)"
+        resources:
+          - title: "Reedsy Blog — How to Find a Book Editor"
+            url: "https://blog.reedsy.com/find-a-book-editor/"
+            type: "article"
+          - title: "Purdue OWL — Writing Center Resources"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/index.html"
+            type: "article"
+          - title: "Reedsy Blog — Line Editing Guide"
+            url: "https://blog.reedsy.com/line-editing/"
+            type: "article"
+        practice:
+          - "60 min: Perform a full developmental edit on a peer's 5,000-word manuscript — structure, character arc, prose — and write a 1,000-word editorial letter"
+          - "30 min: Facilitate a structured workshop session for 4+ writers using the Liz Lerman Critical Response Process"
+        projects:
+          - "Serve as developmental editor for a peer's book manuscript (50,000+ words) and provide a comprehensive editorial report"
+          - "Self-revise a manuscript through 3 complete drafts and document measurable improvement between drafts using beta reader surveys"
+        tips:
+          - "The best editorial feedback is specific and actionable — not 'this does not work' but 'this scene loses tension because the protagonist gets what they want too easily; consider adding an obstacle at paragraph 3'"
+      - level: expert
+        criteria: "Works as a professional editor or is recognized for editorial excellence. Edits book-length manuscripts that win awards or critical acclaim. Trains other editors in revision methodology. Develops editing frameworks or workshops adopted by writing programs."
+        metrics:
+          - "Edits 5+ book-length manuscripts that achieve publication with recognized presses"
+          - "Edited works win or are shortlisted for literary awards"
+          - "Trains 10+ editors in revision methodology with documented improvement in their editorial quality"
+          - "Editing framework or workshop curriculum adopted by 2+ writing programs or organizations"
+        resources:
+          - title: "Reedsy Blog — Freelance Editing Career"
+            url: "https://blog.reedsy.com/freelance-book-editor/"
+            type: "article"
+          - title: "Purdue OWL — Professional Writing Resources"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html"
+            type: "article"
+        practice:
+          - "60 min: Edit a full chapter of a book manuscript and write a detailed editorial letter"
+          - "30 min: Mentor a junior editor through a sample edit, providing guidance on developmental vs. line-level feedback"
+        projects:
+          - "Build a professional editing portfolio with 5+ testimonials from published authors"
+          - "Develop an editing curriculum or workshop series and deliver it to 20+ participants"
+        tips:
+          - "A great editor makes the writer's voice stronger, not replaces it with their own — your job is to help the author become more fully themselves on the page"
+    tags: ["editing", "revision", "feedback"]
+
+  # -- RESEARCH & NONFICTION ----------------------------------------------------
+  - id: "creative-arts/writing/research-nonfiction"
+    title: "Research & Nonfiction"
+    description: >
+      Writing grounded in facts, evidence, and real-world investigation. Covers
+      research methods (primary and secondary sources, interviews, data
+      analysis), source evaluation (credibility, bias, relevance), citation
+      and attribution, nonfiction narrative forms (memoir, biography, journalism,
+      popular science, essay), fact-checking, interview technique for writers,
+      and ethical considerations in nonfiction (accuracy, privacy, consent).
+
+      Sub-skills covered: library and database research, evaluating sources
+      with the CRAAP test (Currency, Relevance, Authority, Accuracy, Purpose),
+      integrating quotes and paraphrases, avoiding plagiarism, narrative
+      nonfiction scene construction, investigative reporting basics, personal
+      essay vs. memoir distinction, and writing with authority on topics
+      requiring expertise.
+
+      Drills to practice: (1) Source evaluation — apply the CRAAP test to 10
+      sources on a topic. (2) Interview practice — conduct a 15-minute
+      informational interview and write up findings. (3) Fact-check drill —
+      verify 10 claims in a sample article. (4) Paraphrase vs. quote
+      exercise — practice integrating the same source material both ways.
+    benchmarks:
+      - level: beginner
+        criteria: "Conducts basic research using library databases and credible online sources. Evaluates sources for credibility using the CRAAP test. Integrates quotes and paraphrases with proper attribution. Writes a 1,000-word research-based essay with 5+ credible sources. Avoids plagiarism by citing all borrowed ideas."
+        metrics:
+          - "Evaluates 10 sources using the CRAAP test and correctly identifies 8/10 as credible or not"
+          - "Writes a 1,000-word research essay with 5+ sources and zero plagiarism flags"
+          - "Properly formats in-text citations and bibliography in one style (MLA, APA, or Chicago)"
+          - "Integrates at least 3 direct quotes with signal phrases and 3 paraphrases in a single essay"
+          - "Sources include at least 2 academic/peer-reviewed publications"
+        resources:
+          - title: "Purdue OWL — Research and Citation Resources"
+            url: "https://owl.purdue.edu/owl/research_and_citation/resources.html"
+            type: "article"
+          - title: "Purdue OWL — Avoiding Plagiarism"
+            url: "https://owl.purdue.edu/owl/research_and_citation/using_research/resources.html"
+            type: "article"
+          - title: "Purdue OWL — Evaluating Sources"
+            url: "https://owl.purdue.edu/owl/research_and_citation/conducting_research/evaluating_sources_of_information/index.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Avoid Plagiarism"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "15 min: Apply the CRAAP test to 5 sources found on a current news topic"
+          - "15 min: Paraphrase vs. quote exercise — integrate the same source passage as a direct quote and as a paraphrase"
+          - "10 min: Practice formatting 5 bibliography entries in APA or MLA style"
+        projects:
+          - "Write a 1,500-word research essay on a topic of interest with 7+ sources, proper citations, and a bibliography"
+          - "Create an annotated bibliography of 10 sources on a single topic with 100-word evaluations of each"
+        tips:
+          - "If you cannot find the author, publisher, or date of a source, it is probably not credible enough to cite — keep looking"
+          - "Paraphrasing is not just swapping synonyms — it means restating the idea in your own sentence structure; if your paraphrase follows the original's structure, it is too close"
+      - level: intermediate
+        criteria: "Conducts primary research (interviews, surveys, observation). Writes narrative nonfiction with scenes, characters, and arc. Synthesizes multiple sources into a cohesive argument rather than presenting them sequentially. Fact-checks claims in own and others' writing. Writes in multiple nonfiction forms (essay, article, review)."
+        metrics:
+          - "Conducts 3+ research interviews and integrates findings into a 2,000-word article"
+          - "Writes a 3,000-word narrative nonfiction piece with scenes, dialogue, and arc"
+          - "Fact-checks a 1,000-word article and identifies 90%+ of verifiable claims as accurate or inaccurate"
+          - "Publishes 2+ nonfiction articles in outlets with editorial review"
+          - "Synthesizes 10+ sources into a cohesive argument without source-by-source structure"
+        resources:
+          - title: "Purdue OWL — Conducting Primary Research"
+            url: "https://owl.purdue.edu/owl/research_and_citation/conducting_research/evaluating_sources_of_information/index.html"
+            type: "article"
+          - title: "Reedsy Blog — Creative Nonfiction Guide"
+            url: "https://blog.reedsy.com/creative-nonfiction/"
+            type: "article"
+          - title: "Grammarly Blog — How to Write a Research Paper"
+            url: "https://www.grammarly.com/blog/academic-writing/how-to-write-a-research-paper/"
+            type: "article"
+        practice:
+          - "30 min: Conduct a 15-minute informational interview with a subject matter expert and write up a 500-word summary of findings"
+          - "20 min: Fact-check a published article — verify 10 claims using primary sources"
+          - "15 min: Write a 500-word scene for a narrative nonfiction piece with sensory detail, dialogue, and a mini-arc"
+        projects:
+          - "Write a 3,000-word narrative nonfiction article based on 3+ interviews and publish it in an online outlet"
+          - "Write a 2,000-word book review that synthesizes the book's argument with 3+ external sources for context"
+        tips:
+          - "Narrative nonfiction uses fiction techniques (scene, dialogue, character) but demands journalistic accuracy — never invent dialogue or details; if you did not witness it or a source did not tell you, do not write it"
+      - level: advanced
+        criteria: "Writes book-length nonfiction (proposals, sample chapters, full manuscripts). Conducts deep investigative research with multiple source types. Publishes regularly in recognized nonfiction outlets. Handles sensitive subjects with ethical rigor (consent, accuracy, fairness). Writes compelling book proposals that secure agent or publisher interest."
+        metrics:
+          - "Completes a nonfiction book proposal with overview, chapter outline, and 2 sample chapters"
+          - "Secures agent representation or publisher interest based on a book proposal"
+          - "Publishes 5+ nonfiction pieces in paying outlets with editorial review"
+          - "Conducts research using 20+ sources including primary documents, interviews, and data analysis"
+        resources:
+          - title: "Reedsy Blog — How to Write a Book Proposal"
+            url: "https://blog.reedsy.com/learning/courses/publishing/how-to-write-a-book-proposal/"
+            type: "course"
+          - title: "Purdue OWL — Writing in the Social Sciences"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/writing_in_the_social_sciences/index.html"
+            type: "article"
+          - title: "Reedsy Blog — Memoir Writing Guide"
+            url: "https://blog.reedsy.com/how-to-write-a-memoir/"
+            type: "article"
+        practice:
+          - "60 min: Draft a chapter of nonfiction manuscript integrating primary research, interviews, and narrative technique"
+          - "30 min: Write a nonfiction book proposal chapter outline with 200-word summaries for each chapter"
+        projects:
+          - "Write a complete nonfiction book proposal and query 10 agents"
+          - "Publish a 5,000-word investigative or long-form nonfiction piece in a recognized outlet"
+        tips:
+          - "A great nonfiction book proposal sells the idea AND the author — show publishers why you are uniquely qualified to write this book"
+      - level: expert
+        criteria: "Publishes a nonfiction book with a recognized press. Work advances public understanding of a topic. Recognized as an authority in a nonfiction subject area. Teaches nonfiction writing or research methods at a high level."
+        metrics:
+          - "Publishes a nonfiction book with a recognized press"
+          - "Book receives 3+ reviews in major publications"
+          - "Recognized as a subject matter authority — invited to speak or comment based on published nonfiction"
+          - "Teaches nonfiction writing to 20+ students with 4.5+/5.0 ratings"
+        resources:
+          - title: "Reedsy Blog — Traditional Publishing Guide"
+            url: "https://blog.reedsy.com/how-to-get-a-book-published/"
+            type: "article"
+          - title: "Purdue OWL — Publishing Resources"
+            url: "https://owl.purdue.edu/owl/general_writing/the_writing_process/index.html"
+            type: "article"
+        practice:
+          - "60 min: Daily writing and research practice — 1,000+ words of manuscript or deep source analysis"
+          - "30 min: Read and annotate technique in a recently published nonfiction book in your subject area"
+        projects:
+          - "Complete and publish a nonfiction book through the traditional publishing pipeline"
+          - "Develop and deliver a nonfiction writing course covering research methods, narrative technique, and publication"
+        tips:
+          - "The best nonfiction makes the reader care about something they did not know they cared about — find the human story inside every topic"
+    tags: ["research", "nonfiction", "journalism"]
+
+  # -- BLOGGING & ONLINE WRITING ------------------------------------------------
+  - id: "creative-arts/writing/blogging-online"
+    title: "Blogging & Online Writing"
+    description: >
+      Writing for the web — blogs, newsletters, social media, and online
+      platforms. Covers digital writing conventions (scannable formatting,
+      headers, bullet points, short paragraphs), SEO writing fundamentals,
+      audience building, email newsletter craft, social media writing,
+      content strategy, headline writing, and platform-specific best practices
+      (Medium, Substack, WordPress, LinkedIn).
+
+      Sub-skills covered: writing compelling headlines and hooks, structuring
+      posts for readability (inverted pyramid, listicle, how-to), using images
+      and multimedia, call-to-action writing, email subject line optimization,
+      content calendar planning, analytics interpretation (page views, bounce
+      rate, time on page), and building a consistent publishing cadence.
+
+      Drills to practice: (1) Headline A/B testing — write 10 headlines for
+      the same article and test with peers. (2) Hook writing — write 5
+      different opening paragraphs for one post. (3) Format conversion — take
+      an academic essay and reformat it for web readability. (4) Analytics
+      review — analyze a blog post's performance metrics and identify
+      improvement areas.
+    benchmarks:
+      - level: beginner
+        criteria: "Publishes a blog post with proper web formatting (headers, short paragraphs, lists). Writes headlines that clearly communicate the post's value. Uses an inverted pyramid or similar web-friendly structure. Maintains a basic publishing cadence (at least 1 post per week for 4 weeks). Understands basic SEO concepts (keywords, meta descriptions, alt text)."
+        metrics:
+          - "Publishes 4 blog posts in 4 weeks on a personal blog or platform (Medium, WordPress, Substack)"
+          - "Average post length of 800-1,200 words with proper web formatting"
+          - "Headlines pass the 'would I click this?' test — 3/5 peers say yes for each headline"
+          - "Each post includes at least 3 subheadings, short paragraphs (under 4 sentences), and a CTA"
+          - "Correctly implements basic SEO (target keyword in title, first paragraph, and 2+ subheadings)"
+        resources:
+          - title: "Grammarly Blog — How to Start a Blog"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+          - title: "Reedsy Blog — Blogging for Writers"
+            url: "https://blog.reedsy.com/author-blog/"
+            type: "article"
+          - title: "Grammarly Blog — SEO Writing Tips"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "20 min: Write 10 headlines for a single blog post idea and rank them with a peer"
+          - "15 min: Take an academic paragraph and reformat it for the web — add subheadings, shorten sentences, add a bulleted list"
+          - "10 min: Write 3 different hooks (question, statistic, anecdote) for the same blog post"
+        projects:
+          - "Launch a blog and publish 4 posts in 4 weeks on a consistent schedule"
+          - "Rewrite a 2,000-word academic essay as a web-friendly blog post with proper formatting and SEO"
+        tips:
+          - "On the web, formatting IS content — a brilliantly written 1,000-word wall of text will be skipped; the same content with headers, short paragraphs, and bullet points will be read"
+          - "Write your headline first — if you cannot write a compelling headline, you have not found the angle yet"
+      - level: intermediate
+        criteria: "Builds a consistent audience (100+ subscribers or followers). Uses analytics to optimize content. Writes email newsletters with strong open and click rates. Experiments with different content formats (how-to, listicle, opinion, case study). Has a content strategy beyond ad hoc publishing."
+        metrics:
+          - "Grows to 100+ email subscribers or blog followers in 3 months"
+          - "Average email open rate of 30%+ and click rate of 5%+"
+          - "Publishes 2+ posts per week for 8 consecutive weeks"
+          - "Uses analytics to identify top-performing content and replicates its elements"
+          - "Maintains a content calendar with 4+ weeks of planned topics"
+        resources:
+          - title: "Grammarly Blog — Email Writing Tips"
+            url: "https://www.grammarly.com/blog/writing-tips/email-writing-tips/"
+            type: "article"
+          - title: "Reedsy Blog — Author Newsletter Guide"
+            url: "https://blog.reedsy.com/author-newsletter/"
+            type: "article"
+          - title: "Grammarly Blog — Content Strategy Tips"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "20 min: Analyze last month's blog analytics — identify the top post by time-on-page and reverse engineer what made it work"
+          - "15 min: Write an email newsletter with a hook, value section, and clear CTA — aim for under 500 words"
+          - "15 min: Plan a 4-week content calendar with topic, format, and target keyword for each post"
+        projects:
+          - "Build an email list to 100+ subscribers through consistent publishing and lead magnets"
+          - "Write a 12-post content series on a single topic and track growth in readership across the series"
+        tips:
+          - "Consistency beats virality — publishing on a reliable schedule builds trust and habit in your readers"
+          - "Your email subject line is your blog headline's harder-working sibling — spend 10% of your writing time on it"
+      - level: advanced
+        criteria: "Grows audience to 1,000+ subscribers/followers. Monetizes writing through paid content, sponsorships, or freelance contracts. Writes for major online publications (guest posts in outlets with large audiences). Has a recognizable online voice and brand. Content drives measurable business or personal outcomes."
+        metrics:
+          - "Grows to 1,000+ email subscribers or regular readers"
+          - "Earns income from writing (paid newsletter, freelance, sponsorships) totaling $1,000+ over 6 months"
+          - "Publishes guest posts in 3+ outlets with 10,000+ monthly readers"
+          - "Average post generates 50+ social shares or comments"
+          - "Content directly generates leads, opportunities, or partnerships (3+ documented instances)"
+        resources:
+          - title: "Reedsy Blog — Freelance Writing Guide"
+            url: "https://blog.reedsy.com/freelance-writing/"
+            type: "article"
+          - title: "Grammarly Blog — Freelance Writing Tips"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "30 min: Pitch a guest post to a publication with 10,000+ readers — research their guidelines and craft a tailored pitch"
+          - "20 min: Write a premium/paid newsletter issue with exclusive insights not available on the free blog"
+        projects:
+          - "Launch a paid newsletter tier and convert 50+ paying subscribers"
+          - "Publish guest posts in 5 outlets with 10,000+ monthly readers over 6 months"
+        tips:
+          - "Your best content is your best marketing — one deeply useful, well-promoted post outperforms 20 mediocre ones"
+      - level: expert
+        criteria: "Recognized as a leading voice in your niche. Audience of 10,000+ engaged readers. Writing generates significant income or career opportunities. Invited to speak, consult, or teach based on online writing. Content widely cited and shared in your field."
+        metrics:
+          - "10,000+ email subscribers or regular readers"
+          - "Writing generates $10,000+/year in direct or indirect income"
+          - "Content cited or referenced by 10+ other publications or writers in the field"
+          - "Invited to 3+ speaking engagements, panels, or consulting opportunities based on published writing"
+        resources:
+          - title: "Reedsy Blog — Author Platform Guide"
+            url: "https://blog.reedsy.com/author-platform/"
+            type: "article"
+          - title: "Grammarly Blog — Professional Writing"
+            url: "https://www.grammarly.com/blog/writing-tips/professional-writing/"
+            type: "article"
+        practice:
+          - "30 min: Strategic content planning — map your next quarter's content to business/career goals"
+          - "20 min: Write a premium piece that synthesizes original research or insight not available elsewhere"
+        projects:
+          - "Build and sustain a 10,000+ reader audience through consistent, high-quality online writing"
+          - "Develop a monetization strategy (paid newsletter, courses, consulting) that generates $10,000+/year"
+        tips:
+          - "At scale, your biggest risk is losing the authentic voice that built your audience — never let growth strategy override genuine craft"
+    tags: ["digital", "blogging", "audience"]
+
+  # -- TECHNICAL WRITING --------------------------------------------------------
+  - id: "creative-arts/writing/technical-writing"
+    title: "Technical Writing"
+    description: >
+      Clear, precise writing for specialized audiences. Covers documentation
+      types (user guides, API docs, tutorials, release notes, knowledge bases),
+      information architecture, audience analysis for technical content,
+      plain language principles, visual communication (diagrams, screenshots,
+      tables), style guides for technical writing (Microsoft, Google, Apple),
+      docs-as-code workflows, and usability testing for documentation.
+
+      Sub-skills covered: writing step-by-step procedures, error message
+      writing, UI text and microcopy, README and quickstart guides,
+      terminology management (glossaries, consistent naming), progressive
+      disclosure (layering information from simple to complex), and
+      accessibility in technical content.
+
+      Drills to practice: (1) Rewrite a jargon-heavy paragraph in plain
+      language. (2) Write step-by-step instructions for a common task and
+      have someone follow them exactly. (3) Create a glossary of 20 terms
+      for a technical domain. (4) Write an error message that tells the user
+      what went wrong, why, and how to fix it.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes clear step-by-step instructions that a novice can follow without confusion. Uses plain language (avoids unnecessary jargon or defines all technical terms). Structures documents with headings, numbered steps, and formatting appropriate to technical content. Writes a complete README for a simple project."
+        metrics:
+          - "A novice user completes a task by following written instructions without asking for clarification"
+          - "Readability score of Grade 8 or below on technical documentation (Hemingway Editor or similar)"
+          - "Writes a complete README with overview, installation steps, usage examples, and troubleshooting"
+          - "All technical terms are either defined in a glossary or explained in context on first use"
+          - "Step-by-step instructions use numbered lists, consistent verb forms, and one action per step"
+        resources:
+          - title: "Purdue OWL — Technical Writing"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/technical_reports_and_report_abstracts/index.html"
+            type: "article"
+          - title: "Google Developer Documentation Style Guide"
+            url: "https://developers.google.com/style"
+            type: "article"
+          - title: "Grammarly Blog — Technical Writing Tips"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "20 min: Write step-by-step instructions for a common task (e.g., setting up a new app) and have someone follow them exactly — note where they get confused"
+          - "15 min: Rewrite a jargon-heavy paragraph in plain language with a readability target of Grade 8"
+          - "10 min: Write 3 error messages that each include: what went wrong, why, and how to fix it"
+        projects:
+          - "Write a complete README for a personal project with overview, setup, usage, and FAQ sections"
+          - "Create a user guide (1,000+ words) for a tool or process you use daily, tested with a novice user"
+        tips:
+          - "One action per step — never combine two actions in a single numbered step or users will miss the second one"
+          - "Write error messages like a helpful colleague: say what happened, why, and what to do next — never just 'Error 403'"
+      - level: intermediate
+        criteria: "Writes multiple documentation types (tutorials, how-to guides, reference docs, explanations). Follows an established technical style guide (Google, Microsoft, or Apple). Uses information architecture to organize docs for different user journeys. Creates visual aids (diagrams, annotated screenshots, tables) to support text. Conducts basic usability testing on documentation."
+        metrics:
+          - "Produces documentation in 4 distinct formats (tutorial, how-to, reference, explanation) for a single product"
+          - "Documentation passes a style guide compliance check with 90%+ adherence"
+          - "Usability test shows 80%+ task completion rate for documentation-guided tasks"
+          - "Includes visual aids (3+ diagrams or annotated screenshots) in a documentation set"
+          - "Information architecture organizes 20+ pages into a logical navigation structure"
+        resources:
+          - title: "Google Developer Documentation Style Guide"
+            url: "https://developers.google.com/style"
+            type: "article"
+          - title: "Purdue OWL — Writing Instructions"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/technical_reports_and_report_abstracts/index.html"
+            type: "article"
+          - title: "Grammarly Blog — How to Write a How-To Guide"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "30 min: Write a tutorial (step-by-step learning path) and a how-to guide (task-focused) for the same feature — compare structure"
+          - "20 min: Create an information architecture map (site map) for a documentation set with 15+ pages"
+          - "15 min: Run a usability test — have 2 users attempt tasks using your documentation and note failure points"
+        projects:
+          - "Create a complete documentation set (tutorial, how-to, reference, FAQ) for a product or tool, tested with 3+ users"
+          - "Audit an existing documentation set for style guide compliance and produce a report with recommendations"
+        tips:
+          - "Tutorials teach (follow along), how-tos solve (do this), references inform (look it up), and explanations clarify (understand this) — most documentation fails because it mixes these modes"
+      - level: advanced
+        criteria: "Owns the documentation strategy for a product or organization. Implements docs-as-code workflows (version control, CI/CD for docs, automated testing). Writes API documentation from specs. Creates documentation standards and style guides for teams. Measures documentation effectiveness with metrics (support ticket deflection, search analytics, user satisfaction)."
+        metrics:
+          - "Implements a docs-as-code workflow with version control, automated builds, and review process"
+          - "Writes API documentation that developers rate 4+/5 for clarity and completeness"
+          - "Documentation reduces support tickets by 20%+ on documented topics (measured over 3 months)"
+          - "Creates a team style guide adopted by 5+ writers"
+          - "Manages a documentation set of 50+ pages with consistent quality and currency"
+        resources:
+          - title: "Google Developer Documentation Style Guide"
+            url: "https://developers.google.com/style"
+            type: "article"
+          - title: "Purdue OWL — Professional and Technical Writing"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html"
+            type: "article"
+        practice:
+          - "60 min: Write API endpoint documentation from a spec — include description, parameters, request/response examples, and error codes"
+          - "30 min: Set up a docs-as-code pipeline with Markdown source, automated build, and deployment"
+        projects:
+          - "Create an API documentation site for a product with 10+ endpoints, tested with developers"
+          - "Write a technical writing style guide for your team (2,000+ words) covering voice, formatting, and terminology standards"
+        tips:
+          - "The best documentation is measured by support tickets it prevents — track 'documentation-answerable' tickets before and after you ship docs"
+      - level: expert
+        criteria: "Recognized as a technical writing leader. Sets documentation standards for an organization or industry. Speaks or publishes on technical communication best practices. Mentors technical writers and builds documentation teams. Documentation systems scale to hundreds of pages with maintained quality."
+        metrics:
+          - "Documentation system scales to 200+ pages with consistent quality scores (90%+ user satisfaction)"
+          - "Speaks at 2+ conferences on technical writing or documentation strategy"
+          - "Mentors 5+ technical writers with documented career growth"
+          - "Documentation standards adopted organization-wide (100+ contributors)"
+        resources:
+          - title: "Purdue OWL — Professional Writing Overview"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html"
+            type: "article"
+          - title: "Google Developer Documentation Style Guide"
+            url: "https://developers.google.com/style"
+            type: "article"
+        practice:
+          - "60 min: Review and improve a documentation system's information architecture at scale (50+ page audit)"
+          - "30 min: Mentor a junior technical writer through a documentation review, providing craft-level feedback"
+        projects:
+          - "Build a documentation team and ship a documentation system of 100+ pages with style guide, review process, and metrics"
+          - "Present at a technical writing conference on documentation strategy, process, or tools"
+        tips:
+          - "At scale, documentation is a product — it needs its own roadmap, metrics, user research, and continuous improvement"
+    tags: ["technical", "documentation", "professional"]
+
+  # -- PUBLISHING & PORTFOLIO ---------------------------------------------------
+  - id: "creative-arts/writing/publishing-portfolio"
+    title: "Publishing & Portfolio"
+    description: >
+      Getting your writing into the world and building a body of work. Covers
+      the publishing landscape (traditional, indie/self, hybrid), query letters
+      and agent pitches, manuscript formatting, submitting to literary magazines,
+      building a writing portfolio, author platforms and branding, book
+      proposals, copyright and contracts basics, and career planning for
+      writers.
+
+      Sub-skills covered: query letter writing, synopsis writing, formatting
+      manuscripts per industry standards, understanding publishing contracts
+      (rights, royalties, advances), building an author website, social media
+      strategy for writers, literary citizenship (reviews, blurbs, community),
+      self-publishing mechanics (formatting, cover design, distribution),
+      and tracking submissions with tools like Submittable or Duotrope.
+
+      Drills to practice: (1) Query letter critique — write a query and get
+      3 peers to evaluate it. (2) Submission tracking — set up a spreadsheet
+      and submit to 5 venues. (3) Portfolio curation — select your 5 strongest
+      pieces and write 50-word introductions for each. (4) Bio writing —
+      write your author bio in 50, 100, and 200-word versions.
+    benchmarks:
+      - level: beginner
+        criteria: "Selects 3-5 strongest writing samples for a basic portfolio. Writes an author bio in 50 and 100-word versions. Understands the difference between traditional and self-publishing. Formats a manuscript per standard submission guidelines (double-spaced, 12pt Times New Roman, 1-inch margins). Submits 1+ piece to a literary magazine or contest."
+        metrics:
+          - "Assembles a portfolio of 5 writing samples with 50-word introductions for each"
+          - "Writes author bio in 50-word and 100-word versions that a peer rates as clear and professional"
+          - "Correctly formats a manuscript per William Shunn's standard manuscript format"
+          - "Submits at least 1 piece to a literary magazine or writing contest"
+          - "Sets up a submission tracking system (spreadsheet or tool) with venue, date, and status columns"
+        resources:
+          - title: "Reedsy Blog — How to Build an Author Platform"
+            url: "https://blog.reedsy.com/author-platform/"
+            type: "article"
+          - title: "Reedsy Blog — How to Submit to Literary Magazines"
+            url: "https://blog.reedsy.com/literary-magazines/"
+            type: "article"
+          - title: "Grammarly Blog — How to Write an Author Bio"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+          - title: "Purdue OWL — Professional Writing"
+            url: "https://owl.purdue.edu/owl/subject_specific_writing/professional_technical_writing/index.html"
+            type: "article"
+        practice:
+          - "20 min: Curate your 5 strongest writing samples and write a 50-word introduction for each explaining context and craft choices"
+          - "15 min: Write your author bio in 50, 100, and 200-word versions"
+          - "10 min: Format a manuscript page per standard submission guidelines and verify against a checklist"
+        projects:
+          - "Build a simple portfolio website or page with 5 writing samples, bio, and contact information"
+          - "Submit 3 pieces to literary magazines or contests and track responses in a submission log"
+        tips:
+          - "Your portfolio should show range and your best work — include your strongest piece first, not your most recent"
+          - "Simultaneous submissions (sending to multiple venues at once) are standard practice unless a venue explicitly prohibits them — always check guidelines"
+      - level: intermediate
+        criteria: "Writes effective query letters that generate agent or editor interest. Submits regularly (10+ submissions per year) and tracks responses. Builds an author website with portfolio, bio, and blog. Understands basic publishing contracts (rights, royalties, rights reversion). Has published in 3+ venues (magazines, anthologies, online publications)."
+        metrics:
+          - "Writes a query letter that receives a full manuscript request from an agent or editor"
+          - "Maintains 10+ active submissions at all times with systematic tracking"
+          - "Published in 3+ venues with bylines"
+          - "Author website includes portfolio, bio, blog, and contact — receives 100+ monthly visitors"
+          - "Can explain key contract terms (first serial rights, electronic rights, reversion clause) accurately"
+        resources:
+          - title: "Reedsy Blog — How to Write a Query Letter"
+            url: "https://blog.reedsy.com/how-to-write-a-query-letter/"
+            type: "article"
+          - title: "Reedsy Blog — Literary Agents Directory"
+            url: "https://blog.reedsy.com/literary-agents/"
+            type: "article"
+          - title: "Reedsy Blog — Publishing Contracts Guide"
+            url: "https://blog.reedsy.com/how-to-get-a-book-published/"
+            type: "article"
+          - title: "Grammarly Blog — Query Letter Tips"
+            url: "https://www.grammarly.com/blog/grammar/"
+            type: "article"
+        practice:
+          - "30 min: Draft a query letter for your best manuscript — include hook, synopsis, bio, and comparable titles"
+          - "20 min: Research 10 literary agents or editors who represent your genre and add them to your submission tracker"
+          - "15 min: Review your author website for completeness — portfolio, bio, blog, and contact info"
+        projects:
+          - "Write and send 10 query letters to agents or editors with personalized pitches"
+          - "Achieve 5+ published pieces across different venues within 12 months"
+        tips:
+          - "Query letters are sales documents, not essays — lead with the hook (what makes your story irresistible), include comps (similar successful books), and keep it under 400 words"
+          - "Track every submission with date sent, response date, and outcome — patterns in your data will tell you what is working"
+      - level: advanced
+        criteria: "Secures agent representation or a publishing deal. Publishes a book (traditional, indie, or hybrid). Has a robust platform with 500+ engaged followers across channels. Navigates contracts with informed negotiation. Builds literary community through reviews, blurbs, and mutual support."
+        metrics:
+          - "Secures a literary agent or signs a publishing contract"
+          - "Publishes a book (any format) that sells 500+ copies in year one"
+          - "Platform reaches 500+ engaged followers across website, newsletter, and social media"
+          - "Successfully negotiates 2+ contract terms (advance, rights, reversion) with informed reasoning"
+          - "Provides blurbs or reviews for 3+ fellow writers"
+        resources:
+          - title: "Reedsy Blog — Self-Publishing Guide"
+            url: "https://blog.reedsy.com/how-to-self-publish-a-book/"
+            type: "article"
+          - title: "Reedsy Blog — Book Marketing Guide"
+            url: "https://blog.reedsy.com/book-marketing/"
+            type: "article"
+          - title: "Brandon Sanderson — Lecture on the Business of Writing"
+            url: "https://www.youtube.com/watch?v=s9X4kfgnSbw"
+            type: "video"
+        practice:
+          - "30 min: Review and annotate a sample publishing contract — identify key terms and flag negotiation points"
+          - "20 min: Plan a book launch strategy with timeline, marketing channels, and outreach targets"
+        projects:
+          - "Publish a book (traditional or self-published) and execute a launch plan"
+          - "Build a literary community presence by reviewing 5 books, attending 3 literary events, and supporting 5 fellow writers publicly"
+        tips:
+          - "Publishing a book is a team effort — invest in professional editing, cover design, and marketing regardless of your publishing path"
+      - level: expert
+        criteria: "Multiple books published with consistent career growth. Recognized as a professional author with significant platform. Mentors emerging writers on publishing and career. Income from writing supports a professional lifestyle. Invited to teach, speak, or judge based on publishing track record."
+        metrics:
+          - "3+ books published with recognized presses or sustained indie success"
+          - "Cumulative book sales of 10,000+ copies across titles"
+          - "Writing income of $25,000+/year from books, advances, freelance, and related work"
+          - "Mentors 5+ emerging writers through the publishing process"
+          - "Invited to 5+ events as a featured author, panelist, or writing instructor"
+        resources:
+          - title: "Reedsy Blog — Author Career Guide"
+            url: "https://blog.reedsy.com/how-to-become-a-writer/"
+            type: "article"
+          - title: "Brandon Sanderson — BYU Creative Writing Lecture Series"
+            url: "https://www.youtube.com/watch?v=-6HOdHEeosc&list=PLSH_xM-KC3Zv-79sVZTTj-YA6IAqh8qeQ"
+            type: "video"
+        practice:
+          - "60 min: Daily writing practice — maintaining a professional output of 1,000+ words per day"
+          - "30 min: Strategic career planning — review publishing goals, income streams, and platform metrics quarterly"
+        projects:
+          - "Publish your third (or subsequent) book and execute a multi-channel marketing campaign"
+          - "Develop and deliver a mentorship program for 5+ emerging writers covering craft and publishing"
+        tips:
+          - "A sustainable writing career is built on multiple income streams — books, freelance, teaching, speaking, consulting — never rely on a single revenue source"
+    tags: ["publishing", "career", "portfolio"]
+
+relationships:
+  # -- Foundation layer ----------------------------------------------------------
+  - source: "creative-arts/writing/grammar-mechanics"
+    target: "creative-arts/writing/sentence-craft"
+    type: "enables"
+    note: "Clean mechanics are prerequisite to working on style — you must write correctly before you can write beautifully"
+
+  - source: "creative-arts/writing/grammar-mechanics"
+    target: "creative-arts/writing/paragraph-essay-structure"
+    type: "enables"
+    note: "Correct sentences are the building blocks of paragraphs and essays"
+
+  - source: "creative-arts/writing/grammar-mechanics"
+    target: "creative-arts/writing/editing-revision"
+    type: "enables"
+    note: "Understanding grammar rules is required to catch and fix mechanical errors in editing"
+
+  # -- Craft -> applied writing ------------------------------------------------
+  - source: "creative-arts/writing/sentence-craft"
+    target: "creative-arts/writing/creative-fiction"
+    type: "enables"
+    note: "Prose style and voice are essential tools for fiction writing"
+
+  - source: "creative-arts/writing/sentence-craft"
+    target: "creative-arts/writing/blogging-online"
+    type: "enables"
+    note: "Engaging online writing requires strong sentence-level craft and voice"
+
+  - source: "creative-arts/writing/paragraph-essay-structure"
+    target: "creative-arts/writing/persuasive-writing"
+    type: "enables"
+    note: "Argumentation requires essay-level organizational skills — thesis, evidence, and structure"
+
+  - source: "creative-arts/writing/paragraph-essay-structure"
+    target: "creative-arts/writing/research-nonfiction"
+    type: "enables"
+    note: "Research writing depends on strong organizational structure to present evidence coherently"
+
+  - source: "creative-arts/writing/paragraph-essay-structure"
+    target: "creative-arts/writing/technical-writing"
+    type: "enables"
+    note: "Technical documentation requires clear, logical document structure"
+
+  # -- Applied writing -> advanced skills --------------------------------------
+  - source: "creative-arts/writing/persuasive-writing"
+    target: "creative-arts/writing/blogging-online"
+    type: "complementary"
+    note: "Persuasive skills enhance blog writing through stronger hooks, CTAs, and audience engagement"
+
+  - source: "creative-arts/writing/research-nonfiction"
+    target: "creative-arts/writing/technical-writing"
+    type: "complementary"
+    note: "Research skills (source evaluation, evidence integration) strengthen technical documentation"
+
+  - source: "creative-arts/writing/creative-fiction"
+    target: "creative-arts/writing/research-nonfiction"
+    type: "complementary"
+    note: "Narrative fiction techniques (scene, character, dialogue) enhance narrative nonfiction"
+
+  # -- Editing connects to everything ------------------------------------------
+  - source: "creative-arts/writing/editing-revision"
+    target: "creative-arts/writing/creative-fiction"
+    type: "complementary"
+    note: "Fiction requires extensive revision — editing skills directly improve story quality"
+
+  - source: "creative-arts/writing/editing-revision"
+    target: "creative-arts/writing/publishing-portfolio"
+    type: "enables"
+    note: "Polished, well-edited work is required for successful publication"
+
+  # -- Publishing is the capstone -----------------------------------------------
+  - source: "creative-arts/writing/creative-fiction"
+    target: "creative-arts/writing/publishing-portfolio"
+    type: "enables"
+    note: "A body of creative work is needed to build a portfolio and pursue publication"
+
+  - source: "creative-arts/writing/blogging-online"
+    target: "creative-arts/writing/publishing-portfolio"
+    type: "enables"
+    note: "Online writing builds the platform and audience that support publishing success"
+
+  - source: "creative-arts/writing/research-nonfiction"
+    target: "creative-arts/writing/publishing-portfolio"
+    type: "enables"
+    note: "Published nonfiction contributes to a writer's portfolio and professional credibility"

@@ -1,0 +1,1266 @@
+# OpenSkillTree — Seed Skill Tree: Data Science & Analytics
+#
+# Domain:  Technology / Data Science / Analytics
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.2.0
+#
+# Benchmark levels reference: industry data science career ladder
+#   beginner     = Junior / Associate (can run basic queries, make charts, understand descriptive stats)
+#   intermediate = Mid-level DS (builds end-to-end analyses, owns dashboards, basic ML models)
+#   advanced     = Senior DS (designs ML pipelines, runs experiments, mentors juniors)
+#   expert       = Staff / Principal DS / leads teams, publishes research, sets org-wide standards
+#
+# Teaching order based on standard DS curricula (Andrew Ng, fast.ai, Georgia Tech OMSA,
+# UC Berkeley Data 8/100, Kaggle Learn):
+#   Statistics fundamentals -> data wrangling (SQL/Pandas) -> visualization ->
+#   EDA -> ML fundamentals -> feature engineering -> model evaluation ->
+#   deep learning -> A/B testing -> communication & storytelling.
+# Statistics and data wrangling are universally taught first. ML comes after
+# solid EDA skills. Communication is taught throughout but mastered last.
+
+tree:
+  id: "technology/data-science"
+  title: "Data Science & Analytics"
+  description: >
+    A complete skill map for data science and analytics — the discipline of
+    extracting knowledge and actionable insights from data. Covers statistics,
+    data wrangling, visualization, exploratory analysis, machine learning,
+    feature engineering, model evaluation, deep learning, experimentation,
+    and data storytelling needed to progress from first-time analyst to
+    leading a data science practice.
+  domain: "Technology"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
+  - id: "technology/data-science/statistics-fundamentals"
+    title: "Statistics Fundamentals"
+    description: >
+      The mathematical backbone of data science. Every data scientist must
+      understand probability, distributions, hypothesis testing, and
+      statistical inference before touching models. This node covers
+      descriptive statistics (mean, median, mode, variance, standard
+      deviation), probability theory (conditional probability, Bayes theorem),
+      common distributions (normal, binomial, Poisson, exponential),
+      hypothesis testing (t-tests, chi-square, p-values, confidence
+      intervals), correlation vs. causation, and the central limit theorem.
+
+      Sub-skills covered: descriptive statistics, probability rules,
+      conditional probability, Bayes theorem, random variables, expected
+      value, common distributions, sampling methods, hypothesis testing
+      framework, Type I and II errors, power analysis, confidence intervals,
+      correlation coefficients, linear regression basics.
+    benchmarks:
+      - level: beginner
+        criteria: "Calculates mean, median, mode, variance, and standard deviation by hand and in Python. Understands basic probability rules. Reads and interprets histograms and box plots. Can explain the difference between a population and a sample."
+        metrics:
+          - "Correctly computes descriptive statistics for 10 datasets with zero calculation errors"
+          - "Scores >=80% on a probability fundamentals quiz covering addition and multiplication rules"
+          - "Identifies the correct distribution type (normal, skewed, bimodal) from a histogram 9/10 times"
+          - "Explains population vs. sample, parameter vs. statistic correctly in a peer quiz"
+        resources:
+          - title: "Khan Academy - Statistics and Probability"
+            url: "https://www.khanacademy.org/math/statistics-probability"
+            type: "course"
+          - title: "StatQuest - Histograms Clearly Explained"
+            url: "https://www.youtube.com/watch?v=qBigTkBLU6g"
+            type: "video"
+          - title: "StatQuest - Mean, Variance, and Standard Deviation"
+            url: "https://www.youtube.com/watch?v=SzZ6GpcfoQY"
+            type: "video"
+          - title: "Kaggle Learn - Intro to Statistics (Pandas basics)"
+            url: "https://www.kaggle.com/learn/pandas"
+            type: "course"
+        practice:
+          - "15 min: Compute mean, median, mode, variance, and std dev by hand for 5 small datasets, then verify with NumPy"
+          - "20 min: Work through 10 probability word problems (coin flips, dice, cards) using addition and multiplication rules"
+          - "15 min: Generate 5 random samples from different distributions in Python and plot histograms to visually identify each"
+        projects:
+          - "Analyze a public dataset (e.g., Gapminder) by computing descriptive statistics for every numeric column and writing a 1-page summary of findings"
+          - "Build a Python script that simulates 10,000 coin flips and compares empirical vs. theoretical probabilities"
+        tips:
+          - "Do not skip the math. Every ML algorithm is built on statistics. If you cannot explain a p-value, you cannot explain why your model works."
+          - "Use NumPy and SciPy to verify hand calculations, but always compute by hand first to build intuition."
+      - level: intermediate
+        criteria: "Performs and interprets hypothesis tests (t-test, chi-square, ANOVA). Constructs and interprets confidence intervals. Understands Type I/II errors and statistical power. Applies Bayes theorem to real problems. Uses correlation and basic regression."
+        metrics:
+          - "Correctly selects the right statistical test for 9/10 scenario-based questions"
+          - "Constructs 95% confidence intervals that contain the true parameter in simulated experiments >=93% of the time"
+          - "Explains Type I error, Type II error, and power with correct definitions and a concrete example"
+          - "Runs a complete hypothesis test (state hypotheses, choose test, compute statistic, interpret p-value) in under 15 minutes"
+        resources:
+          - title: "StatQuest - P-Values Clearly Explained"
+            url: "https://www.youtube.com/watch?v=vemZtEM63GY"
+            type: "video"
+          - title: "StatQuest - Hypothesis Testing and The Null Hypothesis"
+            url: "https://www.youtube.com/watch?v=0oc49DyA3hU"
+            type: "video"
+          - title: "Khan Academy - Significance Tests (Hypothesis Testing)"
+            url: "https://www.khanacademy.org/math/statistics-probability/significance-tests-one-sample"
+            type: "course"
+          - title: "Python Data Science Handbook - Chapter on Statistics"
+            url: "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            type: "book"
+        practice:
+          - "20 min: Run t-tests on 5 paired datasets in SciPy and interpret the results (reject/fail to reject, effect size)"
+          - "15 min: Calculate confidence intervals for sample means at 90%, 95%, and 99% levels and observe how width changes"
+          - "20 min: Work through 5 Bayes theorem problems (disease testing, spam filtering) with prior and posterior calculations"
+        projects:
+          - "Take a Kaggle dataset and formulate 3 hypotheses, run the appropriate statistical tests, and write up results with correct interpretation of p-values and confidence intervals"
+          - "Build a simulation in Python that demonstrates Type I error rates at different alpha levels across 10,000 trials"
+        tips:
+          - "A statistically significant result is not the same as a practically significant result. Always report effect sizes alongside p-values."
+          - "Never say a hypothesis test 'proves' something. You either reject or fail to reject the null hypothesis."
+      - level: advanced
+        criteria: "Applies Bayesian inference and MCMC methods. Uses bootstrapping and permutation tests. Understands multiple testing corrections (Bonferroni, FDR). Designs power analyses for sample size determination. Comfortable with maximum likelihood estimation."
+        metrics:
+          - "Implements a Bayesian model with PyMC or Stan that converges and produces meaningful posterior distributions"
+          - "Correctly applies Bonferroni or Benjamini-Hochberg correction in a multiple comparisons scenario"
+          - "Designs a power analysis that determines the required sample size for a given effect size and alpha within 10% of the analytical solution"
+          - "Bootstrap confidence intervals agree with parametric intervals within 5% on 3 test datasets"
+        resources:
+          - title: "Statistical Rethinking - Richard McElreath (YouTube lectures)"
+            url: "https://www.youtube.com/playlist?list=PLDcUM9US4XdPz-KxHM4XHt7uUVGWWVSus"
+            type: "video"
+          - title: "Kaggle Learn - Intro to Machine Learning (statistics context)"
+            url: "https://www.kaggle.com/learn/intro-to-machine-learning"
+            type: "course"
+          - title: "3Blue1Brown - Bayes Theorem"
+            url: "https://www.youtube.com/watch?v=HZGCoVF3YvM"
+            type: "video"
+        practice:
+          - "30 min: Implement a bootstrap confidence interval for the median of a skewed dataset and compare to the parametric approach"
+          - "30 min: Build a simple Bayesian A/B test using conjugate priors (Beta-Binomial) and plot the posterior distributions"
+        projects:
+          - "Conduct a full Bayesian analysis of a Kaggle dataset using PyMC: define priors, fit the model, check convergence (R-hat, trace plots), and interpret posteriors"
+          - "Run a permutation test on a real dataset and compare results to the parametric t-test"
+        tips:
+          - "Bayesian methods shine when you have strong prior information or small samples. Do not use them just because they are trendy."
+          - "When running many hypothesis tests, always correct for multiple comparisons. Uncorrected analyses produce false discoveries."
+      - level: expert
+        criteria: "Designs novel statistical methodologies. Reviews and critiques published research for statistical validity. Teaches statistics to non-technical stakeholders. Understands causal inference frameworks (potential outcomes, do-calculus). Publishes original statistical analyses."
+        metrics:
+          - "Identifies at least 3 statistical flaws in a published paper's methodology during a journal-club review"
+          - "Designs and documents a causal inference analysis using DAGs and the potential outcomes framework"
+          - "Teaches a statistics workshop to non-technical colleagues with >=4.5/5 satisfaction rating"
+          - "Publishes or presents at least 1 original statistical analysis per year"
+        resources:
+          - title: "Causal Inference: The Mixtape - Scott Cunningham"
+            url: "https://mixtape.scunning.com/"
+            type: "book"
+          - title: "StatQuest - Complete Playlist"
+            url: "https://www.youtube.com/c/joshstarmer"
+            type: "video"
+        practice:
+          - "60 min: Read a published research paper and write a critique of its statistical methodology, identifying at least 2 strengths and 2 weaknesses"
+          - "45 min: Draw a causal DAG for a business problem and identify confounders, mediators, and colliders"
+        projects:
+          - "Design and execute a causal inference study using observational data: draw the DAG, identify adjustment sets, apply propensity score matching or instrumental variables, and write a full report"
+        tips:
+          - "At this level, your job is to prevent bad statistics from reaching production. Be the person who asks 'what is the causal mechanism?' before anyone runs a regression."
+    tags: ["foundation", "math", "statistics"]
+
+  - id: "technology/data-science/data-wrangling"
+    title: "Data Wrangling (Pandas & SQL)"
+    description: >
+      The workhorse skill of data science. 80% of a data scientist's time is
+      spent cleaning, transforming, and preparing data. This node covers SQL
+      for querying relational databases and Pandas for in-memory data
+      manipulation in Python.
+
+      Sub-skills covered: SQL SELECT/WHERE/GROUP BY/JOIN/subqueries/window
+      functions, Pandas DataFrames (indexing, filtering, groupby, merge, pivot,
+      melt), handling missing data (detection, imputation strategies), data
+      type conversions, string operations, date/time parsing, reshaping data
+      (wide to long and back), working with CSV/JSON/Parquet files, and
+      building reproducible data pipelines.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes basic SQL queries (SELECT, WHERE, GROUP BY, ORDER BY, simple JOINs). Loads CSV files into Pandas DataFrames. Filters rows, selects columns, and performs basic aggregations. Handles obvious missing values (dropna, fillna)."
+        metrics:
+          - "Completes 20 basic SQL exercises on a practice platform with >=85% accuracy"
+          - "Loads, filters, and aggregates a CSV dataset in Pandas in under 10 minutes"
+          - "Identifies and handles missing values in a dataset using at least 2 strategies (drop and fill)"
+          - "Writes a GROUP BY query that correctly computes aggregate statistics for 3 different grouping columns"
+        resources:
+          - title: "Kaggle Learn - Intro to SQL"
+            url: "https://www.kaggle.com/learn/intro-to-sql"
+            type: "course"
+          - title: "Kaggle Learn - Pandas"
+            url: "https://www.kaggle.com/learn/pandas"
+            type: "course"
+          - title: "Python Data Science Handbook - Data Manipulation with Pandas"
+            url: "https://jakevdp.github.io/PythonDataScienceHandbook/03.00-introduction-to-pandas.html"
+            type: "book"
+          - title: "Mode Analytics - SQL Tutorial for Data Analysis"
+            url: "https://sqlbolt.com/"
+            type: "course"
+        practice:
+          - "20 min: Write 10 SQL queries of increasing difficulty on a sample database (filter, aggregate, sort, join two tables)"
+          - "20 min: Load a messy CSV into Pandas and practice: check dtypes, find nulls with .isnull().sum(), filter rows, select columns"
+          - "15 min: Practice groupby operations — compute mean, count, and sum for 3 different categorical columns"
+        projects:
+          - "Download a Kaggle dataset (e.g., Titanic), load it into Pandas, clean it (handle missing values, fix dtypes), and compute 5 summary statistics per group"
+          - "Write SQL queries to answer 10 business questions from a sample e-commerce database (top products, revenue by region, monthly trends)"
+        tips:
+          - "Always run df.info() and df.describe() first when you load a new dataset. These two commands tell you 80% of what you need to know about the data."
+          - "Never fill missing values without understanding WHY they are missing. Dropping is often better than filling with the mean."
+      - level: intermediate
+        criteria: "Writes complex SQL with multi-table JOINs, subqueries, and CTEs. Uses Pandas merge, pivot_table, melt, and apply. Implements systematic missing data strategies. Builds reusable data cleaning functions."
+        metrics:
+          - "Writes a 3+ table JOIN query with a CTE that produces correct results on first attempt"
+          - "Reshapes a dataset from wide to long format and back using melt/pivot_table without errors"
+          - "Builds a reusable data cleaning pipeline (as a function) that handles nulls, dtypes, and outliers for a dataset in under 30 minutes"
+          - "Completes Kaggle Advanced SQL micro-course with all exercises passing"
+        resources:
+          - title: "Kaggle Learn - Advanced SQL"
+            url: "https://www.kaggle.com/learn/advanced-sql"
+            type: "course"
+          - title: "Pandas Documentation - Merge, Join, Concatenate"
+            url: "https://pandas.pydata.org/docs/user_guide/merging.html"
+            type: "article"
+          - title: "Python Data Science Handbook - Combining Datasets"
+            url: "https://jakevdp.github.io/PythonDataScienceHandbook/03.06-concat-and-append.html"
+            type: "book"
+        practice:
+          - "25 min: Write 5 SQL queries using CTEs and window functions (running totals, rank, lag/lead)"
+          - "20 min: Take a wide dataset and reshape it to long format with melt, then back to wide with pivot_table"
+          - "20 min: Build a data cleaning function that takes a raw DataFrame and returns a clean one (handle nulls, convert dtypes, remove duplicates)"
+        projects:
+          - "Build an end-to-end data pipeline in Pandas that ingests 3 CSV files, joins them, cleans the result, and outputs a single analysis-ready Parquet file"
+          - "Write a SQL analysis report using CTEs and window functions to compute month-over-month growth, rolling averages, and customer cohort retention"
+        tips:
+          - "Use CTEs (WITH clauses) instead of nested subqueries. They make your SQL readable and debuggable."
+          - "Avoid chaining too many Pandas operations in one line. Break them into steps with descriptive variable names for readability and debugging."
+      - level: advanced
+        criteria: "Optimizes SQL queries for performance (indexing, EXPLAIN plans). Uses Pandas efficiently (vectorized operations, avoiding apply). Works with large datasets using chunking or Dask/Polars. Builds production data pipelines with error handling and logging."
+        metrics:
+          - "Reduces a slow SQL query runtime by >=50% through query optimization (indexing, rewriting)"
+          - "Refactors a Pandas pipeline to eliminate all row-wise apply() calls in favor of vectorized operations"
+          - "Processes a 10GB+ dataset without running out of memory using chunking or out-of-core tools"
+          - "Builds a data pipeline with try/except error handling, logging, and data validation checks"
+        resources:
+          - title: "Polars Documentation - Getting Started"
+            url: "https://docs.pola.rs/user-guide/getting-started/"
+            type: "article"
+          - title: "Pandas Documentation - Enhancing Performance"
+            url: "https://pandas.pydata.org/docs/user_guide/enhancingperf.html"
+            type: "article"
+          - title: "Use the Index, Luke - SQL Performance"
+            url: "https://use-the-index-luke.com/"
+            type: "book"
+        practice:
+          - "30 min: Take a slow Pandas pipeline and profile it with %%timeit, then optimize by replacing apply() with vectorized operations"
+          - "30 min: Run EXPLAIN on 5 slow SQL queries and identify missing indexes or inefficient joins"
+        projects:
+          - "Build a production-grade ETL pipeline that extracts from an API, transforms with Pandas, loads to a database, and includes logging, error handling, and data quality checks"
+        tips:
+          - "If your Pandas code uses .apply() with a lambda on every row, you are almost certainly doing it wrong. Look for a vectorized alternative first."
+      - level: expert
+        criteria: "Designs data architectures and warehouse schemas. Evaluates and selects data tools for the organization. Mentors teams on data engineering best practices. Contributes to open-source data tools."
+        metrics:
+          - "Designs a data warehouse schema (star/snowflake) that serves 5+ downstream use cases efficiently"
+          - "Evaluates 3+ data processing frameworks (Pandas, Polars, Spark, DuckDB) with benchmarks for a team's use case and recommends one with written justification"
+          - "Mentors 2+ junior data scientists on SQL and Pandas best practices over a quarter"
+        resources:
+          - title: "The Data Warehouse Toolkit - Ralph Kimball (reference)"
+            url: "https://www.kimballgroup.com/data-warehouse-business-intelligence-resources/kimball-techniques/dimensional-modeling-techniques/"
+            type: "article"
+          - title: "DuckDB Documentation"
+            url: "https://duckdb.org/docs/"
+            type: "article"
+        practice:
+          - "60 min: Design a star schema for a business domain you know well, documenting fact and dimension tables with relationships"
+        projects:
+          - "Lead a data infrastructure migration (e.g., Pandas to Polars or flat files to a warehouse) for a team project, including benchmarks, migration plan, and documentation"
+        tips:
+          - "The best data tool is the one your team can maintain. Do not introduce Spark when DuckDB on a single machine handles your volume."
+    tags: ["foundation", "sql", "pandas", "data-engineering"]
+
+  # ── VISUALIZATION & EDA ────────────────────────────────────────────────────
+  - id: "technology/data-science/data-visualization"
+    title: "Data Visualization"
+    description: >
+      The art and science of representing data visually. Good visualizations
+      reveal patterns, communicate findings, and drive decisions. Bad ones
+      mislead and confuse. This node covers chart selection, design principles,
+      and tools (Matplotlib, Seaborn, Plotly).
+
+      Sub-skills covered: chart type selection (bar, line, scatter, histogram,
+      box plot, heatmap, violin), Matplotlib fundamentals (figure, axes,
+      subplots), Seaborn for statistical graphics, Plotly for interactive
+      charts, design principles (data-ink ratio, color theory, accessibility),
+      multi-panel layouts, annotation and labeling, and avoiding common
+      visualization pitfalls (truncated axes, misleading scales, chartjunk).
+    benchmarks:
+      - level: beginner
+        criteria: "Creates basic charts (bar, line, scatter, histogram) using Matplotlib or Seaborn. Labels axes, adds titles, and chooses appropriate chart types for the data. Reads and interprets common chart types correctly."
+        metrics:
+          - "Creates 5 different chart types from a dataset with correct axis labels, titles, and legends"
+          - "Selects the appropriate chart type for a given data question 8/10 times"
+          - "All charts have labeled axes, a title, and readable font sizes"
+          - "Can interpret a box plot correctly — identifies median, quartiles, and outliers"
+        resources:
+          - title: "Kaggle Learn - Data Visualization"
+            url: "https://www.kaggle.com/learn/data-visualization"
+            type: "course"
+          - title: "Python Data Science Handbook - Visualization with Matplotlib"
+            url: "https://jakevdp.github.io/PythonDataScienceHandbook/04.00-introduction-to-matplotlib.html"
+            type: "book"
+          - title: "Seaborn Tutorial - Official Documentation"
+            url: "https://seaborn.pydata.org/tutorial.html"
+            type: "article"
+        practice:
+          - "20 min: Create a bar chart, line chart, scatter plot, histogram, and box plot from a single dataset using Matplotlib"
+          - "15 min: Recreate the same 5 charts using Seaborn and compare the code length and visual quality"
+          - "10 min: Take 5 poorly labeled charts and fix them — add titles, axis labels, legends, and appropriate colors"
+        projects:
+          - "Create a visual report of a Kaggle dataset with at least 8 charts, each answering a specific question about the data"
+          - "Build a chart selection guide: for each of 10 common data questions, show the right chart type with an example"
+        tips:
+          - "Every chart must answer a specific question. If you cannot state the question in one sentence, the chart is probably unnecessary."
+          - "Use Seaborn for statistical exploration and Matplotlib for fine-grained customization. Start with Seaborn, drop to Matplotlib when you need pixel-level control."
+      - level: intermediate
+        criteria: "Creates multi-panel figures and faceted plots. Uses color effectively (sequential, diverging, categorical palettes). Builds interactive visualizations with Plotly. Applies Tufte's data-ink ratio principles."
+        metrics:
+          - "Creates a 4+ panel figure with shared axes and a coherent color scheme using Matplotlib subplots or Seaborn FacetGrid"
+          - "Builds an interactive dashboard-style visualization with Plotly containing at least 3 linked charts"
+          - "Peer review: zero instances of chartjunk (unnecessary gridlines, 3D effects, decorations) in last 5 visualizations"
+          - "Uses colorblind-friendly palettes in all visualizations"
+        resources:
+          - title: "Plotly Python Documentation - Getting Started"
+            url: "https://plotly.com/python/getting-started/"
+            type: "article"
+          - title: "Seaborn - FacetGrid and PairGrid Tutorial"
+            url: "https://seaborn.pydata.org/tutorial/axis_grids.html"
+            type: "article"
+          - title: "Fundamentals of Data Visualization - Claus Wilke (free online)"
+            url: "https://clauswilke.com/dataviz/"
+            type: "book"
+        practice:
+          - "25 min: Build a 2x2 subplot figure where each panel shows a different view of the same dataset, with shared axes and a single legend"
+          - "20 min: Create an interactive Plotly scatter plot with hover tooltips, color coding, and size mapping"
+          - "15 min: Take 3 charts with poor color choices and redesign them using sequential, diverging, and categorical palettes"
+        projects:
+          - "Build an interactive Plotly dashboard for a Kaggle competition dataset that lets users filter by category and see distributions, trends, and correlations"
+        tips:
+          - "Colorblind-friendliness is not optional. 8% of men are color vision deficient. Use viridis, cividis, or a tested palette."
+          - "Remove everything from a chart that does not encode data. Gridlines, background colors, and borders are almost never needed."
+      - level: advanced
+        criteria: "Designs publication-quality figures. Builds custom Matplotlib themes and reusable chart functions. Creates complex visualizations (network graphs, geospatial maps, animated charts). Tells a visual story through a sequence of charts."
+        metrics:
+          - "Creates a figure accepted for publication or an executive presentation without revision requests on the visual design"
+          - "Builds a reusable chart library with a consistent theme used across 5+ analyses"
+          - "Creates a geospatial visualization or network graph that correctly represents the underlying data structure"
+        resources:
+          - title: "Matplotlib - Customizing Styles and Themes"
+            url: "https://matplotlib.org/stable/gallery/style_sheets/style_sheets_reference.html"
+            type: "article"
+          - title: "Plotly - Animated Visualizations"
+            url: "https://plotly.com/python/animations/"
+            type: "article"
+        practice:
+          - "30 min: Create a custom Matplotlib style sheet (colors, fonts, line widths) and apply it to 5 different chart types"
+          - "30 min: Build a Gapminder-style animated bubble chart showing a metric evolving over time"
+        projects:
+          - "Create a portfolio of 10 publication-quality visualizations on a theme (e.g., climate data, sports analytics) with a consistent visual style"
+        tips:
+          - "Great data visualization is editing. Your first draft should have everything. Then remove half of it. Then remove half again."
+      - level: expert
+        criteria: "Defines visualization standards for an organization. Evaluates and selects BI/visualization tools. Creates novel visualization types for complex data. Teaches visualization best practices."
+        metrics:
+          - "Authors a visualization style guide adopted by a team of 5+ analysts"
+          - "Creates a custom visualization type (not available in standard libraries) that reveals a pattern invisible in standard charts"
+          - "Leads a data visualization training that measurably improves team chart quality (before/after review)"
+        resources:
+          - title: "Edward Tufte - The Visual Display of Quantitative Information (reference)"
+            url: "https://www.edwardtufte.com/books/"
+            type: "book"
+        practice:
+          - "45 min: Review 10 visualizations from your team and provide specific, actionable feedback on each"
+        projects:
+          - "Design and implement a team visualization style guide with templates, approved chart types, color palettes, and anti-patterns, then train the team on it"
+        tips:
+          - "At this level, your impact is multiplicative. Improving your team's visualization skills by 20% matters more than making your own charts 5% better."
+    tags: ["visualization", "matplotlib", "seaborn", "plotly"]
+
+  - id: "technology/data-science/eda"
+    title: "Exploratory Data Analysis"
+    description: >
+      The process of systematically investigating a dataset before formal
+      modeling. EDA is where data scientists develop intuition about the data,
+      find anomalies, test assumptions, and generate hypotheses. John Tukey
+      pioneered this approach, and it remains the most important step in any
+      analysis.
+
+      Sub-skills covered: univariate analysis (distributions, outlier
+      detection), bivariate analysis (correlations, cross-tabulations),
+      multivariate analysis (pair plots, dimensionality reduction for
+      visualization), data profiling, missing data analysis (MCAR/MAR/MNAR),
+      outlier detection (IQR, z-score, isolation forest), feature
+      distributions, target variable analysis, and formulating hypotheses
+      from data patterns.
+    benchmarks:
+      - level: beginner
+        criteria: "Follows a systematic EDA checklist: shape, dtypes, nulls, distributions, correlations. Creates basic summary statistics and plots for each variable. Identifies obvious outliers and missing data patterns."
+        metrics:
+          - "Completes a full EDA on a new dataset in under 60 minutes covering shape, nulls, distributions, and correlations"
+          - "Identifies all columns with >5% missing values and proposes a handling strategy for each"
+          - "Creates at least 1 visualization per variable (histogram for numeric, bar chart for categorical)"
+          - "Finds at least 2 notable patterns or anomalies in a practice dataset"
+        resources:
+          - title: "Kaggle Learn - Data Visualization (EDA context)"
+            url: "https://www.kaggle.com/learn/data-visualization"
+            type: "course"
+          - title: "Python Data Science Handbook - Exploratory Data Analysis"
+            url: "https://jakevdp.github.io/PythonDataScienceHandbook/"
+            type: "book"
+          - title: "Kaggle - Titanic Competition EDA Notebooks"
+            url: "https://www.kaggle.com/competitions/titanic/code?sortBy=voteCount"
+            type: "article"
+        practice:
+          - "30 min: Pick a Kaggle dataset you have never seen and complete an EDA checklist: df.shape, df.info(), df.describe(), null analysis, 1 plot per column"
+          - "15 min: Practice outlier detection on 5 numeric columns using the IQR method (Q1 - 1.5*IQR, Q3 + 1.5*IQR)"
+        projects:
+          - "Complete a full EDA notebook on the Kaggle Titanic dataset, including survival rate by every feature, missing data analysis, and at least 10 visualizations"
+          - "Analyze a real-world dataset (e.g., World Bank indicators) and write 5 data-driven hypotheses based on your EDA"
+        tips:
+          - "EDA is not a task you finish. It is a mindset. Every time you add a feature or join a new table, explore it first."
+          - "Look at the extremes first — the min, max, and outliers tell you more about data quality than the mean ever will."
+      - level: intermediate
+        criteria: "Performs bivariate and multivariate analysis. Uses pair plots, correlation heatmaps, and cross-tabulations. Distinguishes MCAR/MAR/MNAR missing data patterns. Generates actionable hypotheses from exploratory findings."
+        metrics:
+          - "Creates a correlation heatmap and correctly identifies the 3 strongest relationships in a 20+ column dataset"
+          - "Classifies missing data as MCAR, MAR, or MNAR with correct reasoning for 4/5 test scenarios"
+          - "Generates at least 5 testable hypotheses from an EDA that are later validated or refuted with statistical tests"
+          - "Pair plot analysis identifies at least 1 nonlinear relationship that a correlation coefficient would miss"
+        resources:
+          - title: "Kaggle - Feature Engineering Course (EDA overlap)"
+            url: "https://www.kaggle.com/learn/feature-engineering"
+            type: "course"
+          - title: "Seaborn - Pair Plots Tutorial"
+            url: "https://seaborn.pydata.org/generated/seaborn.pairplot.html"
+            type: "article"
+          - title: "StatQuest - Covariance and Correlation"
+            url: "https://www.youtube.com/watch?v=qtaqvPAeEJY"
+            type: "video"
+        practice:
+          - "25 min: Build a correlation heatmap for a 15+ column dataset and write a paragraph interpreting the 5 strongest correlations"
+          - "20 min: Create pair plots colored by the target variable and identify which features separate the classes best"
+          - "15 min: For each column with missing data, determine if the pattern is MCAR, MAR, or MNAR and document your reasoning"
+        projects:
+          - "Conduct a competition-grade EDA notebook for a Kaggle dataset: include univariate, bivariate, and multivariate analysis, missing data deep dive, and a ranked list of hypotheses to test"
+        tips:
+          - "The most dangerous assumption is that missing data is random. Always check if missingness correlates with other variables."
+      - level: advanced
+        criteria: "Uses dimensionality reduction (PCA, t-SNE, UMAP) for EDA on high-dimensional data. Automates EDA with profiling tools. Identifies data leakage and distribution shift during exploration. Builds reproducible EDA templates."
+        metrics:
+          - "Applies PCA or t-SNE to a 50+ feature dataset and identifies meaningful clusters in the reduced space"
+          - "Detects data leakage in a practice scenario where a feature perfectly predicts the target for non-causal reasons"
+          - "Builds an automated EDA template that generates a full report in under 5 minutes for any tabular dataset"
+        resources:
+          - title: "StatQuest - PCA Step by Step"
+            url: "https://www.youtube.com/watch?v=FgakZw6K1QQ"
+            type: "video"
+          - title: "StatQuest - t-SNE Clearly Explained"
+            url: "https://www.youtube.com/watch?v=NEaUSP4YerM"
+            type: "video"
+        practice:
+          - "30 min: Apply PCA to a high-dimensional dataset, plot the first 2 components colored by target, and interpret the explained variance ratio"
+          - "20 min: Run an automated profiling tool (ydata-profiling) on a dataset and compare its output to your manual EDA"
+        projects:
+          - "Build a reusable EDA Python package with functions for automated profiling, distribution analysis, correlation analysis, and missing data analysis that works on any Pandas DataFrame"
+        tips:
+          - "If a feature in your EDA shows a suspiciously perfect correlation with the target, it is almost certainly data leakage. Investigate before modeling."
+      - level: expert
+        criteria: "Leads data discovery initiatives for new business domains. Defines EDA standards and templates for data science teams. Identifies causal structures from observational data. Mentors junior data scientists on investigative thinking."
+        metrics:
+          - "Leads an EDA for a new business domain that identifies at least 3 previously unknown insights adopted by stakeholders"
+          - "EDA templates created are adopted by 5+ team members"
+          - "Identifies a causal structure (not just correlation) from observational data that is later validated by an experiment"
+        resources:
+          - title: "Exploratory Data Analysis - John Tukey (reference text)"
+            url: "https://www.amazon.com/Exploratory-Data-Analysis-John-Tukey/dp/0201076160"
+            type: "book"
+        practice:
+          - "60 min: Take a dataset from a domain you know nothing about and produce a business-ready EDA summary with clear hypotheses"
+        projects:
+          - "Define an EDA standard for your team: create templates, checklists, and examples that ensure consistent, thorough exploration across all projects"
+        tips:
+          - "The best EDA is a conversation with domain experts. Show them your charts and let their reactions guide your next question."
+    tags: ["eda", "exploration", "analysis"]
+
+  # ── MACHINE LEARNING ───────────────────────────────────────────────────────
+  - id: "technology/data-science/ml-fundamentals"
+    title: "Machine Learning Fundamentals"
+    description: >
+      The core supervised and unsupervised learning algorithms that every data
+      scientist must master. This node covers the full ML workflow: framing a
+      problem, choosing algorithms, training models, and making predictions.
+
+      Sub-skills covered: supervised learning (linear regression, logistic
+      regression, decision trees, random forests, gradient boosting, SVM, KNN),
+      unsupervised learning (k-means, hierarchical clustering, DBSCAN, PCA),
+      the bias-variance tradeoff, overfitting and underfitting, regularization
+      (L1/L2), train/test splits, scikit-learn API (fit, predict, transform),
+      and model selection strategies.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the difference between supervised and unsupervised learning. Trains a linear regression and logistic regression model using scikit-learn. Performs train/test split. Interprets model coefficients and basic accuracy metrics."
+        metrics:
+          - "Trains a linear regression on a dataset and interprets the coefficients correctly (sign, magnitude, statistical significance)"
+          - "Achieves >=70% accuracy on a binary classification task using logistic regression with proper train/test split"
+          - "Explains the difference between regression and classification with correct examples"
+          - "Correctly performs an 80/20 train/test split without data leakage"
+        resources:
+          - title: "Kaggle Learn - Intro to Machine Learning"
+            url: "https://www.kaggle.com/learn/intro-to-machine-learning"
+            type: "course"
+          - title: "Andrew Ng - Machine Learning Specialization (Coursera)"
+            url: "https://www.coursera.org/specializations/machine-learning-introduction"
+            type: "course"
+          - title: "StatQuest - Linear Regression Clearly Explained"
+            url: "https://www.youtube.com/watch?v=nk2CQITm_eo"
+            type: "video"
+          - title: "scikit-learn - Getting Started Tutorial"
+            url: "https://scikit-learn.org/stable/getting_started.html"
+            type: "article"
+        practice:
+          - "20 min: Train a linear regression model on the Boston-style housing dataset, print coefficients, and interpret the top 3 features"
+          - "20 min: Train a logistic regression on the Titanic dataset and compute accuracy, precision, and recall"
+          - "15 min: Experiment with different train/test split ratios (60/40, 70/30, 80/20) and observe how metrics change"
+        projects:
+          - "Complete the Kaggle Titanic competition using logistic regression: preprocess data, train model, submit predictions, and score above 75% accuracy"
+          - "Build a simple house price predictor using linear regression: load data, train, evaluate, and interpret which features matter most"
+        tips:
+          - "Always split your data BEFORE any preprocessing. Fitting your scaler or imputer on the full dataset causes data leakage."
+          - "Start with a simple model (logistic regression, linear regression) before trying anything complex. You need a baseline to beat."
+      - level: intermediate
+        criteria: "Trains and tunes tree-based models (random forest, gradient boosting). Understands the bias-variance tradeoff. Applies regularization (L1/L2). Uses cross-validation. Implements unsupervised learning (k-means, PCA for dimensionality reduction)."
+        metrics:
+          - "Trains a random forest and gradient boosting model and achieves a top-30% score in a Kaggle competition"
+          - "Explains the bias-variance tradeoff with a diagram and identifies whether a model is over- or under-fitting from learning curves"
+          - "Uses cross-validation (5-fold) instead of a single train/test split for all model evaluations"
+          - "Applies k-means clustering and determines the optimal k using the elbow method and silhouette score"
+        resources:
+          - title: "Kaggle Learn - Intermediate Machine Learning"
+            url: "https://www.kaggle.com/learn/intermediate-machine-learning"
+            type: "course"
+          - title: "StatQuest - Random Forests"
+            url: "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ"
+            type: "video"
+          - title: "StatQuest - Gradient Boost"
+            url: "https://www.youtube.com/watch?v=3CC4N4z3GJc"
+            type: "video"
+          - title: "scikit-learn - Cross-Validation User Guide"
+            url: "https://scikit-learn.org/stable/modules/cross_validation.html"
+            type: "article"
+          - title: "Andrew Ng - Machine Learning Specialization (Coursera) - Regularization"
+            url: "https://www.coursera.org/learn/machine-learning"
+            type: "course"
+        practice:
+          - "25 min: Train a random forest on a classification dataset, plot feature importances, and compare accuracy to logistic regression"
+          - "20 min: Generate learning curves (train vs. validation error at increasing training set sizes) and diagnose bias vs. variance"
+          - "20 min: Apply L1 and L2 regularization to logistic regression and observe how coefficients change with different penalty strengths"
+        projects:
+          - "Enter a Kaggle tabular competition: build a full pipeline with preprocessing, feature engineering, random forest / XGBoost, cross-validation, and hyperparameter tuning. Aim for top 30%."
+          - "Perform customer segmentation on an e-commerce dataset using k-means clustering: determine optimal k, profile each cluster, and present findings"
+        tips:
+          - "XGBoost and LightGBM win most tabular data competitions for a reason. Master gradient boosting — it is the workhorse of applied ML."
+          - "The bias-variance tradeoff is not abstract — plot learning curves. If training error is low but validation error is high, you are overfitting."
+      - level: advanced
+        criteria: "Designs end-to-end ML pipelines using scikit-learn Pipeline. Implements advanced ensemble methods (stacking, blending). Understands algorithm internals (gradient descent, loss functions, optimization). Selects algorithms based on data characteristics."
+        metrics:
+          - "Builds a scikit-learn Pipeline that handles preprocessing, feature engineering, and model training in a single reproducible object"
+          - "Implements a stacking ensemble that outperforms any single model by at least 1% on a holdout set"
+          - "Derives the gradient descent update rule for linear regression from scratch and implements it in NumPy"
+          - "Achieves a top-10% score in a Kaggle competition using an advanced modeling strategy"
+        resources:
+          - title: "scikit-learn - Pipeline User Guide"
+            url: "https://scikit-learn.org/stable/modules/compose.html"
+            type: "article"
+          - title: "3Blue1Brown - Gradient Descent"
+            url: "https://www.youtube.com/watch?v=IHZwWFHWa-w"
+            type: "video"
+          - title: "fast.ai - Machine Learning Course"
+            url: "https://course.fast.ai/"
+            type: "course"
+        practice:
+          - "30 min: Build a scikit-learn Pipeline with ColumnTransformer for mixed types (numeric scaling, categorical encoding) plus a model"
+          - "30 min: Implement gradient descent for linear regression from scratch in NumPy and verify it matches scikit-learn's solution"
+        projects:
+          - "Build a production-ready ML pipeline: data validation, preprocessing, feature engineering, model training, hyperparameter tuning, and model serialization — all in a reproducible Pipeline"
+        tips:
+          - "Scikit-learn Pipelines are non-negotiable for production ML. They prevent data leakage, make your code reproducible, and simplify deployment."
+      - level: expert
+        criteria: "Designs ML systems architecture. Evaluates novel algorithms and decides when to adopt them. Mentors ML engineers on best practices. Contributes to open-source ML libraries or publishes research."
+        metrics:
+          - "Designs an ML system architecture that handles data ingestion, feature store, training, serving, and monitoring"
+          - "Evaluates a newly published algorithm on the team's data and writes a recommendation report with benchmarks"
+          - "Mentors 3+ team members on ML fundamentals with measurable improvement in their competition scores or project outcomes"
+          - "Contributes a feature, bug fix, or documentation improvement to scikit-learn, XGBoost, or similar open-source project"
+        resources:
+          - title: "Designing Machine Learning Systems - Chip Huyen (reference)"
+            url: "https://www.oreilly.com/library/view/designing-machine-learning/9781098107956/"
+            type: "book"
+          - title: "scikit-learn Contributing Guide"
+            url: "https://scikit-learn.org/dev/developers/contributing.html"
+            type: "article"
+        practice:
+          - "60 min: Diagram the ML system architecture for a real product (recommendations, fraud detection, etc.) including data flow, feature store, training pipeline, serving, and monitoring"
+        projects:
+          - "Contribute a meaningful pull request to an open-source ML library (bug fix, new feature, documentation improvement)"
+        tips:
+          - "At this level, the hardest problems are not algorithmic — they are organizational. Getting clean data, aligning stakeholders, and deploying reliably matter more than a 0.1% accuracy improvement."
+    tags: ["ml", "scikit-learn", "supervised", "unsupervised"]
+
+  - id: "technology/data-science/feature-engineering"
+    title: "Feature Engineering"
+    description: >
+      The process of creating, transforming, and selecting features that make
+      machine learning models work better. Great feature engineering often
+      matters more than model choice. This is where domain knowledge meets
+      technical skill.
+
+      Sub-skills covered: numeric transformations (log, square root, binning,
+      scaling/normalization), categorical encoding (one-hot, target encoding,
+      ordinal), text features (TF-IDF, count vectors, n-grams), datetime
+      features (day of week, month, cyclical encoding), interaction features,
+      polynomial features, feature selection (filter, wrapper, embedded methods),
+      handling high cardinality, and domain-specific feature creation.
+    benchmarks:
+      - level: beginner
+        criteria: "Applies basic feature transformations: one-hot encoding for categoricals, standard scaling for numerics, log transform for skewed features. Extracts basic datetime features (year, month, day of week). Uses scikit-learn's preprocessing tools."
+        metrics:
+          - "Correctly applies one-hot encoding to 3 categorical columns without introducing multicollinearity (drops one category)"
+          - "Applies log transform to a right-skewed feature and verifies the distribution is more normal with a histogram"
+          - "Extracts at least 5 features from a datetime column (year, month, day, day of week, hour)"
+          - "Improves model accuracy by at least 3% through basic feature engineering on a Kaggle dataset"
+        resources:
+          - title: "Kaggle Learn - Feature Engineering"
+            url: "https://www.kaggle.com/learn/feature-engineering"
+            type: "course"
+          - title: "scikit-learn - Preprocessing Guide"
+            url: "https://scikit-learn.org/stable/modules/preprocessing.html"
+            type: "article"
+          - title: "Kaggle Learn - Intermediate Machine Learning (missing values, categoricals)"
+            url: "https://www.kaggle.com/learn/intermediate-machine-learning"
+            type: "course"
+        practice:
+          - "20 min: Take a raw dataset and apply one-hot encoding, standard scaling, and log transforms — verify each with before/after distributions"
+          - "15 min: Extract 5+ features from a datetime column and check which correlate most with the target variable"
+          - "15 min: Practice using scikit-learn's ColumnTransformer to apply different preprocessing to numeric vs. categorical columns"
+        projects:
+          - "Take a Kaggle competition dataset (e.g., House Prices), engineer 10+ new features, and compare model performance with and without them"
+        tips:
+          - "One-hot encode categoricals with <10 unique values. For high cardinality (100+ values), use target encoding or frequency encoding instead."
+          - "Always engineer features WITHIN your cross-validation loop to prevent data leakage. Target encoding on the full dataset is cheating."
+      - level: intermediate
+        criteria: "Creates interaction and polynomial features. Applies target encoding safely (within CV). Uses feature selection methods (mutual information, feature importance, recursive feature elimination). Handles high-cardinality categoricals."
+        metrics:
+          - "Creates interaction features that improve model performance by at least 2% on a holdout set"
+          - "Applies target encoding within cross-validation without data leakage (verified by comparing to naive implementation)"
+          - "Reduces a feature set by 40%+ using feature selection while maintaining model performance within 1%"
+          - "Handles a 1000+ cardinality categorical feature using frequency or target encoding with no errors"
+        resources:
+          - title: "Kaggle - Feature Engineering Techniques (competition notebooks)"
+            url: "https://www.kaggle.com/competitions/home-data-for-ml-course/code?sortBy=voteCount"
+            type: "article"
+          - title: "scikit-learn - Feature Selection Guide"
+            url: "https://scikit-learn.org/stable/modules/feature_selection.html"
+            type: "article"
+          - title: "StatQuest - Feature Selection"
+            url: "https://www.youtube.com/watch?v=Oi4JJqkpkMY"
+            type: "video"
+        practice:
+          - "25 min: Create all pairwise interaction features for the top 5 features and evaluate which interactions improve the model"
+          - "20 min: Implement target encoding from scratch with k-fold cross-validation to prevent leakage"
+          - "20 min: Apply 3 feature selection methods (mutual information, tree importance, RFE) and compare the selected feature sets"
+        projects:
+          - "Build a feature engineering pipeline for a Kaggle competition that includes numeric transforms, categorical encoding, datetime features, interactions, and automated feature selection"
+        tips:
+          - "Feature importance from tree models tells you what the model uses, not what is useful. A dropped feature might be useful if paired with a different model."
+      - level: advanced
+        criteria: "Designs domain-specific features that require deep business understanding. Builds automated feature engineering pipelines (featuretools, custom). Creates text and geospatial features. Applies feature engineering for time series (lags, rolling windows)."
+        metrics:
+          - "Creates a domain-specific feature that a domain expert confirms is meaningful and improves model performance by 5%+"
+          - "Builds an automated feature generation pipeline that creates 50+ candidate features and selects the best subset"
+          - "Engineers time series features (7-day rolling mean, lag features, trend indicators) that improve a forecasting model"
+        resources:
+          - title: "scikit-learn - Text Feature Extraction"
+            url: "https://scikit-learn.org/stable/modules/feature_extraction.html#text-feature-extraction"
+            type: "article"
+          - title: "Kaggle - Time Series Course"
+            url: "https://www.kaggle.com/learn/time-series"
+            type: "course"
+        practice:
+          - "30 min: Engineer 10 time series features (lags, rolling stats, expanding window) for a forecasting problem and evaluate their importance"
+          - "25 min: Build a TF-IDF feature matrix from text data and train a classifier on the resulting features"
+        projects:
+          - "Build a complete feature store: automated feature generation, versioning, documentation, and a pipeline that serves features for model training"
+        tips:
+          - "The best features come from domain knowledge, not automated tools. Spend an hour talking to domain experts before writing any code."
+      - level: expert
+        criteria: "Defines feature engineering strategy for an organization. Designs feature stores for ML platforms. Creates novel feature representations. Mentors teams on turning domain knowledge into features."
+        metrics:
+          - "Designs a feature store architecture used by 3+ teams in production"
+          - "Creates a novel feature representation that is adopted across multiple projects"
+          - "Mentors 2+ data scientists on domain-specific feature engineering with measurable model improvements"
+        resources:
+          - title: "Feast Feature Store Documentation"
+            url: "https://docs.feast.dev/"
+            type: "article"
+        practice:
+          - "60 min: Design a feature store schema for a business domain with offline (batch) and online (real-time) feature serving"
+        projects:
+          - "Implement a team-wide feature store with versioning, lineage tracking, and documentation for at least 3 ML projects"
+        tips:
+          - "Feature stores are the unsung hero of production ML. A shared, versioned, documented feature repository prevents 90% of feature engineering bugs."
+    tags: ["feature-engineering", "preprocessing", "ml-pipeline"]
+
+  - id: "technology/data-science/model-evaluation"
+    title: "Model Evaluation & Validation"
+    description: >
+      Knowing whether your model actually works is as important as building it.
+      This node covers the metrics, validation strategies, and diagnostic tools
+      needed to honestly assess model performance and avoid common pitfalls.
+
+      Sub-skills covered: classification metrics (accuracy, precision, recall,
+      F1, AUC-ROC, log loss, confusion matrix), regression metrics (MSE, RMSE,
+      MAE, R-squared, MAPE), cross-validation strategies (k-fold, stratified,
+      group, time series), learning curves, calibration curves, bias-variance
+      analysis, overfitting detection, hyperparameter tuning (grid search,
+      random search, Bayesian optimization), model interpretation (SHAP,
+      permutation importance), and fairness metrics.
+    benchmarks:
+      - level: beginner
+        criteria: "Computes and interprets accuracy, precision, recall, F1, and confusion matrix for classification. Computes MSE, RMSE, and R-squared for regression. Understands why accuracy alone is insufficient for imbalanced datasets."
+        metrics:
+          - "Computes precision, recall, F1, and AUC-ROC for a binary classifier and correctly explains each metric"
+          - "Identifies that accuracy is misleading on a 95/5 imbalanced dataset and recommends a better metric"
+          - "Creates and interprets a confusion matrix, correctly labeling TP, FP, TN, FN"
+          - "Computes RMSE and R-squared for a regression model and interprets R-squared correctly"
+        resources:
+          - title: "StatQuest - Confusion Matrix"
+            url: "https://www.youtube.com/watch?v=Kdsp6soqA7o"
+            type: "video"
+          - title: "StatQuest - ROC and AUC Clearly Explained"
+            url: "https://www.youtube.com/watch?v=4jRBRDbJemM"
+            type: "video"
+          - title: "scikit-learn - Model Evaluation Metrics"
+            url: "https://scikit-learn.org/stable/modules/model_evaluation.html"
+            type: "article"
+          - title: "Kaggle Learn - Intro to Machine Learning (validation)"
+            url: "https://www.kaggle.com/learn/intro-to-machine-learning"
+            type: "course"
+        practice:
+          - "15 min: Train a classifier on an imbalanced dataset, compute accuracy vs. F1 vs. AUC-ROC, and write which metric you would report to stakeholders and why"
+          - "15 min: Create confusion matrices for 3 different classification thresholds and observe how precision/recall tradeoff changes"
+          - "10 min: Compute RMSE, MAE, and R-squared for a regression model and explain what each tells you"
+        projects:
+          - "Build a model evaluation report for a Kaggle competition submission: include confusion matrix, ROC curve, precision-recall curve, and a written interpretation of each"
+        tips:
+          - "Never report accuracy on an imbalanced dataset. If 95% of your labels are negative, a model that always predicts negative gets 95% accuracy and is useless."
+          - "F1 score is the harmonic mean of precision and recall. Use it when you care about both false positives and false negatives."
+      - level: intermediate
+        criteria: "Implements k-fold and stratified cross-validation. Performs hyperparameter tuning with grid search and random search. Plots and interprets learning curves and validation curves. Uses AUC-ROC and precision-recall curves for threshold selection."
+        metrics:
+          - "All model evaluations use cross-validation (not a single train/test split)"
+          - "Tunes at least 5 hyperparameters using RandomizedSearchCV or equivalent and documents the selected values with justification"
+          - "Plots learning curves and correctly diagnoses whether the model suffers from bias or variance"
+          - "Selects a classification threshold from the precision-recall curve based on a business requirement and justifies the choice"
+        resources:
+          - title: "scikit-learn - Cross-Validation Strategies"
+            url: "https://scikit-learn.org/stable/modules/cross_validation.html"
+            type: "article"
+          - title: "scikit-learn - Tuning Hyperparameters"
+            url: "https://scikit-learn.org/stable/modules/grid_search.html"
+            type: "article"
+          - title: "StatQuest - Cross Validation"
+            url: "https://www.youtube.com/watch?v=fSytzGwwBVw"
+            type: "video"
+          - title: "Andrew Ng - Machine Learning (Coursera) - Advice for Applying ML"
+            url: "https://www.coursera.org/learn/machine-learning"
+            type: "course"
+        practice:
+          - "20 min: Implement 5-fold stratified cross-validation and compare the variance of scores to a single 80/20 split"
+          - "25 min: Run RandomizedSearchCV on a gradient boosting model with 5 hyperparameters and plot the results"
+          - "15 min: Plot learning curves for an underfit and overfit model and write a diagnosis for each"
+        projects:
+          - "Build a hyperparameter tuning framework that takes any scikit-learn estimator, runs cross-validated random search, plots learning curves, and outputs the best model with a performance report"
+        tips:
+          - "Random search beats grid search in almost all cases. With the same compute budget, random search explores more of the hyperparameter space."
+      - level: advanced
+        criteria: "Uses Bayesian optimization for hyperparameter tuning. Applies SHAP values for model interpretation. Implements time series and group cross-validation. Detects data drift and model degradation. Calibrates model probabilities."
+        metrics:
+          - "Implements Bayesian hyperparameter optimization (Optuna/Hyperopt) that converges faster than random search on the same budget"
+          - "Generates SHAP summary plots and correctly explains the top 5 feature contributions for individual predictions"
+          - "Applies the correct cross-validation strategy for time series data (no future leakage) and grouped data"
+          - "Detects model degradation by implementing a monitoring pipeline that tracks performance metrics over time"
+        resources:
+          - title: "SHAP Documentation"
+            url: "https://shap.readthedocs.io/en/latest/"
+            type: "article"
+          - title: "Optuna Documentation"
+            url: "https://optuna.readthedocs.io/en/stable/"
+            type: "article"
+          - title: "StatQuest - SHAP Values"
+            url: "https://www.youtube.com/watch?v=VB9uV-x0vDE"
+            type: "video"
+        practice:
+          - "30 min: Run SHAP on a trained XGBoost model, generate summary plots and force plots for individual predictions, and write interpretations"
+          - "25 min: Set up Optuna for hyperparameter tuning with early stopping and compare convergence to random search"
+        projects:
+          - "Build a model monitoring dashboard that tracks prediction distributions, feature distributions, and performance metrics over time, and alerts when drift is detected"
+        tips:
+          - "SHAP values are the gold standard for model interpretation. If you cannot explain why your model makes a prediction, you should not deploy it."
+      - level: expert
+        criteria: "Designs evaluation frameworks for the organization. Implements fairness and bias audits. Creates custom metrics aligned with business objectives. Leads model review boards."
+        metrics:
+          - "Designs an evaluation framework adopted by the data science team that includes performance, fairness, and business metrics"
+          - "Conducts a fairness audit that identifies and mitigates bias across at least 3 protected attributes"
+          - "Creates a custom evaluation metric that directly maps to business value (e.g., revenue impact, cost of errors)"
+          - "Leads model review sessions that catch at least 2 issues per quarter before deployment"
+        resources:
+          - title: "Fairlearn Documentation"
+            url: "https://fairlearn.org/"
+            type: "article"
+          - title: "Google - ML Fairness Guidelines"
+            url: "https://ai.google/responsibilities/responsible-ai-practices/"
+            type: "article"
+        practice:
+          - "45 min: Conduct a fairness audit on a binary classification model across 3 demographic groups, computing equal opportunity and demographic parity metrics"
+        projects:
+          - "Design and document an organization-wide model evaluation checklist that covers performance metrics, fairness metrics, calibration, interpretability, and business alignment"
+        tips:
+          - "The most important evaluation metric is the one that maps directly to business value. Accuracy is a proxy; cost of errors is what the business cares about."
+    tags: ["evaluation", "metrics", "validation", "interpretation"]
+
+  # ── ADVANCED ML ────────────────────────────────────────────────────────────
+  - id: "technology/data-science/deep-learning"
+    title: "Deep Learning Basics"
+    description: >
+      Neural networks and deep learning for data scientists. This node does not
+      aim to make you a deep learning researcher — it covers what a data
+      scientist needs to know to use deep learning effectively for tabular,
+      text, and image data.
+
+      Sub-skills covered: neural network fundamentals (neurons, layers,
+      activation functions, backpropagation), frameworks (PyTorch, TensorFlow/
+      Keras), training mechanics (learning rate, batch size, epochs, optimizers),
+      CNNs for image data, RNNs/LSTMs for sequences, transfer learning,
+      practical deep learning (when to use it, when not to), GPU setup, and
+      modern architectures overview (transformers, attention).
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the structure of a neural network (input, hidden, output layers). Trains a simple feedforward network using PyTorch or Keras. Knows when deep learning is appropriate vs. traditional ML. Uses a pre-trained model for inference."
+        metrics:
+          - "Draws a neural network architecture diagram with correct layer dimensions for a given problem"
+          - "Trains a simple neural network on MNIST or Fashion-MNIST and achieves >=95% accuracy"
+          - "Correctly identifies 3 scenarios where deep learning is appropriate and 3 where it is not"
+          - "Uses a pre-trained model (e.g., ResNet for image classification) for inference on new data"
+        resources:
+          - title: "3Blue1Brown - Neural Networks (Chapter 1)"
+            url: "https://www.youtube.com/watch?v=aircAruvnKk"
+            type: "video"
+          - title: "3Blue1Brown - Gradient Descent"
+            url: "https://www.youtube.com/watch?v=IHZwWFHWa-w"
+            type: "video"
+          - title: "fast.ai - Practical Deep Learning for Coders"
+            url: "https://course.fast.ai/"
+            type: "course"
+          - title: "Andrew Ng - Deep Learning Specialization (Coursera)"
+            url: "https://www.coursera.org/specializations/deep-learning"
+            type: "course"
+          - title: "PyTorch - 60 Minute Blitz Tutorial"
+            url: "https://pytorch.org/tutorials/beginner/deep_learning_60min_blitz.html"
+            type: "article"
+        practice:
+          - "30 min: Build a 2-layer neural network in PyTorch or Keras for MNIST digit classification and observe how accuracy changes with epochs"
+          - "20 min: Download a pre-trained ResNet model and classify 10 images from the internet, interpreting the top-5 predictions"
+          - "15 min: Draw the architecture of a 3-layer neural network on paper, labeling input size, hidden size, output size, and activation functions"
+        projects:
+          - "Train a neural network on Fashion-MNIST from scratch: implement data loading, model architecture, training loop, and evaluation. Achieve >=90% test accuracy."
+          - "Use a pre-trained image classifier to build a simple web app (Streamlit or Gradio) that classifies uploaded images"
+        tips:
+          - "Do not start with deep learning. For tabular data, gradient boosting (XGBoost/LightGBM) beats neural networks in most cases with less tuning."
+          - "Use fast.ai's top-down teaching approach — train a model first, then learn the theory. It builds intuition faster."
+      - level: intermediate
+        criteria: "Understands backpropagation and gradient flow. Implements CNNs for image tasks and RNNs/LSTMs for sequence tasks. Uses transfer learning effectively. Tunes learning rate, batch size, and regularization (dropout, weight decay)."
+        metrics:
+          - "Explains backpropagation step-by-step through a 2-layer network with correct chain rule application"
+          - "Fine-tunes a pre-trained CNN (ResNet/EfficientNet) on a custom image dataset and achieves >=85% accuracy"
+          - "Trains an LSTM on a text classification task and correctly handles sequence padding and embedding layers"
+          - "Finds an optimal learning rate using a learning rate finder and demonstrates faster convergence than a default rate"
+        resources:
+          - title: "3Blue1Brown - Backpropagation"
+            url: "https://www.youtube.com/watch?v=Ilg3gGewQ5U"
+            type: "video"
+          - title: "fast.ai - Part 2: Deep Learning Foundations to Stable Diffusion"
+            url: "https://course.fast.ai/Lessons/part2.html"
+            type: "course"
+          - title: "PyTorch - Transfer Learning Tutorial"
+            url: "https://pytorch.org/tutorials/beginner/transfer_learning_tutorial.html"
+            type: "article"
+          - title: "StatQuest - Neural Networks / Deep Learning"
+            url: "https://www.youtube.com/watch?v=CqOfi41LfDw"
+            type: "video"
+        practice:
+          - "30 min: Fine-tune a pre-trained ResNet on a small custom dataset (100-500 images per class) using transfer learning"
+          - "25 min: Implement a learning rate finder, plot loss vs. learning rate, and select the optimal value"
+          - "25 min: Build an LSTM for sentiment analysis: tokenize text, create embeddings, train, and evaluate"
+        projects:
+          - "Build an image classification system for a custom dataset: collect data, fine-tune a pre-trained model, evaluate with confusion matrix, and deploy as an API or web app"
+        tips:
+          - "Transfer learning is almost always the right approach. Training from scratch requires orders of magnitude more data."
+          - "The learning rate is the single most important hyperparameter. Use a learning rate finder before training any model."
+      - level: advanced
+        criteria: "Understands transformer architecture and attention mechanisms. Implements custom training loops with mixed precision and gradient accumulation. Uses deep learning for tabular data (TabNet, embeddings). Deploys models for inference."
+        metrics:
+          - "Explains the self-attention mechanism in transformers with correct mathematical formulation"
+          - "Implements a custom training loop with mixed precision (AMP) that runs 2x faster than the naive loop"
+          - "Deploys a deep learning model as a REST API with latency under 100ms per request"
+          - "Applies a transformer-based model (BERT/GPT) to a text task and achieves state-of-the-art performance for the dataset"
+        resources:
+          - title: "3Blue1Brown - Attention in Transformers"
+            url: "https://www.youtube.com/watch?v=eMlx5fFNoYc"
+            type: "video"
+          - title: "fast.ai - Practical Deep Learning (transformers section)"
+            url: "https://course.fast.ai/"
+            type: "course"
+          - title: "Hugging Face - Transformers Documentation"
+            url: "https://huggingface.co/docs/transformers/"
+            type: "article"
+        practice:
+          - "45 min: Implement self-attention from scratch in PyTorch and verify outputs match a library implementation"
+          - "30 min: Set up mixed precision training (torch.cuda.amp) and benchmark the speed improvement"
+        projects:
+          - "Fine-tune a BERT model for a text classification task, evaluate thoroughly, and deploy it as a REST API with FastAPI"
+        tips:
+          - "Transformers dominate NLP and are increasingly competitive in vision. Understand attention deeply — it is the key building block of modern AI."
+      - level: expert
+        criteria: "Designs novel architectures for specific problems. Trains large-scale models with distributed computing. Optimizes inference for production (quantization, pruning, distillation). Publishes deep learning research or builds production systems at scale."
+        metrics:
+          - "Designs and trains a model architecture that outperforms published baselines on a benchmark dataset"
+          - "Reduces model inference latency by 3x through quantization or distillation without significant accuracy loss"
+          - "Trains a model on multiple GPUs using distributed data parallel and achieves near-linear scaling"
+          - "Publishes or presents deep learning work at a conference or in a technical blog with meaningful impact"
+        resources:
+          - title: "PyTorch - Distributed Training"
+            url: "https://pytorch.org/tutorials/intermediate/ddp_tutorial.html"
+            type: "article"
+          - title: "Hugging Face - Model Optimization (quantization)"
+            url: "https://huggingface.co/docs/optimum/"
+            type: "article"
+        practice:
+          - "60 min: Quantize a transformer model from FP32 to INT8 and benchmark accuracy loss vs. latency improvement"
+        projects:
+          - "Build a production deep learning system: model training with distributed data parallel, model optimization (quantization/pruning), serving with batched inference, and monitoring"
+        tips:
+          - "At production scale, inference cost dominates training cost. A model that is 1% less accurate but 5x faster to run is almost always the better choice."
+    tags: ["deep-learning", "neural-networks", "pytorch", "transformers"]
+
+  # ── EXPERIMENTATION ────────────────────────────────────────────────────────
+  - id: "technology/data-science/ab-testing"
+    title: "A/B Testing & Experimentation"
+    description: >
+      The scientific method applied to product and business decisions. A/B
+      testing is how data scientists prove that a change actually causes an
+      improvement rather than just correlating with one. This is arguably the
+      highest-impact skill for data scientists in industry.
+
+      Sub-skills covered: experiment design (hypothesis, control, treatment,
+      randomization), sample size calculation (power analysis), metric selection
+      (primary, guardrail, proxy), statistical analysis of experiments
+      (z-test, t-test for proportions and means), multiple testing corrections,
+      sequential testing, Bayesian A/B testing, common pitfalls (peeking,
+      novelty effects, selection bias, network effects), experiment platforms,
+      and organizational experimentation culture.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the structure of an A/B test (hypothesis, control, treatment, randomization). Calculates required sample size for a given effect size and significance level. Analyzes results of a simple two-variant test. Knows why randomization matters."
+        metrics:
+          - "Correctly designs an A/B test with stated null/alternative hypotheses, control group, treatment group, and primary metric"
+          - "Calculates required sample size for a conversion rate test (baseline 5%, MDE 1%, alpha 0.05, power 0.8) within 10% of the correct answer"
+          - "Analyzes a completed A/B test and correctly determines whether the result is statistically significant"
+          - "Explains why peeking at results before the test is complete inflates false positive rates"
+        resources:
+          - title: "Kaggle Learn - Intro to Machine Learning (experiment mindset)"
+            url: "https://www.kaggle.com/learn/intro-to-machine-learning"
+            type: "course"
+          - title: "Evan Miller - Sample Size Calculator"
+            url: "https://www.evanmiller.org/ab-testing/sample-size.html"
+            type: "tool"
+          - title: "StatQuest - P-Values and Significance Tests"
+            url: "https://www.youtube.com/watch?v=vemZtEM63GY"
+            type: "video"
+          - title: "Khan Academy - Experiments and Observational Studies"
+            url: "https://www.khanacademy.org/math/statistics-probability/designing-studies"
+            type: "course"
+        practice:
+          - "20 min: Design an A/B test for a website change: write the hypothesis, define control and treatment, choose the primary metric, and calculate sample size"
+          - "15 min: Analyze 3 simulated A/B test results — compute the z-statistic, p-value, and confidence interval, and state the conclusion"
+          - "10 min: Use Evan Miller's calculator to determine sample sizes for 5 different MDE/baseline combinations"
+        projects:
+          - "Design and analyze a simulated A/B test in Python: generate data for control and treatment groups, run the statistical test, compute confidence intervals, and write a decision report"
+          - "Create a sample size calculator in Python that takes baseline rate, MDE, alpha, and power as inputs"
+        tips:
+          - "Never peek at results before the experiment reaches the required sample size. Peeking inflates your false positive rate well beyond 5%."
+          - "Choose your primary metric BEFORE the experiment starts. Choosing the metric after seeing results is p-hacking."
+      - level: intermediate
+        criteria: "Designs multi-variant tests. Implements guardrail metrics. Handles multiple testing corrections. Understands sequential testing methods. Segments experiment results for deeper insights."
+        metrics:
+          - "Designs a test with 3+ variants and correctly applies Bonferroni correction for multiple comparisons"
+          - "Defines at least 2 guardrail metrics for an A/B test and monitors them alongside the primary metric"
+          - "Implements a sequential testing procedure that allows early stopping while controlling the false positive rate"
+          - "Segments A/B test results by at least 3 dimensions and identifies heterogeneous treatment effects"
+        resources:
+          - title: "Trustworthy Online Controlled Experiments (Kohavi et al.) - summary"
+            url: "https://www.amazon.com/Trustworthy-Online-Controlled-Experiments-Practical/dp/1108724264"
+            type: "book"
+          - title: "Evan Miller - Sequential A/B Testing"
+            url: "https://www.evanmiller.org/sequential-ab-testing.html"
+            type: "article"
+          - title: "StatQuest - Multiple Testing Correction"
+            url: "https://www.youtube.com/watch?v=K8LQSvtjcEo"
+            type: "video"
+        practice:
+          - "25 min: Design a multi-arm bandit simulation in Python and compare cumulative regret to a fixed-horizon A/B test"
+          - "20 min: Implement a sequential testing procedure and show that the false positive rate is controlled at alpha despite early stopping"
+          - "20 min: Segment an A/B test result by user demographics and identify which segments benefit most from the treatment"
+        projects:
+          - "Build a complete experimentation analysis pipeline: ingest raw experiment data, check for sample ratio mismatch, compute primary and guardrail metrics, apply multiple testing correction, segment results, and generate a report"
+        tips:
+          - "Always check for sample ratio mismatch (SRM) before analyzing results. If your 50/50 split is 52/48, something is broken in randomization."
+      - level: advanced
+        criteria: "Implements Bayesian A/B testing. Designs experiments for network effects and interference. Uses CUPED/variance reduction techniques. Handles novelty and primacy effects. Designs experimentation platforms."
+        metrics:
+          - "Implements a Bayesian A/B test with conjugate priors and produces posterior probability of improvement"
+          - "Applies CUPED or similar variance reduction technique and demonstrates 20%+ reduction in required sample size"
+          - "Designs an experiment that accounts for network effects (e.g., cluster randomization) with correct power calculation"
+          - "Detects a novelty effect by analyzing time-varying treatment effects across experiment duration"
+        resources:
+          - title: "Netflix Tech Blog - Experimentation"
+            url: "https://netflixtechblog.com/tagged/experimentation"
+            type: "article"
+          - title: "Microsoft - ExP Platform Papers"
+            url: "https://www.microsoft.com/en-us/research/group/experimentation-platform-exp/"
+            type: "article"
+        practice:
+          - "30 min: Implement a Bayesian A/B test with a Beta-Binomial model, compute posterior probability that B > A, and compare to the frequentist result"
+          - "30 min: Implement CUPED variance reduction on a simulated experiment and measure the reduction in confidence interval width"
+        projects:
+          - "Design a mini experimentation platform: random assignment, event logging, automated analysis (frequentist and Bayesian), guardrail monitoring, and automated reporting"
+        tips:
+          - "CUPED is nearly free power. If you have pre-experiment data on your metric (e.g., last week's conversion rate), use it as a covariate to reduce variance."
+      - level: expert
+        criteria: "Builds and scales experimentation platforms for organizations. Designs experimentation culture and processes. Handles complex interference patterns (marketplace experiments). Publishes experimentation methodology research."
+        metrics:
+          - "Builds an experimentation platform that runs 10+ concurrent experiments with automated analysis and alerting"
+          - "Establishes an experimentation culture where 80%+ of product decisions are backed by A/B tests"
+          - "Designs and executes a marketplace experiment with proper interference handling and publishes the methodology"
+          - "Trains 10+ non-data-scientists to design and interpret basic A/B tests correctly"
+        resources:
+          - title: "Ron Kohavi - Trustworthy Online Controlled Experiments"
+            url: "https://experimentguide.com/"
+            type: "book"
+        practice:
+          - "60 min: Review 5 A/B test designs from your team and provide detailed feedback on hypothesis, metric choice, sample size, and potential pitfalls"
+        projects:
+          - "Lead the creation of an organization-wide experimentation handbook: when to test, how to design tests, how to analyze results, common pitfalls, and decision criteria"
+        tips:
+          - "The hardest part of experimentation is not the statistics — it is convincing stakeholders to wait for results instead of shipping based on intuition."
+    tags: ["experimentation", "ab-testing", "causal-inference"]
+
+  # ── COMMUNICATION ──────────────────────────────────────────────────────────
+  - id: "technology/data-science/communication"
+    title: "Communication & Storytelling with Data"
+    description: >
+      The ability to translate technical findings into business impact. A data
+      scientist who cannot communicate results is indistinguishable from one
+      who did not do the analysis. This node covers presenting findings,
+      writing reports, building dashboards, and persuading stakeholders.
+
+      Sub-skills covered: structuring a data narrative (situation, complication,
+      resolution), executive summary writing, slide design for data
+      presentations, choosing the right level of detail for the audience,
+      building dashboards (Tableau, Looker, Streamlit), writing technical
+      reports, presenting uncertainty and limitations honestly, handling
+      questions and pushback, and building trust with non-technical
+      stakeholders.
+    benchmarks:
+      - level: beginner
+        criteria: "Writes a clear summary of analysis findings in plain language. Creates a basic presentation with charts and takeaways. Explains statistical concepts (p-value, confidence interval) to a non-technical audience without jargon."
+        metrics:
+          - "Writes a 1-page analysis summary that a non-technical manager rates as 'clear and actionable'"
+          - "Creates a 5-slide presentation of an analysis with a clear narrative arc (question, data, findings, recommendation)"
+          - "Explains a p-value to a non-statistician and they can correctly paraphrase it back"
+          - "Every chart in a presentation has a clear title that states the insight, not just the chart type"
+        resources:
+          - title: "Kaggle Learn - Data Visualization (communication angle)"
+            url: "https://www.kaggle.com/learn/data-visualization"
+            type: "course"
+          - title: "Storytelling with Data - Cole Nussbaumer Knaflic (reference)"
+            url: "https://www.storytellingwithdata.com/books"
+            type: "book"
+          - title: "Google - Technical Writing Courses"
+            url: "https://developers.google.com/tech-writing"
+            type: "course"
+        practice:
+          - "20 min: Take a completed analysis and write a 3-paragraph executive summary: what you did, what you found, what you recommend"
+          - "15 min: Rewrite 5 chart titles from 'Histogram of Revenue' style to insight-driven titles like 'Revenue is concentrated in the top 10% of customers'"
+          - "10 min: Explain a confidence interval to a friend or family member who has no statistics background and ask them to explain it back"
+        projects:
+          - "Present a Kaggle analysis to a non-technical audience (friend, family, meetup group) and collect feedback on clarity"
+          - "Write a blog post explaining a data analysis finding for a general audience"
+        tips:
+          - "Lead with the insight, not the methodology. Stakeholders care about 'revenue will increase by 5%' not 'the p-value was 0.03.'"
+          - "Every chart title should be a complete sentence that states the finding, not a label. 'Sales declined 15% in Q3' not 'Q3 Sales.'"
+      - level: intermediate
+        criteria: "Structures presentations using the pyramid principle (conclusion first). Builds interactive dashboards. Tailors communication to different audiences (executives, engineers, PMs). Presents uncertainty and limitations honestly."
+        metrics:
+          - "Stakeholder satisfaction score >=4/5 on clarity and actionability for 3 consecutive presentations"
+          - "Builds an interactive dashboard (Streamlit, Tableau, or Looker) that is used by at least 3 stakeholders weekly"
+          - "Presents the same analysis to a technical and non-technical audience with different depth levels in the same week"
+          - "Includes a 'limitations and caveats' section in every analysis report"
+        resources:
+          - title: "Streamlit Documentation"
+            url: "https://docs.streamlit.io/"
+            type: "article"
+          - title: "Pyramid Principle - Barbara Minto (reference)"
+            url: "https://www.amazon.com/Pyramid-Principle-Logic-Writing-Thinking/dp/0273710516"
+            type: "book"
+          - title: "Storytelling with Data Blog"
+            url: "https://www.storytellingwithdata.com/blog"
+            type: "article"
+        practice:
+          - "25 min: Restructure a data presentation using the pyramid principle: start with the recommendation, then supporting evidence, then methodology"
+          - "20 min: Build a simple Streamlit dashboard with 3 interactive charts and filters for a dataset"
+          - "15 min: Write the same finding at 3 levels of detail: 1 sentence for an exec, 1 paragraph for a PM, 1 page for a data scientist"
+        projects:
+          - "Build an interactive Streamlit dashboard for a real business question that is used by at least 2 stakeholders for decision-making"
+          - "Present an analysis to stakeholders and collect structured feedback on what was clear, what was confusing, and what was missing"
+        tips:
+          - "The pyramid principle: lead with the answer, support with evidence, provide detail only when asked. Executives stop listening after slide 3."
+      - level: advanced
+        criteria: "Influences business strategy through data storytelling. Designs data narratives that drive organizational change. Creates self-service analytics tools. Mentors others on data communication."
+        metrics:
+          - "Delivers a data presentation that directly leads to a measurable business decision (documented)"
+          - "Creates a self-service dashboard or tool that reduces ad-hoc analysis requests by 50%"
+          - "Mentors 2+ analysts on presentation skills with measurable improvement in stakeholder feedback scores"
+          - "Writes a technical report that is cited in a business strategy document"
+        resources:
+          - title: "Storytelling with Data - Advanced Techniques"
+            url: "https://www.storytellingwithdata.com/books"
+            type: "book"
+        practice:
+          - "30 min: Review a teammate's analysis presentation and provide specific feedback on narrative structure, chart choices, and audience calibration"
+          - "30 min: Design a self-service dashboard wireframe that answers the 5 most common questions your stakeholders ask"
+        projects:
+          - "Lead a data-driven initiative that changes a business process: identify the opportunity through data, build the case through analysis, present to decision-makers, and measure the impact"
+        tips:
+          - "The best data presentation is the one that makes the decision obvious. If your audience has to think hard about what to do, you have not told the story clearly enough."
+      - level: expert
+        criteria: "Shapes organizational data culture. Builds data literacy programs. Presents to C-suite and board audiences. Publishes thought leadership on data-driven decision making."
+        metrics:
+          - "Presents data findings to C-suite that directly influence company strategy (documented by executive feedback)"
+          - "Creates a data literacy program that trains 20+ non-technical employees on reading data and dashboards"
+          - "Publishes 2+ articles or talks per year on data communication or data-driven culture"
+          - "Stakeholder NPS for data team communication is >=60"
+        resources:
+          - title: "HBR - Data-Driven Decision Making Articles"
+            url: "https://hbr.org/topic/data"
+            type: "article"
+        practice:
+          - "60 min: Design a 4-session data literacy curriculum for non-technical stakeholders covering chart reading, metric interpretation, and asking good data questions"
+        projects:
+          - "Launch a data literacy program for your organization: create the curriculum, run the workshops, measure comprehension improvement, and collect feedback"
+        tips:
+          - "Your legacy as a data scientist is not the models you build — it is whether the organization makes better decisions because of your work."
+    tags: ["communication", "storytelling", "dashboards", "presentations"]
+
+relationships:
+  # ── Foundation chain ────────────────────────────────────────────────────────
+  - source: "technology/data-science/statistics-fundamentals"
+    target: "technology/data-science/data-wrangling"
+    type: "enables"
+    note: "Understanding distributions and summary statistics is needed to wrangle data effectively"
+
+  - source: "technology/data-science/statistics-fundamentals"
+    target: "technology/data-science/data-visualization"
+    type: "enables"
+    note: "Statistical literacy is required to create meaningful visualizations"
+
+  - source: "technology/data-science/data-wrangling"
+    target: "technology/data-science/eda"
+    type: "requires"
+    note: "EDA requires fluency in Pandas and SQL to manipulate data during exploration"
+
+  - source: "technology/data-science/data-visualization"
+    target: "technology/data-science/eda"
+    type: "requires"
+    note: "EDA relies heavily on visualization to reveal patterns and anomalies"
+
+  # ── EDA to ML pipeline ─────────────────────────────────────────────────────
+  - source: "technology/data-science/eda"
+    target: "technology/data-science/ml-fundamentals"
+    type: "enables"
+    note: "Thorough EDA informs feature selection and model choice for ML"
+
+  - source: "technology/data-science/statistics-fundamentals"
+    target: "technology/data-science/ml-fundamentals"
+    type: "requires"
+    note: "ML algorithms are built on statistical foundations — regression, probability, distributions"
+
+  # ── ML branches ────────────────────────────────────────────────────────────
+  - source: "technology/data-science/ml-fundamentals"
+    target: "technology/data-science/feature-engineering"
+    type: "enables"
+    note: "Feature engineering improves ML models and requires understanding of how models use features"
+
+  - source: "technology/data-science/data-wrangling"
+    target: "technology/data-science/feature-engineering"
+    type: "enables"
+    note: "Feature engineering is advanced data transformation — Pandas/SQL fluency is prerequisite"
+
+  - source: "technology/data-science/ml-fundamentals"
+    target: "technology/data-science/model-evaluation"
+    type: "requires"
+    note: "You must train models before you can evaluate them"
+
+  - source: "technology/data-science/statistics-fundamentals"
+    target: "technology/data-science/model-evaluation"
+    type: "enables"
+    note: "Evaluation metrics and validation strategies are grounded in statistics"
+
+  - source: "technology/data-science/ml-fundamentals"
+    target: "technology/data-science/deep-learning"
+    type: "requires"
+    note: "Deep learning builds on ML fundamentals — loss functions, optimization, overfitting"
+
+  # ── Experimentation ────────────────────────────────────────────────────────
+  - source: "technology/data-science/statistics-fundamentals"
+    target: "technology/data-science/ab-testing"
+    type: "requires"
+    note: "A/B testing is applied hypothesis testing — statistics is the foundation"
+
+  - source: "technology/data-science/eda"
+    target: "technology/data-science/ab-testing"
+    type: "enables"
+    note: "EDA skills help analyze experiment results and identify heterogeneous effects"
+
+  # ── Communication ──────────────────────────────────────────────────────────
+  - source: "technology/data-science/data-visualization"
+    target: "technology/data-science/communication"
+    type: "requires"
+    note: "Data storytelling depends on the ability to create effective visualizations"
+
+  - source: "technology/data-science/eda"
+    target: "technology/data-science/communication"
+    type: "enables"
+    note: "EDA produces the findings that need to be communicated to stakeholders"
+
+  - source: "technology/data-science/model-evaluation"
+    target: "technology/data-science/communication"
+    type: "enables"
+    note: "Communicating model results requires understanding evaluation metrics and their limitations"

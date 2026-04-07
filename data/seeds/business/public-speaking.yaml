@@ -1,0 +1,1353 @@
+# OpenSkillTree — Seed Skill Tree: Public Speaking
+#
+# Domain:  Business / Communication / Public Speaking
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: Toastmasters Pathways program and professional
+# speaking industry standards (NSA, CSP designation, TED speaker levels)
+#   beginner     = new speaker, first 1-10 speeches (Toastmasters Level 1-2)
+#   intermediate = competent speaker, 10-50 speeches (Toastmasters Level 3-4)
+#   advanced     = accomplished speaker, 50-200 speeches (Toastmasters Level 5 / DTM)
+#   expert       = professional/keynote speaker, 200+ speeches (CSP / TED-level)
+#
+# Progression arc:
+#   Overcome fear and deliver basic speeches (stage fright, structure) ->
+#   Develop vocal and physical delivery skills (voice, body language) ->
+#   Master engagement techniques (storytelling, audience engagement, visuals) ->
+#   Command advanced situations (impromptu, persuasion, Q&A handling)
+
+tree:
+  id: "business/public-speaking"
+  title: "Public Speaking"
+  description: >
+    A comprehensive skill tree for public speaking — the ability to communicate
+    ideas effectively to an audience, whether a team of five or a crowd of
+    thousands. Covers overcoming stage fright, structuring speeches, vocal
+    delivery, body language, storytelling, visual aids, audience engagement,
+    impromptu speaking, persuasion, and handling Q&A. These skills apply
+    across business presentations, conference talks, pitches, toasts, and
+    any situation where you stand up and speak.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  # -- FOUNDATION (fear management and basic structure, learned first) ----------
+  - id: "business/public-speaking/overcoming-stage-fright"
+    title: "Overcoming Stage Fright"
+    description: >
+      The ability to manage speaking anxiety and perform under pressure. Nearly
+      75% of people experience glossophobia — fear of public speaking. This is
+      the first skill because no amount of technique matters if you cannot get
+      on stage. The goal is not eliminating nervousness but channeling it into
+      energy and presence. Every great speaker has learned to work with fear,
+      not against it.
+    benchmarks:
+      - level: beginner
+        criteria: "Delivers a 2-3 minute prepared speech in front of a small group without freezing or abandoning the talk."
+        metrics:
+          - "Completes a full speech without stopping or leaving the stage in 90%+ of attempts"
+          - "Self-reported anxiety drops from 8+/10 to 6/10 or below after 5 practice speeches"
+          - "Audience reports that nervousness was not distracting in post-speech feedback"
+        resources:
+          - title: "TED Talk - Amy Cuddy: Your Body Language May Shape Who You Are"
+            url: "https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
+            type: "video"
+          - title: "Toastmasters - Manage Your Fear of Public Speaking"
+            url: "https://www.toastmasters.org/resources/manage-your-fear-of-public-speaking"
+            type: "article"
+          - title: "Charisma on Command - How to Never Be Nervous Again"
+            url: "https://www.youtube.com/watch?v=ixYrDLdOnnk"
+            type: "video"
+        practice:
+          - "Stand in front of a mirror and deliver a 60-second self-introduction 5 times in a row, noticing where anxiety peaks and practicing breathing through it (15 minutes)"
+          - "Record yourself giving a 2-minute speech on your phone, watch it back, and note the difference between how nervous you felt versus how nervous you looked (10 minutes)"
+          - "Practice box breathing (4 seconds in, 4 hold, 4 out, 4 hold) for 2 minutes before each practice speech to build a pre-speech calming ritual (ongoing)"
+        projects:
+          - "Join a Toastmasters club or speaking group and deliver your Ice Breaker speech (4-6 minutes about yourself). Document your anxiety level before, during, and after"
+        tips:
+          - "Nervousness and excitement produce the same physiological response. Instead of telling yourself 'calm down,' try saying 'I am excited.' Research shows this reappraisal outperforms suppression."
+          - "Arrive early and walk the stage before anyone is there. Familiarity with the physical space reduces anxiety dramatically."
+      - level: intermediate
+        criteria: >
+          Manages anxiety consistently across different venues and audience sizes.
+          Channels nervous energy into enthusiasm and stage presence. Can recover
+          gracefully from mistakes or unexpected disruptions.
+        metrics:
+          - "Delivers speeches to groups of 20-50 people with self-reported anxiety at 4/10 or below"
+          - "Recovers from mistakes (lost place, tech failure, stumble) without audience noticing distress in 80%+ of cases"
+          - "Volunteers for speaking opportunities rather than avoiding them"
+        resources:
+          - title: "TED Talk - Joe Kowan: How I Beat Stage Fright"
+            url: "https://www.ted.com/talks/joe_kowan_how_i_beat_stage_fright"
+            type: "video"
+          - title: "Harvard Business Review - Overcome Your Fear of Public Speaking"
+            url: "https://hbr.org/2018/02/to-overcome-your-fear-of-public-speaking-stop-thinking-about-yourself"
+            type: "article"
+          - title: "Vinh Giang - How to Manage Nerves Before a Presentation"
+            url: "https://www.youtube.com/watch?v=RVk8MxXbOoI"
+            type: "video"
+        practice:
+          - "Deliberately practice recovering from mistakes: have a friend interrupt you mid-speech or turn off your slides, and practice continuing smoothly (20 minutes)"
+          - "Speak in progressively larger settings over 4 weeks: first 5 people, then 15, then 30+. Track your anxiety level at each size to build a comfort ladder (ongoing)"
+        projects:
+          - "Deliver a 7-minute speech at a meetup, company all-hands, or community event with 30+ people. Record it and compare your perceived anxiety to your visible composure"
+        tips:
+          - "The audience wants you to succeed. They are not looking for mistakes. Shifting from 'they are judging me' to 'they are rooting for me' changes everything."
+      - level: advanced
+        criteria: >
+          Performs confidently in high-stakes situations (executive presentations,
+          conference keynotes, media appearances). Uses pre-performance routines
+          reliably. Can manage anxiety even with hostile or indifferent audiences.
+        metrics:
+          - "Delivers high-stakes presentations (100+ person audience, executive leadership, live media) with composure rated 4+/5 by audience"
+          - "Has a documented pre-performance routine that is used consistently before every major talk"
+          - "Can step in as a last-minute replacement speaker with less than 1 hour of preparation"
+        resources:
+          - title: "TED Talk - Chris Anderson: TED's Secret to Great Public Speaking"
+            url: "https://www.ted.com/talks/chris_anderson_ted_s_secret_to_great_public_speaking"
+            type: "video"
+          - title: "Toastmasters - The Successful Club Series"
+            url: "https://www.toastmasters.org/education/club-officer-training/the-successful-club-series"
+            type: "article"
+        practice:
+          - "Before your next major talk, execute a full pre-performance routine: visualization (5 minutes), power posing (2 minutes), breathing exercise (2 minutes), vocal warm-up (3 minutes). Repeat for 5 talks to build the habit (ongoing)"
+          - "Seek out the most challenging speaking environments: a skeptical audience, a packed room, a technical failure scenario. Deliberately put yourself in difficult conditions to expand your comfort zone (ongoing)"
+        projects:
+          - "Deliver a 15-20 minute keynote-style talk at a conference or corporate event with 100+ attendees. Collect audience feedback and video review focusing specifically on composure and presence"
+        tips:
+          - "Elite speakers do not eliminate anxiety; they ritualize their response to it. Develop your pre-talk routine and follow it religiously. The routine becomes an anchor that signals to your brain: we have done this before, we know what to do."
+      - level: expert
+        criteria: >
+          Coaches others through stage fright. Can perform at peak level regardless
+          of conditions — jet lag, hostile audience, equipment failure, massive
+          crowd. Treats speaking anxiety as a topic of expertise and can teach
+          frameworks for managing it.
+        metrics:
+          - "Has coached 10+ speakers through their stage fright with documented improvement"
+          - "Maintains performance quality across radically different conditions (audience of 20 vs 2000, friendly vs hostile, prepared vs last-minute)"
+          - "Can articulate and teach a personal anxiety management framework that others adopt successfully"
+        resources:
+          - title: "Talk Like TED by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Talk-Like-TED-Public-Speaking-Secrets/dp/1250061539"
+            type: "book"
+          - title: "Toastmasters Pathways - Advanced Program Overview"
+            url: "https://www.toastmasters.org/pathways-overview"
+            type: "article"
+        practice:
+          - "Mentor a new speaker through their first 5 speeches, helping them develop their own pre-performance routine and reappraisal strategies (ongoing over 2-3 months)"
+          - "Study your own performance data across 20+ talks: identify patterns in when anxiety spikes (topic, audience size, stakes) and develop targeted strategies for each trigger (2 hours)"
+        projects:
+          - "Design and deliver a workshop on managing speaking anxiety for 15+ participants, including theory, exercises, and a practice speech component. Measure participant anxiety before and after the workshop"
+        tips:
+          - "The expert realization: anxiety never fully disappears, and that is a feature, not a bug. The day you feel zero anxiety is the day you stop being fully present. Channel it, do not chase its elimination."
+    tags: ["anxiety", "mindset", "foundation"]
+
+  - id: "business/public-speaking/speech-structure"
+    title: "Speech Structure & Organization"
+    description: >
+      The ability to organize ideas into a clear, logical, and compelling
+      structure. A well-structured speech is easier to deliver, easier to follow,
+      and easier to remember — for both the speaker and the audience. This is
+      the second foundational skill because structure gives nervous speakers
+      a roadmap that prevents rambling and reduces anxiety.
+    benchmarks:
+      - level: beginner
+        criteria: "Organizes a speech with a clear opening, 2-3 main points, and a conclusion. Audience can identify the main message after the speech."
+        metrics:
+          - "90%+ of audience members can state the main point of the speech when asked afterward"
+          - "Speech follows a recognizable structure (opening hook, body, conclusion) as rated by evaluator"
+          - "Transitions between sections are present (even if basic) in every speech"
+        resources:
+          - title: "Toastmasters - Organize Your Speech"
+            url: "https://www.toastmasters.org/resources/organize-your-speech"
+            type: "article"
+          - title: "TED Talk - Nancy Duarte: The Secret Structure of Great Talks"
+            url: "https://www.ted.com/talks/nancy_duarte_the_secret_structure_of_great_talks"
+            type: "video"
+          - title: "Charisma on Command - How to Structure a Speech"
+            url: "https://www.youtube.com/watch?v=Unzc731iCUY"
+            type: "video"
+        practice:
+          - "Outline 3 different speeches using the classic 3-point structure: hook, point 1, point 2, point 3, callback to hook. Time each outline to 5 minutes (30 minutes total)"
+          - "Watch a TED talk and reverse-engineer its structure: identify the opening hook, each main section, transitions, and the closing. Write the outline on one index card (20 minutes)"
+        projects:
+          - "Write and deliver a 5-7 minute speech using the Problem-Solution-Benefit structure. Have an evaluator assess whether the structure was clear and the main point was memorable"
+        tips:
+          - "The Rule of Three works because human memory clusters in threes. If you have 7 points, you have 7 points too many. Group them into 3 buckets."
+          - "Write your conclusion first. Knowing where you are going makes every structural decision easier."
+      - level: intermediate
+        criteria: >
+          Uses multiple structural frameworks (chronological, problem-solution,
+          compare-contrast, Monroe's Motivated Sequence) and selects the right one
+          for the purpose. Crafts openings that hook and closings that land.
+        metrics:
+          - "Can outline a speech in under 10 minutes using at least 3 different structural frameworks"
+          - "Opening hooks rated as 'attention-grabbing' by 80%+ of audience in evaluations"
+          - "Closing statements rated as 'memorable' or 'call-to-action clear' by 70%+ of audience"
+        resources:
+          - title: "TED Talk - Simon Sinek: How Great Leaders Inspire Action"
+            url: "https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action"
+            type: "video"
+          - title: "Harvard Business Review - How to Make a Persuasive Presentation"
+            url: "https://hbr.org/2019/10/what-it-takes-to-give-a-great-presentation"
+            type: "article"
+          - title: "Toastmasters - Pathways Learning Experience"
+            url: "https://www.toastmasters.org/pathways-overview"
+            type: "article"
+        practice:
+          - "Take one topic and outline it using 3 different frameworks (chronological, problem-solution, Monroe's Motivated Sequence). Compare which structure makes the argument most compelling (30 minutes)"
+          - "Write 5 different opening hooks for the same speech: a question, a statistic, a story, a bold statement, and a quote. Test each with a friend and ask which one grabbed them most (20 minutes)"
+        projects:
+          - "Deliver two versions of the same 7-minute speech using different structures (e.g., chronological vs problem-solution) to different audiences. Compare audience feedback on clarity and persuasiveness"
+        tips:
+          - "Monroe's Motivated Sequence (Attention, Need, Satisfaction, Visualization, Action) is the most powerful persuasive structure ever developed. If you only learn one advanced framework, learn this one."
+      - level: advanced
+        criteria: >
+          Structures complex, multi-layered presentations (30-60 minutes) with
+          clear narrative arcs. Adapts structure in real-time based on audience
+          response. Builds nested structures (stories within arguments within
+          themes) without losing the audience.
+        metrics:
+          - "Delivers 30+ minute presentations rated as 'easy to follow' by 85%+ of audience despite complexity"
+          - "Can restructure a talk mid-delivery based on audience cues (confusion, engagement, time constraints) without losing coherence"
+        resources:
+          - title: "Resonate by Nancy Duarte (Amazon)"
+            url: "https://www.amazon.com/Resonate-Present-Stories-Transform-Audiences/dp/0470632011"
+            type: "book"
+          - title: "TED Talk - Andrew Stanton: The Clues to a Great Story"
+            url: "https://www.ted.com/talks/andrew_stanton_the_clues_to_a_great_story"
+            type: "video"
+        practice:
+          - "Outline a 45-minute presentation as a modular structure: 6-8 self-contained blocks that can be rearranged or dropped without breaking the narrative. Practice delivering it in different orders (1 hour)"
+          - "During your next talk, deliberately skip a section based on audience energy and see if you can bridge seamlessly to the next point. Debrief on what worked (ongoing)"
+        projects:
+          - "Design and deliver a 30-minute presentation with a nested structure: a central narrative arc that weaves together 3 sub-stories, each supporting a different argument. Collect feedback on both clarity and emotional impact"
+        tips:
+          - "At this level, structure should be invisible. The audience should feel like they are on a journey, not sitting through an outline. Test this by asking audience members to describe the talk — if they describe an experience rather than bullet points, your structure is working."
+      - level: expert
+        criteria: >
+          Designs speech architectures for others (TEDx coaches, speechwriters).
+          Creates novel structural frameworks for specific contexts. Can structure
+          a 90-minute workshop, a 3-minute pitch, and a 20-minute keynote with
+          equal mastery.
+        metrics:
+          - "Has structured speeches for 10+ other speakers that received audience ratings of 4+/5"
+          - "Can produce a polished outline for any speech length (3 to 90 minutes) within 15 minutes"
+          - "Has developed or adapted a structural framework that others use and reference"
+        resources:
+          - title: "TED Talks: The Official TED Guide to Public Speaking by Chris Anderson (Amazon)"
+            url: "https://www.amazon.com/TED-Talks-Official-Public-Speaking/dp/1328710289"
+            type: "book"
+          - title: "Toastmasters - Distinguished Toastmaster (DTM) Program"
+            url: "https://www.toastmasters.org/education/distinguished-toastmaster"
+            type: "article"
+        practice:
+          - "Coach 3 different speakers through their speech outlines: a first-time speaker (5 minutes), a business presenter (20 minutes), and a keynote speaker (45 minutes). Compare the structural advice you give at each level (ongoing)"
+          - "Analyze the structures of 10 top-rated TED talks and identify the 3 most common patterns. Create a one-page structural guide that captures these patterns (2 hours)"
+        projects:
+          - "Write a structural guide or framework document that codifies your approach to speech organization. Test it by having 5 speakers use it independently and measuring whether their structural clarity improves"
+        tips:
+          - "The expert speechwriter knows that structure is not just about logic — it is about emotion. Every structural choice (where you place the reveal, when you pause, how you sequence tension and relief) is an emotional decision."
+    tags: ["structure", "organization", "foundation"]
+
+  # -- DELIVERY SKILLS (voice and body, the physical craft) --------------------
+  - id: "business/public-speaking/voice-projection-modulation"
+    title: "Voice Projection & Modulation"
+    description: >
+      The ability to use your voice as an instrument — projecting to fill a room,
+      varying pitch and pace to maintain interest, using pauses for emphasis, and
+      speaking with clarity and warmth. Your voice is the primary delivery tool.
+      A monotone voice puts audiences to sleep regardless of content quality.
+      Vocal variety is what transforms information transfer into an experience.
+    benchmarks:
+      - level: beginner
+        criteria: "Speaks loudly enough to be heard clearly by the entire room without a microphone in a small venue. Avoids filler words (um, uh, like) most of the time."
+        metrics:
+          - "Audience in the back row reports hearing every word in 80%+ of speeches"
+          - "Filler word count drops below 5 per minute of speaking (tracked by evaluator or recording)"
+          - "Speaking pace is between 130-170 words per minute (not rushing, not dragging)"
+        resources:
+          - title: "TED Talk - Julian Treasure: How to Speak So That People Want to Listen"
+            url: "https://www.ted.com/talks/julian_treasure_how_to_speak_so_that_people_want_to_listen"
+            type: "video"
+          - title: "Vinh Giang - The Power of Your Voice"
+            url: "https://www.youtube.com/watch?v=MrHxhQPOO2c"
+            type: "video"
+          - title: "Toastmasters - Your Speaking Voice"
+            url: "https://www.toastmasters.org/resources/your-speaking-voice"
+            type: "article"
+        practice:
+          - "Read a passage aloud for 5 minutes daily at progressively louder volumes: whisper, conversational, projecting, filling a room. Focus on maintaining vocal quality at each volume (5 minutes daily)"
+          - "Record a 2-minute speech and count every filler word. Re-deliver the same speech, replacing each filler with a silent pause. Notice how the pauses improve your delivery (15 minutes)"
+          - "Practice diaphragmatic breathing: lie on your back with a book on your stomach, breathe so the book rises and falls. This builds the breath support needed for projection (5 minutes daily)"
+        projects:
+          - "Deliver a 5-minute speech and have an evaluator count filler words, rate projection, and assess pace. Set a target to reduce fillers by 50% in your next speech"
+        tips:
+          - "Filler words come from fear of silence. The cure is learning to love the pause. A 2-second pause feels like an eternity to the speaker but feels powerful to the audience."
+          - "Project your voice to the back wall, not the front row. Aim your voice at the farthest person in the room."
+      - level: intermediate
+        criteria: >
+          Uses deliberate vocal variety — changes in pitch, pace, volume, and
+          tone — to emphasize key points and maintain audience attention. Can
+          use a microphone effectively. Speaks with a consistent, warm tone.
+        metrics:
+          - "Vocal variety rated 4+/5 by evaluators (not monotone, uses pitch and pace changes intentionally)"
+          - "Filler words below 2 per minute of speaking"
+          - "Can switch between microphone types (handheld, lapel, headset) without audio issues"
+        resources:
+          - title: "Vinh Giang - How to Use Your Voice to Command Attention"
+            url: "https://www.youtube.com/watch?v=Ze03MPr6fH4"
+            type: "video"
+          - title: "Harvard Business Review - How to Improve Your Business Speaking Voice"
+            url: "https://hbr.org/2022/11/do-you-sound-credible-or-do-you-undercut-your-message"
+            type: "article"
+          - title: "Charisma on Command - 5 Tricks to Sound More Confident"
+            url: "https://www.youtube.com/watch?v=l5Tk4Mo0MkQ"
+            type: "video"
+        practice:
+          - "Take a single paragraph and deliver it 5 different ways: excited, somber, urgent, conspiratorial, and inspirational. Notice how pitch, pace, and volume change for each emotional tone (15 minutes)"
+          - "Practice the 'power pause': deliver a key sentence, stop for a full 3 seconds, then continue. Do this 5 times in a speech to build comfort with silence (10 minutes)"
+          - "Practice with a microphone: record yourself with a lapel mic and a handheld. Listen for popping P sounds, breathing noise, and volume consistency. Adjust technique accordingly (20 minutes)"
+        projects:
+          - "Deliver a 7-minute speech where you deliberately use at least 3 vocal shifts (slow down for emphasis, speed up for excitement, drop to near-whisper for intimacy). Have evaluator rate each shift's effectiveness"
+        tips:
+          - "The most powerful vocal tool is the pause. Watch any great TED speaker and time their pauses. You will find pauses of 2-5 seconds at key moments. These feel impossibly long to the speaker and impossibly powerful to the audience."
+      - level: advanced
+        criteria: >
+          Voice is a fully controlled instrument. Can shift vocal register to match
+          content (authoritative, vulnerable, humorous, urgent). Sustains vocal
+          energy across long presentations. Commands attention through voice alone.
+        metrics:
+          - "Maintains vocal energy and variety across 30+ minute presentations without fatigue or monotone drift"
+          - "Audience engagement scores (attention, energy) remain above 4/5 throughout long talks"
+          - "Can deliver the same content in radically different vocal styles (keynote energy vs intimate conversation) with equal effectiveness"
+        resources:
+          - title: "Set Your Voice Free by Roger Love (Amazon)"
+            url: "https://www.amazon.com/Set-Your-Voice-Free-Expanded/dp/0316311200"
+            type: "book"
+          - title: "TED Talk - Jamila Lyiscott: 3 Ways to Speak English"
+            url: "https://www.ted.com/talks/jamila_lyiscott_3_ways_to_speak_english"
+            type: "video"
+        practice:
+          - "Warm up your voice before every speaking engagement: lip trills, tongue twisters, humming at different pitches, and reading aloud at different volumes (10 minutes before each talk)"
+          - "Record a 30-minute practice talk and listen for 'vocal drift' — where your voice falls into monotone. Mark those timestamps and re-deliver those sections with intentional variety (45 minutes)"
+        projects:
+          - "Deliver a 30-minute presentation and have 3 evaluators independently rate your vocal variety, projection, and energy at 5-minute intervals. Identify where vocal energy dips and develop strategies to maintain it"
+        tips:
+          - "Your voice tires like any muscle. Vocal warm-ups are not optional for long presentations. Professional singers warm up for 15-20 minutes before performing. Speakers should do the same."
+      - level: expert
+        criteria: >
+          Recognized for distinctive vocal delivery. Can coach others on vocal
+          technique. Understands the physiology of voice production and can
+          diagnose and correct vocal habits in other speakers.
+        metrics:
+          - "Has coached 10+ speakers on vocal technique with documented improvement in their evaluations"
+          - "Audience consistently cites vocal delivery as a highlight in feedback across different contexts"
+          - "Can diagnose vocal issues (nasality, breathiness, monotone, uptalk) in other speakers and provide corrective exercises"
+        resources:
+          - title: "The Vocal Athlete by Wendy LeBorgne & Marci Rosenberg (Amazon)"
+            url: "https://www.amazon.com/Vocal-Athlete-Wendy-DeLeo-LeBorgne/dp/1597567809"
+            type: "book"
+          - title: "Toastmasters - Accredited Speaker Program"
+            url: "https://www.toastmasters.org/education/accredited-speaker"
+            type: "article"
+        practice:
+          - "Record and analyze the vocal patterns of 5 world-class speakers (TED speakers, political orators, actors). Map their pitch range, pace variation, and pause usage to create a vocal variety reference library (2 hours)"
+          - "Coach 3 speakers on a specific vocal issue each. Diagnose the problem, prescribe 2-3 exercises, and measure improvement over 4 weeks (ongoing)"
+        projects:
+          - "Design and deliver a vocal skills workshop covering projection, pitch variation, pacing, and pause technique. Include diagnostic exercises where participants identify their own vocal habits and receive personalized feedback"
+        tips:
+          - "At the expert level, voice becomes identity. The great speakers are recognizable by their voice alone — not because they have unusual voices, but because they have fully developed the voice they have."
+    tags: ["delivery", "voice", "technique"]
+
+  - id: "business/public-speaking/body-language"
+    title: "Body Language & Stage Presence"
+    description: >
+      The ability to use your body — gestures, movement, eye contact, facial
+      expressions, and posture — to reinforce your message and project confidence.
+      Research by Albert Mehrabian (often misquoted but directionally useful)
+      suggests nonverbal cues heavily influence how audiences perceive credibility
+      and engagement. Stage presence is the quality that makes audiences feel
+      you belong at the front of the room.
+    benchmarks:
+      - level: beginner
+        criteria: "Maintains open posture, makes eye contact with audience members, and avoids distracting mannerisms (pacing, fidgeting, hands in pockets)."
+        metrics:
+          - "Evaluator identifies zero distracting physical mannerisms in 70%+ of speeches"
+          - "Makes eye contact with audience members in different sections of the room (left, center, right)"
+          - "Hands are visible and used for at least 3 intentional gestures per speech"
+        resources:
+          - title: "TED Talk - Amy Cuddy: Your Body Language May Shape Who You Are"
+            url: "https://www.ted.com/talks/amy_cuddy_your_body_language_may_shape_who_you_are"
+            type: "video"
+          - title: "Charisma on Command - Body Language Tips for Public Speaking"
+            url: "https://www.youtube.com/watch?v=cFLjudWTuGQ"
+            type: "video"
+          - title: "Toastmasters - Gestures and Body Language"
+            url: "https://www.toastmasters.org/resources/gestures-and-body-language"
+            type: "article"
+        practice:
+          - "Practice your next speech in front of a mirror focusing only on body language: stand with feet shoulder-width apart, hands at sides or in front of waist, and make eye contact with your own reflection (10 minutes)"
+          - "Record a 3-minute speech on video and watch it with the sound off. List every physical distraction you notice (swaying, touching face, avoiding eye contact) and work to eliminate one per speech (15 minutes)"
+          - "Practice the 'triangle technique' for eye contact: pick three people in different sections of the room and rotate your gaze between them, holding each for 3-5 seconds (practice with friends, 10 minutes)"
+        projects:
+          - "Deliver a 5-minute speech and have an evaluator focus exclusively on body language, rating posture, eye contact, gestures, and movement on a 1-5 scale"
+        tips:
+          - "Your hands reveal your confidence. Hiding them (behind your back, in pockets, clasped tightly) signals anxiety. Keep them visible and let them move naturally."
+          - "Pick 3 'anchor people' in different parts of the audience to make eye contact with. This creates the illusion of eye contact with everyone in their section."
+      - level: intermediate
+        criteria: >
+          Uses gestures and movement intentionally to reinforce content. Owns
+          the stage — moves with purpose rather than pacing nervously. Facial
+          expressions match the emotional content of the speech.
+        metrics:
+          - "Gestures are rated as 'purposeful and natural' by evaluators in 80%+ of speeches"
+          - "Stage movement has clear purpose (moving to a new position for a new point, stepping forward for emphasis) rather than random pacing"
+          - "Facial expressions match content (smiling during positive stories, serious during data) as rated by evaluators"
+        resources:
+          - title: "Vinh Giang - Master Your Body Language"
+            url: "https://www.youtube.com/watch?v=cGbMbP3ELWI"
+            type: "video"
+          - title: "Harvard Business Review - The Elements of a Good Presentation"
+            url: "https://hbr.org/2019/10/what-it-takes-to-give-a-great-presentation"
+            type: "article"
+          - title: "TED Talk - Kelly McGonigal: How to Make Stress Your Friend"
+            url: "https://www.ted.com/talks/kelly_mcgonigal_how_to_make_stress_your_friend"
+            type: "video"
+        practice:
+          - "Practice 'planting': deliver a key point while standing still with both feet planted, then move to a new position for the next point. Alternate between planting and transitioning for 5 minutes (15 minutes)"
+          - "Rehearse a speech and assign a specific gesture to each key point: open palms for invitation, pointing for emphasis, hands apart for scale. Drill until the gestures feel natural (20 minutes)"
+        projects:
+          - "Deliver a 7-10 minute speech with intentional stage blocking: plan your position for each section in advance and mark it on a stage diagram. Record and compare planned vs actual movement"
+        tips:
+          - "Stage movement should follow content. Move forward when making a point directly to the audience. Move to a new position when transitioning to a new topic. Stand still for your most important lines. Random movement is noise."
+      - level: advanced
+        criteria: >
+          Possesses distinctive stage presence that commands attention from the
+          moment of entry. Body language is fully congruent with message. Can
+          adapt physical delivery to different stage sizes and formats (big
+          stage, boardroom, virtual).
+        metrics:
+          - "Audience rates 'stage presence' or 'commanding delivery' as a top-3 strength in feedback for 80%+ of talks"
+          - "Seamlessly adapts physical delivery across formats: large stage, small room, seated panel, virtual presentation"
+          - "Can hold audience attention with physical presence alone for 10+ seconds (entering the stage, pausing before the first word)"
+        resources:
+          - title: "Presence by Amy Cuddy (Amazon)"
+            url: "https://www.amazon.com/Presence-Bringing-Boldest-Biggest-Challenges/dp/0316387800"
+            type: "book"
+          - title: "TED Talk - Brene Brown: The Power of Vulnerability"
+            url: "https://www.ted.com/talks/brene_brown_the_power_of_vulnerability"
+            type: "video"
+        practice:
+          - "Practice your entrance: walk to the center of the stage, plant your feet, look at the audience for 5 seconds in silence before saying a word. The first impression is set before you speak (10 minutes)"
+          - "Deliver the same 5-minute talk in 3 different formats: standing on a large stage, seated at a table, and on a video call. Adjust your body language for each context and note the differences (30 minutes)"
+        projects:
+          - "Video yourself delivering a talk on a large stage and then in a boardroom setting. Have evaluators rate your presence in each format and identify adjustments needed for each context"
+        tips:
+          - "Presence is not about being big and loud. Some of the most commanding speakers are quiet and still. Presence comes from congruence: your body, voice, and words all saying the same thing. Any mismatch breaks presence."
+      - level: expert
+        criteria: >
+          Can teach and diagnose body language issues in other speakers. Understands
+          the neuroscience of nonverbal communication. Creates a signature physical
+          delivery style that audiences remember and associate with you.
+        metrics:
+          - "Has coached 10+ speakers on body language with measurable improvement in their stage presence scores"
+          - "Audiences describe the speaker's presence using specific, memorable terms ('commanding calm,' 'electric energy') rather than generic praise"
+        resources:
+          - title: "What Every BODY is Saying by Joe Navarro (Amazon)"
+            url: "https://www.amazon.com/What-Every-BODY-Saying-Speed-Reading/dp/0061438294"
+            type: "book"
+          - title: "Charisma on Command - Analyzing Charismatic Leaders"
+            url: "https://www.youtube.com/watch?v=SEDvD1IICfE"
+            type: "video"
+        practice:
+          - "Analyze 5 iconic speakers' body language frame-by-frame (TED talks, political speeches, commencement addresses). Document their signature gestures, movement patterns, and presence techniques (2 hours)"
+          - "Coach 3 speakers on body language: video their practice, identify 2-3 specific adjustments, and measure the improvement in their next speech (ongoing)"
+        projects:
+          - "Create a body language coaching guide: the 10 most common physical delivery mistakes, diagnostic criteria for each, and corrective exercises. Test it with 5 speakers and refine based on results"
+        tips:
+          - "The great speakers develop a physical signature — a way of being on stage that is uniquely theirs. It cannot be copied from someone else. It emerges from aligning your natural physicality with your authentic message."
+    tags: ["delivery", "nonverbal", "presence"]
+
+  # -- ENGAGEMENT SKILLS (connecting with the audience) ------------------------
+  - id: "business/public-speaking/storytelling"
+    title: "Storytelling"
+    description: >
+      The ability to use stories to make ideas memorable, relatable, and emotionally
+      resonant. Stories are the oldest communication technology. Neuroscience shows
+      that stories activate the brain differently than facts alone — they trigger
+      neural coupling, where the listener's brain mirrors the speaker's. A speech
+      with data informs. A speech with stories transforms.
+    benchmarks:
+      - level: beginner
+        criteria: "Includes at least one personal story or anecdote in a speech that illustrates the main point. The story has a clear beginning, middle, and end."
+        metrics:
+          - "Story has identifiable setup, conflict, and resolution as confirmed by evaluator"
+          - "Audience can connect the story to the main message of the speech in 80%+ of cases"
+          - "Story is delivered in under 2 minutes for a 5-minute speech (proportional to speech length)"
+        resources:
+          - title: "TED Talk - Andrew Stanton: The Clues to a Great Story"
+            url: "https://www.ted.com/talks/andrew_stanton_the_clues_to_a_great_story"
+            type: "video"
+          - title: "Charisma on Command - How to Be a Great Storyteller"
+            url: "https://www.youtube.com/watch?v=Nj-hdQMa3uA"
+            type: "video"
+          - title: "Toastmasters - Tell Your Story"
+            url: "https://www.toastmasters.org/magazine/magazine-issues/2019/jan/tell-your-story"
+            type: "article"
+        practice:
+          - "Write 5 personal stories from your life that each illustrate a different universal theme (failure, perseverance, surprise, connection, change). Practice telling each in under 90 seconds (30 minutes)"
+          - "Take a fact or statistic from your next presentation and find a story that illustrates it. Replace the slide of data with the story and see which the audience remembers (20 minutes)"
+        projects:
+          - "Deliver a 5-7 minute speech that is built around a single personal story, with the lesson of the story serving as the main message. Have evaluators rate the story's clarity, emotional impact, and relevance"
+        tips:
+          - "The best speaking stories come from your own experience. You do not need dramatic stories. A story about getting lost on your way to a job interview can be more powerful than a story about climbing Everest, because the audience can relate to it."
+          - "Every story needs tension. 'I wanted X, but Y got in the way' is the minimal tension structure. Without tension, a story is just a report."
+      - level: intermediate
+        criteria: >
+          Tells stories with vivid sensory detail, dialogue, and emotional beats.
+          Uses story structure intentionally (setup, rising action, climax,
+          resolution). Builds a personal story library that can be deployed
+          across different speaking contexts.
+        metrics:
+          - "Stories include at least 2 sensory details (what you saw, heard, felt) and 1 line of dialogue"
+          - "Audience emotional response (laughter, gasps, nodding) occurs at intended moments in the story in 70%+ of deliveries"
+          - "Has a documented library of 10+ stories that can be matched to common speaking themes"
+        resources:
+          - title: "TED Talk - Chimamanda Ngozi Adichie: The Danger of a Single Story"
+            url: "https://www.ted.com/talks/chimamanda_ngozi_adichie_the_danger_of_a_single_story"
+            type: "video"
+          - title: "Harvard Business Review - How to Tell a Great Story"
+            url: "https://hbr.org/2014/07/how-to-tell-a-great-story"
+            type: "article"
+          - title: "Vinh Giang - The Art of Storytelling"
+            url: "https://www.youtube.com/watch?v=eF4ekVzU4mI"
+            type: "video"
+        practice:
+          - "Retell one of your stories 5 times, each time adding more sensory detail: what did you see? Hear? Smell? Feel physically? What was the dialogue? Stop when the story is vivid but not bloated (20 minutes)"
+          - "Build a story matrix: list 10 personal stories across the top and 10 common speech themes down the side. Map which stories illustrate which themes. Fill gaps by mining your memory for new stories (1 hour)"
+        projects:
+          - "Deliver a 10-minute speech that weaves 3 stories together into a single narrative arc, each story building on the previous one to support a central thesis. Collect feedback on emotional impact and narrative coherence"
+        tips:
+          - "The best storytellers show, they do not tell. 'I was terrified' is telling. 'My hands were shaking and I could hear my own heartbeat in my ears' is showing. Sensory detail puts the audience inside the story."
+      - level: advanced
+        criteria: >
+          Weaves multiple stories into complex narratives. Uses advanced
+          techniques: callback, nested stories, story loops (opening a story,
+          leaving it unfinished, telling another, returning). Can find and tell
+          other people's stories with permission and integrity.
+        metrics:
+          - "Uses at least 2 advanced storytelling techniques (callback, nested stories, open loops) per speech"
+          - "Audience rates story as a top-3 memorable element of the talk in 90%+ of feedback"
+          - "Can adapt the same core story to different audiences (technical, executive, general public) in under 5 minutes of preparation"
+        resources:
+          - title: "Storyworthy by Matthew Dicks (Amazon)"
+            url: "https://www.amazon.com/Storyworthy-Engage-Persuade-through-Storytelling/dp/1608685489"
+            type: "book"
+          - title: "TED Talk - Elif Shafak: The Revolutionary Power of Diverse Thought"
+            url: "https://www.ted.com/talks/elif_shafak_the_revolutionary_power_of_diverse_thought"
+            type: "video"
+        practice:
+          - "Practice the 'story loop' technique: open a story, pause at the climax, pivot to a related point or second story, then return to finish the first story. Drill this with 2 stories until the transitions are seamless (30 minutes)"
+          - "Take a single story and adapt it for 3 different audiences: a technical team, a group of executives, and a general public audience. Notice which details you add, cut, or reframe for each (30 minutes)"
+        projects:
+          - "Deliver a 15-minute talk that uses the 'story loop' technique: open with a compelling story, leave it unresolved, deliver your content, and return to close the story at the end. Measure whether the audience remembers the opening story in post-talk feedback"
+        tips:
+          - "The story loop is the most powerful attention device in public speaking. An unfinished story creates a cognitive 'open loop' that the brain desperately wants closed. The audience will stay with you until you close it."
+      - level: expert
+        criteria: >
+          Recognized as an exceptional storyteller. Can teach storytelling
+          frameworks to others. Finds stories in unexpected places (data,
+          processes, systems) and makes abstract concepts tangible through
+          narrative. Shapes organizational narratives.
+        metrics:
+          - "Has coached 10+ speakers on storytelling with measurable improvement in their audience engagement scores"
+          - "Stories are cited or retold by audience members weeks or months after the original talk"
+          - "Can turn any abstract concept (a data trend, a process change, a strategy) into a compelling human story in under 5 minutes of preparation"
+        resources:
+          - title: "Talk Like TED by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Talk-Like-TED-Public-Speaking-Secrets/dp/1250061539"
+            type: "book"
+          - title: "TED Talk - Chris Anderson: TED's Secret to Great Public Speaking"
+            url: "https://www.ted.com/talks/chris_anderson_ted_s_secret_to_great_public_speaking"
+            type: "video"
+        practice:
+          - "Collect stories from people around you: interview 5 colleagues about a meaningful work experience and craft their stories into 90-second narratives with their permission. Practice telling someone else's story with authenticity and respect (2 hours)"
+          - "Take a quarterly business report and identify 3 stories hidden in the data: a customer whose experience changed, a team that overcame an obstacle, a metric that reveals a human truth. Craft each into a 1-minute story (1 hour)"
+        projects:
+          - "Design and deliver a 2-hour storytelling workshop that teaches participants to find, structure, and deliver personal stories. Include exercises for story mining, sensory detail, and story-to-message connection. Measure participant improvement from first to last story"
+        tips:
+          - "The mark of a master storyteller is not having the most dramatic stories — it is finding the extraordinary in the ordinary. The most powerful stories come from small, relatable moments that reveal universal truths."
+    tags: ["engagement", "narrative", "creativity"]
+
+  - id: "business/public-speaking/slide-design"
+    title: "Slide Design & Visual Aids"
+    description: >
+      The ability to create and use visual aids that enhance rather than replace
+      your message. Most slides commit the cardinal sin of public speaking: they
+      put everything the speaker is going to say on the screen, turning the
+      audience into readers instead of listeners. Great visual aids are visual —
+      they show what words cannot say and disappear when they are not needed.
+    benchmarks:
+      - level: beginner
+        criteria: "Creates slides with minimal text (6 words or fewer per slide), relevant images, and consistent formatting. Does not read from slides."
+        metrics:
+          - "Average word count per slide is 6 or fewer across the entire deck"
+          - "Evaluator confirms that the speaker never reads directly from slides"
+          - "Slides use a consistent font, color scheme, and layout throughout the deck"
+        resources:
+          - title: "TED Talk - David McCandless: The Beauty of Data Visualization"
+            url: "https://www.ted.com/talks/david_mccandless_the_beauty_of_data_visualization"
+            type: "video"
+          - title: "Charisma on Command - How to Give an Amazing Presentation"
+            url: "https://www.youtube.com/watch?v=MnIPpUiTcRc"
+            type: "video"
+          - title: "Harvard Business Review - How to Make a Great Presentation"
+            url: "https://hbr.org/2013/06/how-to-give-a-killer-presentation"
+            type: "article"
+        practice:
+          - "Take an existing text-heavy slide deck and redesign each slide to have no more than 6 words and one image. Practice delivering the content from memory rather than from the slides (30 minutes)"
+          - "Practice the 'blank slide' technique: insert blank (black) slides between content slides and deliver those sections with no visual support. Notice how it forces you to connect with the audience directly (15 minutes)"
+        projects:
+          - "Create a 10-slide deck for a 5-minute speech following the rule: each slide is one image or one number or one sentence. No bullet points. Deliver the speech and have evaluators rate whether the slides enhanced or distracted from the message"
+        tips:
+          - "If your slides can be understood without you speaking, you are a slide narrator, not a speaker. Slides should be meaningless without the speaker. The speaker should be compelling without the slides."
+          - "The most powerful slide is a single image that evokes emotion. The second most powerful slide is a single number that shocks."
+      - level: intermediate
+        criteria: >
+          Designs slides using professional design principles (contrast, alignment,
+          repetition, proximity). Uses data visualization effectively. Knows when
+          to use slides and when to go slide-free.
+        metrics:
+          - "Slide decks follow the CARP design principles (Contrast, Alignment, Repetition, Proximity) as assessed by a designer or experienced presenter"
+          - "Data is presented as clear charts or visualizations rather than tables of numbers in 90%+ of cases"
+          - "Makes a deliberate choice to use or not use slides based on the context, and can articulate why"
+        resources:
+          - title: "Presentation Zen by Garr Reynolds (Amazon)"
+            url: "https://www.amazon.com/Presentation-Zen-Simple-Design-Delivery/dp/0135800919"
+            type: "book"
+          - title: "TED Talk - Hans Rosling: The Best Stats You've Ever Seen"
+            url: "https://www.ted.com/talks/hans_rosling_the_best_stats_you_ve_ever_seen"
+            type: "video"
+          - title: "Vinh Giang - How to Create Impactful Presentations"
+            url: "https://www.youtube.com/watch?v=YoEHSv4TLRY"
+            type: "video"
+        practice:
+          - "Redesign a chart-heavy business presentation using data visualization best practices: simplify each chart to one message, remove clutter, add clear titles that state the insight (not the category), and use color to highlight the key data point (1 hour)"
+          - "Deliver the same 5-minute presentation once with slides and once without. Compare audience engagement and information retention for each version (30 minutes)"
+        projects:
+          - "Create a 15-slide presentation that tells a data story: each slide builds on the previous one, progressively revealing the narrative in the data. Use animation sparingly and purposefully. Collect feedback on clarity and impact"
+        tips:
+          - "The best data slides have a sentence as the title that states the conclusion, not the category. 'Revenue grew 40% in Q3' is better than 'Q3 Revenue.' The title does the thinking for the audience."
+      - level: advanced
+        criteria: >
+          Creates presentation experiences that seamlessly integrate visuals,
+          speaker delivery, and audience interaction. Uses advanced techniques
+          like build slides, multimedia, live demos, and physical props. Can
+          design presentations for others.
+        metrics:
+          - "Presentations use a mix of visual formats (images, data viz, video, live demo, blank slides) intentionally matched to content"
+          - "Can design a presentation deck for another speaker that enhances their delivery style"
+          - "Audience rates visual design as a top-3 strength in feedback for 80%+ of talks"
+        resources:
+          - title: "Slide:ology by Nancy Duarte (Amazon)"
+            url: "https://www.amazon.com/slide-ology-Science-Creating-Presentations/dp/0596522347"
+            type: "book"
+          - title: "TED Talk - Al Gore: Averting the Climate Crisis"
+            url: "https://www.ted.com/talks/al_gore_averting_the_climate_crisis"
+            type: "video"
+        practice:
+          - "Design a presentation that uses 3 different visual formats: static images for emotion, build slides for complexity, and a live demo for proof. Practice the transitions between each format until they are seamless (1 hour)"
+          - "Create a deck for someone else's talk: interview them about their content, design slides that match their delivery style, and iterate based on their practice run (2 hours)"
+        projects:
+          - "Design and deliver a 20-minute presentation that integrates at least 4 visual formats (images, data visualization, video clip, live demonstration or prop). Collect feedback on whether each format choice enhanced the message"
+        tips:
+          - "The best presentations are multimedia experiences, not slide shows. Think of your visual aids as a film score: sometimes loud and prominent, sometimes quiet and supportive, sometimes silent."
+      - level: expert
+        criteria: >
+          Can create world-class presentation visuals or direct a design team
+          to do so. Understands how visual cognition works and designs for how
+          the brain processes visual information. Can present without any visual
+          aids and be equally compelling.
+        metrics:
+          - "Has designed or directed visual design for presentations that have been delivered to 500+ person audiences"
+          - "Can deliver an equally rated talk with or without visual aids"
+          - "Has developed a visual design system or template that other speakers use and benefit from"
+        resources:
+          - title: "Resonate by Nancy Duarte (Amazon)"
+            url: "https://www.amazon.com/Resonate-Present-Stories-Transform-Audiences/dp/0470632011"
+            type: "book"
+          - title: "Harvard Business Review - Structure Your Presentation Like a Story"
+            url: "https://hbr.org/2012/10/structure-your-presentation-li"
+            type: "article"
+        practice:
+          - "Study the visual design of 10 iconic presentations (Apple keynotes, TED talks, Al Gore's climate presentations). Identify the visual principles that make them effective and create a design principles document (2 hours)"
+          - "Deliver the same 10-minute talk twice: once with your best slide deck and once with no slides at all. Compare audience ratings. If the no-slides version is significantly weaker, identify what content depends on visuals and practice delivering it verbally (30 minutes)"
+        projects:
+          - "Create a presentation design system: templates, color palettes, typography rules, image guidelines, and data visualization standards. Package it so other speakers in your organization can use it to create professional presentations without a designer"
+        tips:
+          - "The ultimate test of a great presentation is that the speaker could deliver it without slides and the slides could be viewed without the speaker, and both experiences would be valuable — but the combination would be transformative."
+    tags: ["visual", "design", "tools"]
+
+  - id: "business/public-speaking/audience-engagement"
+    title: "Audience Engagement"
+    description: >
+      The ability to connect with an audience, hold their attention, and create
+      a participatory experience rather than a one-way broadcast. Engagement
+      is the difference between a speech and a conversation at scale. It
+      transforms passive listeners into active participants and is the skill
+      that separates speakers who inform from speakers who move people to action.
+    benchmarks:
+      - level: beginner
+        criteria: "Acknowledges the audience (not just talks at them), asks at least one question, and adjusts energy to match the room."
+        metrics:
+          - "Includes at least 1 audience interaction moment (question, show of hands, think-pair-share) per 5 minutes of speaking"
+          - "Audience attention (measured by eye contact, phone usage, posture) remains above 70% throughout the speech"
+          - "Speaker adjusts pace or energy after reading audience cues (e.g., speeds up when audience seems bored) at least once per speech"
+        resources:
+          - title: "TED Talk - Chris Anderson: TED's Secret to Great Public Speaking"
+            url: "https://www.ted.com/talks/chris_anderson_ted_s_secret_to_great_public_speaking"
+            type: "video"
+          - title: "Toastmasters - Engage Your Audience"
+            url: "https://www.toastmasters.org/magazine/magazine-issues/2021/feb/engage-your-audience"
+            type: "article"
+          - title: "Charisma on Command - How to Be More Engaging"
+            url: "https://www.youtube.com/watch?v=aO1t1GBKIXo"
+            type: "video"
+        practice:
+          - "Practice the 'show of hands' technique: prepare 3 questions for your next speech that the audience can answer by raising hands. Respond to the results ('Wow, almost everyone — that tells me...') to make it interactive (10 minutes)"
+          - "During your next speech, deliberately pause and scan the room for 3 seconds at the 2-minute mark. Notice who is engaged and who is not. Adjust your energy or approach for the disengaged section (ongoing)"
+        projects:
+          - "Deliver a 7-minute speech that includes 3 different engagement techniques: a rhetorical question, a show of hands, and a moment where you directly address a specific section of the audience. Have evaluators rate engagement throughout"
+        tips:
+          - "The simplest engagement technique: ask a question, then pause long enough for the audience to actually think about the answer. Most speakers ask rhetorical questions and immediately answer them, robbing the audience of the thinking moment."
+          - "Make eye contact with one person for a complete thought (5-8 seconds), then move to another. This makes each person feel like you are speaking to them personally."
+      - level: intermediate
+        criteria: >
+          Uses a variety of engagement techniques (polling, think-pair-share,
+          live demonstrations, callbacks to audience answers) and reads the
+          room to select the right technique. Can recover engagement when
+          attention drops.
+        metrics:
+          - "Uses at least 3 different engagement techniques per 15-minute speech"
+          - "Can detect and recover from audience disengagement within 60 seconds (evaluator confirms recovery attempt)"
+          - "Audience participation rate in interactive moments exceeds 60% of the room"
+        resources:
+          - title: "TED Talk - Sir Ken Robinson: Do Schools Kill Creativity?"
+            url: "https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity"
+            type: "video"
+          - title: "Harvard Business Review - How to Keep Your Audience Engaged"
+            url: "https://hbr.org/2015/03/the-science-of-pep-talks"
+            type: "article"
+          - title: "Vinh Giang - How to Captivate Any Audience"
+            url: "https://www.youtube.com/watch?v=SIS6dbrBj1E"
+            type: "video"
+        practice:
+          - "Prepare a 'disengagement recovery toolkit': 3 techniques you can deploy mid-speech when you notice attention dropping (ask a provocative question, tell a surprising story, change your physical position or vocal energy). Practice switching to each one smoothly (20 minutes)"
+          - "Practice the callback technique: ask the audience something early in the speech, note the answer, and reference it later ('Remember when Sarah said X? That is exactly what I mean by...'). Drill this with practice audiences (15 minutes)"
+        projects:
+          - "Deliver a 15-minute interactive presentation where at least 30% of the time involves audience participation (polling, discussion, exercises). Measure engagement scores at 3 intervals during the talk"
+        tips:
+          - "When you notice phones coming out, it is not the audience's fault. It is a signal that you need to change something — your energy, your content, your format. Treat disengagement as feedback, not disrespect."
+      - level: advanced
+        criteria: >
+          Creates deeply immersive audience experiences. Can engage hostile,
+          indifferent, or resistant audiences. Designs interactive elements
+          that feel organic rather than forced. Commands attention in difficult
+          environments (after lunch, large conference, noisy room).
+        metrics:
+          - "Engagement scores remain above 4/5 even in difficult conditions (post-lunch, end of conference day, resistant audience)"
+          - "Audience members volunteer to participate without being singled out in 80%+ of interactive moments"
+          - "Post-talk feedback includes specific comments about feeling personally connected or involved"
+        resources:
+          - title: "The Presentation Secrets of Steve Jobs by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Presentation-Secrets-Steve-Jobs-Insanely/dp/1259835383"
+            type: "book"
+          - title: "TED Talk - Bryan Stevenson: We Need to Talk About an Injustice"
+            url: "https://www.ted.com/talks/bryan_stevenson_we_need_to_talk_about_an_injustice"
+            type: "video"
+        practice:
+          - "Deliberately practice in hostile conditions: deliver a talk after everyone has eaten lunch, or at the end of a long conference day. Develop and refine your 'energy injection' techniques for low-energy rooms (ongoing)"
+          - "Study how the best speakers engage resistant audiences: watch Bryan Stevenson's TED talk and map every moment where he earns another layer of the audience's trust and attention (30 minutes)"
+        projects:
+          - "Design and deliver a 30-minute session for a notoriously difficult audience (post-lunch, mandatory training, skeptical stakeholders). Document your engagement strategy beforehand and compare planned vs actual audience response"
+        tips:
+          - "The most powerful engagement technique for resistant audiences is not tricks or gimmicks — it is genuine curiosity about their experience. Open with 'I know you have seen a lot of talks on this topic. What has actually been useful to you?' and build from their answers."
+      - level: expert
+        criteria: >
+          Can engage any audience in any condition. Designs engagement
+          architectures for multi-hour events, workshops, and programs. Teaches
+          other speakers how to read and engage audiences. Creates moments that
+          audiences remember and talk about.
+        metrics:
+          - "Has designed engagement strategies for events of 500+ people that maintain high participation"
+          - "Has coached 10+ speakers on audience engagement with measurable improvement in their audience scores"
+          - "Creates at least one 'signature moment' per major talk that audiences reference in post-event conversation"
+        resources:
+          - title: "Talk Like TED by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Talk-Like-TED-Public-Speaking-Secrets/dp/1250061539"
+            type: "book"
+          - title: "TED Talks: The Official TED Guide to Public Speaking by Chris Anderson (Amazon)"
+            url: "https://www.amazon.com/TED-Talks-Official-Public-Speaking/dp/1328710289"
+            type: "book"
+        practice:
+          - "Design a 'signature moment' for your next major talk: an unexpected reveal, a physical demonstration, a live experiment, a profound silence. Plan the setup, execution, and payoff. Rehearse until the timing is precise (1 hour)"
+          - "Observe and document the engagement techniques used at 3 different events (conference, workshop, company meeting). Create a taxonomy of techniques and note which ones worked best in each context (3 hours)"
+        projects:
+          - "Design the engagement architecture for a half-day event: plan the flow of energy, participation, and attention across 4 hours. Include opening hooks, transition activities, deep engagement moments, and a closing ritual. Execute the plan and measure engagement at 30-minute intervals"
+        tips:
+          - "At the expert level, engagement is not about techniques — it is about creating a shared experience. The audience should leave feeling they were part of something, not that they watched something. Design for participation, not performance."
+    tags: ["engagement", "interaction", "connection"]
+
+  # -- ADVANCED SKILLS (impromptu, persuasion, Q&A) ----------------------------
+  - id: "business/public-speaking/impromptu-speaking"
+    title: "Impromptu Speaking"
+    description: >
+      The ability to speak coherently, compellingly, and confidently without
+      preparation — whether called on in a meeting, asked to give a toast, or
+      handling an unexpected question. Impromptu speaking is the daily reality
+      of communication: most of what you say in life is unscripted. This skill
+      develops the mental agility to organize thoughts in real time and deliver
+      them with clarity.
+    benchmarks:
+      - level: beginner
+        criteria: "Delivers a 1-2 minute response to an unexpected prompt with a discernible point, supporting example, and conclusion."
+        metrics:
+          - "Impromptu responses have an identifiable structure (point, example, conclusion) in 60%+ of attempts"
+          - "Speaks for at least 60 seconds without freezing or trailing off when given an unexpected topic"
+          - "Filler words stay below 8 per minute during impromptu responses"
+        resources:
+          - title: "Toastmasters - Table Topics Tips"
+            url: "https://www.toastmasters.org/magazine/magazine-issues/2019/aug/table-topics"
+            type: "article"
+          - title: "Charisma on Command - How to Think on Your Feet"
+            url: "https://www.youtube.com/watch?v=EZQBSn7LLxM"
+            type: "video"
+          - title: "TED Talk - Matt Abrahams: Speaking Without a Net"
+            url: "https://www.youtube.com/watch?v=o36_bT9SMHI"
+            type: "video"
+        practice:
+          - "Practice daily 'table topics': have someone give you a random word or question and speak for 60-90 seconds using the PREP framework (Point, Reason, Example, Point). Do 3 per day for 2 weeks (10 minutes daily)"
+          - "In meetings, volunteer to summarize what was just discussed or give your opinion on a topic, even if you were not asked. Build the muscle of speaking without full preparation (ongoing)"
+        projects:
+          - "Attend a Toastmasters meeting and participate in the Table Topics session (impromptu speaking round). Deliver at least 2 impromptu speeches of 1-2 minutes each. Track your structure and filler word count"
+        tips:
+          - "The PREP framework saves you in any impromptu situation: make your Point, give a Reason, share an Example, restate your Point. It takes 5 seconds to think of and gives you a 60-second structure."
+          - "When asked an unexpected question, buy yourself 3-5 seconds by saying 'That is a great question, let me think about that for a moment.' No one will judge you for pausing."
+      - level: intermediate
+        criteria: >
+          Delivers polished 2-3 minute impromptu responses using multiple
+          frameworks. Can bridge from unexpected questions to prepared key
+          messages. Speaks with authority even on unfamiliar topics.
+        metrics:
+          - "Impromptu responses are rated as 'organized and clear' by evaluators in 80%+ of attempts"
+          - "Can deliver a credible 2-minute response even on topics outside area of expertise"
+          - "Successfully bridges from unexpected questions to key messages in 70%+ of media-style questions"
+        resources:
+          - title: "Harvard Business Review - How to Sound Smart in Meetings"
+            url: "https://hbr.org/2016/10/noise"
+            type: "article"
+          - title: "Toastmasters - Pathways: Impromptu Speaking"
+            url: "https://www.toastmasters.org/pathways-overview"
+            type: "article"
+          - title: "Vinh Giang - Communication Skills for Leaders"
+            url: "https://www.youtube.com/watch?v=cYE6sFCi1Fg"
+            type: "video"
+        practice:
+          - "Practice the bridging technique: have someone ask you off-topic questions and practice bridging to your key message ('That is an interesting angle. What I think is most relevant here is...'). Do 5 bridges per session (15 minutes)"
+          - "Practice impromptu speaking with increasing constraints: 1 minute on a random topic, then 2 minutes, then 2 minutes with a specific structure requirement (chronological, problem-solution). Build mental agility (20 minutes)"
+        projects:
+          - "Participate in a debate or panel discussion where you do not know the questions in advance. Record yourself and evaluate how effectively you structured your responses, bridged to key points, and maintained composure"
+        tips:
+          - "The bridging technique is the single most valuable impromptu skill for professionals. Politicians and executives use it constantly. The formula: acknowledge the question, pivot with a bridge phrase, deliver your message."
+      - level: advanced
+        criteria: >
+          Can deliver polished impromptu speeches of 5+ minutes that rival
+          prepared remarks in quality. Thinks in real-time structures. Can
+          handle rapid-fire questions, panel discussions, and media interviews
+          without preparation.
+        metrics:
+          - "5-minute impromptu speeches are rated within 10% of prepared speech quality by evaluators"
+          - "Can handle 10 rapid-fire questions in a row, each answered coherently in 30-60 seconds"
+          - "Media-style interview responses stay on message while addressing the question directly in 90%+ of cases"
+        resources:
+          - title: "Think on Your Feet by Marian K. Woodall (Amazon)"
+            url: "https://www.amazon.com/Think-Your-Feet-Marian-Woodall/dp/0446391166"
+            type: "book"
+          - title: "TED Talk - Maysoon Zayid: I Got 99 Problems... Palsy is Just One"
+            url: "https://www.ted.com/talks/maysoon_zayid_i_got_99_problems_palsy_is_just_one"
+            type: "video"
+        practice:
+          - "Practice '5-minute table topics': get a random topic and speak for a full 5 minutes with clear structure. Record and review. Aim for a quality that would pass as a prepared speech (20 minutes, 3 times per week)"
+          - "Simulate a media interview: have a colleague ask you 10 challenging questions about your work in rapid succession (30 seconds per answer). Review the recording for clarity, composure, and message discipline (20 minutes)"
+        projects:
+          - "Volunteer to moderate or participate in a live panel discussion with no advance knowledge of the questions. Record and evaluate your performance on structure, bridging, and composure"
+        tips:
+          - "Advanced impromptu speakers do not actually speak without preparation — they have prepared frameworks, stories, and key messages that they deploy and adapt in real time. The preparation happens before the situation, not during it."
+      - level: expert
+        criteria: >
+          Impromptu speaking is indistinguishable from prepared speaking. Can
+          coach others in impromptu techniques. Recognized as someone who always
+          has something valuable to say, regardless of preparation time.
+        metrics:
+          - "Audience cannot distinguish between prepared and impromptu speeches in blind evaluations"
+          - "Has coached 10+ people on impromptu speaking with documented improvement in their ability to think on their feet"
+          - "Regularly delivers impromptu remarks in high-stakes settings (board meetings, media, conferences) with consistently high-quality outcomes"
+        resources:
+          - title: "Talk Like TED by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Talk-Like-TED-Public-Speaking-Secrets/dp/1250061539"
+            type: "book"
+          - title: "Toastmasters - Advanced Communication Series"
+            url: "https://www.toastmasters.org/education/pathways"
+            type: "article"
+        practice:
+          - "Mentor a beginner through 10 table topics sessions, providing real-time coaching on structure, filler words, and composure. Track their improvement across the 10 sessions (ongoing)"
+          - "Practice the 'expert challenge': have someone interrupt you mid-speech with a difficult question, answer it impromptu, and then seamlessly return to your prepared remarks. Drill until the transitions are invisible (30 minutes)"
+        projects:
+          - "Design and run an impromptu speaking workshop for 10+ participants, including diagnostic exercises, framework teaching, practice rounds with feedback, and a final evaluation. Measure average improvement from first to last round"
+        tips:
+          - "The expert's secret: every life experience is a potential story, every story illustrates a principle, and every principle can answer a question. Build this mental library and impromptu speaking becomes retrieval, not creation."
+    tags: ["impromptu", "agility", "advanced"]
+
+  - id: "business/public-speaking/persuasion-influence"
+    title: "Persuasion & Influence"
+    description: >
+      The ability to change minds, inspire action, and move audiences from
+      where they are to where you want them to be. Persuasion is the reason
+      most speeches exist — to sell an idea, rally support, change behavior,
+      or inspire a decision. It combines logical argument, emotional appeal,
+      and speaker credibility (Aristotle's logos, pathos, and ethos) into
+      a unified force. This is the advanced skill that separates speakers
+      who inform from speakers who transform.
+    benchmarks:
+      - level: beginner
+        criteria: "Delivers a speech with a clear call to action that the audience understands. Uses at least one form of evidence (data, example, testimony) to support the argument."
+        metrics:
+          - "90%+ of audience can state the call to action after the speech"
+          - "Speech includes at least 2 pieces of supporting evidence (statistics, examples, expert quotes)"
+          - "At least 10% of the audience takes the requested action (signs up, agrees, commits) after the speech"
+        resources:
+          - title: "TED Talk - Simon Sinek: How Great Leaders Inspire Action"
+            url: "https://www.ted.com/talks/simon_sinek_how_great_leaders_inspire_action"
+            type: "video"
+          - title: "Charisma on Command - How to Be More Persuasive"
+            url: "https://www.youtube.com/watch?v=4VnJ4MULXQM"
+            type: "video"
+          - title: "Toastmasters - Persuasive Speaking"
+            url: "https://www.toastmasters.org/magazine/magazine-issues/2020/may/the-art-of-persuasion"
+            type: "article"
+        practice:
+          - "Write 3 different calls to action for the same speech: one that asks for a small commitment, one for a medium commitment, and one for a large commitment. Practice delivering each with conviction (15 minutes)"
+          - "Take a position you believe in and find 3 types of evidence to support it: a statistic, a personal story, and an expert endorsement. Practice weaving all three into a 3-minute argument (20 minutes)"
+        projects:
+          - "Deliver a 5-7 minute persuasive speech on a topic you care about, ending with a specific call to action. Track what percentage of the audience takes the action (signs a petition, commits to a behavior change, etc.)"
+        tips:
+          - "Aristotle's framework still works: Ethos (your credibility), Pathos (emotional connection), Logos (logical argument). Most beginner speakers rely on Logos alone. Add Pathos through stories and Ethos through personal experience."
+          - "Your call to action must be specific and achievable. 'Change the world' is inspiring but not actionable. 'Sign up for one volunteer shift this month' is both."
+      - level: intermediate
+        criteria: >
+          Structures arguments using established persuasion frameworks (Monroe's
+          Motivated Sequence, Aristotle's appeals, Cialdini's principles). Adapts
+          the persuasive approach based on audience analysis. Handles objections
+          within the speech.
+        metrics:
+          - "Uses at least 2 of Cialdini's persuasion principles (reciprocity, scarcity, authority, consistency, liking, consensus) intentionally in a speech"
+          - "Pre-addresses the audience's likely objection within the speech structure in 80%+ of persuasive talks"
+          - "Post-speech action rate exceeds 25% of the audience"
+        resources:
+          - title: "Influence by Robert Cialdini (Amazon)"
+            url: "https://www.amazon.com/Influence-Psychology-Persuasion-Robert-Cialdini/dp/006124189X"
+            type: "book"
+          - title: "TED Talk - Sherry Turkle: Connected, but Alone?"
+            url: "https://www.ted.com/talks/sherry_turkle_connected_but_alone"
+            type: "video"
+          - title: "Harvard Business Review - The Science of Persuasion"
+            url: "https://hbr.org/2001/10/harnessing-the-science-of-persuasion"
+            type: "article"
+        practice:
+          - "Analyze your audience before your next persuasive speech: what do they already believe? What are their objections? What do they value? Tailor your argument to address each factor (30 minutes pre-speech)"
+          - "Practice the inoculation technique: state the strongest argument against your position, then dismantle it with evidence. This neutralizes objections before they form (15 minutes)"
+        projects:
+          - "Deliver the same persuasive speech to two different audiences (e.g., a technical team and an executive team) with adapted evidence, framing, and emotional appeals for each. Compare action rates between the two audiences"
+        tips:
+          - "The most powerful persuasion technique is addressing the counter-argument before the audience thinks of it. When you say 'Now, you might be thinking X, and here is why that is actually not the case,' you have eliminated their objection and built credibility simultaneously."
+      - level: advanced
+        criteria: >
+          Persuades skeptical or resistant audiences. Uses advanced influence
+          techniques: social proof, authority framing, loss aversion, narrative
+          transportation. Can construct multi-stage persuasion strategies for
+          complex organizational change.
+        metrics:
+          - "Achieves measurable attitude or behavior change in skeptical audiences as measured by pre/post surveys"
+          - "Post-speech action rate exceeds 40% even with resistant audiences"
+          - "Can design a multi-speech persuasion campaign that moves an organization toward a decision over weeks"
+        resources:
+          - title: "Made to Stick by Chip Heath & Dan Heath (Amazon)"
+            url: "https://www.amazon.com/Made-Stick-Ideas-Survive-Others/dp/1400064287"
+            type: "book"
+          - title: "TED Talk - Bryan Stevenson: We Need to Talk About an Injustice"
+            url: "https://www.ted.com/talks/bryan_stevenson_we_need_to_talk_about_an_injustice"
+            type: "video"
+        practice:
+          - "Study Bryan Stevenson's TED talk (the longest standing ovation in TED history) and map every persuasion technique he uses: story placement, identity appeals, moral framing, progressive commitment. Create a technique map (1 hour)"
+          - "Design a 3-stage persuasion strategy for a real organizational change: speech 1 (awareness), speech 2 (urgency), speech 3 (action). Plan the emotional arc across all three (1 hour)"
+        projects:
+          - "Deliver a persuasive presentation to a genuinely skeptical audience on a controversial or unpopular position. Conduct a pre/post survey to measure attitude change. Document which techniques moved the needle"
+        tips:
+          - "The most persuasive speakers do not argue — they tell stories that lead the audience to the conclusion themselves. When the audience feels they reached the conclusion independently, they hold it more strongly than if you told them what to think."
+      - level: expert
+        criteria: >
+          Shapes public opinion, organizational culture, or industry thinking
+          through speaking. Can teach persuasion ethics and frameworks. Creates
+          speeches that become reference points — talks people cite and share
+          as examples of how to persuade.
+        metrics:
+          - "Speeches or presentations have directly influenced organizational decisions affecting 100+ people"
+          - "Has coached 10+ speakers on persuasive technique with measurable improvement in their influence outcomes"
+          - "Audiences share or reference the talk to others as a persuasive example weeks or months later"
+        resources:
+          - title: "Thank You for Arguing by Jay Heinrichs (Amazon)"
+            url: "https://www.amazon.com/Thank-Arguing-Fourth-Revised-Updated/dp/0593237382"
+            type: "book"
+          - title: "TED Talk - Al Gore: Averting the Climate Crisis"
+            url: "https://www.ted.com/talks/al_gore_averting_the_climate_crisis"
+            type: "video"
+        practice:
+          - "Analyze 5 speeches that changed history (or organizations): identify the persuasion architecture — how ethos, pathos, and logos were sequenced, which Cialdini principles were used, and what made the call to action irresistible (3 hours)"
+          - "Coach 3 speakers through a persuasive presentation: help them identify their audience's resistance points, craft inoculation arguments, and structure their emotional arc. Measure audience response (ongoing)"
+        projects:
+          - "Design and deliver a keynote that aims to shift an organizational or community position on a significant issue. Conduct pre/post measurement of attitudes and track behavior change over 30 days. Document the persuasion strategy and results"
+        tips:
+          - "At the expert level, ethical persuasion becomes paramount. The same techniques that inspire positive action can manipulate. The ethical speaker persuades by making the truth more vivid, not by obscuring it. Influence without integrity is manipulation."
+    tags: ["persuasion", "influence", "advanced"]
+
+  - id: "business/public-speaking/qa-handling"
+    title: "Q&A Handling"
+    description: >
+      The ability to field questions from an audience with grace, clarity, and
+      authority — including hostile questions, off-topic tangents, and questions
+      you do not know the answer to. Q&A is where credibility is either cemented
+      or destroyed. A brilliant speech followed by stumbling Q&A leaves the
+      audience remembering the stumble. Conversely, a solid speech followed by
+      masterful Q&A elevates the entire experience.
+    benchmarks:
+      - level: beginner
+        criteria: "Answers questions clearly and concisely. Repeats the question for the audience. Admits when unsure rather than guessing."
+        metrics:
+          - "Repeats or paraphrases the question before answering in 80%+ of cases"
+          - "Answers are under 90 seconds for straightforward questions"
+          - "Says 'I don't know, but I will find out' rather than guessing when unsure in 90%+ of cases"
+        resources:
+          - title: "Toastmasters - Handling the Q&A"
+            url: "https://www.toastmasters.org/magazine/magazine-issues/2019/nov/the-qa-session"
+            type: "article"
+          - title: "Harvard Business Review - How to Handle Tough Questions"
+            url: "https://hbr.org/2018/10/how-to-answer-a-question-you-dont-want-to-answer"
+            type: "article"
+          - title: "Charisma on Command - How to Handle Difficult Questions"
+            url: "https://www.youtube.com/watch?v=BYmJKT4MNbk"
+            type: "video"
+        practice:
+          - "After your next presentation, have a colleague ask you 5 questions. Practice: repeat the question, pause for 2 seconds, answer in under 60 seconds, confirm the answer was sufficient. Record and review (15 minutes)"
+          - "Practice saying 'I don't know' comfortably: have someone ask you 10 questions, 3 of which you cannot possibly know the answer to. Practice admitting uncertainty with confidence rather than embarrassment (10 minutes)"
+        projects:
+          - "Deliver a 5-minute speech followed by a 5-minute Q&A session. Have an evaluator rate your question handling on: clarity, conciseness, honesty about uncertainty, and whether you repeated the question"
+        tips:
+          - "Repeating the question serves three purposes: the full audience hears it, you buy thinking time, and you can reframe a hostile question into a neutral one."
+          - "Never bluff. Audiences are remarkably good at detecting when a speaker is making something up. 'I will research that and follow up' builds more credibility than a wrong answer delivered confidently."
+      - level: intermediate
+        criteria: >
+          Handles challenging questions (hostile, off-topic, multi-part) with
+          composure. Can redirect tangential questions back to key messages.
+          Manages Q&A session flow (time, fairness, energy).
+        metrics:
+          - "Successfully redirects off-topic questions back to the presentation's key message in 70%+ of cases"
+          - "Handles hostile or aggressive questions without becoming defensive (evaluator confirms composure) in 80%+ of cases"
+          - "Manages Q&A time effectively: does not let one questioner monopolize, ends on time, and closes with a strong final answer"
+        resources:
+          - title: "TED Talk - Margaret Heffernan: Why It's Time to Forget the Pecking Order at Work"
+            url: "https://www.ted.com/talks/margaret_heffernan_why_it_s_time_to_forget_the_pecking_order_at_work"
+            type: "video"
+          - title: "Vinh Giang - How to Handle Q&A Like a Pro"
+            url: "https://www.youtube.com/watch?v=WvGdKFKIuI4"
+            type: "video"
+          - title: "Harvard Business Review - How to Excel at a Q&A Session"
+            url: "https://hbr.org/2021/08/how-to-shine-in-a-q-a"
+            type: "article"
+        practice:
+          - "Practice hostile question handling: have a friend ask you deliberately aggressive questions ('Why should we trust you on this?', 'Isn't this just a waste of money?'). Practice acknowledging the concern, reframing, and answering calmly (20 minutes)"
+          - "Practice the 'park it' technique for off-topic questions: 'That is a great question that deserves its own discussion. Let me follow up with you afterward so we can stay on topic.' Drill until it feels natural and respectful (10 minutes)"
+        projects:
+          - "Deliver a presentation followed by a deliberately challenging Q&A where a colleague plants hostile and off-topic questions. Record and evaluate your composure, redirect technique, and overall Q&A management"
+        tips:
+          - "For hostile questions, separate the emotion from the content. The question 'Why did you waste our budget on this?' contains a valid question ('What was the ROI?') wrapped in hostility. Answer the valid question and ignore the hostility."
+      - level: advanced
+        criteria: >
+          Uses Q&A as a strategic tool to reinforce key messages and build
+          credibility. Can anticipate likely questions and prepare bridges.
+          Handles multi-stakeholder Q&A (board meetings, press conferences,
+          investor meetings) with different interests simultaneously.
+        metrics:
+          - "Anticipates and prepares for 80%+ of questions asked in Q&A sessions"
+          - "Uses at least 2 Q&A answers per session to reinforce key messages from the main presentation"
+          - "Can manage Q&A with competing stakeholder interests (each gets a satisfying answer without contradiction) in board-style settings"
+        resources:
+          - title: "Mastering Communication at Work by Ethan Becker (Amazon)"
+            url: "https://www.amazon.com/Mastering-Communication-Work-Conversations-Presentations/dp/0071625151"
+            type: "book"
+          - title: "TED Talk - Celeste Headlee: 10 Ways to Have a Better Conversation"
+            url: "https://www.ted.com/talks/celeste_headlee_10_ways_to_have_a_better_conversation"
+            type: "video"
+        practice:
+          - "Before your next major presentation, write down the 10 most likely questions and the 5 most dangerous questions. Prepare concise answers for each and practice bridging from each answer back to your key message (45 minutes)"
+          - "Practice managing competing interests: have 3 people role-play different stakeholders (investor, customer, employee) asking questions about the same presentation. Practice giving answers that satisfy each perspective without contradicting yourself (30 minutes)"
+        projects:
+          - "Run a mock press conference or board Q&A: deliver a 10-minute presentation and then field 15 minutes of questions from people playing different stakeholder roles. Record and evaluate your message consistency, composure, and stakeholder management"
+        tips:
+          - "The best Q&A performers do not just answer questions — they use questions as opportunities. Every question is a chance to reinforce your message, share an additional story, or demonstrate expertise. Reframe every question as 'How can I use this to add value?'"
+      - level: expert
+        criteria: >
+          Q&A is a performance strength, not a risk. Can turn adversarial Q&A
+          into an asset. Coaches other speakers on Q&A preparation and technique.
+          Handles media interviews, live TV, congressional hearings, or
+          equivalent high-stakes questioning.
+        metrics:
+          - "Audience rates Q&A as strong or stronger than the prepared speech in 80%+ of events"
+          - "Has coached 10+ speakers on Q&A technique with documented improvement"
+          - "Has handled Q&A in high-stakes settings (media, board, investor meeting) with consistently positive outcomes"
+        resources:
+          - title: "Talk Like TED by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Talk-Like-TED-Public-Speaking-Secrets/dp/1250061539"
+            type: "book"
+          - title: "Toastmasters - Accredited Speaker Program"
+            url: "https://www.toastmasters.org/education/accredited-speaker"
+            type: "article"
+        practice:
+          - "Study 5 masterful Q&A performances (press conferences, congressional testimonies, investor calls). Identify the techniques used: bridging, reframing, concession-then-counter, anecdote deployment. Create a technique library (2 hours)"
+          - "Coach 3 speakers through Q&A preparation: help them anticipate questions, prepare bridges, and practice hostile question handling. Debrief after their actual Q&A and refine their technique (ongoing)"
+        projects:
+          - "Design a Q&A training program for executives or spokespeople: include question anticipation frameworks, bridging techniques, hostile question handling, and live practice with feedback. Deliver the program and measure participant improvement"
+        tips:
+          - "The expert Q&A handler knows that the last answer is the one the audience remembers. Always save a strong answer for the closing question or, if necessary, create your own closing: 'I want to close with one thought that connects to what was asked today.' End on your terms."
+    tags: ["qa", "composure", "advanced"]
+
+  # -- FINAL INTEGRATION NODE --------------------------------------------------
+  - id: "business/public-speaking/presentation-mastery"
+    title: "Presentation Mastery"
+    description: >
+      The integration of all public speaking skills into a cohesive, polished
+      whole. This is not a separate skill but the synthesis: the ability to
+      combine structure, delivery, storytelling, engagement, visual design,
+      and persuasion into a seamless experience that feels effortless to the
+      audience. Mastery means every element serves the message, and the
+      speaker disappears behind the experience they create.
+    benchmarks:
+      - level: beginner
+        criteria: "Delivers a complete presentation that combines structure, delivery basics, and a visual aid. All elements are present even if not yet polished."
+        metrics:
+          - "Presentation includes all core elements: clear structure, vocal projection, eye contact, at least one story, and basic slides"
+          - "Overall presentation rated 3+/5 by evaluators across all dimensions"
+          - "Has delivered at least 10 speeches or presentations total"
+        resources:
+          - title: "TED Talk - Chris Anderson: TED's Secret to Great Public Speaking"
+            url: "https://www.ted.com/talks/chris_anderson_ted_s_secret_to_great_public_speaking"
+            type: "video"
+          - title: "Toastmasters - Competent Communicator Manual"
+            url: "https://www.toastmasters.org/pathways-overview"
+            type: "article"
+          - title: "Vinh Giang - The Art of Communication"
+            url: "https://www.youtube.com/watch?v=ZVuVMVmwafM"
+            type: "video"
+        practice:
+          - "Record a full 7-minute presentation and evaluate yourself on each dimension: structure (clear?), voice (varied?), body language (open?), story (present?), slides (minimal?). Score each 1-5 and identify your weakest dimension (20 minutes)"
+          - "Practice delivering the same presentation 3 times, each time focusing on improving a different element (first run: structure, second run: vocal variety, third run: eye contact and gestures). Notice how each run improves the whole (45 minutes)"
+        projects:
+          - "Deliver a 7-10 minute presentation at work or a speaking group that integrates all foundational skills. Have 3 different evaluators each rate a different dimension. Create a personal development plan based on the lowest-scored areas"
+        tips:
+          - "Do not try to improve everything at once. Identify your weakest element and focus there for 5 speeches. Then move to the next weakest. Compounding small improvements creates rapid overall growth."
+      - level: intermediate
+        criteria: >
+          All presentation elements are competent and no single weakness
+          undermines the overall quality. Can adapt the full presentation
+          approach to different contexts (team meeting, conference, pitch,
+          workshop). Preparation is efficient and systematic.
+        metrics:
+          - "No single dimension scores below 3.5/5 in multi-dimensional evaluation"
+          - "Can prepare and deliver a high-quality 15-minute presentation in under 4 hours of total preparation time"
+          - "Successfully adapts presentation style across at least 3 different contexts (team update, conference talk, client pitch) in a 6-month period"
+        resources:
+          - title: "Presentation Zen by Garr Reynolds (Amazon)"
+            url: "https://www.amazon.com/Presentation-Zen-Simple-Design-Delivery/dp/0135800919"
+            type: "book"
+          - title: "Harvard Business Review - What It Takes to Give a Great Presentation"
+            url: "https://hbr.org/2019/10/what-it-takes-to-give-a-great-presentation"
+            type: "article"
+          - title: "TED Talk - Brene Brown: The Power of Vulnerability"
+            url: "https://www.ted.com/talks/brene_brown_the_power_of_vulnerability"
+            type: "video"
+        practice:
+          - "Develop a systematic preparation process: 1) audience analysis (15 min), 2) key message (10 min), 3) structure outline (20 min), 4) story selection (15 min), 5) slide design (30 min), 6) rehearsal x3 (45 min). Follow it for your next 5 presentations and refine (ongoing)"
+          - "Deliver the same core content in 3 different formats: a 5-minute team update, a 15-minute conference talk, and a 30-minute workshop. Notice how format changes every element (ongoing)"
+        projects:
+          - "Over 3 months, deliver presentations in at least 3 different contexts (internal meeting, external conference, client pitch, workshop). Collect feedback in each context and identify which skills transfer and which need adaptation"
+        tips:
+          - "Efficiency comes from system, not shortcuts. Build a preparation checklist and follow it every time. Over time, each step gets faster because the decisions become automatic."
+      - level: advanced
+        criteria: >
+          Presentations are consistently rated as excellent across all
+          dimensions. Has a recognizable personal style. Can design and deliver
+          presentations for high-stakes situations (board meetings, keynotes,
+          fundraising pitches) with polish and impact.
+        metrics:
+          - "Average overall presentation score exceeds 4.5/5 across 10+ different talks"
+          - "Audience feedback consistently mentions a distinctive quality or style associated with the speaker"
+          - "Has delivered high-stakes presentations (keynote, board, investor pitch, large conference) with measurably positive outcomes"
+        resources:
+          - title: "The Presentation Secrets of Steve Jobs by Carmine Gallo (Amazon)"
+            url: "https://www.amazon.com/Presentation-Secrets-Steve-Jobs-Insanely/dp/1259835383"
+            type: "book"
+          - title: "TED Talk - Ken Robinson: Do Schools Kill Creativity?"
+            url: "https://www.ted.com/talks/sir_ken_robinson_do_schools_kill_creativity"
+            type: "video"
+        practice:
+          - "Study your own body of work: watch recordings of your last 10 presentations and identify your signature strengths and persistent weaknesses. Create a personal development plan targeting the remaining gaps (2 hours)"
+          - "Seek out the most challenging speaking opportunities available to you: bigger stages, more skeptical audiences, higher stakes. Growth at this level requires stretch, not repetition (ongoing)"
+        projects:
+          - "Deliver a 20-minute keynote-style presentation at a conference or event with 100+ attendees. Aim for a 'standing ovation' standard: a talk that the audience talks about afterward. Collect detailed feedback and video for analysis"
+        tips:
+          - "At the advanced level, the biggest risk is formula. You have techniques that work, and it is tempting to repeat them. Push yourself to try something new in every major talk: a new structure, a new opening style, a new engagement technique. Mastery requires ongoing experimentation."
+      - level: expert
+        criteria: >
+          Recognized as an exceptional speaker in their domain. Can coach and
+          develop other speakers at all levels. Creates presentations that
+          become reference points. Has a body of work that demonstrates range,
+          depth, and consistent excellence.
+        metrics:
+          - "Has delivered 200+ presentations across a range of contexts with consistently high ratings"
+          - "Has coached or mentored 20+ speakers with documented improvement in their presentation skills"
+          - "Is invited to speak because of reputation — audiences attend specifically to hear this speaker"
+          - "Has at least one talk that is shared widely or cited as a reference example"
+        resources:
+          - title: "TED Talks: The Official TED Guide to Public Speaking by Chris Anderson (Amazon)"
+            url: "https://www.amazon.com/TED-Talks-Official-Public-Speaking/dp/1328710289"
+            type: "book"
+          - title: "Toastmasters - Accredited Speaker Program"
+            url: "https://www.toastmasters.org/education/accredited-speaker"
+            type: "article"
+        practice:
+          - "Build a speaker coaching practice: work with 3-5 speakers at different levels simultaneously, tailoring your coaching to each person's needs and measuring their growth over 6 months (ongoing)"
+          - "Study speakers from outside your domain (comedians, preachers, trial lawyers, theater performers) and identify techniques you can adapt. Cross-pollination at this level drives innovation (ongoing)"
+        projects:
+          - "Create a comprehensive speaker development program: assessment framework, skill progression map, practice curriculum, and coaching methodology. Pilot it with 10 speakers over 6 months and measure improvement across all presentation dimensions"
+        tips:
+          - "The expert speaker's ultimate skill is authenticity. After mastering all the techniques, the final step is making them invisible. The audience should not see a speaker using techniques. They should see a human being sharing something that matters."
+    tags: ["mastery", "integration", "capstone"]
+
+relationships:
+  # -- Foundation layer --------------------------------------------------------
+  - source: "business/public-speaking/overcoming-stage-fright"
+    target: "business/public-speaking/speech-structure"
+    type: "enables"
+    note: "Managing fear is the prerequisite for all speaking skills — you cannot organize your thoughts if anxiety overwhelms your ability to think on stage"
+
+  - source: "business/public-speaking/overcoming-stage-fright"
+    target: "business/public-speaking/voice-projection-modulation"
+    type: "enables"
+    note: "Anxiety constricts the voice and breath — managing stage fright unlocks the physical relaxation needed for vocal control"
+
+  - source: "business/public-speaking/overcoming-stage-fright"
+    target: "business/public-speaking/body-language"
+    type: "enables"
+    note: "Nervous fidgeting, closed posture, and lack of eye contact are symptoms of unmanaged stage fright — confidence enables open body language"
+
+  # -- Structure feeds into content skills ------------------------------------
+  - source: "business/public-speaking/speech-structure"
+    target: "business/public-speaking/storytelling"
+    type: "enables"
+    note: "Story structure (setup, conflict, resolution) is a specific application of speech organization — mastering general structure enables mastering narrative structure"
+
+  - source: "business/public-speaking/speech-structure"
+    target: "business/public-speaking/slide-design"
+    type: "enables"
+    note: "Slides should follow the speech structure, not the other way around — a clear outline is the prerequisite for effective visual design"
+
+  - source: "business/public-speaking/speech-structure"
+    target: "business/public-speaking/persuasion-influence"
+    type: "enables"
+    note: "Persuasion frameworks (Monroe's Motivated Sequence, argument structure) build on foundational speech organization skills"
+
+  # -- Delivery skills feed into engagement -----------------------------------
+  - source: "business/public-speaking/voice-projection-modulation"
+    target: "business/public-speaking/audience-engagement"
+    type: "enables"
+    note: "Vocal variety is a primary tool for holding audience attention — monotone voice is the fastest path to disengagement"
+
+  - source: "business/public-speaking/body-language"
+    target: "business/public-speaking/audience-engagement"
+    type: "enables"
+    note: "Stage presence and eye contact are fundamental engagement tools — physical delivery creates the connection that words alone cannot"
+
+  # -- Content skills feed into advanced skills -------------------------------
+  - source: "business/public-speaking/storytelling"
+    target: "business/public-speaking/persuasion-influence"
+    type: "enables"
+    note: "Stories are the primary vehicle for pathos (emotional persuasion) — narrative transportation makes arguments feel personal and urgent"
+
+  - source: "business/public-speaking/storytelling"
+    target: "business/public-speaking/audience-engagement"
+    type: "enables"
+    note: "Stories are the most natural engagement tool — a well-told story holds attention without requiring interactive techniques"
+
+  - source: "business/public-speaking/audience-engagement"
+    target: "business/public-speaking/qa-handling"
+    type: "enables"
+    note: "Q&A is a specific form of audience interaction — the ability to read and respond to an audience is essential for fielding questions"
+
+  # -- Impromptu builds on multiple foundations -------------------------------
+  - source: "business/public-speaking/speech-structure"
+    target: "business/public-speaking/impromptu-speaking"
+    type: "requires"
+    note: "Impromptu speaking requires internalizing structural frameworks so deeply that you can deploy them without conscious thought"
+
+  - source: "business/public-speaking/voice-projection-modulation"
+    target: "business/public-speaking/impromptu-speaking"
+    type: "enables"
+    note: "Confident vocal delivery while thinking on your feet requires that voice control is automatic, not effortful"
+
+  # -- Q&A builds on impromptu and persuasion ---------------------------------
+  - source: "business/public-speaking/impromptu-speaking"
+    target: "business/public-speaking/qa-handling"
+    type: "requires"
+    note: "Q&A is fundamentally impromptu speaking with constraints — the ability to organize thoughts in real time is the core Q&A skill"
+
+  - source: "business/public-speaking/persuasion-influence"
+    target: "business/public-speaking/qa-handling"
+    type: "enables"
+    note: "Using Q&A strategically to reinforce key messages requires persuasion skills — bridging and reframing are persuasion techniques"
+
+  # -- Mastery requires all other skills --------------------------------------
+  - source: "business/public-speaking/overcoming-stage-fright"
+    target: "business/public-speaking/presentation-mastery"
+    type: "requires"
+    note: "Mastery requires managing performance anxiety across all contexts and conditions"
+
+  - source: "business/public-speaking/speech-structure"
+    target: "business/public-speaking/presentation-mastery"
+    type: "requires"
+    note: "Mastery requires the ability to structure any presentation for any context and length"
+
+  - source: "business/public-speaking/storytelling"
+    target: "business/public-speaking/presentation-mastery"
+    type: "requires"
+    note: "Mastery requires the ability to find and tell stories that make any content memorable"
+
+  - source: "business/public-speaking/audience-engagement"
+    target: "business/public-speaking/presentation-mastery"
+    type: "requires"
+    note: "Mastery requires the ability to connect with any audience in any condition"
+
+  - source: "business/public-speaking/qa-handling"
+    target: "business/public-speaking/presentation-mastery"
+    type: "enables"
+    note: "Complete presentation mastery includes the ability to handle any question with grace and authority"

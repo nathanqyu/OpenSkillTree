@@ -1,0 +1,1500 @@
+# OpenSkillTree — Seed Skill Tree: JavaScript & TypeScript
+#
+# Domain:  Technology / Programming / JavaScript & TypeScript
+# Author:  OpenSkillTree Team
+# Version: 0.1.0
+#
+# Benchmark levels reference: industry standards + MDN curriculum
+#   beginner     ≈ Can write simple scripts, understands variables/types/DOM basics
+#   intermediate ≈ Comfortable with async, modules, TS basics, component-driven UI
+#   advanced     ≈ Architects full-stack apps, deep TS generics, testing strategies
+#   expert       ≈ Staff/Principal level — performance, compiler plugins, OSS leadership
+#
+# Teaching order based on MDN Learning Pathway, freeCodeCamp, The Odin Project,
+# and frontend masters curriculum:
+#   Variables & types → functions & scope → DOM manipulation →
+#   async programming → TypeScript fundamentals → modules & build tools →
+#   testing → React/framework basics → Node.js/server-side →
+#   software design patterns.
+
+tree:
+  id: "technology/javascript-typescript"
+  title: "JavaScript & TypeScript"
+  description: >
+    A complete skill map for JavaScript and TypeScript — the language of the web
+    and increasingly the server. Covers core language mechanics, DOM interaction,
+    asynchronous programming, the TypeScript type system, module bundling, testing,
+    component-based UI with React, server-side development with Node.js, and
+    software design patterns. Takes you from first console.log to production-grade
+    full-stack engineer.
+  domain: "Technology"
+  visibility: "public"
+
+nodes:
+  # ── FOUNDATION ──────────────────────────────────────────────────────────────
+  - id: "technology/javascript-typescript/variables-types-basics"
+    title: "Variables, Types & Basics"
+    description: >
+      The entry point to JavaScript — setting up a development environment,
+      understanding how JS runs in the browser and Node.js, and learning the
+      primitive types, variable declarations, operators, control flow, and
+      basic data structures (arrays, objects) that every JS program is built from.
+    benchmarks:
+      - level: beginner
+        criteria: "Sets up a code editor and runs JS in the browser console and via Node.js. Declares variables with let and const. Uses strings, numbers, booleans, null, undefined. Writes if/else and for/while loops. Creates arrays and objects."
+        metrics:
+          - "Can open the browser DevTools console and evaluate expressions"
+          - "Zero use of var in new code — uses let and const correctly"
+          - "Completes freeCodeCamp Basic JavaScript section with ≥80% first-attempt pass rate"
+        resources:
+          - title: "MDN - JavaScript First Steps"
+            url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps"
+            type: "course"
+          - title: "JavaScript.info - The JavaScript Language (Part 1, Chapters 1-5)"
+            url: "https://javascript.info/first-steps"
+            type: "article"
+          - title: "freeCodeCamp - JavaScript Algorithms and Data Structures (first 100 exercises)"
+            url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
+            type: "course"
+          - title: "Fireship - JavaScript in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=DHjqpvDnNGE"
+            type: "video"
+        practice:
+          - "Open the browser console and experiment with each primitive type (string, number, boolean, null, undefined, BigInt, Symbol) for 15 minutes"
+          - "Write a script that asks for user input via prompt() and prints a formatted greeting using template literals (20 minutes)"
+          - "Rewrite 3 code snippets that use var to use let/const and explain why each choice is correct (15 minutes)"
+        projects:
+          - "Build a temperature converter (Fahrenheit/Celsius/Kelvin) that takes input and outputs all three conversions"
+          - "Create a simple quiz game with 5 questions stored in an array of objects, tracking the user's score"
+        tips:
+          - "Use const by default. Only use let when you need to reassign. Never use var — it has confusing scoping rules that cause bugs."
+          - "If you get 'undefined is not a function', you are trying to call something that is not a function. Check your variable names and spelling."
+          - "Template literals (backtick strings) are almost always better than string concatenation with +. Get in the habit early."
+      - level: intermediate
+        criteria: >
+          Understands type coercion rules and avoids common pitfalls (== vs ===).
+          Uses destructuring, spread/rest operators, and optional chaining fluently.
+          Knows when to use Map/Set vs plain objects/arrays. Understands value vs
+          reference semantics.
+        metrics:
+          - "Consistently uses === instead of == in all comparisons"
+          - "Uses destructuring in ≥80% of cases where it simplifies code"
+          - "Can predict the output of 10 type coercion edge cases (e.g., [] == false, '' == 0)"
+        resources:
+          - title: "JavaScript.info - Data Types (advanced chapters)"
+            url: "https://javascript.info/data-types"
+            type: "article"
+          - title: "MDN - Destructuring Assignment"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment"
+            type: "article"
+          - title: "MDN - Map"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map"
+            type: "article"
+          - title: "MDN - Equality Comparisons and Sameness"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Equality_comparisons_and_sameness"
+            type: "article"
+        practice:
+          - "Convert 5 functions to use destructuring for their parameters and return values (20 minutes)"
+          - "Write a script that demonstrates when Map is better than a plain object (key types, iteration order) (25 minutes)"
+          - "Create a quiz of 10 type coercion examples and test yourself without running the code first (20 minutes)"
+        projects:
+          - "Build a contact manager that uses Map for storage, supports CRUD operations, and demonstrates spread/rest for merging and cloning contacts"
+        tips:
+          - "Always use === for comparisons. The == operator has 20+ coercion rules that even experienced devs cannot fully memorize."
+          - "Use optional chaining (?.) when accessing deeply nested properties. It prevents 'Cannot read property of undefined' — the most common JS error."
+      - level: advanced
+        criteria: >
+          Deep understanding of the JS type system: prototype chain, Symbol usage,
+          WeakMap/WeakSet for memory-safe caching, Proxy and Reflect for
+          metaprogramming. Writes code that junior devs can read without explanation.
+        metrics:
+          - "Can explain the prototype chain for any object without consulting docs"
+          - "Uses WeakMap/WeakRef appropriately for caching in at least one production scenario"
+          - "Peer review: 0 'what does this do?' comments on language features in last 5 PRs"
+        resources:
+          - title: "JavaScript.info - Prototypes, Inheritance"
+            url: "https://javascript.info/prototypes"
+            type: "article"
+          - title: "MDN - Proxy"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Proxy"
+            type: "article"
+          - title: "MDN - WeakMap"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/WeakMap"
+            type: "article"
+        practice:
+          - "Implement a simple reactive system using Proxy that logs property access and mutation (45 minutes)"
+          - "Build a memoization cache using WeakMap that avoids memory leaks with object keys (30 minutes)"
+        projects:
+          - "Create a simple data validation library using Proxy that intercepts property sets and validates types/constraints automatically"
+        tips:
+          - "Proxy is powerful but has performance overhead. Use it for developer tooling and debugging, not in hot paths."
+          - "WeakMap is the correct tool for attaching metadata to objects without preventing garbage collection — learn it well."
+      - level: expert
+        criteria: >
+          Understands V8/SpiderMonkey internals: hidden classes, inline caches,
+          JIT compilation tiers, garbage collection strategies. Can read and
+          interpret engine-level profiling output. Contributes to TC39 proposals
+          or implements polyfills for Stage 2+ features.
+        metrics:
+          - "Can explain V8 hidden classes and how object shape changes cause deoptimization"
+          - "At least 1 engine-level performance improvement shipped per quarter backed by profiling data"
+          - "Follows TC39 proposals and can evaluate implications for production codebases"
+        resources:
+          - title: "V8 Blog - Official V8 JavaScript Engine Blog"
+            url: "https://v8.dev/blog"
+            type: "article"
+          - title: "MDN - Memory Management"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_management"
+            type: "article"
+          - title: "TC39 Proposals Repository"
+            url: "https://github.com/tc39/proposals"
+            type: "article"
+        practice:
+          - "Use V8's --trace-opt and --trace-deopt flags to profile a small app and identify deoptimization causes (60 minutes)"
+          - "Read 3 recent TC39 Stage 3 proposals and write a summary of how each would affect your codebase (45 minutes)"
+        projects:
+          - "Write a polyfill for a Stage 3 TC39 proposal, including full test coverage and documentation"
+        tips:
+          - "Object shape consistency matters for V8 performance. Always initialize all properties in the constructor — adding properties later causes hidden class transitions."
+    tags: ["foundation", "syntax", "beginner-friendly"]
+
+  - id: "technology/javascript-typescript/functions"
+    title: "Functions & Scope"
+    description: >
+      The core building block of JavaScript programs — function declarations,
+      expressions, arrow functions, closures, scope chains, and higher-order
+      functions. Mastering functions is the single most important step in
+      becoming a competent JS developer.
+    benchmarks:
+      - level: beginner
+        criteria: "Declares functions using function declarations, expressions, and arrow syntax. Understands parameters, return values, and default parameters. Knows the difference between global and function scope."
+        metrics:
+          - "Can write a function that takes arguments and returns a value without side effects"
+          - "Arrow functions used for callbacks in ≥80% of cases"
+          - "No global variable pollution in scripts — all logic lives in functions"
+        resources:
+          - title: "MDN - Functions Guide"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions"
+            type: "article"
+          - title: "JavaScript.info - Functions"
+            url: "https://javascript.info/function-basics"
+            type: "article"
+          - title: "freeCodeCamp - Functional Programming in JavaScript (video)"
+            url: "https://www.youtube.com/watch?v=e-5obm1G_FY"
+            type: "video"
+          - title: "JavaScript.info - Arrow Functions"
+            url: "https://javascript.info/arrow-functions-basics"
+            type: "article"
+        practice:
+          - "Rewrite 5 function declarations as arrow functions and note where 'this' behavior would differ (20 minutes)"
+          - "Write a higher-order function that takes a function as an argument and calls it 3 times (15 minutes)"
+          - "Implement map, filter, and reduce from scratch using basic for loops (30 minutes)"
+        projects:
+          - "Build a simple calculator that uses a function lookup object (operations mapped to functions) instead of a switch statement"
+        tips:
+          - "Arrow functions do not have their own 'this'. This is a feature, not a bug — use arrow functions for callbacks and regular functions for methods."
+          - "If your function takes more than 3 parameters, refactor to accept an options object with destructuring instead."
+      - level: intermediate
+        criteria: >
+          Understands closures and uses them intentionally (factories, private state,
+          partial application). Uses array methods (map, filter, reduce, find, some, every)
+          fluently. Comfortable with 'this' binding rules (implicit, explicit, new, arrow).
+        metrics:
+          - "Can explain closures to a junior dev with a whiteboard example"
+          - "Uses array higher-order methods instead of for loops in ≥90% of data transformations"
+          - "Can predict 'this' value in 10 different contexts without running the code"
+        resources:
+          - title: "JavaScript.info - Closures"
+            url: "https://javascript.info/closure"
+            type: "article"
+          - title: "MDN - Array Methods"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array"
+            type: "article"
+          - title: "JavaScript.info - Object Methods, 'this'"
+            url: "https://javascript.info/object-methods"
+            type: "article"
+          - title: "Fireship - JavaScript 'this' Keyword"
+            url: "https://www.youtube.com/watch?v=YOlr79NaAtQ"
+            type: "video"
+        practice:
+          - "Create a counter factory using closures that returns increment, decrement, and getValue functions sharing private state (20 minutes)"
+          - "Rewrite 5 imperative loops as chains of map/filter/reduce (25 minutes)"
+          - "Write 10 'this' prediction exercises and verify in the console (20 minutes)"
+        projects:
+          - "Build a simple event emitter (on, off, emit) using closures for private subscriber storage — no classes allowed"
+        tips:
+          - "Closures are not exotic — every callback that references an outer variable is a closure. You use them constantly without realizing it."
+          - "When chaining array methods, keep each callback to one line. If you need more, extract to a named function."
+      - level: advanced
+        criteria: >
+          Implements currying, partial application, and function composition.
+          Uses generators and iterators. Understands the call stack, event loop,
+          and microtask queue at a deep level. Writes pure functions by default.
+        metrics:
+          - "Utility functions are pure (same input, same output, no side effects) in ≥90% of cases"
+          - "Can trace through generator execution step by step with yield/next"
+          - "Can diagram the event loop, call stack, and microtask queue for a given code snippet"
+        resources:
+          - title: "JavaScript.info - Generators"
+            url: "https://javascript.info/generators"
+            type: "article"
+          - title: "MDN - Iterators and Generators"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_generators"
+            type: "article"
+          - title: "JavaScript.info - Currying"
+            url: "https://javascript.info/currying-partials"
+            type: "article"
+        practice:
+          - "Implement a compose() and pipe() function and use them to build a data processing pipeline (30 minutes)"
+          - "Write a generator that lazily produces Fibonacci numbers and consume it with a for...of loop (20 minutes)"
+          - "Implement a curry() utility that works for functions of any arity (30 minutes)"
+        projects:
+          - "Build a lazy evaluation library using generators that supports map, filter, take, and forEach operations on infinite sequences"
+        tips:
+          - "Generators are underused in application code. They are excellent for pagination, infinite scroll data, and any lazy sequence."
+      - level: expert
+        criteria: >
+          Designs function-level APIs for libraries. Uses advanced patterns
+          (trampolining for stack-safe recursion, continuation-passing style).
+          Understands tail call optimization status across engines.
+          Mentors teams on functional programming patterns in JS.
+        metrics:
+          - "Library APIs designed are adopted by other teams without modification"
+          - "Mentoring: at least 2 developers show measurable improvement in function design per quarter"
+        resources:
+          - title: "JavaScript.info - Advanced Working with Functions"
+            url: "https://javascript.info/advanced-functions"
+            type: "article"
+          - title: "MDN - Closures (in-depth)"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+            type: "article"
+        practice:
+          - "Implement a trampoline function for stack-safe recursion and convert a deeply recursive function to use it (45 minutes)"
+          - "Review 3 popular OSS libraries (lodash, ramda, rxjs) and document their function API design patterns (60 minutes)"
+        projects:
+          - "Design and publish a small utility library with a fluent, composable API — includes full documentation and TypeScript types"
+        tips:
+          - "The best function APIs are obvious. If users need to read docs to use your function, the signature needs work."
+    tags: ["foundation", "functions", "closures", "scope"]
+
+  - id: "technology/javascript-typescript/dom-manipulation"
+    title: "DOM Manipulation"
+    description: >
+      Interacting with web pages programmatically — selecting elements, modifying
+      content and styles, handling user events, and understanding the browser
+      rendering pipeline. The bridge between JavaScript logic and what users
+      see on screen.
+    benchmarks:
+      - level: beginner
+        criteria: "Selects elements with querySelector/querySelectorAll. Modifies text, attributes, and styles. Adds event listeners for click, input, and submit events. Creates and removes elements dynamically."
+        metrics:
+          - "Uses querySelector instead of getElementById in all new code"
+          - "Event listeners are attached without inline HTML event handlers (no onclick attributes)"
+          - "Can build a basic interactive page with 3+ event handlers"
+        resources:
+          - title: "MDN - Introduction to the DOM"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction"
+            type: "article"
+          - title: "JavaScript.info - Document (DOM)"
+            url: "https://javascript.info/document"
+            type: "article"
+          - title: "JavaScript.info - Introduction to Events"
+            url: "https://javascript.info/events"
+            type: "article"
+          - title: "freeCodeCamp - Learn JavaScript by Building Projects (DOM section)"
+            url: "https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures-v8/"
+            type: "course"
+        practice:
+          - "Build a to-do list that adds, removes, and toggles items using only DOM methods (45 minutes)"
+          - "Create a color picker that changes the page background on input change (20 minutes)"
+          - "Add keyboard shortcuts to a page using keydown events (20 minutes)"
+        projects:
+          - "Build an interactive form with real-time validation — highlight invalid fields, show error messages, disable submit until all fields are valid"
+        tips:
+          - "Always use addEventListener instead of onclick/onchange attributes. It is cleaner, supports multiple handlers, and can be removed."
+          - "Cache your DOM selections in variables. Calling querySelector repeatedly is slower than storing the reference once."
+      - level: intermediate
+        criteria: >
+          Understands event delegation and bubbling. Uses event.preventDefault()
+          and event.stopPropagation() correctly. Batches DOM updates to minimize
+          reflows. Uses DocumentFragment or innerHTML for bulk insertions.
+          Handles forms and FormData.
+        metrics:
+          - "Uses event delegation for lists/tables instead of per-element listeners"
+          - "Form handling uses FormData API rather than manually reading each input"
+          - "No unnecessary forced reflows detected in Chrome DevTools Performance panel"
+        resources:
+          - title: "JavaScript.info - Event Delegation"
+            url: "https://javascript.info/event-delegation"
+            type: "article"
+          - title: "MDN - FormData"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/FormData"
+            type: "article"
+          - title: "MDN - DocumentFragment"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/DocumentFragment"
+            type: "article"
+        practice:
+          - "Refactor a list with 20 individual click handlers to use a single delegated handler on the parent (20 minutes)"
+          - "Build a dynamic table with 100 rows using DocumentFragment and measure the performance difference vs one-by-one insertion (30 minutes)"
+          - "Create a multi-step form wizard using FormData to collect and serialize all inputs (40 minutes)"
+        projects:
+          - "Build a drag-and-drop Kanban board with columns, movable cards, and event delegation for all interactions"
+        tips:
+          - "Event delegation is not just an optimization — it handles dynamically added elements automatically. Attach the listener to the parent, check event.target."
+          - "Reading offsetHeight forces a reflow. Batch all reads together, then batch all writes. Never interleave reads and writes."
+      - level: advanced
+        criteria: >
+          Uses MutationObserver, IntersectionObserver, and ResizeObserver.
+          Understands the browser rendering pipeline (style, layout, paint, composite).
+          Implements virtual scrolling for large lists. Uses Web Animations API.
+        metrics:
+          - "Uses IntersectionObserver for lazy loading and infinite scroll instead of scroll event listeners"
+          - "Virtual scrolling implemented for lists with 1000+ items"
+          - "Chrome Lighthouse performance score ≥90 on interactive pages"
+        resources:
+          - title: "MDN - Intersection Observer API"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API"
+            type: "article"
+          - title: "MDN - Web Animations API"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API"
+            type: "article"
+          - title: "MDN - MutationObserver"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver"
+            type: "article"
+        practice:
+          - "Implement lazy image loading using IntersectionObserver (30 minutes)"
+          - "Build an infinite scroll component that loads data as the user scrolls, using IntersectionObserver (45 minutes)"
+          - "Create a smooth animation using the Web Animations API instead of CSS transitions (25 minutes)"
+        projects:
+          - "Build a virtual scrolling list that renders only visible items for a dataset of 10,000 rows with smooth scrolling"
+        tips:
+          - "IntersectionObserver replaces scroll event listeners for visibility detection. It is asynchronous, more performant, and simpler to reason about."
+      - level: expert
+        criteria: >
+          Architects rendering performance for complex UIs. Uses OffscreenCanvas,
+          Web Workers for DOM-related computation, and requestIdleCallback for
+          non-critical updates. Deep understanding of compositor layers and
+          GPU-accelerated properties (transform, opacity).
+        metrics:
+          - "Complex pages maintain 60fps during interaction (verified with Chrome Performance panel)"
+          - "Frame budget analysis performed before shipping animation-heavy features"
+          - "Zero layout thrashing in production code"
+        resources:
+          - title: "MDN - Web Workers API"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Web_Workers_API"
+            type: "article"
+          - title: "MDN - requestIdleCallback"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Window/requestIdleCallback"
+            type: "article"
+        practice:
+          - "Profile a slow page with Chrome DevTools Performance panel, identify layout thrashing, and fix it (60 minutes)"
+          - "Offload a heavy computation to a Web Worker and communicate results back to the main thread (45 minutes)"
+        projects:
+          - "Build a high-performance data grid (sortable, filterable, 50k rows) that maintains 60fps using virtual scrolling, Web Workers, and compositor-friendly animations"
+        tips:
+          - "Only transform and opacity can be animated on the compositor thread without triggering layout. Everything else forces the browser through the full pipeline."
+    tags: ["dom", "browser", "events", "ui"]
+
+  - id: "technology/javascript-typescript/async-programming"
+    title: "Async Programming"
+    description: >
+      Mastering asynchronous JavaScript — callbacks, Promises, async/await, and
+      the event loop. Nearly everything in JS is async: network requests, timers,
+      user events, file I/O in Node. This skill separates beginners from
+      productive developers.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands why JavaScript is single-threaded and non-blocking. Uses setTimeout and setInterval. Consumes Promises with .then()/.catch(). Writes basic async/await functions. Makes fetch() requests to APIs."
+        metrics:
+          - "Can explain the event loop in plain English"
+          - "Uses async/await instead of .then() chains for new code"
+          - "Successfully fetches data from a public API and renders it to the page"
+        resources:
+          - title: "JavaScript.info - Promises, async/await"
+            url: "https://javascript.info/async"
+            type: "article"
+          - title: "MDN - Using Promises"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Using_promises"
+            type: "article"
+          - title: "MDN - Using Fetch"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch"
+            type: "article"
+          - title: "Fireship - Async Await in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=vn3tm0quoqE"
+            type: "video"
+        practice:
+          - "Fetch data from a public API (e.g., JSONPlaceholder) and display it on a page using async/await (30 minutes)"
+          - "Convert a .then() chain to async/await and add try/catch error handling (20 minutes)"
+          - "Build a countdown timer using setInterval that updates the DOM every second (20 minutes)"
+        projects:
+          - "Build a weather app that fetches data from a public weather API, handles loading states, and displays results with error handling"
+        tips:
+          - "Always wrap await calls in try/catch. Unhandled Promise rejections crash Node.js and silently fail in browsers."
+          - "async/await is syntactic sugar over Promises. Learn Promises first, then use async/await for cleaner code."
+      - level: intermediate
+        criteria: >
+          Uses Promise.all, Promise.race, Promise.allSettled, and Promise.any
+          appropriately. Implements retry logic and timeout patterns. Understands
+          the microtask queue vs macrotask queue. Handles concurrent API requests
+          efficiently.
+        metrics:
+          - "Uses Promise.all for independent concurrent requests instead of sequential awaits"
+          - "Can predict the execution order of mixed setTimeout/Promise/queueMicrotask code"
+          - "Retry logic with exponential backoff implemented for unreliable API calls"
+        resources:
+          - title: "JavaScript.info - Promise API"
+            url: "https://javascript.info/promise-api"
+            type: "article"
+          - title: "MDN - Promise.allSettled"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/allSettled"
+            type: "article"
+          - title: "JavaScript.info - Event Loop: Microtasks and Macrotasks"
+            url: "https://javascript.info/event-loop"
+            type: "article"
+          - title: "MDN - queueMicrotask"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Window/queueMicrotask"
+            type: "article"
+        practice:
+          - "Fetch 5 API endpoints concurrently using Promise.all and measure the time saved vs sequential requests (25 minutes)"
+          - "Write a retry function with exponential backoff that retries up to 3 times (30 minutes)"
+          - "Create 5 event loop ordering puzzles mixing setTimeout, Promises, and queueMicrotask — predict output before running (25 minutes)"
+        projects:
+          - "Build a parallel API data aggregator that fetches from multiple sources concurrently, handles partial failures with Promise.allSettled, and merges results"
+        tips:
+          - "Sequential awaits in a loop are a very common performance mistake. If requests are independent, use Promise.all to run them concurrently."
+          - "Promise.allSettled is better than Promise.all when you need results from all requests even if some fail."
+      - level: advanced
+        criteria: >
+          Creates custom Promise-based APIs. Uses AbortController for cancellation.
+          Implements debounce/throttle. Understands async iterators and for-await-of.
+          Manages complex async state machines.
+        metrics:
+          - "All fetch requests support cancellation via AbortController"
+          - "Search inputs use debounce; scroll handlers use throttle"
+          - "Async iterators used for streaming data consumption"
+        resources:
+          - title: "MDN - AbortController"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/AbortController"
+            type: "article"
+          - title: "JavaScript.info - Async Iteration and Generators"
+            url: "https://javascript.info/async-iterators-generators"
+            type: "article"
+          - title: "MDN - Streams API"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Streams_API"
+            type: "article"
+        practice:
+          - "Implement debounce and throttle functions from scratch (30 minutes)"
+          - "Add AbortController cancellation to a search input that cancels the previous request when a new one is made (25 minutes)"
+          - "Build an async generator that paginates through an API automatically using for-await-of (35 minutes)"
+        projects:
+          - "Build a real-time search with debounced input, AbortController cancellation, loading indicators, and error handling"
+        tips:
+          - "AbortController is essential for preventing race conditions in search UIs. Cancel the previous fetch before starting a new one."
+      - level: expert
+        criteria: >
+          Designs async architectures for complex systems: job queues, rate limiters,
+          circuit breakers, saga patterns. Uses SharedArrayBuffer and Atomics for
+          cross-worker synchronization. Deep understanding of async stack traces
+          and debugging.
+        metrics:
+          - "Async systems handle backpressure without memory leaks"
+          - "Rate limiting and circuit breaker patterns implemented for external API dependencies"
+          - "Zero race conditions in production async code (verified by stress testing)"
+        resources:
+          - title: "MDN - SharedArrayBuffer"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/SharedArrayBuffer"
+            type: "article"
+          - title: "Node.js Docs - Worker Threads"
+            url: "https://nodejs.org/api/worker_threads.html"
+            type: "article"
+        practice:
+          - "Implement a concurrent task queue that limits parallelism to N concurrent tasks (45 minutes)"
+          - "Build a circuit breaker that opens after 5 consecutive failures and retries after a cooldown period (40 minutes)"
+        projects:
+          - "Design and implement an async job processing system with priority queues, rate limiting, retry logic, dead letter queues, and observability"
+        tips:
+          - "Always think about backpressure. If your producer is faster than your consumer, you will eventually run out of memory. Use bounded queues."
+    tags: ["async", "promises", "event-loop", "fetch"]
+
+  - id: "technology/javascript-typescript/typescript-fundamentals"
+    title: "TypeScript Fundamentals"
+    description: >
+      Adding static types to JavaScript with TypeScript — type annotations,
+      interfaces, generics, type narrowing, and the TypeScript compiler. TypeScript
+      catches entire categories of bugs at compile time and is now the industry
+      standard for serious JavaScript projects.
+    benchmarks:
+      - level: beginner
+        criteria: "Sets up a TypeScript project with tsconfig.json. Annotates variables, function parameters, and return types. Uses basic types (string, number, boolean, arrays, objects). Understands type inference and when annotations are needed."
+        metrics:
+          - "TypeScript project compiles with zero errors on first try in ≥80% of cases"
+          - "All function signatures include parameter and return type annotations"
+          - "Can set up a new TS project from scratch in under 5 minutes"
+        resources:
+          - title: "TypeScript Official Handbook - The Basics"
+            url: "https://www.typescriptlang.org/docs/handbook/2/basic-types.html"
+            type: "article"
+          - title: "TypeScript Official Handbook - Everyday Types"
+            url: "https://www.typescriptlang.org/docs/handbook/2/everyday-types.html"
+            type: "article"
+          - title: "freeCodeCamp - Learn TypeScript (Full Course)"
+            url: "https://www.youtube.com/watch?v=30LWjhZzg50"
+            type: "video"
+          - title: "TypeScript Playground"
+            url: "https://www.typescriptlang.org/play"
+            type: "tool"
+        practice:
+          - "Convert a 50-line JavaScript file to TypeScript by adding type annotations to all functions and variables (30 minutes)"
+          - "Experiment with the TypeScript Playground — try writing code with intentional type errors and read the error messages (20 minutes)"
+          - "Set up a new TypeScript project with tsconfig.json from scratch (no template) (15 minutes)"
+        projects:
+          - "Convert an existing JavaScript to-do app to TypeScript — add types to all data structures, functions, and DOM interactions"
+        tips:
+          - "Let TypeScript infer types when it can. You do not need to annotate every variable — focus on function signatures and complex objects."
+          - "Read TypeScript error messages carefully — they are long but very precise. The error is almost always in the first 2 lines."
+      - level: intermediate
+        criteria: >
+          Uses interfaces and type aliases effectively. Understands union types,
+          intersection types, and literal types. Uses type narrowing with typeof,
+          instanceof, and discriminated unions. Comfortable with enums and
+          utility types (Partial, Required, Pick, Omit, Record).
+        metrics:
+          - "Uses discriminated unions for state management (e.g., loading/success/error states)"
+          - "Utility types used instead of manually constructing derived types"
+          - "Zero use of 'any' — uses 'unknown' with type guards when type is genuinely unknown"
+        resources:
+          - title: "TypeScript Handbook - Narrowing"
+            url: "https://www.typescriptlang.org/docs/handbook/2/narrowing.html"
+            type: "article"
+          - title: "TypeScript Handbook - Utility Types"
+            url: "https://www.typescriptlang.org/docs/handbook/utility-types.html"
+            type: "article"
+          - title: "TypeScript Handbook - Object Types"
+            url: "https://www.typescriptlang.org/docs/handbook/2/objects.html"
+            type: "article"
+          - title: "Fireship - TypeScript in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=zQnBQ4tB3ZA"
+            type: "video"
+        practice:
+          - "Model a shopping cart with discriminated unions for item states (in-stock, out-of-stock, pre-order) and write type guards (30 minutes)"
+          - "Refactor a codebase to replace all uses of 'any' with proper types or 'unknown' with type guards (40 minutes)"
+          - "Use Partial, Pick, and Omit to create API request/response types from a base entity type (25 minutes)"
+        projects:
+          - "Build a type-safe state machine for a multi-step checkout flow where each step has different allowed transitions and data shapes"
+        tips:
+          - "Never use 'any' to silence the compiler. Use 'unknown' and narrow with type guards — it gives you the same flexibility with actual safety."
+          - "Discriminated unions are the most powerful TypeScript pattern. Use a literal 'type' or 'status' field to let the compiler narrow automatically."
+      - level: advanced
+        criteria: >
+          Writes generic functions, classes, and types. Uses conditional types,
+          mapped types, and template literal types. Understands type-level
+          programming and can create complex type utilities. Uses declaration
+          files and ambient modules.
+        metrics:
+          - "Generic functions are correctly constrained (no unnecessary 'any' in generics)"
+          - "Custom utility types reduce code duplication by ≥30% in type definitions"
+          - "Can write .d.ts files for untyped third-party libraries"
+        resources:
+          - title: "TypeScript Handbook - Generics"
+            url: "https://www.typescriptlang.org/docs/handbook/2/generics.html"
+            type: "article"
+          - title: "TypeScript Handbook - Conditional Types"
+            url: "https://www.typescriptlang.org/docs/handbook/2/conditional-types.html"
+            type: "article"
+          - title: "TypeScript Handbook - Mapped Types"
+            url: "https://www.typescriptlang.org/docs/handbook/2/mapped-types.html"
+            type: "article"
+          - title: "TypeScript Handbook - Template Literal Types"
+            url: "https://www.typescriptlang.org/docs/handbook/2/template-literal-types.html"
+            type: "article"
+        practice:
+          - "Implement a type-safe deep merge utility type using recursive conditional types (45 minutes)"
+          - "Write a generic function that infers return type based on input type using conditional types (30 minutes)"
+          - "Create a type-safe event emitter where event names and payload types are enforced by generics (40 minutes)"
+        projects:
+          - "Build a type-safe ORM-like query builder where table names, column names, and result types are all inferred from a schema type"
+        tips:
+          - "Start generics simple: function identity<T>(value: T): T. Add constraints (extends) only when needed. Over-generic code is harder to read than specific code."
+      - level: expert
+        criteria: >
+          Designs type systems for libraries and frameworks. Uses advanced patterns:
+          higher-kinded types (emulated), variadic tuple types, const type parameters.
+          Writes TypeScript compiler plugins or custom transformers. Contributes to
+          DefinitelyTyped or TypeScript itself.
+        metrics:
+          - "Library type definitions are adopted by the community (DefinitelyTyped contributions or custom library types)"
+          - "Type-level tests exist for complex utility types (using tsd or expect-type)"
+          - "Can evaluate TypeScript RFCs and their impact on existing codebases"
+        resources:
+          - title: "TypeScript GitHub - Design Meeting Notes"
+            url: "https://github.com/microsoft/TypeScript/issues?q=label%3A%22Design+Notes%22"
+            type: "article"
+          - title: "TypeScript Handbook - Declaration Files"
+            url: "https://www.typescriptlang.org/docs/handbook/declaration-files/introduction.html"
+            type: "article"
+          - title: "DefinitelyTyped Repository"
+            url: "https://github.com/DefinitelyTyped/DefinitelyTyped"
+            type: "article"
+        practice:
+          - "Write type-level tests for 5 of your custom utility types using tsd or expect-type (40 minutes)"
+          - "Contribute a type fix or improvement to a DefinitelyTyped package (90 minutes)"
+        projects:
+          - "Create a TypeScript compiler plugin or transformer that adds custom lint rules or code generation for your team's conventions"
+        tips:
+          - "Type-level programming is a skill unto itself. Practice in the TypeScript Playground — treat types as a pure functional language where you are transforming shapes."
+    tags: ["typescript", "types", "static-analysis"]
+
+  - id: "technology/javascript-typescript/modules-build-tools"
+    title: "Modules & Build Tools"
+    description: >
+      Organizing JavaScript/TypeScript code into modules and using modern
+      build tools — ES modules, CommonJS, bundlers (Vite, webpack, esbuild),
+      package managers (npm, pnpm), and the overall JavaScript toolchain
+      that turns source code into production-ready bundles.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands import/export syntax (ES modules). Uses npm to install and manage packages. Creates a package.json. Knows the difference between dependencies and devDependencies."
+        metrics:
+          - "Uses ES module import/export instead of script tags for all multi-file projects"
+          - "Can set up a new project with npm init and install dependencies"
+          - "No node_modules committed to git — .gitignore is correctly configured"
+        resources:
+          - title: "JavaScript.info - Modules"
+            url: "https://javascript.info/modules-intro"
+            type: "article"
+          - title: "MDN - JavaScript Modules"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules"
+            type: "article"
+          - title: "Node.js Docs - Packages"
+            url: "https://nodejs.org/api/packages.html"
+            type: "article"
+          - title: "Fireship - npm in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=jHDhaSSKmB0"
+            type: "video"
+        practice:
+          - "Split a single 200-line JS file into 4-5 modules with clear responsibilities and re-import them (30 minutes)"
+          - "Set up a new project with npm, install 3 packages, and use them with ES module imports (20 minutes)"
+          - "Read and understand every field in a package.json from a popular OSS project (15 minutes)"
+        projects:
+          - "Build a multi-file utility library with separate modules for string, array, and math helpers — published to npm (or a local registry)"
+        tips:
+          - "Use named exports by default. Default exports make refactoring harder because the import name is arbitrary."
+          - "Always add a .gitignore with node_modules before your first commit. A committed node_modules folder is a very common beginner mistake."
+      - level: intermediate
+        criteria: >
+          Sets up Vite or a similar modern bundler for development and production.
+          Configures TypeScript compilation with tsconfig.json paths and aliases.
+          Understands tree-shaking and code splitting. Uses environment variables
+          correctly.
+        metrics:
+          - "Dev server starts in under 2 seconds with HMR working correctly"
+          - "Production bundle uses code splitting — no single JS file over 200KB (gzipped)"
+          - "Environment variables are typed and validated at startup"
+        resources:
+          - title: "Vite Official Guide"
+            url: "https://vite.dev/guide/"
+            type: "article"
+          - title: "TypeScript Handbook - Module Resolution"
+            url: "https://www.typescriptlang.org/docs/handbook/modules/theory.html"
+            type: "article"
+          - title: "Fireship - Vite in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=KCrXgy8qtjM"
+            type: "video"
+        practice:
+          - "Set up a Vite project from scratch with TypeScript, path aliases, and environment variables (30 minutes)"
+          - "Analyze a production bundle with vite-bundle-visualizer and identify the 3 largest dependencies (20 minutes)"
+          - "Configure code splitting so that each route loads its own chunk (30 minutes)"
+        projects:
+          - "Migrate an existing script-tag-based project to a Vite-powered build with TypeScript, hot module replacement, and optimized production builds"
+        tips:
+          - "Vite uses native ES modules in development and Rollup for production. This is why dev startup is nearly instant."
+          - "Use dynamic import() for code splitting. Any dynamically imported module becomes a separate chunk automatically."
+      - level: advanced
+        criteria: >
+          Configures monorepo tooling (turborepo, nx, or pnpm workspaces).
+          Creates custom Vite/Rollup plugins. Optimizes build performance
+          (caching, parallelism, incremental builds). Publishes packages with
+          proper dual CJS/ESM support.
+        metrics:
+          - "Monorepo build time reduced by ≥50% through caching and parallelism"
+          - "Published packages work in both CJS and ESM environments without issues"
+          - "CI build time under 3 minutes for full monorepo"
+        resources:
+          - title: "Vite Plugin API"
+            url: "https://vite.dev/guide/api-plugin.html"
+            type: "article"
+          - title: "Node.js Docs - Modules: Packages (dual CJS/ESM)"
+            url: "https://nodejs.org/api/packages.html#dual-commonjses-module-packages"
+            type: "article"
+          - title: "Turborepo Docs"
+            url: "https://turborepo.dev/repo/docs"
+            type: "article"
+        practice:
+          - "Set up a pnpm workspace monorepo with 3 packages that depend on each other (45 minutes)"
+          - "Write a custom Vite plugin that transforms a specific file type or injects build metadata (40 minutes)"
+          - "Configure a package.json with dual CJS/ESM exports and verify it works in both environments (30 minutes)"
+        projects:
+          - "Set up a full monorepo with shared packages, a web app, and a CLI tool — with turborepo caching and CI pipeline"
+        tips:
+          - "pnpm workspaces + turborepo is the most pragmatic monorepo setup in 2024. Start there before considering nx."
+      - level: expert
+        criteria: >
+          Designs build pipelines for large organizations. Evaluates and migrates
+          between build tools. Understands bundler internals (dependency graph,
+          chunk splitting algorithms, module federation). Implements custom
+          loaders/transformers at the AST level.
+        metrics:
+          - "Build pipeline changes are documented with before/after performance comparisons"
+          - "Developer experience: HMR works reliably for all 50+ developers in the org"
+          - "Zero production bundle regressions — automated size budgets enforced in CI"
+        resources:
+          - title: "Rollup Plugin Documentation"
+            url: "https://rollupjs.org/plugin-development/"
+            type: "article"
+          - title: "esbuild Architecture"
+            url: "https://esbuild.github.io/"
+            type: "article"
+        practice:
+          - "Read the source code of a popular Vite/Rollup plugin and document its architecture (60 minutes)"
+          - "Implement a bundle size budget check that fails CI if any chunk exceeds a threshold (30 minutes)"
+        projects:
+          - "Design and implement a Module Federation setup that allows independent deployment of micro-frontend applications"
+        tips:
+          - "Build tool migrations are high-risk, high-reward. Always run the old and new tool in parallel during migration and compare outputs."
+    tags: ["modules", "bundlers", "npm", "tooling"]
+
+  - id: "technology/javascript-typescript/testing"
+    title: "Testing"
+    description: >
+      Writing automated tests for JavaScript and TypeScript code — unit tests,
+      integration tests, end-to-end tests, mocking, and test-driven development.
+      Tests are the foundation of confidence in code changes and the prerequisite
+      for continuous deployment.
+    benchmarks:
+      - level: beginner
+        criteria: "Sets up a test runner (Vitest or Jest). Writes basic unit tests with describe/it/expect. Tests pure functions with multiple cases. Understands the concept of test isolation."
+        metrics:
+          - "Can write a test file and run it from the command line"
+          - "Each test function has at least 2 assertions covering normal and edge cases"
+          - "Tests pass independently — no order dependency between tests"
+        resources:
+          - title: "Vitest Official Guide"
+            url: "https://vitest.dev/guide/"
+            type: "article"
+          - title: "JavaScript.info - Automated Testing with Mocha"
+            url: "https://javascript.info/testing-mocha"
+            type: "article"
+          - title: "MDN - Introduction to Testing"
+            url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing/Introduction"
+            type: "article"
+          - title: "Fireship - Testing in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=u6QfIXgjwGQ"
+            type: "video"
+        practice:
+          - "Write 10 unit tests for a utility function (string formatter, array helper) covering edge cases (30 minutes)"
+          - "Set up Vitest in an existing project and write your first test file (20 minutes)"
+          - "Practice the red-green-refactor cycle: write a failing test, make it pass, refactor (30 minutes)"
+        projects:
+          - "Add a comprehensive test suite to a calculator or form validation library — aim for ≥90% code coverage"
+        tips:
+          - "Name your tests like sentences: 'it should return 0 when the array is empty'. Good test names are documentation."
+          - "Test behavior, not implementation. If you refactor a function's internals and the tests break, the tests were too tightly coupled."
+      - level: intermediate
+        criteria: >
+          Uses mocking (vi.fn, vi.mock) for isolating dependencies. Tests async code
+          with async/await. Writes integration tests that test multiple units together.
+          Uses test coverage tools to identify untested paths. Follows AAA pattern
+          (Arrange, Act, Assert).
+        metrics:
+          - "Mocks are used for external dependencies (APIs, databases) but not for internal modules"
+          - "Async tests properly await results and test both success and error paths"
+          - "Code coverage ≥80% on business logic modules"
+        resources:
+          - title: "Vitest - Mocking"
+            url: "https://vitest.dev/guide/mocking.html"
+            type: "article"
+          - title: "Kent C. Dodds - Testing Implementation Details"
+            url: "https://kentcdodds.com/blog/testing-implementation-details"
+            type: "article"
+          - title: "Kent C. Dodds - The Testing Trophy and Testing Classifications"
+            url: "https://kentcdodds.com/blog/the-testing-trophy-and-testing-classifications"
+            type: "article"
+        practice:
+          - "Mock a fetch call in a test and verify the component handles both success and error responses (30 minutes)"
+          - "Write integration tests for a feature that spans 3+ modules without mocking internal dependencies (40 minutes)"
+          - "Add coverage reporting and identify the 3 most undertested files in your project (20 minutes)"
+        projects:
+          - "Build a test suite for a REST API client library with mocked HTTP responses, covering all HTTP methods, error states, retry logic, and timeout handling"
+        tips:
+          - "Mock at the boundary (HTTP, database, file system), not at the module level. Over-mocking makes tests pass even when the code is broken."
+          - "The Testing Trophy: prefer integration tests over unit tests. They give more confidence per test written."
+      - level: advanced
+        criteria: >
+          Writes end-to-end tests with Playwright or Cypress. Implements visual
+          regression testing. Uses test factories and builders for complex test data.
+          Designs test architecture for large applications (shared fixtures,
+          custom matchers, test utilities).
+        metrics:
+          - "E2E tests cover critical user journeys and run in CI in under 5 minutes"
+          - "Visual regression tests catch unintended UI changes"
+          - "Test data is generated by factories — no hardcoded fixtures"
+        resources:
+          - title: "Playwright Official Docs"
+            url: "https://playwright.dev/docs/intro"
+            type: "article"
+          - title: "Kent C. Dodds - Write Tests, Not Too Many, Mostly Integration"
+            url: "https://kentcdodds.com/blog/write-tests"
+            type: "article"
+          - title: "Vitest - Advanced API"
+            url: "https://vitest.dev/api/"
+            type: "article"
+        practice:
+          - "Write a Playwright E2E test for a login flow including error states and redirects (40 minutes)"
+          - "Create a test data factory using the builder pattern for a complex entity (30 minutes)"
+          - "Set up visual regression testing that compares screenshots across runs (35 minutes)"
+        projects:
+          - "Build a comprehensive test infrastructure for a web app: unit tests, integration tests, E2E tests, visual regression, and CI pipeline"
+        tips:
+          - "E2E tests should test user journeys, not individual components. Write fewer E2E tests but make each one cover a complete workflow."
+      - level: expert
+        criteria: >
+          Designs testing strategy for organizations. Implements property-based
+          testing and mutation testing. Optimizes test suite performance (parallelism,
+          selective test running, test impact analysis). Mentors teams on testing
+          culture and best practices.
+        metrics:
+          - "Test suite runs in under 2 minutes through parallelism and selective running"
+          - "Property-based tests find edge cases that example-based tests miss"
+          - "Mutation testing score ≥70% on critical business logic"
+        resources:
+          - title: "fast-check - Property Based Testing for JavaScript"
+            url: "https://fast-check.dev/"
+            type: "tool"
+          - title: "Stryker - Mutation Testing for JavaScript"
+            url: "https://stryker-mutator.io/"
+            type: "tool"
+        practice:
+          - "Write property-based tests for a sorting function using fast-check (35 minutes)"
+          - "Run Stryker mutation testing on a module and analyze surviving mutants (40 minutes)"
+          - "Configure test sharding to split tests across CI workers (25 minutes)"
+        projects:
+          - "Implement a test impact analysis system that only runs tests affected by changed files, reducing CI time by ≥60%"
+        tips:
+          - "Property-based testing finds bugs you would never think to write a test for. Start with simple properties: 'sorting is idempotent', 'parsing then serializing is identity'."
+    tags: ["testing", "vitest", "playwright", "tdd"]
+
+  - id: "technology/javascript-typescript/react-frameworks"
+    title: "React & Framework Basics"
+    description: >
+      Building user interfaces with React — components, state, props, hooks,
+      and the component lifecycle. React is the most widely used UI framework
+      and the foundation for understanding all modern component-based frameworks
+      (Vue, Svelte, Angular).
+    benchmarks:
+      - level: beginner
+        criteria: "Creates functional components with JSX. Passes data with props. Manages state with useState. Handles events in components. Uses useEffect for side effects. Renders lists with keys."
+        metrics:
+          - "Components are small (under 100 lines) and focused on a single responsibility"
+          - "No direct DOM manipulation — all UI updates go through state"
+          - "Lists always have stable, unique key props"
+        resources:
+          - title: "React Official Tutorial - Quick Start"
+            url: "https://react.dev/learn"
+            type: "course"
+          - title: "React Official Docs - Describing the UI"
+            url: "https://react.dev/learn/describing-the-ui"
+            type: "article"
+          - title: "React Official Docs - Adding Interactivity"
+            url: "https://react.dev/learn/adding-interactivity"
+            type: "article"
+          - title: "Fireship - React in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=Tn6-PIqc4UM"
+            type: "video"
+        practice:
+          - "Build a counter component with increment/decrement buttons using useState (15 minutes)"
+          - "Create a component that fetches data on mount using useEffect and displays a loading state (25 minutes)"
+          - "Build a filterable list component that takes items as props and filters based on a search input (30 minutes)"
+        projects:
+          - "Build a to-do app with React: add, toggle, delete, and filter tasks — all state managed with useState"
+        tips:
+          - "Think in components. If a piece of UI has its own state or is reused, it should be a separate component."
+          - "Never mutate state directly. Always use the setter function from useState and create new objects/arrays."
+      - level: intermediate
+        criteria: >
+          Uses useReducer for complex state. Implements custom hooks. Uses context
+          for shared state. Understands React rendering behavior (when components
+          re-render and why). Uses React.memo, useMemo, and useCallback appropriately.
+        metrics:
+          - "Custom hooks extract reusable logic from at least 3 components"
+          - "Context is used for genuinely global state (theme, auth) — not for prop drilling of local state"
+          - "Can explain why a specific component re-renders using React DevTools"
+        resources:
+          - title: "React Official Docs - Managing State"
+            url: "https://react.dev/learn/managing-state"
+            type: "article"
+          - title: "React Official Docs - Reusing Logic with Custom Hooks"
+            url: "https://react.dev/learn/reusing-logic-with-custom-hooks"
+            type: "article"
+          - title: "React Official Docs - Escape Hatches"
+            url: "https://react.dev/learn/escape-hatches"
+            type: "article"
+          - title: "Kent C. Dodds - Application State Management with React"
+            url: "https://kentcdodds.com/blog/application-state-management-with-react"
+            type: "article"
+        practice:
+          - "Extract a useFetch custom hook that handles loading, error, and data states (25 minutes)"
+          - "Refactor a component using multiple related useState calls to use useReducer instead (30 minutes)"
+          - "Use React DevTools Profiler to identify unnecessary re-renders in an existing app and fix them (40 minutes)"
+        projects:
+          - "Build a shopping cart with React: product listing, cart management with useReducer, theme switching with context, and a custom useLocalStorage hook for persistence"
+        tips:
+          - "Do not reach for useMemo/useCallback by default. Measure first with React DevTools Profiler. Premature memoization adds complexity without benefit."
+          - "Custom hooks are just functions that use other hooks. If you find yourself copying useState+useEffect logic between components, extract a custom hook."
+      - level: advanced
+        criteria: >
+          Uses React Server Components and server actions. Implements
+          code splitting with lazy/Suspense. Uses error boundaries.
+          Manages complex forms (React Hook Form or similar). Implements
+          optimistic updates. Understands the React fiber architecture conceptually.
+        metrics:
+          - "Error boundaries wrap all route-level components"
+          - "Code splitting reduces initial bundle size by ≥40%"
+          - "Forms handle validation, submission, and error states without full-page re-renders"
+        resources:
+          - title: "React Official Docs - Server Components"
+            url: "https://react.dev/reference/rsc/server-components"
+            type: "article"
+          - title: "React Official Docs - Suspense"
+            url: "https://react.dev/reference/react/Suspense"
+            type: "article"
+          - title: "React Official Docs - Error Boundaries"
+            url: "https://react.dev/reference/react/Component#catching-rendering-errors-with-an-error-boundary"
+            type: "article"
+          - title: "React Hook Form Docs"
+            url: "https://react-hook-form.com/get-started"
+            type: "article"
+        practice:
+          - "Add error boundaries to an existing app and test them by intentionally throwing errors in child components (30 minutes)"
+          - "Implement route-level code splitting with React.lazy and Suspense, then measure bundle size improvement (35 minutes)"
+          - "Build a complex form with nested fields, dynamic arrays, and async validation using React Hook Form (50 minutes)"
+        projects:
+          - "Build a full-featured dashboard with React: code-split routes, error boundaries, server-side data fetching, optimistic updates, and form handling"
+        tips:
+          - "Error boundaries are non-negotiable for production apps. Without them, a single component error crashes the entire page."
+      - level: expert
+        criteria: >
+          Architects large React applications. Designs component libraries and
+          design systems. Understands React's reconciliation algorithm and
+          concurrent rendering. Evaluates and adopts new React features
+          strategically. Mentors teams on React patterns and anti-patterns.
+        metrics:
+          - "Component library is used across 3+ applications with consistent API"
+          - "React concurrent features (useTransition, useDeferredValue) used to maintain responsiveness during heavy renders"
+          - "Architecture decisions are documented in ADRs with clear trade-off analysis"
+        resources:
+          - title: "React Official Docs - React Reference"
+            url: "https://react.dev/reference/react"
+            type: "article"
+          - title: "React Working Group Discussions"
+            url: "https://github.com/reactwg"
+            type: "article"
+        practice:
+          - "Implement useTransition to keep a list filter responsive while re-rendering 10,000 items (30 minutes)"
+          - "Design and document the API for a reusable DataTable component that supports sorting, filtering, pagination, and selection (60 minutes)"
+        projects:
+          - "Build a production-ready component library with TypeScript types, Storybook documentation, accessibility compliance, and automated visual regression tests"
+        tips:
+          - "The best React architecture is the simplest one that meets your needs. Start with co-located state and plain React. Add abstractions only when pain points emerge."
+    tags: ["react", "components", "hooks", "ui-frameworks"]
+
+  - id: "technology/javascript-typescript/nodejs-server"
+    title: "Node.js & Server-Side"
+    description: >
+      Using JavaScript on the server with Node.js — building APIs, working with
+      the file system, handling HTTP requests, connecting to databases, and
+      understanding the Node.js runtime model. Node.js makes JS a full-stack
+      language.
+    benchmarks:
+      - level: beginner
+        criteria: "Installs Node.js and runs scripts from the terminal. Reads and writes files with the fs module. Creates a basic HTTP server. Uses npm scripts. Understands the difference between browser JS and Node.js."
+        metrics:
+          - "Can create and run a Node.js script that reads a file and logs output"
+          - "Sets up npm scripts for common tasks (start, dev, build)"
+          - "Understands that Node.js has no DOM and has different globals (process, __dirname)"
+        resources:
+          - title: "Node.js Official Docs - Getting Started"
+            url: "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+            type: "article"
+          - title: "Node.js Official Docs - File System"
+            url: "https://nodejs.org/api/fs.html"
+            type: "article"
+          - title: "MDN - Server-side Website Programming"
+            url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side"
+            type: "course"
+          - title: "Fireship - Node.js in 100 Seconds"
+            url: "https://www.youtube.com/watch?v=ENrzD9HAZK4"
+            type: "video"
+        practice:
+          - "Build a script that reads a CSV file and outputs a summary of its contents (30 minutes)"
+          - "Create a basic HTTP server that responds with different content based on the URL path (25 minutes)"
+          - "Set up npm scripts for development (with --watch) and production modes (15 minutes)"
+        projects:
+          - "Build a CLI tool that takes a directory path as input and generates a markdown file listing all files with their sizes"
+        tips:
+          - "Use the fs/promises API (import { readFile } from 'node:fs/promises') instead of callbacks. The callback API is legacy."
+          - "Always prefix Node.js built-in imports with 'node:' (e.g., 'node:fs', 'node:path'). It makes it clear the import is a built-in, not a package."
+      - level: intermediate
+        criteria: >
+          Builds REST APIs with Express or Fastify. Connects to databases
+          (PostgreSQL, MongoDB). Implements authentication and authorization.
+          Uses middleware patterns. Handles errors with centralized error handling.
+          Uses environment variables for configuration.
+        metrics:
+          - "API endpoints return proper HTTP status codes (200, 201, 400, 401, 404, 500)"
+          - "Database queries are parameterized — zero SQL injection vulnerabilities"
+          - "Secrets are in environment variables — none hardcoded in source code"
+        resources:
+          - title: "Node.js Official Docs - HTTP Module"
+            url: "https://nodejs.org/api/http.html"
+            type: "article"
+          - title: "MDN - Express/Node Introduction"
+            url: "https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction"
+            type: "article"
+          - title: "JavaScript.info - Fetch (as API client reference)"
+            url: "https://javascript.info/fetch"
+            type: "article"
+          - title: "Node.js Official Guides - Don't Block the Event Loop"
+            url: "https://nodejs.org/en/learn/asynchronous-work/dont-block-the-event-loop"
+            type: "article"
+        practice:
+          - "Build a CRUD REST API for a resource (e.g., blog posts) with proper validation and error handling (60 minutes)"
+          - "Add JWT authentication to an existing API with login, registration, and protected routes (45 minutes)"
+          - "Set up a centralized error handler middleware that logs errors and returns consistent error responses (25 minutes)"
+        projects:
+          - "Build a REST API for a bookmarks app with user authentication, CRUD operations, tags, and search — deployed to a cloud provider"
+        tips:
+          - "Never trust user input. Validate and sanitize everything on the server, even if the frontend already validates."
+          - "Use a centralized error handler middleware instead of try/catch in every route. It reduces duplication and ensures consistent error responses."
+      - level: advanced
+        criteria: >
+          Implements WebSocket servers. Uses worker threads for CPU-intensive tasks.
+          Sets up caching (Redis). Implements rate limiting, request validation
+          with schemas (Zod), and structured logging. Containerizes with Docker.
+          Writes database migrations.
+        metrics:
+          - "API response times under 100ms at P95 for cached endpoints"
+          - "Worker threads offload CPU-bound operations without blocking the event loop"
+          - "All API inputs validated with Zod or similar schema library"
+        resources:
+          - title: "Node.js Docs - Worker Threads"
+            url: "https://nodejs.org/api/worker_threads.html"
+            type: "article"
+          - title: "Node.js Official Guides - Diagnostics"
+            url: "https://nodejs.org/en/learn/getting-started/debugging"
+            type: "article"
+          - title: "MDN - WebSockets API"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API"
+            type: "article"
+        practice:
+          - "Add Redis caching to an API endpoint and measure the performance improvement (40 minutes)"
+          - "Implement rate limiting middleware that limits requests per IP with a sliding window (30 minutes)"
+          - "Containerize a Node.js app with Docker using a multi-stage build for minimal image size (30 minutes)"
+        projects:
+          - "Build a real-time collaborative text editor with WebSocket server, operational transform or CRDT, presence indicators, and persistent storage"
+        tips:
+          - "Node.js is single-threaded by design. For CPU-bound work (image processing, encryption, data parsing), use worker_threads. For I/O-bound work, the event loop handles concurrency natively."
+      - level: expert
+        criteria: >
+          Designs Node.js systems for high availability and scale. Implements
+          graceful shutdown, health checks, and circuit breakers. Profiles with
+          clinic.js or 0x. Understands libuv internals. Designs service
+          architectures (microservices, event-driven, serverless).
+        metrics:
+          - "Services handle graceful shutdown (drain connections, flush logs) in under 10 seconds"
+          - "System handles 10x traffic spikes without degradation through auto-scaling and backpressure"
+          - "Memory leaks detected and fixed proactively using heap snapshots"
+        resources:
+          - title: "Node.js Official Docs - Process"
+            url: "https://nodejs.org/api/process.html"
+            type: "article"
+          - title: "Node.js Official Guides - Profiling"
+            url: "https://nodejs.org/en/learn/getting-started/profiling"
+            type: "article"
+        practice:
+          - "Implement graceful shutdown that waits for in-flight requests, closes database connections, and flushes logs (40 minutes)"
+          - "Use clinic.js to profile a Node.js app and identify event loop delays (45 minutes)"
+          - "Implement a health check endpoint that verifies database connectivity and returns detailed status (20 minutes)"
+        projects:
+          - "Design and deploy a microservice architecture with 3+ services communicating via message queues, with health checks, circuit breakers, distributed tracing, and auto-scaling"
+        tips:
+          - "Graceful shutdown is not optional for production services. Handle SIGTERM: stop accepting new requests, drain existing ones, close DB connections, then exit."
+    tags: ["nodejs", "server", "api", "backend"]
+
+  - id: "technology/javascript-typescript/design-patterns"
+    title: "Software Design Patterns"
+    description: >
+      Applying proven software design patterns in JavaScript and TypeScript —
+      creational, structural, and behavioral patterns adapted for the language's
+      unique features (first-class functions, prototypal inheritance, modules).
+      Good patterns make code extensible; bad patterns make it rigid.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the module pattern for encapsulation. Uses factory functions instead of complex constructors. Applies the observer pattern through event listeners. Recognizes the singleton pattern in module-level instances."
+        metrics:
+          - "Uses factory functions for object creation in ≥60% of cases where classes are not required"
+          - "Can identify the observer pattern in addEventListener usage"
+          - "Code is organized into modules with clear public APIs"
+        resources:
+          - title: "JavaScript.info - Class Patterns"
+            url: "https://javascript.info/class-patterns"
+            type: "article"
+          - title: "MDN - Introduction to Object-Oriented JavaScript"
+            url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects"
+            type: "article"
+          - title: "JavaScript.info - Classes"
+            url: "https://javascript.info/classes"
+            type: "article"
+          - title: "Fireship - 10 Design Patterns Explained in 10 Minutes"
+            url: "https://www.youtube.com/watch?v=tv-_1er1mWI"
+            type: "video"
+        practice:
+          - "Refactor a class with a complex constructor to a factory function with sensible defaults (20 minutes)"
+          - "Implement a simple pub/sub system using the observer pattern (25 minutes)"
+          - "Identify 3 design patterns in a library you use daily (e.g., Express, React) (15 minutes)"
+        projects:
+          - "Build a notification system using the observer pattern: subscribers register for event types, and the system broadcasts notifications to relevant subscribers"
+        tips:
+          - "In JavaScript, factory functions are often better than classes. They offer real encapsulation (closures), avoid 'this' confusion, and are simpler to test."
+          - "Patterns are tools, not rules. Use them when they solve a real problem, not because a book says to."
+      - level: intermediate
+        criteria: >
+          Applies the strategy pattern for interchangeable algorithms. Uses the
+          decorator pattern for extending behavior. Implements the adapter pattern
+          for third-party library integration. Uses the repository pattern for
+          data access.
+        metrics:
+          - "Strategy pattern used to avoid complex if/else or switch chains"
+          - "Third-party libraries wrapped in adapters so they can be swapped without changing business logic"
+          - "Data access is abstracted behind repository interfaces"
+        resources:
+          - title: "JavaScript.info - Mixins"
+            url: "https://javascript.info/mixins"
+            type: "article"
+          - title: "TypeScript Handbook - Decorators"
+            url: "https://www.typescriptlang.org/docs/handbook/decorators.html"
+            type: "article"
+          - title: "MDN - Inheritance and the Prototype Chain"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain"
+            type: "article"
+        practice:
+          - "Refactor a function with a large switch statement into a strategy pattern with a strategy map (25 minutes)"
+          - "Wrap a third-party HTTP client in an adapter so you can swap between fetch and axios without changing calling code (30 minutes)"
+          - "Implement a repository pattern for a data model with in-memory and database implementations (35 minutes)"
+        projects:
+          - "Build a payment processing system that uses the strategy pattern for different payment methods, the adapter pattern for different payment gateways, and the repository pattern for order storage"
+        tips:
+          - "The adapter pattern is essential for testability. Wrap every external dependency (database, API, file system) in an adapter. This lets you swap in a mock for testing."
+      - level: advanced
+        criteria: >
+          Implements the middleware/pipeline pattern (Express-style). Uses dependency
+          injection. Applies SOLID principles in TypeScript. Implements the command
+          pattern for undo/redo. Uses the state pattern for complex state machines.
+        metrics:
+          - "Dependency injection used for all external services — no hard-coded imports of concrete implementations"
+          - "SOLID violations flagged in code review: 0 instances in last 5 PRs"
+          - "Undo/redo functionality implemented for at least one complex feature using the command pattern"
+        resources:
+          - title: "TypeScript Handbook - Generics (for DI patterns)"
+            url: "https://www.typescriptlang.org/docs/handbook/2/generics.html"
+            type: "article"
+          - title: "JavaScript.info - Error Handling"
+            url: "https://javascript.info/error-handling"
+            type: "article"
+          - title: "MDN - JavaScript Guide (Advanced)"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+            type: "article"
+        practice:
+          - "Implement a middleware pipeline that processes requests through logging, auth, validation, and handler stages (35 minutes)"
+          - "Add undo/redo to a drawing app using the command pattern (45 minutes)"
+          - "Refactor a module to use dependency injection — pass dependencies through constructors instead of importing them directly (30 minutes)"
+        projects:
+          - "Build a text editor with full undo/redo using the command pattern, plugin system using the strategy pattern, and file format adapters for markdown, HTML, and plain text"
+        tips:
+          - "Dependency injection in TypeScript does not require a DI framework. Pass interfaces through constructors. That is it."
+          - "SOLID principles are guidelines, not laws. Follow them when they reduce complexity. Break them when following them adds complexity."
+      - level: expert
+        criteria: >
+          Designs architectural patterns for large applications: event-driven
+          architecture, CQRS, event sourcing, hexagonal architecture. Creates
+          domain-specific abstractions. Evaluates pattern trade-offs quantitatively.
+          Mentors teams on design principles.
+        metrics:
+          - "Architecture supports adding new features without modifying existing code (open/closed principle validated)"
+          - "New team members onboard in under 2 weeks thanks to clear architectural patterns"
+          - "Design decisions are documented with quantitative trade-off analysis"
+        resources:
+          - title: "Node.js Docs - Design Patterns (Best Practices)"
+            url: "https://nodejs.org/en/learn/getting-started/introduction-to-nodejs"
+            type: "article"
+          - title: "TypeScript Handbook - Project References"
+            url: "https://www.typescriptlang.org/docs/handbook/project-references.html"
+            type: "article"
+        practice:
+          - "Redesign an existing feature using hexagonal architecture: separate domain, application, and infrastructure layers (60 minutes)"
+          - "Implement a simple event sourcing system where state is derived from an append-only event log (60 minutes)"
+          - "Write an ADR (Architecture Decision Record) for a recent design choice in your codebase (30 minutes)"
+        projects:
+          - "Build a production system using event-driven architecture with event sourcing, CQRS, projections, and a clear separation of domain/application/infrastructure layers"
+        tips:
+          - "The best architecture is the simplest one that handles your current and near-future requirements. Do not build for requirements you do not have."
+          - "Event sourcing is powerful but complex. Start with simple event-driven patterns and only move to full event sourcing when you need an audit trail or temporal queries."
+    tags: ["patterns", "architecture", "solid", "design"]
+
+  # ── SUPPLEMENTARY ───────────────────────────────────────────────────────────
+  - id: "technology/javascript-typescript/error-handling"
+    title: "Error Handling & Debugging"
+    description: >
+      Writing robust code that handles failures gracefully — try/catch, custom
+      errors, error propagation, and debugging techniques using browser DevTools
+      and Node.js debugger. Good error handling is the difference between
+      an app that crashes and one that recovers.
+    benchmarks:
+      - level: beginner
+        criteria: "Uses try/catch for error-prone operations. Throws errors with descriptive messages. Uses console.log, console.error, and browser DevTools for debugging. Sets breakpoints in the browser debugger."
+        metrics:
+          - "All file I/O and network calls wrapped in try/catch"
+          - "Error messages include what went wrong and what the expected behavior was"
+          - "Can use the browser debugger to step through code and inspect variables"
+        resources:
+          - title: "JavaScript.info - Error Handling"
+            url: "https://javascript.info/error-handling"
+            type: "article"
+          - title: "MDN - Control Flow and Error Handling"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling"
+            type: "article"
+          - title: "MDN - Debugging JavaScript in the Browser"
+            url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/What_are_browser_developer_tools"
+            type: "article"
+          - title: "JavaScript.info - Debugging in the Browser"
+            url: "https://javascript.info/debugging"
+            type: "article"
+        practice:
+          - "Add error handling to 5 functions that currently have none — include specific error messages (25 minutes)"
+          - "Set a breakpoint in browser DevTools, step through a function, and inspect variables at each step (20 minutes)"
+          - "Intentionally cause 5 common errors (TypeError, ReferenceError, SyntaxError) and practice reading the stack traces (15 minutes)"
+        projects:
+          - "Add comprehensive error handling to an existing project: wrap all async calls, add user-friendly error messages, and create a debug log"
+        tips:
+          - "Read error messages from bottom to top. The last line in the stack trace is where the error originated. Work your way up to find the calling code."
+          - "console.log debugging is fine for quick checks. For complex bugs, use the debugger — it is much faster than adding and removing log statements."
+      - level: intermediate
+        criteria: >
+          Creates custom error classes with meaningful names and properties.
+          Implements error boundaries in frameworks. Uses structured logging.
+          Distinguishes between operational errors (expected) and programmer
+          errors (bugs). Propagates errors correctly through async code.
+        metrics:
+          - "Custom error types used for different error categories (ValidationError, NotFoundError, AuthError)"
+          - "Errors are logged with context (user ID, request ID, timestamp) not just message"
+          - "Zero unhandled Promise rejections in production"
+        resources:
+          - title: "JavaScript.info - Custom Errors"
+            url: "https://javascript.info/custom-errors"
+            type: "article"
+          - title: "MDN - Error"
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error"
+            type: "article"
+          - title: "Node.js Official Guides - Errors"
+            url: "https://nodejs.org/api/errors.html"
+            type: "article"
+        practice:
+          - "Create a custom error hierarchy: AppError -> ValidationError, NotFoundError, AuthError — each with appropriate HTTP status codes (25 minutes)"
+          - "Add structured logging to an API: every log entry includes timestamp, request ID, user ID, and severity (30 minutes)"
+          - "Audit an existing project for unhandled Promise rejections and fix all of them (30 minutes)"
+        projects:
+          - "Build a centralized error handling system for a web app: custom errors, error middleware, structured logging, error reporting to an external service, and user-friendly error pages"
+        tips:
+          - "Operational errors (network timeout, invalid input) are expected — handle them. Programmer errors (null reference, wrong argument type) are bugs — fix the code."
+      - level: advanced
+        criteria: >
+          Implements global error tracking and alerting (Sentry or similar).
+          Uses source maps for production debugging. Implements graceful
+          degradation. Designs error recovery strategies. Uses the Result
+          pattern (Ok/Err) for type-safe error handling in TypeScript.
+        metrics:
+          - "Production errors are tracked with full stack traces and user context"
+          - "Error rate monitored with alerts for anomalies"
+          - "Critical features have fallback behavior when dependencies fail"
+        resources:
+          - title: "MDN - Source Maps"
+            url: "https://developer.chrome.com/docs/devtools/javascript/source-maps"
+            type: "article"
+          - title: "TypeScript Handbook - Narrowing (for Result pattern)"
+            url: "https://www.typescriptlang.org/docs/handbook/2/narrowing.html"
+            type: "article"
+          - title: "Node.js Docs - Diagnostics Channel"
+            url: "https://nodejs.org/api/diagnostics_channel.html"
+            type: "article"
+        practice:
+          - "Implement a Result<T, E> type in TypeScript with map, flatMap, and unwrap methods (35 minutes)"
+          - "Set up source map uploads so that production errors show original source locations (25 minutes)"
+          - "Add graceful degradation to 3 features — define fallback behavior when external services are unavailable (40 minutes)"
+        projects:
+          - "Build a resilient API gateway that handles upstream failures with circuit breakers, fallback responses, request retries, and detailed error reporting"
+        tips:
+          - "The Result pattern eliminates forgotten error handling. Functions return Result<T, E> instead of throwing, forcing callers to handle both success and failure at the type level."
+      - level: expert
+        criteria: >
+          Designs error handling strategies for distributed systems.
+          Implements chaos engineering to test failure modes. Uses distributed
+          tracing for cross-service debugging. Defines SLOs and error budgets.
+          Mentors teams on building resilient systems.
+        metrics:
+          - "Error budget consumption is tracked and drives deployment velocity decisions"
+          - "Chaos engineering tests run monthly to verify failure handling"
+          - "MTTR (Mean Time to Recovery) under 15 minutes for P1 incidents"
+        resources:
+          - title: "Node.js Docs - Async Hooks"
+            url: "https://nodejs.org/api/async_hooks.html"
+            type: "article"
+          - title: "MDN - Performance API"
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Performance_API"
+            type: "article"
+        practice:
+          - "Implement distributed tracing across 2 services using trace IDs propagated through HTTP headers (60 minutes)"
+          - "Design and run a chaos engineering experiment: kill a dependency and verify the system degrades gracefully (45 minutes)"
+        projects:
+          - "Build an observability platform for a distributed system: distributed tracing, structured logging, error tracking, SLO dashboards, and automated alerting"
+        tips:
+          - "Define your error budget before it is spent. If your SLO is 99.9% uptime, you have 43 minutes of downtime per month. Make every minute count."
+    tags: ["errors", "debugging", "resilience", "observability"]
+
+relationships:
+  # ── Foundation chain ────────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/variables-types-basics"
+    target: "technology/javascript-typescript/functions"
+    type: "requires"
+    note: "Functions require understanding of variables, types, and basic syntax"
+
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/dom-manipulation"
+    type: "enables"
+    note: "DOM manipulation requires functions for event handlers and callbacks"
+
+  - source: "technology/javascript-typescript/variables-types-basics"
+    target: "technology/javascript-typescript/dom-manipulation"
+    type: "requires"
+    note: "DOM manipulation requires understanding JS types and basic syntax"
+
+  # ── Error handling ─────────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/error-handling"
+    type: "enables"
+    note: "Error handling builds on function scope and control flow"
+
+  - source: "technology/javascript-typescript/error-handling"
+    target: "technology/javascript-typescript/async-programming"
+    type: "enables"
+    note: "Async error handling (try/catch with await, .catch()) requires error handling fundamentals"
+
+  # ── Async programming ──────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/async-programming"
+    type: "requires"
+    note: "Async programming requires deep understanding of callbacks, closures, and higher-order functions"
+
+  # ── TypeScript ─────────────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/variables-types-basics"
+    target: "technology/javascript-typescript/typescript-fundamentals"
+    type: "requires"
+    note: "TypeScript builds directly on JS types — you must understand runtime types before adding static types"
+
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/typescript-fundamentals"
+    type: "enables"
+    note: "Typing functions (parameters, return types, generics) is a core TypeScript skill"
+
+  # ── Modules & build tools ──────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/modules-build-tools"
+    type: "enables"
+    note: "Module organization requires understanding of scope and encapsulation"
+
+  - source: "technology/javascript-typescript/typescript-fundamentals"
+    target: "technology/javascript-typescript/modules-build-tools"
+    type: "enables"
+    note: "Modern build tooling is TypeScript-first — tsconfig.json is a core part of project setup"
+
+  # ── Testing ────────────────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/testing"
+    type: "requires"
+    note: "You cannot write meaningful tests until you can write testable functions"
+
+  - source: "technology/javascript-typescript/modules-build-tools"
+    target: "technology/javascript-typescript/testing"
+    type: "enables"
+    note: "Test runners require module resolution and project tooling to be set up"
+
+  - source: "technology/javascript-typescript/async-programming"
+    target: "technology/javascript-typescript/testing"
+    type: "enables"
+    note: "Testing async code (mocking fetch, testing Promises) requires async fluency"
+
+  # ── React & frameworks ─────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/dom-manipulation"
+    target: "technology/javascript-typescript/react-frameworks"
+    type: "enables"
+    note: "Understanding what React abstracts over (the DOM) makes you a better React developer"
+
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/react-frameworks"
+    type: "requires"
+    note: "React components are functions — hooks are functions — everything is functions"
+
+  - source: "technology/javascript-typescript/modules-build-tools"
+    target: "technology/javascript-typescript/react-frameworks"
+    type: "requires"
+    note: "React projects require module bundling, JSX transformation, and build tooling"
+
+  - source: "technology/javascript-typescript/typescript-fundamentals"
+    target: "technology/javascript-typescript/react-frameworks"
+    type: "enables"
+    note: "TypeScript with React (typed props, hooks, events) is the industry standard"
+
+  # ── Node.js & server-side ──────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/async-programming"
+    target: "technology/javascript-typescript/nodejs-server"
+    type: "requires"
+    note: "Node.js is async by nature — event loop understanding is prerequisite"
+
+  - source: "technology/javascript-typescript/modules-build-tools"
+    target: "technology/javascript-typescript/nodejs-server"
+    type: "enables"
+    note: "Node.js uses the module system (CJS/ESM) and npm for package management"
+
+  - source: "technology/javascript-typescript/error-handling"
+    target: "technology/javascript-typescript/nodejs-server"
+    type: "enables"
+    note: "Server-side code requires robust error handling for reliability"
+
+  # ── Design patterns ────────────────────────────────────────────────────────
+  - source: "technology/javascript-typescript/functions"
+    target: "technology/javascript-typescript/design-patterns"
+    type: "requires"
+    note: "Many JS patterns (factory, strategy, observer) are built on first-class functions and closures"
+
+  - source: "technology/javascript-typescript/typescript-fundamentals"
+    target: "technology/javascript-typescript/design-patterns"
+    type: "enables"
+    note: "TypeScript interfaces and generics enable proper pattern implementation with type safety"
+
+  - source: "technology/javascript-typescript/testing"
+    target: "technology/javascript-typescript/design-patterns"
+    type: "enables"
+    note: "Testability is a primary driver for good design patterns — dependency injection, adapters, etc."
+
+  - source: "technology/javascript-typescript/nodejs-server"
+    target: "technology/javascript-typescript/design-patterns"
+    type: "component-of"
+    note: "Server-side architecture is where design patterns have the most impact at scale"

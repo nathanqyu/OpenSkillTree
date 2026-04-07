@@ -1,0 +1,1248 @@
+# OpenSkillTree — Seed Skill Tree: Personal Finance
+#
+# Domain:  Business / Finance / Personal Finance
+# Author:  OpenSkillTree Team (first pass)
+# Version: 0.1.0
+#
+# Benchmark levels reference: Financial literacy and wealth-building milestones
+# (CFPB Financial Well-Being Scale, CFP Board competency framework,
+# Dave Ramsey Baby Steps, Bogleheads Investment Philosophy,
+# r/personalfinance Prime Directive flowchart)
+#   beginner     = Financial foundations (0-2 years of intentional money management)
+#   intermediate = Financial stability (2-5 years), debt-free with funded emergency
+#   advanced     = Wealth builder (5-10 years), maxing retirement accounts, diversified
+#   expert       = Financial independence track (10+ years), multi-generational planning
+#
+# Progression arc (r/personalfinance Prime Directive consensus):
+#   Budget and cash flow first (know where money goes) ->
+#   Emergency fund and debt elimination (build safety net) ->
+#   Investing and retirement (grow wealth) ->
+#   Tax optimization, insurance, real estate (protect and accelerate) ->
+#   Estate planning (preserve and transfer).
+
+tree:
+  id: "business/personal-finance"
+  title: "Personal Finance"
+  description: >
+    A comprehensive skill tree for personal finance — the discipline of managing
+    your money to achieve security, freedom, and long-term wealth. Covers
+    budgeting, saving, debt management, credit optimization, investing,
+    retirement planning, tax strategy, insurance, real estate, and estate
+    planning. Follows the widely accepted progression from cash flow mastery
+    through wealth accumulation to wealth preservation and transfer.
+  domain: "Business"
+  visibility: "public"
+
+nodes:
+  # -- FOUNDATION (learned first, everything depends on this) ------------------
+  - id: "business/personal-finance/budgeting-cash-flow"
+    title: "Budgeting & Cash Flow"
+    description: >
+      The ability to track income and expenses, build a spending plan, and
+      maintain positive cash flow every month. This is the first personal
+      finance skill: you cannot save, invest, or eliminate debt without knowing
+      where your money goes. A budget is not a restriction — it is a plan that
+      gives every dollar a job.
+    benchmarks:
+      - level: beginner
+        criteria: "Tracks all income and expenses for at least one full month. Creates a basic monthly budget using any method (envelope, zero-based, 50/30/20)."
+        metrics:
+          - "Can account for 90%+ of monthly spending within $50 accuracy"
+          - "Has a written or digital budget that covers all expense categories"
+        resources:
+          - title: "Khan Academy - Budgeting and Saving (free course)"
+            url: "https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:budgeting-and-saving"
+            type: "course"
+          - title: "Investopedia - How to Make a Budget"
+            url: "https://www.investopedia.com/personal-finance/how-to-make-budget/"
+            type: "article"
+          - title: "The Money Guy Show - How to Create a Budget You Can Stick With"
+            url: "https://www.youtube.com/watch?v=3YOxwGIK8aE"
+            type: "video"
+          - title: "Dave Ramsey - How to Budget for Beginners"
+            url: "https://www.youtube.com/watch?v=lGc1LGlisc4"
+            type: "video"
+        practice:
+          - "Track every purchase for 7 days using a spreadsheet or app like Mint, YNAB, or a simple notebook (15 minutes/day)"
+          - "Categorize last month's bank statement into fixed expenses, variable expenses, and discretionary spending (45 minutes)"
+          - "Calculate your monthly net income after taxes and mandatory deductions (20 minutes)"
+        projects:
+          - "Build a complete zero-based budget for next month where income minus all expenses equals zero, with every dollar assigned a category"
+        tips:
+          - "The best budget is one you actually follow. Start simple — even a napkin budget beats no budget."
+          - "Track spending BEFORE you budget. You cannot plan what you do not measure."
+      - level: intermediate
+        criteria: >
+          Maintains a zero-based or envelope budget for 6+ months. Adjusts
+          budget monthly based on actual spending. Automates fixed expenses
+          and savings transfers.
+        metrics:
+          - "Monthly spending stays within 5% of budgeted amounts for 3+ consecutive months"
+          - "Savings rate of 15%+ of gross income consistently maintained"
+          - "All recurring bills automated via auto-pay or scheduled transfers"
+        resources:
+          - title: "YNAB - The Four Rules of Budgeting"
+            url: "https://www.ynab.com/the-four-rules"
+            type: "article"
+          - title: "NerdWallet - 50/30/20 Budget Rule Explained"
+            url: "https://www.nerdwallet.com/article/finance/nerd-wallet-budget-calculator"
+            type: "article"
+          - title: "The Money Guy Show - The Ideal Budget Breakdown by Age"
+            url: "https://www.youtube.com/watch?v=4Nh9vW1mkzg"
+            type: "video"
+        practice:
+          - "Review last 3 months of spending and identify your top 3 budget leaks — categories where you consistently overspend (30 minutes)"
+          - "Set up automatic transfers for savings, investments, and bill pay so the budget runs itself (1 hour)"
+          - "Calculate your savings rate as a percentage of gross income and set a target to increase it by 2% next quarter (15 minutes)"
+        projects:
+          - "Build a 12-month cash flow projection spreadsheet that accounts for irregular expenses (annual insurance, holidays, car maintenance) and shows monthly surplus or deficit"
+        tips:
+          - "Automate everything you can. Willpower is finite — systems are not. Pay yourself first by automating savings before spending."
+          - "Budget for irregular expenses monthly. Divide annual costs (insurance, gifts, car repairs) by 12 and set aside that amount every month."
+      - level: advanced
+        criteria: >
+          Optimizes cash flow across multiple accounts and goals. Uses sinking
+          funds for irregular expenses. Maintains a savings rate of 25%+ while
+          fully funding all financial goals. Can project cash flow 12+ months out.
+        metrics:
+          - "Savings rate of 25%+ of gross income sustained for 12+ months"
+          - "Sinking funds cover 100% of irregular annual expenses without budget disruption"
+          - "Net worth increases every quarter"
+        resources:
+          - title: "Bogleheads Wiki - Household Budgeting"
+            url: "https://www.bogleheads.org/wiki/Household_budgeting"
+            type: "article"
+          - title: "The Money Guy Show - Financial Order of Operations"
+            url: "https://www.youtube.com/watch?v=fVTgR2wEBN4"
+            type: "video"
+        practice:
+          - "Build sinking funds for 5+ irregular expenses (car maintenance, medical copays, holiday gifts, home repairs, vacations) and calculate monthly contribution for each (45 minutes)"
+          - "Optimize your bank account structure: checking for bills, checking for spending, high-yield savings for emergency fund, separate savings for each sinking fund (1 hour)"
+        projects:
+          - "Create a comprehensive net worth tracking spreadsheet updated monthly, including all assets (accounts, property, retirement) and liabilities (debts), with trend charts"
+        tips:
+          - "At this level, the budget is less about restriction and more about optimization. Focus on increasing the gap between income and expenses."
+      - level: expert
+        criteria: >
+          Manages household cash flow as a complete financial system. Coordinates
+          cash flow with tax planning, investment contributions, and debt
+          payoff. Can advise others on budgeting strategy. Achieves 40%+
+          savings rate or has reached financial independence targets.
+        metrics:
+          - "Savings rate of 40%+ or financial independence number on track for target retirement age"
+          - "Cash flow system handles variable income, multiple income streams, and complex tax situations"
+        resources:
+          - title: "Bogleheads Wiki - Financial Planning Start-Up Kit"
+            url: "https://www.bogleheads.org/wiki/Bogleheads%C2%AE_financial_start-up_kit"
+            type: "article"
+          - title: "Mr. Money Mustache - The Shockingly Simple Math Behind Early Retirement"
+            url: "https://www.mrmoneymustache.com/2012/01/13/the-shockingly-simple-math-behind-early-retirement/"
+            type: "article"
+        tips:
+          - "At expert level, your budget is a wealth-building engine. Every dollar is either growing your net worth or buying something you deliberately value. There is no 'miscellaneous' category."
+    tags: ["foundation", "cash-flow", "budgeting", "savings-rate"]
+
+  - id: "business/personal-finance/emergency-fund-savings"
+    title: "Emergency Fund & Savings"
+    description: >
+      Building a financial safety net that protects against unexpected expenses
+      and income disruption. The emergency fund is the bridge between budgeting
+      and all other financial goals — without it, any setback forces debt.
+      This is the second skill because it converts budget surplus into security.
+    benchmarks:
+      - level: beginner
+        criteria: "Saves $1,000 starter emergency fund in a separate savings account. Understands the difference between savings and emergency fund."
+        metrics:
+          - "Has $1,000 set aside in a dedicated savings account not used for daily spending"
+          - "Can articulate what qualifies as a true emergency (job loss, medical, car repair) vs. a want"
+        resources:
+          - title: "Dave Ramsey - Baby Step 1: Save $1,000 for Your Starter Emergency Fund"
+            url: "https://www.ramseysolutions.com/dave-ramsey-7-baby-steps"
+            type: "article"
+          - title: "Khan Academy - The Importance of Saving"
+            url: "https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:budgeting-and-saving"
+            type: "course"
+          - title: "NerdWallet - Emergency Fund: What It Is and How to Start One"
+            url: "https://www.nerdwallet.com/article/banking/emergency-fund-why-it-matters"
+            type: "article"
+          - title: "The Money Guy Show - How Much Should You Save in an Emergency Fund?"
+            url: "https://www.youtube.com/watch?v=fAIclOBbFJQ"
+            type: "video"
+        practice:
+          - "Open a separate high-yield savings account at an online bank for your emergency fund (30 minutes)"
+          - "Set up an automatic weekly transfer of $50-100 from checking to emergency savings (10 minutes)"
+          - "Write down 5 scenarios that qualify as emergencies and 5 that do not to build your financial judgment (15 minutes)"
+        projects:
+          - "Build a savings plan to reach $1,000 within 90 days — calculate the weekly amount needed and set up automation"
+        tips:
+          - "Keep your emergency fund in a separate bank from your checking account. Out of sight, out of mind reduces temptation."
+          - "A sale is not an emergency. A vacation is not an emergency. Define emergencies before they happen."
+      - level: intermediate
+        criteria: >
+          Builds a full emergency fund of 3-6 months of essential expenses in a
+          high-yield savings account. Replenishes the fund within 3 months after
+          any withdrawal.
+        metrics:
+          - "Emergency fund covers 3-6 months of essential living expenses"
+          - "Fund is held in a high-yield savings account earning competitive interest (4%+ APY in current rate environment)"
+          - "Fund replenished to full within 90 days after any emergency withdrawal"
+        resources:
+          - title: "Investopedia - How Much Emergency Fund Should You Have?"
+            url: "https://www.investopedia.com/terms/e/emergency_fund.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Emergency Fund"
+            url: "https://www.bogleheads.org/wiki/Emergency_fund"
+            type: "article"
+          - title: "NerdWallet - Best High-Yield Online Savings Accounts"
+            url: "https://www.nerdwallet.com/best/banking/high-yield-online-savings-accounts"
+            type: "article"
+        practice:
+          - "Calculate your true monthly essential expenses (housing, food, utilities, insurance, minimum debt payments, transportation) and multiply by 6 to set your emergency fund target (30 minutes)"
+          - "Compare 3 high-yield savings accounts and move your emergency fund to the best option (45 minutes)"
+        projects:
+          - "Create a tiered emergency plan: document what you would cut first (subscriptions, dining out), second (discretionary spending), and last (housing downgrade) if you lost income for 1, 3, or 6 months"
+        tips:
+          - "3 months if you have a dual-income household and stable employment. 6 months if single income, self-employed, or in a volatile industry."
+      - level: advanced
+        criteria: >
+          Maintains 6-12 months of expenses. Uses a tiered savings strategy
+          (high-yield savings, money market, short-term bonds) for optimal
+          returns on reserves. Has additional sinking funds for major planned expenses.
+        metrics:
+          - "Emergency fund covers 6-12 months of total household expenses"
+          - "Savings are optimized across account types for best risk-adjusted yield"
+          - "5+ sinking funds for planned irregular expenses (car replacement, home repair, medical deductible)"
+        resources:
+          - title: "Bogleheads Wiki - Short-Term Savings"
+            url: "https://www.bogleheads.org/wiki/Short-term_savings"
+            type: "article"
+          - title: "Investopedia - Money Market Account vs. Savings Account"
+            url: "https://www.investopedia.com/articles/personal-finance/100715/money-market-account-vs-savings-account.asp"
+            type: "article"
+        practice:
+          - "Design a tiered liquidity structure: 1 month in checking, 2 months in high-yield savings, remaining in money market or short-term Treasury bills (1 hour)"
+          - "Set up sinking funds for your next 5 major planned expenses with monthly auto-contributions (45 minutes)"
+        projects:
+          - "Build a complete savings architecture document: emergency tiers, sinking fund amounts and timelines, and target account types for each, with projected interest earned"
+        tips:
+          - "Once your emergency fund exceeds 6 months, consider a bond ladder or Treasury bills for the excess — slightly higher yield with minimal risk."
+      - level: expert
+        criteria: >
+          Integrates emergency reserves with overall portfolio strategy. Uses
+          lines of credit, taxable brokerage, and bond allocations as backup
+          liquidity layers. Maintains financial resilience through multiple
+          income streams and asset diversification.
+        metrics:
+          - "Multiple liquidity layers totaling 12+ months of expenses across cash, bonds, and accessible credit"
+          - "Can sustain household expenses for 2+ years through combination of reserves and adjustable portfolio withdrawals"
+        resources:
+          - title: "Bogleheads Wiki - Asset Allocation"
+            url: "https://www.bogleheads.org/wiki/Asset_allocation"
+            type: "article"
+        tips:
+          - "At the expert level, your emergency fund is part of your overall asset allocation. Cash and short-term bonds in your portfolio serve double duty as both reserves and fixed-income allocation."
+    tags: ["savings", "emergency-fund", "safety-net", "liquidity"]
+
+  - id: "business/personal-finance/debt-management"
+    title: "Debt Management"
+    description: >
+      Understanding, prioritizing, and systematically eliminating debt. Not all
+      debt is equal — high-interest consumer debt destroys wealth while strategic
+      low-interest debt (mortgage, student loans) can be managed alongside
+      investing. Debt management is learned alongside emergency fund building
+      because the two work together in the financial foundation.
+    benchmarks:
+      - level: beginner
+        criteria: "Lists all debts with balances, interest rates, and minimum payments. Chooses either avalanche (highest rate first) or snowball (smallest balance first) payoff method."
+        metrics:
+          - "Complete debt inventory created with all balances, rates, and minimum payments documented"
+          - "Making all minimum payments on time with zero missed payments"
+          - "Chosen and started executing a debt payoff strategy (avalanche or snowball)"
+        resources:
+          - title: "Investopedia - Debt Avalanche vs. Debt Snowball"
+            url: "https://www.investopedia.com/articles/personal-finance/080716/debt-avalanche-vs-debt-snowball-which-best-you.asp"
+            type: "article"
+          - title: "Dave Ramsey - The Debt Snowball Method Explained"
+            url: "https://www.youtube.com/watch?v=DnAkDRjkSqs"
+            type: "video"
+          - title: "Khan Academy - Interest and Debt"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/interest-tutorial"
+            type: "course"
+          - title: "NerdWallet - How to Pay Off Debt"
+            url: "https://www.nerdwallet.com/article/finance/pay-off-debt"
+            type: "article"
+        practice:
+          - "List every debt you owe: creditor, balance, interest rate, minimum payment, and due date (30 minutes)"
+          - "Calculate how much extra you can put toward debt each month from your budget surplus (15 minutes)"
+          - "Use an online debt payoff calculator to project your debt-free date under both avalanche and snowball methods (20 minutes)"
+        projects:
+          - "Create a debt payoff plan with target dates for each debt, showing monthly payment amounts and total interest saved by paying extra"
+        tips:
+          - "Mathematically, avalanche (highest interest first) saves the most money. Psychologically, snowball (smallest balance first) keeps you motivated. Pick whichever you will actually stick with."
+          - "Never miss a minimum payment. Late payments damage your credit score and trigger penalty rates."
+      - level: intermediate
+        criteria: >
+          Eliminates all high-interest debt (credit cards, personal loans above 8%).
+          Uses balance transfers, refinancing, or consolidation strategically.
+          Understands good debt vs. bad debt distinction.
+        metrics:
+          - "Zero credit card balances carried month-to-month"
+          - "All remaining debt is below 6% interest rate"
+          - "Debt-to-income ratio below 20% (excluding mortgage)"
+        resources:
+          - title: "Investopedia - Good Debt vs. Bad Debt"
+            url: "https://www.investopedia.com/articles/pf/12/good-debt-bad-debt.asp"
+            type: "article"
+          - title: "NerdWallet - Best Balance Transfer Credit Cards"
+            url: "https://www.nerdwallet.com/best/credit-cards/balance-transfer"
+            type: "article"
+          - title: "The Money Guy Show - When to Pay Off Debt vs. Invest"
+            url: "https://www.youtube.com/watch?v=hiMAOuPJuHo"
+            type: "video"
+        practice:
+          - "Research balance transfer offers and calculate whether a 3% transfer fee is worth it for your highest-rate card balance (30 minutes)"
+          - "Calculate your debt-to-income ratio and compare it to lender standards (15 minutes)"
+          - "Model the opportunity cost: compare paying extra on a 5% loan vs. investing that money at an expected 8% return (30 minutes)"
+        projects:
+          - "Create a decision matrix for each remaining debt: pay off aggressively, refinance, consolidate, or maintain minimum payments — with financial justification for each choice"
+        tips:
+          - "Once you are free of high-interest debt, the math changes. A 3% mortgage while investing at 8-10% expected returns is a reasonable financial decision."
+      - level: advanced
+        criteria: >
+          Debt-free except for mortgage or strategic low-rate debt. Uses leverage
+          intelligently (mortgage rate arbitrage, 0% financing). Understands
+          how debt interacts with tax deductions and investment returns.
+        metrics:
+          - "Zero consumer debt — only mortgage and possibly low-rate student loans remain"
+          - "All remaining debt interest rates below expected investment returns"
+          - "Mortgage balance declining on schedule or ahead of schedule"
+        resources:
+          - title: "Bogleheads Wiki - Paying Off Loans vs. Investing"
+            url: "https://www.bogleheads.org/wiki/Paying_off_loans_versus_investing"
+            type: "article"
+          - title: "Investopedia - Mortgage Interest Deduction"
+            url: "https://www.investopedia.com/terms/home-mortgage-interest-deduction.asp"
+            type: "article"
+        practice:
+          - "Calculate the after-tax cost of your mortgage (rate minus tax deduction value) and compare to expected investment returns (30 minutes)"
+          - "Model payoff scenarios: pay off mortgage 10 years early vs. invest the extra payments in index funds — compare net worth at retirement (1 hour)"
+        projects:
+          - "Build a comprehensive debt optimization spreadsheet that models all remaining debts against investment alternatives, accounting for tax benefits, and shows the optimal allocation of extra cash"
+        tips:
+          - "Do not rush to pay off a 3% mortgage when your investments earn 8-10%. The math favors investing, but being debt-free has psychological value. Know yourself."
+      - level: expert
+        criteria: >
+          Completely debt-free including mortgage, or uses debt only as a
+          deliberate financial tool with full understanding of risks. Can advise
+          others on debt strategy. Understands how leverage works in business
+          and real estate contexts.
+        metrics:
+          - "Net worth is entirely positive with no consumer debt and mortgage eliminated or on accelerated payoff"
+          - "Any remaining debt is strategic (investment property, business) with returns exceeding cost"
+        resources:
+          - title: "Bogleheads Wiki - Overview of Paying Off Debt"
+            url: "https://www.bogleheads.org/wiki/Paying_off_loans_versus_investing"
+            type: "article"
+        tips:
+          - "At expert level, you understand that debt is a tool, not inherently good or bad. The question is always: does the return on the borrowed capital exceed the cost of the debt on a risk-adjusted basis?"
+    tags: ["debt", "payoff", "interest-rates", "leverage"]
+
+  - id: "business/personal-finance/credit-score-credit-cards"
+    title: "Credit Score & Credit Cards"
+    description: >
+      Understanding, building, and optimizing your credit score — and using
+      credit cards as financial tools rather than debt traps. Your credit score
+      affects interest rates on mortgages, car loans, insurance premiums, and
+      even job applications. Mastering credit is a force multiplier for every
+      other financial goal.
+    benchmarks:
+      - level: beginner
+        criteria: "Knows their credit score and understands the 5 factors that determine it. Pays all credit card bills in full each month."
+        metrics:
+          - "Can name the 5 FICO score factors (payment history, utilization, length of history, credit mix, new inquiries)"
+          - "Credit score above 670 (or actively improving from a lower baseline)"
+          - "Pays statement balance in full every month — zero interest paid"
+        resources:
+          - title: "Investopedia - What Is a Credit Score?"
+            url: "https://www.investopedia.com/terms/c/credit_score.asp"
+            type: "article"
+          - title: "Khan Academy - Credit Cards and Loans"
+            url: "https://www.khanacademy.org/college-careers-more/financial-literacy/xa6995ea67a8e9fdd:financing-higher-education"
+            type: "course"
+          - title: "NerdWallet - How to Build Credit"
+            url: "https://www.nerdwallet.com/article/finance/how-to-build-credit"
+            type: "article"
+          - title: "The Money Guy Show - Credit Score Tips That Actually Work"
+            url: "https://www.youtube.com/watch?v=dBxEjT8V3TI"
+            type: "video"
+        practice:
+          - "Check your credit score for free using Credit Karma, your bank, or annualcreditreport.com and write down the 5 factor scores (15 minutes)"
+          - "Set up auto-pay for the full statement balance on every credit card (20 minutes)"
+          - "Review your credit report for errors and dispute any inaccuracies (45 minutes)"
+        projects:
+          - "Pull your full credit report from all 3 bureaus at annualcreditreport.com, document your score factors, and create a 6-month improvement plan targeting the weakest factors"
+        tips:
+          - "NEVER carry a credit card balance. Paying interest to 'build credit' is a myth. Pay in full every month."
+          - "Set up auto-pay for the FULL statement balance, not the minimum payment."
+      - level: intermediate
+        criteria: >
+          Credit score above 740. Uses credit cards strategically for rewards
+          (cash back, travel points) while maintaining zero balances. Keeps
+          utilization below 10%. Has 3+ years of credit history.
+        metrics:
+          - "Credit score 740+ (qualifies for best interest rates on mortgages and loans)"
+          - "Credit utilization consistently below 10% across all cards"
+          - "Earns $500+ per year in credit card rewards without paying interest"
+        resources:
+          - title: "NerdWallet - Best Cash-Back Credit Cards"
+            url: "https://www.nerdwallet.com/best/credit-cards/cash-back"
+            type: "article"
+          - title: "Investopedia - Credit Utilization Ratio"
+            url: "https://www.investopedia.com/terms/c/credit-utilization-rate.asp"
+            type: "article"
+          - title: "The Money Guy Show - How to Use Credit Cards Like a Millionaire"
+            url: "https://www.youtube.com/watch?v=CjHPxePMjHs"
+            type: "video"
+        practice:
+          - "Calculate your current credit utilization ratio across all cards and request credit limit increases if utilization exceeds 10% (30 minutes)"
+          - "Audit your credit card rewards: are you using the right card for each spending category (groceries, gas, dining, travel)? (30 minutes)"
+          - "Set up a simple system to track which card to use for each purchase category to maximize rewards (20 minutes)"
+        projects:
+          - "Design a credit card rewards strategy: identify your top 3-5 spending categories, select the optimal card for each, and project annual rewards earned"
+        tips:
+          - "Request credit limit increases every 6-12 months. Higher limits reduce your utilization ratio, which boosts your score — just do not spend more."
+      - level: advanced
+        criteria: >
+          Credit score above 780. Optimizes credit card portfolio for maximum
+          rewards value. Understands hard vs. soft inquiries, authorized users,
+          and credit freeze mechanics. Uses credit strategically for major purchases.
+        metrics:
+          - "Credit score 780+ consistently"
+          - "Credit card rewards value exceeds $1,000+ per year"
+          - "Credit reports frozen at all 3 bureaus for identity protection (unfrozen only when needed)"
+        resources:
+          - title: "Investopedia - How to Freeze Your Credit"
+            url: "https://www.investopedia.com/terms/c/credit-freeze.asp"
+            type: "article"
+          - title: "NerdWallet - Credit Card Rewards Optimization Guide"
+            url: "https://www.nerdwallet.com/article/credit-cards/tips-maximize-credit-card-rewards"
+            type: "article"
+        practice:
+          - "Freeze your credit at all 3 bureaus (Experian, Equifax, TransUnion) to prevent identity theft (30 minutes)"
+          - "Review your credit card portfolio — close cards with annual fees you do not recoup in value and product-change others to no-fee versions (45 minutes)"
+        projects:
+          - "Create a credit optimization playbook: document your credit card portfolio, reward categories, annual fees, and a decision framework for when to open, close, or product-change cards"
+        tips:
+          - "Freeze your credit at all 3 bureaus. It is free, prevents identity theft, and takes 5 minutes to temporarily unfreeze when you need it."
+      - level: expert
+        criteria: >
+          Credit score 800+. Understands business credit separation, advanced
+          rewards optimization, and how credit interacts with mortgage
+          applications, insurance rates, and business financing. Can advise
+          others on credit strategy.
+        metrics:
+          - "Credit score 800+ sustained over multiple years"
+          - "Leverages excellent credit for best rates on mortgage, insurance, and any financing"
+        resources:
+          - title: "Investopedia - FICO Score"
+            url: "https://www.investopedia.com/terms/f/ficoscore.asp"
+            type: "article"
+        tips:
+          - "At 780+, the marginal benefit of a higher score is minimal for most purposes. Focus your energy on investing and wealth building rather than optimizing a score that is already excellent."
+    tags: ["credit", "credit-score", "rewards", "identity-protection"]
+
+  - id: "business/personal-finance/investing-fundamentals"
+    title: "Investing Fundamentals"
+    description: >
+      Understanding how to grow wealth through investing in stocks, bonds, and
+      index funds. This is where wealth building begins — saving alone cannot
+      outpace inflation. The core principle is simple: buy diversified, low-cost
+      index funds consistently over decades. Investing requires a funded emergency
+      fund and controlled debt as prerequisites.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands stocks, bonds, and index funds. Opens a brokerage account and makes a first investment in a broad market index fund."
+        metrics:
+          - "Can explain the difference between stocks, bonds, mutual funds, ETFs, and index funds"
+          - "Has opened a brokerage or retirement account and invested at least $100"
+          - "Understands that index funds beat most actively managed funds over time"
+        resources:
+          - title: "Khan Academy - Stocks and Bonds"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/stock-and-bonds"
+            type: "course"
+          - title: "Investopedia - Investing for Beginners"
+            url: "https://www.investopedia.com/articles/basics/06/invest1000.asp"
+            type: "article"
+          - title: "The Money Guy Show - How to Start Investing for Beginners"
+            url: "https://www.youtube.com/watch?v=hMrngfOqQ4s"
+            type: "video"
+          - title: "Bogleheads Wiki - Getting Started"
+            url: "https://www.bogleheads.org/wiki/Getting_started"
+            type: "article"
+          - title: "Dave Ramsey - Investing Basics Explained"
+            url: "https://www.youtube.com/watch?v=WDlhNmKlzF8"
+            type: "video"
+        practice:
+          - "Open a brokerage account at Vanguard, Fidelity, or Schwab and explore the interface without buying anything yet (30 minutes)"
+          - "Research 3 total stock market index funds (e.g., VTI, VTSAX, FSKAX) and compare expense ratios (20 minutes)"
+          - "Calculate how $500/month invested at 8% average return grows over 10, 20, and 30 years using a compound interest calculator (15 minutes)"
+        projects:
+          - "Invest your first $500 in a total stock market index fund and document why you chose it, what it holds, and your plan to keep contributing monthly"
+        tips:
+          - "Time in the market beats timing the market. Start now with whatever you have — even $50/month — and increase contributions as income grows."
+          - "If someone recommends individual stock picks, crypto tips, or 'guaranteed returns,' run. Boring index funds outperform most professionals."
+      - level: intermediate
+        criteria: >
+          Invests consistently (monthly) in a diversified portfolio of low-cost
+          index funds. Understands asset allocation, rebalancing, and the
+          difference between tax-advantaged and taxable accounts. Maintains
+          a written investment policy statement.
+        metrics:
+          - "Invests a fixed amount monthly via automatic contributions (dollar-cost averaging)"
+          - "Portfolio expense ratio below 0.20% weighted average"
+          - "Has a written asset allocation (e.g., 80/20 stocks/bonds) and rebalances annually"
+          - "Uses tax-advantaged accounts (401k, IRA) before taxable brokerage"
+        resources:
+          - title: "Bogleheads Wiki - Three-Fund Portfolio"
+            url: "https://www.bogleheads.org/wiki/Three-fund_portfolio"
+            type: "article"
+          - title: "Investopedia - Asset Allocation"
+            url: "https://www.investopedia.com/terms/a/assetallocation.asp"
+            type: "article"
+          - title: "The Money Guy Show - The Ultimate Guide to Asset Allocation"
+            url: "https://www.youtube.com/watch?v=UFxIIDu2gRg"
+            type: "video"
+          - title: "Bogleheads Wiki - Investment Policy Statement"
+            url: "https://www.bogleheads.org/wiki/Investment_policy_statement"
+            type: "article"
+        practice:
+          - "Write a one-page investment policy statement: target allocation, fund choices, contribution schedule, rebalancing rules, and what you will NOT do in a downturn (1 hour)"
+          - "Set up automatic monthly investments in your brokerage and/or IRA (20 minutes)"
+          - "Calculate your current asset allocation across all accounts and compare to your target (30 minutes)"
+        projects:
+          - "Build a three-fund portfolio (US stocks, international stocks, bonds) across your accounts, document your allocation rationale, and set calendar reminders for annual rebalancing"
+        tips:
+          - "The three-fund portfolio (US total market, international total market, total bond market) is all most people ever need. Simplicity wins."
+          - "Never sell during a market crash. Write down your plan NOW for what you will do (nothing) when the market drops 30%. Your future panicked self will thank you."
+      - level: advanced
+        criteria: >
+          Implements tax-efficient investing across account types (tax-loss
+          harvesting, asset location). Understands factor investing, international
+          diversification, and bond duration. Portfolio exceeds $250,000.
+        metrics:
+          - "Practices tax-loss harvesting in taxable accounts to offset gains"
+          - "Asset location optimized: bonds in tax-advantaged, stocks in taxable"
+          - "Total invested portfolio exceeds $250,000"
+          - "Can explain sequence-of-returns risk and how it affects withdrawal strategy"
+        resources:
+          - title: "Bogleheads Wiki - Tax-Efficient Fund Placement"
+            url: "https://www.bogleheads.org/wiki/Tax-efficient_fund_placement"
+            type: "article"
+          - title: "Investopedia - Tax-Loss Harvesting"
+            url: "https://www.investopedia.com/terms/t/taxgainlossharvesting.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Tax Loss Harvesting"
+            url: "https://www.bogleheads.org/wiki/Tax_loss_harvesting"
+            type: "article"
+        practice:
+          - "Map all your accounts and funds to determine if your asset location is tax-efficient: bonds/REITs in 401k/IRA, stocks in taxable (1 hour)"
+          - "Review taxable brokerage positions for tax-loss harvesting opportunities — any positions down 10%+ that can be sold and replaced with a similar (not substantially identical) fund (45 minutes)"
+        projects:
+          - "Create a comprehensive tax-efficient investment plan: document which funds go in which accounts, when to harvest losses, and project annual tax savings"
+        tips:
+          - "Tax-loss harvesting is free money. When a taxable holding drops, sell it, buy a similar fund (not identical — beware wash sale rules), and bank the tax deduction."
+      - level: expert
+        criteria: >
+          Manages a $1M+ portfolio with sophisticated asset allocation.
+          Understands alternative investments, estate-planning-aware investing,
+          and withdrawal sequencing for retirement. Can mentor others on
+          investment strategy. Stays the course through multiple market cycles.
+        metrics:
+          - "Portfolio exceeds $1M with clear withdrawal strategy documented"
+          - "Has maintained investment discipline through at least 2 major market downturns (20%+ declines)"
+          - "Withdrawal strategy accounts for tax bracket management, Roth conversions, and Social Security timing"
+        resources:
+          - title: "Bogleheads Wiki - Withdrawal Methods"
+            url: "https://www.bogleheads.org/wiki/Withdrawal_methods"
+            type: "article"
+          - title: "Investopedia - Safe Withdrawal Rate"
+            url: "https://www.investopedia.com/terms/s/safe-withdrawal-rate-swr-method.asp"
+            type: "article"
+        tips:
+          - "The hardest part of expert-level investing is doing nothing. When markets crash 40%, your only job is to rebalance and keep contributing. Decades of discipline beat any strategy."
+    tags: ["investing", "index-funds", "asset-allocation", "portfolio"]
+
+  - id: "business/personal-finance/retirement-planning"
+    title: "Retirement Planning (401k/IRA)"
+    description: >
+      Maximizing tax-advantaged retirement accounts to build long-term wealth.
+      Retirement planning combines investing knowledge with tax strategy —
+      understanding 401k, Roth IRA, Traditional IRA, and HSA accounts to
+      minimize lifetime taxes and maximize compound growth. The earlier you
+      start, the more powerful the compounding.
+    benchmarks:
+      - level: beginner
+        criteria: "Contributes enough to 401k to get the full employer match. Opens a Roth or Traditional IRA. Understands the difference between Roth and Traditional."
+        metrics:
+          - "Contributing at least enough to 401k to capture 100% of employer match"
+          - "Has an IRA (Roth or Traditional) open and funded"
+          - "Can explain pre-tax vs. post-tax (Roth) and when each is advantageous"
+        resources:
+          - title: "Investopedia - 401(k) Plan: What It Is and How It Works"
+            url: "https://www.investopedia.com/terms/1/401kplan.asp"
+            type: "article"
+          - title: "Investopedia - Roth IRA vs. Traditional IRA"
+            url: "https://www.investopedia.com/retirement/roth-vs-traditional-ira-which-is-right-for-you/"
+            type: "article"
+          - title: "The Money Guy Show - Roth vs. Traditional: Which Should You Choose?"
+            url: "https://www.youtube.com/watch?v=UQ7LxGCQVk8"
+            type: "video"
+          - title: "IRS - Retirement Topics: 401(k) and Profit-Sharing Plan Contribution Limits"
+            url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits"
+            type: "article"
+          - title: "Khan Academy - Roth IRA vs. Traditional IRA"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/investment-vehicles-tutorial/ira-401ks/v/traditional-iras"
+            type: "video"
+        practice:
+          - "Log into your employer benefits portal and verify your 401k contribution rate captures the full match (15 minutes)"
+          - "Open a Roth IRA at Vanguard, Fidelity, or Schwab if you do not have one (30 minutes)"
+          - "Calculate whether Roth or Traditional is better for your current tax bracket using an online Roth vs. Traditional calculator (20 minutes)"
+        projects:
+          - "Create a retirement account inventory: list every retirement account you have, the contribution limits, your current contribution amounts, and the employer match details"
+        tips:
+          - "The employer 401k match is free money — a 100% instant return. ALWAYS contribute enough to get the full match before doing anything else with your money."
+          - "In your 20s and low tax bracket? Roth is almost always the right choice. You pay taxes now at a low rate and never again."
+      - level: intermediate
+        criteria: >
+          Maxes out Roth IRA ($7,000/year). Contributing 15%+ of income to
+          retirement accounts. Understands contribution limits, income
+          phase-outs, and backdoor Roth IRA. Uses the HSA as a stealth
+          retirement account.
+        metrics:
+          - "Roth IRA maxed out annually ($7,000 in 2024)"
+          - "Total retirement savings rate of 15%+ of gross income"
+          - "HSA maxed out if eligible ($4,150 individual / $8,300 family in 2024) and invested"
+          - "Understands and can execute backdoor Roth IRA if income exceeds direct contribution limits"
+        resources:
+          - title: "Investopedia - Backdoor Roth IRA"
+            url: "https://www.investopedia.com/terms/b/backdoor-roth-ira.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Backdoor Roth"
+            url: "https://www.bogleheads.org/wiki/Backdoor_Roth"
+            type: "article"
+          - title: "The Money Guy Show - HSA: The Ultimate Retirement Account"
+            url: "https://www.youtube.com/watch?v=5MhStfJPpyc"
+            type: "video"
+          - title: "IRS - IRA Contribution Limits"
+            url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-ira-contribution-limits"
+            type: "article"
+        practice:
+          - "Set up automatic monthly contributions to max out your Roth IRA by December ($583/month for $7,000 annual limit) (15 minutes)"
+          - "If your income exceeds Roth IRA limits, research and execute a backdoor Roth IRA contribution (1 hour)"
+          - "Switch your HSA from cash savings to invested in index funds — most HSA providers allow this once you exceed a minimum cash balance (30 minutes)"
+        projects:
+          - "Build a retirement contribution optimization plan: calculate the order to fund accounts (401k match > Roth IRA > HSA > 401k max > taxable brokerage) and set up automation for each"
+        tips:
+          - "The HSA is the only triple-tax-advantaged account: tax-deductible going in, grows tax-free, and withdrawals are tax-free for medical expenses. After 65, it works like a Traditional IRA for any purpose."
+      - level: advanced
+        criteria: >
+          Maxes out all available retirement accounts (401k $23,000, IRA $7,000,
+          HSA). Runs retirement projections and understands the 4% rule, Social
+          Security optimization, and Roth conversion ladders. On track for
+          target retirement date.
+        metrics:
+          - "All tax-advantaged accounts maxed annually ($23,000 401k + $7,000 IRA + HSA)"
+          - "Retirement projections run annually with Monte Carlo simulation"
+          - "On track for target retirement number based on 25x annual expenses (4% rule)"
+        resources:
+          - title: "Investopedia - The 4% Rule for Retirement"
+            url: "https://www.investopedia.com/terms/f/four-percent-rule.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Safe Withdrawal Rates"
+            url: "https://www.bogleheads.org/wiki/Safe_withdrawal_rates"
+            type: "article"
+          - title: "Bogleheads Wiki - Roth IRA Conversion"
+            url: "https://www.bogleheads.org/wiki/Roth_IRA_conversion"
+            type: "article"
+          - title: "IRS - 401(k) Contribution Limits"
+            url: "https://www.irs.gov/retirement-plans/plan-participant-employee/retirement-topics-401k-and-profit-sharing-plan-contribution-limits"
+            type: "article"
+        practice:
+          - "Run a retirement projection using a tool like cFIREsim or FireCalc — input your current savings, contribution rate, expected retirement age, and see success rate (1 hour)"
+          - "Calculate your retirement number: annual expenses multiplied by 25 for the 4% rule, and determine how many years until you reach it (30 minutes)"
+          - "Model a Roth conversion ladder: calculate optimal amounts to convert annually in lower-tax years to minimize lifetime taxes (1 hour)"
+        projects:
+          - "Build a complete retirement plan document: target retirement age, annual expense estimate, retirement number, current trajectory, Social Security estimate, and gap analysis with action steps"
+        tips:
+          - "The 4% rule says you need 25x your annual expenses to retire. Spending $60,000/year means you need $1.5M invested. Simple math, hard execution."
+      - level: expert
+        criteria: >
+          Financial independence achieved or imminent. Executes Roth conversion
+          strategies, optimizes Social Security claiming age, and coordinates
+          retirement account withdrawals to minimize lifetime taxes. Plans for
+          30+ year retirement horizon.
+        metrics:
+          - "Net worth exceeds 25x annual expenses (financial independence number)"
+          - "Roth conversion strategy executed during low-income years"
+          - "Social Security claiming strategy optimized based on life expectancy and spousal benefits"
+          - "Withdrawal sequence planned: taxable first, then Traditional, then Roth (tax bracket management)"
+        resources:
+          - title: "Bogleheads Wiki - Retirement Planning"
+            url: "https://www.bogleheads.org/wiki/Retirement_planning"
+            type: "article"
+          - title: "Investopedia - Social Security Optimization Strategies"
+            url: "https://www.investopedia.com/terms/s/social-security-benefits.asp"
+            type: "article"
+        tips:
+          - "The years between early retirement and Social Security/Medicare are the golden window for Roth conversions. Convert Traditional IRA to Roth while in a low tax bracket to reduce future Required Minimum Distributions."
+    tags: ["retirement", "401k", "ira", "roth", "hsa", "tax-advantaged"]
+
+  - id: "business/personal-finance/tax-planning"
+    title: "Tax Planning"
+    description: >
+      Minimizing your lifetime tax burden through legal strategies — choosing
+      the right accounts, timing income and deductions, and understanding how
+      the tax code applies to your situation. Tax planning is not about filing
+      returns; it is about making decisions throughout the year that reduce what
+      you owe. A dollar saved in taxes is a dollar invested.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands marginal vs. effective tax rates, standard vs. itemized deductions, and W-2 vs. 1099 income. Files own taxes or reviews return prepared by others."
+        metrics:
+          - "Can explain the difference between marginal and effective tax rate"
+          - "Knows their federal and state marginal tax bracket"
+          - "Reviews own tax return (whether self-filed or preparer-filed) and understands every line"
+        resources:
+          - title: "Khan Academy - Taxes"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/taxes-topic"
+            type: "course"
+          - title: "Investopedia - Understanding the U.S. Tax System"
+            url: "https://www.investopedia.com/terms/t/taxbracket.asp"
+            type: "article"
+          - title: "IRS - Understanding Taxes"
+            url: "https://www.irs.gov/individuals"
+            type: "article"
+          - title: "The Money Guy Show - How Tax Brackets Actually Work"
+            url: "https://www.youtube.com/watch?v=TNMkfnHPaCs"
+            type: "video"
+        practice:
+          - "Look up the current federal tax brackets and calculate your marginal and effective tax rate based on last year's income (20 minutes)"
+          - "Review your most recent tax return line by line — identify every deduction and credit you claimed (45 minutes)"
+          - "Determine whether you should itemize or take the standard deduction by listing all potential itemized deductions (30 minutes)"
+        projects:
+          - "Create a personal tax summary document: your income sources, marginal bracket, effective rate, deductions claimed, and credits received — with notes on what you could optimize"
+        tips:
+          - "You only pay the higher rate on income WITHIN that bracket, not on all your income. Moving into the 24% bracket does not mean all your income is taxed at 24%."
+          - "The standard deduction ($14,600 single / $29,200 married in 2024) means most people should NOT itemize. Know your number."
+      - level: intermediate
+        criteria: >
+          Actively reduces taxable income through retirement contributions, HSA,
+          and available deductions. Understands capital gains tax rates (short-term
+          vs. long-term). Makes tax-aware investment decisions. Adjusts W-4
+          withholding to avoid large refunds or balances.
+        metrics:
+          - "Maximizes pre-tax deductions (401k, HSA, FSA) to reduce taxable income"
+          - "Holds investments for 12+ months to qualify for long-term capital gains rates"
+          - "Tax refund or balance due is less than $500 (withholding is accurate)"
+          - "Understands and uses tax-advantaged accounts in optimal order"
+        resources:
+          - title: "Investopedia - Capital Gains Tax"
+            url: "https://www.investopedia.com/terms/c/capital_gains_tax.asp"
+            type: "article"
+          - title: "IRS - W-4 Form and Instructions"
+            url: "https://www.irs.gov/forms-pubs/about-form-w-4"
+            type: "article"
+          - title: "NerdWallet - Tax-Deductible Expenses You Might Be Overlooking"
+            url: "https://www.nerdwallet.com/article/taxes/tax-deductions-tax-breaks"
+            type: "article"
+          - title: "Bogleheads Wiki - Tax-Efficient Fund Placement"
+            url: "https://www.bogleheads.org/wiki/Tax-efficient_fund_placement"
+            type: "article"
+        practice:
+          - "Use the IRS W-4 calculator to adjust your withholding so you neither owe nor get a large refund (30 minutes)"
+          - "Review your investment account for any positions held less than 12 months — delay selling until they qualify for long-term capital gains (20 minutes)"
+          - "Calculate the tax savings from maxing your 401k: contribution amount multiplied by your marginal rate (15 minutes)"
+        projects:
+          - "Build a tax optimization checklist for the year: list every tax-reducing action available to you, the deadline for each, and the estimated tax savings"
+        tips:
+          - "A large tax refund is NOT a bonus — it means you gave the government an interest-free loan. Adjust your W-4 to get that money in each paycheck instead."
+      - level: advanced
+        criteria: >
+          Implements advanced tax strategies: tax-loss harvesting, Roth
+          conversions, charitable giving strategies (donor-advised funds,
+          qualified charitable distributions), and income timing. Plans taxes
+          across multiple years, not just the current year.
+        metrics:
+          - "Tax-loss harvesting saves $500+ annually in taxes"
+          - "Multi-year tax projection maintained showing expected brackets through retirement"
+          - "Uses donor-advised fund or bunching strategy for charitable deductions"
+          - "Effective tax rate is significantly below marginal rate through strategic planning"
+        resources:
+          - title: "Investopedia - Donor-Advised Fund"
+            url: "https://www.investopedia.com/terms/d/donoradvisedfund.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Tax Loss Harvesting"
+            url: "https://www.bogleheads.org/wiki/Tax_loss_harvesting"
+            type: "article"
+          - title: "IRS - Charitable Contribution Deductions"
+            url: "https://www.irs.gov/charities-non-profits/charitable-organizations/charitable-contribution-deductions"
+            type: "article"
+        practice:
+          - "Open a donor-advised fund and contribute appreciated stock instead of cash to get the deduction without paying capital gains tax (1 hour)"
+          - "Model a 5-year tax projection: estimate income, deductions, and bracket for each year to identify Roth conversion and income timing opportunities (2 hours)"
+        projects:
+          - "Create a multi-year tax strategy document: current year actions, Roth conversion plan for the next 5 years, charitable giving strategy, and projected effective tax rate each year"
+        tips:
+          - "Donating appreciated stock to a donor-advised fund is double tax-efficient: you deduct the full market value AND avoid capital gains tax on the appreciation."
+      - level: expert
+        criteria: >
+          Coordinates tax strategy across income, investments, retirement,
+          estate planning, and potentially business entities. Understands
+          alternative minimum tax, net investment income tax, and estate tax
+          thresholds. Works with a CPA but drives the strategy.
+        metrics:
+          - "Lifetime tax savings from strategic planning exceed $100,000+"
+          - "Has a CPA or tax advisor who implements (not creates) the strategy you design"
+          - "Tax strategy is integrated with estate plan and retirement withdrawal sequencing"
+        resources:
+          - title: "Bogleheads Wiki - Tax Planning"
+            url: "https://www.bogleheads.org/wiki/Tax_planning"
+            type: "article"
+          - title: "IRS - Estate and Gift Taxes"
+            url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes"
+            type: "article"
+        tips:
+          - "At the expert level, you tell your CPA what to do — they execute and verify. You drive the tax strategy because you understand your full financial picture better than anyone."
+    tags: ["taxes", "tax-planning", "deductions", "capital-gains"]
+
+  - id: "business/personal-finance/insurance-risk-management"
+    title: "Insurance & Risk Management"
+    description: >
+      Protecting your wealth and income through appropriate insurance coverage.
+      Insurance is the financial safety net you hope to never use — but without
+      it, a single event (disability, lawsuit, medical emergency) can destroy
+      decades of wealth building. The goal is to insure against catastrophic
+      risk while self-insuring minor risks.
+    benchmarks:
+      - level: beginner
+        criteria: "Has health insurance, auto insurance, and renters/homeowners insurance. Understands deductibles, premiums, and coverage limits."
+        metrics:
+          - "Has active health, auto, and renters/homeowners insurance policies"
+          - "Can explain the relationship between deductible, premium, and out-of-pocket maximum"
+          - "Knows what each policy covers and does not cover"
+        resources:
+          - title: "Investopedia - Types of Insurance"
+            url: "https://www.investopedia.com/terms/i/insurance.asp"
+            type: "article"
+          - title: "NerdWallet - How to Choose Health Insurance"
+            url: "https://www.nerdwallet.com/article/health/how-to-choose-a-health-insurance-plan"
+            type: "article"
+          - title: "Khan Academy - Insurance"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/money-and-banking/banking-and-money/v/overview-of-insurance"
+            type: "video"
+          - title: "The Money Guy Show - Insurance Explained: What Do You Actually Need?"
+            url: "https://www.youtube.com/watch?v=3bLl3LN2yl0"
+            type: "video"
+        practice:
+          - "Collect all your insurance policies and create a summary document: insurer, coverage type, deductible, premium, and coverage limit for each (1 hour)"
+          - "Review your health insurance plan: understand your deductible, copay, coinsurance, and out-of-pocket maximum (30 minutes)"
+          - "Get a renters insurance quote if you do not have it — typical cost is $15-30/month for $30,000+ in coverage (15 minutes)"
+        projects:
+          - "Create an insurance inventory spreadsheet listing every policy, what it covers, key terms, annual cost, and renewal dates"
+        tips:
+          - "Insurance is for catastrophic events, not minor inconveniences. Choose higher deductibles to lower premiums — you should self-insure small losses from your emergency fund."
+          - "Renters insurance is one of the best deals in personal finance. $15/month covers tens of thousands in belongings plus liability protection."
+      - level: intermediate
+        criteria: >
+          Has appropriate coverage levels. Carries umbrella insurance if net
+          worth warrants it. Has term life insurance if anyone depends on their
+          income. Has disability insurance. Reviews and shops policies annually.
+        metrics:
+          - "Term life insurance covers 10-12x annual income if dependents exist"
+          - "Long-term disability insurance covers 60%+ of income"
+          - "Umbrella policy of $1M+ if net worth exceeds $500,000"
+          - "Insurance policies reviewed and comparison-shopped annually"
+        resources:
+          - title: "Investopedia - Term Life Insurance"
+            url: "https://www.investopedia.com/terms/t/termlife.asp"
+            type: "article"
+          - title: "NerdWallet - Disability Insurance Guide"
+            url: "https://www.nerdwallet.com/article/insurance/disability-insurance"
+            type: "article"
+          - title: "Investopedia - Umbrella Insurance"
+            url: "https://www.investopedia.com/terms/u/umbrella-insurance-policy.asp"
+            type: "article"
+          - title: "The Money Guy Show - Do You Need an Umbrella Policy?"
+            url: "https://www.youtube.com/watch?v=5Q_gEiuzRxI"
+            type: "video"
+        practice:
+          - "Calculate your life insurance need: annual income x 10 minus existing savings and coverage — this is how much your family would need to replace your income (30 minutes)"
+          - "Check if your employer offers long-term disability insurance and whether the benefit is 60% of your income (20 minutes)"
+          - "Get 3 quotes for term life insurance from independent brokers or online aggregators (45 minutes)"
+        projects:
+          - "Build a complete risk assessment: list every financial risk your household faces (death, disability, liability, property loss, health), your current coverage for each, and any gaps"
+        tips:
+          - "ALWAYS buy term life insurance, never whole life or universal life. Term is 5-10x cheaper and investing the difference in index funds beats whole life returns every time."
+          - "Your ability to earn income is your most valuable asset. Disability insurance protects it — you are more likely to be disabled than to die before 65."
+      - level: advanced
+        criteria: >
+          Insurance portfolio is fully optimized. Understands when to self-insure
+          vs. transfer risk. Carries appropriate coverage for all life stages
+          (family, homeownership, business). Understands insurance as one
+          component of overall risk management.
+        metrics:
+          - "All deductibles set to match emergency fund capacity (higher deductible, lower premium)"
+          - "No gaps in coverage and no unnecessary overlapping policies"
+          - "Insurance costs optimized through bundling, loyalty discounts, and annual shopping"
+        resources:
+          - title: "Bogleheads Wiki - Insurance"
+            url: "https://www.bogleheads.org/wiki/Insurance"
+            type: "article"
+          - title: "Investopedia - Self-Insuring"
+            url: "https://www.investopedia.com/terms/s/self-insure.asp"
+            type: "article"
+        practice:
+          - "Calculate the break-even point for each deductible level on your policies: how many years of premium savings to cover the higher deductible (30 minutes per policy)"
+          - "Review whether you still need certain policies as your net worth grows — extended warranties, collision on older cars, etc. (45 minutes)"
+        projects:
+          - "Conduct an annual insurance audit: document all policies, validate coverage amounts against current needs, shop for competitive quotes, and calculate total annual insurance cost as a percentage of income"
+        tips:
+          - "As your wealth grows, you can self-insure more. A $500,000 net worth household does not need collision coverage on a $5,000 car."
+      - level: expert
+        criteria: >
+          Integrates insurance with estate planning (irrevocable life insurance
+          trusts), business risk management, and tax strategy. Understands
+          advanced structures like captive insurance. Makes risk management
+          decisions based on probability and expected value.
+        metrics:
+          - "Risk management framework considers probability, severity, insurance cost, and self-insurance capacity for every risk"
+          - "Insurance structures integrated with estate plan and business entities"
+        resources:
+          - title: "Investopedia - Irrevocable Life Insurance Trust"
+            url: "https://www.investopedia.com/terms/i/irrevocable-life-insurance-trust.asp"
+            type: "article"
+        tips:
+          - "At expert level, you think in terms of expected value. Insure only risks that would be catastrophic relative to your wealth. Self-insure everything else."
+    tags: ["insurance", "risk-management", "life-insurance", "disability"]
+
+  - id: "business/personal-finance/real-estate-basics"
+    title: "Real Estate Basics"
+    description: >
+      Understanding real estate as both a home purchase decision and a potential
+      investment. For most people, their home is their largest asset and their
+      mortgage their largest debt. Making informed decisions about buying vs.
+      renting, choosing a mortgage, and potentially investing in real estate
+      is critical to long-term wealth.
+    benchmarks:
+      - level: beginner
+        criteria: "Understands the true cost of homeownership vs. renting. Can calculate whether buying makes financial sense in their market. Knows how mortgages work."
+        metrics:
+          - "Can list all costs of homeownership beyond the mortgage (property taxes, insurance, maintenance, HOA, closing costs)"
+          - "Can run a rent vs. buy analysis using the 5% rule or a detailed calculator"
+          - "Understands fixed vs. adjustable rate mortgages, points, and amortization"
+        resources:
+          - title: "Khan Academy - Housing"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/housing"
+            type: "course"
+          - title: "Investopedia - Buying a House: A Step-by-Step Guide"
+            url: "https://www.investopedia.com/updates/first-time-home-buyer/"
+            type: "article"
+          - title: "NerdWallet - Rent vs. Buy Calculator"
+            url: "https://www.nerdwallet.com/mortgages/rent-vs-buy-calculator"
+            type: "tool"
+          - title: "The Money Guy Show - Renting vs. Buying: The 5% Rule"
+            url: "https://www.youtube.com/watch?v=q4L2rmkRKy8"
+            type: "video"
+        practice:
+          - "Calculate the total monthly cost of owning a home in your area: mortgage payment + property tax + insurance + maintenance (1% of home value/year) + HOA (1 hour)"
+          - "Run a rent vs. buy analysis for your current situation using the NerdWallet calculator or the 5% rule (30 minutes)"
+          - "Look up current mortgage rates and calculate the monthly payment on a home at your target price using a mortgage calculator (15 minutes)"
+        projects:
+          - "Create a home buying readiness assessment: target home price, required down payment, monthly cost of ownership, current savings toward down payment, and timeline to purchase"
+        tips:
+          - "The 5% rule: multiply the home price by 5% and divide by 12. If your rent is less than that number, renting is likely cheaper. A $400,000 home costs about $1,667/month in unrecoverable costs."
+          - "A house is a place to live, not primarily an investment. Buy when it makes sense for your life, not because 'renting is throwing money away' (it is not)."
+      - level: intermediate
+        criteria: >
+          Purchases a home with a well-structured mortgage (20% down, 15 or 30
+          year fixed, total housing cost below 28% of gross income). Understands
+          closing costs, home inspection, and the buying process.
+        metrics:
+          - "Home purchased with at least 20% down payment (avoiding PMI)"
+          - "Total housing cost (PITI) below 28% of gross monthly income"
+          - "Fixed-rate mortgage (not adjustable)"
+          - "Maintained 6-month emergency fund through and after purchase"
+        resources:
+          - title: "Investopedia - What Is PMI (Private Mortgage Insurance)?"
+            url: "https://www.investopedia.com/mortgage/insurance/"
+            type: "article"
+          - title: "NerdWallet - How Much House Can I Afford?"
+            url: "https://www.nerdwallet.com/mortgages/how-much-house-can-i-afford"
+            type: "tool"
+          - title: "Investopedia - Closing Costs Explained"
+            url: "https://www.investopedia.com/terms/c/closingcosts.asp"
+            type: "article"
+        practice:
+          - "Get pre-approved for a mortgage to understand your borrowing capacity (do not let the lender tell you how much to spend — use the 28% rule) (2 hours)"
+          - "Create a home purchase checklist: down payment saved, pre-approval obtained, inspection scheduled, closing costs budgeted (1 hour)"
+        projects:
+          - "Build a comprehensive home purchase budget: purchase price, down payment, closing costs (2-5% of price), moving costs, initial furnishing, and first year of ownership costs"
+        tips:
+          - "Banks will approve you for far more than you should spend. Stick to the 28% rule: total housing payment (principal, interest, taxes, insurance) should not exceed 28% of gross income."
+      - level: advanced
+        criteria: >
+          Understands real estate investing basics (rental properties, REITs).
+          Can analyze a rental property using cap rate, cash-on-cash return,
+          and the 1% rule. Considers real estate as one component of a
+          diversified portfolio.
+        metrics:
+          - "Can calculate cap rate, cash-on-cash return, and net operating income for a rental property"
+          - "Understands REIT investing as a hands-off real estate exposure option"
+          - "Real estate allocation (home equity + REITs) is a deliberate percentage of total portfolio"
+        resources:
+          - title: "Investopedia - Real Estate Investing Guide"
+            url: "https://www.investopedia.com/investing/simple-ways-invest-real-estate/"
+            type: "article"
+          - title: "Investopedia - REIT: What It Is and How to Invest"
+            url: "https://www.investopedia.com/terms/r/reit.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Domestic Equity"
+            url: "https://www.bogleheads.org/wiki/Domestic_equity"
+            type: "article"
+        practice:
+          - "Analyze a rental property listing in your area: calculate gross rent multiplier, cap rate, and cash-on-cash return after all expenses (1 hour)"
+          - "Compare the historical returns of REITs vs. direct rental property ownership vs. stock index funds (30 minutes)"
+        projects:
+          - "Create a rental property analysis spreadsheet: input purchase price, down payment, mortgage terms, rental income, and all expenses (taxes, insurance, maintenance, vacancy, management) to calculate cash flow and returns"
+        tips:
+          - "The 1% rule is a quick filter: monthly rent should be at least 1% of the purchase price. A $200,000 property should rent for $2,000+/month. Most properties in expensive markets fail this test."
+      - level: expert
+        criteria: >
+          Owns investment real estate or has significant REIT allocation. Can
+          evaluate 1031 exchanges, depreciation benefits, and real estate tax
+          advantages. Integrates real estate with overall wealth strategy.
+        metrics:
+          - "Real estate portfolio (direct or REIT) generating passive income"
+          - "Understands 1031 exchange rules and depreciation recapture"
+          - "Real estate is a deliberate allocation in the overall wealth plan, not a speculative bet"
+        resources:
+          - title: "Investopedia - 1031 Exchange Rules"
+            url: "https://www.investopedia.com/financial-edge/0110/10-things-to-know-about-1031-exchanges.aspx"
+            type: "article"
+          - title: "Investopedia - Depreciation in Real Estate"
+            url: "https://www.investopedia.com/terms/d/depreciation.asp"
+            type: "article"
+        tips:
+          - "Real estate is the most tax-advantaged investment in the US tax code: mortgage interest deduction, depreciation, 1031 exchanges, and capital gains exclusion on primary residence. Use these intentionally."
+    tags: ["real-estate", "homeownership", "mortgage", "renting", "reits"]
+
+  - id: "business/personal-finance/estate-planning"
+    title: "Estate Planning & Wealth Transfer"
+    description: >
+      Ensuring your assets transfer to the right people in the right way, with
+      minimum taxes and legal friction. Estate planning is not just for the
+      wealthy — everyone with assets, dependents, or preferences about medical
+      care needs basic estate documents. This is the capstone of personal finance
+      because it protects everything you have built.
+    benchmarks:
+      - level: beginner
+        criteria: "Has a will, healthcare directive, and power of attorney. Beneficiaries are designated and up to date on all accounts."
+        metrics:
+          - "Has a valid will that names beneficiaries and a guardian for minor children if applicable"
+          - "Has a healthcare directive (living will) and durable power of attorney"
+          - "Beneficiary designations reviewed and current on all retirement accounts, insurance policies, and bank accounts"
+        resources:
+          - title: "Investopedia - Estate Planning Basics"
+            url: "https://www.investopedia.com/terms/e/estateplanning.asp"
+            type: "article"
+          - title: "NerdWallet - Estate Planning Checklist"
+            url: "https://www.nerdwallet.com/article/investing/estate-planning-checklist"
+            type: "article"
+          - title: "Khan Academy - Estate Taxes"
+            url: "https://www.khanacademy.org/economics-finance-domain/core-finance/taxes-topic"
+            type: "course"
+          - title: "The Money Guy Show - Estate Planning 101: Must-Have Documents"
+            url: "https://www.youtube.com/watch?v=EwYm8x3-ric"
+            type: "video"
+        practice:
+          - "Check and update beneficiary designations on every retirement account, life insurance policy, and bank account (1 hour)"
+          - "List all your assets, their approximate values, and who you want to receive each one (45 minutes)"
+          - "Research estate planning attorneys in your area or online services for simple wills (30 minutes)"
+        projects:
+          - "Get the three essential estate documents in place: a will, healthcare directive, and durable power of attorney. Document where they are stored and who knows the location."
+        tips:
+          - "Beneficiary designations on accounts OVERRIDE your will. If your ex-spouse is still the beneficiary on your 401k, they get it regardless of what your will says. Review these annually."
+          - "Without a will, your state decides who gets your assets. It might not be who you want."
+      - level: intermediate
+        criteria: >
+          Has a revocable living trust to avoid probate. Accounts are titled
+          correctly (trust, joint, TOD/POD). Has reviewed estate plan with an
+          attorney. Understands the federal estate tax exemption.
+        metrics:
+          - "Revocable living trust created and funded (assets retitled into the trust)"
+          - "All accounts have correct ownership or beneficiary structure to avoid probate"
+          - "Estate plan reviewed by an attorney within the last 3 years"
+          - "Knows the current federal estate tax exemption ($13.61M per individual in 2024)"
+        resources:
+          - title: "Investopedia - Revocable Living Trust"
+            url: "https://www.investopedia.com/terms/r/revocabletrust.asp"
+            type: "article"
+          - title: "NerdWallet - What Is a Living Trust?"
+            url: "https://www.nerdwallet.com/article/investing/estate-planning-basics-living-trust"
+            type: "article"
+          - title: "Investopedia - Probate and How to Avoid It"
+            url: "https://www.investopedia.com/terms/p/probate.asp"
+            type: "article"
+          - title: "IRS - Estate and Gift Taxes"
+            url: "https://www.irs.gov/businesses/small-businesses-self-employed/estate-and-gift-taxes"
+            type: "article"
+        practice:
+          - "List every asset you own and its current titling: is it in your name, joint, in a trust, or has a beneficiary designation? Identify any that would go through probate (1 hour)"
+          - "Research the probate process in your state: how long it takes, what it costs, and whether a trust would avoid it (30 minutes)"
+        projects:
+          - "Create an estate planning binder: copies of all documents (will, trust, powers of attorney, healthcare directive), account list with beneficiaries, insurance policies, and instructions for your executor"
+        tips:
+          - "A trust without funding is useless. Creating the trust document is step one — retitling your accounts into the trust is the critical step two that most people skip."
+      - level: advanced
+        criteria: >
+          Implements gifting strategies to reduce taxable estate. Understands
+          generation-skipping trusts, irrevocable trusts, and annual gift
+          exclusion. Coordinates estate plan with tax strategy and retirement
+          plan. Has a complete letter of instruction for heirs.
+        metrics:
+          - "Annual gifting strategy in place using the $18,000 per recipient exclusion (2024)"
+          - "529 education accounts funded for children or grandchildren"
+          - "Complete letter of instruction written for executor and heirs"
+          - "Estate plan, tax plan, and retirement plan are coordinated as a unified strategy"
+        resources:
+          - title: "Investopedia - Annual Gift Tax Exclusion"
+            url: "https://www.investopedia.com/terms/a/annual-exclusion.asp"
+            type: "article"
+          - title: "Bogleheads Wiki - Estate Planning"
+            url: "https://www.bogleheads.org/wiki/Estate_planning"
+            type: "article"
+          - title: "Investopedia - 529 Plans"
+            url: "https://www.investopedia.com/terms/1/529plan.asp"
+            type: "article"
+        practice:
+          - "Calculate whether annual gifting reduces your projected taxable estate below the exemption threshold (1 hour)"
+          - "Write a letter of instruction for your executor: where to find accounts, who to contact, what bills to pay, passwords (use a secure vault), and your wishes for dependents (2 hours)"
+        projects:
+          - "Build a comprehensive wealth transfer plan: current estate value, projected growth, gifting strategy, trust structures, and projected estate tax liability under current and sunset tax law"
+        tips:
+          - "The federal estate tax exemption is set to be cut roughly in half after 2025. If your estate is above $7M, accelerating gifts and trust funding before the sunset date could save millions in taxes."
+      - level: expert
+        criteria: >
+          Implements multi-generational wealth transfer strategies. Uses
+          dynasty trusts, charitable remainder trusts, family limited
+          partnerships, or private foundations. Coordinates with an estate
+          planning attorney and CPA as a team. Establishes family governance
+          around wealth.
+        metrics:
+          - "Multi-generational wealth transfer strategy documented and funded"
+          - "Estate planning team in place (attorney, CPA, financial advisor) meeting annually"
+          - "Family governance structure established for shared assets and values"
+          - "Charitable giving strategy integrated with estate plan (donor-advised fund, charitable trust, or foundation)"
+        resources:
+          - title: "Investopedia - Dynasty Trust"
+            url: "https://www.investopedia.com/terms/d/dynasty-trust.asp"
+            type: "article"
+          - title: "Investopedia - Charitable Remainder Trust"
+            url: "https://www.investopedia.com/terms/c/charitableremaindertrust.asp"
+            type: "article"
+        tips:
+          - "The most important estate planning is not financial — it is relational. Communicate with your heirs about your values, expectations, and plans. Surprise inheritances destroy more families than taxes do."
+    tags: ["estate-planning", "wills", "trusts", "wealth-transfer", "beneficiaries"]
+
+# ── RELATIONSHIPS (Directed Acyclic Graph) ────────────────────────────────────
+relationships:
+  # -- Foundation layer: budgeting enables everything --
+  - source: "business/personal-finance/budgeting-cash-flow"
+    target: "business/personal-finance/emergency-fund-savings"
+    type: "requires"
+    note: "You cannot save consistently without a budget — budgeting creates the surplus that funds the emergency fund"
+
+  - source: "business/personal-finance/budgeting-cash-flow"
+    target: "business/personal-finance/debt-management"
+    type: "requires"
+    note: "Debt payoff requires knowing your cash flow — the budget determines how much extra goes toward debt each month"
+
+  - source: "business/personal-finance/budgeting-cash-flow"
+    target: "business/personal-finance/credit-score-credit-cards"
+    type: "enables"
+    note: "A budget prevents overspending on credit cards, which is the foundation of good credit management"
+
+  # -- Safety net before growth --
+  - source: "business/personal-finance/emergency-fund-savings"
+    target: "business/personal-finance/investing-fundamentals"
+    type: "requires"
+    note: "Never invest before you have an emergency fund — without cash reserves, a market downturn or job loss forces you to sell investments at a loss"
+
+  - source: "business/personal-finance/debt-management"
+    target: "business/personal-finance/investing-fundamentals"
+    type: "requires"
+    note: "High-interest debt should be eliminated before investing — paying off 20% credit card debt is a guaranteed 20% return"
+
+  # -- Credit supports major purchases --
+  - source: "business/personal-finance/credit-score-credit-cards"
+    target: "business/personal-finance/real-estate-basics"
+    type: "enables"
+    note: "A strong credit score secures better mortgage rates, saving tens of thousands over the life of a loan"
+
+  # -- Investing branches into retirement and tax planning --
+  - source: "business/personal-finance/investing-fundamentals"
+    target: "business/personal-finance/retirement-planning"
+    type: "requires"
+    note: "Retirement planning applies investing fundamentals to tax-advantaged accounts — you must understand investing before choosing 401k and IRA allocations"
+
+  - source: "business/personal-finance/investing-fundamentals"
+    target: "business/personal-finance/tax-planning"
+    type: "enables"
+    note: "Tax-efficient investing (asset location, tax-loss harvesting, capital gains management) requires investing knowledge"
+
+  - source: "business/personal-finance/retirement-planning"
+    target: "business/personal-finance/tax-planning"
+    type: "enables"
+    note: "Retirement account choices (Roth vs. Traditional, Roth conversions) are fundamentally tax planning decisions"
+
+  # -- Protection and real estate build on the growth layer --
+  - source: "business/personal-finance/investing-fundamentals"
+    target: "business/personal-finance/insurance-risk-management"
+    type: "enables"
+    note: "Understanding your growing portfolio helps determine appropriate insurance coverage levels and self-insurance capacity"
+
+  - source: "business/personal-finance/emergency-fund-savings"
+    target: "business/personal-finance/insurance-risk-management"
+    type: "enables"
+    note: "A funded emergency fund allows choosing higher deductibles, lowering insurance premiums while maintaining protection"
+
+  - source: "business/personal-finance/investing-fundamentals"
+    target: "business/personal-finance/real-estate-basics"
+    type: "enables"
+    note: "Real estate is an investment decision — comparing returns, understanding leverage, and evaluating opportunity cost requires investing knowledge"
+
+  - source: "business/personal-finance/debt-management"
+    target: "business/personal-finance/real-estate-basics"
+    type: "enables"
+    note: "Understanding mortgage debt, amortization, and good vs. bad debt prepares you for the largest debt most people take on"
+
+  # -- Estate planning is the capstone --
+  - source: "business/personal-finance/investing-fundamentals"
+    target: "business/personal-finance/estate-planning"
+    type: "enables"
+    note: "Estate planning requires understanding how investments, accounts, and beneficiary designations interact"
+
+  - source: "business/personal-finance/tax-planning"
+    target: "business/personal-finance/estate-planning"
+    type: "enables"
+    note: "Estate planning is deeply intertwined with tax strategy — gifting, trusts, and inheritance all have tax implications"
+
+  - source: "business/personal-finance/insurance-risk-management"
+    target: "business/personal-finance/estate-planning"
+    type: "enables"
+    note: "Life insurance, trusts, and estate planning work together to protect and transfer wealth"
+
+  - source: "business/personal-finance/retirement-planning"
+    target: "business/personal-finance/estate-planning"
+    type: "enables"
+    note: "Retirement account beneficiary designations and distribution rules are core estate planning decisions"
