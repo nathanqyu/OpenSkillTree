@@ -1,8 +1,3 @@
----
-
-## `MANIFESTO.md`
-
-```md
 # OpenSkillTree Manifesto
 
 Human progress runs on skill.
