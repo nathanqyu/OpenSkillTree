@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "OpenSkillTree",
   description:
-    "The open standard for measuring human skills across every domain.",
+    "The representation layer for human skill progression. Structured skill maps with subskills, dependencies, benchmark criteria, and progression pathways — open infrastructure for coaching, learning, and assessment.",
 };
 
 export default function RootLayout({

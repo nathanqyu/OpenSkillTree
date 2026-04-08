@@ -3,6 +3,13 @@ import TreeCard from "@/components/gallery/TreeCard";
 import SearchResultCard from "@/components/gallery/SearchResultCard";
 import DomainFilterClient from "@/app/_components/DomainFilterClient";
 import SearchBar from "@/components/gallery/SearchBar";
+import LandingHero from "@/components/landing/LandingHero";
+import LandingWhatItDoes from "@/components/landing/LandingWhatItDoes";
+import LandingWhyItMatters from "@/components/landing/LandingWhyItMatters";
+import LandingWhatItEnables from "@/components/landing/LandingWhatItEnables";
+import LandingWhyNow from "@/components/landing/LandingWhyNow";
+import LandingOpenSource from "@/components/landing/LandingOpenSource";
+import LandingFinalCTA from "@/components/landing/LandingFinalCTA";
 import type { TreeListItem, SearchResultItem } from "@/types/skill-tree";
 
 /**
@@ -81,11 +88,10 @@ export default async function GalleryPage({
       <div>
         <div className="mb-8">
           <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
-            Skill Trees
+            Skill Maps
           </h1>
           <p className="mt-1 text-sm text-zinc-500 dark:text-zinc-400">
-            The open standard for measuring human skills — explore what mastery
-            looks like in any domain.
+            Structured skill graphs with benchmark criteria and progression pathways.
           </p>
         </div>
 
@@ -106,8 +112,7 @@ export default async function GalleryPage({
         {rows.length === 0 ? (
           <div className="mt-16 text-center">
             <p className="text-zinc-500 dark:text-zinc-400">
-              No skill trees or nodes match &ldquo;{searchQuery}&rdquo;. Try a
-              different term.
+              No skill maps or nodes match &ldquo;{searchQuery}&rdquo;. Try a different term.
             </p>
           </div>
         ) : (
@@ -154,44 +159,51 @@ export default async function GalleryPage({
     counts[row.domain] = parseInt(row.count, 10);
   }
 
-
   return (
     <div>
-      {/* Hero */}
-      <div className="mb-10 text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-zinc-900 sm:text-4xl dark:text-zinc-50">
-          Master any skill
-        </h1>
-        <p className="mx-auto mt-3 max-w-md text-base text-zinc-500 dark:text-zinc-400">
-          See the path from beginner to expert. Track your progress. Know
-          exactly what to learn next.
+      <LandingHero treeCount={trees.length} />
+      <LandingWhatItDoes />
+      <LandingWhyItMatters />
+      <LandingWhatItEnables />
+      <LandingWhyNow />
+
+      {/* Explore section */}
+      <section
+        id="explore"
+        className="py-16 border-b border-zinc-100 dark:border-zinc-900"
+      >
+        <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
+          The library
         </p>
-        <p className="mt-4 text-sm text-zinc-400 dark:text-zinc-500">
-          {trees.length} skill trees
-        </p>
-      </div>
+        <h2 className="mb-6 text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
+          Explore Skill Maps
+        </h2>
 
-      <SearchBar />
+        <SearchBar />
 
-      <div className="mt-4">
-        <DomainFilterClient selected={domain ?? "All"} counts={counts} />
-      </div>
-
-      {trees.length === 0 ? (
-        <div className="mt-16 text-center">
-          <p className="text-zinc-500 dark:text-zinc-400">
-            {domain && domain !== "All"
-              ? `No skill trees in ${domain} yet.`
-              : "No skill trees yet. Run pnpm ingest to populate the database."}
-          </p>
+        <div className="mt-4">
+          <DomainFilterClient selected={domain ?? "All"} counts={counts} />
         </div>
-      ) : (
-        <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
-          {trees.map((tree) => (
-            <TreeCard key={tree.id} tree={tree} />
-          ))}
-        </div>
-      )}
+
+        {trees.length === 0 ? (
+          <div className="mt-16 text-center">
+            <p className="text-zinc-500 dark:text-zinc-400">
+              {domain && domain !== "All"
+                ? `No skill maps in ${domain} yet.`
+                : "No skill maps yet. Run pnpm ingest to populate the database."}
+            </p>
+          </div>
+        ) : (
+          <div className="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            {trees.map((tree) => (
+              <TreeCard key={tree.id} tree={tree} />
+            ))}
+          </div>
+        )}
+      </section>
+
+      <LandingOpenSource />
+      <LandingFinalCTA />
     </div>
   );
 }

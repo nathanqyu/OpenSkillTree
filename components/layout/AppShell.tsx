@@ -11,16 +11,16 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
           >
             OpenSkillTree
           </Link>
-          <nav className="flex items-center gap-4 text-sm text-zinc-600 dark:text-zinc-400">
+          <nav className="flex items-center gap-5 text-sm text-zinc-500 dark:text-zinc-400">
             <Link
-              href="/dashboard"
-              className="hover:text-zinc-900 dark:hover:text-zinc-50"
+              href="/#explore"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
-              Dashboard
+              Explore
             </Link>
             <Link
               href="/schema"
-              className="hover:text-zinc-900 dark:hover:text-zinc-50"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
               Schema
             </Link>
@@ -28,7 +28,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               href="https://github.com/nathanqyu/OpenSkillTree"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-zinc-900 dark:hover:text-zinc-50"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >
               GitHub
             </a>

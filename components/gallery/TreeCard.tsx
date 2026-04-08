@@ -20,10 +20,10 @@ export default function TreeCard({ tree }: { tree: TreeListItem }) {
         </span>
         {incomplete && (
           <span
-            title="Some nodes are missing benchmarks. Help improve this tree →"
+            title="Benchmark criteria incomplete — contributions welcome"
             className="inline-block rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/30 dark:text-amber-400"
           >
-            Needs benchmarks
+            Incomplete benchmarks
           </span>
         )}
       </div>
@@ -36,7 +36,7 @@ export default function TreeCard({ tree }: { tree: TreeListItem }) {
       </p>
 
       <p className="mt-4 text-xs text-zinc-400 dark:text-zinc-600">
-        {tree.nodeCount} skill{tree.nodeCount !== 1 ? "s" : ""}
+        {tree.nodeCount} node{tree.nodeCount !== 1 ? "s" : ""}
       </p>
     </Link>
   );
