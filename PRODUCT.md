@@ -1,159 +1,165 @@
-# OpenSkillTree — MVP Product Spec
+# Product Thesis
 
-## Vision Alignment
+OpenSkillTree is building the representation layer for skill-aware products.
 
-OpenSkillTree is a **standard**, not a product. The MVP exists to validate the schema and make it real enough for domain experts and developers to evaluate, contribute to, and build on. We are not building a consumer app. We are building the foundation for one.
+The core idea is simple:
 
----
+Before we can build truly personalized coaching, adaptive learning, or high-quality skill assessment systems, we need a better way to represent human skill itself.
 
-## Target User Personas
+Most products in learning and coaching jump straight to content, feedback, or workflow.
+OpenSkillTree starts one layer deeper.
 
-### 1. The Domain Expert
-A coach, practitioner, researcher, or educator who has spent years developing intuition about what mastery looks like in their field. They understand skill progressions — but have never had a structured format to express or share that knowledge.
+We focus on the structure of skill:
 
-**Goals:** Explore existing trees, validate the schema is expressive enough to capture real domain structure, contribute their own expertise.
-**Pain point:** Skill knowledge is trapped in their head or in proprietary systems. No shared format exists.
+- what the relevant subskills are
+- how they relate to one another
+- what progression looks like
+- how readiness can be inferred
+- what “better” means in a given domain
 
-### 2. The Developer / Builder
-An engineer, product designer, or technical founder who wants to build something on top of structured skill data — an AI coach, an assessment tool, a learning platform, a hiring product.
+## Product vision
 
-**Goals:** Evaluate the schema, query skill trees programmatically, understand what the data model enables.
-**Pain point:** No open, structured skill taxonomy to build on. Starting from scratch every time.
+In the long run, we imagine a world where people can improve at almost any skill with dramatically better feedback loops.
 
----
+That future could include systems that use:
 
-## MVP Scope
+- video
+- wearables
+- motion capture
+- software interaction data
+- self-reports
+- performance history
+- expert review
+- AI-assisted analysis
 
-The MVP answers one question: **Is the schema good enough to capture real skill progressions?**
+Those systems could help answer questions like:
 
-To answer it, we need just enough UI for domain experts and developers to explore the data, validate the structure, and understand what it enables.
+- What am I doing wrong?
+- Which subskill is limiting me?
+- What should I train next?
+- How far am I from intermediate, advanced, or expert performance?
+- What does strong performance actually look like here?
 
-### In scope
-- Browse available skill trees
-- View a skill tree as an interactive graph
-- Read benchmarks and descriptions at each skill node
-- Understand prerequisites (which skills unlock which)
-- Mark your current level (anonymous, ephemeral — no account required)
-- Export a skill tree as JSON
+But none of that works well without a shared model of skill.
 
-### Out of scope (V1 non-goals)
-- User accounts or authentication
-- Persistent progress tracking
-- AI coaching or recommendations
-- Monetization or paywalls
-- Collaborative editing
-- Native mobile app
-- Team or org features
+OpenSkillTree exists to help provide that model.
 
----
+## Product scope today
 
-## Core User Flows
+Today, OpenSkillTree is focused on a narrower but foundational problem:
 
-### Flow 1: Browse & Discover
-1. User lands on homepage
-2. Sees a gallery of available skill trees (e.g., "JavaScript", "Tennis Serve", "Sourdough Baking")
-3. Filters or searches by domain/category
-4. Clicks into a tree
+building structured skill trees that make progression legible.
 
-### Flow 2: Explore a Skill Tree
-1. View the tree as an interactive graph
-2. Nodes represent skills; edges represent prerequisites
-3. Click a node to see:
-   - Skill name and description
-   - Level benchmarks (e.g., "Beginner: can execute 5 serves with >60% first serve %", "Advanced: 75%+ first serve, consistent topspin")
-   - Sub-skills that compose this skill
-   - What this skill unlocks (downstream nodes)
-4. Pan, zoom, and navigate the graph freely
+That means:
 
-### Flow 3: See Your Position
-1. User self-assesses by clicking nodes and marking them (e.g., "I'm here")
-2. State is ephemeral (stored in browser session only — no account required)
-3. Marked nodes are visually highlighted on the graph
-4. User can see where they sit in the progression at a glance
+- defining domains and subdomains
+- identifying skill nodes
+- modeling dependencies
+- creating level criteria and benchmark descriptions
+- enabling future progress tracking
 
-### Flow 4: Export
-1. From a tree view, user clicks "Export"
-2. Downloads the full tree as JSON (matching the open schema)
-3. Can use this to build on, fork, or validate the data structure
+The immediate product value is helping people:
 
----
+- understand the shape of a domain
+- see what skills matter
+- understand how those skills connect
+- get clearer on what to learn next
 
-## Feature List
+## Product thesis
 
-### Must-Have (MVP)
+We believe the strongest long-term products in coaching and human performance will not just generate advice.
 
-| Feature | Description |
-|---------|-------------|
-| Skill tree gallery | Browse all published trees with title, domain, node count |
-| Graph visualization | Interactive node/edge rendering with pan + zoom |
-| Node detail panel | Show benchmark text, description, sub-skills, prerequisites |
-| Ephemeral self-assessment | Click to mark current level; stored in browser only |
-| JSON export | Download full tree schema as JSON |
-| Schema documentation | Human-readable docs explaining the data model fields |
+They will understand context.
 
-### Nice-to-Have (Post-MVP)
+And to understand context, they will need a durable representation of:
 
-| Feature | Description |
-|---------|-------------|
-| Search | Full-text search across skill tree names and node descriptions |
-| Domain filtering | Browse by category (sports, tech, creative, etc.) |
-| Embeddable widget | Drop a skill tree visualization into any webpage |
-| Contributor submission form | Web form to propose a new skill tree |
-| Permalink to node | Share a link to a specific node in a tree |
+- skill
+- progression
+- evidence
+- readiness
+- deficiencies
+- transfer across domains
 
----
+OpenSkillTree is meant to be that foundation.
 
-## Data Model Alignment (with OPE-3)
+## Design principles
 
-The product spec is designed around the core data model being defined in [OPE-3](/OPE/issues/OPE-3):
+### 1. Legibility over complexity
+A useful system should make a domain easier to understand, not harder.
 
-```
-SkillTree     id, title, description, domain, visibility, createdAt
-SkillNode     id, treeId, title, description, level, benchmarks[], icon
-SkillEdge     id, treeId, sourceNodeId, targetNodeId  (prerequisite → unlocks)
-```
+### 2. Structure before automation
+Before AI can reliably coach a domain, the domain needs interpretable structure.
 
-**MVP note:** `UserProgress` (userId, nodeId, status) is **excluded** from V1. Ephemeral self-assessment is purely client-side and never persisted to the database.
+### 3. Benchmarks over vibes
+Even when judgment is subjective, explicit criteria are better than hidden standards.
 
-**Key constraint for the data model:** Each `SkillNode` must support `benchmarks[]` — an array of level descriptors with quantitative criteria. This is what differentiates OpenSkillTree from generic mind-map tools. Without benchmark data, the node is incomplete.
+### 4. Flexibility over false precision
+Not every skill can be reduced to one score. The framework should support numbers, rubrics, and mixed evidence.
 
----
+### 5. Open core knowledge
+The structure of human skill should be open, inspectable, and improvable by a community.
 
-## Success Metrics
+## Product layers
 
-The MVP is successful if:
+You can think about OpenSkillTree in layers:
 
-1. **Schema validation:** At least 3 domain experts can review a skill tree and say "yes, this captures the real structure of my domain" without needing to add fields or workarounds.
+### Layer 1: Representation
+A shared schema for skills, subskills, dependencies, and progression.
 
-2. **Developer legibility:** A developer unfamiliar with the project can read the schema docs, fetch the JSON export, and understand the data model in under 15 minutes.
+### Layer 2: Benchmarking
+Criteria, rubrics, and measurable markers for proficiency.
 
-3. **Coverage proof:** We publish at least 5 complete skill trees across distinct domains (e.g., programming, a sport, a creative skill), each with at least 15 nodes and meaningful benchmarks.
+### Layer 3: Assessment
+Ways to infer where a person stands based on evidence.
 
-4. **Open source engagement:** The repo receives at least 10 external contributions (PRs, issues, or submitted trees) within 30 days of launch.
+### Layer 4: Guidance
+Recommendations about what to work on next.
 
----
+### Layer 5: Coaching systems
+Applications that use the above layers to provide personalized support.
 
-## Non-Goals for V1
+OpenSkillTree is currently concentrated on Layers 1 and 2.
 
-These are explicitly deferred to avoid scope creep and to keep the MVP focused on schema validation:
+## Why this matters
 
-- **No user accounts.** Authentication adds complexity and isn't needed to validate the schema.
-- **No persistent progress tracking.** The data structure exists (UserProgress), but wiring it up requires auth. Defer.
-- **No AI coaching.** This is a natural future use case — the schema enables it — but it's not what the MVP needs to prove.
-- **No monetization.** The standard is free and open. Revenue models are a later conversation.
-- **No mobile app.** A responsive web UI is sufficient for V1.
-- **No social features.** Likes, follows, comments — not needed to prove the schema works.
+Great coaches already have internal models like this.
 
----
+They know what separates beginner from intermediate.
+They know which weaknesses are upstream.
+They know which interventions matter most right now.
 
-## Open Questions (for CEO + VPE review)
+The problem is that these models are often:
 
-1. **Benchmark format:** Should `benchmarks` be free-form markdown text, or structured (e.g., `{ level: "beginner", criteria: "...", metrics: [...] }`)? Structured is more powerful for tooling but harder to author.
+- implicit
+- fragmented
+- domain-specific
+- hard to transfer
+- inaccessible to most learners
 
-2. **Tree seeding:** Who creates the first 5 skill trees? CEO + domain expert outreach? Or do we ship with 1-2 and crowdsource from there?
+OpenSkillTree is an attempt to externalize more of that structure.
 
-3. **Domain taxonomy:** Do we define a top-level domain list upfront (Sports / Technology / Creative / Business / etc.), or let contributors tag freely?
+## What success looks like
 
----
+OpenSkillTree succeeds if it helps make skill progression more understandable and more actionable.
 
-*Spec authored by Product Manager. Coordinate on data model specifics with VPE ([OPE-3](/OPE/issues/OPE-3)). Review and ratify with CEO before marking done.*
+That could mean:
+
+- better skill trees
+- clearer benchmark definitions
+- more interoperable assessment systems
+- products that can reason about skill more intelligently
+- coaching and learning experiences that become more accessible over time
+
+## Non-goals
+
+OpenSkillTree is not trying to:
+
+- replace domain experts
+- eliminate the need for coaching
+- reduce all skills to one universal metric
+- pretend every domain has clean objective ground truth
+- solve every layer of the product stack at once
+
+## Current product question
+
+How can we create a shared structure for human skill that is useful enough to guide learners today and extensible enough to power richer coaching systems tomorrow?
