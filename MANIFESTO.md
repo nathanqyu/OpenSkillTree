@@ -1,47 +1,237 @@
-# OpenSkillTree
-
-Humanity's most valuable asset isn't capital, technology, or natural resources. It's skill. The accumulated ability of eight billion people to build, heal, create, compete, and solve.
-
-And yet we have no map of it.
-
-We've built taxonomies for every species on Earth, classification systems for every element, every star, every disease. But there is no equivalent for human ability. No structured, universal framework that answers the questions every serious practitioner eventually asks: *What does good look like? Where do I stand? How do I get to the next level?*
-
-That knowledge exists. It's buried in sports science journals, coaching certifications, proprietary databases, and the minds of experts who spent decades building intuition they never wrote down. The benchmarks are real. The progressions are known. The component skills have been identified -- by coaches, by practitioners, by anyone who has ever gotten deeply good at something and understood *why*.
-
-But none of it is connected. None of it is structured. And almost none of it is accessible to the person who needs it most -- the one putting in the work.
-
 ---
 
-**OpenSkillTree is building the map.**
+## `MANIFESTO.md`
 
-A comprehensive, open-source taxonomy of human skills -- across athletics, professions, creative disciplines, and beyond. Not a product. Not a platform. A *standard*. Shared infrastructure for understanding what humans can do and how ability is measured.
+```md
+# OpenSkillTree Manifesto
 
-Every skill, broken into its component parts.
-Every level, defined by quantitative benchmarks.
-Every progression pathway, made visible.
+Human progress runs on skill.
 
----
+Not just technology. Not just capital. Not just information.
 
-## Three Principles
+Skill is what turns intention into execution.
+It is how people build, heal, communicate, compete, teach, create, and lead.
+It is one of the most important forms of human capability — and one of the least systematically mapped.
 
-**Every skill has structure.** Nothing humans do well is a single, indivisible thing. Mastery in any domain is a composite -- measurable sub-skills that can be identified, isolated, and trained. Making that structure visible is the first step to making improvement systematic.
+We have taxonomies for species, diseases, chemicals, languages, and stars.
+We have detailed systems for classifying the external world.
 
-**Every level has a number.** The difference between good and great is not a mystery. It's a gap that can be quantified -- in speed, consistency, accuracy, volume, complexity, or quality. When you know the number, you know the target.
+But when it comes to human ability, the map is fragmented.
 
-**The map belongs to everyone.** The knowledge of how to improve should not be locked inside institutions, proprietary tools, or the minds of experts who never published what they know. It should be open, structured, and free.
+The knowledge exists.
+It lives in coaching systems, training programs, academic literature, professional ladders, certification rubrics, and the intuition of practitioners who have spent years learning what actually matters.
 
----
+But it is rarely open.
+Rarely portable.
+Rarely structured in a way that helps a learner answer the questions that matter most:
 
-## Built in the Open
+- What does good look like?
+- Where do I stand?
+- What am I missing?
+- What should I work on next?
+- How do the pieces fit together?
 
-OpenSkillTree is a community-driven standard. Researchers contribute validated benchmarks. Coaches formalize the progression markers they already use. Practitioners document the structure of their own expertise. Every contribution makes the map more complete. Every domain added makes the whole system more valuable.
+OpenSkillTree exists to help build that map.
 
-The taxonomy is open. The data is open. The schema is open.
+## What we believe
 
-What gets built on top -- AI coaches, training platforms, assessment tools, educational systems -- that's for builders to decide. We provide the foundation.
+### 1. Skill has structure
 
----
+Very few meaningful abilities are indivisible.
 
-**Our mission: build the standard for measuring human skills across every domain -- so anyone can see exactly where they stand and what it takes to reach the next level.**
+What looks like “being good at something” is usually a combination of smaller subskills:
+perception, judgment, timing, coordination, memory, emotional regulation, technique, consistency, adaptability, taste, communication, and more.
 
-We're building the map that should have always existed.
+If a skill can be improved, it usually has structure.
+If it has structure, it can be modeled.
+If it can be modeled, it can be made more legible.
+
+This does not mean every domain is simple.
+It means complexity can still have shape.
+
+### 2. Progress should be legible
+
+Too much learning is opaque.
+
+People are told to “just keep practicing” without a clear model of what they are practicing, why it matters, or how to know whether they are improving.
+
+OpenSkillTree is built on the belief that learners deserve better visibility.
+
+They should be able to understand:
+
+- the components of a skill
+- the dependencies between those components
+- the markers of progression
+- the tradeoffs between breadth and depth
+- the next highest-leverage step
+
+The point is not to reduce growth to a spreadsheet.
+The point is to make progress easier to see and easier to act on.
+
+### 3. Better benchmarks beat vague intuition
+
+Many important skills cannot be reduced to a single number.
+
+That does not mean they cannot be assessed at all.
+
+Some domains have precise metrics.
+Others rely on rubrics, behavioral markers, expert judgment, comparative evaluation, or performance under realistic constraints.
+
+OpenSkillTree does not assume perfect quantification.
+It assumes that clearer benchmarks are better than fuzzy ones, and explicit criteria are better than hidden ones.
+
+We want benchmarks that are:
+
+- useful
+- interpretable
+- domain-aware
+- extensible
+- honest about uncertainty
+
+The goal is not false precision.
+The goal is better guidance.
+
+### 4. Skills are connected
+
+No skill exists in isolation.
+
+Public speaking depends on presence, language, memory, emotional regulation, pacing, and audience awareness.
+Tennis depends on movement, timing, mechanics, reading the opponent, and decision-making.
+Leadership depends on judgment, communication, trust-building, prioritization, and self-management.
+
+OpenSkillTree treats skills as networks, not lists.
+
+That means modeling:
+
+- parent-child relationships
+- prerequisite dependencies
+- complementary subskills
+- adjacent domains
+- transferable capabilities
+
+A map is useful because it shows both where you are and how things connect.
+
+### 5. The map should be open
+
+Knowledge about improvement should not be trapped inside institutions, paywalls, proprietary software, or the heads of experts who never wrote down what they know.
+
+Human skill is too important to be modeled behind closed doors.
+
+OpenSkillTree is open because the problem is bigger than any single company, coach, curriculum, or product.
+
+A useful standard will require contributions from:
+
+- coaches
+- educators
+- practitioners
+- researchers
+- builders
+- domain experts
+
+Openness is not just an ideology here.
+It is a practical necessity.
+
+## What OpenSkillTree is
+
+OpenSkillTree is an open framework for representing human skill across domains.
+
+It aims to make skill progression more legible by defining:
+
+- skills and subskills
+- levels and benchmark criteria
+- prerequisite relationships
+- progression pathways
+- shared schema for tooling and applications
+
+It is part ontology, part benchmark system, part coordination layer.
+
+It is not trying to replace coaches, teachers, or domain expertise.
+
+It is trying to make their knowledge more structured, more portable, and more usable.
+
+## What OpenSkillTree is not
+
+OpenSkillTree is not a claim that all human ability can be fully captured in numbers.
+
+It is not a claim that every domain should be flattened into one universal score.
+
+It is not a claim that expert judgment is unnecessary.
+
+It is not a claim that learning is linear, tidy, or fully objective.
+
+Some skills are highly measurable.
+Some are partly measurable.
+Some require richer rubrics and context-sensitive evaluation.
+
+That is fine.
+
+A good framework does not erase nuance.
+It gives nuance a place to live.
+
+## Why now
+
+For most of history, it was hard enough to capture performance at all.
+
+That is changing.
+
+We now live in a world with more observable behavioral data than ever before:
+video, wearables, software traces, motion analysis, biometric signals, interaction histories, and increasingly intelligent systems that can interpret them.
+
+That creates a new possibility:
+
+not just recording what people did,
+but understanding how they are developing.
+
+But raw data alone does not solve the problem.
+
+Without a model of skill, data is just telemetry.
+
+To build better coaching systems, training systems, evaluation systems, and adaptive learning systems, we need a clearer representation of what skill actually is.
+
+OpenSkillTree is an effort to help build that representation layer.
+
+## What could be built on top
+
+If a useful open standard for skill progression exists, many things become easier to build:
+
+- coaching tools
+- assessment systems
+- adaptive learning products
+- AI tutors
+- training platforms
+- progress dashboards
+- benchmark datasets
+- evaluation frameworks for both humans and AI
+
+OpenSkillTree does not have to be the final interface.
+It has to be a durable foundation.
+
+## How we want to build it
+
+We want OpenSkillTree to be:
+
+### Rigorous  
+Built with serious respect for domain expertise and evidence.
+
+### Practical  
+Useful for real learners, not just philosophically interesting.
+
+### Extensible  
+Able to handle different domains, different assessment styles, and different levels of uncertainty.
+
+### Transparent  
+Clear about what is known, what is heuristic, and what is still unresolved.
+
+### Community-driven  
+Improved by people who actually care about mastery, coaching, evaluation, and human development.
+
+## The mission
+
+Build an open standard for human skill progression —
+so people can better understand where they are, what excellence looks like, and what to learn next.
+
+We are not trying to compress human potential into a spreadsheet.
+
+We are trying to make improvement more visible, more shareable, and more accessible.
+
+We are building the map that coaching, learning, and skill-aware systems will need.
