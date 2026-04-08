@@ -14,9 +14,23 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://openskill-tree.vercel.app"),
   title: "OpenSkillTree",
   description:
     "The representation layer for human skill progression. Structured skill maps with subskills, dependencies, benchmark criteria, and progression pathways — open infrastructure for coaching, learning, and assessment.",
+  openGraph: {
+    title: "OpenSkillTree",
+    description:
+      "The representation layer for human skill progression.",
+    url: "https://openskill-tree.vercel.app",
+    siteName: "OpenSkillTree",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "OpenSkillTree",
+    description: "The representation layer for human skill progression.",
+  },
 };
 
 export default function RootLayout({
