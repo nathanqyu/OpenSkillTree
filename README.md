@@ -29,6 +29,7 @@ Imagine a future where systems can observe how a person performs in the real wor
 To do that well, raw data is not enough.
 
 We also need a structured model of skill itself:
+
 - What does good look like?
 - How should progress be measured?
 - Which subskills matter most?
@@ -48,6 +49,7 @@ They observe, diagnose, prioritize, and guide. They know how to identify the nex
 But that level of personalized feedback is still expensive, scarce, and inconsistent across domains.
 
 If we want more people to benefit from high-quality coaching and personalized learning, we need better shared representations of:
+
 - skill
 - proficiency
 - progression
@@ -96,12 +98,14 @@ OpenSkillTree is guided by a few core principles:
 OpenSkillTree currently focuses on making skill progression visible.
 
 That includes:
+
 - defining skill trees across domains
 - modeling dependencies between subskills
 - describing benchmarked levels of proficiency
 - creating a shared schema for future tools and applications
 
 Over time, this foundation could support:
+
 - skill assessment systems
 - personalized coaching products
 - adaptive learning platforms
@@ -119,3 +123,79 @@ Over time, this foundation could support:
 
 ```bash
 npm install
+```
+
+### Develop
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Other scripts
+
+| Command | Description |
+|---------|-------------|
+| `npm run build` | Production build |
+| `npm run start` | Start production server |
+| `npm run lint` | Run ESLint |
+| `npm run format` | Format with Prettier |
+| `npm run typecheck` | TypeScript type check |
+
+## Project Structure
+
+```text
+├── app/              # Next.js App Router pages and layouts
+├── components/       # Reusable React components
+│   └── ui/           # Low-level UI primitives
+├── lib/              # Shared utilities and server helpers
+├── types/            # TypeScript type definitions (canonical schema)
+├── db/               # Database schema (Postgres)
+├── docs/             # Architecture and design docs
+└── agents/           # AI agent configuration
+```
+
+## Data Model
+
+The core schema lives in [`types/skill-tree.ts`](./types/skill-tree.ts).
+
+Core concepts:
+
+- **SkillTree** — a named collection of skills within a domain
+- **SkillNode** — an individual skill with benchmarked levels
+- **SkillEdge** — a prerequisite relationship between nodes
+- **UserProgress** — user progress tracking (deferred from MVP V1)
+
+See [`db/schema.sql`](./db/schema.sql) for the Postgres schema.
+
+## Why open source
+
+This problem is too broad, too interdisciplinary, and too important to solve in a closed system.
+
+OpenSkillTree is open source because building a useful standard for human skill will require input from:
+
+- coaches
+- educators
+- domain experts
+- researchers
+- builders
+- practitioners
+
+If you care about coaching, learning, human performance, evaluation, knowledge representation, or benchmark design, contributions are welcome.
+
+## Contributing
+
+Contributions are welcome — whether you're:
+
+- adding skill trees for a domain you know deeply
+- refining benchmark definitions
+- improving the schema and data model
+- building the UI and developer tooling
+- pressure-testing the philosophy and edge cases
+
+See [MANIFESTO.md](./MANIFESTO.md) for the project's philosophy and [CONTRIBUTING.md](./CONTRIBUTING.md) for practical contribution guidelines.
+
+## License
+
+MIT
