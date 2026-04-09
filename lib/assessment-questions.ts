@@ -197,6 +197,7 @@ export const ASSESSMENT_SECTIONS: AssessmentSection[] = [
         type: "prioritization",
         signalType: "cognitive",
         title: "You have 3 free hours and unlimited resources. Rank these by appeal.",
+        rankCount: 4,
         traitWeights: { creative: 3, expressive: 2, patience: 1 },
         options: [
           { id: "sketch", label: "Sketch or paint something", interest: { creative: 3, expressive: 2 }, aptitude: {} },
@@ -282,6 +283,7 @@ export const ASSESSMENT_SECTIONS: AssessmentSection[] = [
         type: "prioritization",
         signalType: "cognitive",
         title: "You\u2019re planning a 6-month learning project. Rank what matters most.",
+        rankCount: 4,
         traitWeights: { strategic: 3, social: 1, patience: 1 },
         options: [
           { id: "milestones", label: "Clear milestones and deadlines", interest: {}, aptitude: { strategic: 3, patience: 1 } },
@@ -347,6 +349,7 @@ export const ASSESSMENT_SECTIONS: AssessmentSection[] = [
         type: "prioritization",
         signalType: "cognitive",
         title: "Weekend morning. Rank these by how you\u2019d actually spend it.",
+        rankCount: 4,
         traitWeights: { physical: 2, naturalistic: 1, wellness: 1, technical: 1 },
         options: [
           { id: "workout", label: "A long run or workout", interest: { physical: 3, competitive: 1 }, aptitude: {} },

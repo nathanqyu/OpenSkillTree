@@ -69,6 +69,21 @@ export const TRYIT_LABELS: Record<string, { label: string; classes: string }> = 
   },
 };
 
+/** Trait dimension labels — human-readable names for the 11 trait dimensions. */
+export const TRAIT_DIMENSION_LABELS: Record<string, string> = {
+  physical: "physical coordination",
+  creative: "creative instinct",
+  analytical: "analytical thinking",
+  social: "social intelligence",
+  strategic: "strategic thinking",
+  patience: "patience and persistence",
+  competitive: "competitive drive",
+  expressive: "expressive ability",
+  technical: "technical aptitude",
+  wellness: "wellness orientation",
+  naturalistic: "connection with nature",
+};
+
 /** Assessment method labels — human-readable names. */
 export const ASSESSMENT_METHOD_LABELS: Record<string, string> = {
   "coach-observation": "Coach observation",

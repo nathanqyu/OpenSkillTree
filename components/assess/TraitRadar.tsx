@@ -74,7 +74,7 @@ export default function TraitRadar({
 
   return (
     <div className="flex flex-col items-center">
-      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`}>
+      <svg width={size} height={size} viewBox={`0 0 ${size} ${size}`} role="img" aria-label="Trait profile radar chart showing interest and aptitude across 11 dimensions">
         {/* Grid rings */}
         {rings.map((r) => (
           <polygon

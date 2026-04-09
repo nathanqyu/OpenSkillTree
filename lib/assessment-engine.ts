@@ -6,6 +6,7 @@
  */
 
 import type { Trait, TraitScores } from "@/lib/discover-engine";
+import { TRAIT_DIMENSION_LABELS } from "@/lib/design-tokens";
 import type {
   AssessmentQuestion,
   AssessmentAnswer,
@@ -163,19 +164,7 @@ function summarizeSection(
     .slice(0, 3)
     .map(([trait, score]) => ({ trait: trait as Trait, score: score ?? 0 }));
 
-  const TRAIT_LABELS: Record<string, string> = {
-    physical: "physical coordination",
-    creative: "creative instinct",
-    analytical: "analytical thinking",
-    social: "social intelligence",
-    strategic: "strategic thinking",
-    patience: "patience and persistence",
-    competitive: "competitive drive",
-    expressive: "expressive ability",
-    technical: "technical aptitude",
-    wellness: "wellness orientation",
-    naturalistic: "connection with nature",
-  };
+  const TRAIT_LABELS = TRAIT_DIMENSION_LABELS;
 
   const topNames = sorted.slice(0, 2).map((t) => TRAIT_LABELS[t.trait] ?? t.trait);
   const insight =

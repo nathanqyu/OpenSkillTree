@@ -23,9 +23,9 @@ export default function NumberInput({ value, onChange }: NumberInputProps) {
         pattern="[0-9]*"
         value={text}
         onChange={(e) => {
-          const raw = e.target.value.replace(/[^0-9.-]/g, "");
+          const raw = e.target.value.replace(/[^0-9]/g, "");
           setText(raw);
-          const num = parseFloat(raw);
+          const num = parseInt(raw, 10);
           if (!isNaN(num)) onChange(num);
         }}
         placeholder="Type your answer..."

@@ -438,19 +438,9 @@ function topTraits(traits: TraitScores, count: number): Trait[] {
     .map(([t]) => t as Trait);
 }
 
-const TRAIT_LABELS: Record<Trait, string> = {
-  physical: "physical coordination",
-  creative: "creative instinct",
-  analytical: "analytical thinking",
-  social: "social intelligence",
-  strategic: "strategic thinking",
-  patience: "patience and persistence",
-  competitive: "competitive drive",
-  expressive: "expressive ability",
-  technical: "technical aptitude",
-  wellness: "wellness orientation",
-  naturalistic: "connection with nature",
-};
+import { TRAIT_DIMENSION_LABELS } from "@/lib/design-tokens";
+
+const TRAIT_LABELS = TRAIT_DIMENSION_LABELS as Record<Trait, string>;
 
 function buildReasoning(
   tree: TreeProfile,

@@ -160,7 +160,7 @@ export default function AssessClient() {
 
   // Next question or section complete
   const handleNext = useCallback(() => {
-    if (!currentSection) return;
+    if (!currentSection || phase === "processing") return;
 
     if (questionIndex < currentSection.questions.length - 1) {
       setQuestionIndex((i) => i + 1);
@@ -174,26 +174,31 @@ export default function AssessClient() {
         // All sections done — score
         setPhase("processing");
         setTimeout(() => {
-          const elapsed = Math.round((Date.now() - startTime.current) / 1000);
-          const assessResult = scoreAssessment(ASSESSMENT_SECTIONS, answers, elapsed);
+          try {
+            const elapsed = Math.round((Date.now() - startTime.current) / 1000);
+            const assessResult = scoreAssessment(ASSESSMENT_SECTIONS, answers, elapsed);
 
-          // Save and rebuild profile
-          saveAssessmentResult(assessResult);
-          const discoverAnswers = loadDiscoverAnswers();
-          const moduleResponses = loadModuleResponses();
-          const profile = buildRefinedProfile(discoverAnswers, moduleResponses, assessResult);
-          saveRefinedProfile(profile);
+            // Save and rebuild profile
+            saveAssessmentResult(assessResult);
+            const discoverAnswers = loadDiscoverAnswers();
+            const moduleResponses = loadModuleResponses();
+            const profile = buildRefinedProfile(discoverAnswers, moduleResponses, assessResult);
+            saveRefinedProfile(profile);
 
-          const merged = getMergedTraitScores(profile);
-          setMergedInterest(merged.interest);
-          setMergedAptitude(merged.aptitude);
-          setRecs(generateRecommendationsFromProfile(merged.interest, merged.aptitude));
-          setResult(assessResult);
-          setPhase("results");
+            const merged = getMergedTraitScores(profile);
+            setMergedInterest(merged.interest);
+            setMergedAptitude(merged.aptitude);
+            setRecs(generateRecommendationsFromProfile(merged.interest, merged.aptitude));
+            setResult(assessResult);
+            setPhase("results");
+          } catch (err) {
+            console.error("Assessment scoring failed:", err);
+            setPhase("welcome");
+          }
         }, 1800);
       }
     }
-  }, [questionIndex, sectionIndex, currentSection, answers]);
+  }, [questionIndex, sectionIndex, currentSection, answers, phase]);
 
   // Back within questions
   const handleBack = useCallback(() => {

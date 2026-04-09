@@ -431,6 +431,7 @@ export default function DiscoverClient() {
   );
 
   const handleNext = useCallback(() => {
+    if (phase === "processing") return;
     if (questionIndex < DISCOVER_QUESTIONS.length - 1) {
       setQuestionIndex((i) => i + 1);
     } else {
@@ -458,7 +459,7 @@ export default function DiscoverClient() {
         setPhase("results");
       }, 1500);
     }
-  }, [questionIndex, answers]);
+  }, [questionIndex, answers, phase]);
 
   const handleBack = useCallback(() => {
     if (questionIndex === 0) {
