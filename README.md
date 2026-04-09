@@ -18,6 +18,8 @@ It provides a common language for:
 - defining progression from beginner to expert
 - making benchmark levels explicit
 - mapping prerequisite relationships between subskills
+- specifying evidence of proficiency and how to assess it
+- classifying the signal quality of different measurement approaches
 - helping people understand where they are and what to learn next
 
 ## Vision
@@ -67,6 +69,9 @@ Each skill tree is designed to make progression legible by defining:
 - **domains** and **subdomains**
 - **skill nodes**
 - **benchmark levels of proficiency**
+- **evidence of proficiency** (what demonstrates competence at each level)
+- **assessment methods** (how proficiency can be evaluated)
+- **signal quality** (honest about measurement limitations — strong, moderate, or contextual)
 - **prerequisite relationships**
 - **progression pathways**
 
@@ -102,6 +107,8 @@ That includes:
 - defining skill trees across domains
 - modeling dependencies between subskills
 - describing benchmarked levels of proficiency
+- defining evidence requirements and assessment methods per benchmark level
+- classifying signal quality to be honest about measurement limitations
 - creating a shared schema for future tools and applications
 
 Over time, this foundation could support:
@@ -111,6 +118,18 @@ Over time, this foundation could support:
 - adaptive learning platforms
 - AI feedback and training tools
 - benchmark and evaluation frameworks for human and AI performance
+
+## Skill Discovery
+
+OpenSkillTree includes an experimental skill discovery engine at `/discover` that maps a user's natural tendencies, interests, and strengths against structured skill progressions.
+
+It identifies three types of recommendations:
+
+- **Strong Matches** — skills aligned with both interest and aptitude
+- **Hidden Potential** — skills where natural strengths suggest high potential, even without prior exposure
+- **Growth Edges** — skills the user is drawn to that would stretch their current abilities
+
+This is not a personality test or a career assessment. It is a structured starting point for exploration, grounded in the same trait dimensions that underlie the skill maps.
 
 ## Getting Started
 
@@ -165,6 +184,8 @@ Core concepts:
 - **SkillTree** — a named collection of skills within a domain
 - **SkillNode** — an individual skill with benchmarked levels
 - **SkillEdge** — a prerequisite relationship between nodes
+- **EvidenceRequirement** — what demonstrates proficiency, with signal quality
+- **AssessmentMethod** — how proficiency can be evaluated
 - **UserProgress** — user progress tracking (deferred from MVP V1)
 
 See [`db/schema.sql`](./db/schema.sql) for the Postgres schema.

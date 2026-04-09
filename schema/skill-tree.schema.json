@@ -34,6 +34,34 @@
       "type": "string",
       "enum": ["beginner", "intermediate", "advanced", "expert"]
     },
+    "EvidenceType": {
+      "type": "string",
+      "enum": ["quantitative", "demonstration", "portfolio", "observation", "self-report", "peer-review", "written", "certification"],
+      "description": "The kind of evidence that demonstrates proficiency."
+    },
+    "SignalQuality": {
+      "type": "string",
+      "enum": ["strong", "moderate", "contextual"],
+      "description": "How repeatable and context-independent the evidence tends to be. strong = low evaluator variance, moderate = structured but some subjectivity, contextual = depends heavily on evaluator or setting."
+    },
+    "EvidenceRequirement": {
+      "type": "object",
+      "required": ["type", "description", "signal"],
+      "additionalProperties": false,
+      "properties": {
+        "type": {
+          "$ref": "#/$defs/EvidenceType"
+        },
+        "description": {
+          "type": "string",
+          "minLength": 1,
+          "description": "What this evidence looks like in practice."
+        },
+        "signal": {
+          "$ref": "#/$defs/SignalQuality"
+        }
+      }
+    },
     "RelationshipType": {
       "type": "string",
       "enum": ["requires", "enables", "component-of", "complementary", "variant-of"],
@@ -114,6 +142,38 @@
             "minLength": 1
           },
           "description": "Optional quantitative targets that can be measured (e.g., '≥ 60% first-serve %')."
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/EvidenceRequirement"
+          },
+          "description": "Specific evidence that can demonstrate competence at this level."
+        },
+        "assessmentMethods": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "enum": [
+              "coach-observation",
+              "video-review",
+              "timed-test",
+              "rubric-evaluation",
+              "peer-assessment",
+              "self-assessment",
+              "portfolio-review",
+              "competition-result",
+              "certification-exam",
+              "automated-test",
+              "sensor-data",
+              "ai-analysis"
+            ]
+          },
+          "description": "Methods suitable for evaluating proficiency at this level."
+        },
+        "assessmentNotes": {
+          "type": "string",
+          "description": "Notes about measurement limitations, context-dependence, or evaluator guidance."
         },
         "resources": {
           "type": "array",

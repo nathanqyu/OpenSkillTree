@@ -7,15 +7,15 @@ const PILLARS = [
   },
   {
     number: "02",
-    title: "Benchmark Criteria",
+    title: "Benchmark Criteria & Evidence",
     description:
-      "Concrete, observable criteria describing what competence looks like at each level. Grounded in practice rather than vague rubrics or arbitrary point thresholds.",
+      "Concrete, observable criteria describing what competence looks like at each level. Each benchmark specifies evidence of proficiency and assessment methods — with honest signal quality, not fake-precise scoring.",
   },
   {
     number: "03",
     title: "Progression Pathways",
     description:
-      "Clear sequences from foundational knowledge to advanced application. Dependencies surface what must come first — and make implicit learning order explicit.",
+      "Clear sequences from foundational knowledge to advanced application. Dependencies surface what must come first, and benchmark levels make legible progress visible at every stage.",
   },
 ];
 

@@ -48,6 +48,25 @@ nodes:
           - "Completes PCEP module 1 exercises with ≥70% first-attempt pass rate"
           - "Zero syntax errors in scripts reviewed by a peer"
           - "Can create a .py file, run it from the terminal, and explain the output"
+        evidence:
+          - type: "quantitative"
+            description: "PCEP module 1 exercise pass rate (≥70% first-attempt) — standardized, auto-graded."
+            signal: "strong"
+          - type: "portfolio"
+            description: "A working script (e.g., tip calculator) demonstrating variables, input, f-strings, and basic data types."
+            signal: "moderate"
+          - type: "peer-review"
+            description: "Code review by a peer confirming zero syntax errors and readable structure."
+            signal: "moderate"
+          - type: "demonstration"
+            description: "Screen-share walkthrough: create a .py file, run it from the terminal, and explain the output line by line."
+            signal: "moderate"
+        assessmentMethods:
+          - "automated-test"
+          - "peer-assessment"
+          - "self-assessment"
+          - "portfolio-review"
+        assessmentNotes: "Programming at the beginner level is unusually well-suited to automated assessment — the code either runs or it doesn't, and auto-graded exercises give immediate, objective feedback. Peer review catches style and naming issues that automated tests miss."
         resources:
           - title: "CS50P - Lecture 0: Functions, Variables"
             url: "https://cs50.harvard.edu/python/2022/weeks/0/"
@@ -74,6 +93,21 @@ nodes:
         metrics:
           - "Correctly selects collection type in 9/10 design scenarios"
           - "Code review: no type misuse comments on collections in ≥3 consecutive PRs"
+        evidence:
+          - type: "portfolio"
+            description: "A CLI app (e.g., contact book) demonstrating correct collection type selection, comprehensions, and JSON persistence."
+            signal: "moderate"
+          - type: "peer-review"
+            description: "≥3 consecutive PRs with no reviewer comments about collection type misuse."
+            signal: "moderate"
+          - type: "written"
+            description: "Given 10 design scenarios, correctly select and justify the collection type for each."
+            signal: "strong"
+        assessmentMethods:
+          - "automated-test"
+          - "peer-assessment"
+          - "rubric-evaluation"
+        assessmentNotes: "At this level, 'correct' collection choice is sometimes a judgment call (e.g., tuple vs. list for config values). Automated tests can verify functional correctness but not design appropriateness — peer review fills that gap."
         resources:
           - title: "Real Python - Lists and Tuples in Python"
             url: "https://realpython.com/python-lists-tuples/"

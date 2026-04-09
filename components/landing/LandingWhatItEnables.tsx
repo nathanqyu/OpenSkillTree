@@ -2,22 +2,22 @@ const ENABLES = [
   {
     audience: "Coaches",
     description:
-      "Anchor feedback to structured skill maps. Make progress legible to both coach and learner, grounded in shared criteria rather than expert intuition alone.",
+      "Anchor feedback to structured skill maps and benchmark criteria. Use evidence requirements to design assessments. Make progress legible to both coach and learner.",
   },
   {
     audience: "Learning platforms",
     description:
-      "Build adaptive curricula that respect real skill dependencies. Surface prerequisite gaps before learners hit walls, based on explicit graph structure.",
+      "Build adaptive curricula that respect real skill dependencies. Use benchmark levels and evidence types to create structured assessment checkpoints, not just content sequences.",
   },
   {
     audience: "Assessors",
     description:
-      "Evaluate progress against benchmark criteria rather than vague rubrics. Make assessment decisions explainable, consistent, and tied to defined competence levels.",
+      "Evaluate progress against benchmark criteria with defined evidence types and signal quality. Make assessment decisions explainable, consistent, and honest about measurement limitations.",
   },
   {
     audience: "Builders",
     description:
-      "Query structured skill data to power intelligent recommendations, gap analysis, and skill-aware systems — without constructing the ontology from scratch.",
+      "Query structured skill data — including benchmark criteria, evidence requirements, and assessment methods — to power skill-aware systems without constructing the ontology from scratch.",
   },
 ];
 

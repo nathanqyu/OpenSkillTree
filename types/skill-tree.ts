@@ -71,19 +71,103 @@ export interface BenchmarkResource {
   type?: "video" | "article" | "course" | "book" | "tool" | "exercise";
 }
 
+// ---------------------------------------------------------------------------
+// Evidence & Assessment  (benchmark measurement layer)
+// ---------------------------------------------------------------------------
+
+/**
+ * What kind of evidence demonstrates proficiency.
+ *
+ * Each type implies a different measurement approach:
+ *   - quantitative: repeatable numeric measurement (time, distance, score)
+ *   - demonstration: perform the skill live or on video
+ *   - portfolio: artifact, work product, or recorded output
+ *   - observation: assessed by a coach, peer, or evaluator watching
+ *   - self-report: learner's own structured reflection
+ *   - peer-review: evaluated by peers against shared criteria
+ *   - written: test, essay, or written deliverable
+ *   - certification: external credential or standardized exam
+ */
+export type EvidenceType =
+  | "quantitative"
+  | "demonstration"
+  | "portfolio"
+  | "observation"
+  | "self-report"
+  | "peer-review"
+  | "written"
+  | "certification";
+
+/**
+ * A specific piece of evidence that can demonstrate proficiency at a benchmark level.
+ *
+ * `signal` captures how repeatable and context-independent the evidence tends to be,
+ * without claiming false objectivity:
+ *   - strong: consistently measurable, low evaluator variance (e.g., timed test, pass/fail metric)
+ *   - moderate: structured evaluation with some subjectivity (e.g., rubric-scored portfolio)
+ *   - contextual: depends heavily on evaluator, setting, or interpretation (e.g., peer feedback)
+ */
+export interface EvidenceRequirement {
+  type: EvidenceType;
+  description: string;
+  signal: "strong" | "moderate" | "contextual";
+}
+
+/**
+ * How proficiency at a benchmark level can be assessed.
+ *
+ * Current methods represent what is practical today. Future-facing methods
+ * (sensor-data, ai-analysis) are included to preserve extensibility for
+ * coach, AI, and sensor-based assessment pipelines.
+ */
+export type AssessmentMethod =
+  | "coach-observation"
+  | "video-review"
+  | "timed-test"
+  | "rubric-evaluation"
+  | "peer-assessment"
+  | "self-assessment"
+  | "portfolio-review"
+  | "competition-result"
+  | "certification-exam"
+  | "automated-test"
+  | "sensor-data"
+  | "ai-analysis";
+
+// ---------------------------------------------------------------------------
+// SkillBenchmark
+// ---------------------------------------------------------------------------
+
 /**
  * A benchmark describes mastery criteria at a specific level within a skill.
  *
  * Design note: structured (not free-form markdown) so tooling can render level
  * selectors, filter by level, and compare benchmarks across trees programmatically.
- * The `metrics` array captures quantitative targets where they exist.
- * The `resources`, `practice`, `projects`, and `tips` arrays provide actionable
- * "what to do next" guidance for learners at each level.
+ *
+ * The benchmark cleanly separates three concerns:
+ *   1. **Criteria & evidence** — what proficiency looks like and how to demonstrate it
+ *   2. **Assessment** — how proficiency can be evaluated
+ *   3. **Guidance** — resources, practice, projects, and tips for reaching this level
  */
 export interface SkillBenchmark {
   level: "beginner" | "intermediate" | "advanced" | "expert";
+
+  // --- Criteria: what proficiency looks like ---
   criteria: string;
+  /** Quantitative targets where they exist (not all skills have these). */
   metrics?: string[];
+
+  // --- Evidence: what demonstrates proficiency ---
+  /** Specific evidence that can demonstrate competence at this level. */
+  evidence?: EvidenceRequirement[];
+
+  // --- Assessment: how to evaluate ---
+  /** Methods suitable for evaluating proficiency at this level. */
+  assessmentMethods?: AssessmentMethod[];
+  /** Notes about measurement limitations, context-dependence, or evaluator guidance. */
+  assessmentNotes?: string;
+
+  // --- Guidance: how to get there ---
   /** Tutorials, videos, courses, or tools to help reach this level. */
   resources?: BenchmarkResource[];
   /** Specific drills, exercises, or practice routines with time estimates. */

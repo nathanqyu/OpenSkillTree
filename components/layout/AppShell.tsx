@@ -12,17 +12,23 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
             >
               OpenSkillTree
             </Link>
-            <span className="text-zinc-300 dark:text-zinc-700">·</span>
+            <span className="hidden sm:inline text-zinc-300 dark:text-zinc-700">·</span>
             <a
               href="https://kyzn.ai"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-xs font-medium text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300 transition-colors"
+              className="hidden sm:inline text-xs font-medium text-zinc-400 hover:text-zinc-700 dark:text-zinc-500 dark:hover:text-zinc-300 transition-colors"
             >
               by KYZN
             </a>
           </div>
-          <nav className="flex items-center gap-5 text-sm text-zinc-500 dark:text-zinc-400">
+          <nav className="flex items-center gap-3 sm:gap-5 text-sm text-zinc-500 dark:text-zinc-400">
+            <Link
+              href="/discover"
+              className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
+            >
+              Discover
+            </Link>
             <Link
               href="/#explore"
               className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"

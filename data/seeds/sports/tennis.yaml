@@ -50,6 +50,21 @@ nodes:
           - "Reaches 6/10 balls hit within 3 steps"
           - "Split step attempted on 7/10 opponent shots"
           - "Correctly explains scoring through a full game and identifies all court zones"
+        evidence:
+          - type: "quantitative"
+            description: "Ball-reaching rate measured during a 10-ball feed drill (6/10 threshold)."
+            signal: "strong"
+          - type: "observation"
+            description: "Coach or evaluator watches split-step timing during live rally and counts attempts per 10 shots."
+            signal: "moderate"
+          - type: "written"
+            description: "Scoring knowledge quiz: explain points, games, sets, and tiebreak rules; identify court zones on a diagram."
+            signal: "strong"
+        assessmentMethods:
+          - "coach-observation"
+          - "timed-test"
+          - "self-assessment"
+        assessmentNotes: "Ball-reaching rate is highly repeatable in controlled drill settings. Split-step timing is harder to evaluate consistently — coach observation against a simple count rubric is the most practical method at this level."
         resources:
           - title: "Essential Tennis — Tennis Grips for Beginners (Eastern, Continental)"
             url: "https://www.youtube.com/watch?v=3Zik6qiel1k"
@@ -76,6 +91,21 @@ nodes:
           - "Split step timed within 0.3s of opponent contact on 8/10 shots"
           - "Recovers to within 1 meter of baseline center after groundstroke on 7/10 rallies"
           - "Reaches wide balls that require 2+ steps on 75%+ of attempts"
+        evidence:
+          - type: "quantitative"
+            description: "Recovery distance measured by court position after each groundstroke (within 1m of center on 7/10)."
+            signal: "strong"
+          - type: "demonstration"
+            description: "Live rally or match play demonstrating split-step timing and court coverage under pressure."
+            signal: "moderate"
+          - type: "observation"
+            description: "Coach counts wide-ball reach attempts during a structured drill session."
+            signal: "moderate"
+        assessmentMethods:
+          - "coach-observation"
+          - "video-review"
+          - "competition-result"
+        assessmentNotes: "Video review provides the most reliable assessment at this level — slow-motion replay reveals split-step timing that is difficult to judge in real time. Competition results provide indirect evidence of court coverage but conflate movement with shot quality."
         resources:
           - title: "Top Tennis Training — Footwork Patterns for Court Coverage"
             url: "https://www.youtube.com/watch?v=MPfZ7qvoSgM"

@@ -6,11 +6,18 @@ import type {
   SkillEdge,
   SkillBenchmark,
   BenchmarkResource,
+  EvidenceRequirement,
+  AssessmentMethod,
   EphemeralProgressMap,
   EphemeralLevelMap,
   BenchmarkLevelValue,
   UserProgressStatus,
 } from "@/types/skill-tree";
+import {
+  EVIDENCE_TYPE_LABELS,
+  SIGNAL_LABELS,
+  ASSESSMENT_METHOD_LABELS,
+} from "@/lib/design-tokens";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -145,6 +152,67 @@ function ResourceLink({ resource }: { resource: BenchmarkResource }) {
   );
 }
 
+function EvidenceSection({ evidence }: { evidence: EvidenceRequirement[] }) {
+  return (
+    <div className="mt-2">
+      <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">
+        Evidence of proficiency
+      </p>
+      <div className="mt-1 space-y-1.5">
+        {evidence.map((ev, i) => {
+          const signalInfo = SIGNAL_LABELS[ev.signal] ?? SIGNAL_LABELS.contextual;
+          return (
+            <div key={i} className="rounded-md bg-white/40 px-2.5 py-1.5 dark:bg-black/20">
+              <div className="flex items-center gap-1.5">
+                <span className="text-[10px] font-medium opacity-70">
+                  {EVIDENCE_TYPE_LABELS[ev.type] ?? ev.type}
+                </span>
+                <span
+                  className={`inline-block rounded-full px-1.5 py-0.5 text-[9px] font-medium ${signalInfo.classes}`}
+                >
+                  {signalInfo.label}
+                </span>
+              </div>
+              <p className="mt-0.5 text-xs leading-relaxed opacity-80">{ev.description}</p>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  );
+}
+
+function AssessmentSection({
+  methods,
+  notes,
+}: {
+  methods: AssessmentMethod[];
+  notes?: string;
+}) {
+  return (
+    <div className="mt-2">
+      <p className="text-[10px] font-semibold uppercase tracking-wider opacity-60">
+        Assessment methods
+      </p>
+      <div className="mt-1 flex flex-wrap gap-1">
+        {methods.map((method) => (
+          <span
+            key={method}
+            className="inline-block rounded-full bg-white/40 px-2 py-0.5 text-[10px] font-medium opacity-80 dark:bg-black/20"
+          >
+            {ASSESSMENT_METHOD_LABELS[method] ?? method}
+          </span>
+        ))}
+      </div>
+      {notes && (
+        <p className="mt-1.5 text-[10px] italic leading-relaxed opacity-60">
+          {notes}
+        </p>
+      )}
+    </div>
+  );
+}
+
 function BenchmarkCard({ benchmark }: { benchmark: SkillBenchmark }) {
   return (
     <div className={`rounded-lg border p-3 ${LEVEL_COLORS[benchmark.level]}`}>
@@ -159,6 +227,17 @@ function BenchmarkCard({ benchmark }: { benchmark: SkillBenchmark }) {
             </li>
           ))}
         </ul>
+      )}
+
+      {benchmark.evidence && benchmark.evidence.length > 0 && (
+        <EvidenceSection evidence={benchmark.evidence} />
+      )}
+
+      {benchmark.assessmentMethods && benchmark.assessmentMethods.length > 0 && (
+        <AssessmentSection
+          methods={benchmark.assessmentMethods}
+          notes={benchmark.assessmentNotes}
+        />
       )}
 
       {benchmark.resources && benchmark.resources.length > 0 && (

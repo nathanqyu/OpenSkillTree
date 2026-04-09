@@ -3,6 +3,7 @@ import Link from "next/link";
 import { query } from "@/lib/db";
 import type { SkillTree, SkillNode, SkillEdge } from "@/types/skill-tree";
 import { SkillTreeClient } from "@/components/skill-tree/SkillTreeClient";
+import { TreeAssessmentSummary } from "@/components/skill-tree/TreeAssessmentSummary";
 import { TREE_OVERVIEWS } from "@/lib/tree-overviews";
 
 export const revalidate = 60;
@@ -62,10 +63,10 @@ export default async function TreePage({ params }: PageParams) {
       <div className="mb-6 flex items-start justify-between gap-4">
         <div>
           <Link
-            href="/"
+            href="/#explore"
             className="mb-2 inline-block text-sm text-zinc-500 hover:text-zinc-900 dark:hover:text-zinc-50"
           >
-            ← All trees
+            ← All skill maps
           </Link>
           <h1 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
             {tree.title}
@@ -172,11 +173,16 @@ export default async function TreePage({ params }: PageParams) {
               {overview.timeToIntermediate}
             </p>
             <p className="mt-1.5 text-xs text-zinc-500 dark:text-zinc-400">
-              {nodes.length} skills · {nodes.reduce((sum, n) => sum + n.benchmarks.length, 0)} benchmark levels · Click any node below to see specific resources and practice plans
+              {nodes.length} nodes · {nodes.reduce((sum, n) => sum + n.benchmarks.length, 0)} benchmark levels · Click any node to see criteria, evidence requirements, and progression pathways
             </p>
           </div>
         </div>
       )}
+
+      {/* Assessment framework summary */}
+      <div className="mb-6">
+        <TreeAssessmentSummary nodes={nodes} />
+      </div>
 
       {/* Interactive roadmap + node detail panel */}
       <SkillTreeClient
