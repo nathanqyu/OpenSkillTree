@@ -1,6 +1,7 @@
 "use client";
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
+import { useSearchParams } from "next/navigation";
 import Link from "next/link";
 import {
   DISCOVER_QUESTIONS,
@@ -15,8 +16,9 @@ import {
 import { DOMAIN_BADGE, DOMAIN_BADGE_FALLBACK } from "@/lib/design-tokens";
 import {
   saveDiscoverAnswers,
-  loadRefinedProfile,
+  loadDiscoverAnswers,
   loadModuleResponses,
+  loadAssessmentResult,
 } from "@/lib/try-it-store";
 import { buildRefinedProfile, getMergedTraitScores } from "@/lib/profile-refinement";
 
@@ -327,14 +329,34 @@ function ResultsScreen({
         </Link>
       </div>
 
+      {/* Deep Assessment CTA */}
+      <div className="mt-8 rounded-xl border border-indigo-200 bg-indigo-50 px-6 py-5 dark:border-indigo-900 dark:bg-indigo-900/20">
+        <p className="text-base font-semibold text-indigo-900 dark:text-indigo-200">
+          Your profile has blind spots. Everyone&rsquo;s does.
+        </p>
+        <p className="mt-2 text-sm leading-relaxed text-indigo-700 dark:text-indigo-300">
+          The discovery questions capture what you think about yourself.
+          The Deep Assessment tests what your brain actually does &mdash;
+          pattern recognition, judgment under ambiguity, where your
+          energy really goes. 20 minutes. You&rsquo;ll learn something
+          you didn&rsquo;t expect.
+        </p>
+        <Link
+          href="/assess"
+          className="mt-4 inline-block rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400"
+        >
+          Sharpen Your Profile
+        </Link>
+      </div>
+
       {/* Try-it module CTA */}
-      <div className="mt-8 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 dark:border-amber-900 dark:bg-amber-900/20">
+      <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 dark:border-amber-900 dark:bg-amber-900/20">
         <p className="text-sm font-medium text-amber-800 dark:text-amber-300">
-          Want more accurate recommendations?
+          Or try a skill hands-on
         </p>
         <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">
-          Try a skill module to add demonstrated aptitude signals to your profile.
-          Click into any skill map above and look for &ldquo;Try It&rdquo; modules.
+          Click into any skill map above and look for &ldquo;Try It&rdquo; modules
+          to add real-world experience signals to your profile.
         </p>
       </div>
 
@@ -351,6 +373,7 @@ function ResultsScreen({
 // ---------------------------------------------------------------------------
 
 export default function DiscoverClient() {
+  const searchParams = useSearchParams();
   const [phase, setPhase] = useState<Phase>("welcome");
   const [questionIndex, setQuestionIndex] = useState(0);
   const [answers, setAnswers] = useState<DiscoverAnswers>({});
@@ -359,6 +382,29 @@ export default function DiscoverClient() {
   );
 
   const currentQuestion = DISCOVER_QUESTIONS[questionIndex];
+
+  // Auto-refresh: if ?refresh=1 and we have saved answers, jump straight to results
+  useEffect(() => {
+    if (searchParams.get("refresh") !== "1") return;
+    const saved = loadDiscoverAnswers();
+    if (!saved || Object.keys(saved).length === 0) return;
+
+    const moduleResponses = loadModuleResponses();
+    const assessmentResult = loadAssessmentResult();
+    let recs: SkillRecommendation[];
+
+    if (moduleResponses.length > 0 || assessmentResult) {
+      const profile = buildRefinedProfile(saved, moduleResponses, assessmentResult);
+      const merged = getMergedTraitScores(profile);
+      recs = generateRecommendationsFromProfile(merged.interest, merged.aptitude);
+    } else {
+      recs = generateRecommendations(saved);
+    }
+
+    setAnswers(saved);
+    setRecommendations(recs);
+    setPhase("results");
+  }, [searchParams]);
 
   const handleStart = useCallback(() => {
     setPhase("questions");
@@ -394,13 +440,14 @@ export default function DiscoverClient() {
         // Persist answers for future profile refinement
         saveDiscoverAnswers(answers);
 
-        // Check for module signals from try-it completions
+        // Check for module signals and assessment results
         const moduleResponses = loadModuleResponses();
+        const assessmentResult = loadAssessmentResult();
         let recs: SkillRecommendation[];
 
-        if (moduleResponses.length > 0) {
-          // Merge self-report with demonstrated signals (2x weight)
-          const profile = buildRefinedProfile(answers, moduleResponses);
+        if (moduleResponses.length > 0 || assessmentResult) {
+          // Merge self-report with demonstrated signals
+          const profile = buildRefinedProfile(answers, moduleResponses, assessmentResult);
           const merged = getMergedTraitScores(profile);
           recs = generateRecommendationsFromProfile(merged.interest, merged.aptitude);
         } else {

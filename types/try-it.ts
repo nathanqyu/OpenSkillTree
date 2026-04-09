@@ -83,7 +83,11 @@ export interface RefinedProfile {
   selfReport: { interest: TraitScores; aptitude: TraitScores };
   /** Accumulated trait scores from module completions. */
   moduleSignals: { interest: TraitScores; aptitude: TraitScores };
+  /** Trait scores from the deep assessment (cognitive + self-reflection). */
+  assessmentSignals?: { interest: TraitScores; aptitude: TraitScores };
   /** Full module response history. */
   moduleHistory: ModuleResponse[];
+  /** Deep assessment result if completed. */
+  assessmentResult?: import("@/types/assessment").AssessmentResult;
   updatedAt: string;
 }

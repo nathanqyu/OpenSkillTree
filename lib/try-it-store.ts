@@ -7,10 +7,12 @@
 
 import type { DiscoverAnswers } from "@/lib/discover-engine";
 import type { ModuleResponse, RefinedProfile } from "@/types/try-it";
+import type { AssessmentResult } from "@/types/assessment";
 
 const KEY_RESPONSES = "ost_tryit_responses";
 const KEY_PROFILE = "ost_tryit_profile";
 const KEY_DISCOVER_ANSWERS = "ost_discover_answers";
+const KEY_ASSESSMENT = "ost_assessment_result";
 
 // ---------------------------------------------------------------------------
 // Module Responses
@@ -81,5 +83,35 @@ export function saveDiscoverAnswers(answers: DiscoverAnswers): void {
     localStorage.setItem(KEY_DISCOVER_ANSWERS, JSON.stringify(answers));
   } catch {
     // Silent fail
+  }
+}
+
+// ---------------------------------------------------------------------------
+// Deep Assessment
+// ---------------------------------------------------------------------------
+
+export function loadAssessmentResult(): AssessmentResult | null {
+  try {
+    const raw = localStorage.getItem(KEY_ASSESSMENT);
+    if (!raw) return null;
+    return JSON.parse(raw) as AssessmentResult;
+  } catch {
+    return null;
+  }
+}
+
+export function saveAssessmentResult(result: AssessmentResult): void {
+  try {
+    localStorage.setItem(KEY_ASSESSMENT, JSON.stringify(result));
+  } catch {
+    // Silent fail
+  }
+}
+
+export function hasCompletedAssessment(): boolean {
+  try {
+    return localStorage.getItem(KEY_ASSESSMENT) !== null;
+  } catch {
+    return false;
   }
 }

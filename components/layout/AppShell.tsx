@@ -30,6 +30,12 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
               Discover
             </Link>
             <Link
+              href="/assess"
+              className="hidden sm:inline hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
+            >
+              Assess
+            </Link>
+            <Link
               href="/#explore"
               className="hover:text-zinc-900 dark:hover:text-zinc-50 transition-colors"
             >

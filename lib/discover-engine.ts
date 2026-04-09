@@ -255,7 +255,7 @@ export const TREE_PROFILES: TreeProfile[] = [
     title: "Cooking",
     domain: "Creative Arts",
     description: "Knife skills, flavor building, techniques, and recipe adaptation across cuisines.",
-    traits: { creative: 4, patience: 3, naturalistic: 2, social: 2 },
+    traits: { creative: 4, patience: 3, naturalistic: 3 },
     hook: "Creative expression you can share immediately — and it only gets more interesting with practice.",
   },
   {
@@ -289,7 +289,7 @@ export const TREE_PROFILES: TreeProfile[] = [
     title: "Python",
     domain: "Technology",
     description: "From first script to production code — syntax, OOP, testing, and data analysis.",
-    traits: { technical: 5, analytical: 4, patience: 3, creative: 2 },
+    traits: { technical: 5, analytical: 4, patience: 3 },
     hook: "The most approachable entry point to programming — and one of the most versatile.",
   },
   {
@@ -297,7 +297,7 @@ export const TREE_PROFILES: TreeProfile[] = [
     title: "JavaScript & TypeScript",
     domain: "Technology",
     description: "Web development fundamentals — from DOM manipulation to typed full-stack applications.",
-    traits: { technical: 5, creative: 3, analytical: 3 },
+    traits: { technical: 5, analytical: 3 },
     hook: "Where technical skill meets visual creativity — build things people can see and use.",
   },
   {
@@ -305,7 +305,7 @@ export const TREE_PROFILES: TreeProfile[] = [
     title: "Data Science",
     domain: "Technology",
     description: "Statistics, analysis, visualization, and machine learning — turning data into insight.",
-    traits: { technical: 4, analytical: 5, patience: 3, creative: 2, strategic: 2 },
+    traits: { technical: 4, analytical: 5, patience: 3, strategic: 2 },
     hook: "For pattern-seekers who want to make sense of complexity.",
   },
 
@@ -502,8 +502,8 @@ export function generateRecommendations(
     const totalScore = interestScore + aptitudeScore;
 
     // Thresholds for categorization
-    const highInterest = interestScore > 0.45;
-    const highAptitude = aptitudeScore > 0.45;
+    const highInterest = interestScore > 0.55;
+    const highAptitude = aptitudeScore > 0.55;
 
     let category: RecommendationCategory;
     if (highInterest && highAptitude) {
@@ -569,8 +569,8 @@ export function generateRecommendationsFromProfile(
     const aptitudeScore = aptitudeNorm[i];
     const totalScore = interestScore + aptitudeScore;
 
-    const highInterest = interestScore > 0.45;
-    const highAptitude = aptitudeScore > 0.45;
+    const highInterest = interestScore > 0.55;
+    const highAptitude = aptitudeScore > 0.55;
 
     let category: RecommendationCategory;
     if (highInterest && highAptitude) {

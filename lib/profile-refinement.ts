@@ -9,17 +9,21 @@
 import type { TraitScores, Trait, DiscoverAnswers } from "@/lib/discover-engine";
 import { buildTraitProfile } from "@/lib/discover-engine";
 import type { ModuleResponse, RefinedProfile } from "@/types/try-it";
+import type { AssessmentResult } from "@/types/assessment";
 
 /** Module signals carry 2x the weight of self-report. */
 const MODULE_WEIGHT = 2.0;
+/** Deep assessment signals carry 2.5x the weight of self-report. */
+const ASSESSMENT_WEIGHT = 2.5;
 
 /**
- * Build a refined profile from discovery answers and module responses.
- * Either input can be null/empty — the profile adapts.
+ * Build a refined profile from discovery answers, module responses,
+ * and an optional deep assessment result. Any input can be null/empty.
  */
 export function buildRefinedProfile(
   answers: DiscoverAnswers | null,
   moduleResponses: ModuleResponse[],
+  assessmentResult?: AssessmentResult | null,
 ): RefinedProfile {
   // Self-report from discovery questionnaire
   let selfReport: { interest: TraitScores; aptitude: TraitScores } = {
@@ -45,10 +49,17 @@ export function buildRefinedProfile(
     }
   }
 
+  // Assessment signals
+  const assessmentSignals = assessmentResult
+    ? { interest: assessmentResult.traitDeltas.interest, aptitude: assessmentResult.traitDeltas.aptitude }
+    : undefined;
+
   return {
     selfReport,
     moduleSignals: { interest: moduleInterest, aptitude: moduleAptitude },
+    assessmentSignals,
     moduleHistory: moduleResponses,
+    assessmentResult: assessmentResult ?? undefined,
     updatedAt: new Date().toISOString(),
   };
 }
@@ -63,25 +74,31 @@ export function getMergedTraitScores(
   const interest: TraitScores = {};
   const aptitude: TraitScores = {};
 
-  // Collect all traits from both sources
+  // Collect all traits from all sources
   const allTraits = new Set<Trait>();
-  for (const source of [
+  const sources = [
     profile.selfReport.interest,
     profile.selfReport.aptitude,
     profile.moduleSignals.interest,
     profile.moduleSignals.aptitude,
-  ]) {
+    ...(profile.assessmentSignals
+      ? [profile.assessmentSignals.interest, profile.assessmentSignals.aptitude]
+      : []),
+  ];
+  for (const source of sources) {
     for (const t of Object.keys(source)) allTraits.add(t as Trait);
   }
 
   for (const t of allTraits) {
     interest[t] =
       (profile.selfReport.interest[t] ?? 0) +
-      MODULE_WEIGHT * (profile.moduleSignals.interest[t] ?? 0);
+      MODULE_WEIGHT * (profile.moduleSignals.interest[t] ?? 0) +
+      ASSESSMENT_WEIGHT * (profile.assessmentSignals?.interest[t] ?? 0);
 
     aptitude[t] =
       (profile.selfReport.aptitude[t] ?? 0) +
-      MODULE_WEIGHT * (profile.moduleSignals.aptitude[t] ?? 0);
+      MODULE_WEIGHT * (profile.moduleSignals.aptitude[t] ?? 0) +
+      ASSESSMENT_WEIGHT * (profile.assessmentSignals?.aptitude[t] ?? 0);
   }
 
   return { interest, aptitude };
