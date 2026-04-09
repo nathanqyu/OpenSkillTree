@@ -55,6 +55,20 @@ export const SIGNAL_LABELS: Record<string, { label: string; classes: string }> =
   },
 };
 
+/** Try-It module badge styles. */
+export const TRYIT_LABELS: Record<string, { label: string; classes: string }> = {
+  available: {
+    label: "Try It",
+    classes:
+      "bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400",
+  },
+  completed: {
+    label: "Tried",
+    classes:
+      "bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-400",
+  },
+};
+
 /** Assessment method labels — human-readable names. */
 export const ASSESSMENT_METHOD_LABELS: Record<string, string> = {
   "coach-observation": "Coach observation",

@@ -6,12 +6,19 @@ import {
   DISCOVER_QUESTIONS,
   CATEGORY_META,
   generateRecommendations,
+  generateRecommendationsFromProfile,
   type DiscoverQuestion,
   type DiscoverAnswers,
   type SkillRecommendation,
   type RecommendationCategory,
 } from "@/lib/discover-engine";
 import { DOMAIN_BADGE, DOMAIN_BADGE_FALLBACK } from "@/lib/design-tokens";
+import {
+  saveDiscoverAnswers,
+  loadRefinedProfile,
+  loadModuleResponses,
+} from "@/lib/try-it-store";
+import { buildRefinedProfile, getMergedTraitScores } from "@/lib/profile-refinement";
 
 // ---------------------------------------------------------------------------
 // State machine
@@ -320,6 +327,17 @@ function ResultsScreen({
         </Link>
       </div>
 
+      {/* Try-it module CTA */}
+      <div className="mt-8 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 dark:border-amber-900 dark:bg-amber-900/20">
+        <p className="text-sm font-medium text-amber-800 dark:text-amber-300">
+          Want more accurate recommendations?
+        </p>
+        <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">
+          Try a skill module to add demonstrated aptitude signals to your profile.
+          Click into any skill map above and look for &ldquo;Try It&rdquo; modules.
+        </p>
+      </div>
+
       <p className="mt-6 text-xs text-zinc-400 dark:text-zinc-600">
         This is a structured exploration tool, not a scientific assessment. Recommendations
         are based on trait alignment with skill progressions and are meant as a starting point.
@@ -373,7 +391,22 @@ export default function DiscoverClient() {
       // Last question → processing → results
       setPhase("processing");
       setTimeout(() => {
-        const recs = generateRecommendations(answers);
+        // Persist answers for future profile refinement
+        saveDiscoverAnswers(answers);
+
+        // Check for module signals from try-it completions
+        const moduleResponses = loadModuleResponses();
+        let recs: SkillRecommendation[];
+
+        if (moduleResponses.length > 0) {
+          // Merge self-report with demonstrated signals (2x weight)
+          const profile = buildRefinedProfile(answers, moduleResponses);
+          const merged = getMergedTraitScores(profile);
+          recs = generateRecommendationsFromProfile(merged.interest, merged.aptitude);
+        } else {
+          recs = generateRecommendations(answers);
+        }
+
         setRecommendations(recs);
         setPhase("results");
       }, 1500);

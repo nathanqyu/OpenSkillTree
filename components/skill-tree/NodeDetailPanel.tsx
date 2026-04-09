@@ -17,7 +17,10 @@ import {
   EVIDENCE_TYPE_LABELS,
   SIGNAL_LABELS,
   ASSESSMENT_METHOD_LABELS,
+  TRYIT_LABELS,
 } from "@/lib/design-tokens";
+import { getModulesForNode } from "@/data/try-it/registry";
+import { hasCompletedModule } from "@/lib/try-it-store";
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -149,6 +152,46 @@ function ResourceLink({ resource }: { resource: BenchmarkResource }) {
       </span>
       <span className="shrink-0 text-zinc-400">↗</span>
     </a>
+  );
+}
+
+function TryItCard({ nodePathId }: { nodePathId: string }) {
+  const modules = getModulesForNode(nodePathId);
+  if (modules.length === 0) return null;
+
+  return (
+    <div className="space-y-2">
+      {modules.map((mod) => {
+        const completed = hasCompletedModule(mod.id);
+        const badge = completed ? TRYIT_LABELS.completed : TRYIT_LABELS.available;
+        return (
+          <a
+            key={mod.id}
+            href={`/trees/${encodeURIComponent(mod.treePathId)}/try-it/${mod.id}`}
+            className="group flex items-center justify-between rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 transition-all hover:border-amber-300 hover:shadow-sm dark:border-amber-900 dark:bg-amber-900/20 dark:hover:border-amber-700"
+          >
+            <div className="min-w-0 flex-1">
+              <div className="flex items-center gap-2">
+                <span className="text-sm font-semibold text-amber-800 group-hover:text-amber-700 dark:text-amber-300 dark:group-hover:text-amber-200">
+                  {mod.title}
+                </span>
+                <span
+                  className={`inline-block rounded-full px-2 py-0.5 text-[10px] font-medium ${badge.classes}`}
+                >
+                  {badge.label}
+                </span>
+              </div>
+              <p className="mt-0.5 text-xs text-amber-600 dark:text-amber-400 line-clamp-1">
+                {mod.resources.length} resource{mod.resources.length !== 1 ? "s" : ""} &middot; Try and give feedback
+              </p>
+            </div>
+            <span className="ml-2 shrink-0 text-xs text-amber-400 group-hover:text-amber-600 dark:text-amber-500 dark:group-hover:text-amber-300">
+              →
+            </span>
+          </a>
+        );
+      })}
+    </div>
   );
 }
 
@@ -784,6 +827,9 @@ export function NodeDetailPanel({
               )}
             </div>
           )}
+
+          {/* Try It — external skill exploration modules */}
+          <TryItCard nodePathId={node.pathId} />
 
           {/* What to Do Next — the main action section */}
           <WhatToDoNext

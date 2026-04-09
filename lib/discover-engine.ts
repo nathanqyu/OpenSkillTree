@@ -546,6 +546,72 @@ export function generateRecommendations(
 }
 
 /**
+ * Generate recommendations using pre-computed trait vectors.
+ * Used when a refined profile (with module signals) is available.
+ */
+export function generateRecommendationsFromProfile(
+  interest: TraitScores,
+  aptitude: TraitScores,
+): SkillRecommendation[] {
+  const profile: TraitProfile = { interest, aptitude };
+
+  const scored = TREE_PROFILES.map((tree) => {
+    const interestRaw = dotProduct(profile.interest, tree.traits);
+    const aptitudeRaw = dotProduct(profile.aptitude, tree.traits);
+    return { tree, interestRaw, aptitudeRaw };
+  });
+
+  const interestNorm = normalizeScores(scored.map((s) => s.interestRaw));
+  const aptitudeNorm = normalizeScores(scored.map((s) => s.aptitudeRaw));
+
+  const categorized = scored.map((s, i) => {
+    const interestScore = interestNorm[i];
+    const aptitudeScore = aptitudeNorm[i];
+    const totalScore = interestScore + aptitudeScore;
+
+    const highInterest = interestScore > 0.45;
+    const highAptitude = aptitudeScore > 0.45;
+
+    let category: RecommendationCategory;
+    if (highInterest && highAptitude) {
+      category = "strong-match";
+    } else if (highAptitude && !highInterest) {
+      category = "hidden-potential";
+    } else if (highInterest && !highAptitude) {
+      category = "growth-edge";
+    } else {
+      category = "growth-edge";
+    }
+
+    return {
+      tree: s.tree,
+      category,
+      interestScore,
+      aptitudeScore,
+      totalScore,
+      reasoning: buildReasoning(s.tree, category, profile),
+    };
+  });
+
+  const strongMatches = categorized
+    .filter((r) => r.category === "strong-match")
+    .sort((a, b) => b.totalScore - a.totalScore)
+    .slice(0, 3);
+
+  const hiddenPotential = categorized
+    .filter((r) => r.category === "hidden-potential")
+    .sort((a, b) => b.aptitudeScore - a.aptitudeScore)
+    .slice(0, 3);
+
+  const growthEdges = categorized
+    .filter((r) => r.category === "growth-edge")
+    .sort((a, b) => b.interestScore - a.interestScore)
+    .slice(0, 2);
+
+  return [...strongMatches, ...hiddenPotential, ...growthEdges];
+}
+
+/**
  * Category labels and descriptions for the results UI.
  */
 export const CATEGORY_META: Record<
