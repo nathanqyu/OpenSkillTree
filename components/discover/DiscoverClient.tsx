@@ -19,8 +19,11 @@ import {
   loadDiscoverAnswers,
   loadModuleResponses,
   loadAssessmentResult,
+  hasCompletedAssessment,
 } from "@/lib/try-it-store";
 import { buildRefinedProfile, getMergedTraitScores } from "@/lib/profile-refinement";
+import type { TraitScores } from "@/lib/discover-engine";
+import TraitRadar from "@/components/assess/TraitRadar";
 
 // ---------------------------------------------------------------------------
 // State machine
@@ -287,18 +290,23 @@ function CategorySection({
 function ResultsScreen({
   recommendations,
   onRetake,
+  mergedInterest,
+  mergedAptitude,
 }: {
   recommendations: SkillRecommendation[];
   onRetake: () => void;
+  mergedInterest: TraitScores | null;
+  mergedAptitude: TraitScores | null;
 }) {
   const strong = recommendations.filter((r) => r.category === "strong-match");
   const hidden = recommendations.filter((r) => r.category === "hidden-potential");
   const growth = recommendations.filter((r) => r.category === "growth-edge");
+  const assessmentDone = hasCompletedAssessment();
 
   return (
     <div className="mx-auto max-w-4xl pt-8 pb-20">
       <p className="mb-3 text-xs font-semibold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-        Your results
+        {assessmentDone ? "Your refined results" : "Your results"}
       </p>
       <h2 className="text-2xl font-bold tracking-tight text-zinc-900 dark:text-zinc-50">
         Your skill map
@@ -314,45 +322,71 @@ function ResultsScreen({
         <CategorySection category="growth-edge" recommendations={growth} />
       </div>
 
-      <div className="mt-12 flex flex-wrap items-center gap-3 border-t border-zinc-200 pt-8 dark:border-zinc-800">
-        <button
-          onClick={onRetake}
-          className="rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:border-zinc-500 dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-500"
-        >
-          Retake
-        </button>
+      {/* Radar chart — shown when deep assessment is completed */}
+      {assessmentDone && mergedInterest && mergedAptitude && (
+        <div className="mt-10 border-t border-zinc-200 pt-8 dark:border-zinc-800">
+          <p className="mb-1 text-xs font-semibold uppercase tracking-widest text-indigo-500 dark:text-indigo-400">
+            Your Trait Profile
+          </p>
+          <p className="text-sm text-zinc-500 dark:text-zinc-400">
+            Combined signals from discovery questions, deep assessment, and any
+            try-it modules you&rsquo;ve completed.
+          </p>
+          <div className="mt-6 flex justify-center">
+            <TraitRadar interest={mergedInterest} aptitude={mergedAptitude} />
+          </div>
+        </div>
+      )}
+
+      {/* Actions */}
+      <div className="mt-10 flex flex-wrap items-center gap-3 border-t border-zinc-200 pt-8 dark:border-zinc-800">
+        {!assessmentDone && (
+          <Link
+            href="/assess"
+            className="rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400"
+          >
+            Take Deep Assessment
+          </Link>
+        )}
         <Link
           href="/#explore"
           className="rounded-full bg-zinc-900 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-zinc-700 dark:bg-zinc-50 dark:text-zinc-900 dark:hover:bg-zinc-200"
         >
           Browse All Skill Maps
         </Link>
+        <button
+          onClick={onRetake}
+          className="rounded-full border border-zinc-300 px-5 py-2.5 text-sm font-medium text-zinc-700 transition-colors hover:border-zinc-500 dark:border-zinc-700 dark:text-zinc-300 dark:hover:border-zinc-500"
+        >
+          Retake Discovery
+        </button>
       </div>
 
-      {/* Deep Assessment CTA */}
-      <div className="mt-8 rounded-xl border border-indigo-200 bg-indigo-50 px-6 py-5 dark:border-indigo-900 dark:bg-indigo-900/20">
-        <p className="text-base font-semibold text-indigo-900 dark:text-indigo-200">
-          Your profile has blind spots. Everyone&rsquo;s does.
-        </p>
-        <p className="mt-2 text-sm leading-relaxed text-indigo-700 dark:text-indigo-300">
-          The discovery questions capture what you think about yourself.
-          The Deep Assessment tests what your brain actually does &mdash;
-          pattern recognition, judgment under ambiguity, where your
-          energy really goes. 20 minutes. You&rsquo;ll learn something
-          you didn&rsquo;t expect.
-        </p>
-        <Link
-          href="/assess"
-          className="mt-4 inline-block rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400"
-        >
-          Sharpen Your Profile
-        </Link>
-      </div>
+      {/* Deep Assessment CTA — only if not yet completed */}
+      {!assessmentDone && (
+        <div className="mt-6 rounded-xl border border-indigo-200 bg-indigo-50 px-6 py-5 dark:border-indigo-900 dark:bg-indigo-900/20">
+          <p className="text-base font-semibold text-indigo-900 dark:text-indigo-200">
+            These results are based on 8 self-report questions. They have blind spots.
+          </p>
+          <p className="mt-2 text-sm leading-relaxed text-indigo-700 dark:text-indigo-300">
+            The Deep Assessment tests what your brain actually does &mdash;
+            pattern recognition, scenario judgment, estimation, energy mapping.
+            28 questions. 20 minutes. Cognitive signals carry 3x the weight of
+            self-report. Your recommendations will shift significantly.
+          </p>
+          <Link
+            href="/assess"
+            className="mt-4 inline-block rounded-full bg-indigo-600 px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-indigo-500 dark:bg-indigo-500 dark:hover:bg-indigo-400"
+          >
+            Sharpen Your Profile
+          </Link>
+        </div>
+      )}
 
       {/* Try-it module CTA */}
       <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 px-5 py-4 dark:border-amber-900 dark:bg-amber-900/20">
         <p className="text-sm font-medium text-amber-800 dark:text-amber-300">
-          Or try a skill hands-on
+          {assessmentDone ? "Keep refining" : "Or try a skill hands-on"}
         </p>
         <p className="mt-1 text-xs text-amber-600 dark:text-amber-400">
           Click into any skill map above and look for &ldquo;Try It&rdquo; modules
@@ -361,8 +395,9 @@ function ResultsScreen({
       </div>
 
       <p className="mt-6 text-xs text-zinc-400 dark:text-zinc-600">
-        This is a structured exploration tool, not a scientific assessment. Recommendations
-        are based on trait alignment with skill progressions and are meant as a starting point.
+        {assessmentDone
+          ? "Your profile combines self-report, cognitive assessment, and any hands-on modules. The more signals, the sharper the results."
+          : "This is a structured exploration tool, not a scientific assessment. Recommendations are based on trait alignment with skill progressions and are meant as a starting point."}
       </p>
     </div>
   );
@@ -380,6 +415,8 @@ export default function DiscoverClient() {
   const [recommendations, setRecommendations] = useState<SkillRecommendation[]>(
     [],
   );
+  const [mergedInterest, setMergedInterest] = useState<TraitScores | null>(null);
+  const [mergedAptitude, setMergedAptitude] = useState<TraitScores | null>(null);
 
   const currentQuestion = DISCOVER_QUESTIONS[questionIndex];
 
@@ -396,6 +433,8 @@ export default function DiscoverClient() {
     if (moduleResponses.length > 0 || assessmentResult) {
       const profile = buildRefinedProfile(saved, moduleResponses, assessmentResult);
       const merged = getMergedTraitScores(profile);
+      setMergedInterest(merged.interest);
+      setMergedAptitude(merged.aptitude);
       recs = generateRecommendationsFromProfile(merged.interest, merged.aptitude);
     } else {
       recs = generateRecommendations(saved);
@@ -450,6 +489,8 @@ export default function DiscoverClient() {
           // Merge self-report with demonstrated signals
           const profile = buildRefinedProfile(answers, moduleResponses, assessmentResult);
           const merged = getMergedTraitScores(profile);
+          setMergedInterest(merged.interest);
+          setMergedAptitude(merged.aptitude);
           recs = generateRecommendationsFromProfile(merged.interest, merged.aptitude);
         } else {
           recs = generateRecommendations(answers);
@@ -495,6 +536,8 @@ export default function DiscoverClient() {
         <ResultsScreen
           recommendations={recommendations}
           onRetake={handleRetake}
+          mergedInterest={mergedInterest}
+          mergedAptitude={mergedAptitude}
         />
       )}
     </>

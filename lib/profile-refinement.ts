@@ -13,8 +13,8 @@ import type { AssessmentResult } from "@/types/assessment";
 
 /** Module signals carry 2x the weight of self-report. */
 const MODULE_WEIGHT = 2.0;
-/** Deep assessment signals carry 2.5x the weight of self-report. */
-const ASSESSMENT_WEIGHT = 2.5;
+/** Deep assessment signals carry 4x the weight of self-report. */
+const ASSESSMENT_WEIGHT = 4.0;
 
 /**
  * Build a refined profile from discovery answers, module responses,
